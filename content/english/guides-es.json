@@ -1,0 +1,545 @@
+{
+  "guides": {
+    "professional-requests": {
+      "title": "Pedir cosas de forma profesional",
+      "explanation": "En el trabajo no damos órdenes: pedimos. Usa 'Could you…?' o 'Can you…?' (¿Podrías…?) y añade 'please' (por favor). Para un pedido más grande, usa 'Would it be possible to…?' (¿Sería posible…?).",
+      "expressions": [
+        "¿Podrías enviarme…, por favor?",
+        "¿Me puedes ayudar con…?",
+        "¿Sería posible…?",
+        "Por favor, envíalo antes del viernes.",
+        "Lo envío a más tardar el jueves.",
+        "Gracias por tu ayuda."
+      ],
+      "vocabulary": [
+        {
+          "es": "plazo, fecha límite",
+          "gloss": "el último día o la última hora para terminar algo"
+        },
+        {
+          "es": "novedades, actualización",
+          "gloss": "información nueva sobre tu trabajo"
+        },
+        {
+          "es": "horario, calendario",
+          "gloss": "un plan con días y horas"
+        },
+        {
+          "es": "informe",
+          "gloss": "un documento sobre el trabajo o los resultados"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado directo",
+          "text": "Mándame el archivo."
+        },
+        {
+          "label": "Mejor",
+          "text": "¿Podrías enviarme el archivo, por favor?"
+        },
+        {
+          "label": "Pedido más grande",
+          "text": "¿Sería posible que me enviaras el archivo hoy?"
+        }
+      ],
+      "mistake": {
+        "why": "'By 4' significa 'a las 4 o antes'. 'Until' es para cosas que continúan en el tiempo, como 'I work until 6' (trabajo hasta las 6)."
+      },
+      "tip": "Pide una sola cosa en cada correo. Si pides dos cosas en un correo, es fácil olvidar una."
+    },
+    "email-structure": {
+      "title": "Cómo organizar un correo",
+      "explanation": "Un correo de trabajo tiene una forma sencilla: un saludo, por qué escribes, los detalles, qué necesitas y para cuándo, y una despedida. Pon lo más importante al principio.",
+      "expressions": [
+        "Estimada Sra. Lemoine: (formal)",
+        "Hola, Marc: (a un compañero)",
+        "Te escribo para preguntar sobre…",
+        "Te envío adjunto…",
+        "¿Podrías responder antes del jueves?",
+        "Saludos cordiales, / Un cordial saludo,"
+      ],
+      "vocabulary": [
+        {
+          "es": "asunto",
+          "gloss": "el título del correo"
+        },
+        {
+          "es": "archivo adjunto",
+          "gloss": "un archivo que envías con un correo"
+        },
+        {
+          "es": "poner en copia",
+          "gloss": "enviar una copia a otra persona"
+        },
+        {
+          "es": "despedida",
+          "gloss": "las palabras del final, como 'Kind regards' (saludos cordiales)"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Asunto malo",
+          "text": "Pregunta"
+        },
+        {
+          "label": "Asunto bueno",
+          "text": "Informe del T3: necesito las cifras antes del jueves"
+        },
+        {
+          "label": "Buena primera línea",
+          "text": "Hola, Marcus: te escribo por el informe del T3."
+        }
+      ],
+      "mistake": {
+        "why": "Para decir por qué escribes, usa 'to' + verbo: 'writing to ask' (escribo para preguntar), 'writing to confirm' (escribo para confirmar). No uses 'for' + verbo."
+      },
+      "tip": "Escribe en el asunto el día en que necesitas la respuesta. Todo el mundo lee el asunto."
+    },
+    "apologising": {
+      "title": "Pedir disculpas en el trabajo",
+      "explanation": "Una buena disculpa en el trabajo es corta. Pide perdón una vez, di qué salió mal y luego di qué vas a hacer ahora. No escribas una disculpa larga y emotiva.",
+      "expressions": [
+        "Disculpa la demora.",
+        "Perdón, fue mi error.",
+        "Pido disculpas por el problema.",
+        "Gracias por esperar.",
+        "Lo envío hoy.",
+        "No volverá a pasar."
+      ],
+      "vocabulary": [
+        {
+          "es": "retraso, demora",
+          "gloss": "cuando algo llega tarde"
+        },
+        {
+          "es": "error",
+          "gloss": "algo que se hizo mal"
+        },
+        {
+          "es": "arreglar, corregir",
+          "gloss": "reparar o corregir algo"
+        },
+        {
+          "es": "paciencia",
+          "gloss": "esperar con calma, sin enojarse"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado corto",
+          "text": "¡Perdón!"
+        },
+        {
+          "label": "Demasiado",
+          "text": "Lo siento muchísimo, me siento muy mal, fue una semana muy mala…"
+        },
+        {
+          "label": "Bien",
+          "text": "Disculpa la demora. Ya te envío el informe adjunto."
+        }
+      ],
+      "mistake": {
+        "why": "Se dice 'apologise for' + algo (pedir disculpas por algo). No pongas a una persona justo después de 'apologise'."
+      },
+      "tip": "Pide perdón en una sola frase. Después habla de la solución."
+    },
+    "clarifying": {
+      "title": "Pedir aclaraciones",
+      "explanation": "Es normal no entenderlo todo. Haz una pregunta corta y amable. Puedes pedir que repitan, que deletreen una palabra o que expliquen una cosa. Después de 'Could you tell me…' (¿Podrías decirme…?), usa el orden normal de la frase: di 'where the room is', no 'where is the room'.",
+      "expressions": [
+        "Perdón, ¿podrías repetir eso, por favor?",
+        "¿Podrías hablar más despacio, por favor?",
+        "¿Cómo se escribe eso?",
+        "¿Qué quieres decir con…?",
+        "¿Te refieres al lunes o al martes?",
+        "¿Podrías decirme dónde es la reunión?"
+      ],
+      "vocabulary": [
+        {
+          "es": "repetir",
+          "gloss": "decir algo otra vez"
+        },
+        {
+          "es": "deletrear",
+          "gloss": "decir las letras de una palabra"
+        },
+        {
+          "es": "explicar",
+          "gloss": "hacer que algo quede claro"
+        },
+        {
+          "es": "instrucciones",
+          "gloss": "información sobre cómo hacer algo"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado corto",
+          "text": "¿Qué?"
+        },
+        {
+          "label": "Mejor",
+          "text": "Perdón, ¿podrías repetir la fecha, por favor?"
+        },
+        {
+          "label": "Lo mejor: da dos opciones",
+          "text": "¿Te refieres a este viernes o al próximo?"
+        }
+      ],
+      "mistake": {
+        "why": "Se dice 'explain something to someone' (explicar algo a alguien). No pongas 'me' justo después de 'explain'."
+      },
+      "tip": "Da dos opciones en tu pregunta: 'Friday or Monday?' (¿viernes o lunes?). Es rápido y fácil de responder."
+    },
+    "small-talk": {
+      "title": "Charla informal en el trabajo",
+      "explanation": "La charla informal ('small talk') es una conversación corta y amable. Ayuda a que la gente trabaje bien en equipo. Que sea corta y positiva, y haz preguntas sobre la otra persona. Cuando des las gracias, di qué hizo la persona.",
+      "expressions": [
+        "¿Qué tal va tu semana?",
+        "¿Qué tal tu fin de semana?",
+        "Mucho gusto.",
+        "¿A qué te dedicas?",
+        "Muchas gracias por tu ayuda.",
+        "Fue un gusto hablar contigo."
+      ],
+      "vocabulary": [
+        {
+          "es": "compañero de trabajo",
+          "gloss": "una persona con la que trabajas"
+        },
+        {
+          "es": "charlar, conversar",
+          "gloss": "hablar de forma amable y relajada"
+        },
+        {
+          "es": "agradecer",
+          "gloss": "dar las gracias"
+        },
+        {
+          "es": "congreso, conferencia",
+          "gloss": "un evento grande con charlas, muchas veces en otra ciudad"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado corto",
+          "text": "Gracias."
+        },
+        {
+          "label": "Mejor",
+          "text": "Gracias por tu ayuda ayer."
+        },
+        {
+          "label": "Lo mejor: di qué hizo",
+          "text": "Gracias por quedarte hasta tarde ayer. Terminamos a tiempo gracias a ti."
+        }
+      ],
+      "mistake": {
+        "why": "'How do you do?' es solo un saludo muy formal. No es una pregunta real sobre el trabajo. Para preguntar por su trabajo, di 'What do you do?' o 'How's work?'."
+      },
+      "tip": "Cuando des las gracias, di qué hizo la persona. Significa mucho más."
+    },
+    "future-forms": {
+      "title": "El futuro en el trabajo",
+      "explanation": "En inglés hay tres formas comunes de hablar del futuro. Usa 'going to' para planes que ya tienes. Usa el presente continuo ('I'm meeting') para cosas que ya están en tu agenda. Usa 'will' para decisiones que tomas en el momento y para promesas.",
+      "expressions": [
+        "Hoy voy a llamar al cliente. (plan)",
+        "El martes me reúno con Ana. (agenda)",
+        "Lo envío ahora mismo. (decisión en el momento)",
+        "No te preocupes, yo te ayudo. (promesa)",
+        "Creo que va a haber mucho trabajo. (opinión)"
+      ],
+      "vocabulary": [
+        {
+          "es": "plan",
+          "gloss": "algo que decidiste hacer"
+        },
+        {
+          "es": "cita, compromiso",
+          "gloss": "una reunión o un evento en tu agenda"
+        },
+        {
+          "es": "promesa",
+          "gloss": "cuando dices que vas a hacer algo"
+        },
+        {
+          "es": "agenda, calendario",
+          "gloss": "donde escribes tus reuniones y fechas"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Plan",
+          "text": "Vamos a abrir una oficina nueva en mayo."
+        },
+        {
+          "label": "Agenda",
+          "text": "Presento el miércoles por la mañana."
+        },
+        {
+          "label": "Decisión en el momento",
+          "text": "¿La sala está ocupada? Bueno, reservo otra."
+        }
+      ],
+      "mistake": {
+        "why": "Después de 'going to', usa el verbo en forma base (sin '-ing'): 'going to meet', 'going to call'."
+      },
+      "tip": "En una reunión, 'I'll do it' (yo lo hago) es una promesa. La gente se va a acordar."
+    },
+    "tenses-at-work": {
+      "title": "Los tiempos verbales en el trabajo",
+      "explanation": "Casi todo el inglés del trabajo usa tres tiempos verbales. Presente simple para costumbres ('We meet every Monday': nos reunimos todos los lunes). Presente continuo para lo que pasa ahora ('I'm working on it': estoy trabajando en eso). Pasado simple para acciones terminadas ('We sent it yesterday': lo enviamos ayer).",
+      "expressions": [
+        "Normalmente nos reunimos los lunes. (costumbre)",
+        "Estoy escribiendo el informe ahora. (ahora)",
+        "Hoy ella está trabajando desde casa. (ahora)",
+        "Terminé el proyecto el mes pasado. (terminado)",
+        "Enviamos la factura ayer. (terminado)"
+      ],
+      "vocabulary": [
+        {
+          "es": "rutina",
+          "gloss": "algo que haces con regularidad"
+        },
+        {
+          "es": "en este momento",
+          "gloss": "ahora"
+        },
+        {
+          "es": "ayer / la semana pasada",
+          "gloss": "palabras de tiempo que necesitan el pasado simple"
+        },
+        {
+          "es": "proyecto",
+          "gloss": "un trabajo con un objetivo y un final"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Costumbre",
+          "text": "El equipo se reúne todos los lunes a las nueve."
+        },
+        {
+          "label": "Ahora",
+          "text": "En este momento ella está hablando con un cliente."
+        },
+        {
+          "label": "Terminado",
+          "text": "Lanzamos la página web en marzo del año pasado."
+        }
+      ],
+      "mistake": {
+        "why": "Con 'yesterday' (ayer), 'last week' (la semana pasada) o una fecha, usa el pasado simple, no 'have finished'."
+      },
+      "tip": "Busca las palabras de tiempo. 'Every day' (todos los días) pide presente simple. 'Now' (ahora) pide presente continuo. 'Yesterday' (ayer) pide pasado simple."
+    },
+    "workplace-vocabulary": {
+      "title": "Vocabulario básico del trabajo",
+      "explanation": "Un grupo pequeño de palabras comunes es suficiente para la mayoría de los correos y conversaciones de trabajo. Aprende las palabras para las personas, los lugares y las tareas del trabajo, y para los viajes de trabajo sencillos.",
+      "expressions": [
+        "Trabajo en el departamento de ventas.",
+        "Me encargo de las facturas.",
+        "Mi jefa es Elena.",
+        "Tengo una reunión a las diez.",
+        "La semana que viene estoy de viaje de trabajo.",
+        "¿Podrías reservarme un hotel?"
+      ],
+      "vocabulary": [
+        {
+          "es": "compañero de trabajo",
+          "gloss": "una persona con la que trabajas"
+        },
+        {
+          "es": "jefe, jefa",
+          "gloss": "la persona que dirige tu trabajo"
+        },
+        {
+          "es": "departamento",
+          "gloss": "una parte de una empresa, como Ventas o Finanzas"
+        },
+        {
+          "es": "cliente",
+          "gloss": "una persona o empresa que te compra"
+        },
+        {
+          "es": "tarea",
+          "gloss": "un trabajo que tienes que hacer"
+        },
+        {
+          "es": "viaje de trabajo",
+          "gloss": "un viaje por trabajo"
+        },
+        {
+          "es": "reservar",
+          "gloss": "apartar una habitación, un hotel o un boleto"
+        },
+        {
+          "es": "dirigir / mejorar",
+          "gloss": "verbos fuertes: estar a cargo de algo / hacer que algo sea mejor"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Verbos débiles",
+          "text": "Hice el proyecto y lo hice mejor."
+        },
+        {
+          "label": "Verbos fuertes",
+          "text": "Dirigí el proyecto y mejoré el proceso."
+        },
+        {
+          "label": "Palabras del trabajo",
+          "text": "Mi jefa me pidió que reservara el hotel."
+        }
+      ],
+      "mistake": {
+        "why": "'Responsable' es español. En inglés, 'responsible' es un adjetivo: 'I'm responsible for the budget' (soy responsable del presupuesto). Para la persona que dirige tu trabajo, di 'manager'."
+      },
+      "tip": "Aprende las palabras en grupos: personas ('manager', 'colleague'), lugares ('office', 'department'), acciones ('book', 'check', 'send')."
+    },
+    "suggestions-advice": {
+      "title": "Sugerencias y consejos",
+      "explanation": "Una sugerencia es una idea para el grupo: 'Let's…' (vamos a…), 'Shall we…?' (como en '¿empezamos?'), 'How about…?' (¿qué tal si…?). Un consejo es para una sola persona: 'You should…' (deberías…). Las sugerencias suenan amables porque están abiertas a la conversación.",
+      "expressions": [
+        "Hagamos una pausa corta.",
+        "¿Empezamos?",
+        "¿Qué tal si nos reunimos el viernes?",
+        "¿Por qué no le preguntamos a Elena?",
+        "Podríamos enviarlo mañana.",
+        "Deberías hablar con tu jefe."
+      ],
+      "vocabulary": [
+        {
+          "es": "idea",
+          "gloss": "algo que se te ocurre"
+        },
+        {
+          "es": "opción",
+          "gloss": "una elección posible"
+        },
+        {
+          "es": "pausa, descanso",
+          "gloss": "un descanso corto"
+        },
+        {
+          "es": "consejo",
+          "gloss": "lo que crees que otra persona debería hacer"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sugerencia",
+          "text": "¿Qué tal si pasamos el lanzamiento a la próxima semana?"
+        },
+        {
+          "label": "Sugerencia",
+          "text": "Preguntémosle primero al cliente."
+        },
+        {
+          "label": "Consejo",
+          "text": "Deberías llamar al proveedor hoy."
+        }
+      ],
+      "mistake": {
+        "why": "Después de 'should', usa el verbo en forma base. Sin 'to'."
+      },
+      "tip": "'How about…?' abre una conversación. 'You should…' da una respuesta. Elige la que necesitas."
+    },
+    "deadline-language": {
+      "title": "Días, horas y plazos",
+      "explanation": "Con las fechas y las horas, las palabras pequeñas importan. 'By Friday' significa 'el viernes o antes'. 'Until 6' significa 'todo el tiempo hasta las 6'. Usa 'on' para los días y 'at' para las horas del reloj.",
+      "expressions": [
+        "Por favor, envíalo a más tardar el viernes. (el viernes o antes)",
+        "Estoy en la oficina hasta las seis. (todo el tiempo hasta las seis)",
+        "La reunión es el lunes a las diez.",
+        "El informe lleva dos días de retraso.",
+        "¿Podemos pasar la reunión al jueves?"
+      ],
+      "vocabulary": [
+        {
+          "es": "plazo, fecha límite",
+          "gloss": "el último día o la última hora para terminar"
+        },
+        {
+          "es": "tarde, con retraso",
+          "gloss": "después de la hora correcta"
+        },
+        {
+          "es": "a tiempo",
+          "gloss": "a la hora correcta, no tarde"
+        },
+        {
+          "es": "cambiar, pasar",
+          "gloss": "cambiar el día o la hora de algo"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Plazo",
+          "text": "¿Podrías responder a más tardar el viernes?"
+        },
+        {
+          "label": "Hasta una hora",
+          "text": "Estoy en mi escritorio hasta las cinco."
+        },
+        {
+          "label": "Día y hora",
+          "text": "La llamada es el martes a las 3 de la tarde."
+        }
+      ],
+      "mistake": {
+        "why": "Terminar pasa en un solo momento, así que usa 'by'. Usa 'until' para cosas que continúan en el tiempo."
+      },
+      "tip": "Da un día y una hora: 'Thursday at 5 p.m.' (el jueves a las 5 de la tarde) es más claro que solo 'Thursday'."
+    },
+    "giving-opinions": {
+      "title": "Dar tu opinión",
+      "explanation": "Una buena opinión tiene dos partes: qué piensas y por qué. Empieza con 'I think…' (creo que…) o 'In my opinion…' (en mi opinión…), y luego da una razón con 'because' (porque). Para estar de acuerdo, di 'I agree' (estoy de acuerdo) y añade algo más.",
+      "expressions": [
+        "Creo que…",
+        "En mi opinión…",
+        "Estoy de acuerdo contigo.",
+        "No estoy de acuerdo, porque…",
+        "Es una buena idea.",
+        "Yo también lo creo."
+      ],
+      "vocabulary": [
+        {
+          "es": "opinión",
+          "gloss": "lo que piensas sobre algo"
+        },
+        {
+          "es": "razón, motivo",
+          "gloss": "por qué piensas algo"
+        },
+        {
+          "es": "estar de acuerdo",
+          "gloss": "pensar lo mismo"
+        },
+        {
+          "es": "no estar de acuerdo",
+          "gloss": "pensar diferente"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Solo la opinión",
+          "text": "Creo que deberíamos esperar."
+        },
+        {
+          "label": "Opinión + razón",
+          "text": "Creo que deberíamos esperar, porque los números todavía no están listos."
+        },
+        {
+          "label": "Estar de acuerdo",
+          "text": "Estoy de acuerdo con Yusuf. El precio es el problema principal."
+        }
+      ],
+      "mistake": {
+        "why": "'According to' (según) es para otras personas o fuentes: 'according to the report' (según el informe). Para hablar de ti, di 'in my opinion' o 'I think'."
+      },
+      "tip": "Di siempre 'because'. Una razón hace que tu opinión sea más fuerte."
+    }
+  }
+}

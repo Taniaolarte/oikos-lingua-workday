@@ -1,0 +1,1970 @@
+{
+ "guides": [
+  {
+   "id": "futur-proche",
+   "level": "A2",
+   "title": "Le futur proche",
+   "minutes": 3,
+   "explanation": "Le futur proche = le verbe ALLER au présent + un verbe à l'infinitif. On l'utilise pour une action proche ou déjà décidée. C'est un plan : c'est déjà prévu.",
+   "expressions": [
+    "je vais + infinitif",
+    "tu vas + infinitif",
+    "il / elle / on va + infinitif",
+    "nous allons + infinitif",
+    "vous allez + infinitif",
+    "ils / elles vont + infinitif"
+   ],
+   "vocabulary": [
+    {
+     "term": "une intention",
+     "gloss": "ce qu'on veut faire"
+    },
+    {
+     "term": "une décision",
+     "gloss": "un choix déjà fait"
+    },
+    {
+     "term": "prévoir",
+     "gloss": "organiser avant"
+    },
+    {
+     "term": "cet après-midi",
+     "gloss": "aujourd'hui, après midi"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Plan",
+     "text": "Je vais préparer la présentation ce soir."
+    },
+    {
+     "label": "Décision d'équipe",
+     "text": "Nous allons appeler le client cet après-midi."
+    },
+    {
+     "label": "Négation",
+     "text": "Je ne vais pas envoyer le devis aujourd'hui."
+    },
+    {
+     "label": "Question",
+     "text": "Est-ce que vous allez venir à la réunion ?"
+    }
+   ],
+   "mistake": {
+    "wrong": "Je vais à préparer le rapport.",
+    "right": "Je vais préparer le rapport.",
+    "why": "Après « aller », on met directement l'infinitif. Pas de « à »."
+   },
+   "tip": "Pour la négation, mettez ne … pas autour de ALLER : « Je ne vais pas partir ». Jamais « Je vais ne pas partir »."
+  },
+  {
+   "id": "futur-simple",
+   "level": "B1",
+   "title": "Le futur simple",
+   "minutes": 3,
+   "explanation": "On prend l'infinitif et on ajoute les terminaisons -ai, -as, -a, -ons, -ez, -ont. On l'utilise pour un futur plus éloigné, des prédictions, des promesses, et des faits futurs certains mais non immédiats. L'idée mentale : une projection dans l'avenir.",
+   "expressions": [
+    "parler → je parlerai",
+    "finir → je finirai",
+    "prendre → je prendrai",
+    "je ferai / nous ferons",
+    "je serai / vous serez",
+    "ils viendront"
+   ],
+   "vocabulary": [
+    {
+     "term": "une prédiction",
+     "gloss": "ce qu'on pense qui arrivera"
+    },
+    {
+     "term": "une promesse",
+     "gloss": "un engagement ferme"
+    },
+    {
+     "term": "à long terme",
+     "gloss": "dans un futur éloigné"
+    },
+    {
+     "term": "un projet",
+     "gloss": "ce qu'on veut réaliser"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Radicaux irréguliers fréquents",
+     "text": "être → ser- · avoir → aur- · aller → ir- · faire → fer- · venir → viendr- · pouvoir → pourr- · vouloir → voudr- · devoir → devr- · voir → verr- · savoir → saur-"
+    },
+    {
+     "label": "Engagement professionnel",
+     "text": "Je présenterai le projet demain matin."
+    },
+    {
+     "label": "Prévision",
+     "text": "Nous terminerons le projet la semaine prochaine."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je serai content quand j'aurai fini. → « Je serais content »",
+    "right": "Je serai content (futur) / Je serais content (conditionnel)",
+    "why": "-ai = futur simple, -ais = conditionnel. Une lettre change tout le sens."
+   },
+   "tip": "Le radical du futur se termine toujours par -r. Si vous n'entendez pas le -r, ce n'est pas du futur simple."
+  },
+  {
+   "id": "futur-proche-vs-simple",
+   "level": "B1",
+   "title": "Futur proche ou futur simple ?",
+   "minutes": 3,
+   "explanation": "Les deux sont corrects grammaticalement : le choix dépend du sens. Futur proche = intention, plan, décision prise maintenant, action imminente. Futur simple = projection, prévision, promesse, vision générale de l'avenir.",
+   "expressions": [
+    "Futur proche : intention / plan / proche / décidé maintenant",
+    "Futur simple : projection / prévision / plus distant / vision générale"
+   ],
+   "vocabulary": [
+    {
+     "term": "imminent",
+     "gloss": "qui va arriver tout de suite"
+    },
+    {
+     "term": "une projection",
+     "gloss": "une vision de l'avenir"
+    },
+    {
+     "term": "une échéance",
+     "gloss": "la date limite"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Plan concret",
+     "text": "Ce soir, je vais finir le devis. (décidé, imminent)"
+    },
+    {
+     "label": "Projet de vie",
+     "text": "Un jour, je dirigerai ma propre équipe. (projection)"
+    },
+    {
+     "label": "Danger visible",
+     "text": "Attention ! Le serveur va tomber ! (imminent, visible)"
+    },
+    {
+     "label": "Prédiction lointaine",
+     "text": "Dans dix ans, les réunions seront presque toutes virtuelles."
+    }
+   ],
+   "mistake": {
+    "wrong": "Demain dans 40 ans je vais vivre en Espagne.",
+    "right": "Dans 40 ans, je vivrai en Espagne.",
+    "why": "Un futur très éloigné demande le futur simple, pas le futur proche."
+   },
+   "tip": "Test rapide : si vous pouvez ajouter « c'est déjà décidé », prenez le futur proche. Si vous pouvez ajouter « un jour », prenez le futur simple."
+  },
+  {
+   "id": "articles-partitifs",
+   "level": "B2",
+   "title": "Les articles partitifs : du, de la, de l', des",
+   "minutes": 3,
+   "explanation": "Le partitif exprime une quantité non comptée : du temps, de la patience, de l'organisation, des efforts. Il devient « de » après une négation, après une expression de quantité, et devant un adjectif pluriel placé avant le nom. Au niveau B2, ce sont les exceptions qui comptent : « ce n'est pas du… », « ne … que », « la plupart des », « bien des ».",
+   "expressions": [
+    "du + masculin singulier : du travail, du temps",
+    "de la + féminin singulier : de la patience, de la flexibilité",
+    "de l' + voyelle ou h muet : de l'organisation, de l'accompagnement",
+    "des + pluriel : des efforts, des informations",
+    "de / d' après négation ou quantité : pas de temps, beaucoup d'efforts",
+    "ne … que + article complet : nous n'avons que des retours positifs",
+    "ce n'est pas + article complet : ce n'est pas du temps perdu",
+    "la plupart des / bien des : exceptions aux expressions de quantité",
+    "sans / manquer de / avoir besoin de + nom sans article : nous manquons de données"
+   ],
+   "vocabulary": [
+    {
+     "term": "une quantité indéterminée",
+     "gloss": "une quantité qu'on ne compte pas"
+    },
+    {
+     "term": "manquer de",
+     "gloss": "ne pas avoir assez de"
+    },
+    {
+     "term": "avoir besoin de",
+     "gloss": "nécessiter"
+    },
+    {
+     "term": "assez de / trop de / beaucoup de",
+     "gloss": "expressions de quantité, toujours suivies de « de »"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Affirmatif",
+     "text": "Ce projet demande de la flexibilité et de l'organisation."
+    },
+    {
+     "label": "Négatif",
+     "text": "Nous n'avons pas de temps pour une deuxième version."
+    },
+    {
+     "label": "Quantité",
+     "text": "Il reste encore des efforts à faire, mais nous produisons moins de déchets."
+    },
+    {
+     "label": "Adjectif avant le nom pluriel",
+     "text": "On trouve de petites entreprises dans ce secteur. (et non « des petites »)"
+    },
+    {
+     "label": "Après « comme » ou « être »",
+     "text": "Cette pause n'est jamais perçue comme du temps perdu."
+    },
+    {
+     "label": "Restriction, pas négation",
+     "text": "Nous n'avons reçu que des retours positifs."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je n'ai pas du temps.",
+    "right": "Je n'ai pas de temps.",
+    "why": "Après une négation, du / de la / des deviennent « de ». Exception : après le verbe être (« Ce n'est pas du travail sérieux »)."
+   },
+   "tip": "Cinq pièges à mémoriser : la négation (pas de), la quantité (beaucoup de), l'adjectif pluriel antéposé (de petites), et deux cas où l'article reste complet : « ce n'est pas du… » et « ne … que des… »."
+  },
+  {
+   "id": "demandes-polies",
+   "level": "A2",
+   "title": "Les demandes polies",
+   "minutes": 2,
+   "explanation": "Au travail, on ne donne pas d'ordre : on pose une question polie. « Pouvez-vous… ? » est poli. « Pourriez-vous… ? » est encore plus poli. Pour un souhait, on dit « Je voudrais… » ou « J'aimerais… ».",
+   "expressions": [
+    "Pouvez-vous m'envoyer… ?",
+    "Pourriez-vous m'aider… ?",
+    "Je voudrais… / J'aimerais…",
+    "Est-ce que je peux… ?",
+    "… avant 15 h / avant vendredi",
+    "Merci d'avance. / Merci beaucoup !"
+   ],
+   "vocabulary": [
+    {
+     "term": "un document",
+     "gloss": "un fichier ou un papier"
+    },
+    {
+     "term": "envoyer",
+     "gloss": "faire partir un message ou un fichier"
+    },
+    {
+     "term": "une demande",
+     "gloss": "ce qu'on demande à quelqu'un"
+    },
+    {
+     "term": "avant 15 h",
+     "gloss": "pas plus tard que 15 h"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Trop direct",
+     "text": "Envoyez-moi le fichier."
+    },
+    {
+     "label": "Poli",
+     "text": "Pouvez-vous m'envoyer le fichier ?"
+    },
+    {
+     "label": "Très poli",
+     "text": "Pourriez-vous m'envoyer le fichier avant 15 h ? Merci !"
+    }
+   ],
+   "mistake": {
+    "wrong": "Je veux le rapport.",
+    "right": "Je voudrais le rapport, s'il vous plaît.",
+    "why": "« Je veux » est trop direct au travail. « Je voudrais » est poli."
+   },
+   "tip": "Ajoutez un jour ou une heure : « avant 15 h », « avant vendredi ». La personne sait quand agir."
+  },
+  {
+   "id": "donner-son-opinion",
+   "level": "B1",
+   "title": "Donner son opinion",
+   "minutes": 2,
+   "explanation": "Une opinion B1 comporte trois éléments : l'expression d'introduction, l'opinion, et la raison. C'est la raison qui fait la différence entre un avis professionnel et une simple préférence.",
+   "expressions": [
+    "À mon avis…",
+    "Je pense que…",
+    "Selon moi…",
+    "De mon point de vue…",
+    "J'ai l'impression que…",
+    "Il me semble que…",
+    "Je suis tout à fait d'accord.",
+    "C'est une bonne remarque."
+   ],
+   "vocabulary": [
+    {
+     "term": "une priorité",
+     "gloss": "ce qui compte le plus"
+    },
+    {
+     "term": "un impact",
+     "gloss": "l'effet produit"
+    },
+    {
+     "term": "un risque",
+     "gloss": "ce qui peut mal tourner"
+    },
+    {
+     "term": "un avantage",
+     "gloss": "un point positif"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Opinion seule",
+     "text": "Je pense qu'il faut attendre."
+    },
+    {
+     "label": "Opinion + raison",
+     "text": "Je pense qu'il faut attendre, parce que les données du trimestre ne sont pas complètes."
+    },
+    {
+     "label": "Appuyer quelqu'un",
+     "text": "Je rejoins ce que dit Marta : le calendrier est trop serré."
+    }
+   ],
+   "mistake": {
+    "wrong": "Selon moi, je pense que…",
+    "right": "Selon moi, … / Je pense que…",
+    "why": "Les deux expressions font le même travail. On en choisit une seule."
+   },
+   "tip": "Donnez la raison avant qu'on vous la demande. Cela divise par deux le nombre de questions de relance."
+  },
+  {
+   "id": "desaccord-poli",
+   "level": "B2",
+   "title": "Exprimer un désaccord poliment",
+   "minutes": 2,
+   "explanation": "Le désaccord professionnel en français suit un schéma : reconnaître, puis nuancer, puis proposer. Dire simplement « non » est perçu comme agressif, même quand on a raison. Au niveau B2, on isole une réserve précise plutôt que de tout rejeter, et on propose une alternative qu'il est difficile de refuser.",
+   "expressions": [
+    "Je comprends votre point de vue, mais…",
+    "Je ne suis pas certain(e) d'être d'accord, parce que…",
+    "C'est juste, cependant…",
+    "Je le vois un peu différemment.",
+    "Je vous rejoins sur le principe ; ce qui m'inquiète, c'est…",
+    "Je crains que cela ne nous ralentisse. (subjonctif + « ne » explétif)",
+    "Pourrait-on essayer… et faire le point dans un mois ?"
+   ],
+   "vocabulary": [
+    {
+     "term": "une réserve",
+     "gloss": "une inquiétude qu'on peut justifier"
+    },
+    {
+     "term": "un compromis",
+     "gloss": "une solution où chacun cède"
+    },
+    {
+     "term": "une alternative",
+     "gloss": "une autre option"
+    },
+    {
+     "term": "nuancer",
+     "gloss": "rendre moins absolu"
+    },
+    {
+     "term": "le « ne » explétif",
+     "gloss": "un « ne » sans valeur négative, après « craindre que » ou « avant que »"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Trop brutal",
+     "text": "Non, ça ne marchera pas."
+    },
+    {
+     "label": "Mieux",
+     "text": "Je comprends la logique, mais je crains que le calendrier ne soit trop serré."
+    },
+    {
+     "label": "Avec proposition",
+     "text": "Je comprends votre point de vue, mais je propose une autre solution : procéder en deux phases."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je suis pas d'accord avec toi.",
+    "right": "Je ne suis pas d'accord avec cette approche.",
+    "why": "À l'écrit professionnel, gardez le « ne » de la négation, et visez l'idée, pas la personne."
+   },
+   "tip": "Contestez l'idée, jamais la personne : « cette approche » plutôt que « votre approche »."
+  },
+  {
+   "id": "argumenter",
+   "level": "B2",
+   "title": "Argumenter",
+   "minutes": 3,
+   "explanation": "Argumenter, c'est enchaîner : annoncer sa position, donner deux arguments, illustrer par un exemple, conclure. Le plan compte plus que le vocabulaire. Il donne l'impression de maîtrise même avec une grammaire simple.",
+   "expressions": [
+    "D'abord… ensuite… enfin…",
+    "D'une part… d'autre part…",
+    "Premièrement… deuxièmement…",
+    "Par exemple, …",
+    "C'est pourquoi…",
+    "En revanche…",
+    "En conclusion, …"
+   ],
+   "vocabulary": [
+    {
+     "term": "un argument",
+     "gloss": "une raison qui soutient une position"
+    },
+    {
+     "term": "un contre-argument",
+     "gloss": "l'objection possible"
+    },
+    {
+     "term": "illustrer",
+     "gloss": "donner un exemple concret"
+    },
+    {
+     "term": "peser le pour et le contre",
+     "gloss": "comparer avantages et inconvénients"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Sans structure",
+     "text": "Je pense que c'est bien, il y a beaucoup de choses, ça dépend…"
+    },
+    {
+     "label": "Structuré",
+     "text": "Je suis favorable à cette solution pour deux raisons. D'une part, elle coûte moins cher. D'autre part, elle est plus rapide à mettre en place. Par exemple, l'an dernier, la même approche nous a fait gagner trois semaines."
+    }
+   ],
+   "mistake": {
+    "wrong": "Premièrement… premièrement… après… après…",
+    "right": "D'abord… ensuite… enfin…",
+    "why": "Les connecteurs doivent progresser. Répéter le même marque une argumentation qui tourne en rond."
+   },
+   "tip": "Annoncez le nombre d'arguments dès le début : « pour deux raisons ». Votre cerveau trouvera la deuxième."
+  },
+  {
+   "id": "proposer-conseiller",
+   "level": "A2",
+   "title": "Proposer et conseiller",
+   "minutes": 2,
+   "explanation": "Pour proposer une idée au groupe, on dit « Je propose de… » ou « On pourrait… ». Pour donner un conseil à une personne, on dit « Tu devrais… » ou « Vous devriez… ». Ces formes sont polies : l'autre décide.",
+   "expressions": [
+    "Je propose de + infinitif",
+    "On pourrait + infinitif",
+    "Et si on commençait à 9 h ?",
+    "Tu devrais / Vous devriez + infinitif",
+    "À votre place, je…",
+    "Bonne idée !"
+   ],
+   "vocabulary": [
+    {
+     "term": "une idée",
+     "gloss": "ce qu'on propose"
+    },
+    {
+     "term": "une solution",
+     "gloss": "ce qui règle un problème"
+    },
+    {
+     "term": "un conseil",
+     "gloss": "une idée pour aider une personne"
+    },
+    {
+     "term": "décider",
+     "gloss": "choisir"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Proposition",
+     "text": "Je propose de faire une pause."
+    },
+    {
+     "label": "Proposition",
+     "text": "On pourrait commencer à 10 h."
+    },
+    {
+     "label": "Conseil",
+     "text": "Tu devrais parler à Élodie aujourd'hui."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je propose à revoir le plan.",
+    "right": "Je propose de revoir le plan.",
+    "why": "On dit « proposer de » + infinitif. Jamais « proposer à »."
+   },
+   "tip": "« Vous devez » est un ordre. Pour un conseil, dites « vous devriez »."
+  },
+  {
+   "id": "s-excuser",
+   "level": "B2",
+   "title": "S'excuser au travail",
+   "minutes": 2,
+   "explanation": "Une excuse professionnelle nomme le problème, assume une responsabilité proportionnée, et passe immédiatement à la solution. Au niveau B2, tout est dans le dosage : assumer sa part sans endosser celle des autres, et éviter les formules perçues comme passives-agressives (« comme indiqué dans mon précédent message »).",
+   "expressions": [
+    "Je vous prie de m'excuser pour ce retard.",
+    "Je suis désolé(e) pour la confusion.",
+    "C'est mon erreur.",
+    "Merci de votre patience.",
+    "Voici ce que je mets en place :",
+    "Cela ne se reproduira pas.",
+    "J'aurais dû vous signaler ce risque plus tôt.",
+    "En reprenant le calendrier, il apparaît que…"
+   ],
+   "vocabulary": [
+    {
+     "term": "un désagrément",
+     "gloss": "la gêne causée à quelqu'un"
+    },
+    {
+     "term": "un oubli",
+     "gloss": "quelque chose oublié involontairement"
+    },
+    {
+     "term": "régler",
+     "gloss": "résoudre définitivement"
+    },
+    {
+     "term": "un geste commercial",
+     "gloss": "une compensation offerte au client"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Trop léger",
+     "text": "Désolé !"
+    },
+    {
+     "label": "Trop lourd",
+     "text": "Je suis absolument navré, je m'en veux terriblement, je comprends parfaitement si vous êtes furieux…"
+    },
+    {
+     "label": "Juste",
+     "text": "Je vous prie de m'excuser pour ce retard : c'est mon oubli. Le document vient de partir et j'ai ajouté un point de contrôle pour que cela ne se reproduise pas."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je m'excuse.",
+    "right": "Je vous prie de m'excuser. / Excusez-moi.",
+    "why": "On ne peut pas s'excuser soi-même : c'est l'autre qui excuse. « Je m'excuse » est courant à l'oral mais mal vu à l'écrit professionnel."
+   },
+   "tip": "Excusez-vous une fois, en une phrase. Consacrez tout le reste du message à la solution."
+  },
+  {
+   "id": "demander-precision",
+   "level": "B1",
+   "title": "Demander une précision",
+   "minutes": 2,
+   "explanation": "Demander une clarification est une force professionnelle. Mais formulez-la sur le message, jamais sur la personne qui l'a écrit.",
+   "expressions": [
+    "Juste pour être sûr(e) d'avoir bien compris…",
+    "Qu'entendez-vous exactement par… ?",
+    "Vous voulez dire X ou Y ?",
+    "Si je comprends bien, la priorité est X — c'est bien cela ?",
+    "Je souhaite vérifier un point avant de commencer."
+   ],
+   "vocabulary": [
+    {
+     "term": "un brief / un cahier des charges",
+     "gloss": "les consignes d'un travail"
+    },
+    {
+     "term": "le périmètre",
+     "gloss": "ce qui est inclus dans le travail"
+    },
+    {
+     "term": "un livrable",
+     "gloss": "ce qu'il faut produire"
+    },
+    {
+     "term": "une hypothèse",
+     "gloss": "ce qu'on suppose sans vérifier"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Accusateur",
+     "text": "Votre brief n'est pas clair."
+    },
+    {
+     "label": "Mieux",
+     "text": "Je souhaite vérifier un point du brief avant de commencer."
+    },
+    {
+     "label": "Avec options",
+     "text": "Petite vérification : le rapport doit-il couvrir le T3 seulement, ou le T3 et le T4 ? Je pars sur le T3."
+    }
+   ],
+   "mistake": {
+    "wrong": "Est-ce que vous pouvez m'expliquer le processus ?",
+    "right": "Pourriez-vous m'expliquer le processus ?",
+    "why": "Correct mais plat. Le conditionnel rend la demande nettement plus professionnelle."
+   },
+   "tip": "Proposez votre hypothèse dans la question. Vous transformez une question en décision à dix secondes."
+  },
+  {
+   "id": "negocier",
+   "level": "B2",
+   "title": "Négocier",
+   "minutes": 3,
+   "explanation": "La langue de la négociation est conditionnelle. On dit rarement ce qu'on veut ; on dit ce qui deviendrait possible si autre chose changeait.",
+   "expressions": [
+    "Si nous pouvions…, nous serions en mesure de…",
+    "Seriez-vous ouvert à… ?",
+    "Cela me convient, à condition que…",
+    "Je peux faire X si Y bouge.",
+    "Quelle est votre marge de manœuvre ?",
+    "Compte tenu des responsabilités du poste, je me situe autour de…"
+   ],
+   "vocabulary": [
+    {
+     "term": "le salaire brut / net",
+     "gloss": "avant / après charges"
+    },
+    {
+     "term": "la rémunération globale",
+     "gloss": "salaire plus avantages"
+    },
+    {
+     "term": "une marge de manœuvre",
+     "gloss": "la flexibilité disponible"
+    },
+    {
+     "term": "une contre-proposition",
+     "gloss": "une offre différente en réponse"
+    },
+    {
+     "term": "les avantages",
+     "gloss": "ce qui s'ajoute au salaire"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Exigeant",
+     "text": "Il me faut plus d'argent."
+    },
+    {
+     "label": "Mieux",
+     "text": "Compte tenu des responsabilités du poste, je me situe dans une fourchette de 45 à 50 000 euros."
+    },
+    {
+     "label": "Échange",
+     "text": "Je pourrais accepter 43 000 s'il y a une révision à six mois."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je veux que vous augmentez le salaire.",
+    "right": "Je souhaiterais que vous réexaminiez le montant.",
+    "why": "« Vouloir que » et « souhaiter que » exigent le subjonctif, et le conditionnel adoucit la demande."
+   },
+   "tip": "Ne donnez jamais un chiffre sans y attacher une raison. C'est la raison qui rend le chiffre négociable plutôt qu'émotionnel."
+  },
+  {
+   "id": "expliquer-probleme",
+   "level": "B1",
+   "title": "Expliquer un problème",
+   "minutes": 2,
+   "explanation": "L'ordre professionnel est : ce qui s'est passé, l'impact, ce que vous faites déjà, ce dont vous avez besoin. Commencer par l'excuse fait perdre l'attention de la salle.",
+   "expressions": [
+    "Le problème, c'est que…",
+    "Ce qui s'est passé, c'est que…",
+    "Par conséquent…",
+    "L'impact est le suivant :",
+    "Voici ce que j'ai déjà fait :",
+    "Ce dont j'ai besoin de votre part, c'est…"
+   ],
+   "vocabulary": [
+    {
+     "term": "un incident",
+     "gloss": "un problème, dit de façon neutre"
+    },
+    {
+     "term": "la cause racine",
+     "gloss": "la vraie raison sous-jacente"
+    },
+    {
+     "term": "une panne",
+     "gloss": "un arrêt technique"
+    },
+    {
+     "term": "faire remonter",
+     "gloss": "signaler à un niveau supérieur"
+    },
+    {
+     "term": "l'interruption de service",
+     "gloss": "le temps où le système ne fonctionne pas"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Excuse d'abord",
+     "text": "Ce n'est pas ma faute, le fournisseur était en retard et personne ne m'a prévenu…"
+    },
+    {
+     "label": "Mieux",
+     "text": "La livraison a deux jours de retard. Cela décale les tests à jeudi. J'ai demandé une date ferme au fournisseur et je confirme avant 14 h."
+    }
+   ],
+   "mistake": {
+    "wrong": "Le problème est arrivé à cause de moi, je suis désolé, vraiment désolé…",
+    "right": "Le problème vient d'une erreur de ma part. Voici la correction.",
+    "why": "L'excuse répétée déplace l'attention sur vos émotions au lieu de la solution."
+   },
+   "tip": "Une mauvaise nouvelle voyage mieux tôt et courte. Un paragraphe vaut mieux qu'une longue excuse envoyée tard."
+  },
+  {
+   "id": "feedback-fr",
+   "level": "B2",
+   "title": "Donner et recevoir un retour",
+   "minutes": 3,
+   "explanation": "Un retour utile porte sur un travail observable, pas sur une personnalité. À la réception, le réflexe professionnel est de poser une question de clarification avant de répondre.",
+   "expressions": [
+    "Ce qui fonctionne très bien, c'est…",
+    "Je suggérerais de modifier…",
+    "Avez-vous pensé à… ?",
+    "Ce qui rendrait ce travail plus solide, c'est…",
+    "Merci, c'est utile.",
+    "Pourriez-vous me donner un exemple ?",
+    "Je vais y réfléchir et je reviens vers vous."
+   ],
+   "vocabulary": [
+    {
+     "term": "constructif",
+     "gloss": "destiné à aider"
+    },
+    {
+     "term": "une révision",
+     "gloss": "une version modifiée"
+    },
+    {
+     "term": "un brouillon",
+     "gloss": "une première version"
+    },
+    {
+     "term": "un point fort / un point à améliorer",
+     "gloss": "qualité / axe de progrès"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Sur la personne",
+     "text": "Tu es négligent."
+    },
+    {
+     "label": "Sur le travail",
+     "text": "Trois chiffres du tableau ne correspondent pas à l'annexe."
+    },
+    {
+     "label": "Bien recevoir",
+     "text": "Merci — pourriez-vous me montrer le passage dont vous parlez ?"
+    }
+   ],
+   "mistake": {
+    "wrong": "Tu as fait une faute dans le rapport, tu fais toujours ça.",
+    "right": "Il y a une erreur page 3 dans le total du T2.",
+    "why": "« Toujours » et « jamais » transforment un retour en reproche."
+   },
+   "tip": "Ne vous défendez jamais dans la minute où vous recevez une critique. « Je regarde et je reviens vers vous » vous fait gagner un jour et ne coûte rien."
+  },
+  {
+   "id": "langue-reunion",
+   "level": "B1",
+   "title": "La langue de la réunion",
+   "minutes": 2,
+   "explanation": "Les réunions ont leurs signaux verbaux : entrer dans la conversation, garder la parole, conclure. Maîtriser ces signaux permet de participer à un niveau supérieur à sa grammaire.",
+   "expressions": [
+    "Puis-je ajouter quelque chose ?",
+    "Je peux intervenir sur ce point ?",
+    "Pour rebondir sur ce que dit Marta…",
+    "Une précision avant qu'on passe à la suite ?",
+    "Pour résumer, …",
+    "Les actions sont les suivantes : …",
+    "On peut en reparler après la réunion ?"
+   ],
+   "vocabulary": [
+    {
+     "term": "l'ordre du jour",
+     "gloss": "la liste des points à traiter"
+    },
+    {
+     "term": "le compte rendu",
+     "gloss": "le document qui résume la réunion"
+    },
+    {
+     "term": "une action / un point d'action",
+     "gloss": "une tâche décidée en réunion"
+    },
+    {
+     "term": "animer une réunion",
+     "gloss": "la diriger"
+    },
+    {
+     "term": "un relevé de décisions",
+     "gloss": "la liste de ce qui a été décidé"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Interruption maladroite",
+     "text": "Non, écoutez —"
+    },
+    {
+     "label": "Interruption réussie",
+     "text": "Pardon de vous interrompre — puis-je ajouter un point sur le budget ?"
+    },
+    {
+     "label": "Conclusion",
+     "text": "Pour résumer : Ana envoie le brouillon mardi, je relis jeudi, on décide vendredi."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je veux dire quelque chose pour le budget.",
+    "right": "Je voudrais dire un mot sur le budget.",
+    "why": "On parle « de » ou « sur » un sujet, jamais « pour », et le conditionnel adoucit."
+   },
+   "tip": "Dites le prénom de la personne avant de la contredire. Cela transforme une attaque en conversation."
+  },
+  {
+   "id": "dire-non",
+   "level": "B2",
+   "title": "Dire non professionnellement",
+   "minutes": 2,
+   "explanation": "Un « non » professionnel n'est jamais seulement « non ». Il contient une raison, une alternative ou une condition. C'est pourquoi il abîme rarement la relation. Au niveau B2, on transforme le refus en question de priorités et on rend le choix à l'autre.",
+   "expressions": [
+    "J'aimerais aider, mais je suis au maximum cette semaine.",
+    "Je ne peux pas le faire pour vendredi — je peux pour mardi.",
+    "Ce n'est pas quelque chose que je peux m'engager à faire maintenant.",
+    "Si X bouge, je peux faire Y.",
+    "Laissez-moi voir ce que je peux faire de réaliste.",
+    "Je pourrais m'en charger, à condition que le dossier Ortiz soit décalé.",
+    "Lequel des deux passe en premier, selon vous ?"
+   ],
+   "vocabulary": [
+    {
+     "term": "la charge de travail",
+     "gloss": "la quantité de travail"
+    },
+    {
+     "term": "être surchargé",
+     "gloss": "avoir trop de travail"
+    },
+    {
+     "term": "s'engager à",
+     "gloss": "promettre fermement"
+    },
+    {
+     "term": "réorganiser les priorités",
+     "gloss": "changer l'ordre de ce qui compte"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Flou",
+     "text": "Je vais essayer."
+    },
+    {
+     "label": "Non clair",
+     "text": "Je ne peux pas pour vendredi. Je peux vous le remettre mardi matin."
+    },
+    {
+     "label": "Non conditionnel",
+     "text": "Je peux le prendre si le dossier Ortiz passe à la semaine prochaine. Que préférez-vous ?"
+    }
+   ],
+   "mistake": {
+    "wrong": "Je n'ai pas du temps.",
+    "right": "Je n'ai pas de temps.",
+    "why": "Après une négation, le partitif « du » devient « de »."
+   },
+   "tip": "Donnez une date à votre non. Un « non » accompagné d'une vraie date alternative est entendu comme un engagement, pas comme un refus."
+  },
+  {
+   "id": "echanges-informels",
+   "level": "A2",
+   "title": "Les échanges informels",
+   "minutes": 2,
+   "explanation": "Au travail, on parle aussi de choses simples : la semaine, le week-end, un voyage. Ces petites conversations créent de bonnes relations. Répondez, puis posez une question.",
+   "expressions": [
+    "Ça va ? Ta semaine se passe bien ?",
+    "Tu as passé un bon week-end ?",
+    "Et toi ? / Et vous ?",
+    "Vous travaillez dans quel service ?",
+    "Merci beaucoup, c'est gentil !",
+    "Avec plaisir !",
+    "Bonne journée ! / Bon week-end !"
+   ],
+   "vocabulary": [
+    {
+     "term": "un collègue",
+     "gloss": "une personne qui travaille avec vous"
+    },
+    {
+     "term": "la pause-café",
+     "gloss": "un petit moment pour boire un café et parler"
+    },
+    {
+     "term": "remercier",
+     "gloss": "dire merci"
+    },
+    {
+     "term": "une question ouverte",
+     "gloss": "une question qui demande plus que « oui » ou « non »"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Question fermée",
+     "text": "Ça va ? — Oui."
+    },
+    {
+     "label": "Question ouverte",
+     "text": "Comment se passe ta semaine ?"
+    },
+    {
+     "label": "Remercier",
+     "text": "Merci pour ton aide hier, c'est très gentil !"
+    }
+   ],
+   "mistake": {
+    "wrong": "Bonjour. — Bonjour. (et puis silence)",
+    "right": "Bonjour ! Ta semaine se passe bien ?",
+    "why": "Une petite question simple continue la conversation."
+   },
+   "tip": "Répondez, puis renvoyez la question : « Oui, très bien, merci. Et toi ? »"
+  },
+  {
+   "id": "se-presenter",
+   "level": "A2",
+   "title": "Se présenter au travail",
+   "minutes": 2,
+   "explanation": "Pour vous présenter, dites trois choses : votre nom, votre poste, et ce que vous faites. Faites des phrases courtes. Trente secondes suffisent.",
+   "expressions": [
+    "Je m'appelle…",
+    "Je suis + métier : je suis comptable.",
+    "Je travaille chez… / dans le service…",
+    "Je m'occupe de…",
+    "Je suis nouveau / nouvelle dans l'équipe.",
+    "Enchanté(e) !"
+   ],
+   "vocabulary": [
+    {
+     "term": "un poste",
+     "gloss": "le travail qu'on a dans l'entreprise"
+    },
+    {
+     "term": "un service",
+     "gloss": "une partie de l'entreprise : le service client, la comptabilité"
+    },
+    {
+     "term": "s'occuper de",
+     "gloss": "avoir la responsabilité de"
+    },
+    {
+     "term": "une équipe",
+     "gloss": "les personnes qui travaillent ensemble"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Trop court",
+     "text": "Je suis Camille."
+    },
+    {
+     "label": "Mieux",
+     "text": "Bonjour, je m'appelle Camille Roux. Je suis assistante commerciale chez Vidal. Je m'occupe des clients espagnols."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je suis un ingénieur.",
+    "right": "Je suis ingénieur.",
+    "why": "Après « je suis », pas d'article devant un métier."
+   },
+   "tip": "Finissez par une phrase aimable : « Je suis content(e) de travailler avec vous. »"
+  },
+  {
+   "id": "registre",
+   "level": "A2",
+   "title": "Tu ou vous ?",
+   "minutes": 3,
+   "explanation": "En français, on dit « tu » ou « vous ». Au travail, on dit « vous » à un client, à un supérieur et à une personne qu'on ne connaît pas. On dit « tu » à un collègue proche. Gardez le même choix dans tout le message.",
+   "expressions": [
+    "Avec « vous » : Bonjour Madame… / Pouvez-vous… ? / Cordialement",
+    "Avec « tu » : Salut Marc / Tu peux… ? / À bientôt",
+    "On peut se tutoyer ?"
+   ],
+   "vocabulary": [
+    {
+     "term": "vouvoyer",
+     "gloss": "dire « vous »"
+    },
+    {
+     "term": "tutoyer",
+     "gloss": "dire « tu »"
+    },
+    {
+     "term": "formel",
+     "gloss": "pour un client ou un supérieur"
+    },
+    {
+     "term": "familier",
+     "gloss": "pour un ami ou un collègue proche"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Cliente",
+     "text": "Bonjour Madame Lemoine, pouvez-vous me confirmer la date ? Cordialement, Camille Roux"
+    },
+    {
+     "label": "Collègue proche",
+     "text": "Salut Marc, tu peux me confirmer la date ? Merci !"
+    },
+    {
+     "label": "Mélange à éviter",
+     "text": "Bonjour Madame, salut, tu peux…"
+    }
+   ],
+   "mistake": {
+    "wrong": "Bonjour Monsieur, tu peux m'envoyer le dossier ?",
+    "right": "Bonjour Monsieur, pouvez-vous m'envoyer le dossier ?",
+    "why": "Ne mélangez pas « tu » et « vous » dans le même message."
+   },
+   "tip": "Vous hésitez ? Dites « vous ». C'est toujours poli."
+  },
+  {
+   "id": "attenuer",
+   "level": "B2",
+   "title": "Atténuer et nuancer",
+   "minutes": 2,
+   "explanation": "Le français professionnel atténue beaucoup. Le conditionnel, « il me semble », « un peu » laissent à l'autre la place de ne pas être d'accord. Trop peu et vous paraissez agressif ; trop et vous ne semblez pas croire à ce que vous dites.",
+   "expressions": [
+    "Il semblerait que…",
+    "Je dirais plutôt…",
+    "Il y a peut-être un risque que…",
+    "légèrement / un peu / quelque peu",
+    "Je me trompe peut-être, mais…",
+    "Corrigez-moi si je me trompe, mais…"
+   ],
+   "vocabulary": [
+    {
+     "term": "atténuer",
+     "gloss": "rendre moins fort"
+    },
+    {
+     "term": "nuancer",
+     "gloss": "rendre moins absolu"
+    },
+    {
+     "term": "affirmatif",
+     "gloss": "clair et assuré, sans agressivité"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Trop dur",
+     "text": "C'est faux."
+    },
+    {
+     "label": "Atténué",
+     "text": "Il me semble qu'il y a une erreur dans la deuxième colonne."
+    },
+    {
+     "label": "Trop atténué — à éviter",
+     "text": "Je suis vraiment désolé, c'est sûrement moi, mais il y aurait peut-être éventuellement un petit souci ?"
+    }
+   ],
+   "mistake": {
+    "wrong": "Peut-être que probablement on pourrait éventuellement…",
+    "right": "On pourrait éventuellement…",
+    "why": "Une atténuation suffit. Les empiler détruit votre autorité."
+   },
+   "tip": "Atténuez l'affirmation, jamais l'engagement. « Ce sera peut-être jeudi » va ; « je l'enverrai peut-être jeudi » ne va pas."
+  },
+  {
+   "id": "ecrire-courriel",
+   "level": "B1",
+   "title": "Écrire un courriel professionnel",
+   "minutes": 3,
+   "explanation": "Un courriel professionnel a une forme prévisible : objet, formule d'appel, objectif dès la première ligne, détail, action datée, formule de politesse. Le lecteur cherche l'action : mettez-la où il la trouvera.",
+   "expressions": [
+    "Objet : Rapport T3 — vos chiffres avant jeudi 14",
+    "Bonjour Madame Lemoine,",
+    "Je me permets de vous écrire au sujet de…",
+    "Pourriez-vous me confirmer avant jeudi ?",
+    "Vous trouverez ci-joint…",
+    "Je reste à votre disposition.",
+    "Bien cordialement, / Cordialement,"
+   ],
+   "vocabulary": [
+    {
+     "term": "l'objet",
+     "gloss": "le titre du message"
+    },
+    {
+     "term": "une pièce jointe",
+     "gloss": "un fichier envoyé avec le message"
+    },
+    {
+     "term": "mettre en copie",
+     "gloss": "ajouter quelqu'un en Cc"
+    },
+    {
+     "term": "le destinataire",
+     "gloss": "la personne qui reçoit"
+    },
+    {
+     "term": "une relance",
+     "gloss": "un message de rappel"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Objet inutile",
+     "text": "Objet : Question"
+    },
+    {
+     "label": "Objet utile",
+     "text": "Objet : Rapport T3 — vos chiffres avant jeudi 14"
+    },
+    {
+     "label": "Relance efficace",
+     "text": "Bonjour Marc, je me permets de relancer au sujet du devis Vidal. Auriez-vous une réponse d'ici jeudi ? Merci d'avance."
+    }
+   ],
+   "mistake": {
+    "wrong": "Bonjour, Cordialement. (sans objet, sans action)",
+    "right": "Un objet précis + une demande datée.",
+    "why": "Un message sans objet et sans date d'action génère systématiquement un échange supplémentaire."
+   },
+   "tip": "Mettez l'échéance dans l'objet. C'est la seule partie que tout le monde lit."
+  },
+  {
+   "id": "ecriture-asynchrone",
+   "level": "B1",
+   "title": "Écrire en asynchrone",
+   "minutes": 2,
+   "explanation": "Les messages de chat et les points asynchrones se lisent vite, souvent sur téléphone, souvent par quelqu'un décalé de huit heures. Mettez l'essentiel en premier et rendez la demande impossible à manquer.",
+   "expressions": [
+    "Info :",
+    "Sans urgence, mais…",
+    "Bloqué sur :",
+    "J'ai besoin d'une décision avant ce soir.",
+    "Contexte dans le fil ↓",
+    "Je te mets en copie pour information."
+   ],
+   "vocabulary": [
+    {
+     "term": "asynchrone",
+     "gloss": "pas en même temps"
+    },
+    {
+     "term": "un point bloquant",
+     "gloss": "ce qui empêche d'avancer"
+    },
+    {
+     "term": "un fil de discussion",
+     "gloss": "une suite de messages liés"
+    },
+    {
+     "term": "le fuseau horaire",
+     "gloss": "l'heure locale de l'autre"
+    },
+    {
+     "term": "en visio",
+     "gloss": "en visioconférence"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Difficile à traiter",
+     "text": "Salut ! Quand tu as un moment on pourrait peut-être parler du truc d'hier ?"
+    },
+    {
+     "label": "Mieux",
+     "text": "J'ai besoin d'un oui/non sur le devis Vidal avant ce soir (heure de Paris) — détails dans le fil."
+    }
+   ],
+   "mistake": {
+    "wrong": "Bonjour. / Tu es là ?",
+    "right": "Bonjour Ana — question rapide sur le devis Vidal : on valide à 4 200 € ?",
+    "why": "N'envoyez jamais une salutation seule. Vous forcez l'autre à attendre pour savoir ce que vous voulez."
+   },
+   "tip": "Écrivez le point pour qu'on puisse agir sans vous poser une seule question."
+  },
+  {
+   "id": "compte-rendu",
+   "level": "B2",
+   "title": "Rédiger un compte rendu",
+   "minutes": 3,
+   "explanation": "Un compte rendu est lu par des gens sans temps et sans contexte. Le premier paragraphe doit tenir seul : ce qui s'est passé, ce que cela signifie, ce que vous recommandez.",
+   "expressions": [
+    "Ce compte rendu porte sur…",
+    "Le principal constat est…",
+    "Globalement, …",
+    "Les données montrent que…",
+    "Nous recommandons de…",
+    "Un travail complémentaire sera nécessaire sur…"
+   ],
+   "vocabulary": [
+    {
+     "term": "un constat",
+     "gloss": "ce qu'on a observé"
+    },
+    {
+     "term": "une recommandation",
+     "gloss": "ce qu'on conseille de faire"
+    },
+    {
+     "term": "une synthèse",
+     "gloss": "la version courte"
+    },
+    {
+     "term": "une annexe",
+     "gloss": "le détail placé à la fin"
+    },
+    {
+     "term": "le périmètre",
+     "gloss": "ce que le document couvre ou non"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Conclusion enterrée",
+     "text": "D'abord nous avons collecté les données, puis analysé… c'est pourquoi nous recommandons l'option B."
+    },
+    {
+     "label": "Mieux",
+     "text": "Nous recommandons l'option B. Ce document présente les deux options, leur coût et le raisonnement."
+    }
+   ],
+   "mistake": {
+    "wrong": "Dans ce rapport je vais parler de plusieurs choses.",
+    "right": "Ce compte rendu couvre les deux options fournisseurs et recommande la seconde.",
+    "why": "Un compte rendu annonce sa conclusion. Il ne ménage pas le suspense."
+   },
+   "tip": "Rédigez la synthèse en dernier, puis placez-la en premier."
+  },
+  {
+   "id": "connecteurs",
+   "level": "B1",
+   "title": "Les connecteurs logiques",
+   "minutes": 3,
+   "explanation": "Les connecteurs transforment une liste de phrases en raisonnement. Au niveau B1, c'est aussi le moyen le plus rapide de paraître plus avancé que sa grammaire.",
+   "expressions": [
+    "Ajouter : de plus, en outre, par ailleurs, également",
+    "Opposer : cependant, pourtant, en revanche, alors que, bien que + subjonctif",
+    "Illustrer : par exemple, notamment, comme",
+    "Conséquence : donc, par conséquent, c'est pourquoi, ainsi",
+    "Conclure : en conclusion, en somme, pour résumer, finalement"
+   ],
+   "vocabulary": [
+    {
+     "term": "cependant",
+     "gloss": "introduit une opposition"
+    },
+    {
+     "term": "bien que",
+     "gloss": "concession — suivi du subjonctif"
+    },
+    {
+     "term": "alors que",
+     "gloss": "compare deux faits différents"
+    },
+    {
+     "term": "par conséquent",
+     "gloss": "introduit un résultat logique"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Sans connecteur",
+     "text": "Les transports en commun sont moins chers. La voiture est plus confortable."
+    },
+    {
+     "label": "Opposition",
+     "text": "Les transports en commun sont moins chers. En revanche, la voiture est plus confortable."
+    },
+    {
+     "label": "Concession",
+     "text": "Bien qu'il soit fatigué, il a terminé le dossier."
+    }
+   ],
+   "mistake": {
+    "wrong": "Bien qu'il est fatigué…",
+    "right": "Bien qu'il soit fatigué…",
+    "why": "« Bien que » est toujours suivi du subjonctif."
+   },
+   "tip": "Trois connecteurs par paragraphe suffisent. Au-delà, cela ressemble à un exercice de grammaire."
+  },
+  {
+   "id": "temps-au-travail",
+   "level": "B1",
+   "title": "Les temps du passé au travail",
+   "minutes": 3,
+   "explanation": "Le passé composé raconte les actions terminées et les événements ; l'imparfait décrit le contexte, les habitudes et les situations en cours. Dans un compte rendu, on alterne constamment les deux.",
+   "expressions": [
+    "Nous avons envoyé la facture lundi. (action terminée)",
+    "Nous travaillions sur le dossier quand le client a appelé. (contexte + événement)",
+    "Avant, nous faisions les points chaque lundi. (habitude passée)",
+    "J'ai relu le rapport hier soir."
+   ],
+   "vocabulary": [
+    {
+     "term": "une habitude",
+     "gloss": "ce qu'on faisait régulièrement"
+    },
+    {
+     "term": "un événement ponctuel",
+     "gloss": "une action unique et datée"
+    },
+    {
+     "term": "le contexte",
+     "gloss": "la situation autour"
+    },
+    {
+     "term": "en cours",
+     "gloss": "qui continue"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Action datée",
+     "text": "Nous avons lancé la campagne en mars."
+    },
+    {
+     "label": "Description",
+     "text": "L'équipe était en sous-effectif et le budget était serré."
+    },
+    {
+     "label": "Les deux ensemble",
+     "text": "Je relisais le contrat quand j'ai remarqué l'erreur."
+    }
+   ],
+   "mistake": {
+    "wrong": "Hier, je travaillais tard et je finissais le rapport.",
+    "right": "Hier, je travaillais tard quand j'ai fini le rapport. / Hier, j'ai travaillé tard et j'ai fini le rapport.",
+    "why": "Une action terminée et datée demande le passé composé, pas l'imparfait."
+   },
+   "tip": "Testez avec « et puis ». Si « et puis » fonctionne, c'est du passé composé. Sinon, c'est de l'imparfait."
+  },
+  {
+   "id": "conditionnel",
+   "level": "B1",
+   "title": "Le conditionnel et l'hypothèse",
+   "minutes": 3,
+   "explanation": "Le conditionnel a deux usages professionnels majeurs : la politesse (je voudrais, pourriez-vous) et l'hypothèse (si + imparfait, conditionnel). C'est le temps de la négociation, car il n'engage à rien.",
+   "expressions": [
+    "Je voudrais… / J'aimerais…",
+    "Pourriez-vous… ? / Auriez-vous… ?",
+    "Si nous avions plus de budget, nous embaucherions un freelance.",
+    "Si le client accepte, nous commencerons lundi. (hypothèse réelle)",
+    "Ce serait possible à condition que…"
+   ],
+   "vocabulary": [
+    {
+     "term": "une hypothèse",
+     "gloss": "une situation supposée"
+    },
+    {
+     "term": "une condition",
+     "gloss": "ce qui doit être vrai d'abord"
+    },
+    {
+     "term": "à condition que",
+     "gloss": "seulement si — suivi du subjonctif"
+    },
+    {
+     "term": "sauf si",
+     "gloss": "excepté dans le cas où"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Hypothèse réelle",
+     "text": "Si nous commençons lundi, nous finirons le 14."
+    },
+    {
+     "label": "Hypothèse irréelle",
+     "text": "Si j'avais plus de temps, je referais l'analyse."
+    },
+    {
+     "label": "Politesse",
+     "text": "Je voudrais revenir sur un point du contrat."
+    }
+   ],
+   "mistake": {
+    "wrong": "Si j'aurais le temps, je le ferais.",
+    "right": "Si j'avais le temps, je le ferais.",
+    "why": "Jamais de conditionnel après « si ». Si + imparfait → conditionnel présent."
+   },
+   "tip": "Le conditionnel est l'outil de négociation le plus sûr : « Si nous pouvions décaler la date, je serais en mesure de… » n'engage à rien."
+  },
+  {
+   "id": "subjonctif",
+   "level": "B1",
+   "title": "Le subjonctif de base et l'impératif",
+   "minutes": 3,
+   "explanation": "Le subjonctif apparaît après les verbes de volonté, d'émotion et de nécessité. Très fréquents au travail. L'impératif, lui, donne des consignes : efficace, mais à adoucir en contexte professionnel.",
+   "expressions": [
+    "Il faut que nous finissions avant vendredi.",
+    "Je voudrais que vous relisiez le document.",
+    "Bien que ce soit difficile…",
+    "avant que / à condition que / pour que + subjonctif",
+    "Merci de bien vouloir relire le document. (impératif adouci)"
+   ],
+   "vocabulary": [
+    {
+     "term": "il faut que",
+     "gloss": "expression de nécessité — suivi du subjonctif"
+    },
+    {
+     "term": "une consigne",
+     "gloss": "une instruction"
+    },
+    {
+     "term": "vouloir que",
+     "gloss": "volonté — suivi du subjonctif"
+    },
+    {
+     "term": "regretter que",
+     "gloss": "émotion — suivi du subjonctif"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Nécessité",
+     "text": "Il faut que je parte avant 17 h."
+    },
+    {
+     "label": "Volonté",
+     "text": "Je souhaiterais que vous soyez présent à la réunion."
+    },
+    {
+     "label": "Consigne adoucie",
+     "text": "Merci de bien vouloir confirmer avant jeudi."
+    }
+   ],
+   "mistake": {
+    "wrong": "Il faut que je peux finir.",
+    "right": "Il faut que je puisse finir.",
+    "why": "Après « il faut que », on emploie le subjonctif : que je puisse, que je fasse, que je sois, que j'aie."
+   },
+   "tip": "Cinq subjonctifs irréguliers couvrent 80 % des besoins : sois, aie, fasse, puisse, aille."
+  },
+  {
+   "id": "pronoms",
+   "level": "B1",
+   "title": "Pronoms compléments et négation",
+   "minutes": 3,
+   "explanation": "Les pronoms évitent les répétitions et rendent l'écrit professionnel plus fluide. Ils se placent avant le verbe, et avant l'infinitif quand il y en a un.",
+   "expressions": [
+    "le / la / les = complément direct : je le relis",
+    "lui / leur = complément indirect : je lui envoie",
+    "en = de + quelque chose : j'en ai besoin",
+    "y = à + lieu ou chose : j'y pense",
+    "Je vais le lui envoyer demain."
+   ],
+   "vocabulary": [
+    {
+     "term": "un complément direct",
+     "gloss": "sans préposition : voir quelqu'un"
+    },
+    {
+     "term": "un complément indirect",
+     "gloss": "avec à : parler à quelqu'un"
+    },
+    {
+     "term": "la négation",
+     "gloss": "ne … pas / ne … jamais / ne … plus / ne … rien"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Répétitif",
+     "text": "J'ai reçu le rapport et j'ai relu le rapport hier."
+    },
+    {
+     "label": "Avec pronom",
+     "text": "J'ai reçu le rapport et je l'ai relu hier."
+    },
+    {
+     "label": "Négation + futur proche",
+     "text": "Je ne vais pas le lui envoyer avant jeudi."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je vais lui envoyer pas le document.",
+    "right": "Je ne vais pas lui envoyer le document.",
+    "why": "Au futur proche, « ne … pas » encadre seulement ALLER ; les pronoms se placent après, devant l'infinitif."
+   },
+   "tip": "Ordre des pronoms : me/te/nous/vous → le/la/les → lui/leur → y → en."
+  },
+  {
+   "id": "comparer",
+   "level": "A2",
+   "title": "Comparer deux options",
+   "minutes": 2,
+   "explanation": "Pour comparer, on dit plus … que, moins … que, aussi … que. Pour dire « le numéro un », on dit le plus / le moins. Attention : bon → meilleur.",
+   "expressions": [
+    "plus + adjectif + que : plus rapide que",
+    "moins + adjectif + que : moins cher que",
+    "aussi + adjectif + que : aussi simple que",
+    "le / la plus + adjectif : la plus rapide",
+    "bon → meilleur → le meilleur"
+   ],
+   "vocabulary": [
+    {
+     "term": "cher",
+     "gloss": "qui coûte beaucoup d'argent"
+    },
+    {
+     "term": "rapide",
+     "gloss": "qui prend peu de temps"
+    },
+    {
+     "term": "pratique",
+     "gloss": "facile à utiliser"
+    },
+    {
+     "term": "une option",
+     "gloss": "un choix possible"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Comparatif",
+     "text": "Le train est moins cher que l'avion."
+    },
+    {
+     "label": "Égalité",
+     "text": "Les deux salles sont aussi grandes."
+    },
+    {
+     "label": "Superlatif",
+     "text": "Des trois fournisseurs, B est le plus rapide."
+    }
+   ],
+   "mistake": {
+    "wrong": "Cette option est plus meilleure.",
+    "right": "Cette option est meilleure.",
+    "why": "« Meilleur » veut déjà dire « plus bon ». On n'ajoute pas « plus »."
+   },
+   "tip": "Donnez un chiffre : « 20 euros moins cher », « deux jours plus rapide ». C'est plus facile pour décider."
+  },
+  {
+   "id": "vocabulaire-travail",
+   "level": "A2",
+   "title": "Le vocabulaire essentiel du travail",
+   "minutes": 3,
+   "explanation": "Quelques mots reviennent dans tous les messages de travail. Apprenez-les d'abord. Attention aussi aux faux amis : des mots qui ressemblent à l'espagnol, mais qui ont un autre sens.",
+   "expressions": [
+    "prendre un dossier en charge",
+    "faire le point",
+    "envoyer un courriel",
+    "organiser une réunion",
+    "valider un document",
+    "signaler un problème"
+   ],
+   "vocabulary": [
+    {
+     "term": "un collègue",
+     "gloss": "une personne qui travaille avec vous"
+    },
+    {
+     "term": "un(e) responsable",
+     "gloss": "la personne qui dirige votre travail"
+    },
+    {
+     "term": "une réunion",
+     "gloss": "un moment où l'équipe parle ensemble"
+    },
+    {
+     "term": "un dossier",
+     "gloss": "des documents sur un même sujet"
+    },
+    {
+     "term": "une échéance",
+     "gloss": "la date limite"
+    },
+    {
+     "term": "la charge de travail",
+     "gloss": "la quantité de travail"
+    },
+    {
+     "term": "déléguer",
+     "gloss": "donner une tâche à une autre personne"
+    },
+    {
+     "term": "fiable",
+     "gloss": "on peut avoir confiance en lui"
+    },
+    {
+     "term": "attendre (faux ami)",
+     "gloss": "rester là jusqu'à l'arrivée de quelqu'un"
+    },
+    {
+     "term": "rester (faux ami)",
+     "gloss": "ne pas partir"
+    },
+    {
+     "term": "s'occuper de",
+     "gloss": "aider, prendre en charge : s'occuper d'un client"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Verbe faible",
+     "text": "J'ai fait le projet."
+    },
+    {
+     "label": "Verbes précis",
+     "text": "J'ai organisé la réunion et j'ai envoyé le compte rendu."
+    },
+    {
+     "label": "Faux ami",
+     "text": "J'attends le client à l'accueil. (il n'est pas encore là)"
+    }
+   ],
+   "mistake": {
+    "wrong": "J'attends les clients au téléphone toute la journée.",
+    "right": "Je m'occupe des clients au téléphone toute la journée.",
+    "why": "« Attendre » veut dire rester jusqu'à l'arrivée de quelqu'un. Pour aider un client, on dit « s'occuper de »."
+   },
+   "tip": "Remplacez « faire » par un verbe précis : organiser, préparer, envoyer, gérer."
+  },
+  {
+   "id": "vocabulaire-echeances",
+   "level": "A2",
+   "title": "Les dates et les délais",
+   "minutes": 2,
+   "explanation": "Pour parler de dates au travail, trois petits mots sont importants. « Avant » = pas plus tard que. « Jusqu'à » = tout le temps, puis stop. « D'ici » = entre maintenant et une date.",
+   "expressions": [
+    "Je vous envoie le fichier avant jeudi.",
+    "Je suis au bureau jusqu'à 18 h.",
+    "Je termine d'ici vendredi.",
+    "La réunion est lundi à 10 h.",
+    "On peut repousser la réunion ?",
+    "On peut avancer la réunion ?"
+   ],
+   "vocabulary": [
+    {
+     "term": "une échéance",
+     "gloss": "la date limite"
+    },
+    {
+     "term": "être en retard",
+     "gloss": "finir ou arriver après l'heure prévue"
+    },
+    {
+     "term": "avancer",
+     "gloss": "mettre plus tôt"
+    },
+    {
+     "term": "repousser / décaler",
+     "gloss": "mettre plus tard"
+    },
+    {
+     "term": "annuler",
+     "gloss": "supprimer : la réunion n'a pas lieu"
+    },
+    {
+     "term": "dans les temps",
+     "gloss": "à l'heure, sans retard"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Limite",
+     "text": "Pouvez-vous confirmer avant vendredi ?"
+    },
+    {
+     "label": "Durée",
+     "text": "Je suis au bureau jusqu'à 17 h."
+    },
+    {
+     "label": "Plus tard",
+     "text": "On peut repousser la réunion à mercredi ?"
+    }
+   ],
+   "mistake": {
+    "wrong": "Je finis jusqu'à vendredi.",
+    "right": "Je finis avant vendredi. / d'ici vendredi.",
+    "why": "« Jusqu'à » est pour une durée. Pour une limite, dites « avant » ou « d'ici »."
+   },
+   "tip": "Donnez le jour et l'heure : « jeudi à 17 h ». C'est plus clair."
+  },
+  {
+   "id": "entretien-fr",
+   "level": "B2",
+   "title": "La langue de l'entretien",
+   "minutes": 3,
+   "explanation": "Une réponse d'entretien suit une forme : la situation, ce que vous avez fait, le résultat obtenu. Le résultat est ce que la plupart des candidats oublient, et la seule chose que le recruteur écoute.",
+   "expressions": [
+    "J'ai cinq ans d'expérience dans…",
+    "L'une de mes qualités, c'est…",
+    "Je dirais que je suis plutôt…",
+    "Dans mon poste précédent, j'étais chargé(e) de…",
+    "Résultat : nous avons…",
+    "Un point sur lequel je travaille actuellement, c'est…",
+    "Si c'était à refaire, j'impliquerais… plus tôt.",
+    "J'avais tendance à…, c'est pourquoi j'ai…"
+   ],
+   "vocabulary": [
+    {
+     "term": "un parcours",
+     "gloss": "l'histoire professionnelle"
+    },
+    {
+     "term": "des qualités / des défauts",
+     "gloss": "points forts / points faibles"
+    },
+    {
+     "term": "être chargé de",
+     "gloss": "avoir la responsabilité de"
+    },
+    {
+     "term": "une réussite",
+     "gloss": "quelque chose qu'on a réussi"
+    },
+    {
+     "term": "ambitieux",
+     "gloss": "qui veut progresser"
+    },
+    {
+     "term": "rigoureux",
+     "gloss": "précis et méthodique"
+    },
+    {
+     "term": "autonome",
+     "gloss": "capable de travailler seul"
+    },
+    {
+     "term": "s'entendre bien avec",
+     "gloss": "avoir de bonnes relations avec"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Sans résultat",
+     "text": "J'étais responsable des réseaux sociaux."
+    },
+    {
+     "label": "Avec résultat",
+     "text": "J'étais responsable des réseaux sociaux et, en dix-huit mois, j'ai augmenté l'engagement d'environ 40 %."
+    },
+    {
+     "label": "Défaut bien présenté",
+     "text": "J'avais tendance à trop en prendre sur moi. Je délègue davantage depuis un an : le trimestre dernier, j'ai confié deux projets entiers."
+    }
+   ],
+   "mistake": {
+    "wrong": "J'ai 6 ans d'expérience comme un chef de projet.",
+    "right": "J'ai six ans d'expérience comme chef de projet.",
+    "why": "Pas d'article après « comme » devant un métier."
+   },
+   "tip": "Terminez chaque réponse par un chiffre, un résultat ou une leçon. Jamais par la tâche elle-même."
+  },
+  {
+   "id": "strategies-lecture",
+   "level": "B2",
+   "title": "Stratégies de lecture",
+   "minutes": 2,
+   "explanation": "La lecture professionnelle est sélective : d'abord un survol pour la structure, puis un repérage du détail utile. On ne lit intégralement que les textes courts et importants.",
+   "expressions": [
+    "L'idée principale est…",
+    "L'auteur suggère que…",
+    "D'après le texte…",
+    "Cela implique que…",
+    "Le texte ne le précise pas."
+   ],
+   "vocabulary": [
+    {
+     "term": "survoler",
+     "gloss": "lire vite pour l'idée générale"
+    },
+    {
+     "term": "repérer",
+     "gloss": "chercher une information précise"
+    },
+    {
+     "term": "déduire",
+     "gloss": "comprendre ce qui n'est pas dit"
+    },
+    {
+     "term": "reformuler",
+     "gloss": "dire la même chose autrement"
+    },
+    {
+     "term": "un sous-entendu",
+     "gloss": "ce qui est suggéré sans être écrit"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Explicite",
+     "text": "La pause-café renforce les liens entre collègues."
+    },
+    {
+     "label": "Implicite",
+     "text": "« Cette pause n'est jamais perçue comme du temps perdu » — l'auteur défend l'usage, il ne le décrit pas neutralement."
+    }
+   ],
+   "mistake": {
+    "wrong": "Répondre à partir de ce qu'on sait déjà du sujet.",
+    "right": "Répondre uniquement à partir de ce que le texte dit.",
+    "why": "L'erreur de lecture la plus fréquente en B1-B2 est d'importer ses connaissances personnelles."
+   },
+   "tip": "Trouvez la réponse, puis la ligne exacte qui la prouve. Si vous ne pouvez pas pointer la ligne, vous avez deviné."
+  },
+  {
+   "id": "structurer-oral",
+   "level": "B1",
+   "title": "Structurer sa prise de parole",
+   "minutes": 2,
+   "explanation": "Sous pression, la fluidité vient de la structure, pas du vocabulaire. Un plan court : idée, raisons, exemple, conclusion : permet de parler deux minutes sans hésiter.",
+   "expressions": [
+    "Mon idée principale, c'est…",
+    "Il y a deux raisons à cela.",
+    "La première… La seconde…",
+    "Par exemple, quand nous avons…",
+    "Donc, globalement, je dirais…",
+    "C'est une bonne question, laissez-moi réfléchir un instant."
+   ],
+   "vocabulary": [
+    {
+     "term": "annoncer son plan",
+     "gloss": "dire à l'avance ce qu'on va dire"
+    },
+    {
+     "term": "un mot de remplissage",
+     "gloss": "un mot qui donne le temps de réfléchir"
+    },
+    {
+     "term": "développer",
+     "gloss": "ajouter du détail"
+    },
+    {
+     "term": "la fluidité",
+     "gloss": "parler sans longues pauses"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Sans structure",
+     "text": "Bon, c'est difficile, il y a plein de choses, ça dépend, par exemple beaucoup de facteurs…"
+    },
+    {
+     "label": "Structuré",
+     "text": "Je repousserais l'échéance, pour deux raisons. D'abord, les données sont incomplètes. Ensuite, une version bâclée nous coûtera plus cher ensuite. Par exemple, le trimestre dernier, nous avons passé trois semaines à corriger."
+    }
+   ],
+   "mistake": {
+    "wrong": "Un long silence pendant qu'on traduit mentalement.",
+    "right": "Une formule de relais : « C'est une bonne question, laissez-moi réfléchir un instant. »",
+    "why": "Les formules de relais achètent du temps et comptent comme de la fluidité. Le silence, non."
+   },
+   "tip": "Donnez-vous toujours un chiffre : « deux raisons ». Une fois dit, votre cerveau trouvera la deuxième."
+  },
+  {
+   "id": "raconter",
+   "level": "B1",
+   "title": "Raconter et décrire",
+   "minutes": 2,
+   "explanation": "Raconter une expérience professionnelle demande une chronologie claire et l'alternance passé composé / imparfait. Les connecteurs temporels portent le récit.",
+   "expressions": [
+    "Au début, …",
+    "Ensuite, …",
+    "À ce moment-là, …",
+    "Finalement, …",
+    "Ce qui s'est passé, c'est que…",
+    "Ce que j'ai appris, c'est que…"
+   ],
+   "vocabulary": [
+    {
+     "term": "une expérience",
+     "gloss": "ce qu'on a vécu"
+    },
+    {
+     "term": "une étape",
+     "gloss": "un moment du processus"
+    },
+    {
+     "term": "un imprévu",
+     "gloss": "un événement non planifié"
+    },
+    {
+     "term": "un enseignement",
+     "gloss": "ce qu'on a appris"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Sans chronologie",
+     "text": "Il y a eu un problème, le client était content, on a livré, c'était difficile."
+    },
+    {
+     "label": "Avec chronologie",
+     "text": "Au début, le brief était flou. Ensuite, nous avons organisé un atelier avec le client. À ce moment-là, les priorités se sont clarifiées. Finalement, nous avons livré avec une semaine d'avance."
+    }
+   ],
+   "mistake": {
+    "wrong": "Hier j'ai été fatigué donc je finissais tard.",
+    "right": "Hier j'étais fatigué, donc j'ai fini tard.",
+    "why": "L'état se met à l'imparfait, l'action terminée au passé composé."
+   },
+   "tip": "Terminez tout récit professionnel par ce que vous en avez retiré. C'est ce qui distingue une anecdote d'un exemple."
+  },
+  {
+   "id": "prononciation",
+   "level": "A2",
+   "title": "Prononciation et rythme",
+   "minutes": 2,
+   "explanation": "En français, on ne met pas l'accent sur chaque mot. On dit de petits groupes de mots, avec l'accent à la fin du groupe. On fait aussi des liaisons : « vous avez » se dit « vou-z-avez ».",
+   "expressions": [
+    "Groupes : « Bonjour, | je m'appelle Camille. »",
+    "Liaison : les_employés, nous_avons, vous_êtes, deux_heures",
+    "Pas de liaison après « et » : et | ensuite",
+    "Question : la voix monte ↗ · Affirmation : la voix descend ↘"
+   ],
+   "vocabulary": [
+    {
+     "term": "une liaison",
+     "gloss": "on prononce la dernière lettre devant une voyelle"
+    },
+    {
+     "term": "un groupe de mots",
+     "gloss": "des mots dits ensemble, sans pause"
+    },
+    {
+     "term": "l'intonation",
+     "gloss": "la musique de la phrase"
+    },
+    {
+     "term": "une syllabe",
+     "gloss": "une partie d'un mot : ré-u-nion"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Liaison",
+     "text": "Vous_avez un rendez-vous à dix_heures."
+    },
+    {
+     "label": "Groupes",
+     "text": "Je vous envoie le dossier | avant jeudi."
+    },
+    {
+     "label": "Sons difficiles",
+     "text": "u / ou : du / doux · sur / sous"
+    }
+   ],
+   "mistake": {
+    "wrong": "Accentuer chaque mot, comme en espagnol.",
+    "right": "Accentuer la fin du groupe de mots.",
+    "why": "En français, l'accent est à la fin du groupe, pas sur chaque mot."
+   },
+   "tip": "Enregistrez-vous et réécoutez. Corrigez seulement deux choses à la fois."
+  }
+ ]
+}

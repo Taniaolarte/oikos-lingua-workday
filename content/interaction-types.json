@@ -1,0 +1,240 @@
+{
+ "types": [
+  {
+   "id": "best-response",
+   "renderer": "choice",
+   "label": {
+    "en": "Choose the best response",
+    "fr": "Choisissez la meilleure réponse"
+   },
+   "instruction": {
+    "en": "Choose the response that works best in this situation.",
+    "fr": "Choisissez la réponse la plus adaptée à cette situation."
+   },
+   "skills": [
+    "communication",
+    "professional-tone"
+   ]
+  },
+  {
+   "id": "multiple-choice",
+   "renderer": "choice",
+   "label": {
+    "en": "Multiple choice",
+    "fr": "Choix multiple"
+   },
+   "instruction": {
+    "en": "Select the correct option.",
+    "fr": "Sélectionnez la bonne option."
+   },
+   "skills": [
+    "grammar",
+    "vocabulary"
+   ]
+  },
+  {
+   "id": "multiple-select",
+   "renderer": "multi",
+   "label": {
+    "en": "Select all that apply",
+    "fr": "Sélection multiple"
+   },
+   "instruction": {
+    "en": "Select every option that applies. Wrong picks cost points.",
+    "fr": "Sélectionnez toutes les options correctes. Les erreurs coûtent des points."
+   },
+   "skills": [
+    "vocabulary",
+    "comprehension"
+   ]
+  },
+  {
+   "id": "fill-blank",
+   "renderer": "choice",
+   "label": {
+    "en": "Fill in the blank",
+    "fr": "Complétez la phrase"
+   },
+   "instruction": {
+    "en": "Choose the word or phrase that completes the sentence.",
+    "fr": "Choisissez le mot ou l'expression qui complète la phrase."
+   },
+   "skills": [
+    "grammar",
+    "vocabulary"
+   ]
+  },
+  {
+   "id": "matching",
+   "renderer": "matching",
+   "label": {
+    "en": "Matching",
+    "fr": "Associez"
+   },
+   "instruction": {
+    "en": "Match each item on the left with the right one on the right.",
+    "fr": "Associez chaque élément de gauche à celui de droite."
+   },
+   "skills": [
+    "vocabulary"
+   ]
+  },
+  {
+   "id": "sentence-order",
+   "renderer": "order",
+   "label": {
+    "en": "Put the sentence in order",
+    "fr": "Remettez la phrase dans l'ordre"
+   },
+   "instruction": {
+    "en": "Drag the parts into a natural, professional order.",
+    "fr": "Glissez les éléments dans un ordre naturel et professionnel."
+   },
+   "skills": [
+    "grammar",
+    "writing"
+   ]
+  },
+  {
+   "id": "email-order",
+   "renderer": "order",
+   "label": {
+    "en": "Structure the email",
+    "fr": "Structurez le message"
+   },
+   "instruction": {
+    "en": "Put the lines of this message into the right order.",
+    "fr": "Remettez les lignes de ce message dans le bon ordre."
+   },
+   "skills": [
+    "writing",
+    "professional-tone"
+   ]
+  },
+  {
+   "id": "register-check",
+   "renderer": "choice",
+   "label": {
+    "en": "Formal or informal?",
+    "fr": "Formel ou informel ?"
+   },
+   "instruction": {
+    "en": "Decide which version fits the register of this situation.",
+    "fr": "Choisissez la version qui correspond au registre de la situation."
+   },
+   "skills": [
+    "professional-tone"
+   ]
+  },
+  {
+   "id": "appropriateness",
+   "renderer": "choice",
+   "label": {
+    "en": "Appropriate or not?",
+    "fr": "Approprié ou non ?"
+   },
+   "instruction": {
+    "en": "Judge whether this is appropriate at work — and why.",
+    "fr": "Jugez si c'est approprié au travail — et pourquoi."
+   },
+   "skills": [
+    "professional-tone",
+    "communication"
+   ]
+  },
+  {
+   "id": "error-correction",
+   "renderer": "choice",
+   "label": {
+    "en": "Fix the mistake",
+    "fr": "Corrigez l'erreur"
+   },
+   "instruction": {
+    "en": "One version is correct. Find it.",
+    "fr": "Une seule version est correcte. Trouvez-la."
+   },
+   "skills": [
+    "grammar"
+   ]
+  },
+  {
+   "id": "stronger-sentence",
+   "renderer": "choice",
+   "label": {
+    "en": "Choose the stronger line",
+    "fr": "Choisissez la phrase la plus forte"
+   },
+   "instruction": {
+    "en": "Both are correct. Choose the one that lands better professionally.",
+    "fr": "Les deux sont correctes. Choisissez celle qui est la plus efficace."
+   },
+   "skills": [
+    "professional-tone",
+    "vocabulary"
+   ]
+  },
+  {
+   "id": "categorise",
+   "renderer": "categorise",
+   "label": {
+    "en": "Sort into groups",
+    "fr": "Classez par groupes"
+   },
+   "instruction": {
+    "en": "Put each item into the right group.",
+    "fr": "Placez chaque élément dans le bon groupe."
+   },
+   "skills": [
+    "vocabulary",
+    "grammar"
+   ]
+  },
+  {
+   "id": "true-false",
+   "renderer": "choice",
+   "label": {
+    "en": "True / False / Not Given",
+    "fr": "Vrai / Faux / Non mentionné"
+   },
+   "instruction": {
+    "en": "Read the text and judge the statement.",
+    "fr": "Lisez le texte et évaluez l'affirmation."
+   },
+   "skills": [
+    "reading",
+    "comprehension"
+   ]
+  },
+  {
+   "id": "branching",
+   "renderer": "choice",
+   "label": {
+    "en": "Decision point",
+    "fr": "Point de décision"
+   },
+   "instruction": {
+    "en": "You have to decide. Every option has consequences.",
+    "fr": "Vous devez décider. Chaque option a des conséquences."
+   },
+   "skills": [
+    "communication",
+    "professional-tone"
+   ]
+  },
+  {
+   "id": "speaking",
+   "renderer": "speaking",
+   "label": {
+    "en": "Speak and self-check",
+    "fr": "Parlez et auto-évaluez"
+   },
+   "instruction": {
+    "en": "Prepare, record yourself, then check your own answer.",
+    "fr": "Préparez, enregistrez-vous, puis auto-évaluez votre réponse."
+   },
+   "skills": [
+    "speaking"
+   ]
+  }
+ ]
+}

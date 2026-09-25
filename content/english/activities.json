@@ -1,0 +1,3918 @@
+{
+ "activities": [
+  {
+   "id": "en-manager-update-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "technology",
+    "management"
+   ],
+   "category": "inbox",
+   "scenario": "manager-update-request",
+   "topic": "professional-requests",
+   "guide": "professional-requests",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Your manager, Elena, writes:",
+    "message": "Could you send me an update before 3 p.m.?",
+    "prompt": "Which reply is best?",
+    "options": [
+     {
+      "text": "Of course. I'll send it before 3 p.m.",
+      "score": 100,
+      "feedback": "Good. It is polite, and it repeats the time."
+     },
+     {
+      "text": "Yep.",
+      "score": 50,
+      "feedback": "Too short for a manager, and it doesn't say when."
+     },
+     {
+      "text": "I send it maybe later.",
+      "score": 25,
+      "feedback": "Wrong tense, and 'maybe later' is not a time."
+     },
+     {
+      "text": "I will send it until 3 p.m.",
+      "score": 25,
+      "feedback": "Use 'by' or 'before' for a time limit, not 'until'."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now you need something from Tomás in Finance.",
+    "message": "You need the invoice numbers today.",
+    "prompt": "Which request is best?",
+    "options": [
+     {
+      "text": "Hi Tomás, could you send me the invoice numbers by 4 p.m.? Thanks!",
+      "score": 100,
+      "feedback": "Polite and clear, and it gives a time."
+     },
+     {
+      "text": "Tomás, send me the invoice numbers.",
+      "score": 25,
+      "feedback": "This is an order, not a request. Add 'could you' and 'please'."
+     },
+     {
+      "text": "Hi Tomás, can I have the numbers sometime?",
+      "score": 50,
+      "feedback": "Polite, but 'sometime' is not a time. He doesn't know it is urgent."
+     },
+     {
+      "text": "I need that you send me the numbers.",
+      "score": 0,
+      "feedback": "This is not correct English. Say 'Could you send me…?'"
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-manager-update-02",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "customer-service",
+    "hospitality",
+    "healthcare"
+   ],
+   "category": "inbox",
+   "scenario": "manager-update-request",
+   "topic": "email-openings",
+   "guide": "email-structure",
+   "interaction": "multiple-choice",
+   "before": {
+    "brief": "You are writing to a manager at another company. You have never met her.",
+    "prompt": "Which opening and closing are best for a first, formal email?",
+    "options": [
+     {
+      "text": "Dear Ms Lemoine, … Kind regards, Ana",
+      "score": 100,
+      "feedback": "Correct. 'Dear' + her surname is formal, and 'Kind regards' is a good formal closing."
+     },
+     {
+      "text": "Hi Lemoine, … Bye, Ana",
+      "score": 25,
+      "feedback": "Don't use 'Hi' with only a surname. 'Bye' is not for emails."
+     },
+     {
+      "text": "Dear Ms Lemoine, … See you, Ana",
+      "score": 50,
+      "feedback": "Good opening, but 'See you' is too informal. You are not meeting her."
+     },
+     {
+      "text": "Hello, … Best, Ana",
+      "score": 75,
+      "feedback": "OK, but use her name in a first formal email."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now you are emailing Marc. You work with him every day.",
+    "prompt": "Which opening is best?",
+    "options": [
+     {
+      "text": "Hi Marc, a quick question about Thursday's meeting.",
+      "score": 100,
+      "feedback": "Friendly and clear. The first line says what the email is about."
+     },
+     {
+      "text": "Dear Mr Bouvier, I hope this email finds you well.",
+      "score": 25,
+      "feedback": "Too formal for a colleague you see every day."
+     },
+     {
+      "text": "Marc. Thursday meeting.",
+      "score": 25,
+      "feedback": "Too short. It feels cold. Add a greeting."
+     },
+     {
+      "text": "Hello Marc, I write you for ask about the meeting.",
+      "score": 25,
+      "feedback": "Grammar mistake. Say 'I'm writing to ask about…'."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-missed-deadline-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "marketing",
+    "design-creative",
+    "technology",
+    "business"
+   ],
+   "category": "inbox",
+   "scenario": "missed-deadline",
+   "topic": "apologising",
+   "guide": "apologising",
+   "interaction": "best-response",
+   "before": {
+    "brief": "The report was for this morning. It is 11 a.m. and it is not ready. Your client is waiting.",
+    "prompt": "What do you write?",
+    "options": [
+     {
+      "text": "I'm sorry for the delay. The report will be ready at 4 p.m. today.",
+      "score": 100,
+      "feedback": "Good. One short apology and a clear new time."
+     },
+     {
+      "text": "I'm so sorry, I feel terrible, it was a very bad week, I'm really, really sorry.",
+      "score": 25,
+      "feedback": "Too long, and all about your feelings. The client still doesn't know when the report will come."
+     },
+     {
+      "text": "The report is late because my colleague didn't help me.",
+      "score": 25,
+      "feedback": "This blames a colleague. There is no apology and no new time."
+     },
+     {
+      "text": "Sorry, it's coming soon!",
+      "score": 50,
+      "feedback": "Too informal for a client, and 'soon' is not a time."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A different problem: yesterday you sent a client the wrong file.",
+    "prompt": "Which email is best?",
+    "options": [
+     {
+      "text": "Sorry, I sent you the wrong file. That was my mistake. Here is the correct one.",
+      "score": 100,
+      "feedback": "Short and honest, and it fixes the problem."
+     },
+     {
+      "text": "I apologise you for the wrong file.",
+      "score": 25,
+      "feedback": "Grammar mistake. Say 'I apologise for…', with no person after 'apologise'."
+     },
+     {
+      "text": "Please ignore my last email.",
+      "score": 50,
+      "feedback": "Useful, but there is no apology and no correct file."
+     },
+     {
+      "text": "The system sent the wrong file, not me.",
+      "score": 25,
+      "feedback": "It blames the system. Just say sorry and send the right file."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-missed-deadline-02",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "technology",
+    "business",
+    "education"
+   ],
+   "category": "inbox",
+   "scenario": "missed-deadline",
+   "topic": "prepositions-time",
+   "guide": "deadline-language",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "Complete the sentence in a message to your manager.",
+    "message": "I'll send you the figures ______ Thursday.",
+    "prompt": "Which word is correct?",
+    "options": [
+     {
+      "text": "by",
+      "score": 100,
+      "feedback": "'By Thursday' means on Thursday or before. Correct for a deadline."
+     },
+     {
+      "text": "until",
+      "score": 25,
+      "feedback": "'Until' is for things that continue, like 'I'm here until 6'."
+     },
+     {
+      "text": "at",
+      "score": 25,
+      "feedback": "Use 'at' with clock times: 'at 3 p.m.'. With a day, use 'by' or 'on'."
+     },
+     {
+      "text": "since",
+      "score": 0,
+      "feedback": "'Since' is for the past, like 'since Monday'. Not for a future deadline."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill. You are telling a client when you are free.",
+    "message": "I'm in the office ______ six. Call me any time before then.",
+    "prompt": "Which word is correct?",
+    "options": [
+     {
+      "text": "until",
+      "score": 100,
+      "feedback": "Correct. You are in the office all the time up to six."
+     },
+     {
+      "text": "by",
+      "score": 25,
+      "feedback": "'By six' means 'at six or before'. That's for deadlines."
+     },
+     {
+      "text": "on",
+      "score": 0,
+      "feedback": "Use 'on' with days: 'on Monday'."
+     },
+     {
+      "text": "for",
+      "score": 25,
+      "feedback": "'For' is for a length of time: 'for two hours'."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-client-complaint-01",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "marketing",
+    "customer-service",
+    "hospitality",
+    "design-creative"
+   ],
+   "category": "inbox",
+   "scenario": "client-complaint-email",
+   "topic": "professional-tone",
+   "guide": "professional-tone",
+   "interaction": "best-response",
+   "before": {
+    "brief": "A client writes, clearly annoyed:",
+    "message": "This is the second time the figures in your report don't match what we sent you. We're starting to wonder how carefully this is being checked.",
+    "prompt": "Which reply handles it best?",
+    "options": [
+     {
+      "text": "Thank you for flagging this — you're right, and I'm sorry it's happened twice. I've checked the two reports and found where the mismatch comes from. Corrected version attached, and I've added a verification step before anything goes out.",
+      "score": 100,
+      "feedback": "Accepts it, fixes it, and names the change that prevents a third time. That last part is what rebuilds trust."
+     },
+     {
+      "text": "I'm very sorry about this. I'll look into it and get back to you.",
+      "score": 50,
+      "feedback": "Polite but empty. An angry client on the second occurrence needs a fix, not a promise to investigate."
+     },
+     {
+      "text": "The figures we received were in a different format, which is where the problem came from.",
+      "score": 25,
+      "feedback": "True perhaps, but it reads as blaming the client, on their second complaint."
+     },
+     {
+      "text": "I apologise you for this inconvenience and I assure you it will not repeat.",
+      "score": 25,
+      "feedback": "Two grammar errors: 'apologise you' (no object) and 'it will not repeat' (should be 'happen again'). It also promises without explaining how."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A different client, a different complaint — this time the client is simply wrong. The delay was caused by their own late approval.",
+    "prompt": "Which reply is best?",
+    "options": [
+     {
+      "text": "I understand the frustration — a week's delay is significant. Looking at the timeline, the design was approved on the 14th rather than the 7th, which moved production back. I should have flagged that risk at the time. Here's how we recover the week: …",
+      "score": 100,
+      "feedback": "Acknowledges the feeling, states the fact neutrally, takes a share of responsibility, and moves to the solution. Professional without being a doormat."
+     },
+     {
+      "text": "Actually, you approved the design a week late, so the delay is on your side.",
+      "score": 25,
+      "feedback": "Factually right, relationally expensive. 'Actually' and 'on your side' turn a fact into an accusation."
+     },
+     {
+      "text": "I'm so sorry, this is entirely our fault and we take full responsibility.",
+      "score": 25,
+      "feedback": "Accepting blame you don't own sets a precedent, and it hides the real cause, so it will happen again."
+     },
+     {
+      "text": "Per my previous email, the approval was received on the 14th.",
+      "score": 50,
+      "feedback": "'Per my previous email' reads as passive-aggressive in professional English. The fact is right; the framing invites a fight."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-follow-up-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "job-search",
+    "remote-work"
+   ],
+   "category": "inbox",
+   "scenario": "follow-up-email",
+   "topic": "softening-language",
+   "guide": "softening",
+   "interaction": "stronger-sentence",
+   "before": {
+    "brief": "You emailed a supplier four days ago about a quote. No reply. You need an answer this week.",
+    "prompt": "Both are grammatically correct. Which follow-up lands better?",
+    "options": [
+     {
+      "text": "Hi Laura — just following up on the quote I sent on Monday. Could you let me know by Thursday whether the pricing works? Happy to adjust if something's off.",
+      "score": 100,
+      "feedback": "Friendly, dated, and it offers a way forward. 'Happy to adjust' makes replying easy."
+     },
+     {
+      "text": "Hi Laura — I still haven't had a reply to my email from Monday. Please respond.",
+      "score": 25,
+      "feedback": "'Still haven't' and 'please respond' read as annoyed. Four days is not long enough to justify that tone."
+     },
+     {
+      "text": "Hi Laura — sorry to bother you again, I know you're really busy, it's probably not important but I was just wondering if maybe you'd had a chance to look?",
+      "score": 25,
+      "feedback": "So apologetic it signals the request doesn't matter, which makes it easy to keep ignoring."
+     },
+     {
+      "text": "Hi Laura — following up on Monday's quote. Any news?",
+      "score": 75,
+      "feedback": "Fine, and short. It just misses a deadline, so it may sit in her inbox another four days."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Second follow-up. It is now nine days, and the deadline is genuinely at risk.",
+    "prompt": "Which version is right now?",
+    "options": [
+     {
+      "text": "Hi Laura — I need to flag that without the quote by Friday we'll have to go to another supplier, which I'd rather avoid. Is there anything blocking it on your side?",
+      "score": 100,
+      "feedback": "Escalates properly: states the real consequence, keeps the door open, and asks a question that's easy to answer."
+     },
+     {
+      "text": "Hi Laura — just checking in again on the quote! No rush at all.",
+      "score": 25,
+      "feedback": "'No rush at all' is now untrue, and repeating the same soft message teaches them it can be ignored."
+     },
+     {
+      "text": "This is my third email. I expect a response today.",
+      "score": 25,
+      "feedback": "Counting emails and issuing demands damages the relationship before you've asked what's wrong."
+     },
+     {
+      "text": "Hi Laura — following up again on the quote. Could you reply by Friday please?",
+      "score": 75,
+      "feedback": "Reasonable and clear. It just doesn't say what happens if Friday passes, which is what creates urgency."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-ask-clarification-01",
+   "level": "A2",
+   "contexts": [
+    "marketing",
+    "design-creative",
+    "technology",
+    "general-office",
+    "education"
+   ],
+   "category": "inbox",
+   "scenario": "ask-clarification",
+   "topic": "clarifying",
+   "guide": "clarifying",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Your manager writes:",
+    "message": "Can you prepare something short on the sales numbers for Thursday?",
+    "prompt": "You don't know if she wants a document or slides. What do you reply?",
+    "options": [
+     {
+      "text": "Sure! Quick question: do you want a one-page document or some slides?",
+      "score": 100,
+      "feedback": "Good. You say yes, and you ask one clear question with two choices."
+     },
+     {
+      "text": "OK, no problem!",
+      "score": 25,
+      "feedback": "You don't understand the task yet. You may prepare the wrong thing."
+     },
+     {
+      "text": "I don't understand what you want.",
+      "score": 50,
+      "feedback": "Honest, but it is not a clear question. Ask about the one thing you need to know."
+     },
+     {
+      "text": "Can you explain me what you need?",
+      "score": 25,
+      "feedback": "Grammar mistake: say 'explain to me'. And ask a more exact question."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A different situation. A client tells you a date on the phone, but you can't hear it well.",
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "Sorry, could you repeat the date, please?",
+      "score": 100,
+      "feedback": "Polite and exact. You ask for the one thing you missed."
+     },
+     {
+      "text": "What?",
+      "score": 25,
+      "feedback": "Too short. It sounds rude on a work call."
+     },
+     {
+      "text": "Yes, OK, thank you.",
+      "score": 0,
+      "feedback": "You didn't hear the date. Now you may have the wrong day."
+     },
+     {
+      "text": "Repeat, please.",
+      "score": 50,
+      "feedback": "Clear, but it sounds like an order. Add 'sorry' and 'could you'."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-thank-colleague-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "management",
+    "healthcare",
+    "education",
+    "hospitality"
+   ],
+   "category": "inbox",
+   "scenario": "thank-colleague",
+   "topic": "thanking",
+   "guide": "small-talk",
+   "interaction": "stronger-sentence",
+   "before": {
+    "brief": "Priya stayed late to help you finish a project. You want to thank her. Her manager, Ravi, can see the email.",
+    "prompt": "Both are correct. Which message is better?",
+    "options": [
+     {
+      "text": "Thank you, Priya! You stayed until 8 p.m. to help, and we finished on time.",
+      "score": 100,
+      "feedback": "Good. It says what Priya did and why it helped. Now Ravi knows too."
+     },
+     {
+      "text": "Thanks.",
+      "score": 25,
+      "feedback": "Too short. Priya helped a lot. Say what she did."
+     },
+     {
+      "text": "Thanks for your help, you're great!",
+      "score": 50,
+      "feedback": "Friendly, but it doesn't say what she did."
+     },
+     {
+      "text": "I want to thank Priya for the help that she gave to me for the project.",
+      "score": 50,
+      "feedback": "Correct, but long. And it doesn't say why her help was important."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now you are thanking a client. She answered your questions very quickly.",
+    "prompt": "Both are correct. Which message is better?",
+    "options": [
+     {
+      "text": "Thank you for your quick reply. Now we can start on Monday.",
+      "score": 100,
+      "feedback": "Good. It thanks her and says why her help was useful."
+     },
+     {
+      "text": "Thanks, you're a star! I owe you one!",
+      "score": 25,
+      "feedback": "Too informal for a client."
+     },
+     {
+      "text": "Thank you for your kind cooperation in this matter.",
+      "score": 50,
+      "feedback": "Very formal. It sounds like a machine, not a person."
+     },
+     {
+      "text": "Thanks.",
+      "score": 25,
+      "feedback": "Too short for a client who helped you."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-handover-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "healthcare",
+    "hospitality",
+    "technology",
+    "business"
+   ],
+   "category": "inbox",
+   "scenario": "handover-email",
+   "topic": "email-structure",
+   "guide": "email-structure",
+   "interaction": "email-order",
+   "before": {
+    "brief": "You are on holiday next week, and Daniel will do your work. Put your email in order.",
+    "prompt": "Put the lines in the right order.",
+    "items": [
+     "Hi Daniel,",
+     "I'm on holiday from Monday 6th to Friday 10th.",
+     "Please do two things: the client call on Thursday at 10, and the invoice on Wednesday.",
+     "All my notes are in the shared folder.",
+     "Thanks for your help!",
+     "Best regards, Ana"
+    ],
+    "feedback": "Greeting, then the dates, then the tasks, then where to find the information. Then thanks and a closing."
+   },
+   "after": {
+    "brief": "A different email: you are telling your team about a new meeting time.",
+    "prompt": "Put the lines in the right order.",
+    "items": [
+     "Hi everyone,",
+     "I'm writing about Friday's team meeting.",
+     "The meeting is now at 2 p.m., not 11 a.m.",
+     "It is in Room 4, on the second floor.",
+     "Please tell me by Thursday if you can't come.",
+     "Thanks, Ana"
+    ],
+    "feedback": "Greeting, why you are writing, the details, and what people must do. Then the closing."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-reschedule-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "business",
+    "management",
+    "remote-work",
+    "healthcare"
+   ],
+   "category": "inbox",
+   "scenario": "reschedule-meeting",
+   "topic": "future-forms",
+   "guide": "future-forms",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "You want to move a meeting. Only one sentence is correct.",
+    "prompt": "Which version is right?",
+    "options": [
+     {
+      "text": "I'm meeting the client on Tuesday. Could we move our meeting to Wednesday?",
+      "score": 100,
+      "feedback": "Correct. The client meeting is in your calendar, so use the present continuous: 'I'm meeting'."
+     },
+     {
+      "text": "I will meet the client on Tuesday. Could we move our meeting to Wednesday?",
+      "score": 50,
+      "feedback": "Not wrong, but 'will' sounds like you are deciding now. This meeting is already planned."
+     },
+     {
+      "text": "I meet the client on Tuesday. Could we move our meeting to Wednesday?",
+      "score": 50,
+      "feedback": "The present simple is for habits, not for one planned meeting."
+     },
+     {
+      "text": "I'm going to meeting the client on Tuesday.",
+      "score": 0,
+      "feedback": "After 'going to', use the base verb: 'going to meet'."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill, but now you decide as you speak.",
+    "prompt": "Your colleague says the meeting room is not free. Which reply is correct?",
+    "options": [
+     {
+      "text": "No problem. I'll book the small room.",
+      "score": 100,
+      "feedback": "Correct. Use 'will' for a decision you make now."
+     },
+     {
+      "text": "No problem. I'm going to book the small room.",
+      "score": 50,
+      "feedback": "'Going to' is for a plan you made before. You just decided, so 'I'll' is better."
+     },
+     {
+      "text": "No problem. I book the small room.",
+      "score": 25,
+      "feedback": "The present simple doesn't work for a decision you make now."
+     },
+     {
+      "text": "No problem. I will to book the small room.",
+      "score": 0,
+      "feedback": "No 'to' after 'will'."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-manager-disagrees-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "marketing",
+    "technology",
+    "management",
+    "business"
+   ],
+   "category": "office-decision",
+   "scenario": "manager-disagrees",
+   "topic": "polite-disagreement",
+   "guide": "polite-disagreement",
+   "interaction": "best-response",
+   "before": {
+    "brief": "In a meeting, your manager says:",
+    "message": "I don't think the new onboarding flow is worth the development time. Let's park it.",
+    "prompt": "You disagree, and you have data. What do you say?",
+    "options": [
+     {
+      "text": "I see the concern about development time. Can I share one number? Forty per cent of new users drop out at step three. If we fix that, the build pays for itself in about two months.",
+      "score": 100,
+      "feedback": "Acknowledges, asks permission, leads with evidence, and answers the actual objection: cost."
+     },
+     {
+      "text": "I disagree. The data clearly shows we need it.",
+      "score": 50,
+      "feedback": "The content is right but the delivery is blunt, and 'clearly' implies your manager missed something obvious."
+     },
+     {
+      "text": "Okay, if you think so.",
+      "score": 25,
+      "feedback": "You have information your manager doesn't. Staying silent isn't diplomacy, it's withholding."
+     },
+     {
+      "text": "I am not agree, because we have the data about the drop out.",
+      "score": 25,
+      "feedback": "'I am not agree' is a common error: 'agree' is a verb: 'I don't agree'."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Different situation: a senior colleague proposes a process you think will create more work. You have no data, only judgement.",
+    "prompt": "Which response is strongest?",
+    "options": [
+     {
+      "text": "That could work. My one hesitation is the weekly sign-off — with six approvers I think we'd slow ourselves down. Could we try it with two and review in a month?",
+      "score": 100,
+      "feedback": "Names one specific concern rather than rejecting the whole thing, and proposes a test. Very hard to refuse."
+     },
+     {
+      "text": "I think that's going to create a lot of extra work for everyone.",
+      "score": 50,
+      "feedback": "A fair concern, but it's a general objection with no alternative: easy to dismiss."
+     },
+     {
+      "text": "I'm not sure that's a good idea, but you know better than me.",
+      "score": 25,
+      "feedback": "Undercuts your own point. If you didn't mean it, don't say it; if you did, stand behind it."
+     },
+     {
+      "text": "That's exactly what we tried in 2022 and it failed completely.",
+      "score": 50,
+      "feedback": "Relevant history, but 'exactly' and 'completely' overstate it and put the colleague on the defensive."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-project-delay-01",
+   "level": "B1",
+   "contexts": [
+    "marketing",
+    "technology",
+    "design-creative",
+    "business",
+    "management"
+   ],
+   "category": "office-decision",
+   "scenario": "project-delay",
+   "topic": "explaining-problems",
+   "guide": "explaining-problems",
+   "interaction": "sentence-order",
+   "before": {
+    "brief": "You have two minutes with the project sponsor to explain a delay. Order matters.",
+    "prompt": "Put these four moves into the most effective professional order.",
+    "items": [
+     "The integration testing found a data problem we hadn't seen — it affects about a third of the records.",
+     "That puts the launch two weeks behind, so mid-April rather than the 1st.",
+     "I've already got two people on the data clean-up and I've asked the vendor for support.",
+     "What I need from you is a decision on whether we hold the date and cut scope, or move the date."
+    ],
+    "feedback": "What happened → impact → what you're already doing → what you need. Leading with the fix rather than the problem sounds evasive; leading with the ask sounds unprepared."
+   },
+   "after": {
+    "brief": "Same structure, different problem: a key team member has resigned mid-project.",
+    "prompt": "Order these four lines.",
+    "items": [
+     "Karim handed in his notice on Friday — he finishes on the 30th.",
+     "He owns the reporting module, which is about three weeks of work and currently undocumented.",
+     "I've asked him to spend his last two weeks writing handover notes rather than new code.",
+     "I'd like to bring in a contractor for six weeks — that's roughly 12k. Can you approve it, or should we push the reporting phase to Q3?"
+    ],
+    "feedback": "Same shape: fact, impact, action taken, decision needed. Note the ask includes a number and an alternative. That's what makes it answerable."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-angry-customer-01",
+   "level": "B2",
+   "contexts": [
+    "customer-service",
+    "hospitality",
+    "business",
+    "healthcare",
+    "general-office"
+   ],
+   "category": "office-decision",
+   "scenario": "angry-customer",
+   "topic": "professional-tone",
+   "guide": "professional-tone",
+   "interaction": "branching",
+   "before": {
+    "brief": "A customer is at your desk, voice raised, other people watching.",
+    "message": "I've been waiting three weeks. Nobody has called me back. This is completely unacceptable.",
+    "prompt": "What is your first move?",
+    "options": [
+     {
+      "text": "You're right — three weeks is far too long, and I'm sorry no one came back to you. Let me find out exactly where it is right now. Can I take your reference number?",
+      "score": 100,
+      "feedback": "Agrees with the legitimate part, apologises, and moves immediately to action. Agreeing first is what lowers the volume."
+     },
+     {
+      "text": "I understand you're frustrated, but there's a process we have to follow.",
+      "score": 25,
+      "feedback": "'I understand you're frustrated, but' is heard as 'you're overreacting'. The 'but' cancels everything before it."
+     },
+     {
+      "text": "Please calm down and I'll see what I can do.",
+      "score": 0,
+      "feedback": "Telling an angry person to calm down reliably makes them angrier. It also judges them instead of the problem."
+     },
+     {
+      "text": "That's not my department, I'm afraid. You'd need to speak to customer support.",
+      "score": 25,
+      "feedback": "Possibly true, but after three weeks of being passed around, this is the worst thing they can hear."
+     }
+    ]
+   },
+   "after": {
+    "brief": "You have found the file. It was lost internally, and you can fix it — but not today.",
+    "prompt": "How do you close the conversation?",
+    "options": [
+     {
+      "text": "I've found it — it was sitting unassigned on our side, which shouldn't have happened. I've put my name on it. I'll call you personally by Wednesday with a resolution date. Here's my direct line.",
+      "score": 100,
+      "feedback": "Honest about the cause, takes personal ownership, gives a specific commitment and a way to reach you. This is service recovery done properly."
+     },
+     {
+      "text": "I've found it and I've escalated it to the right team. They should be in touch soon.",
+      "score": 25,
+      "feedback": "'They' and 'soon' hand the problem back to the system that already failed them."
+     },
+     {
+      "text": "I've found it. Unfortunately these things happen sometimes.",
+      "score": 0,
+      "feedback": "Minimising a three-week failure in front of the person it happened to."
+     },
+     {
+      "text": "I've found it and I'll sort it out today, I promise.",
+      "score": 50,
+      "feedback": "Well-intentioned, but you have just promised something you said you can't do today. A broken second promise is worse than the first failure."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-ask-more-time-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "design-creative",
+    "technology",
+    "education",
+    "business"
+   ],
+   "category": "office-decision",
+   "scenario": "ask-more-time",
+   "topic": "first-conditional",
+   "guide": "conditionals",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "You are negotiating an extension.",
+    "message": "If we ______ the deadline by one week, we ______ able to include the client's new figures.",
+    "prompt": "Which pair completes the sentence correctly?",
+    "options": [
+     {
+      "text": "move … will be",
+      "score": 100,
+      "feedback": "First conditional: present simple in the 'if' clause, 'will' in the result. This is a real, available option."
+     },
+     {
+      "text": "will move … will be",
+      "score": 25,
+      "feedback": "Never 'will' in the 'if' clause. This is the single most common first-conditional error."
+     },
+     {
+      "text": "moved … will be",
+      "score": 25,
+      "feedback": "Mixed forms. 'Moved' needs 'would be' (second conditional)."
+     },
+     {
+      "text": "move … would be",
+      "score": 50,
+      "feedback": "Understandable, but 'would' makes a real, achievable request sound hypothetical: weakening your ask."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now you are making a hypothetical point in a review meeting — the budget does not exist.",
+    "message": "If we ______ a second designer, we ______ turn these around in three days instead of eight.",
+    "prompt": "Which pair is correct?",
+    "options": [
+     {
+      "text": "had … could",
+      "score": 100,
+      "feedback": "Second conditional: past simple + would/could. Right for something unreal or unlikely."
+     },
+     {
+      "text": "have … can",
+      "score": 50,
+      "feedback": "This says the second designer is a realistic option. If the budget isn't there, it misrepresents the situation."
+     },
+     {
+      "text": "had … can",
+      "score": 25,
+      "feedback": "Mixed. 'Had' must pair with 'would' or 'could'."
+     },
+     {
+      "text": "would have … could",
+      "score": 25,
+      "feedback": "No 'would' in the 'if' clause of a second conditional."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-giving-feedback-01",
+   "level": "B2",
+   "contexts": [
+    "management",
+    "design-creative",
+    "marketing",
+    "education",
+    "technology"
+   ],
+   "category": "office-decision",
+   "scenario": "giving-feedback",
+   "topic": "giving-feedback",
+   "guide": "feedback",
+   "interaction": "appropriateness",
+   "before": {
+    "brief": "A junior colleague has sent you a draft with several factual errors. You need it fixed today.",
+    "prompt": "Which feedback is appropriate and effective?",
+    "options": [
+     {
+      "text": "Thanks for getting this over. Three things need correcting before it goes out: the Q2 figure on page 2, the client name in the header, and the date in the summary. Can you turn those around by two?",
+      "score": 100,
+      "feedback": "Specific, countable, fixable, with a deadline. The person knows exactly what to do."
+     },
+     {
+      "text": "This needs more care — there are quite a few mistakes in it.",
+      "score": 50,
+      "feedback": "They now know you're unhappy but not what to fix. Vague criticism creates anxiety, not improvement."
+     },
+     {
+      "text": "Did you proofread this at all?",
+      "score": 0,
+      "feedback": "A rhetorical question used as criticism. It attacks the person and invites a defensive answer."
+     },
+     {
+      "text": "No worries, I'll just fix them myself — don't worry about it.",
+      "score": 25,
+      "feedback": "Kind in the moment, but they'll make the same errors next time, and you've taken on their work."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now the opposite: a colleague's work is genuinely good, and you are writing to them with their manager copied.",
+    "prompt": "Which version is strongest?",
+    "options": [
+     {
+      "text": "This is the clearest version of the onboarding doc we've had — the decision table on page 4 in particular will save support a lot of back-and-forth. Thanks, Iris.",
+      "score": 100,
+      "feedback": "Specific praise about a particular choice and its effect. This is the praise people actually remember."
+     },
+     {
+      "text": "Great work Iris, really good stuff!",
+      "score": 50,
+      "feedback": "Warm but generic. With a manager copied, specificity is what makes it count."
+     },
+     {
+      "text": "Good, just a few small things I'd change but overall fine.",
+      "score": 25,
+      "feedback": "Buries genuine praise under a vague criticism. The person will only hear the second half."
+     },
+     {
+      "text": "This is perfect, I wouldn't change a word.",
+      "score": 50,
+      "feedback": "Generous, but absolute praise is rarely believed, and it leaves nowhere to go next time."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-receiving-criticism-01",
+   "level": "B2",
+   "contexts": [
+    "general-office",
+    "management",
+    "design-creative",
+    "business",
+    "education"
+   ],
+   "category": "office-decision",
+   "scenario": "receiving-criticism",
+   "topic": "receiving-feedback",
+   "guide": "feedback",
+   "interaction": "best-response",
+   "before": {
+    "brief": "In a team meeting, a senior colleague says:",
+    "message": "Honestly, the numbers in your last report didn't inspire much confidence.",
+    "prompt": "Everyone is listening. What do you say?",
+    "options": [
+     {
+      "text": "That's worth looking at — could you tell me which figures you mean? I'd rather fix it properly than guess.",
+      "score": 100,
+      "feedback": "Calm, non-defensive, and it turns a vague public criticism into a specific, solvable question."
+     },
+     {
+      "text": "The figures were exactly what Finance gave me.",
+      "score": 25,
+      "feedback": "It may be true, but defending in the same minute makes you look rattled and shifts blame sideways."
+     },
+     {
+      "text": "I'm sorry, you're right, I'll redo the whole thing.",
+      "score": 25,
+      "feedback": "You've accepted an unspecified criticism and volunteered unnecessary work. You still don't know what was wrong."
+     },
+     {
+      "text": "Okay.",
+      "score": 50,
+      "feedback": "Not damaging, but you've learnt nothing and the room saw an unanswered criticism."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A day later, in private, your manager gives you fair but uncomfortable feedback about missing two deadlines.",
+    "prompt": "Which response is strongest?",
+    "options": [
+     {
+      "text": "You're right on both. Looking at it, I'm taking on work without checking what's already committed. I'm going to start flagging capacity before I say yes — can we check in on that in a month?",
+      "score": 100,
+      "feedback": "Accepts it, diagnoses the cause, names a concrete change, and invites follow-up. This is what turns feedback into progress."
+     },
+     {
+      "text": "I know, it's been a really difficult few months with everything going on.",
+      "score": 25,
+      "feedback": "Explains without changing anything. Your manager hears that it will continue."
+     },
+     {
+      "text": "Thank you for the feedback, I'll take it on board.",
+      "score": 50,
+      "feedback": "Polite and safe, but so general that nothing will visibly change."
+     },
+     {
+      "text": "That's fair. Which of the two mattered more? I want to make sure I'm protecting the right things.",
+      "score": 75,
+      "feedback": "Thoughtful and shows you're prioritising. It just stops short of committing to a change."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-changing-priorities-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "technology",
+    "marketing",
+    "management",
+    "remote-work"
+   ],
+   "category": "office-decision",
+   "scenario": "changing-priorities",
+   "topic": "saying-no",
+   "guide": "saying-no",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Your manager asked for the budget review by Friday. Now a director asks you, directly, for an urgent analysis — also by Friday. You cannot do both.",
+    "prompt": "What do you say to the director?",
+    "options": [
+     {
+      "text": "I can do that — I should flag that Elena has me on the budget review for Friday. I can't do both properly. Would you like me to check with her which comes first, or would you prefer to?",
+      "score": 100,
+      "feedback": "Doesn't refuse, doesn't over-promise, surfaces the conflict, and offers to handle it. Exactly right."
+     },
+     {
+      "text": "Yes, of course, I'll get it done.",
+      "score": 25,
+      "feedback": "You've now promised two things you can't deliver. One of them will fail, and both people will be surprised."
+     },
+     {
+      "text": "I can't — I'm already doing the budget review for Elena.",
+      "score": 50,
+      "feedback": "Honest, but a flat no to a director without any alternative is a missed opportunity."
+     },
+     {
+      "text": "You'll need to talk to Elena about my workload.",
+      "score": 25,
+      "feedback": "Technically correct, but it sends a senior person off to do admin you could handle in one message."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A colleague asks you to review a 40-page document by tomorrow. You are already at capacity.",
+    "prompt": "Which reply is best?",
+    "options": [
+     {
+      "text": "I can't do all forty by tomorrow. I could review the executive summary and the recommendations tonight — that's where the risk usually is. Would that help, or do you need the full read?",
+      "score": 100,
+      "feedback": "A real no, a real partial yes, a reason, and a question. This preserves both the relationship and your week."
+     },
+     {
+      "text": "Sorry, I'm completely swamped.",
+      "score": 50,
+      "feedback": "Honest but closed. Nothing is offered, so they're left stuck."
+     },
+     {
+      "text": "I'll try to get to it.",
+      "score": 25,
+      "feedback": "'I'll try' is heard as yes and delivered as no. The worst of both."
+     },
+     {
+      "text": "Sure, send it over.",
+      "score": 25,
+      "feedback": "Saying yes at capacity means something else slips, and you haven't decided what."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-two-solutions-01",
+   "level": "B2",
+   "contexts": [
+    "technology",
+    "business",
+    "marketing",
+    "management",
+    "design-creative"
+   ],
+   "category": "office-decision",
+   "scenario": "two-solutions",
+   "topic": "comparatives",
+   "guide": "comparing",
+   "interaction": "stronger-sentence",
+   "before": {
+    "brief": "You are recommending one of two suppliers in a meeting.",
+    "prompt": "Both sentences are grammatically correct. Which one actually helps the room decide?",
+    "options": [
+     {
+      "text": "Vidal is about 15% more expensive, but their lead time is half of Orsan's — four weeks against eight. Given the launch date, I'd go with Vidal.",
+      "score": 100,
+      "feedback": "Names the trade-off, quantifies both sides, and commits to a recommendation with a reason."
+     },
+     {
+      "text": "Vidal is more expensive than Orsan, but they're faster.",
+      "score": 50,
+      "feedback": "True but unactionable. How much more expensive? How much faster? The room can't decide on this."
+     },
+     {
+      "text": "Vidal is slightly more expensive but significantly faster, so it's the obvious choice.",
+      "score": 50,
+      "feedback": "The shape is right, but 15% is not 'slightly', and 'obvious' shuts down discussion before you have shown the numbers."
+     },
+     {
+      "text": "Both have advantages and disadvantages, so it depends what we prioritise.",
+      "score": 25,
+      "feedback": "Accurate and useless. You were asked for a recommendation; this hands the work back."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill applied to three internal options in a written recommendation.",
+    "prompt": "Which sentence is best?",
+    "options": [
+     {
+      "text": "Of the three, option C is by far the most reliable, though it's marginally slower to set up — about two extra weeks.",
+      "score": 100,
+      "feedback": "'By far' sizes the advantage and 'marginally… about two weeks' sizes the cost. The reader can see the trade-off is worth it."
+     },
+     {
+      "text": "Option C is more reliable than A and B, but it is slower to set up.",
+      "score": 50,
+      "feedback": "Accurate, but it gives no sense of scale. The reader can't tell whether the delay matters."
+     },
+     {
+      "text": "Option C is considerably the most reliable, but slightly the slowest.",
+      "score": 25,
+      "feedback": "'Considerably' modifies comparatives, not superlatives: use 'by far'. And 'slightly the slowest' is unnatural: say 'marginally slower'."
+     },
+     {
+      "text": "Option C is very reliable and quite slow.",
+      "score": 25,
+      "feedback": "No comparison at all. The reader can't tell how C ranks against A and B."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-remote-request-01",
+   "level": "B2",
+   "contexts": [
+    "remote-work",
+    "general-office",
+    "management",
+    "technology",
+    "business"
+   ],
+   "category": "office-decision",
+   "scenario": "remote-work-request",
+   "topic": "negotiating",
+   "guide": "negotiating",
+   "interaction": "best-response",
+   "before": {
+    "brief": "You want to work from home two days a week. You are asking your manager by email.",
+    "prompt": "Which version is most likely to get a yes?",
+    "options": [
+     {
+      "text": "I'd like to propose working from home on Tuesdays and Thursdays. Those are my lightest meeting days, and the deep-focus work — reporting and analysis — is what I'd move there. Happy to trial it for a month and review.",
+      "score": 100,
+      "feedback": "Specific days, a reason tied to the work, and a trial with a review. It makes yes low-risk."
+     },
+     {
+      "text": "Would it be possible to work from home a couple of days a week? It would really help with my commute.",
+      "score": 50,
+      "feedback": "Polite, but the only stated benefit is yours. Managers say yes faster when the work benefits too."
+     },
+     {
+      "text": "Everyone else in the team works from home twice a week, so I'd like to as well.",
+      "score": 25,
+      "feedback": "Fairness arguments invite a fairness answer. It also isn't about your work."
+     },
+     {
+      "text": "I need to work from home two days a week from next month.",
+      "score": 25,
+      "feedback": "Announcing rather than asking. Unless there's a legal entitlement in play, this closes the conversation."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Your manager says yes to one day, not two. You still want two.",
+    "prompt": "What is your best move?",
+    "options": [
+     {
+      "text": "One day works as a start — thank you. Could we agree that if the reporting turnaround holds or improves over the next two months, we revisit the second day?",
+      "score": 100,
+      "feedback": "Accepts the win, sets a measurable condition, and books the next conversation. Classic conditional negotiation."
+     },
+     {
+      "text": "Okay, one day is fine.",
+      "score": 50,
+      "feedback": "Gracious, but you've closed the door on the second day without trying."
+     },
+     {
+      "text": "Can I ask why not two? The team's already doing it.",
+      "score": 25,
+      "feedback": "Challenges the decision and reopens the fairness argument that didn't work the first time."
+     },
+     {
+      "text": "If I can't have two days, I'll need to think about my options here.",
+      "score": 0,
+      "feedback": "An implied resignation threat over one day at home. Disproportionate, and hard to walk back."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-colleague-misunderstanding-01",
+   "level": "B2",
+   "contexts": [
+    "general-office",
+    "technology",
+    "design-creative",
+    "healthcare",
+    "education"
+   ],
+   "category": "office-decision",
+   "scenario": "colleague-misunderstanding",
+   "topic": "passive-voice",
+   "guide": "passive-reported",
+   "interaction": "stronger-sentence",
+   "before": {
+    "brief": "A colleague has told the team that the delay was your fault. It was not — the brief arrived late from another department. You are writing a message the whole team will read.",
+    "prompt": "Which sentence is the better professional choice?",
+    "options": [
+     {
+      "text": "The brief was received on the 14th rather than the 7th, which moved the whole schedule back a week.",
+      "score": 100,
+      "feedback": "The passive keeps the fact clear without naming and shaming anyone. It corrects the record and defuses the conflict."
+     },
+     {
+      "text": "Marketing sent the brief a week late, which is why everything moved.",
+      "score": 50,
+      "feedback": "Accurate and active, but in a group message it publicly blames another team, and you'll pay for that later."
+     },
+     {
+      "text": "It's not my fault, the brief was late.",
+      "score": 25,
+      "feedback": "'It's not my fault' sounds defensive and draws attention to the accusation rather than the facts."
+     },
+     {
+      "text": "Mistakes were made regarding the brief timing.",
+      "score": 25,
+      "feedback": "The passive used to hide everything. Nobody learns what happened, and it sounds evasive."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now the opposite: you did something well and your manager did not notice. You are writing your monthly update.",
+    "prompt": "Which sentence serves you better?",
+    "options": [
+     {
+      "text": "I renegotiated the Orsan contract and brought the annual cost down by about 8%.",
+      "score": 100,
+      "feedback": "Active voice, your name on the verb, and a number. Use the active when you want credit to be clear."
+     },
+     {
+      "text": "The Orsan contract was renegotiated and the annual cost was reduced by about 8%.",
+      "score": 50,
+      "feedback": "Grammatically fine, but the passive has deleted you from your own achievement."
+     },
+     {
+      "text": "We managed to get the Orsan cost down a bit.",
+      "score": 25,
+      "feedback": "'We', 'managed to', and 'a bit' all shrink the result. This is an update that will not be remembered."
+     },
+     {
+      "text": "The Orsan contract has been renegotiated by me with a reduction of 8% being achieved.",
+      "score": 25,
+      "feedback": "Grammatically tangled. 'By me' in a passive clause is almost always a sign to switch to the active."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-give-opinion-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "marketing",
+    "business",
+    "education",
+    "management"
+   ],
+   "category": "meeting-room",
+   "scenario": "give-opinion",
+   "topic": "giving-opinions",
+   "guide": "giving-opinions",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Your team is talking about a new website. Your manager asks you:",
+    "message": "What do you think?",
+    "prompt": "Which answer is best?",
+    "options": [
+     {
+      "text": "I think we should wait, because the design is not ready.",
+      "score": 100,
+      "feedback": "Good. You give your opinion and a reason."
+     },
+     {
+      "text": "I think we should wait.",
+      "score": 50,
+      "feedback": "Clear, but there is no reason. Add 'because…'."
+     },
+     {
+      "text": "According to me, we should wait.",
+      "score": 25,
+      "feedback": "Say 'In my opinion' or 'I think'. 'According to' is for other people."
+     },
+     {
+      "text": "I don't know.",
+      "score": 25,
+      "feedback": "Your manager wants your opinion. Try to give one."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A different meeting. A colleague asks you:",
+    "message": "Do you like the idea of working from home on Fridays?",
+    "prompt": "Which answer is best?",
+    "options": [
+     {
+      "text": "In my opinion, it's a good idea, because we have fewer meetings on Fridays.",
+      "score": 100,
+      "feedback": "Good. An opinion phrase, a clear answer and a reason."
+     },
+     {
+      "text": "Yes.",
+      "score": 25,
+      "feedback": "Too short. Say what you think and why."
+     },
+     {
+      "text": "I am agree with this idea.",
+      "score": 25,
+      "feedback": "Say 'I agree', not 'I am agree'. 'Agree' is a verb."
+     },
+     {
+      "text": "It's a good idea.",
+      "score": 50,
+      "feedback": "Clear, but give a reason too."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-disagree-politely-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "technology",
+    "business",
+    "management",
+    "marketing"
+   ],
+   "category": "meeting-room",
+   "scenario": "disagree-politely",
+   "topic": "polite-disagreement",
+   "guide": "polite-disagreement",
+   "interaction": "categorise",
+   "before": {
+    "brief": "Sort these meeting phrases by how they land.",
+    "prompt": "Put each phrase into the right group.",
+    "bins": [
+     "Works well",
+     "Too blunt"
+    ],
+    "items": [
+     {
+      "text": "I see your point, but I'm worried about the timeline.",
+      "bin": "Works well"
+     },
+     {
+      "text": "That's a fair point — my concern is the cost.",
+      "bin": "Works well"
+     },
+     {
+      "text": "I'd look at it slightly differently.",
+      "bin": "Works well"
+     },
+     {
+      "text": "I agree in principle, though I wonder whether we have the capacity.",
+      "bin": "Works well"
+     },
+     {
+      "text": "That's wrong.",
+      "bin": "Too blunt"
+     },
+     {
+      "text": "No, that won't work.",
+      "bin": "Too blunt"
+     },
+     {
+      "text": "You're not understanding the problem.",
+      "bin": "Too blunt"
+     },
+     {
+      "text": "We already tried that and it failed.",
+      "bin": "Too blunt"
+     }
+    ],
+    "feedback": "The phrases that work all do the same thing first: they acknowledge. Then they introduce one specific concern. The blunt ones reject the whole idea, and two of them target the person."
+   },
+   "after": {
+    "brief": "Same skill, applied to written comments on a shared document.",
+    "prompt": "Sort these comments.",
+    "bins": [
+     "Works well",
+     "Too blunt"
+    ],
+    "items": [
+     {
+      "text": "Could we double-check this figure? It doesn't match the appendix.",
+      "bin": "Works well"
+     },
+     {
+      "text": "I might be missing something here — is the Q3 total including returns?",
+      "bin": "Works well"
+     },
+     {
+      "text": "Strong section. One thought: would a table be clearer than the list?",
+      "bin": "Works well"
+     },
+     {
+      "text": "This is confusing.",
+      "bin": "Too blunt"
+     },
+     {
+      "text": "Wrong figure.",
+      "bin": "Too blunt"
+     },
+     {
+      "text": "Did anyone actually read this before sending it?",
+      "bin": "Too blunt"
+     }
+    ],
+    "feedback": "Written comments have no tone of voice, so they always read harder than you intend. A question mark and a named detail do most of the softening work."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-interrupt-politely-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "business",
+    "remote-work",
+    "technology",
+    "management"
+   ],
+   "category": "meeting-room",
+   "scenario": "interrupt-politely",
+   "topic": "interrupting",
+   "guide": "meeting-language",
+   "interaction": "best-response",
+   "before": {
+    "brief": "A colleague has been talking for six minutes and is about to move on from a decision that directly affects your team.",
+    "prompt": "How do you get in?",
+    "options": [
+     {
+      "text": "Sorry to jump in — before we move on, can I add one thing on the resourcing?",
+      "score": 100,
+      "feedback": "Apologises briefly, signals why now, and names the topic. Almost impossible to refuse."
+     },
+     {
+      "text": "Sorry — can I say something?",
+      "score": 75,
+      "feedback": "Polite and works, but without naming the topic the chair may park you until later."
+     },
+     {
+      "text": "Hang on, that's not right.",
+      "score": 25,
+      "feedback": "Interrupts and contradicts in the same breath. The room will hear the conflict, not the point."
+     },
+     {
+      "text": "(Say nothing and email afterwards.)",
+      "score": 50,
+      "feedback": "Safe, but the decision will have been made. Some points genuinely have to happen in the room."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill, on a video call where two people keep talking over each other.",
+    "prompt": "Which approach works best online?",
+    "options": [
+     {
+      "text": "Use the hand-raise, then: 'Thanks — just one thing on the deadline, then I'll hand back.'",
+      "score": 100,
+      "feedback": "Uses the tool the medium gives you, states the scope of your interruption, and promises to be brief. Ideal for video."
+     },
+     {
+      "text": "Unmute and start talking as soon as there's a half-second gap.",
+      "score": 25,
+      "feedback": "On a call with lag, this creates the collision you're trying to avoid."
+     },
+     {
+      "text": "Type 'I have a point on the deadline' in the chat and wait.",
+      "score": 75,
+      "feedback": "Good and low-friction. It just depends on someone watching the chat."
+     },
+     {
+      "text": "Wait until the end and hope there's time.",
+      "score": 25,
+      "feedback": "On video calls there is usually no time at the end, and the decision has been taken."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-summarise-meeting-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "management",
+    "business",
+    "remote-work",
+    "education"
+   ],
+   "category": "meeting-room",
+   "scenario": "summarise-meeting",
+   "topic": "summarising",
+   "guide": "meeting-language",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Five minutes left. Three decisions were made and two things are still open.",
+    "prompt": "Which closing summary is most useful?",
+    "options": [
+     {
+      "text": "To summarise: we're going with supplier B, launch moves to 14 April, and Ana owns the content plan. Still open: the budget for the extra designer, and who presents to the board. Can we close those by Friday?",
+      "score": 100,
+      "feedback": "Decisions, owners, dates, and an explicit list of what's unresolved with a deadline. This is the summary that prevents the next meeting."
+     },
+     {
+      "text": "Great discussion everyone, lots of good points. Let's pick it up next week.",
+      "score": 25,
+      "feedback": "Nothing is recorded. Next week the meeting starts again from the beginning."
+     },
+     {
+      "text": "So, we agreed on supplier B and the new date. Anything else?",
+      "score": 50,
+      "feedback": "Captures two decisions but drops the owner and both open items: the parts most likely to fail."
+     },
+     {
+      "text": "I'll send the minutes round later.",
+      "score": 50,
+      "feedback": "Useful, but saying the decisions out loud is what catches disagreement while people are still in the room."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill in writing: you are sending the follow-up message after that meeting.",
+    "prompt": "Which subject line and opening is best?",
+    "options": [
+     {
+      "text": "Subject: Launch meeting — 3 decisions, 2 open (actions by Fri) · 'Hi all — summary below. Two things need an owner by Friday.'",
+      "score": 100,
+      "feedback": "The subject line carries the content and the deadline. People act on this without opening the attachment."
+     },
+     {
+      "text": "Subject: Meeting notes · 'Hi all, please find the notes from today's meeting attached.'",
+      "score": 50,
+      "feedback": "Correct and forgettable. Nothing signals that anything is required of the reader."
+     },
+     {
+      "text": "Subject: Today · 'Notes attached.'",
+      "score": 25,
+      "feedback": "Gives the reader no reason to open it."
+     },
+     {
+      "text": "Subject: URGENT — please read · 'Everyone needs to read this today.'",
+      "score": 25,
+      "feedback": "Urgency without content. Used twice, people stop believing your subject lines."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-make-suggestion-01",
+   "level": "A2",
+   "contexts": [
+    "marketing",
+    "technology",
+    "business",
+    "management",
+    "design-creative"
+   ],
+   "category": "meeting-room",
+   "scenario": "make-suggestion",
+   "topic": "making-suggestions",
+   "guide": "suggestions-advice",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "In a meeting, you want to suggest a short break. Only one sentence is correct.",
+    "prompt": "Which one is correct?",
+    "options": [
+     {
+      "text": "How about taking a short break?",
+      "score": 100,
+      "feedback": "Correct. 'How about' + -ing."
+     },
+     {
+      "text": "How about take a short break?",
+      "score": 25,
+      "feedback": "After 'How about', use the -ing form: 'taking'."
+     },
+     {
+      "text": "Let's to take a short break.",
+      "score": 0,
+      "feedback": "After 'Let's', use the base verb. No 'to'."
+     },
+     {
+      "text": "Shall we taking a short break?",
+      "score": 0,
+      "feedback": "After 'Shall we', use the base verb: 'Shall we take…?'"
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill, but now you give advice to one colleague. He has a problem with a client.",
+    "prompt": "Which sentence is correct and friendly?",
+    "options": [
+     {
+      "text": "You should call the client today.",
+      "score": 100,
+      "feedback": "Correct. 'Should' + base verb is friendly advice."
+     },
+     {
+      "text": "You should to call the client today.",
+      "score": 0,
+      "feedback": "No 'to' after 'should'."
+     },
+     {
+      "text": "You should calling the client today.",
+      "score": 0,
+      "feedback": "After 'should', use the base verb: 'call'."
+     },
+     {
+      "text": "You must call the client today.",
+      "score": 50,
+      "feedback": "Correct grammar, but 'must' from a colleague sounds like an order."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-explain-problem-01",
+   "level": "B1",
+   "contexts": [
+    "technology",
+    "business",
+    "healthcare",
+    "general-office",
+    "management"
+   ],
+   "category": "meeting-room",
+   "scenario": "explain-problem",
+   "topic": "present-perfect",
+   "guide": "present-perfect",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "You are giving a status update on a problem.",
+    "prompt": "Which sentence is correct?",
+    "options": [
+     {
+      "text": "I've spoken to the vendor and they haven't confirmed a date yet.",
+      "score": 100,
+      "feedback": "Present perfect for completed action with present relevance, plus 'yet' in the negative. Textbook status-update English."
+     },
+     {
+      "text": "I have spoken to the vendor yesterday and they didn't confirm yet.",
+      "score": 25,
+      "feedback": "'Yesterday' forces the past simple: 'I spoke to the vendor yesterday'. And 'yet' needs the present perfect."
+     },
+     {
+      "text": "I speak to the vendor and they don't confirm a date yet.",
+      "score": 25,
+      "feedback": "Present simple can't report a completed action. This reads as a routine, not an update."
+     },
+     {
+      "text": "I am speaking to the vendor since Monday.",
+      "score": 0,
+      "feedback": "An action continuing from a past point needs the present perfect continuous: 'I've been speaking to the vendor since Monday'."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill: you are describing your experience in a project review.",
+    "prompt": "Which sentence is correct?",
+    "options": [
+     {
+      "text": "We've been running the pilot for six weeks and we've already found three issues.",
+      "score": 100,
+      "feedback": "Present perfect continuous for the ongoing period, present perfect with 'already' for the results. Precise and natural."
+     },
+     {
+      "text": "We run the pilot since six weeks and we found already three issues.",
+      "score": 0,
+      "feedback": "Three problems: wrong tense, 'since' with a duration (use 'for'), and 'already' in the wrong position."
+     },
+     {
+      "text": "We are running the pilot for six weeks and we have found already three issues.",
+      "score": 50,
+      "feedback": "The second half nearly works, but 'are running... for six weeks' should be 'have been running', and 'already' goes before 'found'."
+     },
+     {
+      "text": "We have run the pilot since six weeks ago and have found three issues.",
+      "score": 50,
+      "feedback": "Understandable, but 'since six weeks ago' is unnatural. Use 'for six weeks'."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-describe-data-01",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "marketing",
+    "technology",
+    "education",
+    "management"
+   ],
+   "category": "presentation",
+   "scenario": "describe-data",
+   "topic": "data-description",
+   "guide": "describing-data",
+   "interaction": "best-response",
+   "before": {
+    "brief": "A chart is on screen. Online sales went from 100k in January to 280k in June, rising fastest between March and April. In-store sales stayed flat at around 150k all six months.",
+    "prompt": "Which opening describes it best?",
+    "options": [
+     {
+      "text": "Overall, online sales almost tripled over the six months while in-store remained flat — the sharpest growth came between March and April.",
+      "score": 100,
+      "feedback": "Overview first, both series compared, proportion rather than raw numbers, and the standout feature named. This is exactly what scores well in IELTS Task 1 too."
+     },
+     {
+      "text": "In January online was 100k, in February it went up, in March it went up again, in April it was higher…",
+      "score": 25,
+      "feedback": "Reading the numbers aloud. There's no overview and no comparison: the audience learns nothing they can't see."
+     },
+     {
+      "text": "Online sales augmented of 180% during the period.",
+      "score": 25,
+      "feedback": "'Augment' is a false friend here, and it's 'increased BY 180%': never 'of'."
+     },
+     {
+      "text": "The chart shows online and in-store sales from January to June.",
+      "score": 50,
+      "feedback": "A correct description of the chart, but it says nothing about what the data actually does."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A second chart: support tickets fell steadily from 400 a month to 120 over a year, but peaked sharply at 520 in September during a system migration.",
+    "prompt": "Which description is strongest?",
+    "options": [
+     {
+      "text": "Tickets fell steadily across the year, from 400 to 120 — a drop of about 70%. The one exception was September, when they peaked at 520 during the migration.",
+      "score": 100,
+      "feedback": "Trend, size of change as a proportion, then the anomaly explained. The word 'exception' is what makes the peak make sense."
+     },
+     {
+      "text": "Tickets went down a lot, except in September when they went up a lot.",
+      "score": 50,
+      "feedback": "The shape is right but 'a lot' twice gives no magnitude. Add the figures and the percentage."
+     },
+     {
+      "text": "Tickets decreased to 70% over the year.",
+      "score": 25,
+      "feedback": "'Decreased TO 70%' means they ended at 70% of something. You mean 'decreased BY about 70%'."
+     },
+     {
+      "text": "There was a decrease of tickets and also an increase in September.",
+      "score": 25,
+      "feedback": "'A decrease of tickets' should be 'in tickets', and neither change has a size or a cause."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-handle-questions-01",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "technology",
+    "education",
+    "marketing",
+    "management"
+   ],
+   "category": "presentation",
+   "scenario": "handle-questions",
+   "topic": "professional-tone",
+   "guide": "professional-tone",
+   "interaction": "best-response",
+   "before": {
+    "brief": "You are presenting to a client. Someone asks a detailed question about a figure you do not know.",
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "I don't have that figure to hand — I'd rather give you the right number than guess. I'll send it this afternoon.",
+      "score": 100,
+      "feedback": "Honest, frames not-knowing as accuracy rather than ignorance, and commits to a time. Clients trust this far more than a guess."
+     },
+     {
+      "text": "I think it's around 15%, but don't quote me on that.",
+      "score": 25,
+      "feedback": "A guess presented as data. If it turns out to be 30%, you've damaged trust in everything else you said."
+     },
+     {
+      "text": "That's a very good question.",
+      "score": 25,
+      "feedback": "A filler that buys two seconds and answers nothing. Everyone recognises it."
+     },
+     {
+      "text": "That's outside the scope of what I'm presenting today.",
+      "score": 50,
+      "feedback": "Sometimes legitimate, but here it sounds like a deflection from a reasonable question."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Someone asks a hostile question: 'Why should we believe these projections when last year's were wrong?'",
+    "prompt": "What is your best response?",
+    "options": [
+     {
+      "text": "That's fair — last year we were 20% out, and the reason was that we modelled on pre-pandemic seasonality. We've changed the method since. Happy to walk you through the new assumptions.",
+      "score": 100,
+      "feedback": "Concedes the fact, explains the cause, names the change, and offers evidence. Hostility usually dissolves when the fact is simply granted."
+     },
+     {
+      "text": "Last year was an exceptional situation that nobody could have predicted.",
+      "score": 25,
+      "feedback": "Defends rather than answers. 'Nobody could have predicted' is exactly what the questioner is challenging."
+     },
+     {
+      "text": "These projections were prepared by our analytics team using industry-standard methods.",
+      "score": 25,
+      "feedback": "Hides behind authority and doesn't engage with the actual objection."
+     },
+     {
+      "text": "I understand your scepticism. What would you need to see to have confidence in these numbers?",
+      "score": 75,
+      "feedback": "A strong move that turns the challenge into a conversation, but it dodges the factual question about last year."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-async-status-01",
+   "level": "B1",
+   "contexts": [
+    "remote-work",
+    "technology",
+    "marketing",
+    "business",
+    "design-creative"
+   ],
+   "category": "team-chat",
+   "scenario": "async-status",
+   "topic": "async-updates",
+   "guide": "async-writing",
+   "interaction": "best-response",
+   "before": {
+    "brief": "You are writing your daily async update. Your team lead is eight hours behind and will read it when she wakes up.",
+    "prompt": "Which update is most useful to her?",
+    "options": [
+     {
+      "text": "Yesterday: finished the API integration. Today: starting the migration script. Blocked on: need the staging credentials from Infra — @Marc can you drop those in? That's blocking me from about 11am my time.",
+      "score": 100,
+      "feedback": "Structured, scannable, names the blocker, tags the person and states the deadline in a way that survives the time difference."
+     },
+     {
+      "text": "Made good progress yesterday, working on the migration today. A couple of small blockers but nothing major.",
+      "score": 25,
+      "feedback": "Nothing is actionable. She wakes up, reads this, and still has to ask what the blockers are: losing another full day."
+     },
+     {
+      "text": "Hi! Are you around? I need to ask you something about the credentials.",
+      "score": 0,
+      "feedback": "A greeting with no content, sent to someone eight hours away. She'll reply 'yes?' and lose another cycle."
+     },
+     {
+      "text": "Finished the API integration, starting migration today, blocked on staging credentials.",
+      "score": 75,
+      "feedback": "Clear and compact. It just doesn't say who can unblock it or by when."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill: you need a decision, not a status update, from someone in another time zone.",
+    "prompt": "Which message gets the fastest good answer?",
+    "options": [
+     {
+      "text": "Decision needed by your EOD: do we launch Thursday with the old pricing table, or hold to Monday with the new one? My recommendation is Thursday — details in thread. A 👍 is enough.",
+      "score": 100,
+      "feedback": "States it's a decision, gives both options, recommends one, and makes replying take one second. This is async writing at its best."
+     },
+     {
+      "text": "Can we talk about the launch date when you're online? Let me know when's good.",
+      "score": 25,
+      "feedback": "Requires a meeting to schedule a meeting. With an eight-hour gap this costs two days."
+     },
+     {
+      "text": "What do you think we should do about the pricing table?",
+      "score": 25,
+      "feedback": "Open question with no options and no deadline. She'll need to ask three questions before she can answer."
+     },
+     {
+      "text": "I think we should launch Thursday with the old pricing table. Let me know if you disagree.",
+      "score": 75,
+      "feedback": "Decisive and efficient. Silence becomes consent. It just risks her not seeing it before you act."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-chat-tone-01",
+   "level": "B2",
+   "contexts": [
+    "remote-work",
+    "general-office",
+    "technology",
+    "management",
+    "design-creative"
+   ],
+   "category": "team-chat",
+   "scenario": "chat-tone-slip",
+   "topic": "understanding-tone",
+   "guide": "professional-tone",
+   "interaction": "multiple-select",
+   "before": {
+    "brief": "You sent this to a colleague: 'This isn't what I asked for.' She replied 'Ok.' and has been quiet since.",
+    "prompt": "Select everything that made your message land badly. Wrong selections cost points.",
+    "options": [
+     {
+      "text": "No greeting or name",
+      "correct": true,
+      "feedback": "A message that opens with a criticism and no name reads as cold."
+     },
+     {
+      "text": "It says what's wrong but not what's right",
+      "correct": true,
+      "feedback": "She now knows she failed but not what to do. The most stressful kind of message to receive."
+     },
+     {
+      "text": "'This isn't' is a flat negative with no softening",
+      "correct": true,
+      "feedback": "No hedging, no question mark, no explanation. In chat, that reads as anger."
+     },
+     {
+      "text": "It's too short to carry any warmth",
+      "correct": true,
+      "feedback": "Short is fine for good news. For criticism, brevity reads as dismissal."
+     },
+     {
+      "text": "It was sent in chat rather than by email",
+      "correct": false,
+      "feedback": "Chat is the right channel for a quick correction. The channel wasn't the problem."
+     },
+     {
+      "text": "It used the word 'asked'",
+      "correct": false,
+      "feedback": "'Asked' is neutral. The problem is the structure around it, not that word."
+     }
+    ],
+    "feedback": "Written criticism with no name, no specifics and no softening will almost always be read as anger, because the reader supplies the tone themselves."
+   },
+   "after": {
+    "brief": "You want to repair it. She is a colleague you work with daily.",
+    "prompt": "Select every response that would genuinely help.",
+    "options": [
+     {
+      "text": "Message her: 'Sorry Nadia — that came out sharper than I meant. What I need is the regional split rather than the totals. Can we look at it together at 3?'",
+      "correct": true,
+      "feedback": "Names the tone problem, supplies the missing specifics, and offers time. This repairs it."
+     },
+     {
+      "text": "Be specific about what you actually need",
+      "correct": true,
+      "feedback": "The original failure was missing information. Supplying it is most of the fix."
+     },
+     {
+      "text": "Offer a quick call or a moment together",
+      "correct": true,
+      "feedback": "Tone problems are much easier to repair in voice than in text."
+     },
+     {
+      "text": "Send a follow-up saying 'no worries, it's fine!'",
+      "correct": false,
+      "feedback": "This pretends nothing happened and leaves her still not knowing what you need."
+     },
+     {
+      "text": "Add a smiley to the original message and move on",
+      "correct": false,
+      "feedback": "An emoji doesn't retroactively fix an unclear, sharp request."
+     },
+     {
+      "text": "Wait and see if she brings it up",
+      "correct": false,
+      "feedback": "She replied 'Ok.' and went quiet. She is not going to bring it up."
+     }
+    ],
+    "feedback": "Repairing tone has two halves: name the tone, then fix the information gap that caused the message in the first place."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-job-interview-01",
+   "level": "B1",
+   "contexts": [
+    "job-search",
+    "business",
+    "technology",
+    "education",
+    "management"
+   ],
+   "category": "interview",
+   "scenario": "introduce-yourself",
+   "topic": "career-vocabulary",
+   "guide": "interview-language",
+   "interaction": "best-response",
+   "before": {
+    "brief": "First question of the interview:",
+    "message": "So — tell me about yourself.",
+    "prompt": "Which opening is strongest?",
+    "options": [
+     {
+      "text": "I've spent six years in digital marketing, the last three leading a team of four at Vidal. What I'm known for is turning messy data into campaigns that actually convert — we grew qualified leads by about 60% last year. I'm here because this role moves that into a bigger market.",
+      "score": 100,
+      "feedback": "Experience, specialism, a number, and a reason for being in the room. Ninety seconds, all of it relevant."
+     },
+     {
+      "text": "Well, I was born in Bogotá, I studied communications, then I moved to Madrid in 2019, then I worked at a small agency for a year, then…",
+      "score": 25,
+      "feedback": "A chronological life story. The interviewer has your CV. They want to know what you're good at."
+     },
+     {
+      "text": "I'm hardworking, motivated and a good team player.",
+      "score": 25,
+      "feedback": "Adjectives with no evidence. Every candidate says exactly this, so it distinguishes nothing."
+     },
+     {
+      "text": "What would you like to know? I'm happy to talk about whatever's most useful.",
+      "score": 50,
+      "feedback": "Sounds collaborative but hands back the one question where you fully control the answer."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Later in the same interview:",
+    "message": "Tell me about a time something went wrong.",
+    "prompt": "Which answer is best?",
+    "options": [
+     {
+      "text": "We launched a campaign with the wrong pricing on the landing page — live for four hours. I pulled it, called the twelve affected customers myself and honoured the wrong price. We lost about 2k. I then built a pre-launch checklist that we still use. It hasn't happened again.",
+      "score": 100,
+      "feedback": "Owns it, states the real cost, describes the action and ends with the systemic fix. This is the answer interviewers are actually listening for."
+     },
+     {
+      "text": "Honestly, I can't think of anything major — I'm quite careful.",
+      "score": 0,
+      "feedback": "Reads as either dishonest or inexperienced. Everyone has had something go wrong."
+     },
+     {
+      "text": "My last manager gave us impossible deadlines, so things slipped constantly. It was a difficult environment.",
+      "score": 25,
+      "feedback": "Blaming a previous employer. The interviewer wonders how you'll describe them one day."
+     },
+     {
+      "text": "We had a problem with a campaign once, but we fixed it and the client was happy in the end.",
+      "score": 50,
+      "feedback": "No specifics, no ownership, no lesson. It answers the question without revealing anything."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-strengths-weaknesses-01",
+   "level": "B1",
+   "contexts": [
+    "job-search",
+    "management",
+    "business",
+    "education",
+    "healthcare"
+   ],
+   "category": "interview",
+   "scenario": "strengths-weaknesses",
+   "topic": "strengths-weaknesses",
+   "guide": "interview-language",
+   "interaction": "best-response",
+   "before": {
+    "brief": "The interviewer asks:",
+    "message": "What would you say your main weakness is?",
+    "prompt": "Which answer is strongest?",
+    "options": [
+     {
+      "text": "I used to take on too much myself rather than delegating — it slowed my team down. I've been working on it deliberately: last quarter I handed over two projects entirely, and both shipped without me.",
+      "score": 100,
+      "feedback": "A real weakness, its actual cost, the corrective action, and evidence it worked. This is the structure that turns the question into an advantage."
+     },
+     {
+      "text": "I'd say I'm a perfectionist — I care too much about getting things right.",
+      "score": 25,
+      "feedback": "The most transparent non-answer in interviewing. Experienced interviewers hear it as avoidance."
+     },
+     {
+      "text": "I'm not very good with deadlines, I often run late.",
+      "score": 25,
+      "feedback": "Honest but unmitigated. You've named a weakness that is disqualifying for most roles with no evidence of change."
+     },
+     {
+      "text": "I don't really have any weaknesses that affect my work.",
+      "score": 0,
+      "feedback": "Reads as either arrogant or lacking self-awareness. Both are worse than any weakness you could name."
+     }
+    ]
+   },
+   "after": {
+    "brief": "And the other half:",
+    "message": "What's your greatest strength?",
+    "prompt": "Which answer works best?",
+    "options": [
+     {
+      "text": "Getting stuck projects moving again. I've twice inherited work that was months behind — the Orsan migration was the big one, eight weeks late when I took it and delivered three weeks after. It's mostly about finding the one real blocker rather than managing the whole list.",
+      "score": 100,
+      "feedback": "Names a specific strength, gives two instances and one detailed example with numbers, then explains how it works. Memorable and verifiable."
+     },
+     {
+      "text": "I'm a very hard worker and I'm really passionate about what I do.",
+      "score": 25,
+      "feedback": "Unfalsifiable and identical to every other candidate's answer."
+     },
+     {
+      "text": "People say I'm good with clients.",
+      "score": 50,
+      "feedback": "Better because it's specific, but 'people say' distances you from your own strength and there's no example."
+     },
+     {
+      "text": "I'd say my communication skills — I get along well with everyone.",
+      "score": 50,
+      "feedback": "A reasonable strength badly evidenced. 'Everyone' is not credible, and no example is given."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-salary-01",
+   "level": "B2",
+   "contexts": [
+    "job-search",
+    "management",
+    "business",
+    "general-office",
+    "technology"
+   ],
+   "category": "interview",
+   "scenario": "salary-conversation",
+   "topic": "salary-vocabulary",
+   "guide": "negotiating",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Near the end of the interview:",
+    "message": "What are your salary expectations?",
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "Based on the scope of the role and the market rate for similar positions, I'm looking in the 52–58k range. Is that in line with what you had budgeted?",
+      "score": 100,
+      "feedback": "A range, a stated justification, and a question back. The question is what turns it into a negotiation rather than a demand."
+     },
+     {
+      "text": "I'm flexible — what does the role pay?",
+      "score": 50,
+      "feedback": "Common advice, but 'I'm flexible' before any number tends to anchor you at the bottom of their range."
+     },
+     {
+      "text": "I currently earn 45k, so anything above that works for me.",
+      "score": 25,
+      "feedback": "Anchors the conversation to your old salary instead of the new role's value. In several countries they aren't even allowed to ask."
+     },
+     {
+      "text": "I need at least 60k because of my mortgage.",
+      "score": 0,
+      "feedback": "Your costs aren't a negotiating argument. The figure has to be justified by the role, not your outgoings."
+     }
+    ]
+   },
+   "after": {
+    "brief": "They offer 48k — below your range but the role is good.",
+    "prompt": "Which reply is strongest?",
+    "options": [
+     {
+      "text": "Thank you — I'm genuinely interested in the role. 48 is below where I'd hoped. Is there flexibility to reach 54, or if the budget is fixed, could we look at a review at six months, or the training budget?",
+      "score": 100,
+      "feedback": "Enthusiasm first, a clear counter, then two alternative currencies if cash is fixed. This is how most successful salary negotiations actually run."
+     },
+     {
+      "text": "That's too low, I'm afraid. My range was 52 to 58.",
+      "score": 50,
+      "feedback": "Clear and legitimate, but it offers no route to yes if their budget genuinely can't move."
+     },
+     {
+      "text": "Okay, I accept.",
+      "score": 25,
+      "feedback": "Most first offers have some room. Accepting immediately leaves money and credibility on the table."
+     },
+     {
+      "text": "I have another offer at 55, so you'd need to match it.",
+      "score": 25,
+      "feedback": "Only ever say this if it's true and you'd take it. As a bluff it ends badly, and the ultimatum framing damages the relationship either way."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-performance-review-01",
+   "level": "B1",
+   "contexts": [
+    "management",
+    "general-office",
+    "business",
+    "healthcare",
+    "education"
+   ],
+   "category": "interview",
+   "scenario": "performance-review",
+   "topic": "present-perfect",
+   "guide": "present-perfect",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Your annual review. Your manager asks how you think the year has gone.",
+    "prompt": "Which answer is strongest?",
+    "options": [
+     {
+      "text": "Strong on delivery — I've shipped both major projects on time and I've taken over the client reporting. Where I've been weaker is visibility; I haven't been good at telling people what my team is doing, and I want to fix that this year.",
+      "score": 100,
+      "feedback": "Present perfect throughout for the year-to-now period, honest about a real gap, and forward-looking. Very strong review language."
+     },
+     {
+      "text": "I think it's been a good year. I've worked hard and done everything that was asked of me.",
+      "score": 25,
+      "feedback": "Effort rather than outcome, and nothing specific. Reviews reward evidence."
+     },
+     {
+      "text": "It's been difficult. We were short-staffed all year and I was covering two roles.",
+      "score": 25,
+      "feedback": "All context, no achievement. True circumstances still need to be attached to what you delivered despite them."
+     },
+     {
+      "text": "I shipped both projects and I took over the client reporting last March and I did the migration in June and…",
+      "score": 50,
+      "feedback": "Good content, but a flat list with no self-assessment. It also mixes past simple and present perfect without a reason."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Your manager says your team's documentation has slipped. It is fair.",
+    "prompt": "Which response is best?",
+    "options": [
+     {
+      "text": "That's fair — we've prioritised shipping over documenting and it's caught up with us. I'd like to build it into the sprint rather than treat it as extra. Can we review in three months?",
+      "score": 100,
+      "feedback": "Accepts it, explains the trade-off without excusing it, proposes a structural fix, and books the check-in."
+     },
+     {
+      "text": "I know, but we've been under enormous pressure to deliver.",
+      "score": 25,
+      "feedback": "True, and it's still an excuse. It tells your manager nothing will change."
+     },
+     {
+      "text": "You're right, I'm sorry, I'll make sure it gets done.",
+      "score": 50,
+      "feedback": "Accepts it but proposes no mechanism, which is why it slipped in the first place."
+     },
+     {
+      "text": "Documentation was never in my objectives for this year.",
+      "score": 25,
+      "feedback": "Technically defensible and relationally costly. It signals you'll do only what's written down."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-networking-01",
+   "level": "A2",
+   "contexts": [
+    "business",
+    "job-search",
+    "marketing",
+    "hospitality",
+    "education"
+   ],
+   "category": "travel",
+   "scenario": "networking-event",
+   "topic": "small-talk",
+   "guide": "small-talk",
+   "interaction": "best-response",
+   "before": {
+    "brief": "You are at a conference dinner. You sit next to a woman. She gave a talk this morning.",
+    "prompt": "How do you start the conversation?",
+    "options": [
+     {
+      "text": "Hi, I'm Ana. I liked your talk this morning. Where are you based?",
+      "score": 100,
+      "feedback": "Friendly, and you ask about her. That starts a real conversation."
+     },
+     {
+      "text": "Are you hiring?",
+      "score": 25,
+      "feedback": "Too fast. First, get to know the person."
+     },
+     {
+      "text": "Nice weather.",
+      "score": 50,
+      "feedback": "Polite, but she can only say 'yes'. Then the conversation stops."
+     },
+     {
+      "text": "How do you do your work?",
+      "score": 25,
+      "feedback": "This question sounds strange. Try 'What do you do?'"
+     }
+    ]
+   },
+   "after": {
+    "brief": "Later, you talked for ten minutes. Now you want to end the conversation nicely.",
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "It was nice talking to you. Can I send you an email next week?",
+      "score": 100,
+      "feedback": "Polite, and it gives you a reason to talk again."
+     },
+     {
+      "text": "OK, bye.",
+      "score": 25,
+      "feedback": "Too short. It sounds like you want to leave."
+     },
+     {
+      "text": "Can you give me a job?",
+      "score": 0,
+      "feedback": "Too direct for a first conversation."
+     },
+     {
+      "text": "It was nice to meet you. Have a good evening!",
+      "score": 75,
+      "feedback": "Friendly and polite, but there is no next step."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-business-trip-01",
+   "level": "A2",
+   "contexts": [
+    "business",
+    "management",
+    "marketing",
+    "hospitality",
+    "general-office"
+   ],
+   "category": "travel",
+   "scenario": "business-trip-plan",
+   "topic": "travel-vocabulary",
+   "guide": "workplace-vocabulary",
+   "interaction": "matching",
+   "before": {
+    "brief": "Business travel words. Match each word with its meaning.",
+    "prompt": "Match each word to the right meaning.",
+    "pairs": [
+     {
+      "left": "a flight",
+      "right": "a journey by plane"
+     },
+     {
+      "left": "to book",
+      "right": "to reserve a hotel room or a ticket"
+     },
+     {
+      "left": "to check in",
+      "right": "to say you have arrived at a hotel or airport"
+     },
+     {
+      "left": "a receipt",
+      "right": "a paper that shows what you paid"
+     },
+     {
+      "left": "a delay",
+      "right": "when something is later than planned"
+     },
+     {
+      "left": "expenses",
+      "right": "work costs that the company pays back"
+     }
+    ],
+    "feedback": "These words are in most travel emails at work. 'Expenses' is almost always plural."
+   },
+   "after": {
+    "brief": "Now, words for problems on a trip.",
+    "prompt": "Match each word to the right meaning.",
+    "pairs": [
+     {
+      "left": "to cancel",
+      "right": "to say that something will not happen"
+     },
+     {
+      "left": "to miss a flight",
+      "right": "to arrive too late to get on the plane"
+     },
+     {
+      "left": "a refund",
+      "right": "money that is given back to you"
+     },
+     {
+      "left": "a boarding pass",
+      "right": "the ticket you show to get on the plane"
+     },
+     {
+      "left": "luggage",
+      "right": "the bags you travel with"
+     },
+     {
+      "left": "to change a booking",
+      "right": "to move it to a different day or time"
+     }
+    ],
+    "feedback": "'Luggage' has no plural: say 'my luggage', not 'my luggages'."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-written-report-01",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "management",
+    "education",
+    "healthcare",
+    "technology"
+   ],
+   "category": "report",
+   "scenario": "recommendation-report",
+   "topic": "report-writing",
+   "guide": "report-writing",
+   "interaction": "sentence-order",
+   "before": {
+    "brief": "You are writing the opening paragraph of a recommendation report.",
+    "prompt": "Order these sentences into the most effective opening.",
+    "items": [
+     "We recommend moving to Supplier B from the next contract period.",
+     "This report compares our two shortlisted suppliers on cost, lead time and reliability.",
+     "Supplier B is 12% more expensive but delivers in half the time, with a materially better fault record.",
+     "The main risk is transition cost, which we estimate at 8–10k in the first quarter."
+    ],
+    "feedback": "Recommendation first, then scope, then the evidence, then the risk. Reports state their conclusion. They don't build to it."
+   },
+   "after": {
+    "brief": "Same skill: the opening of an incident report.",
+    "prompt": "Order these sentences.",
+    "items": [
+     "The payment system was unavailable for 3 hours 20 minutes on 14 March.",
+     "Approximately 2,400 transactions failed and were not automatically retried.",
+     "The cause was a configuration change deployed without the staging check.",
+     "All affected transactions have since been reprocessed and customers notified.",
+     "We have made the staging check mandatory in the deployment pipeline."
+    ],
+    "feedback": "What happened, the impact in numbers, the cause, the remediation, the prevention. Incident reports are factual and passive where naming individuals would add nothing."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-tech-problem-01",
+   "level": "B1",
+   "contexts": [
+    "technology",
+    "customer-service",
+    "general-office",
+    "remote-work",
+    "education"
+   ],
+   "category": "team-chat",
+   "scenario": "tech-problem",
+   "topic": "explaining-problems",
+   "guide": "explaining-problems",
+   "interaction": "register-check",
+   "before": {
+    "brief": "The booking system is down. You must tell the whole company — most of whom are not technical.",
+    "prompt": "Which message fits the audience?",
+    "options": [
+     {
+      "text": "The booking system is down — we can't take new bookings right now. Existing bookings are safe. We're working on it and I'll update at 11. If a customer calls, take their details on paper and we'll enter them later.",
+      "score": 100,
+      "feedback": "Plain language, says what still works, gives a next update time, and tells people what to do meanwhile. Perfect for a mixed audience."
+     },
+     {
+      "text": "We're seeing 502s from the booking service — looks like the load balancer is failing health checks after the deploy. Rolling back now.",
+      "score": 25,
+      "feedback": "Accurate but incomprehensible to most of the company, and it doesn't tell anyone what to do."
+     },
+     {
+      "text": "Small technical issue with bookings, nothing to worry about!",
+      "score": 25,
+      "feedback": "Minimises a customer-facing outage. When it lasts three hours, you've lost credibility."
+     },
+     {
+      "text": "The booking system is currently experiencing an outage. We apologise for the inconvenience.",
+      "score": 50,
+      "feedback": "Correct but hollow. No timeline, no workaround, no idea what staff should do."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now you are writing to the engineering channel about the same incident.",
+    "prompt": "Which message fits this audience?",
+    "options": [
+     {
+      "text": "Booking service returning 502s since 09:14, traced to the 09:10 deploy — LB health checks failing on the new readiness probe. Rolling back to v4.2.1 now, ETA 10 min. @Priya can you watch the error rate?",
+      "score": 100,
+      "feedback": "Precise, timestamped, names the cause, states the action and ETA, and assigns someone. Right register for a technical channel."
+     },
+     {
+      "text": "The booking system is down — we can't take new bookings right now. Existing bookings are safe.",
+      "score": 50,
+      "feedback": "Fine for the company, but engineers need the cause, the timestamps and the rollback plan to help."
+     },
+     {
+      "text": "Something's wrong with bookings, can someone look?",
+      "score": 25,
+      "feedback": "No detail means three people duplicate the same investigation."
+     },
+     {
+      "text": "We are currently investigating an issue affecting the booking service and will provide an update in due course.",
+      "score": 25,
+      "feedback": "Corporate language in an engineering channel. It delays the people who could actually fix it."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-ielts-reading-01",
+   "level": "B2",
+   "contexts": [
+    "education",
+    "business",
+    "general-office",
+    "technology"
+   ],
+   "category": "report",
+   "scenario": "written-report",
+   "topic": "true-false-not-given",
+   "guide": "ielts-reading",
+   "interaction": "true-false",
+   "ielts": true,
+   "before": {
+    "brief": "IELTS SKILL — Reading. Read the passage.",
+    "message": "Many organisations introduced hybrid working arrangements after 2020, and a majority have retained them. Surveys suggest employees value the reduced commuting time above all other benefits. However, some managers report that informal knowledge-sharing between junior and senior staff has become harder to sustain. Several large firms have responded by mandating a minimum number of office days, though there is limited evidence so far about the effect of these mandates on retention.",
+    "prompt": "Statement: 'Most organisations that introduced hybrid working have since abandoned it.'",
+    "options": [
+     {
+      "text": "FALSE",
+      "score": 100,
+      "feedback": "Correct. The text says 'a majority have retained them'. That directly contradicts the statement."
+     },
+     {
+      "text": "TRUE",
+      "score": 0,
+      "feedback": "The opposite. 'A majority have retained them' means most kept it."
+     },
+     {
+      "text": "NOT GIVEN",
+      "score": 25,
+      "feedback": "The information is present: 'a majority have retained them'. Since the text addresses it and contradicts the statement, the answer is FALSE."
+     }
+    ]
+   },
+   "after": {
+    "brief": "IELTS SKILL — same passage.",
+    "message": "Many organisations introduced hybrid working arrangements after 2020, and a majority have retained them. Surveys suggest employees value the reduced commuting time above all other benefits. However, some managers report that informal knowledge-sharing between junior and senior staff has become harder to sustain. Several large firms have responded by mandating a minimum number of office days, though there is limited evidence so far about the effect of these mandates on retention.",
+    "prompt": "Statement: 'Office-day mandates have reduced staff retention.'",
+    "options": [
+     {
+      "text": "NOT GIVEN",
+      "score": 100,
+      "feedback": "Correct. The text says there is 'limited evidence so far about the effect'. It explicitly does not say what the effect is."
+     },
+     {
+      "text": "FALSE",
+      "score": 25,
+      "feedback": "Tempting, but the text doesn't say mandates did NOT reduce retention. It says the evidence is limited. Absence of evidence is NOT GIVEN."
+     },
+     {
+      "text": "TRUE",
+      "score": 0,
+      "feedback": "The text makes no claim about the direction of the effect."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-speaking-long-turn-01",
+   "level": "B2",
+   "contexts": [
+    "job-search",
+    "education",
+    "business",
+    "general-office",
+    "technology"
+   ],
+   "category": "speaking",
+   "scenario": "speaking-long-turn",
+   "topic": "ielts-long-turn",
+   "guide": "ielts-speaking",
+   "interaction": "speaking",
+   "ielts": true,
+   "before": {
+    "brief": "IELTS SKILL — Speaking Part 2, the long turn.",
+    "prompt": "Describe a work situation in which you had to make a difficult decision. You should say: what the situation was, what the options were, what you decided, and how you felt about it afterwards.",
+    "prepSeconds": 60,
+    "speakSeconds": 120,
+    "checklist": [
+     "I spoke for at least 90 seconds without long pauses",
+     "I covered all four points on the card",
+     "I used at least two past tenses",
+     "I gave a specific example rather than speaking generally",
+     "I used a linking phrase (however / as a result / in the end)"
+    ],
+    "model": "I'd like to talk about a decision I made about eighteen months ago. We were two weeks from launching a campaign when I realised the customer data we'd been given hadn't been properly consented for marketing use. The options were fairly stark: launch on time and deal with the risk later, or pull it and miss the quarter. I took it to my manager the same afternoon rather than sitting on it, and we agreed to delay by three weeks and rebuild the list properly. It cost us about 20% of the quarter's target. Afterwards I felt uncomfortable for a while, because I was the person who'd cost us the number. But six months later the regulator fined a competitor for almost exactly that issue, and I stopped second-guessing it. What I took from it is that the expensive decision and the wrong decision aren't the same thing.",
+    "feedback": "Notice the structure: situation, options, decision, aftermath, and it ends on a reflection rather than trailing off. That final sentence is what moves an answer from band 6 to band 7."
+   },
+   "after": {
+    "brief": "IELTS SKILL — Speaking Part 3, the discussion. These questions are more abstract.",
+    "prompt": "Do you think artificial intelligence will make most office jobs disappear in the next twenty years? Why or why not?",
+    "prepSeconds": 30,
+    "speakSeconds": 90,
+    "checklist": [
+     "I gave a clear position rather than only 'it depends'",
+     "I gave at least two reasons",
+     "I used an example or a comparison",
+     "I acknowledged the other side of the argument",
+     "I used hedging language (might / tend to / in most cases)"
+    ],
+    "model": "I don't think they'll disappear, though I'd expect them to change substantially. The main reason is that most office roles aren't a single task — they're a bundle of judgement, negotiation and relationship management, and only some of that is automatable. Take accountancy: software has done the arithmetic for thirty years, and there are more accountants now than there were, because the job moved towards advice. That said, I'd accept that roles which are genuinely one repetitive task are at real risk, and I think the transition could be painful even if the total number of jobs holds up. So my position would be: significant disruption, but not disappearance.",
+    "feedback": "This answer takes a position, gives a reason, supports it with a concrete historical example, concedes the opposing point, then restates. The hedging. 'I'd expect', 'I'd accept', 'could be'. Is what makes it sound like thinking rather than reciting."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-request-information-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "business",
+    "technology",
+    "education",
+    "healthcare"
+   ],
+   "category": "inbox",
+   "scenario": "request-information",
+   "topic": "question-forms",
+   "guide": "clarifying",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "You are writing to another department. Only one sentence is correct.",
+    "prompt": "Which one is correct?",
+    "options": [
+     {
+      "text": "Could you tell me when the new system starts?",
+      "score": 100,
+      "feedback": "Correct. After 'Could you tell me', use normal word order: 'when the new system starts'."
+     },
+     {
+      "text": "Could you tell me when does the new system start?",
+      "score": 25,
+      "feedback": "A common mistake. Don't use 'does' here: 'when the new system starts'."
+     },
+     {
+      "text": "Could you tell me when starts the new system?",
+      "score": 0,
+      "feedback": "Wrong word order. Put 'the new system' before 'starts'."
+     },
+     {
+      "text": "Could you to tell me when the new system starts?",
+      "score": 0,
+      "feedback": "No 'to' after 'could'."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill, a different question. You are writing to HR about your holidays.",
+    "prompt": "Which sentence is correct?",
+    "options": [
+     {
+      "text": "Could you tell me how many holiday days I have?",
+      "score": 100,
+      "feedback": "Correct. Normal word order after 'Could you tell me': 'how many days I have'."
+     },
+     {
+      "text": "Could you tell me how many holiday days do I have?",
+      "score": 25,
+      "feedback": "A common mistake. Don't use 'do' here."
+     },
+     {
+      "text": "Could you tell me how many holiday days have I?",
+      "score": 0,
+      "feedback": "Wrong word order. Say 'how many holiday days I have'."
+     },
+     {
+      "text": "Could you telling me how many holiday days I have?",
+      "score": 0,
+      "feedback": "After 'could', use the base verb: 'could you tell'."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-project-update-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "business",
+    "technology",
+    "management",
+    "remote-work"
+   ],
+   "category": "inbox",
+   "scenario": "project-update",
+   "topic": "linking-expressions",
+   "guide": "linking-expressions",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "You are writing a weekly update.",
+    "message": "Development is on schedule. ______, the content team is two weeks behind, which puts the launch date at risk.",
+    "prompt": "Which linker fits?",
+    "options": [
+     {
+      "text": "However",
+      "score": 100,
+      "feedback": "Correct. It signals a contrast between good news and bad news, and it opens a new sentence with a comma."
+     },
+     {
+      "text": "Moreover",
+      "score": 25,
+      "feedback": "'Moreover' adds a similar idea. Here the second fact contradicts the first."
+     },
+     {
+      "text": "Therefore",
+      "score": 25,
+      "feedback": "'Therefore' introduces a result. Being behind is not the result of development being on schedule."
+     },
+     {
+      "text": "Although",
+      "score": 50,
+      "feedback": "'Although' is a conjunction joining two clauses in one sentence. It can't start a separate sentence this way."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same update, a different gap.",
+    "message": "The content delay affects three deliverables. ______, we need a decision on scope by Friday.",
+    "prompt": "Which linker fits?",
+    "options": [
+     {
+      "text": "As a result",
+      "score": 100,
+      "feedback": "Correct. The decision is a consequence of the delay."
+     },
+     {
+      "text": "On the other hand",
+      "score": 25,
+      "feedback": "Signals contrast, but the second sentence follows on from the first rather than opposing it."
+     },
+     {
+      "text": "For example",
+      "score": 0,
+      "feedback": "The second sentence is not an example of the first."
+     },
+     {
+      "text": "Nevertheless",
+      "score": 25,
+      "feedback": "'Nevertheless' means 'despite that'. Here the second fact follows from the first rather than resisting it."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-unexpected-absence-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "healthcare",
+    "hospitality",
+    "customer-service",
+    "management"
+   ],
+   "category": "office-decision",
+   "scenario": "unexpected-absence",
+   "topic": "modals-must",
+   "guide": "modals",
+   "interaction": "multiple-choice",
+   "before": {
+    "brief": "A colleague is off sick and their client call is in two hours. You are covering.",
+    "prompt": "Which sentence uses the modal correctly and appropriately?",
+    "options": [
+     {
+      "text": "We'll have to move the call, or I can take it if someone sends me the background.",
+      "score": 100,
+      "feedback": "'Have to' expresses an external obligation naturally, and it offers an alternative rather than just stating the problem."
+     },
+     {
+      "text": "We must to move the call.",
+      "score": 0,
+      "feedback": "'Must' is never followed by 'to'."
+     },
+     {
+      "text": "We must move the call because I don't know anything about this client.",
+      "score": 50,
+      "feedback": "Grammatically correct, but 'must' from a peer sounds like an instruction, and it offers no alternative."
+     },
+     {
+      "text": "We should to move the call.",
+      "score": 0,
+      "feedback": "Same error: modals take the bare infinitive."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same situation, talking about what is not required.",
+    "prompt": "Which sentence is correct?",
+    "options": [
+     {
+      "text": "You don't have to join the call — I can handle it and send you notes.",
+      "score": 100,
+      "feedback": "'Don't have to' correctly means 'it isn't necessary'. Exactly the right meaning here."
+     },
+     {
+      "text": "You mustn't join the call — I can handle it.",
+      "score": 25,
+      "feedback": "'Mustn't' means it is forbidden, which is a completely different (and alarming) message."
+     },
+     {
+      "text": "You haven't to join the call.",
+      "score": 0,
+      "feedback": "'Have to' needs 'do' in the negative: 'don't have to'."
+     },
+     {
+      "text": "You don't must join the call.",
+      "score": 0,
+      "feedback": "'Must' never takes 'do'. The negative is 'mustn't', but here you want 'don't have to'."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-agree-professionally-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "management",
+    "education",
+    "design-creative",
+    "remote-work"
+   ],
+   "category": "meeting-room",
+   "scenario": "agree-professionally",
+   "topic": "agreeing",
+   "guide": "giving-opinions",
+   "interaction": "stronger-sentence",
+   "before": {
+    "brief": "In a meeting, your colleague Yusuf has a good idea. Other people are not listening.",
+    "prompt": "Both agree. Which one helps Yusuf more?",
+    "options": [
+     {
+      "text": "I agree with Yusuf. The price is our biggest problem.",
+      "score": 100,
+      "feedback": "Good. You say his name and repeat his idea. Now everyone hears it again."
+     },
+     {
+      "text": "Yes.",
+      "score": 25,
+      "feedback": "Too short. Nobody will notice."
+     },
+     {
+      "text": "That's a good point.",
+      "score": 75,
+      "feedback": "Friendly, but you don't repeat his idea."
+     },
+     {
+      "text": "I agree. Also, I think the design is a problem.",
+      "score": 50,
+      "feedback": "You agree, but then you change the topic. Yusuf's idea is lost."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Same skill, in writing. You are commenting on a colleague's plan in a shared document.",
+    "prompt": "Which comment is better?",
+    "options": [
+     {
+      "text": "I agree with this plan. Starting small is a good idea, because it's cheaper.",
+      "score": 100,
+      "feedback": "Good. You say what you agree with and why."
+     },
+     {
+      "text": "+1",
+      "score": 50,
+      "feedback": "It shows you agree, but it gives no reason."
+     },
+     {
+      "text": "OK.",
+      "score": 25,
+      "feedback": "Too short. The writer learns nothing."
+     },
+     {
+      "text": "I agree with everything, it's very good.",
+      "score": 50,
+      "feedback": "Friendly, but it doesn't say which part is good."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-client-presentation-01",
+   "level": "B2",
+   "contexts": [
+    "marketing",
+    "design-creative",
+    "business",
+    "technology",
+    "customer-service"
+   ],
+   "category": "presentation",
+   "scenario": "client-presentation",
+   "topic": "presentation-vocabulary",
+   "guide": "describing-data",
+   "interaction": "sentence-order",
+   "before": {
+    "brief": "You are opening a client presentation on work you are proud of.",
+    "prompt": "Order these four moves into the strongest opening.",
+    "items": [
+     "Thanks for the time today — I know the diary's been difficult.",
+     "What we're going to cover is the three campaign routes, the reasoning behind each, and our recommendation.",
+     "Before we start: if anything isn't landing, please stop me — this works better as a conversation.",
+     "Our recommendation, so you know where we're going, is route two."
+    ],
+    "feedback": "Thanks, agenda, permission to interrupt, then the headline. Telling the client your recommendation at the start means they spend the presentation evaluating it rather than waiting for it."
+   },
+   "after": {
+    "brief": "Same skill: closing the same presentation.",
+    "prompt": "Order these four moves.",
+    "items": [
+     "So to bring it together: route two, launching mid-April, at the budget we discussed.",
+     "The one thing we'd need from you is sign-off on the photography by the 28th.",
+     "What are your reactions — anything that doesn't sit right?",
+     "If it's helpful, I can send the routes over this afternoon so you can look properly before deciding."
+    ],
+    "feedback": "Summary, the single ask with a date, an open question, then a low-pressure next step. Ending on a question rather than 'any questions?' gets a real response."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-incident-report-01",
+   "level": "B2",
+   "contexts": [
+    "healthcare",
+    "hospitality",
+    "technology",
+    "customer-service",
+    "management"
+   ],
+   "category": "report",
+   "scenario": "incident-report",
+   "topic": "passive-voice",
+   "guide": "passive-reported",
+   "interaction": "register-check",
+   "before": {
+    "brief": "You are writing the factual section of an incident report that will be read by senior management and possibly a regulator.",
+    "prompt": "Which sentence fits that document?",
+    "options": [
+     {
+      "text": "A configuration change was deployed at 09:10 without the required staging check.",
+      "score": 100,
+      "feedback": "Passive, timestamped, factual. It records exactly what happened without turning the report into an accusation."
+     },
+     {
+      "text": "Marcus deployed a config change at 09:10 and forgot to run the staging check.",
+      "score": 25,
+      "feedback": "In a formal incident report, naming an individual invites blame rather than system improvement, and it's usually against policy."
+     },
+     {
+      "text": "Unfortunately a mistake was made and the system went down.",
+      "score": 25,
+      "feedback": "Passive used to hide everything. No time, no cause, nothing anyone can act on."
+     },
+     {
+      "text": "Someone deployed something without checking it properly, which was obviously careless.",
+      "score": 0,
+      "feedback": "Vague and judgemental at once. 'Obviously careless' has no place in a factual record."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now the recommendations section of the same report.",
+    "prompt": "Which sentence fits?",
+    "options": [
+     {
+      "text": "We recommend making the staging check a mandatory gate in the deployment pipeline, owned by the platform team, by 30 April.",
+      "score": 100,
+      "feedback": "Active voice for recommendations, with an owner and a date. Recommendations need someone to be accountable. That's when the passive stops being appropriate."
+     },
+     {
+      "text": "It is recommended that steps be taken to improve deployment safety.",
+      "score": 25,
+      "feedback": "Passive with no owner and no date. This is the kind of recommendation that never gets done."
+     },
+     {
+      "text": "Marcus should be more careful in future.",
+      "score": 0,
+      "feedback": "Blames a person instead of fixing a system. The next person will make the same mistake."
+     },
+     {
+      "text": "We will try to be more careful with deployments going forward.",
+      "score": 25,
+      "feedback": "No mechanism, no owner, no date. 'Trying harder' is not a control."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-workplace-wellbeing-01",
+   "level": "B1",
+   "contexts": [
+    "management",
+    "healthcare",
+    "general-office",
+    "education",
+    "remote-work"
+   ],
+   "category": "speaking",
+   "scenario": "workplace-wellbeing",
+   "topic": "speaking-structure",
+   "guide": "speaking-structure",
+   "interaction": "speaking",
+   "before": {
+    "brief": "You have a one-to-one with your manager. You need to say that your workload is not sustainable — without it sounding like a complaint.",
+    "prompt": "Speak for 60 seconds: explain the situation, give evidence, and propose what should change.",
+    "prepSeconds": 45,
+    "speakSeconds": 60,
+    "checklist": [
+     "I gave a specific number or example, not just 'too much'",
+     "I explained the impact on the work, not only on me",
+     "I proposed something concrete rather than only describing the problem",
+     "I used at least one linking phrase (as a result / which means / for example)",
+     "I spoke for close to the full time without long pauses"
+    ],
+    "model": "I want to flag something about capacity before it becomes a problem. I'm currently running four projects, and two of them — Orsan and the migration — both need me most days. As a result I'm doing the reporting late in the evening, and last week I missed a deadline on the smaller one for the first time. It's not sustainable through to April. What I'd propose is handing the vendor reporting to Priya, who's asked for more responsibility anyway, and I'd keep the two big ones. That would put me back to something realistic. Could we look at that this week?",
+    "feedback": "Notice what this does: it frames the issue as a risk to the work rather than a personal complaint, gives one hard piece of evidence (the missed deadline), and arrives with a solution that also helps someone else. Managers can act on this in one conversation."
+   },
+   "after": {
+    "brief": "Different situation: a team member tells you they are overwhelmed. You are the manager.",
+    "prompt": "Speak for 60 seconds: respond to them. Acknowledge, get specific, and agree a next step.",
+    "prepSeconds": 30,
+    "speakSeconds": 60,
+    "checklist": [
+     "I acknowledged before problem-solving",
+     "I asked at least one question to get specifics",
+     "I did not immediately minimise it ('everyone's busy')",
+     "I agreed a concrete next step with a time",
+     "I used softening language rather than instructions"
+    ],
+    "model": "Thank you for telling me — that's not an easy thing to raise, and I'd much rather know now. Can I ask a couple of things so I understand the shape of it? Which of the four is taking the most time, and is it the volume or is something specific getting stuck? … Right. So if I'm hearing it correctly, it's mainly the reporting rather than the projects themselves. Let's do this: I'll look at whether that can move this week, and let's put twenty minutes in on Thursday to see if it's actually made a difference. And if it hasn't, we'll look at it again — I don't want this sitting unresolved for a month.",
+    "feedback": "The key move is asking a diagnostic question before offering a solution. 'Is it the volume or is something getting stuck?' usually reveals that the real problem is narrower than 'everything', which makes it fixable."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-sustainability-01",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "management",
+    "education",
+    "hospitality",
+    "general-office"
+   ],
+   "category": "meeting-room",
+   "scenario": "sustainability-initiative",
+   "topic": "sustainability-vocabulary",
+   "guide": "report-writing",
+   "interaction": "multiple-select",
+   "before": {
+    "brief": "You are writing a business case for a sustainability change that costs money now and saves later. The budget committee will read it.",
+    "prompt": "Select every argument that belongs in the written case. Wrong selections cost points.",
+    "options": [
+     {
+      "text": "The payback period is under three years at current energy prices",
+      "correct": true,
+      "feedback": "A financial argument in financial language. This is the one that wins budget decisions."
+     },
+     {
+      "text": "Two of our three largest clients now ask about this in tenders",
+      "correct": true,
+      "feedback": "Ties sustainability to revenue. Very effective."
+     },
+     {
+      "text": "Upcoming reporting requirements will make this mandatory within two years",
+      "correct": true,
+      "feedback": "Reframes a cost as bringing forward an unavoidable one: a strong argument."
+     },
+     {
+      "text": "It's the right thing to do for the planet",
+      "correct": false,
+      "feedback": "True, and on its own it loses budget decisions. Use it to frame the case, never as the argument."
+     },
+     {
+      "text": "Our competitors are already doing it",
+      "correct": false,
+      "feedback": "Weak on its own. The obvious reply is 'and are they seeing a return?'"
+     },
+     {
+      "text": "Staff have said they'd feel better about working here",
+      "correct": false,
+      "feedback": "Real but unquantified. It supports a case; it can't carry one."
+     }
+    ],
+    "feedback": "In a budget meeting, sustainability arguments have to be translated into the language of cost, revenue or risk. The ethical case opens the conversation; the financial case closes it."
+   },
+   "after": {
+    "brief": "Same skill: which vocabulary is precise enough for a written business case?",
+    "prompt": "Select every term that carries a specific, checkable meaning.",
+    "options": [
+     {
+      "text": "carbon footprint",
+      "correct": true,
+      "feedback": "Specific and measurable: total emissions attributable to an activity."
+     },
+     {
+      "text": "payback period",
+      "correct": true,
+      "feedback": "Precise financial term: the time for savings to cover the initial cost."
+     },
+     {
+      "text": "energy consumption",
+      "correct": true,
+      "feedback": "Directly measurable in kWh."
+     },
+     {
+      "text": "waste reduction",
+      "correct": true,
+      "feedback": "Measurable against a baseline."
+     },
+     {
+      "text": "eco-friendly",
+      "correct": false,
+      "feedback": "Vague marketing language with no agreed definition. Avoid it in a business case."
+     },
+     {
+      "text": "green",
+      "correct": false,
+      "feedback": "Too loose to mean anything specific in a written case."
+     },
+     {
+      "text": "sustainable",
+      "correct": false,
+      "feedback": "Useful as a heading, but on its own it commits to nothing measurable."
+     }
+    ],
+    "feedback": "The test for a business case is whether someone could check the claim in twelve months. 'Carbon footprint' passes; 'eco-friendly' does not."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-project-planning-01",
+   "level": "A2",
+   "contexts": [
+    "business",
+    "management",
+    "marketing",
+    "technology",
+    "education"
+   ],
+   "category": "meeting-room",
+   "scenario": "project-planning",
+   "topic": "future-forms",
+   "guide": "future-forms",
+   "interaction": "categorise",
+   "before": {
+    "brief": "A planning meeting. Sort the sentences by future form.",
+    "prompt": "Put each sentence into the right group.",
+    "bins": [
+     "In the calendar (I'm meeting)",
+     "Plan (going to)",
+     "Decision now (will)"
+    ],
+    "items": [
+     {
+      "text": "I'm meeting the client on Tuesday.",
+      "bin": "In the calendar (I'm meeting)"
+     },
+     {
+      "text": "We're having lunch with the team on Friday.",
+      "bin": "In the calendar (I'm meeting)"
+     },
+     {
+      "text": "We're going to hire two new people.",
+      "bin": "Plan (going to)"
+     },
+     {
+      "text": "She's going to start a new project in May.",
+      "bin": "Plan (going to)"
+     },
+     {
+      "text": "OK, I'll call him now.",
+      "bin": "Decision now (will)"
+     },
+     {
+      "text": "The printer is broken? I'll use the other one.",
+      "bin": "Decision now (will)"
+     }
+    ],
+    "feedback": "Things in your calendar: present continuous. Plans you made before: 'going to'. Decisions you make now: 'will'."
+   },
+   "after": {
+    "brief": "Same skill, in a chat with a colleague.",
+    "prompt": "Sort these sentences.",
+    "bins": [
+     "Plan (going to)",
+     "Decision now (will)"
+    ],
+    "items": [
+     {
+      "text": "I'm going to visit the Madrid office next month.",
+      "bin": "Plan (going to)"
+     },
+     {
+      "text": "We're going to change the website in June.",
+      "bin": "Plan (going to)"
+     },
+     {
+      "text": "Tom is going to lead the new project.",
+      "bin": "Plan (going to)"
+     },
+     {
+      "text": "It's cold in here. I'll close the window.",
+      "bin": "Decision now (will)"
+     },
+     {
+      "text": "You're busy? No problem, I'll do it.",
+      "bin": "Decision now (will)"
+     },
+     {
+      "text": "There's no coffee? I'll buy some.",
+      "bin": "Decision now (will)"
+     }
+    ],
+    "feedback": "Use 'going to' for plans you made before. Use 'will' when you decide at the moment of speaking."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-describe-experience-01",
+   "level": "A2",
+   "contexts": [
+    "job-search",
+    "business",
+    "technology",
+    "design-creative",
+    "management"
+   ],
+   "category": "interview",
+   "scenario": "describe-experience",
+   "topic": "past-simple",
+   "guide": "tenses-at-work",
+   "interaction": "best-response",
+   "before": {
+    "brief": "In a job interview, the interviewer says:",
+    "message": "Tell me about your last project.",
+    "prompt": "Which answer is best?",
+    "options": [
+     {
+      "text": "Last year I worked on our new website. I planned the pages, and we finished in May.",
+      "score": 100,
+      "feedback": "Good. Past simple for a finished project, and you say what you did."
+     },
+     {
+      "text": "Last year I have worked on our new website.",
+      "score": 25,
+      "feedback": "With 'last year', use the past simple: 'I worked'."
+     },
+     {
+      "text": "I work on our new website last year.",
+      "score": 25,
+      "feedback": "'Last year' is in the past. Use 'worked', not 'work'."
+     },
+     {
+      "text": "It was a very interesting project.",
+      "score": 50,
+      "feedback": "Correct, but you don't say what you did."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Next question:",
+    "message": "What are you doing in your job at the moment?",
+    "prompt": "Which answer is best?",
+    "options": [
+     {
+      "text": "I'm working on a new app for our customers. I design the screens.",
+      "score": 100,
+      "feedback": "Correct. Present continuous for work happening now, and present simple for your usual job."
+     },
+     {
+      "text": "I worked on a new app at the moment.",
+      "score": 25,
+      "feedback": "'At the moment' means now. Don't use the past simple."
+     },
+     {
+      "text": "I'm work on a new app.",
+      "score": 25,
+      "feedback": "Add -ing: 'I'm working'."
+     },
+     {
+      "text": "I have a job in a big company.",
+      "score": 50,
+      "feedback": "Correct, but it doesn't say what you are doing now."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-team-chat-ping-01",
+   "level": "B1",
+   "contexts": [
+    "technology",
+    "remote-work",
+    "general-office",
+    "marketing",
+    "design-creative"
+   ],
+   "category": "team-chat",
+   "scenario": "team-chat-ping",
+   "topic": "chat-writing",
+   "guide": "async-writing",
+   "interaction": "appropriateness",
+   "before": {
+    "brief": "A colleague messages you: 'Can you look at the Vidal deck before 2?'  You can, but not until 1:30.",
+    "prompt": "Which reply is best for chat?",
+    "options": [
+     {
+      "text": "Yes — I'll get to it around 1:30, so you'll have comments before 2. 👍",
+      "score": 100,
+      "feedback": "Answers the question, gives the actual time, and confirms the deadline is safe. Everything they need in one line."
+     },
+     {
+      "text": "Yes",
+      "score": 50,
+      "feedback": "Answers but leaves them wondering when, so they may chase you at 1:45."
+     },
+     {
+      "text": "I'm quite busy this morning but I should be able to fit it in at some point, I'll try my best to get to it before your deadline if nothing else comes up.",
+      "score": 25,
+      "feedback": "Far too long for chat, and after all those words they still don't know if they'll have it."
+     },
+     {
+      "text": "Sure thing!! No problem at all!! 😄😄",
+      "score": 50,
+      "feedback": "Friendly but no time given, and the punctuation is doing a lot of work for a routine request."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Different ping: 'Quick one — do we have budget for the extra shoot?' You do not know.",
+    "prompt": "Which reply is best?",
+    "options": [
+     {
+      "text": "Not sure — Elena owns that budget line. I'll ask her now and come back to you within the hour.",
+      "score": 100,
+      "feedback": "Says you don't know, names who does, and commits to a time. This is the most useful 'I don't know' you can send."
+     },
+     {
+      "text": "I don't know.",
+      "score": 25,
+      "feedback": "True, and it leaves them exactly where they started."
+     },
+     {
+      "text": "I think so? Probably fine.",
+      "score": 0,
+      "feedback": "Guessing about money. If it's wrong, someone books a shoot that isn't funded."
+     },
+     {
+      "text": "Let me check and I'll let you know.",
+      "score": 75,
+      "feedback": "Helpful. It just doesn't say when, so they don't know whether to wait or chase."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-async-status-02",
+   "level": "A2",
+   "contexts": [
+    "remote-work",
+    "technology",
+    "marketing",
+    "business",
+    "design-creative"
+   ],
+   "category": "team-chat",
+   "scenario": "async-status",
+   "topic": "present-continuous",
+   "guide": "tenses-at-work",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "You are writing your daily update in the team chat.",
+    "message": "Yesterday I ______ the new login page.",
+    "prompt": "Which word is correct?",
+    "options": [
+     {
+      "text": "finished",
+      "score": 100,
+      "feedback": "Correct. 'Yesterday' needs the past simple: 'finished'."
+     },
+     {
+      "text": "finish",
+      "score": 25,
+      "feedback": "'Yesterday' is in the past. Use 'finished'."
+     },
+     {
+      "text": "am finishing",
+      "score": 25,
+      "feedback": "The present continuous is for now, not for yesterday."
+     },
+     {
+      "text": "have finished",
+      "score": 50,
+      "feedback": "Close, but don't use 'have finished' with 'yesterday'."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A different chat. Your manager asks where you are today. You reply:",
+    "message": "Sorry, I ______ from home today. My train is cancelled.",
+    "prompt": "Which words are correct?",
+    "options": [
+     {
+      "text": "'m working",
+      "score": 100,
+      "feedback": "Correct. The present continuous is for what is happening now or today."
+     },
+     {
+      "text": "worked",
+      "score": 25,
+      "feedback": "That's the past. 'Today' needs 'I'm working'."
+     },
+     {
+      "text": "work",
+      "score": 50,
+      "feedback": "The present simple is for habits, like 'I work from home on Fridays'."
+     },
+     {
+      "text": "'m work",
+      "score": 0,
+      "feedback": "Add -ing: 'I'm working'."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-angry-customer-02",
+   "level": "A2",
+   "contexts": [
+    "customer-service",
+    "hospitality",
+    "business",
+    "healthcare",
+    "general-office"
+   ],
+   "category": "office-decision",
+   "scenario": "angry-customer",
+   "topic": "customer-vocabulary",
+   "guide": "apologising",
+   "interaction": "best-response",
+   "before": {
+    "brief": "A customer comes to your desk. He is angry.",
+    "message": "I ordered this two weeks ago, and it still hasn't arrived!",
+    "prompt": "What do you say first?",
+    "options": [
+     {
+      "text": "I'm sorry about that. Let me check your order now.",
+      "score": 100,
+      "feedback": "Good. Say sorry, then do something."
+     },
+     {
+      "text": "Calm down, please.",
+      "score": 0,
+      "feedback": "This makes angry people angrier."
+     },
+     {
+      "text": "It's not my fault.",
+      "score": 25,
+      "feedback": "Maybe true, but the customer needs help, not an excuse."
+     },
+     {
+      "text": "Sorry.",
+      "score": 50,
+      "feedback": "Polite, but what happens next? Offer to help."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A different customer calls. Yesterday you gave her the wrong price.",
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "I'm sorry, I gave you the wrong price. The correct price is €40. I'll email it to you now.",
+      "score": 100,
+      "feedback": "Good. A short apology, the correct information, and what you will do."
+     },
+     {
+      "text": "I apologise you for the price.",
+      "score": 25,
+      "feedback": "Grammar mistake. Say 'I apologise for the mistake', with no person after 'apologise'."
+     },
+     {
+      "text": "The price on the website was wrong, not me.",
+      "score": 25,
+      "feedback": "Don't blame. Say sorry and give the correct price."
+     },
+     {
+      "text": "Oh, sorry! My mistake! I'm so sorry! Really sorry!",
+      "score": 50,
+      "feedback": "Too many apologies. Say sorry once, then give the correct price."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-client-presentation-02",
+   "level": "A2",
+   "contexts": [
+    "marketing",
+    "design-creative",
+    "business",
+    "technology",
+    "customer-service"
+   ],
+   "category": "presentation",
+   "scenario": "client-presentation",
+   "topic": "future-going-to",
+   "guide": "future-forms",
+   "interaction": "sentence-order",
+   "before": {
+    "brief": "You are starting a short presentation for a client. Put your opening in order.",
+    "prompt": "Put the lines in the best order.",
+    "items": [
+     "Good morning, everyone, and thank you for coming.",
+     "My name is Ana, and I work in the design team.",
+     "Today I'm going to show you our new logo.",
+     "First, I'm going to explain the idea. Then I'll show you three designs.",
+     "At the end, you can ask questions."
+    ],
+    "feedback": "Hello and thanks, who you are, the topic, the plan, then questions. 'Going to' tells people your plan."
+   },
+   "after": {
+    "brief": "Same skill, at the end of a different presentation, for your own team.",
+    "prompt": "Put the lines in the best order.",
+    "items": [
+     "OK, that's the end of my presentation.",
+     "The main point is: we're going to open the new shop in June.",
+     "I'm going to send you the full plan next week.",
+     "Thank you for listening.",
+     "Are there any questions?"
+    ],
+    "feedback": "Say it's the end and repeat the main point. Then give the next step, say thank you, and ask for questions."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-speaking-discussion-01",
+   "level": "A2",
+   "contexts": [
+    "education",
+    "business",
+    "technology",
+    "management",
+    "remote-work"
+   ],
+   "category": "speaking",
+   "scenario": "speaking-discussion",
+   "topic": "giving-opinions",
+   "guide": "giving-opinions",
+   "interaction": "speaking",
+   "before": {
+    "brief": "A colleague asks you a question over coffee.",
+    "prompt": "Do you prefer working at home or in the office? Why?",
+    "prepSeconds": 30,
+    "speakSeconds": 45,
+    "checklist": [
+     "I said my opinion clearly (I think… / In my opinion…)",
+     "I gave at least one reason with 'because'",
+     "I gave a small example from my work",
+     "I spoke for about 30 seconds"
+    ],
+    "model": "In my opinion, working in the office is better for me. I think it's easier to ask questions, because my colleagues are next to me. For example, last week I had a problem with a report, and my manager helped me in five minutes. But I like working at home on Fridays, because it's quiet.",
+    "feedback": "Opinion, reason, example. This simple plan works for almost any question."
+   },
+   "after": {
+    "brief": "A different question, in a team meeting.",
+    "prompt": "What is the best day of the week for team meetings? Why?",
+    "prepSeconds": 30,
+    "speakSeconds": 45,
+    "checklist": [
+     "I gave a clear answer (I think… / In my opinion…)",
+     "I gave a reason with 'because'",
+     "I said one problem with a different day",
+     "I finished with a short summary (So, I think…)"
+    ],
+    "model": "I think Tuesday is the best day for team meetings. On Monday, everyone is busy with emails from the weekend. On Friday, some people work from home. Tuesday is good because we have time to plan the week. So, I think Tuesday morning is best.",
+    "feedback": "A clear opinion, a reason, and a short summary at the end. That is enough for a strong answer."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-introduce-yourself-01",
+   "level": "A2",
+   "contexts": [
+    "job-search",
+    "business",
+    "education",
+    "technology",
+    "marketing"
+   ],
+   "category": "interview",
+   "scenario": "introduce-yourself",
+   "topic": "workplace-people",
+   "guide": "workplace-vocabulary",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "A job interview. The interviewer asks: 'Tell me about your job.'",
+    "message": "I work in the finance ______. I'm responsible for the invoices.",
+    "prompt": "Which word is correct?",
+    "options": [
+     {
+      "text": "department",
+      "score": 100,
+      "feedback": "Correct. A department is a part of a company, like Finance or Sales."
+     },
+     {
+      "text": "responsible",
+      "score": 0,
+      "feedback": "'Responsible' is an adjective: 'I'm responsible for…'. It is not a place."
+     },
+     {
+      "text": "colleague",
+      "score": 0,
+      "feedback": "A colleague is a person, not a part of a company."
+     },
+     {
+      "text": "office",
+      "score": 50,
+      "feedback": "Possible, but 'the finance department' is the usual phrase."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Next question: 'Who do you work with?'",
+    "message": "I work with five ______, and my manager is the head of finance.",
+    "prompt": "Which word is correct?",
+    "options": [
+     {
+      "text": "colleagues",
+      "score": 100,
+      "feedback": "Correct. Colleagues are the people you work with."
+     },
+     {
+      "text": "companions",
+      "score": 0,
+      "feedback": "A false friend. At work, say 'colleagues', not 'companions'."
+     },
+     {
+      "text": "clients",
+      "score": 25,
+      "feedback": "Clients buy from your company. They are not in your team."
+     },
+     {
+      "text": "bosses",
+      "score": 25,
+      "feedback": "Informal, and you have one manager, not five bosses."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-unexpected-absence-02",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "healthcare",
+    "hospitality",
+    "customer-service",
+    "management"
+   ],
+   "category": "office-decision",
+   "scenario": "unexpected-absence",
+   "topic": "clarifying",
+   "guide": "clarifying",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Your colleague Marta is sick today. You answer her phone. A client says his name very fast.",
+    "prompt": "What do you say?",
+    "options": [
+     {
+      "text": "Sorry, could you spell your name, please?",
+      "score": 100,
+      "feedback": "Good. Now you can write the name correctly."
+     },
+     {
+      "text": "What is your name? Say it again.",
+      "score": 50,
+      "feedback": "Clear, but it sounds like an order. Add 'sorry' and 'could you'."
+     },
+     {
+      "text": "OK, thank you.",
+      "score": 0,
+      "feedback": "You didn't understand the name. Now you can't help him."
+     },
+     {
+      "text": "Can you spell me your name?",
+      "score": 25,
+      "feedback": "Say 'Could you spell your name, please?' Don't put 'me' after 'spell'."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A different call. Marta's manager asks you to do something. There are two files: the price list and the contract.",
+    "message": "Can you send the file to the client today?",
+    "prompt": "You don't know which file. What do you say?",
+    "options": [
+     {
+      "text": "Sure. Do you mean the price list or the contract?",
+      "score": 100,
+      "feedback": "Good. Two choices make the question quick to answer."
+     },
+     {
+      "text": "Which file? I don't understand.",
+      "score": 50,
+      "feedback": "OK, but give two choices. It's faster."
+     },
+     {
+      "text": "Sure, no problem.",
+      "score": 25,
+      "feedback": "You don't know which file. You may send the wrong one."
+     },
+     {
+      "text": "Can you explain me which file?",
+      "score": 25,
+      "feedback": "Say 'explain to me', or just ask 'Which file do you mean?'"
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-team-chat-ping-02",
+   "level": "A2",
+   "contexts": [
+    "technology",
+    "remote-work",
+    "general-office",
+    "marketing",
+    "design-creative"
+   ],
+   "category": "team-chat",
+   "scenario": "team-chat-ping",
+   "topic": "professional-requests",
+   "guide": "professional-requests",
+   "interaction": "register-check",
+   "before": {
+    "brief": "You need the meeting link from a colleague. You write in the team chat.",
+    "prompt": "Which message is best for chat?",
+    "options": [
+     {
+      "text": "Hi Sam, could you send me the link for the 3 p.m. meeting, please?",
+      "score": 100,
+      "feedback": "Friendly, polite and clear. Perfect for chat."
+     },
+     {
+      "text": "Link.",
+      "score": 25,
+      "feedback": "Too short. It sounds like an order."
+     },
+     {
+      "text": "Dear Mr Jones, I would be very grateful if you could kindly send me the link.",
+      "score": 25,
+      "feedback": "Much too formal for a chat with a colleague."
+     },
+     {
+      "text": "Hi Sam, are you there?",
+      "score": 50,
+      "feedback": "Friendly, but it doesn't say what you need. Sam has to ask."
+     }
+    ]
+   },
+   "after": {
+    "brief": "A different request. You write to the IT team. You don't know them.",
+    "prompt": "Which message is best?",
+    "options": [
+     {
+      "text": "Hello, my laptop doesn't start. Could you help me today, please? Thanks, Ana (Sales)",
+      "score": 100,
+      "feedback": "Polite and clear. It says the problem, when, and who you are."
+     },
+     {
+      "text": "Laptop broken. Fix it.",
+      "score": 0,
+      "feedback": "This is an order, and it is rude."
+     },
+     {
+      "text": "Hey guys!! Help!!! 😱",
+      "score": 25,
+      "feedback": "Too informal, and it doesn't say the problem."
+     },
+     {
+      "text": "Hello, can you help me?",
+      "score": 50,
+      "feedback": "Polite, but what is the problem? IT needs details."
+     }
+    ]
+   },
+   "language": "english"
+  }
+ ]
+}

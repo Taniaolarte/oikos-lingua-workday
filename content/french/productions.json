@@ -1,0 +1,2151 @@
+{
+ "productions": {
+  "demandes-polies": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Écrivez la demande",
+   "brief": "Vous avez besoin des factures de mars pour une réunion demain. Vous écrivez à Thomas, de la comptabilité. Il n'est pas dans votre équipe.",
+   "task": "Écrivez un court courriel (30 à 50 mots) : bonjour, une demande polie, un jour ou une heure, une raison simple, et merci.",
+   "include": [
+    "« Bonjour Thomas »",
+    "« Pourriez-vous » ou « Pouvez-vous »",
+    "Une limite avec « avant » ou « d'ici »",
+    "Une raison simple : « J'en ai besoin pour… »"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Dit bonjour à Thomas",
+     "any": [
+      "bonjour thomas",
+      "cher thomas",
+      "thomas,"
+     ]
+    },
+    {
+     "label": "Fait une demande polie",
+     "any": [
+      "pourriez-vous",
+      "pouvez-vous",
+      "est-ce que vous pouvez",
+      "je voudrais",
+      "j'aimerais",
+      "serait-il possible"
+     ]
+    },
+    {
+     "label": "Donne une limite",
+     "any": [
+      "avant",
+      "d'ici"
+     ]
+    },
+    {
+     "label": "N'emploie pas « jusqu'à » pour une limite",
+     "none": [
+      "jusqu'a demain",
+      "jusqu'à demain",
+      "jusqu'a 16",
+      "jusqu'à 16",
+      "jusqu'a jeudi",
+      "jusqu'à jeudi"
+     ]
+    },
+    {
+     "label": "Donne une raison",
+     "any": [
+      "parce que",
+      "car ",
+      "j'en ai besoin",
+      "pour la reunion",
+      "pour la réunion",
+      "pour le"
+     ]
+    },
+    {
+     "label": "Dit merci",
+     "any": [
+      "merci",
+      "je vous remercie"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ai-je fait une seule demande ?",
+    "Thomas sait-il quand envoyer les factures ?",
+    "Ai-je évité « je veux » ?"
+   ],
+   "model": "Bonjour Thomas,\n\nPourriez-vous m'envoyer les factures de mars avant 16 h ? J'en ai besoin pour la réunion de demain matin avec Élodie.\n\nMerci beaucoup et bonne journée !\nCamille"
+  },
+  "vocabulaire-echeances": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Annoncez le retard",
+   "brief": "Vous ne pouvez pas finir le rapport vendredi. Le fournisseur a envoyé les données avec trois jours de retard.",
+   "task": "Écrivez un court message à votre responsable (30 à 50 mots). Dites le problème, donnez la raison et proposez une nouvelle date.",
+   "include": [
+    "Le problème : vendredi, ce n'est pas possible",
+    "La raison en une phrase",
+    "Une nouvelle date avec « avant » ou « d'ici »",
+    "Une question : « Est-ce que c'est possible pour vous ? »"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Nomme un jour précis",
+     "any": [
+      "lundi",
+      "mardi",
+      "mercredi",
+      "jeudi",
+      "vendredi"
+     ]
+    },
+    {
+     "label": "Emploie « avant » ou « d'ici » pour la nouvelle date",
+     "any": [
+      "avant",
+      "d'ici"
+     ]
+    },
+    {
+     "label": "N'emploie pas « jusqu'à » pour une limite",
+     "none": [
+      "jusqu'a mardi",
+      "jusqu'à mardi",
+      "jusqu'a lundi",
+      "jusqu'à lundi",
+      "jusqu'a mercredi",
+      "jusqu'à mercredi"
+     ]
+    },
+    {
+     "label": "Donne la raison",
+     "any": [
+      "parce que",
+      "car ",
+      "le fournisseur",
+      "en retard",
+      "de retard"
+     ]
+    },
+    {
+     "label": "Pose une question",
+     "any": [
+      "?"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ai-je prévenu tôt ?",
+    "Ma nouvelle date est-elle réaliste ?",
+    "Ai-je évité d'accuser quelqu'un ?"
+   ],
+   "model": "Bonjour Élodie,\n\nJe ne peux pas finir le rapport vendredi. Le fournisseur a envoyé les données avec trois jours de retard.\n\nJe peux vous l'envoyer avant mardi midi. Est-ce que c'est possible pour vous ?\n\nMerci,\nCamille"
+  },
+  "s-excuser": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez les excuses",
+   "brief": "Pour la deuxième fois, les chiffres de votre rapport ne correspondent pas à ceux que le client vous avait envoyés. Il écrit, visiblement agacé.",
+   "task": "Rédigez la réponse (80 à 120 mots). Excusez-vous une fois, dites ce qui s'est passé, assumez votre part sans accuser le client, et nommez le changement qui empêchera une troisième fois.",
+   "include": [
+    "Une seule excuse, pas cinq",
+    "La cause réelle",
+    "Ce que vous avez déjà fait",
+    "Le changement mis en place"
+   ],
+   "minWords": 80,
+   "checks": [
+    {
+     "label": "Emploie une formule d'excuse correcte",
+     "any": [
+      "je vous prie de m'excuser",
+      "je suis désolé",
+      "je suis desolee",
+      "veuillez m'excuser",
+      "toutes mes excuses"
+     ]
+    },
+    {
+     "label": "Évite « je m'excuse » à l'écrit",
+     "none": [
+      "je m'excuse"
+     ]
+    },
+    {
+     "label": "Assume la responsabilité",
+     "any": [
+      "de ma part",
+      "mon erreur",
+      "mon oubli",
+      "nous aurions dû",
+      "j'aurais dû",
+      "notre erreur"
+     ]
+    },
+    {
+     "label": "Nomme une correction concrète",
+     "any": [
+      "j'ai ajouté",
+      "vérification",
+      "point de contrôle",
+      "avant tout envoi",
+      "désormais",
+      "j'ai mis en place"
+     ]
+    },
+    {
+     "label": "Remercie le client d'avoir signalé",
+     "any": [
+      "merci de",
+      "je vous remercie"
+     ]
+    },
+    {
+     "label": "Évite les formules passives-agressives",
+     "none": [
+      "comme indique dans mon precedent",
+      "comme deja indique",
+      "comme je vous l'ai deja dit",
+      "en fait, c'est vous"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Me suis-je excusé une fois, puis passé à la solution ?",
+    "Ai-je évité d'accuser le client ?",
+    "Est-ce que cela me convaincrait qu'il n'y aura pas de troisième fois ?"
+   ],
+   "model": "Bonjour Madame Lemoine,\n\nJe vous remercie de me l'avoir signalé, et je vous prie de m'excuser : c'est la deuxième fois.\n\nVous avez raison. La colonne T3 de notre rapport a été reprise du fichier de travail et non de la version finale que vous nous aviez transmise le 14. C'est une erreur de ma part.\n\nLe rapport corrigé est en pièce jointe. J'ai ajouté une vérification systématique par rapport à votre fichier source avant tout envoi.\n\nBien cordialement,\nCamille Roux"
+  },
+  "desaccord-poli": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Exprimez votre désaccord à l'oral",
+   "brief": "En réunion, votre responsable annonce que le nouveau parcours d'inscription ne vaut pas le temps de développement et qu'il faut le mettre de côté. Vous n'êtes pas d'accord, et vous avez des données : quarante pour cent des nouveaux utilisateurs abandonnent à l'étape trois.",
+   "task": "Contestez la décision de votre responsable, devant l'équipe, sans abîmer la relation. Parlez environ 90 secondes.",
+   "prepSeconds": 60,
+   "speakSeconds": 90,
+   "checklist": [
+    "J'ai reconnu son argument avant de contester",
+    "J'ai nommé une seule réserve précise plutôt que de tout rejeter",
+    "J'ai avancé un chiffre ou une preuve",
+    "J'ai proposé quelque chose de concret",
+    "J'ai visé l'idée, pas la personne",
+    "J'ai gardé le « ne » de la négation"
+   ],
+   "model": "Je comprends tout à fait la question du temps de développement, et je sais que la feuille de route est chargée. Puis-je donner un chiffre avant qu'on le mette de côté ? Quarante pour cent des nouveaux utilisateurs abandonnent à l'étape trois, c'est précisément là que le parcours casse. Si on corrige seulement cette étape, le développement est amorti en deux mois environ. Donc plutôt que de tout abandonner, pourrait-on cadrer une version réduite qui ne touche que l'étape trois, et revoir le reste au trimestre prochain ?"
+  },
+  "donner-son-opinion": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Donnez votre avis",
+   "brief": "La réunion discute depuis dix minutes de la suppression de la phase de recherche pour gagner deux semaines. Votre directrice se tourne vers vous : « Vous n'avez rien dit. Qu'en pensez-vous ? »",
+   "task": "Donnez un avis clair, avec une raison et un exemple. Soixante secondes.",
+   "prepSeconds": 30,
+   "speakSeconds": 60,
+   "checklist": [
+    "J'ai ouvert avec une expression d'opinion (à mon avis / de mon point de vue)",
+    "J'ai pris position au lieu de rester neutre",
+    "J'ai donné au moins une raison",
+    "J'ai donné un exemple ou un chiffre concret",
+    "Je n'ai pas cumulé « selon moi » et « je pense que »",
+    "J'ai conclu au lieu de m'éteindre"
+   ],
+   "model": "À mon avis, il faut la garder, et je le dis assez fermement. La raison principale, c'est que les deux derniers lancements ont échoué sur des hypothèses que nous n'avions jamais testées. Northbridge en est l'exemple le plus clair : nous avons supprimé la phase de découverte pour gagner trois semaines, et nous avons ensuite passé six semaines à refaire la page tarifaire. Donc de mon point de vue, deux semaines de recherche maintenant, c'est l'option la moins chère, même si cela ne se voit pas sur le planning."
+  },
+  "ecrire-courriel": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez la passation",
+   "brief": "Vous êtes absent toute la semaine prochaine et Daniel reprend le dossier Vidal.",
+   "task": "Rédigez le courriel de passation. Daniel doit pouvoir agir sans vous poser une seule question.",
+   "include": [
+    "Vos dates d'absence",
+    "Ce qui demande une action, et quand",
+    "Ce qui peut attendre votre retour",
+    "Où se trouvent les informations détaillées"
+   ],
+   "minWords": 55,
+   "checks": [
+    {
+     "label": "S'adresse à Daniel",
+     "any": [
+      "bonjour daniel",
+      "salut daniel",
+      "daniel,"
+     ]
+    },
+    {
+     "label": "Donne des dates ou des jours précis",
+     "any": [
+      "lundi",
+      "mardi",
+      "mercredi",
+      "jeudi",
+      "vendredi",
+      "semaine prochaine",
+      "du 6",
+      "au 10"
+     ]
+    },
+    {
+     "label": "Sépare ce qui demande une action",
+     "any": [
+      "trois choses",
+      "deux choses",
+      "demandent",
+      "il faudra",
+      "merci de",
+      "tu valides"
+     ]
+    },
+    {
+     "label": "Dit ce qui peut attendre",
+     "any": [
+      "peut attendre",
+      "à mon retour",
+      "quand je reviens",
+      "rien d'autre",
+      "le reste"
+     ]
+    },
+    {
+     "label": "Indique où trouver le détail",
+     "any": [
+      "dossier partagé",
+      "drive",
+      "ci-joint",
+      "les notes",
+      "le dossier"
+     ]
+    },
+    {
+     "label": "Termine chaleureusement",
+     "any": [
+      "merci",
+      "n'hésite pas",
+      "bonne semaine",
+      "à bientôt"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Daniel pourrait-il travailler à partir de ce seul message ?",
+    "Chaque échéance est-elle claire ?",
+    "Ai-je dit ce dont il ne doit PAS se préoccuper ?"
+   ],
+   "model": "Bonjour Daniel,\n\nJe suis absente du lundi 6 au vendredi 10 et tu prends le relais sur Vidal.\n\nTrois choses demandent ton intervention : le point client de jeudi à 10 h, la validation des factures (en dessous de 5 000 € tu valides, au-dessus tu demandes à Élodie), et le retour de Marta sur les maquettes, attendu mercredi.\n\nTout le reste peut attendre mon retour.\n\nLes notes complètes et les accès sont dans le dossier partagé, sous « Vidal — passation ».\n\nMerci de prendre le relais, et n'hésite pas si quelque chose n'est pas clair.\n\nBonne semaine,\nCamille"
+  },
+  "registre": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Écrivez les deux messages",
+   "brief": "Vous confirmez la réunion de jeudi à 10 h à deux personnes : Madame Lemoine, une cliente, et Marc, un collègue proche.",
+   "task": "Écrivez deux messages courts : un avec « vous » pour Madame Lemoine, un avec « tu » pour Marc.",
+   "include": [
+    "Message 1 : « vous », « Bonjour Madame… », « Cordialement »",
+    "Message 2 : « tu », « Salut Marc », « Merci ! »",
+    "Le jour et l'heure dans les deux messages"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Le message à la cliente emploie « vous »",
+     "any": [
+      "je vous confirme",
+      "pouvez-vous",
+      "pourriez-vous",
+      "vous trouverez",
+      "je vous remercie"
+     ]
+    },
+    {
+     "label": "Le message à Marc emploie « tu »",
+     "any": [
+      "je te confirme",
+      "tu peux",
+      "tu confirmes",
+      "a jeudi",
+      "à jeudi"
+     ]
+    },
+    {
+     "label": "Contient une formule de politesse",
+     "any": [
+      "cordialement",
+      "bien a vous",
+      "bien à vous",
+      "salutations"
+     ]
+    },
+    {
+     "label": "Ne mélange pas « salut » et « vous »",
+     "none": [
+      "salut madame",
+      "salut, je vous",
+      "bonjour madame, je te",
+      "salut marc, je vous"
+     ]
+    },
+    {
+     "label": "Donne le jour",
+     "all": [
+      "jeudi"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Chaque message garde le même registre du début à la fin ?",
+    "Ai-je évité de mélanger « tu » et « vous » ?",
+    "Le jour et l'heure sont-ils dans les deux messages ?"
+   ],
+   "model": "Message à la cliente :\n\nBonjour Madame Lemoine,\n\nJe vous confirme notre rendez-vous de jeudi à 10 h, dans nos bureaux.\n\nCordialement,\nCamille Roux\n\nMessage à Marc :\n\nSalut Marc,\n\nJe te confirme la réunion de jeudi à 10 h, salle 2.\n\nMerci !\nCamille"
+  },
+  "ecriture-asynchrone": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez le point asynchrone",
+   "brief": "Votre responsable est décalée de huit heures et lira ce message à son réveil. Hier vous avez terminé l'intégration de l'API, aujourd'hui vous commencez le script de migration, mais vous êtes bloqué : il vous faut les accès de préproduction auprès de Marc, à l'infrastructure.",
+   "task": "Rédigez le point quotidien de façon qu'elle puisse agir sans vous répondre pour poser une question.",
+   "include": [
+    "Ce que vous avez terminé",
+    "Ce que vous faites aujourd'hui",
+    "Ce qui vous bloque, et qui peut le lever",
+    "Une heure, exploitable malgré le décalage"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Nomme le point bloquant",
+     "any": [
+      "bloqué",
+      "bloque",
+      "bloquant",
+      "en attente",
+      "il me faut"
+     ]
+    },
+    {
+     "label": "Identifie qui peut débloquer",
+     "any": [
+      "marc",
+      "infra",
+      "@"
+     ]
+    },
+    {
+     "label": "Donne une heure ou une échéance",
+     "any": [
+      "heure de",
+      "11 h",
+      "fin de journée",
+      "avant",
+      "ce soir",
+      "h "
+     ]
+    },
+    {
+     "label": "N'envoie pas une salutation seule",
+     "none": [
+      "tu es là ?",
+      "tu es dispo ?",
+      "bonjour ?"
+     ]
+    },
+    {
+     "label": "Couvre hier et aujourd'hui",
+     "all": [
+      "hier",
+      "aujourd'hui"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Peut-elle agir avant même que je me réveille ?",
+    "Le point bloquant est-il impossible à manquer ?",
+    "Ai-je évité qu'elle ait à poser une question ?"
+   ],
+   "model": "Hier : intégration de l'API terminée, tous les tests passent.\nAujourd'hui : début du script de migration.\nBloqué sur : les accès de préproduction.\n\n@Marc peux-tu les déposer dans le canal quand tu arrives ? Cela me bloque à partir de 11 h, heure de Paris. Si cela arrive avant ta fin de journée, je ne perds pas la session de test.\n\nLe reste est dans les temps pour jeudi."
+  },
+  "demander-precision": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Demandez la précision manquante",
+   "brief": "Votre responsable vous écrit une ligne : « Tu peux me préparer quelque chose de court sur les chiffres du T3 pour jeudi ? » Vous ne savez ni pour qui, ni quelle longueur.",
+   "task": "Rédigez la réponse. Ne demandez que ce qui change réellement le travail, et proposez votre hypothèse pour qu'on puisse vous répondre en un mot.",
+   "include": [
+    "Acceptez la tâche",
+    "Posez une ou deux questions précises",
+    "Annoncez l'hypothèse par défaut si on ne vous répond pas"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Emploie une formule de vérification",
+     "any": [
+      "juste pour être sûr",
+      "pour être sûr",
+      "deux vérifications",
+      "une précision",
+      "est-ce que c'est",
+      "c'est bien"
+     ]
+    },
+    {
+     "label": "Annonce une hypothèse par défaut",
+     "any": [
+      "sauf indication",
+      "je pars sur",
+      "je partirai sur",
+      "par défaut",
+      "sinon je"
+     ]
+    },
+    {
+     "label": "Accepte la tâche positivement",
+     "any": [
+      "avec plaisir",
+      "bien sûr",
+      "pas de souci",
+      "c'est noté",
+      "d'accord"
+     ]
+    },
+    {
+     "label": "Pose une question fermée, pas ouverte",
+     "any": [
+      "ou ",
+      "?"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ma responsable peut-elle répondre en une ligne ?",
+    "N'ai-je demandé que ce qui change le livrable ?",
+    "Ai-je évité de lui reprocher son brief ?"
+   ],
+   "model": "Avec plaisir.\n\nDeux vérifications rapides pour construire la bonne chose : c'est pour le comité de direction ou pour l'équipe élargie, et tu penses à une page ou à une courte présentation ?\n\nSauf indication contraire, je pars sur une page pour le comité, et je te l'envoie mercredi soir pour que tu aies le temps de la relire avant jeudi."
+  },
+  "expliquer-probleme": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Expliquez ce qui n'a pas marché",
+   "brief": "Les tests d'intégration ont révélé un problème de données touchant environ un tiers des enregistrements. Le lancement passe du 1er avril à la mi-avril. Vous avez deux personnes sur le nettoyage et vous avez sollicité le prestataire. Il faut que le commanditaire tranche : tenir la date en réduisant le périmètre, ou décaler.",
+   "task": "Expliquez la situation au commanditaire. Vous avez environ une minute.",
+   "prepSeconds": 45,
+   "speakSeconds": 75,
+   "checklist": [
+    "J'ai dit ce qui s'est passé avant toute autre chose",
+    "J'ai donné l'impact en dates ou en chiffres",
+    "J'ai dit ce que j'ai déjà engagé",
+    "J'ai terminé par la décision précise que j'attends",
+    "Je n'ai pas commencé par une excuse",
+    "Je n'ai pas dramatisé"
+   ],
+   "model": "Les tests d'intégration ont révélé un problème de données que nous n'avions pas vu. Il touche environ un tiers des enregistrements. L'impact, c'est que le lancement se décale d'à peu près deux semaines, donc mi-avril plutôt que le 1er. J'ai déjà deux personnes sur le nettoyage et j'ai sollicité le prestataire ; j'aurai une date ferme de leur part jeudi. Ce dont j'ai besoin de votre part, c'est d'une décision : soit nous tenons la date initiale en retirant le module de reporting de la première version, soit nous décalons et nous livrons complet. Je recommande de décaler, mais l'engagement de lancement vous appartient."
+  },
+  "feedback-fr": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Formulez le retour difficile",
+   "brief": "Une collègue junior, Iris, vous a envoyé un document avec trois erreurs factuelles : le chiffre du T2 page 2, le nom du client dans l'en-tête, et la date dans la synthèse. Le document doit partir aujourd'hui.",
+   "task": "Rédigez le retour (70 à 110 mots). Assez précis pour être exploitable, assez bienveillant pour ne pas la décourager.",
+   "include": [
+    "Un point qui fonctionne vraiment",
+    "Les trois corrections, précisément localisées",
+    "Une échéance",
+    "Aucune question rhétorique"
+   ],
+   "minWords": 70,
+   "checks": [
+    {
+     "label": "Localise précisément les corrections",
+     "any": [
+      "page 2",
+      "en-tête",
+      "synthèse",
+      "t2",
+      "nom du client",
+      "la date"
+     ]
+    },
+    {
+     "label": "Les dénombre pour les rendre finies",
+     "any": [
+      "trois",
+      "3 points",
+      "deux points",
+      "quelques points précis"
+     ]
+    },
+    {
+     "label": "Donne une échéance",
+     "any": [
+      "avant",
+      "aujourd'hui",
+      "cet après-midi",
+      "14 h",
+      "d'ici"
+     ]
+    },
+    {
+     "label": "Évite le reproche rhétorique",
+     "none": [
+      "tu as relu",
+      "tu as vérifié au moins",
+      "sérieusement ?",
+      "tu ne fais pas attention"
+     ]
+    },
+    {
+     "label": "Dit quelque chose de positif et précis",
+     "any": [
+      "fonctionne",
+      "clair",
+      "bien",
+      "solide",
+      "utile",
+      "j'aime"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Chaque correction est-elle localisable ?",
+    "Ai-je visé le travail plutôt qu'Iris ?",
+    "Saurait-elle exactement quoi faire dans les dix prochaines minutes ?"
+   ],
+   "model": "Merci Iris — la structure fonctionne bien, et le tableau de décision page 4 est nettement plus clair que dans la version précédente.\n\nTrois points à corriger avant l'envoi : le chiffre du T2 page 2 ne correspond pas à l'annexe, le nom du client dans l'en-tête est encore l'ancien, et la date de la synthèse indique mars au lieu d'avril.\n\nPeux-tu me renvoyer une version corrigée avant 14 h ? Le document pourra partir cet après-midi."
+  },
+  "langue-reunion": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Concluez la réunion",
+   "brief": "Il reste cinq minutes. Trois décisions ont été prises : le fournisseur B, le lancement passe au 14 avril, et Ana pilote le plan éditorial. Deux points restent ouverts : le budget d'un designer supplémentaire, et qui présente au comité.",
+   "task": "Concluez la réunion à voix haute. Résumez les décisions, nommez les responsables, et dites ce qui reste ouvert.",
+   "prepSeconds": 45,
+   "speakSeconds": 60,
+   "checklist": [
+    "J'ai annoncé le résumé (« pour résumer », « en résumé »)",
+    "J'ai énoncé les trois décisions",
+    "J'ai nommé qui fait quoi",
+    "J'ai dit explicitement ce qui reste non résolu",
+    "J'ai mis une échéance sur les points ouverts",
+    "Je n'ai pas conclu par « très bonne discussion »"
+   ],
+   "model": "Alors, pour résumer : nous partons sur le fournisseur B, le lancement passe au 14 avril, et Ana pilote le plan éditorial. Côté actions, Ana envoie le premier brouillon mardi, je le relis d'ici jeudi, et nous validons vendredi. Restent ouverts : le budget du designer supplémentaire, et qui présente au comité. Pouvons-nous clore ces deux points d'ici vendredi ? Je mets un quart d'heure jeudi si c'est plus simple que de le traiter par courriel."
+  },
+  "futur-proche": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Annoncez le plan de la semaine",
+   "brief": "Cette semaine : vous appelez le client cet après-midi. Vous ne préparez pas la présentation ce soir, vous la faites demain. Vous voulez savoir si l'équipe vient à la réunion de jeudi.",
+   "task": "Écrivez un court message à l'équipe (3 ou 4 phrases). Utilisez le futur proche : une phrase positive, une phrase négative et une question.",
+   "include": [
+    "Une phrase positive au futur proche",
+    "Une phrase négative au futur proche",
+    "Une question au futur proche"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Emploie le futur proche",
+     "any": [
+      "vais ",
+      "allons ",
+      "va ",
+      "allez ",
+      "vont "
+     ]
+    },
+    {
+     "label": "Contient une négation correcte",
+     "any": [
+      "ne vais pas",
+      "ne vais plus",
+      "n'allons pas",
+      "ne va pas",
+      "n'allez pas"
+     ]
+    },
+    {
+     "label": "La négation n'est pas mal placée",
+     "none": [
+      "vais ne pas",
+      "allons ne pas",
+      "va ne pas"
+     ]
+    },
+    {
+     "label": "Contient une question",
+     "any": [
+      "?"
+     ]
+    },
+    {
+     "label": "Pas de « à » après aller",
+     "none": [
+      "vais à préparer",
+      "vais à appeler",
+      "vais à contacter",
+      "vais à envoyer",
+      "vais à faire",
+      "allons à préparer",
+      "allons à appeler",
+      "va à contacter",
+      "allez à venir"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "La négation est-elle autour de ALLER ?",
+    "Le deuxième verbe est-il à l'infinitif ?",
+    "Les trois formes sont-elles là ?"
+   ],
+   "model": "Bonjour à tous,\n\nJe vais appeler le client cet après-midi. Je ne vais pas préparer la présentation ce soir : je vais la faire demain matin.\n\nEst-ce que vous allez venir à la réunion de jeudi ? Répondez-moi avant mercredi, s'il vous plaît.\n\nMerci,\nCamille"
+  },
+  "futur-simple": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez vos engagements",
+   "brief": "Vous écrivez à un client après une réunion. Trois engagements : vous présenterez le projet demain matin, vous terminerez le dossier la semaine prochaine, et il aura les conclusions avant la fin du mois.",
+   "task": "Rédigez le courriel. Tous les verbes d'engagement au futur simple.",
+   "include": [
+    "Au moins trois verbes au futur simple",
+    "Un verbe irrégulier (être, avoir, faire, pouvoir ou venir)",
+    "Une échéance précise pour chaque engagement"
+   ],
+   "minWords": 40,
+   "checks": [
+    {
+     "label": "Emploie le futur simple",
+     "any": [
+      "erai",
+      "erez",
+      "erons",
+      "eront",
+      "irai",
+      "irez"
+     ]
+    },
+    {
+     "label": "Contient un futur irrégulier",
+     "any": [
+      "serai",
+      "sera",
+      "serez",
+      "aurez",
+      "aura",
+      "ferai",
+      "ferons",
+      "pourrai",
+      "pourrez",
+      "viendra",
+      "verrez"
+     ]
+    },
+    {
+     "label": "N'emploie pas le conditionnel par erreur",
+     "none": [
+      "je vous enverrais le rapport",
+      "je terminerais le dossier",
+      "je présenterais le projet"
+     ]
+    },
+    {
+     "label": "Donne des échéances",
+     "any": [
+      "demain",
+      "semaine prochaine",
+      "fin du mois",
+      "avant",
+      "d'ici"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Mes terminaisons sont-elles en -ai et non en -ais ?",
+    "Le radical se termine-t-il toujours par -r ?",
+    "Chaque engagement a-t-il une date ?"
+   ],
+   "model": "Bonjour Madame Lemoine,\n\nComme convenu, je vous confirme nos prochaines étapes.\n\nJe présenterai le projet demain matin à vos équipes. Nous terminerons ensuite le dossier technique la semaine prochaine, et vous aurez les conclusions complètes avant la fin du mois.\n\nJe serai disponible tout au long de la période si vous avez des questions, et je vous ferai un point d'avancement chaque vendredi.\n\nBien cordialement,\nCamille Roux"
+  },
+  "futur-proche-vs-simple": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Distinguez les deux futurs",
+   "brief": "Vous rédigez une note qui mélange trois horizons : une décision prise pour ce soir, une prévision pour le trimestre, et un projet à dix ans.",
+   "task": "Écrivez la note. Employez le futur proche pour ce qui est décidé et imminent, le futur simple pour les projections.",
+   "include": [
+    "Une action décidée et imminente",
+    "Une prévision à moyen terme",
+    "Une projection lointaine"
+   ],
+   "minWords": 40,
+   "checks": [
+    {
+     "label": "Emploie le futur proche",
+     "any": [
+      "vais ",
+      "allons ",
+      "va ",
+      "allez "
+     ]
+    },
+    {
+     "label": "Emploie le futur simple",
+     "any": [
+      "erons",
+      "eront",
+      "erai",
+      "erez",
+      "sera",
+      "seront",
+      "aura",
+      "auront"
+     ]
+    },
+    {
+     "label": "Marque un horizon lointain",
+     "any": [
+      "dans dix ans",
+      "dans cinq ans",
+      "un jour",
+      "à terme",
+      "à long terme",
+      "dans quelques années"
+     ]
+    },
+    {
+     "label": "Marque l'imminence",
+     "any": [
+      "ce soir",
+      "cet après-midi",
+      "demain",
+      "tout de suite",
+      "maintenant"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Le futur proche correspond-il bien à une décision déjà prise ?",
+    "Le futur simple correspond-il à une projection ?",
+    "Ai-je évité le futur proche pour un horizon lointain ?"
+   ],
+   "model": "Point sur le projet Northbridge.\n\nCe soir, je vais finir le devis et l'envoyer au client : c'est calé, il n'y a plus qu'à intégrer les derniers prix.\n\nSur le trimestre, je pense que nous tiendrons la date de lancement, même si le calendrier sera serré en mars.\n\nÀ plus long terme, dans cinq ans, la plupart de ces processus seront automatisés et l'équipe se concentrera sur le conseil plutôt que sur la saisie. C'est la direction qu'il faut préparer dès maintenant."
+  },
+  "articles-partitifs": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez le bilan sans faute d'article",
+   "brief": "Vous rédigez pour la direction le bilan d'un projet pilote de télétravail. Les retours sont majoritairement positifs ; quelques managers restent réservés ; les outils de suivi manquent encore ; de nombreuses équipes souhaitent prolonger l'expérience.",
+   "task": "Rédigez un bilan de 90 à 130 mots. Employez les partitifs avec précision, y compris dans les cas où la règle générale ne s'applique pas.",
+   "include": [
+    "Au moins une négation suivie de « de » (nous n'avons pas de…)",
+    "« Ne … que » ou « ce n'est pas du / de la… », avec l'article complet",
+    "« La plupart des » ou « bien des »",
+    "Un adjectif pluriel placé avant le nom, précédé de « de » (de nombreuses…, de réels…)"
+   ],
+   "minWords": 90,
+   "checks": [
+    {
+     "label": "Emploie « de » après une négation",
+     "any": [
+      "pas de ",
+      "pas d'",
+      "plus de ",
+      "jamais de ",
+      "guere de "
+     ]
+    },
+    {
+     "label": "N'écrit pas « pas du » / « pas des » après un verbe d'action",
+     "none": [
+      "pas du temps",
+      "pas des outils",
+      "pas des moyens",
+      "pas de la place",
+      "pas des retours"
+     ]
+    },
+    {
+     "label": "Garde l'article complet après « ne … que » ou « ce n'est pas »",
+     "any": [
+      "que des ",
+      "que du ",
+      "que de la ",
+      "que de l'",
+      "ce n'est pas du",
+      "ce n'est pas de la",
+      "ce n'etait pas du",
+      "ce n'est pas un"
+     ]
+    },
+    {
+     "label": "Emploie « la plupart des » ou « bien des »",
+     "any": [
+      "la plupart des",
+      "bien des "
+     ]
+    },
+    {
+     "label": "Emploie « de » devant un adjectif pluriel antéposé",
+     "any": [
+      "de nombreux",
+      "de nombreuses",
+      "de grands",
+      "de grandes",
+      "de petits",
+      "de petites",
+      "de reels",
+      "de reelles",
+      "de bons",
+      "de bonnes",
+      "de vrais",
+      "de vraies"
+     ]
+    },
+    {
+     "label": "N'écrit pas « des nombreux » ou « beaucoup des »",
+     "none": [
+      "des nombreux",
+      "des nombreuses",
+      "beaucoup des ",
+      "assez des ",
+      "trop des "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Après chaque négation, ai-je écrit « de », sauf après « être » ?",
+    "Ai-je gardé l'article complet après « ne … que » ?",
+    "Ai-je vérifié « la plupart des » et « bien des » ?"
+   ],
+   "model": "Le projet pilote de télétravail a produit des résultats encourageants. La plupart des salariés concernés jugent l'organisation plus efficace, et bien des équipes ont réduit leurs réunions de moitié. Ce n'est pas du confort accordé en plus : la productivité mesurée a progressé de 6 %.\n\nLe bilan comporte cependant des réserves. Quelques managers n'ont pas de visibilité suffisante sur l'avancement des dossiers, et nous n'avons encore que des outils de suivi provisoires. Nous manquons donc de données fiables sur la charge réelle.\n\nDe nombreuses équipes demandent à prolonger l'expérience. Nous recommandons de la reconduire six mois, à condition de déployer d'ici là un outil de suivi commun."
+  },
+  "conditionnel": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Négociez au conditionnel",
+   "brief": "Vous voulez une semaine de délai supplémentaire sur un rapport. Vous pouvez offrir quelque chose en échange : livrer la synthèse à la date initiale pour que le client ait déjà quelque chose.",
+   "task": "Écrivez à votre responsable en employant le conditionnel et l'hypothèse. Rendez l'échange explicite.",
+   "include": [
+    "Une hypothèse avec « si » + imparfait → conditionnel",
+    "Ce que vous livrerez malgré tout à la date initiale",
+    "Une formule de politesse au conditionnel"
+   ],
+   "minWords": 40,
+   "checks": [
+    {
+     "label": "Emploie le conditionnel",
+     "any": [
+      "serait",
+      "pourrait",
+      "pourrions",
+      "serions",
+      "aimerais",
+      "voudrais",
+      "souhaiterais",
+      "permettrait"
+     ]
+    },
+    {
+     "label": "Pas de conditionnel après « si »",
+     "none": [
+      "si nous aurions",
+      "si j'aurais",
+      "si nous pourrions",
+      "si je serais"
+     ]
+    },
+    {
+     "label": "Pas de futur après « si »",
+     "none": [
+      "si nous aurons",
+      "si je serai",
+      "si nous pourrons"
+     ]
+    },
+    {
+     "label": "Propose une contrepartie",
+     "any": [
+      "synthèse",
+      "en attendant",
+      "malgré tout",
+      "date initiale",
+      "je peux quand même",
+      "entre-temps"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Après « si », ai-je bien mis l'imparfait ?",
+    "Le conditionnel est-il dans la seconde partie ?",
+    "La contrepartie est-elle claire ?"
+   ],
+   "model": "Bonjour Élodie,\n\nSi nous pouvions décaler l'échéance au 21, je serais en mesure d'intégrer les chiffres révisés du client, qui sont justement ce sur quoi le comité posera des questions.\n\nEn attendant, je peux tout à fait livrer la synthèse vendredi comme prévu, afin que personne ne reste sans rien.\n\nSi le 21 n'est pas possible, j'enverrai ce que j'ai vendredi en signalant les chiffres comme provisoires. J'aimerais avoir votre avis avant mercredi.\n\nCamille"
+  },
+  "subjonctif": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez les consignes",
+   "brief": "Vous écrivez à votre équipe avant une échéance importante. Il faut que le dossier soit terminé vendredi, que chacun relise sa partie, et vous souhaitez que deux personnes soient présentes à la réunion de validation.",
+   "task": "Rédigez le message. Employez le subjonctif après les expressions de nécessité et de volonté, et adoucissez au moins une consigne.",
+   "include": [
+    "Une phrase avec « il faut que » + subjonctif",
+    "Une phrase avec « je souhaiterais que » ou « j'aimerais que »",
+    "Une consigne adoucie avec « merci de bien vouloir »"
+   ],
+   "minWords": 40,
+   "checks": [
+    {
+     "label": "Emploie « il faut que » ou équivalent",
+     "any": [
+      "il faut que",
+      "il faudrait que",
+      "il est important que",
+      "il est nécessaire que"
+     ]
+    },
+    {
+     "label": "Emploie un subjonctif",
+     "any": [
+      "soit",
+      "soyez",
+      "soyons",
+      "ait",
+      "ayez",
+      "fasse",
+      "fassiez",
+      "puisse",
+      "puissiez",
+      "aille",
+      "finissions",
+      "relise",
+      "relisiez"
+     ]
+    },
+    {
+     "label": "Évite l'indicatif après « il faut que »",
+     "none": [
+      "il faut que nous finissons",
+      "il faut que je peux",
+      "il faut que vous êtes",
+      "il faut que c'est"
+     ]
+    },
+    {
+     "label": "Adoucit au moins une consigne",
+     "any": [
+      "merci de bien vouloir",
+      "je vous serais reconnaissant",
+      "pourriez-vous",
+      "si possible"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Chaque « il faut que » est-il suivi du subjonctif ?",
+    "Ai-je employé au moins un subjonctif irrégulier ?",
+    "Le ton reste-t-il celui d'un collègue, pas d'un supérieur ?"
+   ],
+   "model": "Bonjour à tous,\n\nUn point avant vendredi. Il faut que le dossier soit complet vendredi midi au plus tard, car il part chez le client dans l'après-midi.\n\nMerci de bien vouloir relire votre partie avant jeudi soir, même rapidement : c'est toujours là qu'on rattrape les erreurs de chiffres.\n\nEnfin, j'aimerais que Marc et Iris soient présents à la réunion de validation de vendredi 9 h, puisque ce sont leurs sections qui posent le plus de questions.\n\nMerci à vous,\nCamille"
+  },
+  "temps-au-travail": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez le compte rendu",
+   "brief": "Vous racontez un projet terminé : vous avez lancé la campagne en mars ; à l'époque l'équipe était en sous-effectif et le budget était serré ; vous relisiez le contrat quand vous avez remarqué une erreur dans le total.",
+   "task": "Rédigez le compte rendu. Alternez passé composé pour les actions terminées et imparfait pour le contexte.",
+   "include": [
+    "Au moins deux actions au passé composé",
+    "Au moins deux descriptions à l'imparfait",
+    "Une action interrompue (imparfait + passé composé)"
+   ],
+   "minWords": 45,
+   "checks": [
+    {
+     "label": "Emploie le passé composé",
+     "any": [
+      "nous avons",
+      "j'ai ",
+      "a été",
+      "ont ",
+      "avons lancé",
+      "ai remarqué"
+     ]
+    },
+    {
+     "label": "Emploie l'imparfait",
+     "any": [
+      "était",
+      "étaient",
+      "avait",
+      "avaient",
+      "faisait",
+      "relisais",
+      "devions"
+     ]
+    },
+    {
+     "label": "Contient une interruption",
+     "any": [
+      "quand j'",
+      "quand nous",
+      "lorsque j'",
+      "au moment où",
+      "pendant que"
+     ]
+    },
+    {
+     "label": "N'emploie pas l'imparfait pour une action datée",
+     "none": [
+      "en mars nous lancions",
+      "hier je finissais le rapport"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Le contexte est-il bien à l'imparfait ?",
+    "Les événements datés sont-ils au passé composé ?",
+    "Le test « et puis » fonctionne-t-il sur mes passés composés ?"
+   ],
+   "model": "Compte rendu du projet Northbridge.\n\nNous avons lancé la campagne en mars, avec deux semaines de retard sur le calendrier initial. À l'époque, l'équipe était en sous-effectif et le budget était plus serré que prévu, ce qui explique une partie du décalage.\n\nUn point mérite d'être signalé : je relisais le contrat fournisseur quand j'ai remarqué une erreur dans le total, qui portait sur près de 4 000 euros. Nous avons corrigé avant signature.\n\nAu final, la campagne a dépassé l'objectif de 12 %, malgré des conditions de départ difficiles."
+  },
+  "pronoms": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Écrivez sans répétitions",
+   "brief": "Vous répondez à un courriel sur un devis. Vous avez reçu le devis, vous l'avez transmis à la direction, vous parlerez à la direction jeudi, et vous confirmerez la réponse à votre interlocuteur ensuite.",
+   "task": "Rédigez la réponse en remplaçant les répétitions par des pronoms.",
+   "include": [
+    "Au moins deux pronoms compléments (le, la, les, lui, leur)",
+    "Une phrase avec deux pronoms à la suite",
+    "Aucune répétition du mot « devis » plus de deux fois"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Emploie un pronom complément direct",
+     "any": [
+      "je l'ai",
+      "je le",
+      "je la",
+      "je les",
+      "l'ai transmis",
+      "l'ai bien"
+     ]
+    },
+    {
+     "label": "Emploie un pronom complément indirect",
+     "any": [
+      "je leur",
+      "je lui",
+      "leur en",
+      "lui en"
+     ]
+    },
+    {
+     "label": "Place le pronom avant le verbe",
+     "none": [
+      "j'ai transmis le à",
+      "je confirme le à",
+      "j'ai relu le hier"
+     ]
+    },
+    {
+     "label": "Termine par un engagement daté",
+     "any": [
+      "jeudi",
+      "vendredi",
+      "dès que",
+      "avant",
+      "la semaine"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Chaque pronom est-il placé avant le verbe conjugué ?",
+    "L'ordre le/la/les avant lui/leur est-il respecté ?",
+    "Ai-je évité de répéter le même nom ?"
+   ],
+   "model": "Bonjour Marc,\n\nJ'ai bien reçu votre devis et je l'ai transmis à la direction hier soir.\n\nJe leur en parlerai jeudi lors du point hebdomadaire, et je vous confirmerai leur position dès vendredi matin.\n\nSi des questions arrivent d'ici là, je vous les ferai suivre directement pour ne pas vous faire perdre de temps.\n\nBien à vous,\nCamille"
+  },
+  "connecteurs": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez l'argumentation",
+   "brief": "Votre entreprise hésite entre garder les bureaux ou passer entièrement en télétravail.",
+   "task": "Rédigez un paragraphe argumenté. Un argument pour, un argument contre, un exemple, et une conclusion.",
+   "include": [
+    "Un connecteur d'addition",
+    "Un connecteur d'opposition",
+    "Un exemple introduit",
+    "Une conclusion"
+   ],
+   "minWords": 50,
+   "checks": [
+    {
+     "label": "Emploie un connecteur d'opposition",
+     "any": [
+      "cependant",
+      "en revanche",
+      "pourtant",
+      "toutefois",
+      "néanmoins",
+      "alors que",
+      "bien que"
+     ]
+    },
+    {
+     "label": "Introduit un exemple",
+     "any": [
+      "par exemple",
+      "notamment",
+      "ainsi",
+      "comme "
+     ]
+    },
+    {
+     "label": "Conclut explicitement",
+     "any": [
+      "en conclusion",
+      "en somme",
+      "pour résumer",
+      "finalement",
+      "au final",
+      "globalement"
+     ]
+    },
+    {
+     "label": "Ne cumule pas « bien que » et « mais »",
+     "none": [
+      "bien que ce soit moins cher, mais",
+      "bien qu'il soit utile, mais"
+     ]
+    },
+    {
+     "label": "Prend position",
+     "any": [
+      "je pense",
+      "à mon avis",
+      "je recommande",
+      "selon moi",
+      "je plaiderais",
+      "il me semble"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Chaque connecteur fait-il un travail différent ?",
+    "Y a-t-il trois connecteurs au maximum ?",
+    "Ai-je vraiment conclu ?"
+   ],
+   "model": "Le passage complet au télétravail réduirait nettement nos coûts fixes, et il élargirait le vivier de recrutement. De plus, les deux dernières années montrent que la production n'en a pas souffert.\n\nEn revanche, l'apprentissage informel des juniors, celui qui se fait en étant assis à côté d'un collègue expérimenté, se reproduit très mal à distance. Par exemple, nos deux derniers départs ont invoqué l'isolement plutôt que le salaire.\n\nEn conclusion, je plaiderais pour un modèle hybride : un bureau plus petit deux jours par semaine, et le reste en flexibilité."
+  },
+  "comparer": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Comparez et choisissez",
+   "brief": "Vous devez choisir un hôtel pour un séminaire. Hôtel A : 90 € la nuit, à 10 minutes du bureau. Hôtel B : 70 € la nuit, à 40 minutes du bureau.",
+   "task": "Écrivez un court message à votre responsable (30 à 50 mots). Comparez les deux hôtels et dites lequel vous choisissez.",
+   "include": [
+    "Un comparatif : plus / moins … que",
+    "Un chiffre : le prix ou le temps",
+    "Votre choix, avec « parce que »"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Emploie un comparatif",
+     "any": [
+      "plus cher",
+      "moins cher",
+      "plus pres",
+      "plus proche",
+      "plus loin",
+      "plus rapide",
+      "meilleur"
+     ]
+    },
+    {
+     "label": "Évite « plus meilleur »",
+     "none": [
+      "plus meilleur",
+      "plus bon"
+     ]
+    },
+    {
+     "label": "Donne un chiffre",
+     "any": [
+      "90",
+      "70",
+      "20 €",
+      "20 euros",
+      "10 minutes",
+      "40 minutes",
+      "30 minutes"
+     ]
+    },
+    {
+     "label": "Dit son choix",
+     "any": [
+      "je choisis",
+      "je propose",
+      "je prefere",
+      "je recommande",
+      "je conseille"
+     ]
+    },
+    {
+     "label": "Donne une raison",
+     "any": [
+      "parce que",
+      "car "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ai-je utilisé « que » après le comparatif ?",
+    "Mon choix est-il clair ?",
+    "Ma responsable peut-elle décider avec ce message ?"
+   ],
+   "model": "Bonjour Élodie,\n\nL'hôtel A est plus cher que l'hôtel B : 90 € la nuit, contre 70 €. Mais il est beaucoup plus près du bureau : 10 minutes, contre 40.\n\nJe choisis l'hôtel A, parce que nous allons gagner du temps chaque matin.\n\nCamille"
+  },
+  "vocabulaire-travail": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Décrivez votre travail",
+   "brief": "Un nouveau collègue vous demande : « Qu'est-ce que tu fais dans ton travail ? »",
+   "task": "Écrivez 4 ou 5 phrases (35 à 60 mots). Utilisez au moins trois mots du guide et des verbes précis à la place de « faire ».",
+   "include": [
+    "Votre poste : « je suis » + métier",
+    "Au moins trois mots du guide (dossier, réunion, échéance, collègue…)",
+    "Des verbes précis : organiser, préparer, envoyer, s'occuper de"
+   ],
+   "minWords": 30,
+   "checks": [
+    {
+     "label": "Dit son poste",
+     "any": [
+      "je suis",
+      "je travaille"
+     ]
+    },
+    {
+     "label": "Emploie le vocabulaire du travail",
+     "any": [
+      "dossier",
+      "réunion",
+      "échéance",
+      "collègue",
+      "responsable",
+      "charge de travail"
+     ]
+    },
+    {
+     "label": "Emploie un verbe précis",
+     "any": [
+      "organise",
+      "prepare",
+      "envoie",
+      "m'occupe",
+      "gere",
+      "valide",
+      "redige",
+      "reponds"
+     ]
+    },
+    {
+     "label": "Évite le faux ami « attendre » pour aider un client",
+     "none": [
+      "j'attends les clients",
+      "j'attends des clients",
+      "attendre les clients"
+     ]
+    },
+    {
+     "label": "Évite « je fais » + nom vague",
+     "none": [
+      "je fais des choses",
+      "je fais beaucoup de choses",
+      "je fais le travail"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ai-je remplacé « faire » par un verbe précis ?",
+    "Ai-je utilisé trois mots du guide ?",
+    "Mes phrases sont-elles courtes et claires ?"
+   ],
+   "model": "Je suis assistante commerciale chez Vidal. Je m'occupe des clients espagnols et de leurs dossiers. Chaque lundi, je prépare la réunion d'équipe avec ma responsable. J'envoie aussi les devis et je vérifie les échéances de paiement. Ma charge de travail est importante, mais mes collègues sont très sympathiques."
+  },
+  "entretien-fr": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Répondez en entretien",
+   "brief": "Vous êtes en entretien. Le recruteur vous dit : « Parlez-moi d'un projet dont vous êtes fier, et de ce que vous feriez différemment. »",
+   "task": "Répondez à voix haute. Situation, ce que vous avez fait, le résultat, et une chose honnête que vous changeriez.",
+   "prepSeconds": 60,
+   "speakSeconds": 120,
+   "checklist": [
+    "J'ai décrit un projet précis, pas une compétence générale",
+    "J'ai dit ce que j'ai fait personnellement",
+    "J'ai donné un résultat chiffré",
+    "J'ai nommé une chose réelle que je changerais",
+    "J'ai employé le passé composé pour le projet terminé",
+    "J'ai conclu sur l'enseignement plutôt que de m'éteindre"
+   ],
+   "model": "Je choisirais la refonte du tunnel de paiement, l'an dernier. Le problème, c'est que nous perdions environ un tiers des utilisateurs à l'étape du paiement, et personne ne savait pourquoi.\n\nJ'ai mené la phase de découverte, ce qui voulait dire passer deux jours avec le service client et regarder des sessions enregistrées. Nous avons découvert que le formulaire rejetait des codes postaux valides. Nous avons testé trois versions sur six semaines, et celle que nous avons retenue a fait passer l'abandon de 33 % à 12 %. Cela représente environ 400 000 euros par an.\n\nCe que je ferais différemment, c'est impliquer le service client dès le début et non à la revue de maquettes. Ils ont repéré en dix minutes deux cas d'erreur que nous avions manqués en trois semaines, et cela nous a coûté une dizaine de jours. Depuis, je les intègre systématiquement à la phase de découverte."
+  },
+  "structurer-oral": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Parlez deux minutes",
+   "brief": "En réunion, on vous demande : « Faut-il repousser l'échéance ou livrer ce que nous avons ? »",
+   "task": "Donnez une réponse structurée. Annoncez le nombre de raisons, donnez-les, illustrez-en une, et concluez.",
+   "prepSeconds": 60,
+   "speakSeconds": 120,
+   "checklist": [
+    "J'ai annoncé ma position dès la première phrase",
+    "J'ai annoncé combien de raisons j'avais",
+    "J'ai effectivement donné ce nombre de raisons",
+    "J'ai utilisé un exemple réel",
+    "J'ai balisé (d'abord, ensuite, donc globalement)",
+    "J'ai parlé au moins 90 secondes sans longue pause"
+   ],
+   "model": "Mon avis, c'est qu'il faut repousser, et cela pour deux raisons.\n\nLa première, c'est la qualité des données. Les chiffres révisés du client ne sont arrivés que mardi, et si nous livrons maintenant, le rapport part avec des données que nous savons vieilles de trois semaines. La seconde, c'est le coût de la reprise. Une version bâclée ne fait pas gagner du temps, elle le déplace là où on le voit moins.\n\nPar exemple, le trimestre dernier nous avons livré le rapport Northbridge à la date initiale, puis passé trois semaines à le corriger, ce qui a coûté plus cher que le report.\n\nDonc globalement, je prendrais la semaine supplémentaire, je préviendrais le client dès aujourd'hui plutôt que vendredi, et j'enverrais la synthèse à la date prévue pour que personne ne reste sans rien."
+  },
+  "echanges-informels": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Parlez avec une collègue",
+   "brief": "Pause-café au bureau. Vous rencontrez Ana, une collègue d'un autre service. Vous ne la connaissez pas bien.",
+   "task": "Parlez 30 à 45 secondes : dites bonjour, posez deux questions simples, répondez, puis terminez gentiment.",
+   "prepSeconds": 30,
+   "speakSeconds": 45,
+   "checklist": [
+    "J'ai dit bonjour et mon prénom",
+    "J'ai posé au moins deux questions",
+    "J'ai posé une question ouverte (comment, quel, qu'est-ce que)",
+    "J'ai dit « Et vous ? » ou « Et toi ? »",
+    "J'ai terminé avec une formule aimable (bonne journée, à bientôt)"
+   ],
+   "model": "Bonjour ! Je m'appelle Camille, je travaille au marketing. Et vous, vous êtes dans quel service ? … Ah, la comptabilité ! Et comment se passe votre semaine ? … Oui, chez nous aussi, c'est une semaine chargée. Bon, je retourne à mon bureau. Bonne journée, Ana, à bientôt !"
+  },
+  "raconter": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Racontez l'expérience",
+   "brief": "Un projet qui a mal commencé et bien fini : le brief était flou au départ, vous avez organisé un atelier avec le client, les priorités se sont clarifiées, et vous avez livré avec une semaine d'avance.",
+   "task": "Racontez-le par écrit, dans l'ordre, et terminez par ce que vous en avez retiré.",
+   "include": [
+    "Des connecteurs de chronologie (au début, ensuite, finalement)",
+    "L'alternance imparfait / passé composé",
+    "Un enseignement à la fin"
+   ],
+   "minWords": 50,
+   "checks": [
+    {
+     "label": "Emploie des connecteurs de chronologie",
+     "any": [
+      "au début",
+      "d'abord",
+      "ensuite",
+      "puis",
+      "finalement",
+      "à ce moment"
+     ]
+    },
+    {
+     "label": "Emploie l'imparfait pour le contexte",
+     "any": [
+      "était",
+      "étaient",
+      "avait",
+      "manquait",
+      "ne savions"
+     ]
+    },
+    {
+     "label": "Emploie le passé composé pour les actions",
+     "any": [
+      "nous avons",
+      "j'ai ",
+      "avons organisé",
+      "avons livré"
+     ]
+    },
+    {
+     "label": "Termine par un enseignement",
+     "any": [
+      "ce que j'en retiens",
+      "j'en ai retenu",
+      "la leçon",
+      "depuis",
+      "cela m'a appris",
+      "j'ai appris"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "La chronologie est-elle claire du début à la fin ?",
+    "Le contexte est-il à l'imparfait et les actions au passé composé ?",
+    "Ai-je terminé par ce que j'en ai tiré ?"
+   ],
+   "model": "Au début, le brief était très flou : le client savait ce qu'il ne voulait pas, mais pas ce qu'il voulait, et nous perdions du temps à chaque aller-retour.\n\nEnsuite, plutôt que de continuer par courriel, nous avons organisé un atelier d'une demi-journée avec ses trois responsables. À ce moment-là, les priorités se sont clarifiées en moins de deux heures : deux des cinq fonctionnalités demandées n'intéressaient personne.\n\nFinalement, nous avons livré avec une semaine d'avance et sous le budget prévu.\n\nCe que j'en retiens, c'est qu'un atelier d'une heure vaut souvent trois semaines d'échanges écrits, et que je devrais le proposer beaucoup plus tôt."
+  },
+  "dire-non": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Refusez correctement",
+   "brief": "Votre responsable vous a confié la revue budgétaire pour vendredi. Un directeur d'un autre service vous demande maintenant, directement, une analyse urgente pour le même jour. Vous ne pouvez pas faire les deux correctement, et vous ne voulez ni froisser le directeur ni court-circuiter votre responsable.",
+   "task": "Rédigez votre réponse au directeur (70 à 110 mots). Refusez ce qui est impossible, proposez une alternative conditionnelle, et rendez l'arbitrage à qui de droit.",
+   "include": [
+    "Un refus net de faire les deux pour vendredi, sans « je vais essayer »",
+    "La raison : l'engagement déjà pris",
+    "Une alternative au conditionnel ou sous condition (« je pourrais… si… »)",
+    "Une question qui fait trancher la priorité"
+   ],
+   "minWords": 70,
+   "checks": [
+    {
+     "label": "Refuse clairement",
+     "any": [
+      "je ne peux pas",
+      "je ne pourrai pas",
+      "ce ne sera pas possible",
+      "je ne vais pas pouvoir",
+      "je ne serai pas en mesure"
+     ]
+    },
+    {
+     "label": "Évite le flou « je vais essayer »",
+     "none": [
+      "je vais essayer",
+      "j'essaierai",
+      "je verrai ce que je peux"
+     ]
+    },
+    {
+     "label": "Donne la raison",
+     "any": [
+      "revue budgetaire",
+      "revue budgétaire",
+      "deja engage",
+      "déjà engagé",
+      "m'a confie",
+      "m'a confié",
+      "engagement"
+     ]
+    },
+    {
+     "label": "Propose une alternative sous condition",
+     "any": [
+      "je pourrais",
+      "a condition",
+      "à condition",
+      "si la ",
+      "si vous",
+      "s'il",
+      "en revanche"
+     ]
+    },
+    {
+     "label": "Fait trancher la priorité",
+     "any": [
+      "?",
+      "prefereriez",
+      "préféreriez",
+      "arbitrer",
+      "arbitrage",
+      "priorite",
+      "priorité"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Mon refus est-il sans ambiguïté ?",
+    "Mon alternative est-elle réellement tenable ?",
+    "Ai-je évité de passer par-dessus ma responsable ?"
+   ],
+   "model": "Bonjour Monsieur Garnier,\n\nMerci de penser à moi pour cette analyse. Je ne pourrai malheureusement pas la livrer vendredi : Élodie m'a confié la revue budgétaire pour le même jour, et je ne peux pas faire les deux correctement.\n\nEn revanche, je pourrais vous remettre une première synthèse lundi midi, ou l'analyse complète vendredi si la revue budgétaire est décalée. Souhaitez-vous que j'en parle à Élodie pour qu'elle arbitre, ou préférez-vous voir cela directement avec elle ?\n\nBien cordialement,\nCamille Roux"
+  },
+  "proposer-conseiller": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Proposez et conseillez",
+   "brief": "Votre équipe a trop de réunions. Votre collègue Marc est fatigué et vous demande un conseil.",
+   "task": "Écrivez un court message à Marc (30 à 50 mots). Faites une proposition pour l'équipe et donnez-lui un conseil.",
+   "include": [
+    "Une proposition : « Je propose de… » ou « On pourrait… »",
+    "Un conseil : « Tu devrais… »",
+    "Une raison avec « parce que »"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Fait une proposition",
+     "any": [
+      "et si on",
+      "je propose de",
+      "on pourrait",
+      "pourquoi ne pas"
+     ]
+    },
+    {
+     "label": "Construit « proposer » correctement",
+     "none": [
+      "propose à ",
+      "propose de que",
+      "propose faire",
+      "propose avoir"
+     ]
+    },
+    {
+     "label": "Donne un conseil",
+     "any": [
+      "tu devrais",
+      "vous devriez",
+      "à ta place",
+      "a ta place",
+      "je te conseille"
+     ]
+    },
+    {
+     "label": "Donne une raison",
+     "any": [
+      "parce que",
+      "car ",
+      "comme ca",
+      "comme ça"
+     ]
+    },
+    {
+     "label": "Évite l'ordre « tu dois »",
+     "none": [
+      "tu dois "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ma proposition est-elle simple ?",
+    "Marc peut-il décider lui-même ?",
+    "Ai-je écrit « proposer de » + infinitif ?"
+   ],
+   "model": "Salut Marc,\n\nJe propose de faire une seule réunion d'équipe par semaine, le lundi, parce que nous perdons beaucoup de temps. On pourrait aussi écrire les petites informations dans le chat.\n\nEt tu devrais parler à Élodie cette semaine : elle est d'accord pour changer.\n\nCamille"
+  },
+  "strategies-lecture": {
+   "renderer": "listening",
+   "kind": "listen",
+   "title": "Écoutez, puis racontez",
+   "brief": "Au niveau B2, un simple résumé ne suffit pas : il faut restituer les points de vue en présence, distinguer les faits des opinions, et prendre position avec nuance.",
+   "taskLabel": "Écoutez d'abord",
+   "task": "Choisissez un débat radio ou un reportage d'actualité de dix à quinze minutes, en français natif (pas en « français facile »). Écoutez une première fois sans vous arrêter, puis une seconde fois en notant les arguments de chaque côté.",
+   "resources": [
+    {
+     "label": "RFI — l'actualité en français",
+     "url": "https://www.rfi.fr/fr/"
+    },
+    {
+     "label": "France Culture — débats et reportages",
+     "url": "https://www.radiofrance.fr/franceculture"
+    },
+    {
+     "label": "TV5MONDE — Apprendre le français",
+     "url": "https://apprendre.tv5monde.com/"
+    }
+   ],
+   "note": "Ces liens s'ouvrent dans un nouvel onglet. Rien n'est enregistré, et vous pouvez utiliser une autre source si vous préférez.",
+   "thenLabel": "Puis rédigez",
+   "then": "Rédigez pour un collègue qui n'a pas écouté l'émission : le sujet, les positions en présence, un fait ou un chiffre précis, et votre avis nuancé. Employez au moins une concession.",
+   "include": [
+    "Le sujet en une phrase",
+    "Au moins deux positions ou arguments opposés",
+    "Un fait précis (chiffre, date, source)",
+    "Votre avis, avec une concession (certes, même si, il n'en reste pas moins)"
+   ],
+   "minWords": 110,
+   "checks": [
+    {
+     "label": "Présente le sujet",
+     "any": [
+      "il s'agit",
+      "le sujet",
+      "l'emission",
+      "le debat",
+      "le reportage",
+      "j'ai ecoute"
+     ]
+    },
+    {
+     "label": "Restitue au moins deux points de vue",
+     "any": [
+      "selon ",
+      "d'apres ",
+      "pour certains",
+      "d'un cote",
+      "d'une part",
+      "a l'inverse",
+      "estime que",
+      "defend",
+      "soutient que"
+     ]
+    },
+    {
+     "label": "Donne un fait précis",
+     "any": [
+      "%",
+      "euros",
+      "millions",
+      "milliers",
+      "en 20",
+      "chiffre",
+      "selon l'insee",
+      "etude"
+     ]
+    },
+    {
+     "label": "Donne un avis",
+     "any": [
+      "a mon avis",
+      "je pense",
+      "selon moi",
+      "il me semble",
+      "de mon point de vue",
+      "je trouve"
+     ]
+    },
+    {
+     "label": "Nuance son avis",
+     "any": [
+      "certes",
+      "meme si",
+      "il n'en reste pas moins",
+      "toutefois",
+      "neanmoins",
+      "cependant",
+      "en revanche"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ai-je séparé ce qui est dit dans l'émission de ce que j'en pense ?",
+    "Mon collègue comprendrait-il les deux positions sans avoir écouté ?",
+    "Ai-je noté trois expressions nouvelles à réemployer ?"
+   ],
+   "model": "J'ai écouté un débat d'une quinzaine de minutes sur la semaine de quatre jours dans le secteur public. D'un côté, une économiste soutient que la mesure améliore l'attractivité des postes : selon une expérimentation menée dans une administration régionale, les candidatures auraient augmenté d'environ 20 %. De l'autre, un représentant des usagers estime que la réduction des jours d'ouverture pénalise ceux qui ne peuvent pas se déplacer en semaine.\n\nÀ mon avis, l'argument de l'attractivité est solide, d'autant qu'il repose sur des chiffres. Il n'en reste pas moins que l'expérimentation citée est courte et limitée à une seule région. Je serais donc favorable à la mesure, mais à condition qu'elle soit organisée par roulement, de façon à maintenir l'accueil cinq jours sur cinq."
+  },
+  "negocier": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez la contre-proposition",
+   "brief": "On vous propose 42 000 euros. Votre fourchette, construite sur les salaires du marché, était de 45 à 50 000. Le poste vous intéresse sincèrement.",
+   "task": "Rédigez la réponse (80 à 120 mots). Gardez l'offre vivante, contre-proposez clairement, et ouvrez une seconde voie si l'enveloppe est bloquée.",
+   "include": [
+    "De l'enthousiasme sincère pour le poste",
+    "Un chiffre précis",
+    "Une justification liée au poste, pas à vos charges",
+    "Une alternative si le budget ne peut pas bouger"
+   ],
+   "minWords": 80,
+   "checks": [
+    {
+     "label": "Commence par de l'enthousiasme",
+     "any": [
+      "merci",
+      "le poste m'intéresse",
+      "ravi",
+      "très intéressé",
+      "enchanté",
+      "avec plaisir"
+     ]
+    },
+    {
+     "label": "Avance un chiffre précis",
+     "any": [
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "000"
+     ]
+    },
+    {
+     "label": "Justifie par le poste et non par ses charges",
+     "none": [
+      "mon crédit",
+      "mon loyer",
+      "mes factures",
+      "j'ai besoin d'argent"
+     ]
+    },
+    {
+     "label": "Emploie le conditionnel",
+     "any": [
+      "pourrions",
+      "serait",
+      "pourrait",
+      "j'aimerais",
+      "je souhaiterais",
+      "serais"
+     ]
+    },
+    {
+     "label": "Ouvre une seconde voie",
+     "any": [
+      "révision",
+      "six mois",
+      "formation",
+      "budget",
+      "jours",
+      "télétravail",
+      "à défaut",
+      "sinon"
+     ]
+    },
+    {
+     "label": "Pose une question",
+     "any": [
+      "?"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Voudraient-ils toujours me recruter après avoir lu ce message ?",
+    "Mon chiffre est-il rattaché à une raison sur le poste ?",
+    "Ai-je laissé une porte de sortie si l'enveloppe est figée ?"
+   ],
+   "model": "Bonjour Madame Lemoine,\n\nJe vous remercie pour cette proposition : le poste m'intéresse sincèrement, et les échanges que nous avons eus m'ont conforté dans cette envie.\n\nSur la rémunération, 42 000 se situe en dessous de ce que j'envisageais. Compte tenu du périmètre, en particulier la reprise du reporting client dès la prise de poste, je me situais plutôt autour de 46 000. Une évolution dans ce sens serait-elle possible ?\n\nSi l'enveloppe est figée cette année, pourrions-nous prévoir une révision formelle à six mois, ou discuter du budget formation ? L'une ou l'autre de ces options me conviendrait.\n\nBien cordialement,\nCamille Roux"
+  },
+  "se-presenter": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Présentez-vous à l'équipe",
+   "brief": "C'est votre premier jour dans une nouvelle entreprise. Vous écrivez un courriel à votre nouvelle équipe.",
+   "task": "Écrivez un courriel de 40 à 60 mots : votre nom, votre poste, ce que vous faites, et une phrase aimable pour finir.",
+   "include": [
+    "Votre nom : « Je m'appelle… »",
+    "Votre poste : « Je suis » + métier, sans article",
+    "Ce que vous faites : « Je m'occupe de… »",
+    "Une phrase aimable et une formule de fin"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Dit bonjour",
+     "any": [
+      "bonjour",
+      "salut"
+     ]
+    },
+    {
+     "label": "Donne son nom",
+     "any": [
+      "je m'appelle",
+      "je suis "
+     ]
+    },
+    {
+     "label": "Dit ce qu'il ou elle fait",
+     "any": [
+      "je m'occupe",
+      "je travaille",
+      "je gere",
+      "je suis charge",
+      "je suis chargee"
+     ]
+    },
+    {
+     "label": "Pas d'article devant le métier",
+     "none": [
+      "je suis un comptable",
+      "je suis une comptable",
+      "je suis un technicien",
+      "je suis une assistante",
+      "je suis un assistant",
+      "je suis un ingenieur",
+      "je suis une ingenieure"
+     ]
+    },
+    {
+     "label": "Termine gentiment",
+     "any": [
+      "a bientot",
+      "à bientôt",
+      "bonne journee",
+      "bonne journée",
+      "content",
+      "contente",
+      "ravi",
+      "ravie",
+      "cordialement"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ai-je dit mon nom, mon poste et ce que je fais ?",
+    "Mes phrases sont-elles courtes ?",
+    "Ai-je écrit « je suis » + métier sans article ?"
+   ],
+   "model": "Bonjour à tous,\n\nJe m'appelle Lucía Pérez et je suis la nouvelle comptable de l'équipe. Je m'occupe des factures et des paiements des fournisseurs. Mon bureau est au deuxième étage, à côté de la salle de réunion.\n\nJe suis très contente de travailler avec vous. À bientôt !\n\nLucía"
+  },
+  "prononciation": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Laissez un message vocal",
+   "brief": "Vous appelez un client, M. Garcia. Il ne répond pas. Vous laissez un message : vous avez une question sur sa commande, et vous êtes au bureau jusqu'à 18 h.",
+   "task": "Dites votre message à voix haute (environ 30 secondes). Parlez par petits groupes de mots et faites les liaisons.",
+   "prepSeconds": 30,
+   "speakSeconds": 30,
+   "checklist": [
+    "J'ai dit bonjour, mon nom et mon entreprise",
+    "J'ai parlé par petits groupes de mots, avec de courtes pauses",
+    "J'ai fait les liaisons (vous_avez, dix-huit_heures…)",
+    "Ma voix est descendue à la fin des phrases",
+    "J'ai dit mon numéro lentement, deux chiffres par deux chiffres"
+   ],
+   "model": "Bonjour Monsieur Garcia, | c'est Camille Roux, | de la société Vidal. | J'ai une petite question | sur votre commande. | Vous_avez mon numéro : | le zéro un, | quarante-cinq, | soixante-sept, | quatre-vingt-neuf, | dix. | Je suis au bureau | jusqu'à dix-huit_heures. | Merci, | et bonne journée !"
+  },
+  "argumenter": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez la note argumentée",
+   "brief": "Votre entreprise envisage de passer à la semaine de quatre jours pour une partie des équipes. La direction vous demande une note argumentée avant le comité du mois prochain.",
+   "task": "Rédigez une note de 120 à 180 mots : position annoncée, deux arguments développés, un exemple, une objection réfutée, puis une conclusion avec une proposition concrète.",
+   "include": [
+    "Votre position, annoncée dès la première phrase",
+    "Deux arguments distincts, balisés par des connecteurs",
+    "Un exemple précis ou chiffré",
+    "Une objection présentée puis réfutée",
+    "Une conclusion qui propose une action"
+   ],
+   "minWords": 120,
+   "checks": [
+    {
+     "label": "Annonce une position",
+     "any": [
+      "je suis favorable",
+      "je suis oppose",
+      "je suis defavorable",
+      "je recommande",
+      "je propose",
+      "nous recommandons"
+     ]
+    },
+    {
+     "label": "Balise le premier argument",
+     "any": [
+      "d'une part",
+      "premierement",
+      "d'abord",
+      "tout d'abord",
+      "en premier lieu"
+     ]
+    },
+    {
+     "label": "Balise le second argument",
+     "any": [
+      "d'autre part",
+      "deuxiemement",
+      "ensuite",
+      "en outre",
+      "en second lieu",
+      "par ailleurs"
+     ]
+    },
+    {
+     "label": "Illustre par un exemple",
+     "any": [
+      "par exemple",
+      "ainsi,",
+      "notamment",
+      "a titre d'exemple",
+      "c'est le cas de"
+     ]
+    },
+    {
+     "label": "Présente et réfute une objection",
+     "any": [
+      "certes",
+      "il est vrai que",
+      "on objectera",
+      "on pourrait objecter",
+      "il n'en reste pas moins",
+      "meme si"
+     ]
+    },
+    {
+     "label": "Conclut par une proposition",
+     "any": [
+      "c'est pourquoi",
+      "en conclusion",
+      "par consequent",
+      "en consequence",
+      "pour ces raisons",
+      "je propose donc",
+      "nous proposons donc"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Mes deux arguments sont-ils réellement différents ?",
+    "L'objection est-elle formulée honnêtement avant d'être réfutée ?",
+    "La direction peut-elle décider à partir de ma seule conclusion ?"
+   ],
+   "model": "Je suis favorable à une expérimentation de la semaine de quatre jours, limitée aux équipes support, et ce pour deux raisons.\n\nD'une part, elle renforcerait notre attractivité. Nous avons mis en moyenne quatre mois à pourvoir chacun des six postes ouverts l'an dernier, et la moitié des candidats ont décliné notre offre pour une entreprise plus flexible. D'autre part, elle obligerait à revoir nos réunions : une entreprise comparable de notre secteur a ainsi réduit de 30 % le temps passé en réunion, sans baisse de chiffre d'affaires.\n\nCertes, les équipes en contact avec les clients doivent rester joignables cinq jours sur cinq. Il n'en reste pas moins qu'un roulement permettrait de maintenir cette continuité.\n\nC'est pourquoi je propose un test de six mois sur les équipes support, avec un bilan chiffré présenté au comité de septembre."
+  },
+  "attenuer": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Signalez sans froisser",
+   "brief": "Un partenaire important vous a envoyé un devis qui contient, selon vous, deux erreurs : un tarif horaire supérieur à celui convenu en réunion, et une ligne de formation facturée deux fois. Vous voulez les faire corriger sans mettre en cause sa bonne foi.",
+   "task": "Rédigez le courriel (80 à 120 mots). Atténuez les constats, pas les demandes : la correction attendue doit rester parfaitement claire.",
+   "include": [
+    "Une formule d'atténuation pour chaque constat (sauf erreur, il me semble…)",
+    "Les deux points précisément localisés",
+    "Une demande claire, avec une échéance",
+    "Aucune accusation, aucune sur-atténuation"
+   ],
+   "minWords": 80,
+   "checks": [
+    {
+     "label": "Atténue les constats",
+     "any": [
+      "il me semble",
+      "sauf erreur",
+      "il semblerait",
+      "je me trompe peut-etre",
+      "si je ne m'abuse",
+      "a moins que",
+      "sauf meprise"
+     ]
+    },
+    {
+     "label": "Localise précisément les deux points",
+     "all": [
+      "tarif",
+      "deux fois"
+     ]
+    },
+    {
+     "label": "Formule une demande claire",
+     "any": [
+      "pourriez-vous",
+      "pourrions-nous",
+      "merci de",
+      "je vous serais reconnaissant",
+      "je vous serais reconnaissante"
+     ]
+    },
+    {
+     "label": "Donne une échéance",
+     "any": [
+      "avant",
+      "d'ici",
+      "cette semaine",
+      "demain"
+     ]
+    },
+    {
+     "label": "Évite la sur-atténuation",
+     "none": [
+      "peut-etre eventuellement",
+      "eventuellement peut-etre",
+      "probablement peut-etre",
+      "si cela ne vous derange pas trop"
+     ]
+    },
+    {
+     "label": "Évite l'accusation",
+     "none": [
+      "vous avez gonfle",
+      "vous essayez",
+      "vous vous etes trompe",
+      "c'est inadmissible"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Chaque constat est-il atténué une seule fois ?",
+    "La demande reste-t-elle nette ?",
+    "Mon partenaire peut-il corriger sans perdre la face ?"
+   ],
+   "model": "Bonjour Monsieur Delmas,\n\nMerci pour l'envoi rapide du devis. En le relisant, deux points ont retenu mon attention.\n\nSauf erreur de ma part, le tarif horaire indiqué est de 95 €, alors que nous avions convenu de 85 € lors de notre réunion du 4 mars. Par ailleurs, il me semble que la ligne « formation des utilisateurs » apparaît deux fois, en page 2 et en page 3.\n\nPourriez-vous vérifier ces deux points et, le cas échéant, nous adresser un devis corrigé d'ici vendredi ? Nous pourrons ainsi le valider dès la semaine prochaine.\n\nBien cordialement,\nCamille Roux"
+  },
+  "compte-rendu": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez le compte rendu",
+   "brief": "Réunion de crise de mardi, à laquelle l'équipe commerciale n'assistait pas. Décisions : la livraison au client Orsan est décalée au 18 avril ; un prestataire est recruté pour trois semaines (9 000 €) ; Karim informe le client avant jeudi. Point ouvert : personne n'a encore été désigné pour reprendre le module de reporting.",
+   "task": "Rédigez le compte rendu pour les absents (100 à 150 mots). La première phrase doit suffire à comprendre l'essentiel.",
+   "include": [
+    "Une première phrase qui donne la décision principale",
+    "Les décisions, avec responsables, dates et montants",
+    "Le point ouvert, et ce qui est attendu pour le régler",
+    "Aucune phrase sur l'ambiance de la réunion"
+   ],
+   "minWords": 100,
+   "checks": [
+    {
+     "label": "Donne la nouvelle date",
+     "any": [
+      "18 avril"
+     ]
+    },
+    {
+     "label": "Nomme le responsable de l'information client",
+     "any": [
+      "karim"
+     ]
+    },
+    {
+     "label": "Chiffre la dépense",
+     "any": [
+      "9 000",
+      "9000",
+      "neuf mille"
+     ]
+    },
+    {
+     "label": "Signale le point ouvert",
+     "any": [
+      "point ouvert",
+      "reste a attribuer",
+      "reste ouvert",
+      "sans responsable",
+      "en suspens",
+      "n'a pas encore ete",
+      "reste a designer"
+     ]
+    },
+    {
+     "label": "Fixe une échéance",
+     "any": [
+      "avant jeudi",
+      "d'ici jeudi",
+      "avant vendredi",
+      "d'ici vendredi"
+     ]
+    },
+    {
+     "label": "Évite les formules creuses",
+     "none": [
+      "les echanges ont ete riches",
+      "dans ce compte rendu, je vais",
+      "la reunion s'est bien passee"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Un absent sait-il en une phrase ce qui change pour lui ?",
+    "Chaque décision a-t-elle un responsable et une date ?",
+    "Le point ouvert a-t-il une échéance ?"
+   ],
+   "model": "Décision principale : la livraison au client Orsan est décalée au 18 avril, et un prestataire est recruté pour trois semaines afin de tenir cette nouvelle date.\n\nDécisions prises mardi :\n– nouvelle date de livraison : 18 avril, au lieu du 1er ;\n– recrutement d'un prestataire pour trois semaines, pour un coût de 9 000 €, validé par la direction ;\n– Karim informe le client Orsan avant jeudi ; il transmettra sa réponse à toute l'équipe.\n\nPoint ouvert : aucun responsable n'a encore été désigné pour reprendre le module de reporting. Merci aux personnes disponibles de se signaler auprès d'Élodie d'ici vendredi.\n\nLe détail du nouveau calendrier figure en annexe."
+  }
+ }
+}

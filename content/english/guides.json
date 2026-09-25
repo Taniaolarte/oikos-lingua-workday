@@ -1,0 +1,1839 @@
+{
+ "guides": [
+  {
+   "id": "professional-requests",
+   "title": "Professional requests",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "At work, we don't give orders. We ask. Use 'Could you…?' or 'Can you…?' and add 'please'. For a bigger request, use 'Would it be possible to…?'",
+   "expressions": [
+    "Could you please send me…?",
+    "Can you help me with…?",
+    "Would it be possible to…?",
+    "Please send it by Friday.",
+    "I'll send it by Thursday.",
+    "Thanks for your help."
+   ],
+   "vocabulary": [
+    {
+     "term": "deadline",
+     "gloss": "the last day or time to finish something"
+    },
+    {
+     "term": "update",
+     "gloss": "new information about your work"
+    },
+    {
+     "term": "schedule",
+     "gloss": "a plan with days and times"
+    },
+    {
+     "term": "report",
+     "gloss": "a document about work or results"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Too direct",
+     "text": "Send me the file."
+    },
+    {
+     "label": "Better",
+     "text": "Could you please send me the file?"
+    },
+    {
+     "label": "Bigger request",
+     "text": "Would it be possible to send me the file today?"
+    }
+   ],
+   "mistake": {
+    "wrong": "I will send it until 4.",
+    "right": "I will send it by 4.",
+    "why": "'By 4' means 'at 4 or before'. 'Until' is for things that continue, like 'I work until 6'."
+   },
+   "tip": "Ask for one thing in each email. Two requests in one email are easy to forget."
+  },
+  {
+   "id": "polite-disagreement",
+   "title": "Disagreeing politely",
+   "level": "B1",
+   "minutes": 2,
+   "explanation": "Professional disagreement in English follows a pattern: acknowledge, then pivot, then propose. Going straight to 'no' reads as aggressive, even when you are right.",
+   "expressions": [
+    "I see your point, but…",
+    "I'm not sure I agree, because…",
+    "That's a fair point — my concern is…",
+    "I'd look at it slightly differently.",
+    "I agree in principle, though I wonder whether…"
+   ],
+   "vocabulary": [
+    {
+     "term": "concern",
+     "gloss": "a worry you can explain with a reason"
+    },
+    {
+     "term": "trade-off",
+     "gloss": "what you lose in order to gain something else"
+    },
+    {
+     "term": "alternative",
+     "gloss": "another option"
+    },
+    {
+     "term": "rationale",
+     "gloss": "the reasoning behind a decision"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Too blunt",
+     "text": "No, that won't work."
+    },
+    {
+     "label": "Better",
+     "text": "I see the logic, but I'm concerned it won't work with the current timeline."
+    },
+    {
+     "label": "Best — adds an option",
+     "text": "I see the logic. My concern is the timeline. Could we phase it instead?"
+    }
+   ],
+   "mistake": {
+    "wrong": "I am not agree.",
+    "right": "I don't agree. / I disagree.",
+    "why": "'Agree' is a verb in English, not an adjective. No 'be' before it."
+   },
+   "tip": "Disagree with the idea, never with the person: 'that approach' rather than 'your approach'."
+  },
+  {
+   "id": "giving-opinions",
+   "title": "Giving opinions",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "A good opinion has two parts: what you think and why. Start with 'I think…' or 'In my opinion…', then give a reason with 'because'. To agree, say 'I agree' and add something.",
+   "expressions": [
+    "I think…",
+    "In my opinion…",
+    "I agree with you.",
+    "I don't agree, because…",
+    "That's a good idea.",
+    "I think so too."
+   ],
+   "vocabulary": [
+    {
+     "term": "opinion",
+     "gloss": "what you think about something"
+    },
+    {
+     "term": "reason",
+     "gloss": "why you think something"
+    },
+    {
+     "term": "to agree",
+     "gloss": "to think the same"
+    },
+    {
+     "term": "to disagree",
+     "gloss": "to think differently"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Opinion only",
+     "text": "I think we should wait."
+    },
+    {
+     "label": "Opinion + reason",
+     "text": "I think we should wait, because the numbers are not ready."
+    },
+    {
+     "label": "Agreeing",
+     "text": "I agree with Yusuf. The price is the main problem."
+    }
+   ],
+   "mistake": {
+    "wrong": "According to me, the plan is good.",
+    "right": "In my opinion, the plan is good.",
+    "why": "'According to' is for other people: 'according to the report'. For you, say 'in my opinion' or 'I think'."
+   },
+   "tip": "Always say 'because'. A reason makes your opinion stronger."
+  },
+  {
+   "id": "suggestions-advice",
+   "title": "Suggestions and advice",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "A suggestion is an idea for the group: 'Let's…', 'Shall we…?', 'How about…?'. Advice is for one person: 'You should…'. Suggestions sound friendly because they are open.",
+   "expressions": [
+    "Let's take a short break.",
+    "Shall we start?",
+    "How about meeting on Friday?",
+    "Why don't we ask Elena?",
+    "We could send it tomorrow.",
+    "You should talk to your manager."
+   ],
+   "vocabulary": [
+    {
+     "term": "idea",
+     "gloss": "something you think of"
+    },
+    {
+     "term": "option",
+     "gloss": "one possible choice"
+    },
+    {
+     "term": "break",
+     "gloss": "a short rest"
+    },
+    {
+     "term": "advice",
+     "gloss": "what you think another person should do"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Suggestion",
+     "text": "How about moving the launch to next week?"
+    },
+    {
+     "label": "Suggestion",
+     "text": "Let's ask the client first."
+    },
+    {
+     "label": "Advice",
+     "text": "You should call the supplier today."
+    }
+   ],
+   "mistake": {
+    "wrong": "You should to call him.",
+    "right": "You should call him.",
+    "why": "After 'should', use the base verb. No 'to'."
+   },
+   "tip": "'How about…?' opens a discussion. 'You should…' gives an answer. Choose the one you need."
+  },
+  {
+   "id": "apologising",
+   "title": "Apologising at work",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "A good work apology is short. Say sorry once, say what went wrong, then say what you will do now. Don't write a long, emotional apology.",
+   "expressions": [
+    "I'm sorry for the delay.",
+    "Sorry, that was my mistake.",
+    "I apologise for the problem.",
+    "Thank you for waiting.",
+    "I'll send it today.",
+    "It won't happen again."
+   ],
+   "vocabulary": [
+    {
+     "term": "delay",
+     "gloss": "when something is late"
+    },
+    {
+     "term": "mistake",
+     "gloss": "something done wrong"
+    },
+    {
+     "term": "to fix",
+     "gloss": "to repair or correct something"
+    },
+    {
+     "term": "patience",
+     "gloss": "waiting calmly, without getting angry"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Too short",
+     "text": "Sorry!"
+    },
+    {
+     "label": "Too much",
+     "text": "I'm so, so sorry, I feel terrible, it was a very bad week…"
+    },
+    {
+     "label": "Good",
+     "text": "I'm sorry for the delay. The report is attached now."
+    }
+   ],
+   "mistake": {
+    "wrong": "I apologise you for the delay.",
+    "right": "I apologise for the delay.",
+    "why": "Say 'apologise for' something. Don't put a person right after 'apologise'."
+   },
+   "tip": "Say sorry in one sentence. Then talk about the solution."
+  },
+  {
+   "id": "clarifying",
+   "title": "Asking for clarification",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "It's normal not to understand everything. Ask a short, polite question. You can ask someone to repeat, to spell a word, or to explain one thing. After 'Could you tell me…', use normal word order. Say 'where the room is', not 'where is the room'.",
+   "expressions": [
+    "Sorry, could you repeat that, please?",
+    "Could you speak more slowly, please?",
+    "How do you spell that?",
+    "What do you mean by…?",
+    "Do you mean Monday or Tuesday?",
+    "Could you tell me where the meeting is?"
+   ],
+   "vocabulary": [
+    {
+     "term": "to repeat",
+     "gloss": "to say something again"
+    },
+    {
+     "term": "to spell",
+     "gloss": "to say the letters of a word"
+    },
+    {
+     "term": "to explain",
+     "gloss": "to make something clear"
+    },
+    {
+     "term": "instructions",
+     "gloss": "information about how to do something"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Too short",
+     "text": "What?"
+    },
+    {
+     "label": "Better",
+     "text": "Sorry, could you repeat the date, please?"
+    },
+    {
+     "label": "Best: give two choices",
+     "text": "Do you mean this Friday or next Friday?"
+    }
+   ],
+   "mistake": {
+    "wrong": "Can you explain me the process?",
+    "right": "Can you explain the process to me?",
+    "why": "Say 'explain something to someone'. Don't put 'me' right after 'explain'."
+   },
+   "tip": "Give two choices in your question: 'Friday or Monday?' It is fast and easy to answer."
+  },
+  {
+   "id": "negotiating",
+   "title": "Negotiating",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "Negotiation language in English is conditional. You rarely say what you want directly; you say what becomes possible if something else changes.",
+   "expressions": [
+    "If we could…, then we'd be able to…",
+    "Would you be open to…?",
+    "That works for me, provided that…",
+    "I can do X if Y moves.",
+    "Where's the flexibility on your side?",
+    "Based on the market rate for this role, I'm looking at…"
+   ],
+   "vocabulary": [
+    {
+     "term": "salary",
+     "gloss": "fixed money paid for a job"
+    },
+    {
+     "term": "package",
+     "gloss": "salary plus all other benefits"
+    },
+    {
+     "term": "flexibility",
+     "gloss": "room to change the terms"
+    },
+    {
+     "term": "counter-offer",
+     "gloss": "a different offer made in response"
+    },
+    {
+     "term": "scope",
+     "gloss": "the amount of work included"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Demanding",
+     "text": "I need more money."
+    },
+    {
+     "label": "Better",
+     "text": "Based on the responsibilities in this role, I'm looking at the 55–60k range."
+    },
+    {
+     "label": "Trading",
+     "text": "I could work with 52k if there's a review at six months."
+    }
+   ],
+   "mistake": {
+    "wrong": "I want that you pay more.",
+    "right": "I'd like you to review the figure.",
+    "why": "'Want' is not followed by 'that' + clause. Use 'want someone to do', and at work, prefer 'I'd like'."
+   },
+   "tip": "Never name the first number without a reason attached to it. The reason is what makes it negotiable rather than emotional."
+  },
+  {
+   "id": "explaining-problems",
+   "title": "Explaining problems",
+   "level": "B1",
+   "minutes": 2,
+   "explanation": "The professional order is: what happened, what the impact is, what you are doing, what you need. Starting with the excuse loses the room.",
+   "expressions": [
+    "The issue is that…",
+    "What happened was…",
+    "As a result…",
+    "The impact is…",
+    "Here's what I've done so far:",
+    "What I need from you is…"
+   ],
+   "vocabulary": [
+    {
+     "term": "issue",
+     "gloss": "a problem, said neutrally"
+    },
+    {
+     "term": "root cause",
+     "gloss": "the real reason underneath"
+    },
+    {
+     "term": "workaround",
+     "gloss": "a temporary fix"
+    },
+    {
+     "term": "escalate",
+     "gloss": "to move a problem to someone more senior"
+    },
+    {
+     "term": "downtime",
+     "gloss": "time when a system is not working"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Excuse first",
+     "text": "It wasn't my fault — the supplier was late and nobody told me…"
+    },
+    {
+     "label": "Better",
+     "text": "The delivery is two days late. That pushes testing to Thursday. I've asked the supplier for a firm date and I'll confirm by 2 p.m."
+    }
+   ],
+   "mistake": {
+    "wrong": "The problem is happened yesterday.",
+    "right": "The problem happened yesterday.",
+    "why": "'Happen' is not passive and takes no 'be'."
+   },
+   "tip": "Bad news travels best early and short. One paragraph beats a long apology sent late."
+  },
+  {
+   "id": "feedback",
+   "title": "Giving and receiving feedback",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "Useful feedback is about observable work, not personality. When receiving it, the professional move is to ask one clarifying question before responding.",
+   "expressions": [
+    "One thing that worked really well is…",
+    "I'd suggest changing…",
+    "Have you thought about…?",
+    "What would make this stronger is…",
+    "Thank you — that's useful.",
+    "Could you give me an example?",
+    "Let me take that away and come back to you."
+   ],
+   "vocabulary": [
+    {
+     "term": "constructive",
+     "gloss": "intended to help improve"
+    },
+    {
+     "term": "revision",
+     "gloss": "a changed version"
+    },
+    {
+     "term": "draft",
+     "gloss": "an early version"
+    },
+    {
+     "term": "strengths",
+     "gloss": "what someone is good at"
+    },
+    {
+     "term": "weaknesses",
+     "gloss": "what someone needs to improve"
+    }
+   ],
+   "examples": [
+    {
+     "label": "About the person",
+     "text": "You're careless with details."
+    },
+    {
+     "label": "About the work",
+     "text": "There are three figures in the table that don't match the appendix."
+    },
+    {
+     "label": "Receiving well",
+     "text": "Thank you — could you point me to the section you mean?"
+    }
+   ],
+   "mistake": {
+    "wrong": "You did a mistake in the report.",
+    "right": "You made a mistake in the report.",
+    "why": "In English you MAKE a mistake and DO a task."
+   },
+   "tip": "Never defend in the same minute you receive feedback. 'Let me look at that and come back to you' buys you a day and costs you nothing."
+  },
+  {
+   "id": "meeting-language",
+   "title": "Meeting language",
+   "level": "B1",
+   "minutes": 2,
+   "explanation": "Meetings have their own small set of verbal signals: entering the conversation, holding the floor, and closing. Learn the signals and you can participate at a level above your grammar.",
+   "expressions": [
+    "Sorry, can I just add something?",
+    "Could I come in on that point?",
+    "Just to build on what Marta said…",
+    "Can I check one thing before we move on?",
+    "So, to summarise…",
+    "The actions are: …",
+    "Shall we take that offline?"
+   ],
+   "vocabulary": [
+    {
+     "term": "agenda",
+     "gloss": "the list of items for the meeting"
+    },
+    {
+     "term": "minutes",
+     "gloss": "the written record of a meeting"
+    },
+    {
+     "term": "action point",
+     "gloss": "a task someone agreed to do"
+    },
+    {
+     "term": "to chair",
+     "gloss": "to lead a meeting"
+    },
+    {
+     "term": "offline",
+     "gloss": "outside this meeting"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Interrupting badly",
+     "text": "No, listen —"
+    },
+    {
+     "label": "Interrupting well",
+     "text": "Sorry to jump in — can I add one thing on the budget?"
+    },
+    {
+     "label": "Closing",
+     "text": "To summarise: Ana sends the draft Tuesday, I review by Thursday, we decide Friday."
+    }
+   ],
+   "mistake": {
+    "wrong": "I want to say something for the budget.",
+    "right": "I'd like to say something about the budget.",
+    "why": "You speak ABOUT or ON a topic, not 'for' it."
+   },
+   "tip": "Say the person's name before you disagree with them. It turns an attack into a conversation."
+  },
+  {
+   "id": "small-talk",
+   "title": "Small talk at work",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "Small talk is a short, friendly chat. It helps people work well together. Keep it short and positive, and ask questions about the other person. When you thank someone, say what they did.",
+   "expressions": [
+    "How's your week going?",
+    "How was your weekend?",
+    "Nice to meet you.",
+    "What do you do?",
+    "Thanks so much for your help.",
+    "It was nice talking to you."
+   ],
+   "vocabulary": [
+    {
+     "term": "colleague",
+     "gloss": "a person you work with"
+    },
+    {
+     "term": "to chat",
+     "gloss": "to talk in a friendly way"
+    },
+    {
+     "term": "to thank",
+     "gloss": "to say thank you"
+    },
+    {
+     "term": "conference",
+     "gloss": "a big event with talks, often in another city"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Too short",
+     "text": "Thanks."
+    },
+    {
+     "label": "Better",
+     "text": "Thanks for your help yesterday."
+    },
+    {
+     "label": "Best: say what they did",
+     "text": "Thanks for staying late yesterday. We finished on time because of you."
+    }
+   ],
+   "mistake": {
+    "wrong": "How do you do your work?",
+    "right": "What do you do? / How's work?",
+    "why": "'How do you do?' is only a very formal greeting. It is not a real question about work."
+   },
+   "tip": "When you say thank you, say what the person did. It means much more."
+  },
+  {
+   "id": "saying-no",
+   "title": "Saying no professionally",
+   "level": "B1",
+   "minutes": 2,
+   "explanation": "A professional 'no' is never just 'no'. It contains a reason, an alternative, or a condition, which is why it rarely damages the relationship.",
+   "expressions": [
+    "I'd like to help, but I'm at capacity this week.",
+    "I can't take that on by Friday — I could do Tuesday.",
+    "That's not something I can commit to right now.",
+    "If X moves, I can do Y.",
+    "Let me check what I can realistically do."
+   ],
+   "vocabulary": [
+    {
+     "term": "capacity",
+     "gloss": "how much work you can actually take"
+    },
+    {
+     "term": "bandwidth",
+     "gloss": "informal word for available time and energy"
+    },
+    {
+     "term": "to commit to",
+     "gloss": "to promise firmly"
+    },
+    {
+     "term": "to reprioritise",
+     "gloss": "to change the order of what matters"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Unclear",
+     "text": "I'll try."
+    },
+    {
+     "label": "Clear no",
+     "text": "I can't do Friday. I can have it to you Tuesday morning."
+    },
+    {
+     "label": "Conditional no",
+     "text": "I can take that on if the Ortiz report moves to next week. Which would you prefer?"
+    }
+   ],
+   "mistake": {
+    "wrong": "I have not time.",
+    "right": "I don't have time. / I haven't got time.",
+    "why": "'Have' as a main verb needs 'do' to make the negative."
+   },
+   "tip": "Give your no a date. 'No' plus a real alternative date is heard as commitment, not refusal."
+  },
+  {
+   "id": "professional-tone",
+   "title": "Professional tone",
+   "level": "B2",
+   "minutes": 2,
+   "explanation": "Tone in English is carried by structure more than by vocabulary. Bare imperatives and flat negatives read as cold; questions, modals, a named person and a brief acknowledgement read as warm, with identical information. At this level the skill is calibration: firm without being curt, warm without being servile, and never passive-aggressive.",
+   "expressions": [
+    "Would you mind…?",
+    "When you get a chance…",
+    "I'd be grateful if…",
+    "I appreciate this isn't what you were hoping to hear.",
+    "To be clear, the date can't move.",
+    "Thanks for picking this up."
+   ],
+   "vocabulary": [
+    {
+     "term": "register",
+     "gloss": "how formal or informal language is"
+    },
+    {
+     "term": "abrupt",
+     "gloss": "so short it seems rude"
+    },
+    {
+     "term": "courteous",
+     "gloss": "polite in a professional way"
+    },
+    {
+     "term": "concise",
+     "gloss": "short and complete"
+    },
+    {
+     "term": "passive-aggressive",
+     "gloss": "polite on the surface, hostile underneath ('Per my previous email…')"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Cold",
+     "text": "Need this today."
+    },
+    {
+     "label": "Neutral",
+     "text": "Could I have this today?"
+    },
+    {
+     "label": "Warm and still clear",
+     "text": "Hi Tomás — any chance of this today? Happy to help if it's tight."
+    }
+   ],
+   "mistake": {
+    "wrong": "Dear Sir, hey, so about the thing…",
+    "right": "Hi Ana, quick question about the Q3 report…",
+    "why": "Mixing registers is worse than choosing the wrong one. Pick a level and stay there."
+   },
+   "tip": "Read your message out loud. If you would not say it to the person's face, rewrite it."
+  },
+  {
+   "id": "softening",
+   "title": "Softening and hedging",
+   "level": "B1",
+   "minutes": 2,
+   "explanation": "English uses hedging words to leave room for the other person to disagree. Too few and you sound aggressive; too many and you sound like you do not believe yourself.",
+   "expressions": [
+    "It seems that…",
+    "I'd say it's probably…",
+    "There may be a risk that…",
+    "slightly / a little / a bit",
+    "I might be missing something, but…",
+    "Correct me if I'm wrong, but…"
+   ],
+   "vocabulary": [
+    {
+     "term": "to hedge",
+     "gloss": "to make a statement less absolute"
+    },
+    {
+     "term": "tentative",
+     "gloss": "not final, open to change"
+    },
+    {
+     "term": "assertive",
+     "gloss": "clear and confident without being aggressive"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Too hard",
+     "text": "This is wrong."
+    },
+    {
+     "label": "Hedged",
+     "text": "I think there may be an error in the second column."
+    },
+    {
+     "label": "Too soft — avoid",
+     "text": "I'm really sorry, this is probably just me, but maybe possibly there might perhaps be a small issue?"
+    }
+   ],
+   "mistake": {
+    "wrong": "Maybe perhaps possibly we could potentially…",
+    "right": "We could possibly…",
+    "why": "One hedge is enough. Stacking them destroys your authority."
+   },
+   "tip": "Hedge the claim, never the commitment. 'It may be Thursday' is fine; 'I may send it Thursday' is not."
+  },
+  {
+   "id": "email-structure",
+   "title": "Structuring an email",
+   "level": "A2",
+   "minutes": 3,
+   "explanation": "A work email has a simple shape: a greeting, why you are writing, the details, what you need and when, and a closing. Put the most important thing near the top.",
+   "expressions": [
+    "Dear Ms Lemoine, (formal)",
+    "Hi Marc, (a colleague)",
+    "I'm writing to ask about…",
+    "Please find attached…",
+    "Could you reply by Thursday?",
+    "Kind regards, / Best regards,"
+   ],
+   "vocabulary": [
+    {
+     "term": "subject line",
+     "gloss": "the title of the email"
+    },
+    {
+     "term": "attachment",
+     "gloss": "a file you send with an email"
+    },
+    {
+     "term": "to cc",
+     "gloss": "to send a copy to another person"
+    },
+    {
+     "term": "sign-off",
+     "gloss": "the words at the end, like 'Kind regards'"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Bad subject",
+     "text": "Question"
+    },
+    {
+     "label": "Good subject",
+     "text": "Q3 report: figures needed by Thursday"
+    },
+    {
+     "label": "Good first line",
+     "text": "Hi Marcus, I'm writing about the Q3 report."
+    }
+   ],
+   "mistake": {
+    "wrong": "I am writing you for ask about the report.",
+    "right": "I'm writing to ask about the report.",
+    "why": "Use 'to' + verb to say why you are writing: 'writing to ask', 'writing to confirm'."
+   },
+   "tip": "Put the day you need an answer in the subject line. Everyone reads the subject line."
+  },
+  {
+   "id": "async-writing",
+   "title": "Async and chat writing",
+   "level": "B1",
+   "minutes": 2,
+   "explanation": "Chat and async updates are read fast, often on a phone, often by someone eight hours behind you. Front-load the point and make the ask unmissable.",
+   "expressions": [
+    "Heads-up:",
+    "No rush, but…",
+    "Blocked on:",
+    "Need a decision by EOD.",
+    "Context in thread ↓",
+    "Copying you for visibility."
+   ],
+   "vocabulary": [
+    {
+     "term": "async",
+     "gloss": "not at the same time"
+    },
+    {
+     "term": "EOD",
+     "gloss": "end of day"
+    },
+    {
+     "term": "blocker",
+     "gloss": "something stopping you making progress"
+    },
+    {
+     "term": "stand-up",
+     "gloss": "a short daily team update"
+    },
+    {
+     "term": "thread",
+     "gloss": "a chain of connected messages"
+    },
+    {
+     "term": "time zone",
+     "gloss": "the local time where someone is"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Hard to act on",
+     "text": "Hey! When you have time could we maybe talk about the thing from yesterday?"
+    },
+    {
+     "label": "Better",
+     "text": "Need a yes/no on the Vidal quote by EOD your time — details in thread."
+    }
+   ],
+   "mistake": {
+    "wrong": "Hi. / Hello? / Are you there?",
+    "right": "Hi Ana — quick question about the Vidal quote: can we approve 4.2k?",
+    "why": "Never send a greeting alone. It makes the other person wait to find out what you want."
+   },
+   "tip": "Write the update so someone can act on it without asking you a single follow-up question."
+  },
+  {
+   "id": "report-writing",
+   "title": "Report writing",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "A report is read by people with no time and no context. The first paragraph must survive alone: what happened, what it means, what you recommend.",
+   "expressions": [
+    "This report covers…",
+    "The main finding is…",
+    "Overall, …",
+    "The data suggests that…",
+    "We recommend that…",
+    "Further work is needed on…"
+   ],
+   "vocabulary": [
+    {
+     "term": "findings",
+     "gloss": "what you discovered"
+    },
+    {
+     "term": "recommendation",
+     "gloss": "what you advise doing"
+    },
+    {
+     "term": "summary",
+     "gloss": "the short version"
+    },
+    {
+     "term": "appendix",
+     "gloss": "extra detail at the end"
+    },
+    {
+     "term": "scope",
+     "gloss": "what the report does and does not cover"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Buried conclusion",
+     "text": "First we gathered data, then we analysed it, then… therefore we recommend X."
+    },
+    {
+     "label": "Better",
+     "text": "We recommend option B. This report sets out the two options, the cost of each, and the reasoning."
+    }
+   ],
+   "mistake": {
+    "wrong": "In this report I will talk about many things.",
+    "right": "This report covers the two supplier options and recommends one.",
+    "why": "Reports state their conclusion. They do not build suspense."
+   },
+   "tip": "Write the summary last, then move it to the top."
+  },
+  {
+   "id": "linking-expressions",
+   "title": "Linking expressions",
+   "level": "B1",
+   "minutes": 3,
+   "explanation": "Linking words are what turn a list of sentences into an argument. At B1 they are also the fastest way to sound more advanced than your grammar.",
+   "expressions": [
+    "Adding: moreover, furthermore, in addition, besides",
+    "Contrasting: however, although, on the other hand, whereas",
+    "Examples: for example, for instance, such as",
+    "Result: as a result, therefore, consequently",
+    "Concluding: in conclusion, overall, to sum up"
+   ],
+   "vocabulary": [
+    {
+     "term": "however",
+     "gloss": "introduces a contrast; needs a comma"
+    },
+    {
+     "term": "although",
+     "gloss": "joins two clauses in one sentence"
+    },
+    {
+     "term": "whereas",
+     "gloss": "compares two different facts"
+    },
+    {
+     "term": "therefore",
+     "gloss": "introduces a logical result"
+    }
+   ],
+   "examples": [
+    {
+     "label": "No linking",
+     "text": "Public transport is cheap. Cars are comfortable."
+    },
+    {
+     "label": "Contrast",
+     "text": "Public transport is cheaper. On the other hand, cars are more comfortable."
+    },
+    {
+     "label": "Concession",
+     "text": "Although he was tired, he continued working."
+    }
+   ],
+   "mistake": {
+    "wrong": "Although it was expensive, but we bought it.",
+    "right": "Although it was expensive, we bought it.",
+    "why": "'Although' and 'but' do the same job. Use one, never both."
+   },
+   "tip": "Three linkers in a paragraph is plenty. More than that and it reads like a grammar exercise."
+  },
+  {
+   "id": "tenses-at-work",
+   "title": "Tenses at work",
+   "level": "A2",
+   "minutes": 3,
+   "explanation": "Most work English uses three tenses. Present simple for habits (We meet every Monday). Present continuous for now (I'm working on it). Past simple for finished actions (We sent it yesterday).",
+   "expressions": [
+    "We usually meet on Mondays. (habit)",
+    "I'm writing the report now. (now)",
+    "She's working from home today. (now)",
+    "I finished the project last month. (finished)",
+    "We sent the invoice yesterday. (finished)"
+   ],
+   "vocabulary": [
+    {
+     "term": "routine",
+     "gloss": "something you do regularly"
+    },
+    {
+     "term": "at the moment",
+     "gloss": "now"
+    },
+    {
+     "term": "yesterday / last week",
+     "gloss": "time words that need the past simple"
+    },
+    {
+     "term": "project",
+     "gloss": "a piece of work with a goal and an end"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Habit",
+     "text": "The team meets every Monday at nine."
+    },
+    {
+     "label": "Now",
+     "text": "She's talking to a client at the moment."
+    },
+    {
+     "label": "Finished",
+     "text": "We launched the website last March."
+    }
+   ],
+   "mistake": {
+    "wrong": "I have finished it yesterday.",
+    "right": "I finished it yesterday.",
+    "why": "With 'yesterday', 'last week' or a date, use the past simple."
+   },
+   "tip": "Look for time words. 'Every day' means present simple. 'Now' means present continuous. 'Yesterday' means past simple."
+  },
+  {
+   "id": "present-perfect",
+   "title": "Present perfect at work",
+   "level": "B1",
+   "minutes": 3,
+   "explanation": "The present perfect connects the past to now. At work it does three jobs: reporting completed work without saying when, describing experience, and explaining a current situation caused by a past action.",
+   "expressions": [
+    "I've sent the report. (it's done, it matters now)",
+    "I've already spoken to the supplier.",
+    "We haven't heard back yet.",
+    "I've worked in marketing for six years.",
+    "Have you had a chance to look at it?"
+   ],
+   "vocabulary": [
+    {
+     "term": "already",
+     "gloss": "sooner than expected"
+    },
+    {
+     "term": "yet",
+     "gloss": "up to now — in questions and negatives"
+    },
+    {
+     "term": "still",
+     "gloss": "continuing, often with surprise"
+    },
+    {
+     "term": "since",
+     "gloss": "from a point in time"
+    },
+    {
+     "term": "for",
+     "gloss": "across a length of time"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Result now",
+     "text": "I've finished the draft — it's in your inbox."
+    },
+    {
+     "label": "Experience",
+     "text": "I've managed teams of up to twelve people."
+    },
+    {
+     "label": "Not yet",
+     "text": "We still haven't received their confirmation."
+    }
+   ],
+   "mistake": {
+    "wrong": "I have sent it yesterday.",
+    "right": "I sent it yesterday.",
+    "why": "A finished time expression forces the past simple. Present perfect never takes 'yesterday', 'last week' or a date."
+   },
+   "tip": "In status updates, present perfect is your best friend: 'I've spoken to…, I've updated…, I haven't heard back on…'"
+  },
+  {
+   "id": "future-forms",
+   "title": "Future forms at work",
+   "level": "A2",
+   "minutes": 3,
+   "explanation": "English has three common ways to talk about the future. Use 'going to' for plans you already have. Use the present continuous (I'm meeting) for things in your calendar. Use 'will' for decisions you make now and for promises.",
+   "expressions": [
+    "I'm going to call the client today. (plan)",
+    "I'm meeting Ana on Tuesday. (calendar)",
+    "I'll send it now. (decision now)",
+    "Don't worry, I'll help you. (promise)",
+    "I think it will be busy. (opinion)"
+   ],
+   "vocabulary": [
+    {
+     "term": "plan",
+     "gloss": "something you decided to do"
+    },
+    {
+     "term": "arrangement",
+     "gloss": "a meeting or event in your calendar"
+    },
+    {
+     "term": "promise",
+     "gloss": "when you say you will do something"
+    },
+    {
+     "term": "calendar",
+     "gloss": "where you write your meetings and dates"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Plan",
+     "text": "We're going to open a new office in May."
+    },
+    {
+     "label": "Calendar",
+     "text": "I'm presenting on Wednesday morning."
+    },
+    {
+     "label": "Decision now",
+     "text": "The room is busy? OK, I'll book another one."
+    }
+   ],
+   "mistake": {
+    "wrong": "I'm going to meeting the client.",
+    "right": "I'm going to meet the client.",
+    "why": "After 'going to', use the base verb: 'going to meet', 'going to call'."
+   },
+   "tip": "In a meeting, 'I'll do it' is a promise. People will remember it."
+  },
+  {
+   "id": "modals",
+   "title": "Modal verbs at work",
+   "level": "B1",
+   "minutes": 3,
+   "explanation": "Modals carry the social weight of workplace English. They turn facts into advice, obligation, possibility or requests, without changing any other word in the sentence.",
+   "expressions": [
+    "You should…  (advice)",
+    "We must / have to…  (obligation)",
+    "It might / may…  (possibility)",
+    "Could you…?  (request)",
+    "We could…  (option)",
+    "You don't have to…  (no obligation)"
+   ],
+   "vocabulary": [
+    {
+     "term": "obligation",
+     "gloss": "something required"
+    },
+    {
+     "term": "possibility",
+     "gloss": "something that may happen"
+    },
+    {
+     "term": "permission",
+     "gloss": "being allowed"
+    },
+    {
+     "term": "recommendation",
+     "gloss": "strong advice"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Advice",
+     "text": "You should copy Legal on that."
+    },
+    {
+     "label": "Possibility",
+     "text": "The client might ask for a discount."
+    },
+    {
+     "label": "Obligation",
+     "text": "We have to submit it before the 30th."
+    }
+   ],
+   "mistake": {
+    "wrong": "You must to send it today.",
+    "right": "You must send it today.",
+    "why": "Modals are followed by the bare infinitive: never 'to'. Exception: 'have to', 'ought to'."
+   },
+   "tip": "'Must' from a colleague sounds like an order. Use 'we need to' or 'we have to' unless you are the one setting the rule."
+  },
+  {
+   "id": "conditionals",
+   "title": "Conditionals at work",
+   "level": "B1",
+   "minutes": 3,
+   "explanation": "The first conditional talks about real future possibilities. Deadlines, risks, plans. The second talks about hypothetical or unlikely ones. Useful for advice and for negotiating without committing.",
+   "expressions": [
+    "If we start Monday, we'll finish by the 14th. (real)",
+    "If the client agrees, we can begin. (real)",
+    "If I were you, I'd raise it now. (advice)",
+    "If we had more budget, we'd hire a freelancer. (hypothetical)",
+    "Unless we hear back today, we'll proceed."
+   ],
+   "vocabulary": [
+    {
+     "term": "condition",
+     "gloss": "what must be true first"
+    },
+    {
+     "term": "outcome",
+     "gloss": "what results"
+    },
+    {
+     "term": "unless",
+     "gloss": "if not"
+    },
+    {
+     "term": "provided that",
+     "gloss": "only if"
+    }
+   ],
+   "examples": [
+    {
+     "label": "First conditional",
+     "text": "If people recycle more, pollution will decrease."
+    },
+    {
+     "label": "Second conditional",
+     "text": "If I had more time, I would redo the analysis."
+    },
+    {
+     "label": "Advice",
+     "text": "If I were you, I would exercise more."
+    }
+   ],
+   "mistake": {
+    "wrong": "If we will start Monday, we finish by the 14th.",
+    "right": "If we start Monday, we'll finish by the 14th.",
+    "why": "No 'will' in the 'if' half. Present simple in the condition, 'will' in the result."
+   },
+   "tip": "Second conditional is the safest way to negotiate: 'If we could move the date, I'd be able to…' commits to nothing."
+  },
+  {
+   "id": "passive-reported",
+   "title": "Passive voice and reported speech",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "The passive moves focus from who did something to what was done. Essential in reports and incident write-ups. Reported speech lets you carry someone else's words into a new conversation accurately.",
+   "expressions": [
+    "The invoice was sent on Monday.",
+    "A decision has been made.",
+    "The system is being upgraded.",
+    "She said that she was tired.",
+    "He told me the deadline had moved.",
+    "They asked whether we could deliver earlier."
+   ],
+   "vocabulary": [
+    {
+     "term": "passive",
+     "gloss": "the action matters more than the doer"
+    },
+    {
+     "term": "to report",
+     "gloss": "to say what someone else said"
+    },
+    {
+     "term": "accountability",
+     "gloss": "who is responsible"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Active",
+     "text": "Marta approved the budget."
+    },
+    {
+     "label": "Passive — neutral",
+     "text": "The budget was approved on 3 March."
+    },
+    {
+     "label": "Reported",
+     "text": "She said the budget had been approved."
+    }
+   ],
+   "mistake": {
+    "wrong": "She said me that she will come.",
+    "right": "She told me that she would come. / She said that she would come.",
+    "why": "'Tell' takes a person, 'say' does not. And the tense shifts back one step."
+   },
+   "tip": "Use the passive when naming the person would start an argument. Use the active when you want credit or accountability to be clear."
+  },
+  {
+   "id": "comparing",
+   "title": "Comparing options",
+   "level": "B2",
+   "minutes": 2,
+   "explanation": "Decisions at work are almost always comparisons. The grammar is simple; the skill at this level is scale and judgement: how much better, at what cost, and which option you would actually choose.",
+   "expressions": [
+    "A is marginally / considerably cheaper than B.",
+    "A is by far the most reliable of the three.",
+    "A is not quite as fast as B.",
+    "Compared with A, B offers better value.",
+    "The trade-off is…",
+    "On balance, I'd go with…"
+   ],
+   "vocabulary": [
+    {
+     "term": "trade-off",
+     "gloss": "what you give up for a gain"
+    },
+    {
+     "term": "cost-effective",
+     "gloss": "good value for money"
+    },
+    {
+     "term": "comparable",
+     "gloss": "similar enough to compare"
+    },
+    {
+     "term": "marginal",
+     "gloss": "very small"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Simple",
+     "text": "Option B is cheaper."
+    },
+    {
+     "label": "With degree",
+     "text": "Option B is significantly cheaper, but slightly slower."
+    },
+    {
+     "label": "Superlative",
+     "text": "Of the three suppliers, Vidal is the most reliable."
+    }
+   ],
+   "mistake": {
+    "wrong": "Option C is considerably the most reliable.",
+    "right": "Option C is by far the most reliable.",
+    "why": "'Considerably', 'significantly' and 'much' modify comparatives ('considerably cheaper'). Superlatives take 'by far' or 'easily'."
+   },
+   "tip": "Add the size of the difference: 'slightly', 'significantly', 'marginally'. It is what turns a comparison into a recommendation."
+  },
+  {
+   "id": "describing-data",
+   "title": "Describing charts and trends",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "Describing data means naming the direction, the size and the period. Never reading every number aloud. The same phrases work in a meeting and in IELTS Writing Task 1.",
+   "expressions": [
+    "Sales rose sharply between January and March.",
+    "There was a steady decline in Q3.",
+    "Figures remained stable at around 12%.",
+    "The number of users doubled.",
+    "X peaked at 40,000 in June.",
+    "Overall, the trend is upward."
+   ],
+   "vocabulary": [
+    {
+     "term": "to rise / increase",
+     "gloss": "to go up"
+    },
+    {
+     "term": "to fall / decline / drop",
+     "gloss": "to go down"
+    },
+    {
+     "term": "to remain stable / level off",
+     "gloss": "to stop changing"
+    },
+    {
+     "term": "to peak",
+     "gloss": "to reach the highest point"
+    },
+    {
+     "term": "sharply / gradually / steadily",
+     "gloss": "how fast it changed"
+    },
+    {
+     "term": "a fifth / a quarter / a third",
+     "gloss": "proportions"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Listing numbers",
+     "text": "In January it was 100, in February 120, in March 145…"
+    },
+    {
+     "label": "Describing",
+     "text": "Sales increased steadily over the first quarter, from 100 to 145."
+    },
+    {
+     "label": "Overview",
+     "text": "Overall, both regions grew, though Spain grew far faster."
+    }
+   ],
+   "mistake": {
+    "wrong": "The sales augmented of 20%.",
+    "right": "Sales increased by 20%.",
+    "why": "Increase BY an amount of change; increase TO a final figure."
+   },
+   "tip": "Always open with one sentence of overview before any detail. In IELTS Task 1 this sentence carries a large part of the mark."
+  },
+  {
+   "id": "deadline-language",
+   "title": "Days, times and deadlines",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "Small words matter with dates and times. 'By Friday' means 'on Friday or before'. 'Until 6' means 'all the time up to 6'. Use 'on' for days and 'at' for clock times.",
+   "expressions": [
+    "Please send it by Friday. (Friday or before)",
+    "I'm in the office until six. (all the time up to six)",
+    "The meeting is on Monday at ten.",
+    "The report is two days late.",
+    "Can we move the meeting to Thursday?"
+   ],
+   "vocabulary": [
+    {
+     "term": "deadline",
+     "gloss": "the last day or time to finish"
+    },
+    {
+     "term": "late",
+     "gloss": "after the right time"
+    },
+    {
+     "term": "on time",
+     "gloss": "at the right time, not late"
+    },
+    {
+     "term": "to move",
+     "gloss": "to change the day or time of something"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Deadline",
+     "text": "Could you reply by Friday?"
+    },
+    {
+     "label": "Up to a time",
+     "text": "I'm at my desk until five."
+    },
+    {
+     "label": "Day and time",
+     "text": "The call is on Tuesday at 3 p.m."
+    }
+   ],
+   "mistake": {
+    "wrong": "I will finish it until Friday.",
+    "right": "I will finish it by Friday.",
+    "why": "Finishing happens at one moment, so use 'by'. Use 'until' for things that continue."
+   },
+   "tip": "Give a day and a time: 'Thursday at 5 p.m.' is clearer than 'Thursday'."
+  },
+  {
+   "id": "workplace-vocabulary",
+   "title": "Core workplace vocabulary",
+   "level": "A2",
+   "minutes": 3,
+   "explanation": "A small group of common words is enough for most work emails and conversations. Learn the words for people, places and tasks at work, and for simple business travel.",
+   "expressions": [
+    "I work in the sales department.",
+    "I'm responsible for the invoices.",
+    "My manager is Elena.",
+    "I have a meeting at ten.",
+    "I'm on a business trip next week.",
+    "Could you book a hotel for me?"
+   ],
+   "vocabulary": [
+    {
+     "term": "colleague",
+     "gloss": "a person you work with"
+    },
+    {
+     "term": "manager",
+     "gloss": "the person who leads your work"
+    },
+    {
+     "term": "department",
+     "gloss": "a part of a company, like Sales or Finance"
+    },
+    {
+     "term": "customer / client",
+     "gloss": "a person or company that buys from you"
+    },
+    {
+     "term": "task",
+     "gloss": "a piece of work you must do"
+    },
+    {
+     "term": "business trip",
+     "gloss": "a journey for work"
+    },
+    {
+     "term": "to book",
+     "gloss": "to reserve a room, a hotel or a ticket"
+    },
+    {
+     "term": "to manage / to improve",
+     "gloss": "strong verbs: to lead something / to make it better"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Weak verbs",
+     "text": "I did the project and made it better."
+    },
+    {
+     "label": "Strong verbs",
+     "text": "I managed the project and improved the process."
+    },
+    {
+     "label": "Job words",
+     "text": "My manager asked me to book the hotel."
+    }
+   ],
+   "mistake": {
+    "wrong": "My responsable asked me…",
+    "right": "My manager asked me…",
+    "why": "'Responsable' is Spanish. In English, 'responsible' is an adjective: 'I'm responsible for the budget'."
+   },
+   "tip": "Learn words in groups: people (manager, colleague), places (office, department), actions (book, check, send)."
+  },
+  {
+   "id": "interview-language",
+   "title": "Interview language",
+   "level": "B1",
+   "minutes": 3,
+   "explanation": "Interview answers follow a shape: situation, what you did, what resulted. The result is the part most candidates leave out, and the only part the interviewer is listening for.",
+   "expressions": [
+    "I have six years' experience in…",
+    "One of my strengths is…",
+    "I tend to be…",
+    "I would describe myself as…",
+    "In my last role, I was responsible for…",
+    "As a result, we…",
+    "Something I'm actively working on is…"
+   ],
+   "vocabulary": [
+    {
+     "term": "background",
+     "gloss": "your history and training"
+    },
+    {
+     "term": "strengths / weaknesses",
+     "gloss": "what you do well / need to improve"
+    },
+    {
+     "term": "responsible for",
+     "gloss": "in charge of"
+    },
+    {
+     "term": "achievement",
+     "gloss": "something you succeeded in doing"
+    },
+    {
+     "term": "ambitious",
+     "gloss": "wanting to succeed and progress"
+    },
+    {
+     "term": "reliable",
+     "gloss": "able to be trusted"
+    },
+    {
+     "term": "confident",
+     "gloss": "sure about yourself"
+    },
+    {
+     "term": "to get along well with",
+     "gloss": "to have a good relationship with"
+    }
+   ],
+   "examples": [
+    {
+     "label": "No result",
+     "text": "I was responsible for the social media accounts."
+    },
+    {
+     "label": "With result",
+     "text": "I was responsible for the social media accounts, and over eighteen months I grew engagement by about 40%."
+    },
+    {
+     "label": "Weakness, answered well",
+     "text": "I used to take on too much myself. I've been deliberately delegating more, and last quarter I handed over two full projects."
+    }
+   ],
+   "mistake": {
+    "wrong": "I have 6 years experience like project manager.",
+    "right": "I have six years' experience as a project manager.",
+    "why": "'As' for a role; 'like' means 'similar to'. And note the apostrophe in 'years' experience'."
+   },
+   "tip": "Every answer should end with a number, a result, or a lesson. Never end on the task itself."
+  },
+  {
+   "id": "reading-strategies",
+   "title": "Reading strategies",
+   "level": "B1",
+   "minutes": 2,
+   "explanation": "Professional reading is selective. Skim for structure first, then scan for the specific detail you need. Read every word only when the text is short and the stakes are high.",
+   "expressions": [
+    "The main point is…",
+    "The writer suggests that…",
+    "According to the text…",
+    "This implies that…",
+    "The text doesn't say…"
+   ],
+   "vocabulary": [
+    {
+     "term": "to skim",
+     "gloss": "to read fast for the general idea"
+    },
+    {
+     "term": "to scan",
+     "gloss": "to search for a specific detail"
+    },
+    {
+     "term": "to infer",
+     "gloss": "to work out what is not stated"
+    },
+    {
+     "term": "implication",
+     "gloss": "what is suggested but not said"
+    },
+    {
+     "term": "to paraphrase",
+     "gloss": "to say the same thing in other words"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Stated",
+     "text": "Technology has changed the way we communicate."
+    },
+    {
+     "label": "Implied",
+     "text": "Some experts argue people spend less time face to face — the writer is concerned, not neutral."
+    }
+   ],
+   "mistake": {
+    "wrong": "Answering from what you already believe about the topic.",
+    "right": "Answering only from what the text actually says.",
+    "why": "The most common reading error at B1–B2 is importing outside knowledge."
+   },
+   "tip": "Find the answer, then find the exact line that proves it. If you cannot point at the line, you have guessed."
+  },
+  {
+   "id": "ielts-reading",
+   "title": "IELTS Reading: True / False / Not Given",
+   "level": "B2",
+   "minutes": 3,
+   "ielts": true,
+   "explanation": "IELTS Academic Reading gives you three passages and 40 questions in 60 minutes. Roughly 20 minutes per passage, with no extra transfer time. True/False/Not Given is the question type that trips up strong readers, because it tests only what is on the page.",
+   "expressions": [
+    "TRUE — the text states this, in different words.",
+    "FALSE — the text states the opposite.",
+    "NOT GIVEN — the text does not say, either way."
+   ],
+   "vocabulary": [
+    {
+     "term": "Not Given",
+     "gloss": "the information is absent, not wrong"
+    },
+    {
+     "term": "to contradict",
+     "gloss": "to state the opposite"
+    },
+    {
+     "term": "claim",
+     "gloss": "something stated as true"
+    },
+    {
+     "term": "qualifier",
+     "gloss": "words like 'all', 'some', 'never' that change meaning"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Text",
+     "text": "Many companies have introduced hybrid working since 2020."
+    },
+    {
+     "label": "Statement → FALSE",
+     "text": "No companies introduced hybrid working after 2020."
+    },
+    {
+     "label": "Statement → NOT GIVEN",
+     "text": "Hybrid working has improved productivity."
+    }
+   ],
+   "mistake": {
+    "wrong": "Marking something FALSE because you cannot find it.",
+    "right": "Marking it NOT GIVEN.",
+    "why": "FALSE requires the text to actively contradict the statement. Absence of evidence is NOT GIVEN."
+   },
+   "tip": "There is no negative marking in IELTS. Never leave a question blank. Watch qualifiers: 'all', 'only', 'never' turn true statements false."
+  },
+  {
+   "id": "ielts-speaking",
+   "title": "IELTS Speaking: long turn and discussion",
+   "level": "B2",
+   "minutes": 3,
+   "ielts": true,
+   "explanation": "IELTS Speaking is 11–14 minutes in three parts: familiar questions, a long turn from a topic card with one minute of preparation, and an abstract discussion. Part 3 is where band 7 is won. It rewards developed, non-memorised opinion.",
+   "expressions": [
+    "I'd like to talk about…",
+    "The main reason for this is…",
+    "For instance, …",
+    "On the whole, I'd say…",
+    "It depends on the situation — for example…",
+    "That's an interesting question. I'd say…"
+   ],
+   "vocabulary": [
+    {
+     "term": "long turn",
+     "gloss": "Part 2: speak alone for 1–2 minutes"
+    },
+    {
+     "term": "to develop an answer",
+     "gloss": "to extend it with reasons and examples"
+    },
+    {
+     "term": "band score",
+     "gloss": "the 0–9 scale used for each section"
+    },
+    {
+     "term": "to hedge",
+     "gloss": "to avoid sounding absolute"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Underdeveloped",
+     "text": "Yes, remote work will be more common."
+    },
+    {
+     "label": "Band-worthy",
+     "text": "I think it will, mainly because companies have seen it can work. That said, it depends on the sector — you can't run a hospital remotely. For office work, though, I'd expect hybrid to become the default."
+    }
+   ],
+   "mistake": {
+    "wrong": "Reciting a memorised answer.",
+    "right": "Answering the actual question, with a real example.",
+    "why": "Recent IELTS marking puts more weight on natural, non-memorised responses."
+   },
+   "tip": "In the one minute of preparation, write four words, not sentences. Sentences make you read; words make you speak."
+  },
+  {
+   "id": "ielts-writing",
+   "title": "IELTS Writing: Task 1 and Task 2",
+   "level": "B2",
+   "minutes": 3,
+   "ielts": true,
+   "explanation": "IELTS Academic Writing is 60 minutes for two tasks. Task 1 (150+ words, ~20 min) describes visual data. Task 2 (250+ words, ~40 min) is an essay, and it counts for twice as much, so protect its time.",
+   "expressions": [
+    "Task 1: The chart shows… / Overall, … / The most striking feature is…",
+    "Task 2: It is often argued that… / In my view… / One argument in favour is… / However, critics point out that… / In conclusion…"
+   ],
+   "vocabulary": [
+    {
+     "term": "overview",
+     "gloss": "the one or two sentences summarising the whole chart"
+    },
+    {
+     "term": "to outweigh",
+     "gloss": "to be more important than"
+    },
+    {
+     "term": "counter-argument",
+     "gloss": "the opposing view"
+    },
+    {
+     "term": "to substantiate",
+     "gloss": "to support with evidence"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Task 1 overview",
+     "text": "Overall, both categories increased, though online sales grew far more sharply."
+    },
+    {
+     "label": "Task 2 opening",
+     "text": "It is often argued that remote work damages collaboration. While there is some truth in this, I believe the benefits outweigh the drawbacks."
+    }
+   ],
+   "mistake": {
+    "wrong": "Giving your opinion in Task 1.",
+    "right": "Describing only what the data shows.",
+    "why": "Task 1 is description. Opinion belongs in Task 2 and is penalised in Task 1."
+   },
+   "tip": "Task 2 is worth double. If you are running out of time, leave Task 1 short and finish the essay."
+  },
+  {
+   "id": "speaking-structure",
+   "title": "Structuring what you say",
+   "level": "B1",
+   "minutes": 2,
+   "explanation": "Under pressure, fluency comes from structure, not vocabulary. A short plan: point, reason, example, close. Lets you speak for two minutes without hesitating.",
+   "expressions": [
+    "My main point is…",
+    "There are two reasons for this.",
+    "The first is… The second is…",
+    "For example, when we…",
+    "So overall, I'd say…"
+   ],
+   "vocabulary": [
+    {
+     "term": "to signpost",
+     "gloss": "to tell the listener what is coming"
+    },
+    {
+     "term": "filler",
+     "gloss": "words used while thinking"
+    },
+    {
+     "term": "to elaborate",
+     "gloss": "to add more detail"
+    },
+    {
+     "term": "fluency",
+     "gloss": "speaking smoothly without long pauses"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Unstructured",
+     "text": "Well, it's difficult, there are many things, it depends, for example many factors…"
+    },
+    {
+     "label": "Structured",
+     "text": "I'd extend the deadline, for two reasons. First, the data isn't complete. Second, a rushed version will cost us more later. For example, last quarter we rushed and spent three weeks fixing it."
+    }
+   ],
+   "mistake": {
+    "wrong": "Long silence while translating in your head.",
+    "right": "A filler phrase: 'That's a good question — let me think for a second.'",
+    "why": "Fillers buy thinking time and count as fluency. Silence does not."
+   },
+   "tip": "Always give yourself a number: 'two reasons'. Once you say it, your brain will find the second one."
+  }
+ ]
+}

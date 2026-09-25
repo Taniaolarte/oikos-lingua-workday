@@ -1,0 +1,515 @@
+{
+  "guides": {
+    "futur-proche": {
+      "title": "El futuro próximo",
+      "explanation": "El futuro próximo = el verbo 'aller' (ir) en presente + un verbo en infinitivo. Se usa para una acción cercana o ya decidida. Es un plan: ya está previsto.",
+      "expressions": [
+        "yo voy a + infinitivo",
+        "tú vas a + infinitivo",
+        "él / ella va a + infinitivo ('on' = nosotros, la gente)",
+        "nosotros vamos a + infinitivo",
+        "usted va a / ustedes van a + infinitivo",
+        "ellos / ellas van a + infinitivo"
+      ],
+      "vocabulary": [
+        {
+          "es": "una intención",
+          "gloss": "lo que quieres hacer"
+        },
+        {
+          "es": "una decisión",
+          "gloss": "una elección ya hecha"
+        },
+        {
+          "es": "prever, planear",
+          "gloss": "organizar antes"
+        },
+        {
+          "es": "esta tarde",
+          "gloss": "hoy, después del mediodía"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Plan",
+          "text": "Voy a preparar la presentación esta noche."
+        },
+        {
+          "label": "Decisión del equipo",
+          "text": "Vamos a llamar al cliente esta tarde."
+        },
+        {
+          "label": "Negación",
+          "text": "No voy a enviar el presupuesto hoy."
+        },
+        {
+          "label": "Pregunta",
+          "text": "¿Va a venir usted a la reunión?"
+        }
+      ],
+      "mistake": {
+        "why": "Después de 'aller', va directamente el infinitivo. Sin 'à' (aunque en español decimos 'voy a preparar')."
+      },
+      "tip": "Para la negación, pon 'ne … pas' alrededor de 'aller': 'Je ne vais pas partir' (no me voy a ir). Nunca 'Je vais ne pas partir'."
+    },
+    "demandes-polies": {
+      "title": "Pedir las cosas con cortesía",
+      "explanation": "En el trabajo no damos órdenes: hacemos una pregunta amable. 'Pouvez-vous… ?' (¿Puede…?) es cortés. 'Pourriez-vous… ?' (¿Podría…?) es todavía más cortés. Para expresar un deseo, se dice 'Je voudrais…' o 'J'aimerais…' (Quisiera… / Me gustaría…).",
+      "expressions": [
+        "¿Puede enviarme…?",
+        "¿Podría ayudarme…?",
+        "Quisiera… / Me gustaría…",
+        "¿Puedo…?",
+        "… antes de las 3 de la tarde / antes del viernes",
+        "Gracias de antemano. / ¡Muchas gracias!"
+      ],
+      "vocabulary": [
+        {
+          "es": "un documento",
+          "gloss": "un archivo o un papel"
+        },
+        {
+          "es": "enviar, mandar",
+          "gloss": "hacer llegar un mensaje o un archivo a alguien"
+        },
+        {
+          "es": "una petición, un pedido",
+          "gloss": "lo que le pides a alguien"
+        },
+        {
+          "es": "antes de las 3 de la tarde",
+          "gloss": "no más tarde de las 3 de la tarde"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado directo",
+          "text": "Envíeme el archivo."
+        },
+        {
+          "label": "Cortés",
+          "text": "¿Puede enviarme el archivo?"
+        },
+        {
+          "label": "Muy cortés",
+          "text": "¿Podría enviarme el archivo antes de las 3 de la tarde? ¡Gracias!"
+        }
+      ],
+      "mistake": {
+        "why": "'Je veux' (quiero) es demasiado directo en el trabajo. 'Je voudrais' (quisiera) es cortés."
+      },
+      "tip": "Añade un día o una hora: 'avant 15 h' (antes de las 3 de la tarde), 'avant vendredi' (antes del viernes). Así la persona sabe cuándo actuar."
+    },
+    "echanges-informels": {
+      "title": "Las conversaciones informales",
+      "explanation": "En el trabajo también hablamos de cosas sencillas: la semana, el fin de semana, un viaje. Estas pequeñas conversaciones crean buenas relaciones. Responde y luego haz una pregunta.",
+      "expressions": [
+        "¿Qué tal? ¿Cómo va tu semana?",
+        "¿Tuviste un buen fin de semana?",
+        "¿Y tú? / ¿Y usted?",
+        "¿En qué departamento trabaja?",
+        "Muchas gracias, ¡qué amable!",
+        "¡Con gusto!",
+        "¡Que tengas un buen día! / ¡Buen fin de semana!"
+      ],
+      "vocabulary": [
+        {
+          "es": "un compañero de trabajo",
+          "gloss": "una persona que trabaja contigo"
+        },
+        {
+          "es": "la pausa para el café",
+          "gloss": "un ratito para tomar un café y hablar"
+        },
+        {
+          "es": "agradecer, dar las gracias",
+          "gloss": "decir gracias"
+        },
+        {
+          "es": "una pregunta abierta",
+          "gloss": "una pregunta que pide más que 'sí' o 'no'"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Pregunta cerrada",
+          "text": "¿Todo bien? —Sí."
+        },
+        {
+          "label": "Pregunta abierta",
+          "text": "¿Cómo va tu semana?"
+        },
+        {
+          "label": "Agradecer",
+          "text": "Gracias por tu ayuda ayer, ¡muy amable de tu parte!"
+        }
+      ],
+      "mistake": {
+        "why": "Una pregunta pequeña y sencilla hace que la conversación continúe."
+      },
+      "tip": "Responde y luego devuelve la pregunta: 'Oui, très bien, merci. Et toi ?' (Sí, muy bien, gracias. ¿Y tú?)"
+    },
+    "se-presenter": {
+      "title": "Presentarte en el trabajo",
+      "explanation": "Para presentarte, di tres cosas: tu nombre, tu puesto y lo que haces. Usa frases cortas. Treinta segundos son suficientes.",
+      "expressions": [
+        "Me llamo…",
+        "Soy + profesión: soy contador.",
+        "Trabajo en… / en el departamento de…",
+        "Me encargo de…",
+        "Soy nuevo / nueva en el equipo.",
+        "¡Mucho gusto!"
+      ],
+      "vocabulary": [
+        {
+          "es": "un puesto",
+          "gloss": "el trabajo que tienes en la empresa"
+        },
+        {
+          "es": "un departamento, un área",
+          "gloss": "una parte de la empresa: el servicio al cliente, la contabilidad"
+        },
+        {
+          "es": "encargarse de",
+          "gloss": "tener la responsabilidad de algo"
+        },
+        {
+          "es": "un equipo",
+          "gloss": "las personas que trabajan juntas"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado corto",
+          "text": "Soy Camille."
+        },
+        {
+          "label": "Mejor",
+          "text": "Hola, me llamo Camille Roux. Soy asistente comercial en Vidal. Me encargo de los clientes españoles."
+        }
+      ],
+      "mistake": {
+        "why": "Después de 'je suis' (soy), no se pone artículo antes de una profesión. Igual que en español: 'soy ingeniero', no 'soy un ingeniero'."
+      },
+      "tip": "Termina con una frase amable: 'Je suis content(e) de travailler avec vous.' (Me alegra trabajar con ustedes.)"
+    },
+    "registre": {
+      "title": "¿'Tu' o 'vous'? (tú o usted)",
+      "explanation": "En francés se dice 'tu' (tú) o 'vous' (usted). En el trabajo, se usa 'vous' con un cliente, con un superior y con una persona que no conoces. Se usa 'tu' con un compañero cercano. Mantén la misma forma en todo el mensaje.",
+      "expressions": [
+        "Con 'vous': Buenos días, señora… / ¿Puede…? / Saludos cordiales",
+        "Con 'tu': Hola, Marc / ¿Puedes…? / Hasta pronto",
+        "¿Nos podemos tutear?"
+      ],
+      "vocabulary": [
+        {
+          "es": "tratar de usted",
+          "gloss": "decir 'vous' (usted)"
+        },
+        {
+          "es": "tutear",
+          "gloss": "decir 'tu' (tú)"
+        },
+        {
+          "es": "formal",
+          "gloss": "para un cliente o un superior"
+        },
+        {
+          "es": "informal, de confianza",
+          "gloss": "para un amigo o un compañero cercano"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Clienta",
+          "text": "Buenos días, señora Lemoine: ¿me puede confirmar la fecha? Saludos cordiales, Camille Roux"
+        },
+        {
+          "label": "Compañero cercano",
+          "text": "Hola, Marc, ¿me puedes confirmar la fecha? ¡Gracias!"
+        },
+        {
+          "label": "Mezcla que debes evitar",
+          "text": "Buenos días, señora, hola, ¿puedes…?"
+        }
+      ],
+      "mistake": {
+        "why": "No mezcles 'tu' y 'vous' en el mismo mensaje."
+      },
+      "tip": "¿Tienes dudas? Usa 'vous'. Siempre es cortés."
+    },
+    "vocabulaire-travail": {
+      "title": "El vocabulario básico del trabajo",
+      "explanation": "Algunas palabras aparecen en todos los mensajes de trabajo. Apréndelas primero. Cuidado también con los falsos amigos: palabras que se parecen al español, pero que tienen otro significado.",
+      "expressions": [
+        "hacerse cargo de un asunto",
+        "hacer un balance, ponerse al día",
+        "enviar un correo",
+        "organizar una reunión",
+        "aprobar un documento",
+        "avisar de un problema"
+      ],
+      "vocabulary": [
+        {
+          "es": "un compañero de trabajo",
+          "gloss": "una persona que trabaja contigo"
+        },
+        {
+          "es": "jefe, jefa",
+          "gloss": "la persona que dirige tu trabajo"
+        },
+        {
+          "es": "una reunión",
+          "gloss": "un momento en que el equipo se junta a hablar"
+        },
+        {
+          "es": "un expediente, un asunto",
+          "gloss": "documentos sobre un mismo tema"
+        },
+        {
+          "es": "plazo, fecha límite",
+          "gloss": "la fecha límite"
+        },
+        {
+          "es": "la carga de trabajo",
+          "gloss": "la cantidad de trabajo"
+        },
+        {
+          "es": "delegar",
+          "gloss": "darle una tarea a otra persona"
+        },
+        {
+          "es": "confiable",
+          "gloss": "puedes confiar en esa persona o en esa cosa"
+        },
+        {
+          "es": "esperar (no 'atender')",
+          "gloss": "quedarse ahí hasta que llegue alguien"
+        },
+        {
+          "es": "quedarse (no 'restar')",
+          "gloss": "no irse"
+        },
+        {
+          "es": "atender, encargarse de",
+          "gloss": "ayudar, hacerse cargo: 's'occuper d'un client' (atender a un cliente)"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Verbo débil",
+          "text": "Hice el proyecto."
+        },
+        {
+          "label": "Verbos precisos",
+          "text": "Organicé la reunión y envié el acta."
+        },
+        {
+          "label": "Falso amigo",
+          "text": "Espero al cliente en la recepción. (todavía no ha llegado)"
+        }
+      ],
+      "mistake": {
+        "why": "'Attendre' significa esperar: quedarse hasta que llegue alguien. No significa 'atender'. Para ayudar a un cliente, se dice 's'occuper de'."
+      },
+      "tip": "Cambia 'faire' (hacer) por un verbo preciso: 'organiser', 'préparer', 'envoyer', 'gérer' (organizar, preparar, enviar, gestionar)."
+    },
+    "proposer-conseiller": {
+      "title": "Proponer y aconsejar",
+      "explanation": "Para proponer una idea al grupo, se dice 'Je propose de…' (Propongo…) o 'On pourrait…' (Podríamos…). Para darle un consejo a una persona, se dice 'Tu devrais…' (Deberías…) o 'Vous devriez…' (Debería…). Estas formas son corteses: la otra persona decide.",
+      "expressions": [
+        "Propongo + infinitivo",
+        "Podríamos + infinitivo",
+        "¿Y si empezamos a las 9?",
+        "Deberías / Usted debería + infinitivo",
+        "Yo en su lugar, …",
+        "¡Buena idea!"
+      ],
+      "vocabulary": [
+        {
+          "es": "una idea",
+          "gloss": "lo que propones"
+        },
+        {
+          "es": "una solución",
+          "gloss": "lo que resuelve un problema"
+        },
+        {
+          "es": "un consejo",
+          "gloss": "una idea para ayudar a una persona"
+        },
+        {
+          "es": "decidir",
+          "gloss": "elegir"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Propuesta",
+          "text": "Propongo hacer una pausa."
+        },
+        {
+          "label": "Propuesta",
+          "text": "Podríamos empezar a las 10."
+        },
+        {
+          "label": "Consejo",
+          "text": "Deberías hablar con Élodie hoy."
+        }
+      ],
+      "mistake": {
+        "why": "Se dice 'proposer de' + infinitivo. Nunca 'proposer à'."
+      },
+      "tip": "'Vous devez' (usted debe) es una orden. Para un consejo, di 'vous devriez' (usted debería)."
+    },
+    "vocabulaire-echeances": {
+      "title": "Las fechas y los plazos",
+      "explanation": "Para hablar de fechas en el trabajo, hay tres palabras pequeñas importantes. 'Avant' (antes de) = no más tarde de. 'Jusqu'à' (hasta) = todo el tiempo, y luego se termina. 'D'ici' (de aquí a, para) = entre ahora y una fecha.",
+      "expressions": [
+        "Le envío el archivo antes del jueves.",
+        "Estoy en la oficina hasta las 6 de la tarde.",
+        "Lo termino para el viernes.",
+        "La reunión es el lunes a las 10.",
+        "¿Podemos posponer la reunión?",
+        "¿Podemos adelantar la reunión?"
+      ],
+      "vocabulary": [
+        {
+          "es": "plazo, fecha límite",
+          "gloss": "la fecha límite"
+        },
+        {
+          "es": "estar atrasado, llegar tarde",
+          "gloss": "terminar o llegar después de la hora prevista"
+        },
+        {
+          "es": "adelantar",
+          "gloss": "poner más temprano"
+        },
+        {
+          "es": "posponer, aplazar",
+          "gloss": "poner más tarde"
+        },
+        {
+          "es": "cancelar",
+          "gloss": "suprimir: la reunión no se hace"
+        },
+        {
+          "es": "a tiempo",
+          "gloss": "a la hora, sin retraso"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Límite",
+          "text": "¿Puede confirmar antes del viernes?"
+        },
+        {
+          "label": "Duración",
+          "text": "Estoy en la oficina hasta las 5 de la tarde."
+        },
+        {
+          "label": "Más tarde",
+          "text": "¿Podemos posponer la reunión para el miércoles?"
+        }
+      ],
+      "mistake": {
+        "why": "'Jusqu'à' (hasta) es para una duración. Para un límite, di 'avant' (antes de) o 'd'ici' (para)."
+      },
+      "tip": "Da el día y la hora: 'jeudi à 17 h' (el jueves a las 5 de la tarde). Es más claro."
+    },
+    "comparer": {
+      "title": "Comparar dos opciones",
+      "explanation": "Para comparar, se dice 'plus … que' (más … que), 'moins … que' (menos … que), 'aussi … que' (tan … como). Para decir 'el número uno', se dice 'le plus' / 'le moins' (el más / el menos). Cuidado: 'bon' → 'meilleur' (bueno → mejor).",
+      "expressions": [
+        "más + adjetivo + que: más rápido que",
+        "menos + adjetivo + que: menos caro que",
+        "tan + adjetivo + como: tan simple como",
+        "el / la más + adjetivo: la más rápida",
+        "bueno → mejor → el mejor"
+      ],
+      "vocabulary": [
+        {
+          "es": "caro",
+          "gloss": "que cuesta mucho dinero"
+        },
+        {
+          "es": "rápido",
+          "gloss": "que toma poco tiempo"
+        },
+        {
+          "es": "práctico",
+          "gloss": "fácil de usar"
+        },
+        {
+          "es": "una opción",
+          "gloss": "una elección posible"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Comparativo",
+          "text": "El tren es más barato que el avión."
+        },
+        {
+          "label": "Igualdad",
+          "text": "Las dos salas son igual de grandes."
+        },
+        {
+          "label": "Superlativo",
+          "text": "De los tres proveedores, B es el más rápido."
+        }
+      ],
+      "mistake": {
+        "why": "'Meilleur' ya quiere decir 'plus bon' (más bueno). No se agrega 'plus'. Igual que en español: no decimos 'más mejor'."
+      },
+      "tip": "Da una cifra: '20 euros moins cher' (20 euros más barato), 'deux jours plus rapide' (dos días más rápido). Así es más fácil decidir."
+    },
+    "prononciation": {
+      "title": "Pronunciación y ritmo",
+      "explanation": "En francés no se acentúa cada palabra. Se dicen pequeños grupos de palabras, con el acento al final del grupo. También se hacen enlaces ('liaisons'): 'vous avez' se dice 'vou-z-avez'.",
+      "expressions": [
+        "Grupos: 'Bonjour, | je m'appelle Camille.' (Hola, me llamo Camille.)",
+        "Enlace ('liaison'): les_employés (los empleados), nous_avons (tenemos), vous_êtes (usted es), deux_heures (dos horas)",
+        "Sin enlace después de 'et' (y): et | ensuite (y después)",
+        "Pregunta: la voz sube ↗ · Afirmación: la voz baja ↘"
+      ],
+      "vocabulary": [
+        {
+          "es": "un enlace ('liaison')",
+          "gloss": "se pronuncia la última letra delante de una vocal"
+        },
+        {
+          "es": "un grupo de palabras",
+          "gloss": "palabras que se dicen juntas, sin pausa"
+        },
+        {
+          "es": "la entonación",
+          "gloss": "la música de la frase"
+        },
+        {
+          "es": "una sílaba",
+          "gloss": "una parte de una palabra: ré-u-nion"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Enlace",
+          "text": "Tiene una cita a las diez. (Se une: 'vous_avez', 'dix_heures'.)"
+        },
+        {
+          "label": "Grupos",
+          "text": "Le envío el expediente | antes del jueves."
+        },
+        {
+          "label": "Sonidos difíciles",
+          "text": "'u' / 'ou': du (del) / doux (suave) · sur (sobre) / sous (debajo). 'ou' suena como la 'u' del español; para 'u', di 'i' con los labios redondeados."
+        }
+      ],
+      "mistake": {
+        "why": "En francés, el acento va al final del grupo de palabras, no en cada palabra."
+      },
+      "tip": "Grábate y vuelve a escucharte. Corrige solo dos cosas a la vez."
+    }
+  }
+}

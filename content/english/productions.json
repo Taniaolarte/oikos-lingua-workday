@@ -1,0 +1,1822 @@
+{
+ "productions": {
+  "professional-requests": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the request",
+   "brief": "You need the invoice numbers from Tomás in Finance. You need them today.",
+   "task": "Write a short email to Tomás. Say hello, ask politely, give a time, and say thank you.",
+   "include": [
+    "Hello and his name",
+    "A polite request ('Could you…?')",
+    "A time with 'by' (for example 'by 4 p.m.')",
+    "A thank you"
+   ],
+   "minWords": 30,
+   "checks": [
+    {
+     "label": "Says hello with his name",
+     "any": [
+      "hi tomas",
+      "hello tomas",
+      "dear tomas",
+      "hi tomás",
+      "hello tomás",
+      "dear tomás"
+     ]
+    },
+    {
+     "label": "Asks politely",
+     "any": [
+      "could you",
+      "can you",
+      "would you",
+      "would it be possible"
+     ]
+    },
+    {
+     "label": "Gives a time with 'by'",
+     "any": [
+      "by "
+     ]
+    },
+    {
+     "label": "Does not use 'until' for a deadline",
+     "none": [
+      "until"
+     ]
+    },
+    {
+     "label": "Says thank you",
+     "any": [
+      "thanks",
+      "thank you"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is my request polite?",
+    "Does Tomás know when I need it?",
+    "Is there only one request?"
+   ],
+   "model": "Hi Tomás,\n\nCould you please send me the invoice numbers for June by 4 p.m. today? I need them for Elena's report this evening.\n\nIf you have any questions, please call me.\n\nThanks for your help,\nAna"
+  },
+  "deadline-language": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Move the deadline",
+   "brief": "Your report is for Friday, but the supplier sent the data late. You can finish it by Tuesday. You are in the office until 6 p.m. today.",
+   "task": "Write a short email to your manager. Say the report will be late, why, and the new day. Use 'by' and 'until' correctly.",
+   "include": [
+    "The problem: the report will be late",
+    "The reason (one sentence)",
+    "The new day with 'by'",
+    "When you are free today, with 'until'"
+   ],
+   "minWords": 30,
+   "checks": [
+    {
+     "label": "Gives the new day",
+     "any": [
+      "tuesday"
+     ]
+    },
+    {
+     "label": "Uses 'by' for the deadline",
+     "any": [
+      "by tuesday",
+      "by "
+     ]
+    },
+    {
+     "label": "Does not use 'until' for the deadline",
+     "none": [
+      "until tuesday",
+      "until friday"
+     ]
+    },
+    {
+     "label": "Gives the reason",
+     "any": [
+      "because",
+      "the supplier",
+      "late"
+     ]
+    },
+    {
+     "label": "Uses 'until' for your time today",
+     "any": [
+      "until 6",
+      "until six",
+      "until 18"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I use 'by' for the new deadline?",
+    "Did I use 'until' only for time that continues?"
+   ],
+   "model": "Hi Elena,\n\nI'm sorry, but the report will be late. The supplier sent the data three days late.\n\nI can send you the report by Tuesday at 12.\n\nI'm in the office until 6 p.m. today if you want to talk.\n\nThanks,\nAna"
+  },
+  "apologising": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the apology",
+   "brief": "Yesterday you sent a client, Ms Lemoine, the wrong report. She wrote to tell you.",
+   "task": "Write a short reply. Say sorry once, send the right report, and say what you will do next time.",
+   "include": [
+    "A formal greeting",
+    "One short apology",
+    "The correct report (say it is attached)",
+    "What you will do next time"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Says sorry",
+     "any": [
+      "i'm sorry",
+      "i am sorry",
+      "i apologise",
+      "i apologize",
+      "sorry for",
+      "my apologies"
+     ]
+    },
+    {
+     "label": "Avoids 'I apologise you'",
+     "none": [
+      "apologise you",
+      "apologize you"
+     ]
+    },
+    {
+     "label": "Sends the correct report",
+     "any": [
+      "attached",
+      "here is",
+      "please find"
+     ]
+    },
+    {
+     "label": "Says what you will do next time",
+     "any": [
+      "next time",
+      "from now on",
+      "won't happen",
+      "will not happen",
+      "i will check",
+      "i'll check"
+     ]
+    },
+    {
+     "label": "Thanks her",
+     "any": [
+      "thank you",
+      "thanks"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I say sorry only once?",
+    "Is the correct report attached?",
+    "Is my email short and clear?"
+   ],
+   "model": "Dear Ms Lemoine,\n\nThank you for your email. I'm sorry, I sent you the wrong report yesterday. That was my mistake.\n\nPlease find the correct report attached. From now on, I will check every file before I send it.\n\nKind regards,\nAna Ruiz"
+  },
+  "polite-disagreement": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Disagree out loud",
+   "brief": "In a team meeting your manager says the new onboarding flow is not worth the development time, and wants to park it. You disagree, and you have data: forty per cent of new users drop out at step three.",
+   "task": "Disagree with your manager, in front of the team, without damaging the relationship.",
+   "prepSeconds": 45,
+   "speakSeconds": 60,
+   "checklist": [
+    "I acknowledged their concern before disagreeing",
+    "I named one specific concern rather than rejecting everything",
+    "I used a number or a piece of evidence",
+    "I proposed something concrete rather than only objecting",
+    "I spoke about the idea, not about the person",
+    "I did not say 'I am not agree'"
+   ],
+   "model": "I see the concern about development time, and I know the roadmap is full. Can I share one number before we park it? Forty per cent of new users drop out at step three, which is where the flow breaks. If we fix just that step, the build pays for itself in about two months. So rather than parking the whole thing, could we scope a smaller version that only touches step three, and come back to the rest next quarter?"
+  },
+  "giving-opinions": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Give your opinion",
+   "brief": "Your team is talking about a new idea: no meetings on Fridays. Your manager asks you: 'What do you think?'",
+   "task": "Give your opinion, a reason, and a small example. About 30 seconds.",
+   "prepSeconds": 30,
+   "speakSeconds": 45,
+   "checklist": [
+    "I started with 'I think…' or 'In my opinion…'",
+    "I gave a clear answer (yes or no)",
+    "I gave a reason with 'because'",
+    "I gave a small example",
+    "I did not say 'according to me'"
+   ],
+   "model": "In my opinion, it's a good idea. I think we have too many meetings, because every day I have three or four. For example, last Friday I had no time to finish my report. With no meetings on Fridays, I can finish my work before the weekend."
+  },
+  "suggestions-advice": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Suggest an idea",
+   "brief": "Your colleague Leo has a problem. The team meeting is always too long, and nobody decides anything. He asks you for ideas.",
+   "task": "Write a short reply. Make one suggestion for the team and give Leo one piece of advice.",
+   "include": [
+    "A suggestion with 'How about…?' or 'Why don't we…?'",
+    "Advice with 'You should…'",
+    "A reason with 'because'"
+   ],
+   "minWords": 30,
+   "checks": [
+    {
+     "label": "Makes a suggestion",
+     "any": [
+      "how about",
+      "why don't",
+      "let's",
+      "shall we",
+      "we could"
+     ]
+    },
+    {
+     "label": "Gives advice",
+     "any": [
+      "you should",
+      "i think you should"
+     ]
+    },
+    {
+     "label": "No 'to' after 'should' or 'let's'",
+     "none": [
+      "should to",
+      "let's to"
+     ]
+    },
+    {
+     "label": "Gives a reason",
+     "any": [
+      "because",
+      "so "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is my suggestion easy to try?",
+    "Did I use the base verb after 'should'?"
+   ],
+   "model": "Hi Leo,\n\nHow about having a shorter meeting, only 30 minutes? We could also send the agenda the day before.\n\nYou should talk to Elena about it, because she wants shorter meetings too.\n\nGood luck!\nAna"
+  },
+  "clarifying": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Ask a clear question",
+   "brief": "Your manager, Elena, writes: 'Can you prepare something short on the sales numbers for Thursday?' You don't know if she wants a document or slides.",
+   "task": "Write a short reply. Say yes, ask one clear question with two choices, and say when it will be ready.",
+   "include": [
+    "Say yes",
+    "One question with two choices ('… or …?')",
+    "When it will be ready"
+   ],
+   "minWords": 30,
+   "checks": [
+    {
+     "label": "Says yes",
+     "any": [
+      "yes",
+      "sure",
+      "of course",
+      "no problem",
+      "happy to"
+     ]
+    },
+    {
+     "label": "Asks a question with two choices",
+     "any": [
+      "document or",
+      "or slides",
+      "or some slides",
+      "or a presentation",
+      "or a deck",
+      "page or",
+      "report or"
+     ]
+    },
+    {
+     "label": "Uses a question mark",
+     "any": [
+      "?"
+     ]
+    },
+    {
+     "label": "Avoids 'explain me'",
+     "none": [
+      "explain me"
+     ]
+    },
+    {
+     "label": "Says when it will be ready",
+     "any": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "tomorrow",
+      "today",
+      "by "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Can my manager answer in one word?",
+    "Is my question polite?"
+   ],
+   "model": "Hi Elena,\n\nYes, of course. Quick question: do you want a one-page document or some slides?\n\nI can have it ready on Wednesday afternoon, so you have time to read it before Thursday.\n\nThanks,\nAna"
+  },
+  "email-structure": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the holiday email",
+   "brief": "You are on holiday next week, from Monday to Friday. Daniel will do your work. There is a client call on Thursday at 10 a.m.",
+   "task": "Write a short email to Daniel. Give the dates, the one important task, and where your notes are.",
+   "include": [
+    "A greeting with his name",
+    "The dates you are away",
+    "The client call: day and time",
+    "Where your notes are",
+    "A closing (for example 'Best regards,')"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Says hello with his name",
+     "any": [
+      "hi daniel",
+      "hello daniel",
+      "dear daniel"
+     ]
+    },
+    {
+     "label": "Gives the dates or days",
+     "any": [
+      "monday",
+      "friday",
+      "next week",
+      "the 6",
+      "the 10"
+     ]
+    },
+    {
+     "label": "Mentions the call on Thursday",
+     "any": [
+      "thursday"
+     ]
+    },
+    {
+     "label": "Says where the notes are",
+     "any": [
+      "folder",
+      "notes",
+      "attached",
+      "drive"
+     ]
+    },
+    {
+     "label": "Ends with a closing",
+     "any": [
+      "regards",
+      "thanks",
+      "thank you",
+      "best"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Can Daniel do the work with only this email?",
+    "Is the day and time of the call clear?",
+    "Did I start with a greeting and finish with a closing?"
+   ],
+   "model": "Hi Daniel,\n\nI'm on holiday next week, from Monday 6th to Friday 10th. Thank you for doing my work.\n\nThere is one important thing: the client call on Thursday at 10 a.m.\n\nAll my notes are in the shared folder.\n\nBest regards,\nAna"
+  },
+  "async-writing": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the async update",
+   "brief": "Your team lead is eight hours behind you and will read this when she wakes up. You finished the API integration yesterday and started the migration script today, but you are blocked: you need staging credentials from Marc in Infra.",
+   "task": "Write the daily update so she can act on it without replying to ask you anything.",
+   "include": [
+    "What you finished",
+    "What you are doing today",
+    "What is blocking you, and who can unblock it",
+    "A time, in a way that survives the time difference"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Says what is blocking you",
+     "any": [
+      "blocked",
+      "blocker",
+      "stuck",
+      "waiting on",
+      "need "
+     ]
+    },
+    {
+     "label": "Names who can unblock it",
+     "any": [
+      "marc",
+      "infra",
+      "@"
+     ]
+    },
+    {
+     "label": "Gives a time or deadline",
+     "any": [
+      "my time",
+      "your time",
+      "eod",
+      "end of day",
+      "am",
+      "pm",
+      "by "
+     ]
+    },
+    {
+     "label": "Does not open with a bare greeting",
+     "none": [
+      "are you around",
+      "are you there"
+     ]
+    },
+    {
+     "label": "Covers both yesterday and today",
+     "all": [
+      "yesterday",
+      "today"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Could she act on this before I wake up?",
+    "Is the blocker impossible to miss?",
+    "Did I avoid making her ask a follow-up question?"
+   ],
+   "model": "Yesterday: finished the API integration, all tests passing.\nToday: starting the migration script.\nBlocked on: staging credentials from Infra.\n\n@Marc could you drop those in the channel when you're on? It blocks me from about 11:00 my time, so if it lands before your end of day I won't lose a run.\n\nEverything else is on track for Thursday."
+  },
+  "professional-tone": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rewrite the cold message",
+   "brief": "You sent a colleague this message: 'This isn't what I asked for.' She replied 'Ok.' and has gone quiet. What you actually need is the regional split rather than the totals, and you still need it by tomorrow at noon because it goes to the board.",
+   "task": "Write the repair message. Own the tone without over-apologising, supply the information you left out, keep the deadline firm, and offer time.",
+   "include": [
+    "Acknowledge how the message landed, in one sentence",
+    "Say specifically what you need instead, and why",
+    "Keep the deadline firm without sounding curt",
+    "Offer to go through it together"
+   ],
+   "minWords": 60,
+   "checks": [
+    {
+     "label": "Uses her name",
+     "any": [
+      "nadia"
+     ]
+    },
+    {
+     "label": "Acknowledges the tone",
+     "any": [
+      "came out",
+      "sharper",
+      "blunt",
+      "abrupt",
+      "sorry",
+      "didn't mean",
+      "did not mean",
+      "that read"
+     ]
+    },
+    {
+     "label": "Says specifically what is needed",
+     "any": [
+      "regional",
+      "split",
+      "breakdown",
+      "by region"
+     ]
+    },
+    {
+     "label": "Offers time or a conversation",
+     "any": [
+      "together",
+      "call",
+      "five minutes",
+      "catch up",
+      "walk through",
+      "at 3",
+      "this afternoon"
+     ]
+    },
+    {
+     "label": "Keeps the deadline",
+     "any": [
+      "tomorrow",
+      "noon",
+      "midday",
+      "12"
+     ]
+    },
+    {
+     "label": "Does not grovel",
+     "none": [
+      "so so sorry",
+      "really really sorry",
+      "i feel terrible",
+      "i'm so sorry"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Would I be relieved to receive this?",
+    "Did I supply the missing information, not just the apology?",
+    "Is the deadline still clear without sounding like an order?"
+   ],
+   "model": "Hi Nadia,\n\nSorry, that came out sharper than I meant it. What I actually need is the regional split rather than the totals, because the board wants to see where the drop came from, and I should have said so the first time.\n\nIt still needs to be with me by noon tomorrow, as it goes into the board pack that afternoon. Are you free at three today? Happy to go through it together so you're not second-guessing what I'm after.\n\nAna"
+  },
+  "softening": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Raise the error safely",
+   "brief": "A senior colleague's report has a figure in the second column that does not match the appendix. You are fairly sure it is wrong, but not certain. You are commenting on the shared document.",
+   "task": "Write the comment. Challenge the number without accusing anyone, and leave room to be wrong yourself.",
+   "include": [
+    "One hedge, not five",
+    "The exact location of the problem",
+    "Room for them to explain"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Hedges the claim",
+     "any": [
+      "i think",
+      "it seems",
+      "it looks",
+      "i might be",
+      "possibly",
+      "may be",
+      "appears",
+      "could be"
+     ]
+    },
+    {
+     "label": "Does not stack hedges",
+     "none": [
+      "maybe possibly",
+      "probably possibly",
+      "perhaps maybe"
+     ]
+    },
+    {
+     "label": "Names the exact location",
+     "any": [
+      "column",
+      "page",
+      "row",
+      "table",
+      "appendix",
+      "section",
+      "figure"
+     ]
+    },
+    {
+     "label": "Invites a response",
+     "any": [
+      "?",
+      "correct me",
+      "let me know",
+      "have i",
+      "am i"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is there exactly one hedge?",
+    "Could they fix it from my comment alone?",
+    "Does it attack the document rather than the person?"
+   ],
+   "model": "I might be missing something here, but the figure in the second column looks different from the appendix total on page 9. Is the column meant to include returns? Happy to be corrected if I've read it wrong."
+  },
+  "saying-no": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Say no, properly",
+   "brief": "A colleague has asked you to review a forty-page document by tomorrow. You are already at capacity, and saying yes means something else slips.",
+   "task": "Write the reply. Refuse clearly, but offer something real.",
+   "include": [
+    "A clear no, not 'I'll try'",
+    "A reason",
+    "A genuine partial offer or an alternative date",
+    "A question handing the choice back"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Refuses clearly",
+     "any": [
+      "i can't",
+      "i cannot",
+      "i won't be able",
+      "not going to be able",
+      "no chance"
+     ]
+    },
+    {
+     "label": "Avoids the vague 'I'll try'",
+     "none": [
+      "i'll try",
+      "i will try"
+     ]
+    },
+    {
+     "label": "Offers something concrete",
+     "any": [
+      "i could",
+      "i can",
+      "instead",
+      "what i can do",
+      "by tuesday",
+      "by monday",
+      "the summary",
+      "the recommendations"
+     ]
+    },
+    {
+     "label": "Hands the choice back",
+     "any": [
+      "?",
+      "would that",
+      "which would",
+      "let me know",
+      "does that"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is my no unambiguous?",
+    "Is what I offered genuinely deliverable?",
+    "Did I protect the relationship as well as my week?"
+   ],
+   "model": "I can't get through all forty pages by tomorrow, I'm afraid — I've got the Ortiz review landing the same day.\n\nWhat I can do tonight is read the executive summary and the recommendations properly, which is usually where the risk sits. Would that help, or do you need the full read? If it's the full read, I could do it by Tuesday morning."
+  },
+  "meeting-language": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Close the meeting",
+   "brief": "Five minutes are left. Three things were decided: supplier B, the launch moves to 14 April, and Ana owns the content plan. Two things are still open: the budget for an extra designer, and who presents to the board.",
+   "task": "Close the meeting out loud. Summarise the decisions, name the owners, and say what is still open.",
+   "prepSeconds": 45,
+   "speakSeconds": 60,
+   "checklist": [
+    "I signalled the summary ('to summarise', 'so, to recap')",
+    "I listed all three decisions",
+    "I named who owns what",
+    "I said explicitly what is still unresolved",
+    "I put a deadline on the open items",
+    "I did not just say 'great discussion everyone'"
+   ],
+   "model": "So, to summarise: we're going with supplier B, the launch moves to 14 April, and Ana owns the content plan. On actions, Ana sends the first draft on Tuesday, I'll review it by Thursday, and we confirm on Friday. Still open: the budget for the extra designer, and who presents to the board. Can we close both of those by Friday? I'll put fifteen minutes in on Thursday if that's easier than doing it over email."
+  },
+  "explaining-problems": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Explain what went wrong",
+   "brief": "Integration testing has found a data problem affecting about a third of the records. The launch moves from 1 April to mid-April. You have two people on the clean-up and have asked the vendor for support. You need the sponsor to decide: hold the date and cut scope, or move the date.",
+   "task": "Explain it to the project sponsor. You have about a minute.",
+   "prepSeconds": 45,
+   "speakSeconds": 75,
+   "checklist": [
+    "I said what happened before anything else",
+    "I gave the impact in dates or numbers",
+    "I said what I have already done",
+    "I ended with the specific decision I need",
+    "I did not open with an excuse",
+    "I did not overstate it"
+   ],
+   "model": "Integration testing has found a data problem we hadn't seen. It affects about a third of the records. The impact is that the launch moves roughly two weeks, so mid-April rather than the 1st. I've already got two people on the clean-up and I've asked the vendor for support, and I'll have a firm date from them by Thursday. What I need from you is a decision: either we hold the original date and cut the reporting module from the first release, or we move the date and ship it complete. My recommendation is to move it, but it's your call on the launch commitment."
+  },
+  "feedback": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Give the difficult feedback",
+   "brief": "A junior colleague, Iris, has sent you a draft with three factual errors: the Q2 figure on page 2, the client name in the header, and the date in the summary. It has to go out today.",
+   "task": "Write the feedback. Make it specific enough to act on and kind enough to keep her confidence.",
+   "include": [
+    "Something that genuinely worked",
+    "The three corrections, named exactly",
+    "A deadline",
+    "No rhetorical questions"
+   ],
+   "minWords": 70,
+   "checks": [
+    {
+     "label": "Names specific corrections",
+     "any": [
+      "page 2",
+      "page two",
+      "header",
+      "summary",
+      "q2",
+      "client name",
+      "date"
+     ]
+    },
+    {
+     "label": "Counts them so they feel finite",
+     "any": [
+      "three",
+      "3 things",
+      "two things",
+      "a few specific"
+     ]
+    },
+    {
+     "label": "Gives a deadline",
+     "any": [
+      "by ",
+      "today",
+      "this afternoon",
+      "before "
+     ]
+    },
+    {
+     "label": "Avoids rhetorical criticism",
+     "none": [
+      "did you even",
+      "did you proofread",
+      "do you not",
+      "seriously?"
+     ]
+    },
+    {
+     "label": "Says something positive and specific",
+     "any": [
+      "works well",
+      "good",
+      "clear",
+      "strong",
+      "liked",
+      "useful"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is every correction locatable?",
+    "Did I comment on the work rather than on Iris?",
+    "Would she know exactly what to do in the next ten minutes?"
+   ],
+   "model": "Thanks Iris — the structure works well, and the decision table on page 4 is much clearer than the last version.\n\nThree things need correcting before it goes out: the Q2 figure on page 2 doesn't match the appendix, the client name in the header is still the old one, and the date in the summary says March rather than April.\n\nCould you turn those around by two? Then it can go out this afternoon."
+  },
+  "negotiating": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the counter-offer",
+   "brief": "You have been offered 48k. Your researched range was 52 to 58k. The role itself is genuinely good and you want it.",
+   "task": "Write the reply. Keep the offer alive, counter clearly, and give them a second route if the cash is fixed.",
+   "include": [
+    "Genuine enthusiasm for the role",
+    "A clear counter figure",
+    "A justification that is about the role, not your costs",
+    "An alternative if the budget cannot move"
+   ],
+   "minWords": 70,
+   "checks": [
+    {
+     "label": "Shows enthusiasm first",
+     "any": [
+      "thank you",
+      "delighted",
+      "very interested",
+      "genuinely interested",
+      "pleased"
+     ]
+    },
+    {
+     "label": "Names a specific figure",
+     "any": [
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "k"
+     ]
+    },
+    {
+     "label": "Justifies by the role, not personal costs",
+     "none": [
+      "mortgage",
+      "rent",
+      "my bills",
+      "i need the money"
+     ]
+    },
+    {
+     "label": "Offers a second currency if cash is fixed",
+     "any": [
+      "review",
+      "six months",
+      "training",
+      "budget",
+      "days",
+      "flexible",
+      "holiday",
+      "if the budget"
+     ]
+    },
+    {
+     "label": "Asks a question",
+     "any": [
+      "?"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Would they still want to hire me after reading this?",
+    "Is my figure attached to a reason about the job?",
+    "Have I given them a way to say yes even if cash is fixed?"
+   ],
+   "model": "Thank you — I'm genuinely pleased, and I'd very much like to take the role.\n\nOn the figure: 48 is a little below where I'd hoped. Given the scope, particularly owning the client reporting from day one, I was looking at around 54. Is there flexibility to get there?\n\nIf the budget is fixed at 48, could we look at a formal review at six months instead, or at the training budget? I'd be happy with either route."
+  },
+  "comparing": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the recommendation",
+   "brief": "Two suppliers. Vidal is about 15% more expensive but delivers in four weeks. Orsan is cheaper but takes eight weeks. The launch date is fixed.",
+   "task": "Write a short recommendation to the budget holder. Compare the two, quantify the trade-off, and commit to one.",
+   "include": [
+    "The trade-off, with numbers on both sides",
+    "A clear recommendation, not a summary of options",
+    "The reason your recommendation wins given the fixed launch date"
+   ],
+   "minWords": 70,
+   "checks": [
+    {
+     "label": "Uses a comparative correctly",
+     "any": [
+      "cheaper",
+      "more expensive",
+      "faster",
+      "slower",
+      "quicker",
+      "shorter"
+     ]
+    },
+    {
+     "label": "Avoids double comparatives",
+     "none": [
+      "more cheaper",
+      "more faster",
+      "more better",
+      "most cheapest"
+     ]
+    },
+    {
+     "label": "Quantifies the difference",
+     "any": [
+      "15%",
+      "15 %",
+      "four weeks",
+      "eight weeks",
+      "4 weeks",
+      "8 weeks",
+      "half"
+     ]
+    },
+    {
+     "label": "Commits to one option",
+     "any": [
+      "i recommend",
+      "i'd recommend",
+      "i'd go with",
+      "we should choose",
+      "my recommendation",
+      "i would recommend",
+      "we recommend"
+     ]
+    },
+    {
+     "label": "Links it to the launch date",
+     "any": [
+      "launch",
+      "deadline",
+      "date",
+      "timeline"
+     ]
+    },
+    {
+     "label": "Sizes the difference",
+     "any": [
+      "significantly",
+      "considerably",
+      "marginally",
+      "slightly",
+      "substantially",
+      "by far",
+      "roughly",
+      "about "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I actually recommend one, or just describe both?",
+    "Are both sides of the trade-off quantified?",
+    "Could the budget holder decide from this alone?"
+   ],
+   "model": "Two options for the print run.\n\nVidal is about 15% more expensive, but their lead time is four weeks against Orsan's eight. Orsan is the cheaper unit price by roughly 2,400 across the run.\n\nGiven that the launch date is fixed, I'd recommend Vidal. Orsan's eight weeks takes us past the launch, so the saving disappears the moment we have to air-freight or delay.\n\nHappy to get both quotes in writing if you'd like them side by side."
+  },
+  "conditionals": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Negotiate with conditions",
+   "brief": "You want a week's extension on a report. You can offer something in return: you could deliver the executive summary on the original date so the client has something.",
+   "task": "Write to your manager using conditional language. Make the trade explicit.",
+   "include": [
+    "A first conditional for what is genuinely possible",
+    "What you will deliver on the original date",
+    "What the extra week buys them"
+   ],
+   "minWords": 40,
+   "checks": [
+    {
+     "label": "Uses a conditional",
+     "any": [
+      "if we",
+      "if i",
+      "if you",
+      "provided",
+      "as long as",
+      "unless"
+     ]
+    },
+    {
+     "label": "No 'will' inside the if-clause",
+     "none": [
+      "if we will",
+      "if i will",
+      "if you will",
+      "if it will"
+     ]
+    },
+    {
+     "label": "Names what the extra time produces",
+     "any": [
+      "complete",
+      "full",
+      "new figures",
+      "client's figures",
+      "properly",
+      "accurate",
+      "q4"
+     ]
+    },
+    {
+     "label": "Offers something in return",
+     "any": [
+      "summary",
+      "in the meantime",
+      "on friday",
+      "original date",
+      "partial",
+      "i can still"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is the trade obvious in one read?",
+    "Did I avoid 'will' after 'if'?",
+    "Have I made saying yes easy?"
+   ],
+   "model": "If we can move the deadline to the 21st, I'll be able to include the client's revised Q4 figures, which is what the board will ask about.\n\nIn the meantime, if it helps, I can still deliver the executive summary on Friday as planned, so nobody is waiting on us.\n\nIf the 21st doesn't work, I'll send what I have on Friday and flag the figures as provisional. Let me know which you'd prefer."
+  },
+  "tenses-at-work": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the weekly update",
+   "brief": "It's Friday. This week you finished the supplier report on Tuesday. Now you are writing a new guide for customers. Every Monday you have a team meeting at nine.",
+   "task": "Write a short update for your team. Use the right tense for each thing: finished, happening now, and a habit.",
+   "include": [
+    "What you finished, and when (past simple)",
+    "What you are doing now (present continuous)",
+    "Your Monday habit (present simple)"
+   ],
+   "minWords": 30,
+   "checks": [
+    {
+     "label": "Uses the past simple for the finished report",
+     "any": [
+      "finished",
+      "completed",
+      "sent",
+      "wrote"
+     ]
+    },
+    {
+     "label": "Uses the present continuous for now",
+     "any": [
+      "i'm ",
+      "i am ",
+      "writing",
+      "working"
+     ]
+    },
+    {
+     "label": "Mentions the Monday meeting",
+     "any": [
+      "monday"
+     ]
+    },
+    {
+     "label": "Avoids 'have finished' with a day",
+     "none": [
+      "have finished on tuesday",
+      "have finished it on tuesday",
+      "have finished the supplier report on tuesday"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is it clear what is finished and what is not?",
+    "Did I use the past simple with 'on Tuesday'?"
+   ],
+   "model": "Hi team,\n\nHere is my update. I finished the supplier report on Tuesday and sent it to Elena.\n\nAt the moment, I'm writing the new guide for customers. It will be ready next week.\n\nSee you at our team meeting on Monday. We always start at nine.\n\nAna"
+  },
+  "future-forms": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write about next month",
+   "brief": "Three things: your team is going to move to a new office in May (it's decided). You're meeting the new manager on Tuesday at 10 (it's in your calendar). You think the move will be good.",
+   "task": "Write a short message to your team about the three things. Use a different future form for each one.",
+   "include": [
+    "The plan with 'going to'",
+    "The meeting with the present continuous ('I'm meeting…')",
+    "Your opinion with 'I think … will …'"
+   ],
+   "minWords": 30,
+   "checks": [
+    {
+     "label": "Uses 'going to' for the plan",
+     "any": [
+      "going to"
+     ]
+    },
+    {
+     "label": "Uses the present continuous for the meeting",
+     "any": [
+      "i'm meeting",
+      "i am meeting",
+      "we're meeting",
+      "we are meeting"
+     ]
+    },
+    {
+     "label": "Uses 'will' for your opinion",
+     "any": [
+      "will ",
+      "'ll "
+     ]
+    },
+    {
+     "label": "Shows it is your opinion",
+     "any": [
+      "i think",
+      "i hope",
+      "probably",
+      "i'm sure"
+     ]
+    },
+    {
+     "label": "Avoids 'will to'",
+     "none": [
+      "will to "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I use three different future forms?",
+    "Is the day and time of the meeting clear?"
+   ],
+   "model": "Hi everyone,\n\nSome news: we're going to move to the new office in May.\n\nI'm meeting the new manager on Tuesday at 10 a.m. to talk about the move. I'll tell you everything after the meeting.\n\nI think the new office will be great!\n\nAna"
+  },
+  "present-perfect": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the status report",
+   "brief": "You have spoken to the supplier and updated the timeline. You have not heard back about pricing, and you have been chasing it since Monday. The pilot has been running for six weeks and has already produced three issues.",
+   "task": "Write the status update. This is what the present perfect is for.",
+   "include": [
+    "What is done, without saying exactly when",
+    "What has not happened yet",
+    "How long something has been running"
+   ],
+   "minWords": 40,
+   "checks": [
+    {
+     "label": "Uses the present perfect",
+     "any": [
+      "i've",
+      "i have",
+      "we've",
+      "we have"
+     ]
+    },
+    {
+     "label": "Uses 'yet' or 'still' for what is missing",
+     "any": [
+      "yet",
+      "still"
+     ]
+    },
+    {
+     "label": "Uses 'for' with a duration",
+     "any": [
+      "for six weeks",
+      "for 6 weeks",
+      "for two",
+      "for three"
+     ]
+    },
+    {
+     "label": "Avoids 'since' with a duration",
+     "none": [
+      "since six weeks",
+      "since 6 weeks",
+      "since two weeks"
+     ]
+    },
+    {
+     "label": "Avoids present perfect with a finished time",
+     "none": [
+      "have spoken yesterday",
+      "have sent yesterday",
+      "have updated yesterday"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is it clear what is outstanding?",
+    "Did I use 'for' with the length of time?",
+    "Would my manager know what to chase?"
+   ],
+   "model": "Where we are on Northbridge.\n\nI've spoken to the supplier and I've updated the timeline to reflect the new lead times. We still haven't heard back on the revised pricing, and I've been chasing that since Monday — I'll escalate to their account manager if there's nothing by Thursday.\n\nThe pilot has been running for six weeks now and has already surfaced three issues, all of them fixable. Nothing there changes the launch date."
+  },
+  "modals": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the advice note",
+   "brief": "A colleague is about to send a contract variation to a client without legal review. You think they should copy Legal, the client might ask for a discount, and the signed version genuinely has to be in before the 30th.",
+   "task": "Write them a short note covering all three: advice, possibility, and obligation.",
+   "include": [
+    "Advice about Legal",
+    "The possibility about the discount",
+    "The hard deadline"
+   ],
+   "minWords": 35,
+   "checks": [
+    {
+     "label": "Gives advice with a soft modal",
+     "any": [
+      "should",
+      "ought to",
+      "i'd ",
+      "would be worth",
+      "might be worth"
+     ]
+    },
+    {
+     "label": "Marks the discount as a possibility",
+     "any": [
+      "might",
+      "may",
+      "could",
+      "possibly",
+      "probably"
+     ]
+    },
+    {
+     "label": "States the obligation",
+     "any": [
+      "have to",
+      "has to",
+      "need to",
+      "needs to",
+      "must"
+     ]
+    },
+    {
+     "label": "No 'to' after a bare modal",
+     "none": [
+      "must to",
+      "should to",
+      "might to",
+      "could to",
+      "would to"
+     ]
+    },
+    {
+     "label": "Avoids ordering a peer with 'must'",
+     "none": [
+      "you must "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Can they tell advice from obligation?",
+    "Did I avoid sounding like their boss?",
+    "Is the deadline unmissable?"
+   ],
+   "model": "Before that goes out, I think you should copy Legal in — variations on this contract have bitten us before, and it only costs a day.\n\nThe client might come back asking for a discount on the extended term, so it's worth having a number in mind before they do.\n\nOne hard point: the signed version has to be with us before the 30th, otherwise the current rates lapse and we start again."
+  },
+  "workplace-vocabulary": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Fix the weak sentences",
+   "brief": "This is from a colleague's CV: 'I did a project for the company. I made the process better. My responsible was happy.'",
+   "task": "Rewrite it. Use better verbs, fix the false friend, and add a number.",
+   "include": [
+    "A better verb than 'did' (for example 'managed')",
+    "A better verb than 'made better' (for example 'improved')",
+    "'manager' instead of 'responsible'",
+    "A number (for example 20%)"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Uses a strong verb",
+     "any": [
+      "managed",
+      "led",
+      "improved",
+      "reduced",
+      "increased",
+      "organised",
+      "organized",
+      "planned",
+      "delivered"
+     ]
+    },
+    {
+     "label": "Fixes the false friend",
+     "none": [
+      "my responsible"
+     ]
+    },
+    {
+     "label": "Uses a correct job word",
+     "any": [
+      "manager",
+      "boss",
+      "director",
+      "supervisor",
+      "team leader"
+     ]
+    },
+    {
+     "label": "Includes a number",
+     "any": [
+      "%",
+      "per cent",
+      "percent",
+      "10",
+      "20",
+      "30",
+      "40",
+      "50",
+      "days",
+      "weeks",
+      "hours"
+     ]
+    },
+    {
+     "label": "Avoids the weak verbs",
+     "none": [
+      "did a project",
+      "made the process better"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I change 'did' and 'made'?",
+    "Is there a number?"
+   ],
+   "model": "I managed a project for the sales team. I improved the order process and reduced the time for each order by 20%. My manager was very happy with the results, and she asked me to lead the next project."
+  },
+  "describing-data": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Describe the chart (IELTS Task 1 style)",
+   "brief": "A chart shows two lines over six months. Online sales rise from 100k in January to 280k in June, with the steepest rise between March and April. In-store sales stay flat at around 150k throughout.",
+   "task": "Describe what the chart shows. Open with one sentence of overview, then give the detail. Do not give your opinion.",
+   "include": [
+    "An overview sentence before any detail",
+    "Both series compared",
+    "A proportion, not just raw numbers",
+    "The most striking feature"
+   ],
+   "minWords": 100,
+   "minWordsLabel": "At least 100 words (IELTS Task 1 minimum is 150)",
+   "checks": [
+    {
+     "label": "Opens with an overview",
+     "any": [
+      "overall",
+      "in general",
+      "the chart shows",
+      "broadly",
+      "the most striking"
+     ]
+    },
+    {
+     "label": "Uses a trend verb",
+     "any": [
+      "rose",
+      "increased",
+      "grew",
+      "climbed",
+      "fell",
+      "declined",
+      "remained",
+      "stayed",
+      "levelled"
+     ]
+    },
+    {
+     "label": "Uses 'by' or 'to' correctly with a figure",
+     "any": [
+      "to 280",
+      "by 180",
+      "to around",
+      "rose to",
+      "increased to",
+      "increased by"
+     ]
+    },
+    {
+     "label": "Avoids the 'augment' false friend",
+     "none": [
+      "augmented"
+     ]
+    },
+    {
+     "label": "Mentions both series",
+     "all": [
+      "online",
+      "in-store"
+     ]
+    },
+    {
+     "label": "Gives no opinion (Task 1 rule)",
+     "none": [
+      "i think",
+      "in my opinion",
+      "i believe",
+      "should"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I open with an overview before any numbers?",
+    "Did I compare rather than list?",
+    "Did I keep my opinion out of it?"
+   ],
+   "model": "Overall, online sales rose sharply across the six-month period while in-store sales remained flat, so the gap between the two channels widened considerably.\n\nOnline sales began at 100,000 in January and climbed steadily to 280,000 by June, almost tripling over the period. The steepest rise came between March and April, when the figure jumped by roughly 60,000 in a single month. After April, growth continued, but at a slower pace.\n\nIn-store sales, by contrast, stayed close to 150,000 throughout, with only minor fluctuations from month to month. By June, online sales were almost twice as high as in-store sales, a substantial margin for a channel that had started the period a third lower."
+  },
+  "linking-expressions": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the short argument",
+   "brief": "Your company is deciding whether to keep the central office or move fully remote.",
+   "task": "Write a short argued paragraph. Give one point in favour, one against, and a conclusion, joined properly.",
+   "include": [
+    "One linker that adds",
+    "One linker that contrasts",
+    "One example",
+    "A conclusion"
+   ],
+   "minWords": 50,
+   "checks": [
+    {
+     "label": "Uses a contrast linker",
+     "any": [
+      "however",
+      "on the other hand",
+      "although",
+      "whereas",
+      "nevertheless",
+      "that said"
+     ]
+    },
+    {
+     "label": "Uses an example linker",
+     "any": [
+      "for example",
+      "for instance",
+      "such as",
+      "in particular"
+     ]
+    },
+    {
+     "label": "Uses a concluding linker",
+     "any": [
+      "in conclusion",
+      "overall",
+      "to sum up",
+      "on balance",
+      "all in all"
+     ]
+    },
+    {
+     "label": "Does not double up 'although' and 'but'",
+     "none": [
+      "although it is cheaper, but",
+      "although we save, but"
+     ]
+    },
+    {
+     "label": "Takes a position",
+     "any": [
+      "i think",
+      "i'd argue",
+      "we should",
+      "my view",
+      "in my opinion",
+      "i believe"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Does each linker do a different job?",
+    "Are there three or fewer linkers?",
+    "Did I reach an actual conclusion?"
+   ],
+   "model": "Moving fully remote would cut our fixed costs significantly, and it would widen the pool of people we can hire. Moreover, the last two years suggest that delivery has not suffered.\n\nHowever, the informal learning that junior staff get from sitting near senior colleagues is very hard to reproduce online. For example, our two most recent leavers both cited isolation rather than pay.\n\nOverall, I'd argue for a hybrid model: keep a smaller central office for two days a week, and let the rest be flexible."
+  },
+  "report-writing": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the recommendation report",
+   "brief": "Two supplier options. B is 12% more expensive but delivers in half the time and has a better fault record. Transition cost is estimated at 8 to 10k in the first quarter.",
+   "task": "Write the opening of the report. State the recommendation first, then the scope, the evidence and the risk.",
+   "include": [
+    "The recommendation, in the first sentence",
+    "What the report covers",
+    "The evidence in numbers",
+    "The main risk, named by you"
+   ],
+   "minWords": 90,
+   "checks": [
+    {
+     "label": "Recommends in the opening",
+     "any": [
+      "we recommend",
+      "i recommend",
+      "this report recommends",
+      "our recommendation"
+     ]
+    },
+    {
+     "label": "States the scope",
+     "any": [
+      "this report covers",
+      "compares",
+      "sets out",
+      "examines",
+      "looks at"
+     ]
+    },
+    {
+     "label": "Quantifies the evidence",
+     "any": [
+      "12%",
+      "12 %",
+      "half",
+      "twice"
+     ]
+    },
+    {
+     "label": "Names the risk with a figure",
+     "any": [
+      "8",
+      "10k",
+      "8-10",
+      "transition"
+     ]
+    },
+    {
+     "label": "Avoids building suspense",
+     "none": [
+      "first we gathered",
+      "in this report i will talk about",
+      "i will discuss many"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is my conclusion in the first sentence?",
+    "Did I name the risk before someone else did?",
+    "Could a busy reader stop after the first paragraph and still know what to do?"
+   ],
+   "model": "We recommend moving to Supplier B from the next contract period.\n\nThis report compares the two shortlisted suppliers on cost, lead time and reliability. Supplier B is 12% more expensive per unit, but delivers in half the time and has a materially better fault record over the last three years.\n\nThe main risk is transition cost, which we estimate at 8 to 10k in the first quarter, largely in re-tooling and staff time. Our view is that this is recovered within two quarters through reduced expediting costs. Detail is in sections 3 and 4."
+  },
+  "passive-reported": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the incident report",
+   "brief": "On 14 March the payment system was unavailable for 3 hours 20 minutes. About 2,400 transactions failed. The cause was a configuration change deployed without the staging check. All transactions have since been reprocessed and customers notified.",
+   "task": "Write the factual section and one recommendation. Keep individuals' names out of the factual section.",
+   "include": [
+    "What happened, with the duration",
+    "The impact in numbers",
+    "The cause",
+    "One recommendation with an owner and a date"
+   ],
+   "minWords": 80,
+   "checks": [
+    {
+     "label": "Uses the passive for the facts",
+     "any": [
+      "was unavailable",
+      "was deployed",
+      "were affected",
+      "was caused",
+      "have been reprocessed",
+      "were notified",
+      "was not"
+     ]
+    },
+    {
+     "label": "Includes the duration",
+     "any": [
+      "3 hours",
+      "three hours",
+      "3h",
+      "200 minutes"
+     ]
+    },
+    {
+     "label": "Includes the impact figure",
+     "any": [
+      "2,400",
+      "2400",
+      "2 400"
+     ]
+    },
+    {
+     "label": "Names no individual in the facts",
+     "none": [
+      "marcus deployed",
+      "marcus forgot",
+      "marcus made"
+     ]
+    },
+    {
+     "label": "Recommendation has an owner or a date",
+     "any": [
+      "recommend",
+      "by 30",
+      "april",
+      "platform team",
+      "owner",
+      "mandatory"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Would a regulator find this factual and neutral?",
+    "Did I switch to the active voice for the recommendation?",
+    "Is the fix specific enough to be checked later?"
+   ],
+   "model": "On 14 March the payment system was unavailable for 3 hours 20 minutes, from 09:14 to 12:34.\n\nApproximately 2,400 transactions failed during this period and were not automatically retried. All affected transactions have since been reprocessed and the customers concerned have been notified.\n\nThe outage was caused by a configuration change deployed at 09:10 without the required staging check.\n\nWe recommend that the staging check is made a mandatory gate in the deployment pipeline, owned by the platform team, by 30 April."
+  },
+  "interview-language": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Answer the interview question",
+   "brief": "You are in a job interview. The interviewer says: 'Tell me about a project you're proud of, and what you'd do differently.'",
+   "task": "Answer out loud. Situation, what you did, the result, and one honest thing you would change.",
+   "prepSeconds": 60,
+   "speakSeconds": 120,
+   "checklist": [
+    "I described a specific project, not a general skill",
+    "I said what I personally did, not just what the team did",
+    "I gave a result with a number",
+    "I named one real thing I would change",
+    "I used past simple for the finished project",
+    "I finished on the lesson rather than trailing off"
+   ],
+   "model": "The one I'd pick is the checkout rebuild we did last year. The problem was that we were losing about a third of users at the payment step, and nobody could say why.\n\nI ran the discovery phase, which meant sitting with support for two days and going through recorded sessions. We found that the card form was rejecting valid postcodes. We tested three versions over six weeks, and the one we shipped brought drop-off down from 33% to 12%. That's roughly 400,000 a year in recovered revenue.\n\nWhat I'd do differently is involve the support team at the start rather than at the design review. They spotted two failure cases in ten minutes that we'd missed in three weeks, and that cost us about ten days. Since then I bring support into discovery on anything customer-facing."
+  },
+  "speaking-structure": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Speak for two minutes",
+   "brief": "You are asked in a meeting: 'Should we extend the deadline or ship what we have?'",
+   "task": "Give a structured answer. Announce how many reasons you have, give them, illustrate one with an example, and close.",
+   "prepSeconds": 60,
+   "speakSeconds": 120,
+   "checklist": [
+    "I stated my position in the first sentence",
+    "I announced how many reasons I had",
+    "I actually gave that number of reasons",
+    "I used a real example",
+    "I signposted ('first', 'second', 'so overall')",
+    "I spoke for at least 90 seconds without a long pause"
+   ],
+   "model": "My view is that we should extend, and there are two reasons.\n\nThe first is data quality. The client's revised figures only arrived on Tuesday, and if we ship now, the report goes out with numbers we know are three weeks old. The second is cost of rework. A rushed version doesn't save time, it moves the time somewhere less visible.\n\nFor example, last quarter we shipped the Northbridge report on the original date and then spent three weeks correcting it, which cost more than the delay would have.\n\nSo overall, I'd take the extra week, tell the client today rather than on Friday, and send the executive summary on the original date so nobody is left waiting."
+  },
+  "small-talk": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Start and end a conversation",
+   "brief": "You are at a conference dinner. You sit next to someone from another company. You liked her talk this morning.",
+   "task": "Say hello, ask one question about her work, and end the conversation politely.",
+   "prepSeconds": 30,
+   "speakSeconds": 45,
+   "checklist": [
+    "I said hello and my name",
+    "I said something nice about her talk",
+    "I asked a question about her work",
+    "I ended politely ('It was nice talking to you')",
+    "I asked to stay in contact (email or LinkedIn)"
+   ],
+   "model": "Hi, I'm Ana. I work for Vidal in Madrid. I really liked your talk this morning, especially the part about prices. Do you work with customers in Spain too? … Oh, that's interesting. Well, it was nice talking to you. Can I send you an email next week? Enjoy your dinner!"
+  },
+  "ielts-speaking": {
+   "renderer": "listening",
+   "kind": "listen",
+   "title": "IELTS Speaking: listen, then answer",
+   "brief": "IELTS SKILL. Part 3 rewards developed, non-memorised opinion. The best preparation is listening to how fluent speakers structure an argument, then doing it yourself.",
+   "taskLabel": "Listen or watch first",
+   "task": "Choose one talk or episode on a work-related topic: automation, remote work, productivity, or the future of jobs. Watch or listen once without stopping, then once more with notes.",
+   "resources": [
+    {
+     "label": "TED Talks — search for 'future of work' or 'automation'",
+     "url": "https://www.ted.com/talks"
+    },
+    {
+     "label": "BBC Learning English — 6 Minute English",
+     "url": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english"
+    }
+   ],
+   "note": "These open in a new tab. Nothing is tracked, and you can use any other source you prefer.",
+   "thenLabel": "Then write your Part 3 answer",
+   "then": "Answer this in writing, as if speaking: 'Do you think artificial intelligence will make most office jobs disappear in the next twenty years?' Take a position, give two reasons, use one point from what you listened to, and concede the other side.",
+   "include": [
+    "A clear position, not 'it depends'",
+    "Two reasons",
+    "One point taken from what you listened to",
+    "A concession ('that said…', 'I'd accept that…')"
+   ],
+   "minWords": 100,
+   "checks": [
+    {
+     "label": "Takes a clear position",
+     "any": [
+      "i think",
+      "i don't think",
+      "i do not think",
+      "my view",
+      "i'd say",
+      "i would say",
+      "i believe"
+     ]
+    },
+    {
+     "label": "Gives more than one reason",
+     "any": [
+      "first",
+      "secondly",
+      "second",
+      "another reason",
+      "also",
+      "the main reason"
+     ]
+    },
+    {
+     "label": "Concedes the other side",
+     "any": [
+      "that said",
+      "however",
+      "although",
+      "i'd accept",
+      "admittedly",
+      "on the other hand",
+      "of course"
+     ]
+    },
+    {
+     "label": "Uses hedging rather than absolutes",
+     "any": [
+      "might",
+      "may",
+      "tend to",
+      "probably",
+      "in most cases",
+      "likely",
+      "would expect",
+      "i'd expect",
+      "could"
+     ]
+    },
+    {
+     "label": "Refers to what you listened to",
+     "any": [
+      "the talk",
+      "the episode",
+      "the speaker",
+      "i listened",
+      "i watched",
+      "according to"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I answer the actual question asked?",
+    "Would this sound rehearsed, or like thinking?",
+    "Did I develop each reason rather than listing them?"
+   ],
+   "model": "I don't think they'll disappear, though I'd expect them to change substantially.\n\nThe main reason is that most office roles aren't a single task. They're a bundle of judgement, negotiation and relationship management, and only some of that is automatable. The speaker in the episode I listened to made a similar point about accountancy: software has done the arithmetic for thirty years, and there are more accountants now than there were, because the job moved towards advice.\n\nSecondly, organisations adopt technology far more slowly than the technology arrives.\n\nThat said, I'd accept that roles which genuinely are one repetitive task are at real risk, and the transition could be painful even if the total number of jobs holds up. So my position would be significant disruption, but not disappearance."
+  },
+  "ielts-reading": {
+   "renderer": "listening",
+   "kind": "listen",
+   "title": "IELTS Reading: read, then summarise",
+   "brief": "IELTS SKILL. Academic Reading gives you three passages and 40 questions in 60 minutes, so reading quickly and accurately for the main idea matters more than understanding every word.",
+   "taskLabel": "Read first",
+   "task": "Find one article of about 800 to 1,200 words on a work, technology or environment topic. Give yourself 10 minutes maximum. Skim for the structure first, then read for detail.",
+   "resources": [
+    {
+     "label": "BBC Learning English — News Review and features",
+     "url": "https://www.bbc.co.uk/learningenglish"
+    },
+    {
+     "label": "TED Talks — transcripts are under each talk",
+     "url": "https://www.ted.com/talks"
+    }
+   ],
+   "note": "Time yourself. Ten minutes, then stop reading and write from memory and notes.",
+   "thenLabel": "Then write",
+   "then": "Write a summary of the article in your own words. Then write one statement about it that would be TRUE, one that would be FALSE, and one that would be NOT GIVEN, and label each one.",
+   "include": [
+    "A summary of the main argument",
+    "One TRUE statement, labelled",
+    "One FALSE statement, labelled",
+    "One NOT GIVEN statement, labelled"
+   ],
+   "minWords": 100,
+   "checks": [
+    {
+     "label": "Includes all three labels",
+     "all": [
+      "true",
+      "false",
+      "not given"
+     ]
+    },
+    {
+     "label": "Summarises rather than copying phrases",
+     "any": [
+      "the article",
+      "the writer",
+      "the author",
+      "the text",
+      "the piece"
+     ]
+    },
+    {
+     "label": "Uses paraphrasing language",
+     "any": [
+      "argues",
+      "suggests",
+      "claims",
+      "points out",
+      "states",
+      "concludes"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is my NOT GIVEN genuinely absent from the text, rather than contradicted?",
+    "Did I paraphrase, or did I copy phrases?",
+    "Could I point to the exact line that proves my TRUE statement?"
+   ],
+   "model": "The article argues that hybrid working has become permanent for most large employers, but that it has created a new problem: junior staff learn far less informally than they used to. The writer suggests that mandating office days has not solved this, because attendance is not the same as contact.\n\nTRUE — Most large employers have kept some form of hybrid working. (The text states a majority retained it.)\n\nFALSE — The writer argues that office mandates have solved the training problem. (The text says the opposite: mandates have not solved it.)\n\nNOT GIVEN — Hybrid working has reduced company profits. (The text discusses training and attendance, but never mentions profit, so this cannot be judged either way.)"
+  }
+ }
+}

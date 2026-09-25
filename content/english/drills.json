@@ -1,0 +1,2286 @@
+{
+ "drills": {
+  "professional-requests": [
+   {
+    "renderer": "choice",
+    "prompt": "Which word makes this a polite request?",
+    "message": "_____ you send me the file, please?",
+    "instruction": "Pick the word that fits the gap.",
+    "options": [
+     {
+      "text": "Could",
+      "score": 100,
+      "feedback": "Correct. 'Could you…?' is a polite request."
+     },
+     {
+      "text": "Do",
+      "score": 25,
+      "feedback": "'Do you send…?' asks about a habit. It is not a request."
+     },
+     {
+      "text": "Are",
+      "score": 0,
+      "feedback": "'Are you send' is not correct English."
+     },
+     {
+      "text": "Must",
+      "score": 0,
+      "feedback": "'Must you…?' is not a request. It sounds strange."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "Please send me the report {} Friday.",
+    "accept": [
+     "by",
+     "before",
+     "on"
+    ],
+    "size": 6,
+    "instruction": "One word. It means 'on Friday or before'.",
+    "hint": "Not 'until'.",
+    "feedback": "'By Friday' sets a time limit. 'Until' is for things that continue, like 'I work until six'."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this email to a colleague.",
+    "text": "Hi Tomás,\n\n{} you please send me the invoice numbers {} Thursday?\n\nThanks {} advance,\nAna",
+    "gaps": [
+     {
+      "accept": [
+       "Could",
+       "Can",
+       "Would"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "by",
+       "before",
+       "on"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "in"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Three gaps. One word in each.",
+    "feedback": "'Could you please…?' is polite. 'By Thursday' gives a time limit. 'Thanks in advance' is a fixed phrase."
+   }
+  ],
+  "deadline-language": [
+   {
+    "renderer": "choice",
+    "prompt": "Which word is correct here?",
+    "message": "The office is open _____ 6 p.m.",
+    "instruction": "Pick the word that fits the gap.",
+    "options": [
+     {
+      "text": "until",
+      "score": 100,
+      "feedback": "Correct. The office is open all the time up to 6."
+     },
+     {
+      "text": "by",
+      "score": 25,
+      "feedback": "'By' is for deadlines: 'send it by 6'."
+     },
+     {
+      "text": "on",
+      "score": 0,
+      "feedback": "Use 'on' with days: 'on Monday'."
+     },
+     {
+      "text": "since",
+      "score": 25,
+      "feedback": "'Since' is for the past: 'since Monday'."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "Our meeting is {} Monday at 10 a.m.",
+    "accept": [
+     "on"
+    ],
+    "size": 5,
+    "instruction": "One short word for days.",
+    "hint": "'___ Monday', '___ Friday'.",
+    "feedback": "Use 'on' with days and dates, and 'at' with clock times."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this message about a late report.",
+    "text": "The supplier sent the data late, so the report is two days {}.\n\nI can send it {} Tuesday. I'm at my desk {} six today if you want to talk.",
+    "gaps": [
+     {
+      "accept": [
+       "late",
+       "behind"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "by",
+       "on",
+       "before"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "until",
+       "till"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Watch the last two gaps.",
+    "feedback": "'By Tuesday' is a time limit. 'Until six' is a length of time. Don't mix them up."
+   }
+  ],
+  "apologising": [
+   {
+    "renderer": "choice",
+    "prompt": "Which is correct?",
+    "message": "I _____ for the delay.",
+    "instruction": "Pick the form that fits.",
+    "options": [
+     {
+      "text": "apologise",
+      "score": 100,
+      "feedback": "Correct. 'I apologise for…'"
+     },
+     {
+      "text": "apologise you",
+      "score": 0,
+      "feedback": "Don't put a person after 'apologise'."
+     },
+     {
+      "text": "am apologise",
+      "score": 0,
+      "feedback": "'Apologise' is a verb. Don't use 'am'."
+     },
+     {
+      "text": "sorry",
+      "score": 25,
+      "feedback": "Say 'I'm sorry for…', with 'am'."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "Sorry, that was my {}. I'll send the right file now.",
+    "accept": [
+     "mistake",
+     "error",
+     "fault"
+    ],
+    "size": 8,
+    "instruction": "One word: something done wrong.",
+    "hint": "It starts with 'm'.",
+    "feedback": "'That was my mistake' is short, honest and professional."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this apology to a client.",
+    "text": "I'm sorry {} the delay, and thank you for waiting.\n\nThe report is {} now. It won't {} again.",
+    "gaps": [
+     {
+      "accept": [
+       "for",
+       "about"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "attached",
+       "ready",
+       "here"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "happen"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Say sorry once, give the solution, and say it won't happen again. Not 'it won't repeat'."
+   }
+  ],
+  "polite-disagreement": [
+   {
+    "renderer": "choice",
+    "prompt": "Which opening disagrees without attacking?",
+    "message": "_____, but I'm concerned the timeline is too tight.",
+    "instruction": "Pick the phrase that fits.",
+    "options": [
+     {
+      "text": "I see your point",
+      "score": 100,
+      "feedback": "Correct. Acknowledge first, then pivot. This is the standard professional shape."
+     },
+     {
+      "text": "That's wrong",
+      "score": 0,
+      "feedback": "Rejects the whole idea and targets the person. It will be heard as an attack."
+     },
+     {
+      "text": "I am not agree",
+      "score": 25,
+      "feedback": "The intent is fine, but 'agree' is a verb: 'I don't agree'."
+     },
+     {
+      "text": "Obviously not",
+      "score": 0,
+      "feedback": "'Obviously' implies your colleague missed something they should have seen."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "I agree in principle. My one {} is the cost of the migration.",
+    "accept": [
+     "concern",
+     "worry",
+     "reservation",
+     "hesitation"
+    ],
+    "size": 11,
+    "instruction": "One word: the thing that worries you.",
+    "hint": "A noun you can explain with a reason.",
+    "feedback": "Naming one specific 'concern' is far harder to dismiss than rejecting the whole proposal."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this meeting contribution.",
+    "text": "That's a fair {}. What worries me is the six approvers: I think we'd slow ourselves {}.\n\nCould we try it {} two and review in a month?",
+    "gaps": [
+     {
+      "accept": [
+       "point",
+       "comment"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "down"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "with"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Acknowledge, name one concern, offer a smaller version. A proposal to 'try it with two and review' is very hard for anyone to refuse."
+   }
+  ],
+  "giving-opinions": [
+   {
+    "renderer": "choice",
+    "prompt": "Which phrase gives your own opinion?",
+    "message": "_____, we should wait for the new numbers.",
+    "instruction": "Pick the phrase that fits.",
+    "options": [
+     {
+      "text": "In my opinion",
+      "score": 100,
+      "feedback": "Correct. Use it for your own opinion."
+     },
+     {
+      "text": "According to me",
+      "score": 25,
+      "feedback": "'According to' is for other people: 'according to the report'."
+     },
+     {
+      "text": "On my opinion",
+      "score": 25,
+      "feedback": "Use 'in', not 'on': 'in my opinion'."
+     },
+     {
+      "text": "For me opinion",
+      "score": 0,
+      "feedback": "Not correct English."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "I think we should wait, {} the numbers aren't ready yet.",
+    "accept": [
+     "because",
+     "as",
+     "since"
+    ],
+    "size": 9,
+    "instruction": "One word before your reason.",
+    "hint": "It starts with 'b'.",
+    "feedback": "Give a reason with 'because'. It makes your opinion stronger."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete what you say in a meeting.",
+    "text": "I {} with Yusuf. The price is the main problem.\n\nIn my {}, we should ask for a better price, {} the budget is small.",
+    "gaps": [
+     {
+      "accept": [
+       "agree"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "opinion",
+       "view"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "because",
+       "as",
+       "since"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "'I agree with…', 'In my opinion…', then a reason with 'because'."
+   }
+  ],
+  "suggestions-advice": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence is correct?",
+    "instruction": "Only one of these is correct.",
+    "options": [
+     {
+      "text": "How about meeting on Friday?",
+      "score": 100,
+      "feedback": "Correct. 'How about' + -ing."
+     },
+     {
+      "text": "How about meet on Friday?",
+      "score": 25,
+      "feedback": "After 'How about', use -ing: 'meeting'."
+     },
+     {
+      "text": "Let's to meet on Friday.",
+      "score": 0,
+      "feedback": "No 'to' after 'Let's'."
+     },
+     {
+      "text": "Shall we meeting on Friday?",
+      "score": 0,
+      "feedback": "After 'Shall we', use the base verb: 'meet'."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "You {} talk to your manager about it. I think she can help.",
+    "accept": [
+     "should",
+     "could"
+    ],
+    "size": 7,
+    "instruction": "One word for friendly advice.",
+    "hint": "It starts with 'sh'.",
+    "feedback": "'You should…' + base verb is simple, friendly advice."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete these suggestions in a meeting.",
+    "text": "{} we take a short break? We're all tired.\n\nAfter the break, {} about looking at the budget? We {} ask Elena to join us.",
+    "gaps": [
+     {
+      "accept": [
+       "Shall"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "how",
+       "what"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "could",
+       "can",
+       "should"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "'Shall we…?', 'How about…?' and 'We could…' are friendly ways to suggest an idea to a group."
+   }
+  ],
+  "clarifying": [
+   {
+    "renderer": "choice",
+    "prompt": "Which question is correct?",
+    "instruction": "Watch the word order after 'Could you tell me'.",
+    "options": [
+     {
+      "text": "Could you tell me where the meeting is?",
+      "score": 100,
+      "feedback": "Correct. After 'Could you tell me', use normal word order."
+     },
+     {
+      "text": "Could you tell me where is the meeting?",
+      "score": 25,
+      "feedback": "A common mistake. Say 'where the meeting is'."
+     },
+     {
+      "text": "Could you tell me where the meeting?",
+      "score": 0,
+      "feedback": "The verb 'is' is missing."
+     },
+     {
+      "text": "Could you to tell me where the meeting is?",
+      "score": 0,
+      "feedback": "No 'to' after 'could'."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "Sorry, could you {} that, please? I didn't hear.",
+    "accept": [
+     "repeat",
+     "say"
+    ],
+    "size": 7,
+    "instruction": "One word: say it again.",
+    "hint": "It starts with 'r'.",
+    "feedback": "'Could you repeat that, please?' is the polite way to ask. Much better than 'What?'"
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this message to your manager.",
+    "text": "Hi Elena,\n\nQuick question about the report. Do you {} this Friday or next Friday?\n\nCould you explain the new process {} me tomorrow? Thanks {} your help!",
+    "gaps": [
+     {
+      "accept": [
+       "mean"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "to"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "for"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Give two choices to make your question easy to answer. And remember: explain something TO someone."
+   }
+  ],
+  "email-structure": [
+   {
+    "renderer": "choice",
+    "prompt": "Which closing is correct for a formal email?",
+    "instruction": "You are writing to a client for the first time.",
+    "options": [
+     {
+      "text": "Kind regards,",
+      "score": 100,
+      "feedback": "Correct. A safe, polite closing for work emails."
+     },
+     {
+      "text": "See you,",
+      "score": 25,
+      "feedback": "Too informal. Use it with friends."
+     },
+     {
+      "text": "Bye,",
+      "score": 25,
+      "feedback": "Not used to close work emails."
+     },
+     {
+      "text": "Love,",
+      "score": 0,
+      "feedback": "Only for family and friends. Never at work."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "Please find {} the new price list.",
+    "accept": [
+     "attached",
+     "enclosed"
+    ],
+    "size": 10,
+    "instruction": "One word: the file is with the email.",
+    "hint": "It starts with 'att…'.",
+    "feedback": "'Please find attached…' is a fixed phrase in work emails."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete the start and end of this email.",
+    "text": "{} Marcus,\n\nI'm writing {} ask about the Q3 report. Could you reply by Thursday?\n\nKind {},\nAna",
+    "gaps": [
+     {
+      "accept": [
+       "Hi",
+       "Hello",
+       "Dear"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "to"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "regards"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "'Writing to ask' says why you are writing. 'Kind regards' is a safe closing."
+   }
+  ],
+  "future-forms": [
+   {
+    "renderer": "choice",
+    "prompt": "Which form fits a meeting in your calendar?",
+    "message": "I _____ the client on Tuesday.",
+    "instruction": "Pick the form that fits.",
+    "options": [
+     {
+      "text": "'m meeting",
+      "score": 100,
+      "feedback": "Correct. Use the present continuous for meetings in your calendar."
+     },
+     {
+      "text": "meet",
+      "score": 50,
+      "feedback": "The present simple is for habits, not for one meeting."
+     },
+     {
+      "text": "am going to meeting",
+      "score": 0,
+      "feedback": "After 'going to', use the base verb: 'going to meet'."
+     },
+     {
+      "text": "will to meet",
+      "score": 0,
+      "feedback": "No 'to' after 'will'."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "The printer is broken? OK, I{} call IT now.",
+    "accept": [
+     "'ll",
+     "ll",
+     "will"
+    ],
+    "size": 6,
+    "instruction": "You are deciding now, as you speak.",
+    "hint": "Two letters after the apostrophe.",
+    "feedback": "Use 'I'll' for a decision you make at the moment of speaking."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this message to your team.",
+    "text": "We're {} to open a new office in May. That's the plan.\n\nI'm {} the new manager on Tuesday at ten. Don't worry, I{} send you my notes after the meeting.",
+    "gaps": [
+     {
+      "accept": [
+       "going"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "meeting",
+       "seeing"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "'ll",
+       "ll",
+       "will"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Three gaps, three kinds of future.",
+    "feedback": "Plan: 'going to'. Calendar: present continuous. Decision or promise now: 'will'."
+   }
+  ],
+  "present-perfect": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence is correct?",
+    "instruction": "Watch the time expression.",
+    "options": [
+     {
+      "text": "I've spoken to the vendor and they haven't confirmed a date yet.",
+      "score": 100,
+      "feedback": "Correct. Present perfect for a completed action with present relevance, plus 'yet' in the negative."
+     },
+     {
+      "text": "I have spoken to the vendor yesterday.",
+      "score": 25,
+      "feedback": "'Yesterday' is a finished time, so it forces the past simple: 'I spoke'."
+     },
+     {
+      "text": "I am speaking to the vendor since Monday.",
+      "score": 0,
+      "feedback": "An action continuing from a past point needs 'I've been speaking'."
+     },
+     {
+      "text": "I speak to the vendor and they don't confirm yet.",
+      "score": 25,
+      "feedback": "Present simple describes a routine, not an update."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "We've been running the pilot {} six weeks now.",
+    "accept": [
+     "for"
+    ],
+    "size": 5,
+    "instruction": "One short word before a length of time.",
+    "hint": "Not 'since' — that goes with a point in time.",
+    "feedback": "'For' covers a length of time; 'since' marks the point it started. 'For six weeks' or 'since March'."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this status update.",
+    "text": "I've {} spoken to the supplier and I've updated the timeline.\n\nWe still haven't {} back about the pricing, and I've been chasing it {} Monday.",
+    "gaps": [
+     {
+      "accept": [
+       "already"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "heard"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "since"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "This is what a good written status update looks like: 'I've done', 'we haven't yet', 'I've been chasing since'. Present perfect does most of the work."
+   }
+  ],
+  "modals": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence is correct?",
+    "instruction": "Watch what follows the modal.",
+    "options": [
+     {
+      "text": "We have to submit it before the 30th.",
+      "score": 100,
+      "feedback": "Correct. 'Have to' expresses an external obligation and takes 'to'."
+     },
+     {
+      "text": "We must to submit it before the 30th.",
+      "score": 0,
+      "feedback": "Modals take the bare infinitive. 'Must' is never followed by 'to'."
+     },
+     {
+      "text": "We should to submit it before the 30th.",
+      "score": 0,
+      "feedback": "Same error. It is 'should submit'."
+     },
+     {
+      "text": "We must submitting it before the 30th.",
+      "score": 0,
+      "feedback": "Modals are followed by the base verb, not the -ing form."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing modal.",
+    "sentence": "You {} join the call if you're busy — I can send you notes instead.",
+    "accept": [
+     "don't have to",
+     "needn't",
+     "do not have to"
+    ],
+    "size": 14,
+    "instruction": "It is not necessary, but it is not forbidden either.",
+    "hint": "Three words, starting with 'don't'.",
+    "feedback": "'Don't have to' means it isn't necessary. 'Mustn't' would mean it is forbidden, which is a very different message to send a colleague."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this advice to a colleague.",
+    "text": "You {} copy Legal on that one, just to be safe.\n\nThe client {} ask for a discount, so it's worth having a number ready. We {} to have an answer before Friday either way.",
+    "gaps": [
+     {
+      "accept": [
+       "should",
+       "ought to"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "might",
+       "may",
+       "could"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "need",
+       "have"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Three gaps: advice, possibility, obligation.",
+    "feedback": "'Should' advises, 'might' leaves it open, 'need to' states the requirement. Avoid 'must' from a peer, because it reads as an order."
+   }
+  ],
+  "professional-tone": [
+   {
+    "renderer": "choice",
+    "prompt": "Which version would you be happy to receive?",
+    "instruction": "Same information, different tone.",
+    "options": [
+     {
+      "text": "Hi Tomás — any chance of this today? Happy to help if it's tight.",
+      "score": 100,
+      "feedback": "Correct. Warm, named, and it offers something. Tone in English comes from structure, not vocabulary."
+     },
+     {
+      "text": "Need this today.",
+      "score": 25,
+      "feedback": "No name, no greeting, bare imperative. It reads as anger even when none is meant."
+     },
+     {
+      "text": "I require this document immediately.",
+      "score": 25,
+      "feedback": "Grammatical but cold and inflated. 'Require' and 'immediately' escalate for no reason."
+     },
+     {
+      "text": "Could I have this today?",
+      "score": 75,
+      "feedback": "Perfectly fine and neutral. It just does not build any goodwill."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "I {} this isn't the answer you were hoping for, but the launch date can't move.",
+    "accept": [
+     "appreciate",
+     "realise",
+     "realize",
+     "understand",
+     "know",
+     "recognise",
+     "recognize"
+    ],
+    "size": 11,
+    "instruction": "One word that acknowledges the other person's position before a firm message.",
+    "hint": "It starts with 'app…'.",
+    "feedback": "Acknowledging the other person's position first lets you be firm on the substance without sounding curt."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this reply to a client who is partly wrong.",
+    "text": "I {} the frustration: a week's delay is significant.\n\nLooking at the timeline, the design was approved on the 14th rather than the 7th, which {} production back. I should have {} that risk at the time, so here is how we recover the week.",
+    "gaps": [
+     {
+      "accept": [
+       "understand",
+       "appreciate"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "pushed",
+       "moved",
+       "set"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "flagged",
+       "raised",
+       "highlighted",
+       "mentioned"
+      ],
+      "size": 11
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Acknowledge the feeling, state the fact neutrally, take a share of responsibility, then move to the fix. Firm on the facts, generous on the relationship."
+   }
+  ],
+  "softening": [
+   {
+    "renderer": "choice",
+    "prompt": "Which version raises the problem without accusing anyone?",
+    "instruction": "You think there is an error in a colleague's table.",
+    "options": [
+     {
+      "text": "I think there may be an error in the second column.",
+      "score": 100,
+      "feedback": "Correct. One hedge, one specific location. Easy to act on and impossible to take personally."
+     },
+     {
+      "text": "This is wrong.",
+      "score": 25,
+      "feedback": "Too hard, and it does not say where."
+     },
+     {
+      "text": "I'm really sorry, this is probably just me, but maybe possibly there might be a small issue?",
+      "score": 25,
+      "feedback": "Stacked hedges destroy your authority. One is enough."
+     },
+     {
+      "text": "You've made a mistake in the second column.",
+      "score": 50,
+      "feedback": "Specific, but 'you've made' puts it on the person rather than the document."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "It {} that the figures in the appendix don't match the summary.",
+    "accept": [
+     "seems",
+     "appears",
+     "looks"
+    ],
+    "size": 8,
+    "instruction": "One word that softens a flat statement.",
+    "hint": "'It ___ that…'",
+    "feedback": "'It seems that' reports the same fact while leaving room for the other person to explain. That room is what keeps the conversation open."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this comment on a shared document.",
+    "text": "I might be {} something here, but is the Q3 total meant to include returns?\n\nIf so, the appendix figure looks {} low. Correct me {} I'm wrong.",
+    "gaps": [
+     {
+      "accept": [
+       "missing"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "slightly",
+       "a bit",
+       "a little"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "if"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "'I might be missing something' and 'correct me if I'm wrong' let you challenge a senior colleague's work without any risk to the relationship."
+   }
+  ],
+  "saying-no": [
+   {
+    "renderer": "choice",
+    "prompt": "Which refusal keeps the relationship intact?",
+    "instruction": "You genuinely cannot do it by Friday.",
+    "options": [
+     {
+      "text": "I can't do Friday. I can have it to you Tuesday morning.",
+      "score": 100,
+      "feedback": "Correct. A real no with a real alternative date is heard as commitment, not refusal."
+     },
+     {
+      "text": "I'll try.",
+      "score": 25,
+      "feedback": "Heard as yes, delivered as no. The worst of both."
+     },
+     {
+      "text": "Sorry, I'm completely swamped.",
+      "score": 50,
+      "feedback": "Honest but closed. Nothing is offered, so the other person is left stuck."
+     },
+     {
+      "text": "No.",
+      "score": 25,
+      "feedback": "Clear, and expensive. A professional no carries a reason, an alternative or a condition."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "I'm at {} this week, but I could pick it up on Monday.",
+    "accept": [
+     "capacity",
+     "full capacity"
+    ],
+    "size": 10,
+    "instruction": "One word for 'as much work as I can take'.",
+    "hint": "Starts with c.",
+    "feedback": "'At capacity' is the neutral professional phrase. 'Swamped' and 'snowed under' are fine with colleagues but too informal for clients."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this conditional no.",
+    "text": "I can take that {} if the Ortiz report moves to next week.\n\n{} would you prefer? I'd rather do one of them properly {} both of them badly.",
+    "gaps": [
+     {
+      "accept": [
+       "on"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "Which"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "than"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Handing the choice back ('which would you prefer?') turns a refusal into a prioritisation question, which is much easier for a manager to answer."
+   }
+  ],
+  "meeting-language": [
+   {
+    "renderer": "choice",
+    "prompt": "How do you get into the conversation?",
+    "instruction": "A colleague is about to move on from a decision that affects your team.",
+    "options": [
+     {
+      "text": "Sorry to jump in — before we move on, can I add one thing on the resourcing?",
+      "score": 100,
+      "feedback": "Correct. Brief apology, reason for the timing, named topic. Almost impossible to refuse."
+     },
+     {
+      "text": "Hang on, that's not right.",
+      "score": 25,
+      "feedback": "Interrupts and contradicts at once. The room hears the conflict, not the point."
+     },
+     {
+      "text": "Sorry, can I say something?",
+      "score": 75,
+      "feedback": "Polite and it works, but without naming the topic the chair may park you until later."
+     },
+     {
+      "text": "Excuse me! Excuse me!",
+      "score": 0,
+      "feedback": "Escalates the volume rather than the argument."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "Just to {} on what Marta said, the support cost is the part we keep underestimating.",
+    "accept": [
+     "build",
+     "pick up",
+     "follow up"
+    ],
+    "size": 7,
+    "instruction": "One word: you are adding to someone else's point.",
+    "hint": "'To ___ on what someone said.'",
+    "feedback": "'To build on what X said' credits your colleague and adds your point at the same time. It is the most useful phrase in any meeting."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Close the meeting properly.",
+    "text": "So, to {}: we're going with supplier B, and the launch moves to 14 April.\n\nThe {} points are: Ana sends the draft Tuesday, I review by Thursday. Still {}: who presents to the board.",
+    "gaps": [
+     {
+      "accept": [
+       "summarise",
+       "summarize",
+       "sum up",
+       "recap"
+      ],
+      "size": 10
+     },
+     {
+      "accept": [
+       "action"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "open",
+       "outstanding",
+       "unresolved"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Decisions, owners, dates, and an explicit list of what is still open. This is the summary that prevents the next meeting."
+   }
+  ],
+  "explaining-problems": [
+   {
+    "renderer": "choice",
+    "prompt": "Which opening keeps the room with you?",
+    "instruction": "A delivery is two days late and testing has to move.",
+    "options": [
+     {
+      "text": "The delivery is two days late, which pushes testing to Thursday.",
+      "score": 100,
+      "feedback": "Correct. Fact first, then impact. That is the order senior people listen in."
+     },
+     {
+      "text": "It wasn't my fault — the supplier was late and nobody told me.",
+      "score": 25,
+      "feedback": "Leading with the excuse loses the room before you reach the facts."
+     },
+     {
+      "text": "There's been a bit of an issue.",
+      "score": 25,
+      "feedback": "Too vague to act on, and it delays the information people need."
+     },
+     {
+      "text": "We have a catastrophe on our hands.",
+      "score": 0,
+      "feedback": "Overstating it costs you credibility for the next real emergency."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "The root {} was a configuration change that skipped the staging check.",
+    "accept": [
+     "cause"
+    ],
+    "size": 7,
+    "instruction": "One word: the real reason underneath.",
+    "hint": "'Root ___'.",
+    "feedback": "'Root cause' is the standard term for the underlying reason, as opposed to the symptom everybody noticed first."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this explanation to a project sponsor.",
+    "text": "The integration testing found a data problem we hadn't seen. {} a result, the launch moves to mid-April.\n\nI've already got two people on the clean-up. What I {} from you is a decision on whether we hold the date and cut scope.",
+    "gaps": [
+     {
+      "accept": [
+       "As"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "need",
+       "want",
+       "require"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Two gaps.",
+    "feedback": "What happened, the impact, what you are already doing, what you need. Leading with the fix sounds evasive; leading with the ask sounds unprepared."
+   }
+  ],
+  "feedback": [
+   {
+    "renderer": "choice",
+    "prompt": "Which feedback can the person actually act on?",
+    "instruction": "A junior colleague's draft has several factual errors.",
+    "options": [
+     {
+      "text": "Three things need correcting: the Q2 figure on page 2, the client name in the header, and the date in the summary.",
+      "score": 100,
+      "feedback": "Correct. Specific, countable and fixable. They know exactly what to do."
+     },
+     {
+      "text": "This needs more care — there are quite a few mistakes.",
+      "score": 50,
+      "feedback": "They know you are unhappy but not what to fix. Vague criticism creates anxiety, not improvement."
+     },
+     {
+      "text": "Did you proofread this at all?",
+      "score": 0,
+      "feedback": "A rhetorical question used as criticism. It attacks the person and invites a defensive answer."
+     },
+     {
+      "text": "Don't worry, I'll fix them myself.",
+      "score": 25,
+      "feedback": "Kind today, but they will make the same errors next time and you have taken on their work."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "One thing that would make this {} is a clearer link between the data and the recommendation.",
+    "accept": [
+     "stronger",
+     "better",
+     "clearer",
+     "more convincing",
+     "more persuasive"
+    ],
+    "size": 12,
+    "instruction": "One word (or two). You are framing criticism as improvement.",
+    "hint": "'What would make this ___ is…'",
+    "feedback": "Framing a criticism as 'what would make this stronger' keeps the focus on the work and signals that the draft is worth improving."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this response to criticism.",
+    "text": "Thank you — that's {}. Could you {} me an example of where it fell down?\n\nLet me take that {} and come back to you tomorrow.",
+    "gaps": [
+     {
+      "accept": [
+       "useful",
+       "helpful",
+       "fair"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "give",
+       "show"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "away"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "'Let me take that away and come back to you' buys you a day and costs you nothing. Never defend in the same minute you receive criticism."
+   }
+  ],
+  "negotiating": [
+   {
+    "renderer": "choice",
+    "prompt": "Which answer opens a negotiation rather than closing one?",
+    "instruction": "They ask about your salary expectations.",
+    "options": [
+     {
+      "text": "Based on the scope of the role, I'm looking in the 52–58k range. Is that in line with your budget?",
+      "score": 100,
+      "feedback": "Correct. A range, a justification, and a question back. The question is what makes it a negotiation."
+     },
+     {
+      "text": "I'm flexible — what does the role pay?",
+      "score": 50,
+      "feedback": "Common advice, but announcing flexibility first tends to anchor you at the bottom of their range."
+     },
+     {
+      "text": "I need at least 60k because of my mortgage.",
+      "score": 0,
+      "feedback": "Your costs are not a negotiating argument. The figure has to be justified by the role."
+     },
+     {
+      "text": "Whatever you think is fair.",
+      "score": 25,
+      "feedback": "Hands the entire decision to the other side."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "That works for me, {} that the review happens at six months.",
+    "accept": [
+     "provided",
+     "providing",
+     "assuming"
+    ],
+    "size": 9,
+    "instruction": "One word introducing your condition.",
+    "hint": "'___ that…'",
+    "feedback": "'Provided that' attaches a condition without sounding like a demand. It is the safest way to say yes-but."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this counter-offer.",
+    "text": "Thank you — I'm genuinely interested in the role.\n\n48 is a little below where I'd hoped. Is there any {} to reach 54? If the budget is {}, could we look at a review at six months {}?",
+    "gaps": [
+     {
+      "accept": [
+       "flexibility",
+       "room",
+       "movement"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "fixed",
+       "set"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "instead"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Enthusiasm, a clear counter, then a second currency if cash is fixed. This is how most successful salary conversations actually run."
+   }
+  ],
+  "comparing": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence gives the room the clearest sense of scale?",
+    "instruction": "All four compare the same two options.",
+    "options": [
+     {
+      "text": "Option B is significantly cheaper, but marginally slower.",
+      "score": 100,
+      "feedback": "Correct. The two adverbs size both sides of the trade-off, which is what turns a comparison into a recommendation."
+     },
+     {
+      "text": "Option B is cheaper but slower.",
+      "score": 50,
+      "feedback": "Accurate, but the reader can't tell whether the saving is worth the delay."
+     },
+     {
+      "text": "Option B is considerably the cheapest.",
+      "score": 25,
+      "feedback": "'Considerably' modifies comparatives. With a superlative, use 'by far the cheapest'."
+     },
+     {
+      "text": "Option B is a bit more cheaper.",
+      "score": 0,
+      "feedback": "Double comparative. 'Cheaper' already contains 'more'."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "Of the three suppliers, Vidal is {} far the most reliable, though it is marginally slower.",
+    "accept": [
+     "by"
+    ],
+    "size": 5,
+    "instruction": "One word that intensifies a superlative.",
+    "hint": "'___ far the most…'",
+    "feedback": "'By far' intensifies a superlative; 'significantly' and 'considerably' intensify a comparative. Mixing them is a common B2 slip."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this recommendation.",
+    "text": "Vidal is about 15% {} expensive, but their lead time is half of Orsan's: four weeks {} eight.\n\nGiven the launch date, I'd go {} Vidal.",
+    "gaps": [
+     {
+      "accept": [
+       "more"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "against",
+       "versus",
+       "to"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "with",
+       "for"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "'Four weeks against eight' is a compact way to quantify a trade-off. 'I'd go with X' is the natural way to commit to a recommendation."
+   }
+  ],
+  "conditionals": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence is correct?",
+    "instruction": "This is a real, available option.",
+    "options": [
+     {
+      "text": "If we start Monday, we'll finish by the 14th.",
+      "score": 100,
+      "feedback": "Correct. First conditional: present simple in the 'if' half, 'will' in the result."
+     },
+     {
+      "text": "If we will start Monday, we'll finish by the 14th.",
+      "score": 0,
+      "feedback": "Never 'will' in the 'if' clause. The single most common first-conditional error."
+     },
+     {
+      "text": "If we started Monday, we'll finish by the 14th.",
+      "score": 25,
+      "feedback": "Mixed forms. 'Started' needs 'would finish'."
+     },
+     {
+      "text": "If we start Monday, we finish by the 14th.",
+      "score": 50,
+      "feedback": "Possible for a timetable, but 'we'll finish' is the natural form for a prediction."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "If we {} more budget, we'd bring in a freelancer — but we don't.",
+    "accept": [
+     "had"
+    ],
+    "size": 6,
+    "instruction": "The budget does not exist, so this is hypothetical.",
+    "hint": "Second conditional: past form after 'if'.",
+    "feedback": "Second conditional: if + past simple, then would. Use it for things that are unlikely or untrue right now."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this negotiation.",
+    "text": "If we {} move the deadline by a week, we'd be able to include the client's new figures.\n\n{} we hear back today, we'll proceed as planned.",
+    "gaps": [
+     {
+      "accept": [
+       "could"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "If",
+       "Unless",
+       "Assuming"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Two gaps.",
+    "feedback": "'If we could…, we'd be able to…' is the safest negotiating sentence in English: it commits to nothing while showing exactly what would unlock."
+   }
+  ],
+  "tenses-at-work": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence is correct?",
+    "instruction": "The project finished last year.",
+    "options": [
+     {
+      "text": "We launched the website last year.",
+      "score": 100,
+      "feedback": "Correct. With 'last year', use the past simple."
+     },
+     {
+      "text": "We have launched the website last year.",
+      "score": 25,
+      "feedback": "Don't use 'have launched' with 'last year'."
+     },
+     {
+      "text": "We launch the website last year.",
+      "score": 25,
+      "feedback": "'Last year' is the past. Use 'launched'."
+     },
+     {
+      "text": "We are launching the website last year.",
+      "score": 0,
+      "feedback": "The present continuous is not for the past."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the verb in the correct form.",
+    "sentence": "At the moment, I'm {} on the sales report. (work)",
+    "accept": [
+     "working"
+    ],
+    "size": 9,
+    "instruction": "Present continuous: something happening now.",
+    "hint": "Add -ing.",
+    "feedback": "'At the moment' means now, so use am / is / are + -ing."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this update. Use the verbs: check, write, call.",
+    "text": "We usually {} the numbers on Fridays.\n\nRight now I'm {} the new plan, and yesterday I {} the client.",
+    "gaps": [
+     {
+      "accept": [
+       "check"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "writing"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "called"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Three gaps: a habit, now, and the past.",
+    "feedback": "Present simple for habits, present continuous for now, past simple for yesterday."
+   }
+  ],
+  "workplace-vocabulary": [
+   {
+    "renderer": "choice",
+    "prompt": "Which word is right here?",
+    "message": "My _____ asked me to help Ana this week.",
+    "instruction": "Careful with false friends.",
+    "options": [
+     {
+      "text": "manager",
+      "score": 100,
+      "feedback": "Correct. Your manager is the person who leads your work."
+     },
+     {
+      "text": "responsible",
+      "score": 0,
+      "feedback": "A false friend. In English, 'responsible' is not a job. Say 'manager'."
+     },
+     {
+      "text": "chief",
+      "score": 25,
+      "feedback": "Only in titles, like 'chief executive'. Say 'manager'."
+     },
+     {
+      "text": "patron",
+      "score": 0,
+      "feedback": "A false friend. In English, a 'patron' is a customer or a supporter."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "I work in the marketing {} on the second floor.",
+    "accept": [
+     "department",
+     "team",
+     "office"
+    ],
+    "size": 11,
+    "instruction": "One word: a part of a company.",
+    "hint": "It starts with 'd'.",
+    "feedback": "A department is a part of a company: Sales, Finance, Marketing, HR."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this travel email.",
+    "text": "Hi Ana,\n\nI'm on a business {} to Madrid next week. Could you {} a hotel for me?\n\nI'll keep the {} for my expenses.",
+    "gaps": [
+     {
+      "accept": [
+       "trip"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "book",
+       "reserve"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "receipt",
+       "receipts"
+      ],
+      "size": 9
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "'Business trip', 'book a hotel' and 'receipt' are in almost every travel email."
+   }
+  ],
+  "async-writing": [
+   {
+    "renderer": "choice",
+    "prompt": "Which message can be acted on without a reply?",
+    "instruction": "Your colleague is eight hours behind you.",
+    "options": [
+     {
+      "text": "Need a yes/no on the Vidal quote by end of your day — details in thread.",
+      "score": 100,
+      "feedback": "Correct. States the ask, the deadline in their time, and where the detail lives."
+     },
+     {
+      "text": "Hi! Are you around?",
+      "score": 0,
+      "feedback": "A greeting with no content. They reply 'yes?' and another full day is lost."
+     },
+     {
+      "text": "Can we talk about the quote when you're online?",
+      "score": 25,
+      "feedback": "Requires a meeting to schedule a meeting. Across eight hours that costs two days."
+     },
+     {
+      "text": "Quick question about the quote.",
+      "score": 25,
+      "feedback": "Announces a question without asking it."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "{}-up: the staging server will be down between two and four today.",
+    "accept": [
+     "Heads",
+     "Head"
+    ],
+    "size": 7,
+    "instruction": "One word. A standard way to flag something in chat.",
+    "hint": "'___-up:'",
+    "feedback": "'Heads-up' signals information the reader needs but does not have to act on. It saves people reading the whole message to find out if it concerns them."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Write a daily async update.",
+    "text": "Yesterday: finished the API integration.\nToday: starting the migration script.\n{} on: I need the staging credentials from Infra.\n\n@Marc could you drop those in? It {} me from about 11 my time.",
+    "gaps": [
+     {
+      "accept": [
+       "Blocked",
+       "Stuck"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "blocks",
+       "stops"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Two gaps.",
+    "feedback": "Yesterday, today, blocked on. Naming the blocker, tagging the person and giving a time in your own zone is what makes an async update useful."
+   }
+  ],
+  "describing-data": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence describes the chart rather than reading it aloud?",
+    "instruction": "Online sales went from 100k in January to 280k in June.",
+    "options": [
+     {
+      "text": "Online sales almost tripled over the six months, with the sharpest growth between March and April.",
+      "score": 100,
+      "feedback": "Correct. Direction, size as a proportion, and the standout feature. This is what scores in IELTS Task 1."
+     },
+     {
+      "text": "In January it was 100k, in February it went up, in March it went up again…",
+      "score": 25,
+      "feedback": "Reading the numbers aloud. The audience can already see them."
+     },
+     {
+      "text": "Online sales augmented of 180%.",
+      "score": 0,
+      "feedback": "'Augment' is a false friend, and it is 'increased BY', never 'of'."
+     },
+     {
+      "text": "The chart shows online sales from January to June.",
+      "score": 50,
+      "feedback": "True, but it says nothing about what the data does."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "Support tickets fell steadily, then {} sharply at 520 in September.",
+    "accept": [
+     "peaked"
+    ],
+    "size": 8,
+    "instruction": "One verb: reached the highest point.",
+    "hint": "Think of a mountain.",
+    "feedback": "'Peak' marks the highest point; 'level off' or 'remain stable' marks no change; 'bottom out' marks the lowest."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this description of a trend.",
+    "text": "Overall, tickets fell {} across the year, from 400 to 120, a drop {} about 70%.\n\nThe one exception was September, when volumes rose {} 520 during the migration.",
+    "gaps": [
+     {
+      "accept": [
+       "steadily",
+       "gradually",
+       "consistently"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "of"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "to"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Three gaps. Watch the two prepositions.",
+    "feedback": "A drop OF a size, but rose TO a final figure. 'Increased by 20%' and 'increased to 20,000' mean completely different things."
+   }
+  ],
+  "interview-language": [
+   {
+    "renderer": "choice",
+    "prompt": "Which answer would an interviewer remember?",
+    "instruction": "'Tell me about a project you're proud of.'",
+    "options": [
+     {
+      "text": "I rebuilt the checkout. It was losing a third of users at payment, and the version we shipped brought drop-off down to 12%.",
+      "score": 100,
+      "feedback": "Correct. Problem, action, number. This is the shape interviewers are trained to listen for."
+     },
+     {
+      "text": "I'm proud of the checkout rebuild. It was a really interesting project and I learnt a lot.",
+      "score": 25,
+      "feedback": "Says how you felt, not what you did or what changed."
+     },
+     {
+      "text": "I'm hardworking, motivated and a good team player.",
+      "score": 25,
+      "feedback": "Adjectives with no evidence. Every candidate says exactly this."
+     },
+     {
+      "text": "We were rebuilding the checkout and it was going quite well.",
+      "score": 25,
+      "feedback": "Past continuous makes a finished achievement sound unfinished."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "I have six years' experience {} a project manager.",
+    "accept": [
+     "as"
+    ],
+    "size": 5,
+    "instruction": "One short word before a job title.",
+    "hint": "Not 'like'.",
+    "feedback": "'As' states the role you actually held. 'Like a project manager' would mean you merely resembled one."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this answer about a weakness.",
+    "text": "I used to take on too much myself rather than {}.\n\nI've been working on it: last quarter I {} over two projects entirely, and both shipped without me.",
+    "gaps": [
+     {
+      "accept": [
+       "delegating"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "handed",
+       "passed"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Two gaps.",
+    "feedback": "A real weakness, the corrective action, and evidence it worked. That last part is what turns the question into an advantage."
+   }
+  ],
+  "linking-expressions": [
+   {
+    "renderer": "choice",
+    "prompt": "Which linker fits?",
+    "message": "Development is on schedule. _____, the content team is two weeks behind.",
+    "instruction": "The second fact contradicts the first.",
+    "options": [
+     {
+      "text": "However",
+      "score": 100,
+      "feedback": "Correct. It signals contrast and can open a new sentence, followed by a comma."
+     },
+     {
+      "text": "Moreover",
+      "score": 25,
+      "feedback": "'Moreover' adds a similar idea. Here the second fact opposes the first."
+     },
+     {
+      "text": "Therefore",
+      "score": 25,
+      "feedback": "'Therefore' introduces a result, and being behind is not a result of being on schedule."
+     },
+     {
+      "text": "Although",
+      "score": 50,
+      "feedback": "'Although' joins two clauses inside one sentence. It cannot open a separate sentence this way."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing linker.",
+    "sentence": "The content delay affects three deliverables. As a {}, we need a scope decision by Friday.",
+    "accept": [
+     "result",
+     "consequence"
+    ],
+    "size": 8,
+    "instruction": "One word. The decision follows from the delay.",
+    "hint": "'As a ___,'",
+    "feedback": "'As a result' and 'consequently' both introduce a consequence. 'However' or 'nevertheless' would reverse the logic."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this short argument.",
+    "text": "Public transport is cheaper and better for the city. {} the other hand, cars are more comfortable in winter.\n\n{} although both have a case, I'd invest in transport, {} instance by extending the night service.",
+    "gaps": [
+     {
+      "accept": [
+       "On"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "So",
+       "Overall"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "for"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "'On the other hand' and 'for instance' are fixed phrases. Three linkers in a paragraph is plenty; more and it reads like a grammar exercise."
+   }
+  ],
+  "passive-reported": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence belongs in a formal incident report?",
+    "instruction": "The report will be read by senior management.",
+    "options": [
+     {
+      "text": "A configuration change was deployed at 09:10 without the required staging check.",
+      "score": 100,
+      "feedback": "Correct. Passive, timestamped, factual. It records what happened without turning the report into an accusation."
+     },
+     {
+      "text": "Marcus deployed a config change and forgot the staging check.",
+      "score": 25,
+      "feedback": "Naming an individual invites blame rather than system improvement, and is usually against policy."
+     },
+     {
+      "text": "Unfortunately a mistake was made and the system went down.",
+      "score": 25,
+      "feedback": "The passive used to hide everything. No time, no cause, nothing anyone can act on."
+     },
+     {
+      "text": "Someone broke it.",
+      "score": 0,
+      "feedback": "Vague and accusatory at once."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing verb.",
+    "sentence": "She told me the deadline {} moved to the 14th.",
+    "accept": [
+     "had",
+     "had been",
+     "was"
+    ],
+    "size": 8,
+    "instruction": "Reported speech shifts the tense back.",
+    "hint": "'has moved' becomes…",
+    "feedback": "In reported speech the tense usually steps back one: 'has moved' becomes 'had moved'. Note 'told me', not 'said me'."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete these two lines from a report.",
+    "text": "Factual section: The invoice {} sent on 3 March and the error {} noticed the following week.\n\nRecommendation: We {} making the staging check mandatory by 30 April.",
+    "gaps": [
+     {
+      "accept": [
+       "was"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "was"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "recommend",
+       "suggest",
+       "propose"
+      ],
+      "size": 10
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Passive for the facts, where naming people would add nothing. Active for the recommendation, because a recommendation needs an owner."
+   }
+  ],
+  "report-writing": [
+   {
+    "renderer": "choice",
+    "prompt": "Which opening works for a busy reader?",
+    "instruction": "You are comparing two suppliers.",
+    "options": [
+     {
+      "text": "We recommend moving to Supplier B from the next contract period.",
+      "score": 100,
+      "feedback": "Correct. Reports state their conclusion first. They do not build suspense."
+     },
+     {
+      "text": "First we gathered data, then we analysed it, and therefore we recommend B.",
+      "score": 25,
+      "feedback": "The conclusion is buried at the end, where a busy reader will not reach it."
+     },
+     {
+      "text": "In this report I will talk about many things.",
+      "score": 0,
+      "feedback": "Says nothing, and delays the only sentence that matters."
+     },
+     {
+      "text": "There are advantages and disadvantages to both suppliers.",
+      "score": 25,
+      "feedback": "Accurate and useless. The reader wanted a recommendation."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "The main {} is that turnaround time has doubled since January.",
+    "accept": [
+     "finding"
+    ],
+    "size": 8,
+    "instruction": "One word: what you discovered.",
+    "hint": "'The main ___ is…'",
+    "feedback": "'Findings' are what you discovered; 'recommendations' are what you advise doing. Reports keep the two clearly apart."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this report opening.",
+    "text": "This report {} the two shortlisted suppliers on cost, lead time and reliability.\n\nSupplier B is 12% more expensive but delivers in half the time. The main {} is transition cost, which we {} at 8–10k in the first quarter.",
+    "gaps": [
+     {
+      "accept": [
+       "covers",
+       "compares",
+       "examines"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "risk"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "estimate",
+       "put"
+      ],
+      "size": 9
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Scope, evidence, risk. Naming the risk yourself is what stops someone else naming it for you in the meeting."
+   }
+  ],
+  "small-talk": [
+   {
+    "renderer": "choice",
+    "prompt": "Which question starts a good conversation?",
+    "instruction": "You meet a new colleague at the coffee machine.",
+    "options": [
+     {
+      "text": "Hi, I'm Ana. Which team are you in?",
+      "score": 100,
+      "feedback": "Friendly, and it's an easy, open question."
+     },
+     {
+      "text": "Nice weather.",
+      "score": 50,
+      "feedback": "Polite, but the answer is just 'yes'."
+     },
+     {
+      "text": "How do you do your work?",
+      "score": 25,
+      "feedback": "This sounds strange. Try 'What do you do?'"
+     },
+     {
+      "text": "Why are you here?",
+      "score": 0,
+      "feedback": "This can sound rude."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "Thanks {} your help yesterday. We finished on time.",
+    "accept": [
+     "for"
+    ],
+    "size": 5,
+    "instruction": "One short word.",
+    "hint": "'Thanks ___ …'",
+    "feedback": "Say 'Thanks for…' + the thing the person did."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this thank-you message.",
+    "text": "Hi Priya,\n\nThank you {} staying late yesterday. We finished the project {} time because of you.\n\nIt was great working {} you!",
+    "gaps": [
+     {
+      "accept": [
+       "for"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "on"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "with"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Say what the person did and why it helped. 'On time' means not late."
+   }
+  ],
+  "speaking-structure": [
+   {
+    "renderer": "choice",
+    "prompt": "Which answer sounds prepared rather than hesitant?",
+    "instruction": "You are asked to justify extending a deadline.",
+    "options": [
+     {
+      "text": "I'd extend it, for two reasons. First, the data isn't complete. Second, a rushed version costs more later.",
+      "score": 100,
+      "feedback": "Correct. Announcing the number of reasons forces structure and buys you thinking time."
+     },
+     {
+      "text": "Well, it's difficult, there are many things, it depends…",
+      "score": 25,
+      "feedback": "No structure, so it sounds like you have not thought about it."
+     },
+     {
+      "text": "Because we need more time.",
+      "score": 50,
+      "feedback": "A reason, but a circular one, and far too short for the question."
+     },
+     {
+      "text": "(long silence while you translate in your head)",
+      "score": 0,
+      "feedback": "Silence does not count as fluency. A filler phrase does."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "That's a good question — let me {} about that for a second.",
+    "accept": [
+     "think"
+    ],
+    "size": 6,
+    "instruction": "One word. You are buying time.",
+    "hint": "'Let me ___ about that.'",
+    "feedback": "Filler phrases buy thinking time and count towards fluency. Silence does not. Have two of them ready before any interview."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Structure a two-minute answer.",
+    "text": "My main {} is that we should phase the rollout.\n\nThere are two {} for this. The first is cost. The second is support capacity. {} example, last quarter we spent three weeks fixing a rushed launch.\n\nSo {}, I'd phase it.",
+    "gaps": [
+     {
+      "accept": [
+       "point",
+       "argument"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "reasons"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "For"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "overall",
+       "in short",
+       "to sum up"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Four gaps.",
+    "feedback": "Point, reasons, example, close. This plan lets you speak for two minutes without hesitating, whatever your grammar level."
+   }
+  ],
+  "ielts-reading": [
+   {
+    "renderer": "choice",
+    "prompt": "IELTS SKILL. The text says: 'A majority of firms have retained hybrid working.' Statement: 'Most firms abandoned hybrid working.'",
+    "instruction": "True, False or Not Given?",
+    "options": [
+     {
+      "text": "FALSE",
+      "score": 100,
+      "feedback": "Correct. The text directly contradicts the statement, so it is FALSE rather than NOT GIVEN."
+     },
+     {
+      "text": "TRUE",
+      "score": 0,
+      "feedback": "The text says the opposite."
+     },
+     {
+      "text": "NOT GIVEN",
+      "score": 25,
+      "feedback": "The information is present and it contradicts the statement. NOT GIVEN is only for information that is absent."
+     },
+     {
+      "text": "Impossible to say",
+      "score": 0,
+      "feedback": "Not one of the three IELTS options."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the answer.",
+    "sentence": "The text says there is 'limited evidence' about an effect. A statement claiming that effect is therefore {} GIVEN.",
+    "accept": [
+     "NOT",
+     "not"
+    ],
+    "size": 6,
+    "instruction": "One word.",
+    "hint": "Three letters.",
+    "feedback": "Absence of evidence is NOT GIVEN, never FALSE. FALSE requires the text to actively contradict the statement."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete these IELTS Reading facts.",
+    "text": "Academic Reading gives you three passages and {} questions in 60 minutes, so aim for about {} minutes per passage.\n\nThere is no negative marking, so never leave a question {}.",
+    "gaps": [
+     {
+      "accept": [
+       "40",
+       "forty"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "20",
+       "twenty"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "blank",
+       "empty",
+       "unanswered"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Three passages, 40 questions, 60 minutes, no extra transfer time. Watch qualifiers like 'all', 'only' and 'never', which turn true statements false."
+   }
+  ],
+  "ielts-speaking": [
+   {
+    "renderer": "choice",
+    "prompt": "IELTS SKILL. Which Part 3 answer would score well?",
+    "instruction": "'Will remote work become more common?'",
+    "options": [
+     {
+      "text": "I think so, mainly because companies have seen it works. That said, it depends on the sector — you can't run a hospital remotely.",
+      "score": 100,
+      "feedback": "Correct. Position, reason, concession, example. Part 3 rewards developed, non-memorised opinion."
+     },
+     {
+      "text": "Yes, remote work will be more common.",
+      "score": 25,
+      "feedback": "Underdeveloped. No reason, no example, no nuance."
+     },
+     {
+      "text": "It depends.",
+      "score": 0,
+      "feedback": "Takes no position and develops nothing."
+     },
+     {
+      "text": "(a memorised paragraph learnt from a website)",
+      "score": 25,
+      "feedback": "Current IELTS marking puts more weight on natural, non-memorised responses."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing number.",
+    "sentence": "In IELTS Speaking Part 2 you get one minute to prepare, then you speak for one to {} minutes.",
+    "accept": [
+     "two",
+     "2"
+    ],
+    "size": 5,
+    "instruction": "One word.",
+    "hint": "The long turn is short.",
+    "feedback": "Part 2 is the long turn: a topic card, one minute of preparation, then one to two minutes speaking. Write four words in that minute, not sentences."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this hedged Part 3 answer.",
+    "text": "I'd {} that it will change rather than disappear.\n\n{} said, I'd accept that repetitive roles are at real risk. So my position would be significant disruption, {} not disappearance.",
+    "gaps": [
+     {
+      "accept": [
+       "say",
+       "argue",
+       "expect"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "That"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "but"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "'I'd say', 'that said', 'I'd accept' are hedges, and they are what make an answer sound like thinking rather than reciting."
+   }
+  ]
+ }
+}

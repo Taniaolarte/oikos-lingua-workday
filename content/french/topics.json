@@ -1,0 +1,836 @@
+{
+ "topics": [
+  {
+   "id": "demandes-polies",
+   "label": "Les demandes polies",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "demandes-polies"
+  },
+  {
+   "id": "donner-son-opinion",
+   "label": "Donner son opinion",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "donner-son-opinion"
+  },
+  {
+   "id": "etre-daccord",
+   "label": "Être d'accord, appuyer une idée",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "donner-son-opinion"
+  },
+  {
+   "id": "exprimer-desaccord",
+   "label": "Exprimer un désaccord poliment",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "desaccord-poli"
+  },
+  {
+   "id": "argumenter",
+   "label": "Argumenter",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "argumenter"
+  },
+  {
+   "id": "proposer",
+   "label": "Proposer une solution",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "proposer-conseiller"
+  },
+  {
+   "id": "conseiller",
+   "label": "Donner des conseils",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "proposer-conseiller"
+  },
+  {
+   "id": "s-excuser",
+   "label": "S'excuser au travail",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "s-excuser"
+  },
+  {
+   "id": "demander-precision",
+   "label": "Demander une précision",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "demander-precision"
+  },
+  {
+   "id": "negocier",
+   "label": "Négocier",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "negocier"
+  },
+  {
+   "id": "expliquer-probleme",
+   "label": "Expliquer un problème",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "expliquer-probleme"
+  },
+  {
+   "id": "donner-retour",
+   "label": "Donner un retour (feedback)",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "feedback-fr"
+  },
+  {
+   "id": "recevoir-critique",
+   "label": "Recevoir une critique",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "feedback-fr"
+  },
+  {
+   "id": "prendre-la-parole",
+   "label": "Prendre la parole en réunion",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "langue-reunion"
+  },
+  {
+   "id": "resumer",
+   "label": "Résumer",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "langue-reunion"
+  },
+  {
+   "id": "relancer",
+   "label": "Relancer sans agacer",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "ecrire-courriel"
+  },
+  {
+   "id": "dire-non",
+   "label": "Dire non professionnellement",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "dire-non"
+  },
+  {
+   "id": "remercier",
+   "label": "Remercier et valoriser",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "echanges-informels"
+  },
+  {
+   "id": "se-presenter",
+   "label": "Se présenter professionnellement",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "se-presenter"
+  },
+  {
+   "id": "conversation-informelle",
+   "label": "La conversation informelle",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "echanges-informels"
+  },
+  {
+   "id": "registre-formel",
+   "label": "Registre formel et informel",
+   "skill": "professional-tone",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "registre"
+  },
+  {
+   "id": "vouvoiement",
+   "label": "Tutoiement et vouvoiement",
+   "skill": "professional-tone",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "registre"
+  },
+  {
+   "id": "attenuer",
+   "label": "Atténuer, nuancer",
+   "skill": "professional-tone",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "attenuer"
+  },
+  {
+   "id": "politesse-ecrite",
+   "label": "Les formules de politesse écrites",
+   "skill": "professional-tone",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "ecrire-courriel"
+  },
+  {
+   "id": "structure-courriel",
+   "label": "Structurer un courriel",
+   "skill": "writing",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "ecrire-courriel"
+  },
+  {
+   "id": "objet-courriel",
+   "label": "Rédiger un objet de message",
+   "skill": "writing",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "ecrire-courriel"
+  },
+  {
+   "id": "message-court",
+   "label": "Écrire un message court",
+   "skill": "writing",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "ecriture-asynchrone"
+  },
+  {
+   "id": "point-asynchrone",
+   "label": "Le point d'équipe asynchrone",
+   "skill": "writing",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "ecriture-asynchrone"
+  },
+  {
+   "id": "compte-rendu",
+   "label": "Rédiger un compte rendu",
+   "skill": "writing",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "compte-rendu"
+  },
+  {
+   "id": "connecteurs",
+   "label": "Les connecteurs logiques",
+   "skill": "writing",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "connecteurs"
+  },
+  {
+   "id": "mini-redaction",
+   "label": "La mini-rédaction",
+   "skill": "writing",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "connecteurs"
+  },
+  {
+   "id": "futur-proche",
+   "label": "Le futur proche",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "futur-proche"
+  },
+  {
+   "id": "futur-proche-negation",
+   "label": "Le futur proche à la forme négative",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "futur-proche"
+  },
+  {
+   "id": "futur-proche-question",
+   "label": "Le futur proche à la forme interrogative",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "futur-proche"
+  },
+  {
+   "id": "futur-simple",
+   "label": "Le futur simple",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "futur-simple"
+  },
+  {
+   "id": "futur-irreguliers",
+   "label": "Les verbes irréguliers au futur",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "futur-simple"
+  },
+  {
+   "id": "futur-proche-vs-simple",
+   "label": "Futur proche ou futur simple ?",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "futur-proche-vs-simple"
+  },
+  {
+   "id": "intentions-projets",
+   "label": "Exprimer des intentions et des projets",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "futur-proche-vs-simple"
+  },
+  {
+   "id": "predictions",
+   "label": "Faire des prédictions",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "futur-proche-vs-simple"
+  },
+  {
+   "id": "promesses",
+   "label": "Faire une promesse",
+   "skill": "grammar",
+   "levels": [
+    "B1"
+   ],
+   "guide": "futur-proche-vs-simple"
+  },
+  {
+   "id": "articles-partitifs",
+   "label": "Les articles partitifs : du, de la, des",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "articles-partitifs"
+  },
+  {
+   "id": "partitif-negation",
+   "label": "Le partitif à la forme négative",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "articles-partitifs"
+  },
+  {
+   "id": "expressions-quantite",
+   "label": "Les expressions de quantité",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "articles-partitifs"
+  },
+  {
+   "id": "de-adjectif-pluriel",
+   "label": "« de » devant l'adjectif pluriel",
+   "skill": "grammar",
+   "levels": [
+    "B2"
+   ],
+   "guide": "articles-partitifs"
+  },
+  {
+   "id": "present-indicatif",
+   "label": "Le présent de l'indicatif au travail",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "temps-au-travail"
+  },
+  {
+   "id": "passe-compose",
+   "label": "Le passé composé",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "temps-au-travail"
+  },
+  {
+   "id": "imparfait",
+   "label": "L'imparfait",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "temps-au-travail"
+  },
+  {
+   "id": "passe-compose-imparfait",
+   "label": "Passé composé ou imparfait ?",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "temps-au-travail"
+  },
+  {
+   "id": "conditionnel-politesse",
+   "label": "Le conditionnel de politesse",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "conditionnel"
+  },
+  {
+   "id": "conditionnel-hypothese",
+   "label": "L'hypothèse avec si",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "conditionnel"
+  },
+  {
+   "id": "subjonctif-base",
+   "label": "Le subjonctif de base",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "subjonctif"
+  },
+  {
+   "id": "imperatif",
+   "label": "L'impératif et les consignes",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "subjonctif"
+  },
+  {
+   "id": "pronoms-complement",
+   "label": "Les pronoms compléments",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "pronoms"
+  },
+  {
+   "id": "negation",
+   "label": "La négation",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "pronoms"
+  },
+  {
+   "id": "questions-fr",
+   "label": "Poser une question",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "demander-precision"
+  },
+  {
+   "id": "comparaison",
+   "label": "Comparer deux options",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "comparer"
+  },
+  {
+   "id": "vocabulaire-travail",
+   "label": "Le vocabulaire du travail",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "vocabulaire-travail"
+  },
+  {
+   "id": "vocabulaire-echeances",
+   "label": "Le vocabulaire des échéances",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "vocabulaire-echeances"
+  },
+  {
+   "id": "vocabulaire-reunion",
+   "label": "Le vocabulaire de la réunion",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "langue-reunion"
+  },
+  {
+   "id": "vocabulaire-projet",
+   "label": "Le vocabulaire du projet",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "vocabulaire-travail"
+  },
+  {
+   "id": "vocabulaire-carriere",
+   "label": "Le vocabulaire de la carrière",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "entretien-fr"
+  },
+  {
+   "id": "qualites-defauts",
+   "label": "Qualités et défauts professionnels",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "entretien-fr"
+  },
+  {
+   "id": "vocabulaire-salaire",
+   "label": "Salaire et conditions",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "negocier"
+  },
+  {
+   "id": "vocabulaire-client",
+   "label": "Le vocabulaire du service client",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "s-excuser"
+  },
+  {
+   "id": "vocabulaire-teletravail",
+   "label": "Le vocabulaire du télétravail",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "ecriture-asynchrone"
+  },
+  {
+   "id": "vocabulaire-technologie",
+   "label": "La technologie au travail",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "vocabulaire-travail"
+  },
+  {
+   "id": "vocabulaire-environnement",
+   "label": "L'environnement et les gestes écologiques",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "vocabulaire-travail"
+  },
+  {
+   "id": "vocabulaire-bien-etre",
+   "label": "La santé et le bien-être au travail",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "vocabulaire-travail"
+  },
+  {
+   "id": "vocabulaire-deplacement",
+   "label": "Le vocabulaire du déplacement pro",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "vocabulaire-travail"
+  },
+  {
+   "id": "faux-amis",
+   "label": "Les faux amis",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "vocabulaire-travail"
+  },
+  {
+   "id": "lecture-detail",
+   "label": "Lire pour trouver un détail",
+   "skill": "reading",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "strategies-lecture"
+  },
+  {
+   "id": "lecture-inference",
+   "label": "Lire entre les lignes",
+   "skill": "reading",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "strategies-lecture"
+  },
+  {
+   "id": "comprehension-ecrite",
+   "label": "La compréhension écrite B2",
+   "skill": "reading",
+   "levels": [
+    "B2"
+   ],
+   "guide": "strategies-lecture"
+  },
+  {
+   "id": "reperage-information",
+   "label": "Repérer une information précise",
+   "skill": "comprehension",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "strategies-lecture"
+  },
+  {
+   "id": "comprendre-ton",
+   "label": "Comprendre le ton d'un message",
+   "skill": "comprehension",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "registre"
+  },
+  {
+   "id": "production-orale",
+   "label": "La production orale",
+   "skill": "speaking",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "structurer-oral"
+  },
+  {
+   "id": "expose-court",
+   "label": "L'exposé court (2-3 min)",
+   "skill": "speaking",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "structurer-oral"
+  },
+  {
+   "id": "raconter-experience",
+   "label": "Raconter une expérience",
+   "skill": "speaking",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "raconter"
+  },
+  {
+   "id": "decrire",
+   "label": "Décrire une situation",
+   "skill": "speaking",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "raconter"
+  },
+  {
+   "id": "reagir-spontane",
+   "label": "Réagir sans préparation",
+   "skill": "speaking",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "structurer-oral"
+  },
+  {
+   "id": "prononciation",
+   "label": "Prononciation et rythme",
+   "skill": "speaking",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "prononciation"
+  },
+  {
+   "id": "debat",
+   "label": "Le débat et la discussion",
+   "skill": "speaking",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "argumenter"
+  }
+ ]
+}

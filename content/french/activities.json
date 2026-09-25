@@ -1,0 +1,3624 @@
+{
+ "activities": [
+  {
+   "id": "fr-manager-update-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "technology",
+    "management"
+   ],
+   "category": "inbox",
+   "scenario": "manager-update-request",
+   "topic": "demandes-polies",
+   "guide": "demandes-polies",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Votre responsable, Élodie, vous écrit :",
+    "message": "Pouvez-vous m'envoyer le dossier Vidal avant 15 h ?",
+    "prompt": "Quelle réponse est la plus appropriée ?",
+    "options": [
+     {
+      "text": "Oui, bien sûr. Je vous envoie le dossier avant 15 h.",
+      "score": 100,
+      "feedback": "Poli et clair. Vous répétez l'heure : Élodie sait quand elle reçoit le dossier."
+     },
+     {
+      "text": "Ok.",
+      "score": 25,
+      "feedback": "Trop court et trop familier pour une responsable."
+     },
+     {
+      "text": "Je vous envoie le dossier peut-être demain.",
+      "score": 25,
+      "feedback": "« Peut-être » n'est pas une réponse claire. Et Élodie veut le dossier avant 15 h."
+     },
+     {
+      "text": "Oui, je vous envoie le dossier jusqu'à 15 h.",
+      "score": 50,
+      "feedback": "Presque ! Pour une limite, on dit « avant 15 h ». « Jusqu'à » est pour une durée."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Maintenant, c'est vous qui demandez. Vous écrivez à Thomas, de la comptabilité.",
+    "message": "Vous avez besoin des factures de mars aujourd'hui.",
+    "prompt": "Quelle demande est la meilleure ?",
+    "options": [
+     {
+      "text": "Bonjour Thomas, pourriez-vous m'envoyer les factures de mars avant 16 h ? Merci beaucoup !",
+      "score": 100,
+      "feedback": "Poli, clair, avec une heure. Thomas sait quoi faire et quand."
+     },
+     {
+      "text": "Thomas, envoyez-moi les factures de mars.",
+      "score": 25,
+      "feedback": "C'est un ordre. Avec un collègue d'un autre service, posez une question polie."
+     },
+     {
+      "text": "Bonjour Thomas, je veux les factures de mars.",
+      "score": 25,
+      "feedback": "« Je veux » est trop direct. Dites « je voudrais » ou « pourriez-vous »."
+     },
+     {
+      "text": "Bonjour Thomas, pourriez-vous m'envoyer les factures de mars un jour ? Merci !",
+      "score": 50,
+      "feedback": "Poli, mais « un jour » n'est pas une date. Vous en avez besoin aujourd'hui."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-futur-proche-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "marketing",
+    "technology",
+    "business",
+    "education"
+   ],
+   "category": "team-chat",
+   "scenario": "async-status",
+   "topic": "futur-proche",
+   "guide": "futur-proche",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "Vous annoncez à l'équipe ce que vous avez décidé de faire cet après-midi.",
+    "message": "Nous ______ contacter le client cet après-midi.",
+    "prompt": "Quelle forme complète correctement la phrase ?",
+    "options": [
+     {
+      "text": "allons",
+      "score": 100,
+      "feedback": "Correct. « Nous allons » + infinitif : une décision déjà prise, dans un futur proche."
+     },
+     {
+      "text": "avons",
+      "score": 0,
+      "feedback": "Le futur proche se forme avec ALLER, pas avec AVOIR."
+     },
+     {
+      "text": "vont",
+      "score": 25,
+      "feedback": "« Vont » va avec ils/elles. Avec « nous », c'est « allons »."
+     },
+     {
+      "text": "allez",
+      "score": 25,
+      "feedback": "« Allez » va avec vous. Avec « nous », c'est « allons »."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence, à la forme négative.",
+    "message": "Je ______ le devis aujourd'hui, il manque encore deux prix.",
+    "prompt": "Quelle forme est correcte ?",
+    "options": [
+     {
+      "text": "ne vais pas envoyer",
+      "score": 100,
+      "feedback": "Correct. Au futur proche, « ne … pas » encadre uniquement le verbe ALLER, et l'infinitif suit."
+     },
+     {
+      "text": "vais ne pas envoyer",
+      "score": 0,
+      "feedback": "La négation ne se place jamais après « vais ». Elle encadre ALLER : « je ne vais pas envoyer »."
+     },
+     {
+      "text": "ne vais pas envoyé",
+      "score": 25,
+      "feedback": "Après « aller », on met l'infinitif (envoyer), jamais le participe passé (envoyé)."
+     },
+     {
+      "text": "ne va pas envoyer",
+      "score": 25,
+      "feedback": "« Va » va avec il/elle/on. Avec « je », c'est « vais »."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-futur-choix-01",
+   "level": "B1",
+   "contexts": [
+    "business",
+    "management",
+    "marketing",
+    "technology",
+    "education"
+   ],
+   "category": "meeting-room",
+   "scenario": "project-planning",
+   "topic": "futur-proche-vs-simple",
+   "guide": "futur-proche-vs-simple",
+   "interaction": "categorise",
+   "before": {
+    "brief": "Réunion de planification. Classez chaque phrase selon le temps qui convient.",
+    "prompt": "Placez chaque situation dans le bon groupe.",
+    "bins": [
+     "Futur proche",
+     "Futur simple"
+    ],
+    "items": [
+     {
+      "text": "On a réservé la salle : on va commencer à 9 h.",
+      "bin": "Futur proche"
+     },
+     {
+      "text": "Attention, le fichier va se fermer sans sauvegarder !",
+      "bin": "Futur proche"
+     },
+     {
+      "text": "C'est décidé : nous allons recruter un développeur.",
+      "bin": "Futur proche"
+     },
+     {
+      "text": "Dans dix ans, la plupart des réunions seront virtuelles.",
+      "bin": "Futur simple"
+     },
+     {
+      "text": "Un jour, je dirigerai ma propre équipe.",
+      "bin": "Futur simple"
+     },
+     {
+      "text": "Je vous promets que je relirai le contrat.",
+      "bin": "Futur simple"
+     }
+    ],
+    "feedback": "Futur proche : décision prise, action imminente, danger visible. Futur simple : projection lointaine, prédiction, promesse. Test rapide : si « c'est déjà décidé » fonctionne, c'est le futur proche ; si « un jour » fonctionne, c'est le futur simple."
+   },
+   "after": {
+    "brief": "Même compétence : classez ces phrases professionnelles.",
+    "prompt": "Placez chaque phrase dans le bon groupe.",
+    "bins": [
+     "Futur proche",
+     "Futur simple"
+    ],
+    "items": [
+     {
+      "text": "Je vais préparer la présentation ce soir.",
+      "bin": "Futur proche"
+     },
+     {
+      "text": "Dépêchez-vous, la visio va commencer.",
+      "bin": "Futur proche"
+     },
+     {
+      "text": "Nous allons signer le contrat demain matin.",
+      "bin": "Futur proche"
+     },
+     {
+      "text": "L'entreprise ouvrira un bureau à Madrid en 2030.",
+      "bin": "Futur simple"
+     },
+     {
+      "text": "Je pense que le marché se stabilisera l'an prochain.",
+      "bin": "Futur simple"
+     },
+     {
+      "text": "Nous terminerons le projet la semaine prochaine.",
+      "bin": "Futur simple"
+     }
+    ],
+    "feedback": "Remarquez « nous terminerons la semaine prochaine » : c'est proche dans le temps, mais présenté comme une prévision, pas comme une décision qu'on vient de prendre. Le choix dépend du sens, pas seulement de la distance."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-futur-correction-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "business",
+    "technology",
+    "education",
+    "management"
+   ],
+   "category": "inbox",
+   "scenario": "project-update",
+   "topic": "futur-simple",
+   "guide": "futur-simple",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "Vous écrivez un engagement à un client. Une seule phrase est correcte.",
+    "prompt": "Laquelle ?",
+    "options": [
+     {
+      "text": "Je vous enverrai le rapport définitif avant vendredi.",
+      "score": 100,
+      "feedback": "Correct. « Envoyer » → « j'enverrai » : radical irrégulier en -err-, terminaison -ai du futur simple."
+     },
+     {
+      "text": "Je vous enverrais le rapport définitif avant vendredi.",
+      "score": 25,
+      "feedback": "« Enverrais » est le conditionnel. Pour un engagement ferme, il faut le futur : « enverrai »."
+     },
+     {
+      "text": "Je vous envoierai le rapport définitif avant vendredi.",
+      "score": 25,
+      "feedback": "Erreur de radical. « Envoyer » fait « j'enverrai », pas « j'envoierai »."
+     },
+     {
+      "text": "Je vous enverrai le rapport définitif jusqu'à vendredi.",
+      "score": 50,
+      "feedback": "Le verbe est correct, mais « jusqu'à » exprime une durée. Pour une échéance : « avant vendredi » ou « d'ici vendredi »."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence, avec des verbes irréguliers fréquents au travail.",
+    "prompt": "Quelle phrase est correcte ?",
+    "options": [
+     {
+      "text": "Nous ferons le point lundi et vous aurez les chiffres mardi.",
+      "score": 100,
+      "feedback": "Correct. Faire → fer- ; avoir → aur-. Deux des radicaux irréguliers les plus fréquents."
+     },
+     {
+      "text": "Nous ferions le point lundi et vous auriez les chiffres mardi.",
+      "score": 25,
+      "feedback": "Ce sont des conditionnels. Ils expriment une hypothèse, pas un engagement."
+     },
+     {
+      "text": "Nous faisons le point lundi et vous avez les chiffres mardi.",
+      "score": 50,
+      "feedback": "Le présent est possible à l'oral pour un futur programmé, mais dans un écrit professionnel le futur est plus clair."
+     },
+     {
+      "text": "Nous ferrons le point lundi et vous averons les chiffres mardi.",
+      "score": 0,
+      "feedback": "Deux radicaux inventés. C'est « ferons » (un seul r) et « aurez »."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-partitifs-01",
+   "level": "B2",
+   "contexts": [
+    "general-office",
+    "business",
+    "management",
+    "education",
+    "hospitality"
+   ],
+   "category": "report",
+   "scenario": "written-report",
+   "topic": "articles-partitifs",
+   "guide": "articles-partitifs",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "Vous rédigez pour la direction le bilan d'un projet pilote.",
+    "message": "Ce n'est pas ______ temps perdu : en trois mois, nous n'avons reçu que ______ retours positifs.",
+    "prompt": "Quelle paire complète correctement la phrase ?",
+    "options": [
+     {
+      "text": "du … des",
+      "score": 100,
+      "feedback": "Correct. Après « ce n'est pas », l'article reste complet : on nie une identité, pas une quantité. Et « ne … que » exprime une restriction, pas une négation : « des » reste intact."
+     },
+     {
+      "text": "de … de",
+      "score": 25,
+      "feedback": "Le réflexe « négation → de » est ici un piège : ni « ce n'est pas » ni « ne … que » ne le déclenchent."
+     },
+     {
+      "text": "de … des",
+      "score": 50,
+      "feedback": "La seconde est juste. Mais après « être » à la forme négative, le partitif reste complet : « ce n'est pas du temps perdu »."
+     },
+     {
+      "text": "du … de",
+      "score": 50,
+      "feedback": "La première est juste. Mais « ne … que » signifie « seulement » ; ce n'est pas une négation : « nous n'avons reçu que des retours positifs »."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence, cette fois avec des expressions de quantité — et leurs exceptions.",
+    "message": "La plupart ______ clients ont renouvelé leur contrat et bien ______ prospects nous ont contactés ; en revanche, nous manquons encore ______ données fiables.",
+    "prompt": "Quel trio est correct ?",
+    "options": [
+     {
+      "text": "des … des … de",
+      "score": 100,
+      "feedback": "Correct. « La plupart » et « bien » (au sens de « beaucoup ») sont les deux exceptions : ils sont suivis de « des ». « Manquer de » se construit avec « de » seul."
+     },
+     {
+      "text": "de … de … de",
+      "score": 25,
+      "feedback": "Vous appliquez la règle des expressions de quantité partout, mais « la plupart des » et « bien des » en sont précisément les exceptions."
+     },
+     {
+      "text": "des … de … des",
+      "score": 25,
+      "feedback": "« Bien des » garde l'article complet, et « manquer de » n'en prend pas : « nous manquons de données »."
+     },
+     {
+      "text": "des … des … des",
+      "score": 50,
+      "feedback": "Les deux premières sont justes. Mais « manquer de » est suivi de « de » seul : « nous manquons de données fiables »."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-partitifs-02",
+   "level": "B2",
+   "contexts": [
+    "general-office",
+    "education",
+    "business",
+    "hospitality",
+    "healthcare"
+   ],
+   "category": "report",
+   "scenario": "written-report",
+   "topic": "de-adjectif-pluriel",
+   "guide": "articles-partitifs",
+   "interaction": "multiple-choice",
+   "before": {
+    "brief": "Un point de grammaire B2 : l'adjectif placé avant le nom pluriel.",
+    "message": "Dans ce secteur, on trouve ______ petites entreprises très spécialisées.",
+    "prompt": "Quelle forme est correcte ?",
+    "options": [
+     {
+      "text": "de",
+      "score": 100,
+      "feedback": "Correct. Devant un adjectif placé avant un nom au pluriel, « des » devient « de » : de petites entreprises, de grands projets."
+     },
+     {
+      "text": "des",
+      "score": 50,
+      "feedback": "Très fréquent à l'oral et souvent toléré, mais la norme écrite exige « de » devant l'adjectif antéposé au pluriel."
+     },
+     {
+      "text": "du",
+      "score": 0,
+      "feedback": "« Du » est un partitif masculin singulier. Impossible devant un pluriel."
+     },
+     {
+      "text": "de la",
+      "score": 0,
+      "feedback": "« De la » est féminin singulier. Impossible devant « entreprises » au pluriel."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même règle, autre phrase — attention au piège.",
+    "message": "Nous avons reçu ______ documents importants ce matin.",
+    "prompt": "Quelle forme est correcte ?",
+    "options": [
+     {
+      "text": "des",
+      "score": 100,
+      "feedback": "Correct. Ici l'adjectif « importants » est placé APRÈS le nom, donc « des » reste intact. La règle du « de » ne s'applique qu'à l'adjectif antéposé."
+     },
+     {
+      "text": "de",
+      "score": 25,
+      "feedback": "Piège classique. L'adjectif est après le nom, donc « des » ne change pas."
+     },
+     {
+      "text": "du",
+      "score": 0,
+      "feedback": "Forme du masculin singulier, incompatible avec un pluriel."
+     },
+     {
+      "text": "de l'",
+      "score": 0,
+      "feedback": "Forme du singulier devant voyelle, incompatible ici."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-echeance-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "marketing",
+    "technology",
+    "business",
+    "design-creative"
+   ],
+   "category": "inbox",
+   "scenario": "missed-deadline",
+   "topic": "vocabulaire-echeances",
+   "guide": "vocabulaire-echeances",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "Vous répondez à un client.",
+    "message": "Je vous envoie la nouvelle version ______ jeudi.",
+    "prompt": "Quel mot complète la phrase ?",
+    "options": [
+     {
+      "text": "avant",
+      "score": 100,
+      "feedback": "Correct. « Avant jeudi » = pas plus tard que jeudi."
+     },
+     {
+      "text": "jusqu'à",
+      "score": 25,
+      "feedback": "« Jusqu'à » est pour une durée. Ici, c'est une limite."
+     },
+     {
+      "text": "depuis",
+      "score": 0,
+      "feedback": "« Depuis » parle du passé. Ici, c'est le futur."
+     },
+     {
+      "text": "pendant",
+      "score": 0,
+      "feedback": "« Pendant » est pour une durée. Ici, c'est une limite."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Vous dites à un collègue quand vous êtes au bureau.",
+    "message": "Je suis au bureau ______ 18 h. Appelle-moi avant !",
+    "prompt": "Quel mot est correct ?",
+    "options": [
+     {
+      "text": "jusqu'à",
+      "score": 100,
+      "feedback": "Correct. Vous êtes au bureau tout l'après-midi, et à 18 h vous partez : c'est une durée."
+     },
+     {
+      "text": "avant",
+      "score": 25,
+      "feedback": "« Avant 18 h » change le sens. Ici, vous restez au bureau jusqu'à 18 h."
+     },
+     {
+      "text": "depuis",
+      "score": 25,
+      "feedback": "« Depuis 18 h » = vous êtes arrivé à 18 h. Ce n'est pas le sens."
+     },
+     {
+      "text": "pendant",
+      "score": 0,
+      "feedback": "« Pendant » va avec une durée (« pendant deux heures »), pas avec une heure."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-s-excuser-01",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "marketing",
+    "customer-service",
+    "hospitality",
+    "design-creative"
+   ],
+   "category": "inbox",
+   "scenario": "client-complaint-email",
+   "topic": "s-excuser",
+   "guide": "s-excuser",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Un client écrit, visiblement agacé :",
+    "message": "C'est la deuxième fois que les chiffres de votre rapport ne correspondent pas à ce que nous vous avons envoyé.",
+    "prompt": "Quelle réponse gère le mieux la situation ?",
+    "options": [
+     {
+      "text": "Je vous remercie de me l'avoir signalé — vous avez raison, et je suis désolé que cela se reproduise. J'ai identifié l'origine de l'écart entre les deux versions. Vous trouverez ci-joint le rapport corrigé, et j'ai ajouté une vérification avant tout envoi.",
+      "score": 100,
+      "feedback": "Reconnaît, corrige, et nomme le changement qui empêchera une troisième fois. C'est ce dernier point qui restaure la confiance."
+     },
+     {
+      "text": "Je suis vraiment désolé. Je vais regarder cela et je reviens vers vous.",
+      "score": 50,
+      "feedback": "Poli mais vide. À la deuxième réclamation, le client attend une correction, pas une promesse d'enquête."
+     },
+     {
+      "text": "Les données que nous avons reçues étaient dans un format différent, c'est de là que vient le problème.",
+      "score": 25,
+      "feedback": "Peut-être exact, mais cela revient à accuser le client au moment de sa deuxième réclamation."
+     },
+     {
+      "text": "Je m'excuse pour ce désagrément et je vous assure que cela ne se répétera plus.",
+      "score": 25,
+      "feedback": "« Je m'excuse » est mal vu à l'écrit professionnel (c'est l'autre qui excuse), et la promesse n'explique pas comment."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Autre client, autre réclamation — mais cette fois, le retard vient de leur propre validation tardive.",
+    "prompt": "Quelle réponse est la meilleure ?",
+    "options": [
+     {
+      "text": "Je comprends votre frustration : une semaine de retard, c'est considérable. En reprenant le calendrier, la maquette a été validée le 14 et non le 7, ce qui a décalé la production. J'aurais dû vous signaler ce risque à ce moment-là. Voici comment nous rattrapons la semaine : …",
+      "score": 100,
+      "feedback": "Reconnaît l'émotion, énonce le fait de façon neutre, assume sa propre part, puis passe à la solution. Professionnel sans être complaisant."
+     },
+     {
+      "text": "En fait, c'est vous qui avez validé la maquette avec une semaine de retard.",
+      "score": 25,
+      "feedback": "Factuellement juste, relationnellement coûteux. « En fait » et « c'est vous qui » transforment un fait en accusation."
+     },
+     {
+      "text": "Je suis vraiment désolé, c'est entièrement de notre faute et nous assumons totalement.",
+      "score": 25,
+      "feedback": "Assumer une faute qui n'est pas la vôtre crée un précédent, et masque la vraie cause, donc elle se reproduira."
+     },
+     {
+      "text": "Comme indiqué dans mon message précédent, la validation nous est parvenue le 14.",
+      "score": 50,
+      "feedback": "« Comme indiqué dans mon message précédent » est perçu comme passif-agressif en français professionnel. Le fait est juste, la formulation cherche le conflit."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-registre-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "business",
+    "customer-service",
+    "hospitality",
+    "education"
+   ],
+   "category": "inbox",
+   "scenario": "meeting-confirmation",
+   "topic": "vouvoiement",
+   "guide": "registre",
+   "interaction": "register-check",
+   "before": {
+    "brief": "Vous écrivez à Madame Lemoine, une cliente. Vous ne la connaissez pas.",
+    "prompt": "Quel message convient ?",
+    "options": [
+     {
+      "text": "Bonjour Madame Lemoine, je vous confirme notre rendez-vous de jeudi à 10 h. Cordialement, Camille Roux",
+      "score": 100,
+      "feedback": "Parfait : « vous » avec une cliente, du début à la fin."
+     },
+     {
+      "text": "Salut Madame Lemoine, je te confirme le rdv de jeudi ! À plus",
+      "score": 0,
+      "feedback": "Trop familier : « salut », « te », « rdv » et « à plus » ne vont pas avec une cliente."
+     },
+     {
+      "text": "Bonjour Madame Lemoine, je te confirme notre rendez-vous de jeudi à 10 h. Cordialement",
+      "score": 25,
+      "feedback": "Le début et la fin sont bons, mais « te » ne va pas. Avec une cliente, on dit « vous »."
+     },
+     {
+      "text": "Madame, je vous prie d'agréer mes salutations très distinguées. Rendez-vous jeudi.",
+      "score": 50,
+      "feedback": "Poli, mais trop solennel pour un simple rendez-vous."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Maintenant, vous écrivez à Marc, un collègue. Vous le voyez tous les jours.",
+    "prompt": "Quel message convient ?",
+    "options": [
+     {
+      "text": "Salut Marc, je te confirme jeudi 10 h. Merci !",
+      "score": 100,
+      "feedback": "Bien : « tu » avec un collègue proche. Simple et sympathique."
+     },
+     {
+      "text": "Bonjour Monsieur Bouvier, je me permets de vous confirmer notre rendez-vous.",
+      "score": 25,
+      "feedback": "Trop formel pour un collègue que vous voyez tous les jours."
+     },
+     {
+      "text": "jeudi 10h ok",
+      "score": 25,
+      "feedback": "Trop sec. Même avec un collègue, dites bonjour et merci."
+     },
+     {
+      "text": "Salut Marc, je vous confirme jeudi 10 h.",
+      "score": 50,
+      "feedback": "« Salut » et « vous » ne vont pas ensemble. Choisissez « tu » ou « vous »."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-desaccord-01",
+   "level": "B2",
+   "contexts": [
+    "general-office",
+    "marketing",
+    "technology",
+    "management",
+    "business"
+   ],
+   "category": "office-decision",
+   "scenario": "manager-disagrees",
+   "topic": "exprimer-desaccord",
+   "guide": "desaccord-poli",
+   "interaction": "best-response",
+   "before": {
+    "brief": "En réunion, votre responsable déclare :",
+    "message": "Je ne pense pas que le nouveau parcours d'inscription vaille le temps de développement. On le met de côté.",
+    "prompt": "Vous n'êtes pas d'accord et vous avez des données. Que dites-vous ?",
+    "options": [
+     {
+      "text": "Je comprends la question du temps de développement. Puis-je donner un chiffre ? Quarante pour cent des nouveaux utilisateurs abandonnent à l'étape trois. Si on corrige cela, le développement est amorti en deux mois environ.",
+      "score": 100,
+      "feedback": "Reconnaît l'objection, demande la parole, avance une donnée, et répond précisément à l'argument du coût."
+     },
+     {
+      "text": "Je ne suis pas d'accord. Les chiffres montrent clairement qu'il nous le faut.",
+      "score": 50,
+      "feedback": "Le fond est juste mais la forme est abrupte, et « clairement » sous-entend que votre responsable n'a pas vu l'évidence."
+     },
+     {
+      "text": "D'accord, si vous le pensez.",
+      "score": 25,
+      "feedback": "Vous détenez une information que votre responsable n'a pas. Se taire n'est pas de la diplomatie."
+     },
+     {
+      "text": "Je suis pas d'accord parce qu'on a les données sur les abandons.",
+      "score": 25,
+      "feedback": "Le fond est bon, mais à l'écrit comme en réunion formelle, gardez le « ne » : « je ne suis pas d'accord »."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Autre situation : un collègue expérimenté propose un processus qui, selon vous, créera du travail supplémentaire. Vous n'avez pas de données, seulement votre jugement.",
+    "prompt": "Quelle réponse est la plus forte ?",
+    "options": [
+     {
+      "text": "Cela peut fonctionner. Ma seule réserve porte sur la validation hebdomadaire : avec six validateurs, je crains qu'on ne se ralentisse nous-mêmes. Pourrait-on essayer avec deux et faire le point dans un mois ?",
+      "score": 100,
+      "feedback": "Cible une réserve précise plutôt que de rejeter l'ensemble, et propose un test. Très difficile à refuser."
+     },
+     {
+      "text": "Je pense que cela va créer beaucoup de travail en plus pour tout le monde.",
+      "score": 50,
+      "feedback": "Réserve légitime, mais générale et sans alternative, donc facile à écarter."
+     },
+     {
+      "text": "Je ne suis pas sûr que ce soit une bonne idée, mais vous savez mieux que moi.",
+      "score": 25,
+      "feedback": "Vous annulez votre propre argument. Si vous le pensez, assumez-le ; sinon, ne le dites pas."
+     },
+     {
+      "text": "C'est exactement ce qu'on a essayé en 2022 et ça a complètement échoué.",
+      "score": 50,
+      "feedback": "L'antécédent est pertinent, mais « exactement » et « complètement » exagèrent et mettent le collègue sur la défensive."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-opinion-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "marketing",
+    "business",
+    "education",
+    "management"
+   ],
+   "category": "meeting-room",
+   "scenario": "give-opinion",
+   "topic": "donner-son-opinion",
+   "guide": "donner-son-opinion",
+   "interaction": "best-response",
+   "before": {
+    "brief": "La salle discute depuis dix minutes. Votre directrice se tourne vers vous :",
+    "message": "Vous n'avez rien dit. Qu'en pensez-vous ?",
+    "prompt": "Quelle réponse fonctionne le mieux ?",
+    "options": [
+     {
+      "text": "À mon avis, il faut garder la phase de recherche, surtout parce que les deux derniers lancements ont échoué sur des hypothèses que nous n'avions jamais testées. Deux semaines de recherche coûtent moins cher qu'un relancement.",
+      "score": 100,
+      "feedback": "Opinion, raison, preuve. C'est exactement la structure B1 de l'opinion, utilisée à pleine puissance."
+     },
+     {
+      "text": "Je pense qu'il faut la garder.",
+      "score": 50,
+      "feedback": "Position claire, mais sans raison elle ne pèse rien dans une salle déjà divisée."
+     },
+     {
+      "text": "Je suis d'accord avec ce qui a été dit, il y a de bons arguments des deux côtés.",
+      "score": 25,
+      "feedback": "On vous a interrogé directement et vous n'avez pas répondu. En réunion, cela se lit comme une absence d'avis."
+     },
+     {
+      "text": "Selon moi, je pense que la phase de recherche est nécessaire.",
+      "score": 50,
+      "feedback": "Bonne intuition, mais « selon moi » et « je pense que » font le même travail. Choisissez-en un seul."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Autre réunion. On vous demande votre avis sur un sujet auquel vous n'avez sincèrement pas réfléchi.",
+    "prompt": "Quelle est la meilleure réponse ?",
+    "options": [
+     {
+      "text": "Je ne l'ai pas assez regardé pour avoir un avis ferme. Mon intuition, c'est que le risque porte sur le calendrier plutôt que sur le budget — mais laissez-moi examiner cela et je reviens vers vous aujourd'hui.",
+      "score": 100,
+      "feedback": "Honnête, apporte quand même une direction, et s'engage sur un délai. Bien plus solide qu'une réponse improvisée."
+     },
+     {
+      "text": "Je ne sais pas.",
+      "score": 25,
+      "feedback": "Honnête mais fermé. Cela n'apporte rien à la salle et ne dit pas quand vous saurez."
+     },
+     {
+      "text": "Je pense que c'est probablement bien.",
+      "score": 25,
+      "feedback": "Un avis que vous n'avez pas, sur une décision qui compte. C'est ainsi que passent les mauvaises décisions."
+     },
+     {
+      "text": "Pourriez-vous me donner un peu de contexte sur ce qui a été décidé ? Je pourrai alors vous donner un vrai avis.",
+      "score": 75,
+      "feedback": "Raisonnable et cela vous donne du temps, mais cela fait porter l'effort à la salle plutôt qu'à vous."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-conditionnel-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "design-creative",
+    "technology",
+    "education",
+    "business"
+   ],
+   "category": "office-decision",
+   "scenario": "ask-more-time",
+   "topic": "conditionnel-hypothese",
+   "guide": "conditionnel",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "Vous négociez un délai supplémentaire. Une seule phrase est correcte.",
+    "prompt": "Laquelle ?",
+    "options": [
+     {
+      "text": "Si nous avions une semaine de plus, nous pourrions intégrer les nouveaux chiffres.",
+      "score": 100,
+      "feedback": "Correct. Si + imparfait → conditionnel présent. C'est l'hypothèse standard du français."
+     },
+     {
+      "text": "Si nous aurions une semaine de plus, nous pourrions intégrer les nouveaux chiffres.",
+      "score": 0,
+      "feedback": "Jamais de conditionnel après « si ». C'est l'erreur la plus fréquente en français à ce niveau."
+     },
+     {
+      "text": "Si nous avions une semaine de plus, nous pouvons intégrer les nouveaux chiffres.",
+      "score": 25,
+      "feedback": "L'imparfait après « si » doit être suivi du conditionnel, pas du présent."
+     },
+     {
+      "text": "Si nous aurons une semaine de plus, nous pourrons intégrer les nouveaux chiffres.",
+      "score": 50,
+      "feedback": "Jamais de futur après « si ». Pour une hypothèse réelle, ce serait : « Si nous avons une semaine de plus, nous pourrons… »"
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence, mais cette fois l'hypothèse est réelle et réalisable.",
+    "prompt": "Quelle phrase est correcte ?",
+    "options": [
+     {
+      "text": "Si le client valide demain, nous commencerons lundi.",
+      "score": 100,
+      "feedback": "Correct. Hypothèse réelle : si + présent → futur simple."
+     },
+     {
+      "text": "Si le client validera demain, nous commencerons lundi.",
+      "score": 0,
+      "feedback": "Jamais de futur dans la proposition avec « si ». Il faut le présent : « si le client valide »."
+     },
+     {
+      "text": "Si le client validait demain, nous commencerons lundi.",
+      "score": 25,
+      "feedback": "Formes mélangées. L'imparfait après « si » appelle le conditionnel, pas le futur."
+     },
+     {
+      "text": "Si le client valide demain, nous commencerions lundi.",
+      "score": 50,
+      "feedback": "Compréhensible, mais le conditionnel rend hypothétique une suite qui est en réalité certaine. Cela affaiblit votre engagement."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-politesse-conditionnel-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "customer-service",
+    "hospitality",
+    "business",
+    "healthcare"
+   ],
+   "category": "inbox",
+   "scenario": "request-information",
+   "topic": "conditionnel-politesse",
+   "guide": "demandes-polies",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Vous écrivez à un autre service. Vous ne connaissez pas la personne.",
+    "prompt": "Quelle demande est la plus polie ?",
+    "options": [
+     {
+      "text": "Bonjour, pourriez-vous m'envoyer le formulaire de congés ? Merci d'avance.",
+      "score": 100,
+      "feedback": "« Pourriez-vous » est très poli. C'est parfait avec une personne que vous ne connaissez pas."
+     },
+     {
+      "text": "Bonjour, pouvez-vous m'envoyer le formulaire de congés ?",
+      "score": 75,
+      "feedback": "Correct et poli. « Pourriez-vous » est encore un peu plus poli, et « merci » manque."
+     },
+     {
+      "text": "Bonjour, je veux le formulaire de congés.",
+      "score": 25,
+      "feedback": "« Je veux » est trop direct au travail."
+     },
+     {
+      "text": "Envoyez-moi le formulaire de congés.",
+      "score": 25,
+      "feedback": "C'est un ordre, sans « bonjour » et sans « merci »."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Avant une réunion, vous parlez à votre responsable.",
+    "prompt": "Quelle phrase est la plus adaptée ?",
+    "options": [
+     {
+      "text": "Je voudrais parler du planning, s'il vous plaît.",
+      "score": 100,
+      "feedback": "« Je voudrais » est poli et naturel avec un responsable."
+     },
+     {
+      "text": "J'aimerais poser une question sur le planning.",
+      "score": 100,
+      "feedback": "« J'aimerais » est aussi poli. « Je voudrais » et « j'aimerais » vont bien ici."
+     },
+     {
+      "text": "Je veux parler du planning.",
+      "score": 25,
+      "feedback": "Correct, mais trop direct avec un responsable."
+     },
+     {
+      "text": "Parlez-moi du planning.",
+      "score": 25,
+      "feedback": "C'est un ordre. Avec un responsable, faites une demande polie."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-subjonctif-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "management",
+    "technology",
+    "business",
+    "healthcare"
+   ],
+   "category": "office-decision",
+   "scenario": "changing-priorities",
+   "topic": "subjonctif-base",
+   "guide": "subjonctif",
+   "interaction": "multiple-choice",
+   "before": {
+    "brief": "Vous exprimez une nécessité à votre équipe.",
+    "message": "Il faut que nous ______ le dossier avant vendredi.",
+    "prompt": "Quelle forme est correcte ?",
+    "options": [
+     {
+      "text": "finissions",
+      "score": 100,
+      "feedback": "Correct. « Il faut que » est toujours suivi du subjonctif : que nous finissions."
+     },
+     {
+      "text": "finissons",
+      "score": 25,
+      "feedback": "C'est l'indicatif présent. Après « il faut que », il faut le subjonctif."
+     },
+     {
+      "text": "finirons",
+      "score": 0,
+      "feedback": "C'est le futur. Impossible après « il faut que »."
+     },
+     {
+      "text": "finir",
+      "score": 25,
+      "feedback": "L'infinitif s'emploie après « il faut » seul : « il faut finir ». Dès qu'on ajoute « que + sujet », il faut le subjonctif."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence, avec des verbes irréguliers très fréquents.",
+    "message": "Il faudrait que je ______ disponible et que je ______ relire le contrat.",
+    "prompt": "Quelle paire est correcte ?",
+    "options": [
+     {
+      "text": "sois … puisse",
+      "score": 100,
+      "feedback": "Correct. Être → que je sois ; pouvoir → que je puisse. Deux des cinq subjonctifs irréguliers indispensables."
+     },
+     {
+      "text": "suis … peux",
+      "score": 0,
+      "feedback": "Ce sont les formes de l'indicatif. Après « il faudrait que », il faut le subjonctif."
+     },
+     {
+      "text": "serai … pourrai",
+      "score": 0,
+      "feedback": "Ce sont des futurs. Impossibles après « il faut / il faudrait que »."
+     },
+     {
+      "text": "sois … peux",
+      "score": 50,
+      "feedback": "Le premier est correct, le second non : pouvoir fait « que je puisse » au subjonctif."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-passe-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "business",
+    "technology",
+    "healthcare",
+    "management"
+   ],
+   "category": "meeting-room",
+   "scenario": "explain-problem",
+   "topic": "passe-compose-imparfait",
+   "guide": "temps-au-travail",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "Vous racontez un incident en réunion.",
+    "message": "Je ______ le contrat quand j' ______ l'erreur dans le total.",
+    "prompt": "Quelle paire est correcte ?",
+    "options": [
+     {
+      "text": "relisais … ai remarqué",
+      "score": 100,
+      "feedback": "Correct. L'imparfait décrit l'action en cours (le contexte), le passé composé marque l'événement ponctuel qui l'interrompt."
+     },
+     {
+      "text": "ai relu … remarquais",
+      "score": 25,
+      "feedback": "Les deux temps sont inversés. C'est l'action en cours qui prend l'imparfait."
+     },
+     {
+      "text": "relisais … remarquais",
+      "score": 25,
+      "feedback": "Deux imparfaits : la découverte de l'erreur devient une habitude, ce qui n'a pas de sens ici."
+     },
+     {
+      "text": "ai relu … ai remarqué",
+      "score": 50,
+      "feedback": "Compréhensible, mais on perd la simultanéité. Les deux actions semblent se suivre au lieu de s'interrompre."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence : vous décrivez le contexte d'un projet passé.",
+    "message": "L'équipe ______ en sous-effectif, donc nous ______ la livraison de deux semaines.",
+    "prompt": "Quelle paire est correcte ?",
+    "options": [
+     {
+      "text": "était … avons décalé",
+      "score": 100,
+      "feedback": "Correct. L'état (sous-effectif) prend l'imparfait ; la décision ponctuelle prend le passé composé."
+     },
+     {
+      "text": "a été … décalions",
+      "score": 25,
+      "feedback": "Inversion. Un état qui dure prend l'imparfait, une décision unique le passé composé."
+     },
+     {
+      "text": "était … décalions",
+      "score": 50,
+      "feedback": "Le premier est juste. Mais « décalions » suggère une habitude répétée, alors qu'il s'agit d'une décision unique."
+     },
+     {
+      "text": "a été … avons décalé",
+      "score": 50,
+      "feedback": "Compréhensible, mais « a été en sous-effectif » présente l'état comme un événement fermé. L'imparfait est plus naturel ici."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-connecteurs-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "business",
+    "education",
+    "management",
+    "marketing"
+   ],
+   "category": "inbox",
+   "scenario": "project-update",
+   "topic": "connecteurs",
+   "guide": "connecteurs",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "Vous rédigez le point hebdomadaire.",
+    "message": "Le développement est dans les temps. ______, l'équipe éditoriale a deux semaines de retard, ce qui met la date de lancement en danger.",
+    "prompt": "Quel connecteur convient ?",
+    "options": [
+     {
+      "text": "Cependant",
+      "score": 100,
+      "feedback": "Correct. Il signale une opposition entre une bonne et une mauvaise nouvelle, et peut ouvrir une nouvelle phrase."
+     },
+     {
+      "text": "De plus",
+      "score": 25,
+      "feedback": "« De plus » ajoute une idée de même sens. Ici, le deuxième fait contredit le premier."
+     },
+     {
+      "text": "Par conséquent",
+      "score": 25,
+      "feedback": "« Par conséquent » introduit un résultat. Le retard éditorial n'est pas la conséquence du développement à l'heure."
+     },
+     {
+      "text": "Bien que",
+      "score": 50,
+      "feedback": "« Bien que » relie deux propositions dans une même phrase et exige le subjonctif. Il ne peut pas ouvrir une phrase séparée ainsi."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même message, autre lacune.",
+    "message": "Ce retard touche trois livrables. ______, nous avons besoin d'une décision sur le périmètre avant vendredi.",
+    "prompt": "Quel connecteur convient ?",
+    "options": [
+     {
+      "text": "Par conséquent",
+      "score": 100,
+      "feedback": "Correct. La décision découle logiquement du retard."
+     },
+     {
+      "text": "En revanche",
+      "score": 25,
+      "feedback": "Signale une opposition, alors que la deuxième phrase découle de la première."
+     },
+     {
+      "text": "Par exemple",
+      "score": 0,
+      "feedback": "La deuxième phrase n'est pas un exemple de la première."
+     },
+     {
+      "text": "Néanmoins",
+      "score": 25,
+      "feedback": "« Néanmoins » signifie « malgré cela ». Ici la suite découle du fait au lieu de s'y opposer."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-dire-non-01",
+   "level": "B2",
+   "contexts": [
+    "general-office",
+    "technology",
+    "marketing",
+    "management",
+    "remote-work"
+   ],
+   "category": "office-decision",
+   "scenario": "changing-priorities",
+   "topic": "dire-non",
+   "guide": "dire-non",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Votre responsable vous a demandé la revue budgétaire pour vendredi. Un directeur vous demande maintenant, directement, une analyse urgente — pour vendredi aussi. Vous ne pouvez pas faire les deux.",
+    "prompt": "Que dites-vous au directeur ?",
+    "options": [
+     {
+      "text": "Je peux le faire — je dois signaler qu'Élodie m'a confié la revue budgétaire pour vendredi. Je ne peux pas faire les deux correctement. Souhaitez-vous que je vérifie avec elle ce qui passe en premier, ou préférez-vous le faire ?",
+      "score": 100,
+      "feedback": "Ne refuse pas, ne surpromet pas, révèle le conflit et propose de le régler. Exactement la bonne approche."
+     },
+     {
+      "text": "Oui, bien sûr, je m'en occupe.",
+      "score": 25,
+      "feedback": "Vous venez de promettre deux choses impossibles. L'une des deux échouera, et les deux personnes seront surprises."
+     },
+     {
+      "text": "Je ne peux pas, je fais déjà la revue budgétaire pour Élodie.",
+      "score": 50,
+      "feedback": "Honnête, mais un refus sec à un directeur, sans alternative, est une occasion manquée."
+     },
+     {
+      "text": "Il faudra voir cela avec Élodie, c'est elle qui gère ma charge.",
+      "score": 25,
+      "feedback": "Techniquement exact, mais vous envoyez un supérieur régler une question que vous pouviez traiter en un message."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Un collègue vous demande de relire un document de 40 pages pour demain. Vous êtes déjà au maximum.",
+    "prompt": "Quelle réponse est la meilleure ?",
+    "options": [
+     {
+      "text": "Je ne peux pas relire les quarante pages pour demain. Je peux relire la synthèse et les recommandations ce soir — c'est là que se trouve le risque en général. Est-ce que cela t'aide, ou tu as besoin de la lecture complète ?",
+      "score": 100,
+      "feedback": "Un vrai non, un vrai oui partiel, une raison et une question. La relation et votre semaine sont préservées."
+     },
+     {
+      "text": "Désolé, je suis complètement débordé.",
+      "score": 50,
+      "feedback": "Honnête mais fermé. Rien n'est proposé, le collègue reste bloqué."
+     },
+     {
+      "text": "Je vais essayer d'y jeter un œil.",
+      "score": 25,
+      "feedback": "« Je vais essayer » est entendu comme un oui et livré comme un non. Le pire des deux."
+     },
+     {
+      "text": "Bien sûr, envoie-moi ça.",
+      "score": 25,
+      "feedback": "Dire oui quand on est au maximum signifie qu'autre chose va glisser, et vous n'avez pas choisi quoi."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-reunion-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "business",
+    "remote-work",
+    "technology",
+    "management"
+   ],
+   "category": "meeting-room",
+   "scenario": "interrupt-politely",
+   "topic": "prendre-la-parole",
+   "guide": "langue-reunion",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Un collègue parle depuis six minutes et s'apprête à passer à un autre sujet — alors que la décision en cours concerne directement votre équipe.",
+    "prompt": "Comment prenez-vous la parole ?",
+    "options": [
+     {
+      "text": "Pardon de vous interrompre — avant qu'on passe à la suite, puis-je ajouter un point sur les ressources ?",
+      "score": 100,
+      "feedback": "S'excuse brièvement, justifie le moment, et annonce le sujet. Presque impossible à refuser."
+     },
+     {
+      "text": "Excusez-moi, je peux dire quelque chose ?",
+      "score": 75,
+      "feedback": "Poli et efficace, mais sans annoncer le sujet, l'animateur peut vous reporter à plus tard."
+     },
+     {
+      "text": "Attendez, ce n'est pas exact.",
+      "score": 25,
+      "feedback": "Interrompt et contredit d'un même souffle. La salle entendra le conflit, pas votre argument."
+     },
+     {
+      "text": "(Ne rien dire et envoyer un message après la réunion.)",
+      "score": 50,
+      "feedback": "Sans risque, mais la décision sera prise. Certains points doivent se jouer dans la salle."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence, en visioconférence, où deux personnes se coupent sans arrêt.",
+    "prompt": "Quelle approche fonctionne le mieux en visio ?",
+    "options": [
+     {
+      "text": "Utiliser la fonction « lever la main », puis : « Merci — juste un point sur l'échéance, et je vous rends la parole. »",
+      "score": 100,
+      "feedback": "Utilise l'outil du média, annonce la portée de l'interruption et promet d'être bref. Idéal en visio."
+     },
+     {
+      "text": "Couper son micro et parler dès qu'il y a un demi-silence.",
+      "score": 25,
+      "feedback": "Avec la latence, c'est précisément ce qui crée la collision que vous voulez éviter."
+     },
+     {
+      "text": "Écrire « j'ai un point sur l'échéance » dans le chat et attendre.",
+      "score": 75,
+      "feedback": "Bien et peu intrusif : encore faut-il que quelqu'un surveille le chat."
+     },
+     {
+      "text": "Attendre la fin et espérer qu'il reste du temps.",
+      "score": 25,
+      "feedback": "En visio, il ne reste presque jamais de temps à la fin, et la décision est prise."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-resumer-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "management",
+    "business",
+    "remote-work",
+    "education"
+   ],
+   "category": "meeting-room",
+   "scenario": "summarise-meeting",
+   "topic": "resumer",
+   "guide": "langue-reunion",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Il reste cinq minutes. Trois décisions ont été prises, deux points restent ouverts.",
+    "prompt": "Quelle conclusion est la plus utile ?",
+    "options": [
+     {
+      "text": "Pour résumer : nous partons sur le fournisseur B, le lancement passe au 14 avril, et Ana pilote le plan éditorial. Restent ouverts : le budget du designer supplémentaire, et qui présente au comité. On peut clore ces deux points d'ici vendredi ?",
+      "score": 100,
+      "feedback": "Décisions, responsables, dates, et liste explicite de ce qui reste, avec une échéance. C'est ce résumé qui évite la réunion suivante."
+     },
+     {
+      "text": "Très bonne discussion, beaucoup de bons points. On reprend la semaine prochaine.",
+      "score": 25,
+      "feedback": "Rien n'est consigné. La semaine prochaine, la réunion recommencera de zéro."
+     },
+     {
+      "text": "Donc on est d'accord sur le fournisseur B et la nouvelle date. Autre chose ?",
+      "score": 50,
+      "feedback": "Deux décisions capturées, mais le responsable et les deux points ouverts disparaissent. C'est-à-dire ce qui échoue le plus souvent."
+     },
+     {
+      "text": "J'enverrai le compte rendu plus tard.",
+      "score": 50,
+      "feedback": "Utile, mais énoncer les décisions à voix haute permet de détecter les désaccords pendant que tout le monde est encore là."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence à l'écrit : vous envoyez le message de suivi après cette réunion.",
+    "prompt": "Quel objet et quelle ouverture conviennent le mieux ?",
+    "options": [
+     {
+      "text": "Objet : Réunion lancement — 3 décisions, 2 points ouverts (actions avant vendredi) · « Bonjour à tous, résumé ci-dessous. Deux points ont besoin d'un responsable avant vendredi. »",
+      "score": 100,
+      "feedback": "L'objet porte le contenu et l'échéance. On agit sur ce message sans même ouvrir la pièce jointe."
+     },
+     {
+      "text": "Objet : Compte rendu de réunion · « Bonjour à tous, vous trouverez ci-joint le compte rendu de la réunion de ce jour. »",
+      "score": 50,
+      "feedback": "Correct et oubliable. Rien n'indique qu'une action est attendue du lecteur."
+     },
+     {
+      "text": "Objet : Aujourd'hui · « Compte rendu en pièce jointe. »",
+      "score": 25,
+      "feedback": "Aucune raison d'ouvrir le message."
+     },
+     {
+      "text": "Objet : URGENT — à lire · « Tout le monde doit lire ceci aujourd'hui. »",
+      "score": 25,
+      "feedback": "De l'urgence sans contenu. Utilisé deux fois, plus personne ne croit vos objets."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-client-en-colere-01",
+   "level": "B2",
+   "contexts": [
+    "customer-service",
+    "hospitality",
+    "business",
+    "healthcare",
+    "general-office"
+   ],
+   "category": "office-decision",
+   "scenario": "angry-customer",
+   "topic": "vocabulaire-client",
+   "guide": "s-excuser",
+   "interaction": "branching",
+   "before": {
+    "brief": "Un client est devant votre bureau, la voix forte, d'autres personnes regardent.",
+    "message": "J'attends depuis trois semaines. Personne ne m'a rappelé. C'est inadmissible.",
+    "prompt": "Quelle est votre première réaction ?",
+    "options": [
+     {
+      "text": "Vous avez raison — trois semaines, c'est beaucoup trop long, et je suis désolé que personne ne vous ait rappelé. Je regarde tout de suite où en est votre dossier. Pouvez-vous me donner votre numéro de référence ?",
+      "score": 100,
+      "feedback": "Reconnaît la part légitime, s'excuse, et passe immédiatement à l'action. C'est le fait de donner raison d'abord qui fait baisser le ton."
+     },
+     {
+      "text": "Je comprends votre frustration, mais il y a une procédure à respecter.",
+      "score": 25,
+      "feedback": "« Je comprends, mais » s'entend comme « vous exagérez ». Le « mais » annule tout ce qui précède."
+     },
+     {
+      "text": "Calmez-vous et je vais voir ce que je peux faire.",
+      "score": 0,
+      "feedback": "Demander à quelqu'un de se calmer produit systématiquement l'effet inverse. Cela juge la personne au lieu du problème."
+     },
+     {
+      "text": "Ce n'est pas mon service, il faudrait voir avec le support client.",
+      "score": 25,
+      "feedback": "Peut-être vrai, mais après trois semaines à être renvoyé d'un service à l'autre, c'est la pire phrase possible."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Vous avez retrouvé le dossier. Il a été perdu en interne, et vous pouvez le régler — mais pas aujourd'hui.",
+    "prompt": "Comment concluez-vous l'échange ?",
+    "options": [
+     {
+      "text": "Je l'ai retrouvé — il était resté sans affectation chez nous, ce qui n'aurait pas dû arriver. Je le prends à mon nom. Je vous appelle personnellement avant mercredi avec une date de résolution. Voici ma ligne directe.",
+      "score": 100,
+      "feedback": "Honnête sur la cause, prend le dossier en charge personnellement, donne un engagement précis et un moyen de vous joindre. C'est du rattrapage bien mené."
+     },
+     {
+      "text": "Je l'ai retrouvé et je l'ai transmis au bon service. Ils vous recontacteront prochainement.",
+      "score": 25,
+      "feedback": "« Ils » et « prochainement » renvoient le client vers le système qui l'a déjà laissé tomber."
+     },
+     {
+      "text": "Je l'ai retrouvé. Ce sont des choses qui arrivent, malheureusement.",
+      "score": 0,
+      "feedback": "Minimiser trois semaines d'échec devant la personne qui les a subies."
+     },
+     {
+      "text": "Je l'ai retrouvé et je règle tout aujourd'hui, promis.",
+      "score": 50,
+      "feedback": "L'intention est bonne, mais vous venez de promettre ce que vous avez dit ne pas pouvoir faire aujourd'hui. Une deuxième promesse rompue est pire que la première."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lecture-partitifs-01",
+   "level": "B2",
+   "contexts": [
+    "general-office",
+    "education",
+    "business",
+    "hospitality"
+   ],
+   "category": "report",
+   "scenario": "written-report",
+   "topic": "comprehension-ecrite",
+   "guide": "strategies-lecture",
+   "interaction": "true-false",
+   "before": {
+    "brief": "COMPRÉHENSION B2 — Lisez le texte.",
+    "message": "Au bureau, il est fréquent de partager des informations importantes autour d'une tasse de café. Loin d'être perçue comme du temps perdu, cette pause renforce les liens entre collègues, et bien des décisions s'y préparent de manière informelle. Les nouveaux arrivants, pourtant, n'en mesurent pas toujours l'enjeu : certains la jugent superflue et préfèrent rester à leur poste. Quant aux Français en général, ils achètent rarement du café à emporter dans un gobelet en carton ; la plupart d'entre eux préfèrent prendre le temps de le savourer assis.",
+    "prompt": "Affirmation : « La pause-café au bureau est considérée comme une perte de temps. »",
+    "options": [
+     {
+      "text": "FAUX",
+      "score": 100,
+      "feedback": "Correct. Le texte dit « loin d'être perçue comme du temps perdu ». Que certains nouveaux arrivants la jugent superflue ne change pas le jugement général : c'est présenté comme une exception."
+     },
+     {
+      "text": "VRAI",
+      "score": 0,
+      "feedback": "Tentant à cause des nouveaux arrivants, mais le texte présente leur avis comme une méconnaissance (« n'en mesurent pas toujours l'enjeu »), pas comme l'opinion générale."
+     },
+     {
+      "text": "NON MENTIONNÉ",
+      "score": 25,
+      "feedback": "L'information est bien présente (« loin d'être perçue comme du temps perdu »), et elle contredit l'affirmation."
+     }
+    ]
+   },
+   "after": {
+    "brief": "COMPRÉHENSION B2 — même texte.",
+    "message": "Au bureau, il est fréquent de partager des informations importantes autour d'une tasse de café. Loin d'être perçue comme du temps perdu, cette pause renforce les liens entre collègues, et bien des décisions s'y préparent de manière informelle. Les nouveaux arrivants, pourtant, n'en mesurent pas toujours l'enjeu : certains la jugent superflue et préfèrent rester à leur poste. Quant aux Français en général, ils achètent rarement du café à emporter dans un gobelet en carton ; la plupart d'entre eux préfèrent prendre le temps de le savourer assis.",
+    "prompt": "Affirmation : « Les employeurs français imposent une pause-café quotidienne. »",
+    "options": [
+     {
+      "text": "NON MENTIONNÉ",
+      "score": 100,
+      "feedback": "Correct. Le texte décrit une habitude et le rôle informel de la pause, mais ne dit rien d'une obligation imposée par les employeurs."
+     },
+     {
+      "text": "FAUX",
+      "score": 25,
+      "feedback": "Tentant, mais le texte ne nie pas cette idée : il n'en parle pas. L'absence d'information donne NON MENTIONNÉ."
+     },
+     {
+      "text": "VRAI",
+      "score": 0,
+      "feedback": "Rien dans le texte ne mentionne une obligation. « Bien des décisions s'y préparent » décrit un usage, pas une règle."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lecture-environnement-01",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "management",
+    "education",
+    "hospitality",
+    "general-office"
+   ],
+   "category": "meeting-room",
+   "scenario": "sustainability-initiative",
+   "topic": "lecture-inference",
+   "guide": "strategies-lecture",
+   "interaction": "multiple-choice",
+   "before": {
+    "brief": "COMPRÉHENSION B2 — Lisez le texte.",
+    "message": "Depuis quelques années, la mairie encourage les habitants à trier leurs déchets recyclables. Chaque immeuble reçoit des poubelles de couleurs différentes. Certains quartiers organisent des ateliers gratuits pour apprendre à composter des déchets alimentaires. Grâce à ces initiatives, la ville produit moins de déchets non recyclés chaque année. Toutefois, il reste encore des efforts à faire, car beaucoup d'habitants n'ont pas d'espace suffisant chez eux pour stocker plusieurs poubelles.",
+    "prompt": "Selon le texte, pourquoi certains habitants ont-ils des difficultés à bien trier ?",
+    "options": [
+     {
+      "text": "Ils manquent de place chez eux pour plusieurs poubelles.",
+      "score": 100,
+      "feedback": "Correct. C'est explicitement la raison donnée dans la dernière phrase du texte."
+     },
+     {
+      "text": "Ils ne savent pas quels déchets vont dans quelle poubelle.",
+      "score": 25,
+      "feedback": "Plausible dans la réalité, mais le texte ne le dit pas. La question porte sur ce qui est écrit."
+     },
+     {
+      "text": "La mairie ne fournit pas assez de poubelles.",
+      "score": 25,
+      "feedback": "Le texte dit au contraire que chaque immeuble reçoit des poubelles de couleurs différentes."
+     },
+     {
+      "text": "Les ateliers de compostage sont payants.",
+      "score": 0,
+      "feedback": "Le texte précise que ces ateliers sont gratuits."
+     }
+    ]
+   },
+   "after": {
+    "brief": "COMPRÉHENSION B2 — même texte. Cette fois, une question d'inférence.",
+    "message": "Depuis quelques années, la mairie encourage les habitants à trier leurs déchets recyclables. Chaque immeuble reçoit des poubelles de couleurs différentes. Certains quartiers organisent des ateliers gratuits pour apprendre à composter des déchets alimentaires. Grâce à ces initiatives, la ville produit moins de déchets non recyclés chaque année. Toutefois, il reste encore des efforts à faire, car beaucoup d'habitants n'ont pas d'espace suffisant chez eux pour stocker plusieurs poubelles.",
+    "prompt": "Quel est le ton général de l'auteur envers ces initiatives ?",
+    "options": [
+     {
+      "text": "Globalement favorable, tout en reconnaissant une limite pratique.",
+      "score": 100,
+      "feedback": "Correct. « Grâce à ces initiatives » est positif, et « Toutefois » introduit une réserve concrète sans remettre en cause le principe."
+     },
+     {
+      "text": "Nettement critique : il juge les initiatives inefficaces.",
+      "score": 25,
+      "feedback": "« Grâce à » et « produit moins de déchets » indiquent clairement un jugement positif."
+     },
+     {
+      "text": "Totalement neutre : il se contente de décrire les faits.",
+      "score": 50,
+      "feedback": "Proche, mais « grâce à » n'est pas neutre. C'est une formulation qui attribue un mérite."
+     },
+     {
+      "text": "Enthousiaste, sans aucune réserve.",
+      "score": 25,
+      "feedback": "Le « Toutefois » de la fin exprime bien une réserve."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-entretien-01",
+   "level": "B2",
+   "contexts": [
+    "job-search",
+    "business",
+    "technology",
+    "education",
+    "management"
+   ],
+   "category": "interview",
+   "scenario": "introduce-yourself",
+   "topic": "vocabulaire-carriere",
+   "guide": "entretien-fr",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Première question de l'entretien :",
+    "message": "Alors, parlez-moi de vous.",
+    "prompt": "Quelle ouverture est la plus forte ?",
+    "options": [
+     {
+      "text": "J'ai six ans d'expérience en marketing digital, dont trois à la tête d'une équipe de quatre personnes chez Vidal. Ce que je fais le mieux, c'est transformer des données désordonnées en campagnes qui convertissent — nous avons augmenté les prospects qualifiés d'environ 60 % l'an dernier. Je suis ici parce que ce poste porte cela sur un marché plus large.",
+      "score": 100,
+      "feedback": "Expérience, spécialité, un chiffre, et une raison d'être là. Quatre-vingt-dix secondes, entièrement pertinentes."
+     },
+     {
+      "text": "Alors, je suis née à Bogotá, j'ai étudié la communication, puis je suis arrivée à Madrid en 2019, ensuite j'ai travaillé un an dans une petite agence…",
+      "score": 25,
+      "feedback": "Un récit chronologique. Le recruteur a votre CV. Il veut savoir ce que vous savez faire."
+     },
+     {
+      "text": "Je suis travailleuse, motivée et j'ai un bon esprit d'équipe.",
+      "score": 25,
+      "feedback": "Des adjectifs sans preuve. Tous les candidats disent exactement cela."
+     },
+     {
+      "text": "Que souhaitez-vous savoir ? Je peux parler de ce qui vous sera le plus utile.",
+      "score": 50,
+      "feedback": "Cela paraît collaboratif, mais vous rendez la seule question dont vous maîtrisez totalement la réponse."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Plus tard dans le même entretien :",
+    "message": "Quelles sont vos qualités et vos défauts ?",
+    "prompt": "Quelle réponse est la meilleure ?",
+    "options": [
+     {
+      "text": "Ma principale qualité, c'est de débloquer des projets à l'arrêt — j'en ai repris deux en retard, dont la migration Orsan, huit semaines de retard à mon arrivée, livrée avec trois semaines de décalage seulement. Mon défaut : j'avais tendance à trop en prendre sur moi. Je délègue davantage depuis un an, et le trimestre dernier j'ai confié deux projets entiers.",
+      "score": 100,
+      "feedback": "Une qualité prouvée par un exemple chiffré, un défaut réel avec la correction apportée et une preuve qu'elle a fonctionné."
+     },
+     {
+      "text": "Ma qualité, c'est que je suis perfectionniste, et mon défaut aussi — je fais trop attention aux détails.",
+      "score": 25,
+      "feedback": "La non-réponse la plus reconnaissable en entretien. Les recruteurs expérimentés l'entendent comme une esquive."
+     },
+     {
+      "text": "Je suis très travailleur. Je n'ai pas vraiment de défaut qui affecte mon travail.",
+      "score": 0,
+      "feedback": "Cela passe pour de l'arrogance ou un manque de recul. Les deux sont pires que n'importe quel défaut."
+     },
+     {
+      "text": "On me dit que je m'entends bien avec tout le monde. Mon défaut, c'est que je suis parfois désorganisé.",
+      "score": 50,
+      "feedback": "Plus honnête, mais « on me dit » vous distancie de votre propre qualité, et le défaut est énoncé sans aucune correction."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-negocier-01",
+   "level": "B2",
+   "contexts": [
+    "job-search",
+    "management",
+    "business",
+    "general-office",
+    "technology"
+   ],
+   "category": "interview",
+   "scenario": "salary-conversation",
+   "topic": "vocabulaire-salaire",
+   "guide": "negocier",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Vers la fin de l'entretien :",
+    "message": "Quelles sont vos prétentions salariales ?",
+    "prompt": "Que répondez-vous ?",
+    "options": [
+     {
+      "text": "Compte tenu du périmètre du poste et des salaires pratiqués sur des fonctions comparables, je me situe entre 45 et 50 000 euros bruts. Est-ce cohérent avec l'enveloppe prévue ?",
+      "score": 100,
+      "feedback": "Une fourchette, une justification, et une question en retour. C'est la question qui transforme une exigence en négociation."
+     },
+     {
+      "text": "Je suis flexible — combien propose le poste ?",
+      "score": 50,
+      "feedback": "Conseil courant, mais annoncer sa flexibilité avant tout chiffre vous place généralement en bas de leur fourchette."
+     },
+     {
+      "text": "Je gagne actuellement 38 000, donc tout ce qui est au-dessus me convient.",
+      "score": 25,
+      "feedback": "Ancre la discussion sur votre ancien salaire plutôt que sur la valeur du poste."
+     },
+     {
+      "text": "Il me faut au moins 55 000 à cause de mon crédit immobilier.",
+      "score": 0,
+      "feedback": "Vos charges personnelles ne sont pas un argument de négociation. Le chiffre se justifie par le poste."
+     }
+    ]
+   },
+   "after": {
+    "brief": "On vous propose 42 000 — en dessous de votre fourchette, mais le poste est intéressant.",
+    "prompt": "Quelle réponse est la plus forte ?",
+    "options": [
+     {
+      "text": "Merci — le poste m'intéresse sincèrement. 42 est en dessous de ce que j'envisageais. Y a-t-il une marge pour atteindre 46, ou, si l'enveloppe est figée, pourrait-on prévoir une révision à six mois, ou discuter du budget formation ?",
+      "score": 100,
+      "feedback": "L'enthousiasme d'abord, une contre-proposition claire, puis deux monnaies d'échange si le salaire est bloqué. C'est ainsi que se règlent la plupart des négociations."
+     },
+     {
+      "text": "C'est trop bas, j'avais annoncé une fourchette de 45 à 50.",
+      "score": 50,
+      "feedback": "Clair et légitime, mais cela n'offre aucune issue si leur budget est réellement contraint."
+     },
+     {
+      "text": "D'accord, j'accepte.",
+      "score": 25,
+      "feedback": "La plupart des premières offres ont une marge. Accepter immédiatement laisse de l'argent et de la crédibilité sur la table."
+     },
+     {
+      "text": "J'ai une autre proposition à 48 000, il faudrait vous aligner.",
+      "score": 25,
+      "feedback": "À ne dire que si c'est vrai et que vous l'accepteriez. En bluff, cela se termine mal, et l'ultimatum abîme la relation dans tous les cas."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-asynchrone-01",
+   "level": "B1",
+   "contexts": [
+    "remote-work",
+    "technology",
+    "marketing",
+    "business",
+    "design-creative"
+   ],
+   "category": "team-chat",
+   "scenario": "async-status",
+   "topic": "point-asynchrone",
+   "guide": "ecriture-asynchrone",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Vous écrivez votre point quotidien. Votre responsable est décalée de huit heures et le lira à son réveil.",
+    "prompt": "Quel message lui est le plus utile ?",
+    "options": [
+     {
+      "text": "Hier : intégration de l'API terminée. Aujourd'hui : début du script de migration. Bloqué sur : il me faut les accès de préproduction de l'équipe Infra — @Marc peux-tu les déposer ? Cela me bloque à partir de 11 h heure de Paris.",
+      "score": 100,
+      "feedback": "Structuré, lisible en diagonale, nomme le point bloquant, identifie la personne et donne l'heure : indispensable avec un décalage horaire."
+     },
+     {
+      "text": "Bonne progression hier, je continue la migration aujourd'hui. Quelques petits points bloquants mais rien de grave.",
+      "score": 25,
+      "feedback": "Rien n'est exploitable. Elle se réveille, lit ce message, et doit encore demander lesquels. Une journée entière perdue."
+     },
+     {
+      "text": "Salut ! Tu es dispo ? J'ai une question sur les accès.",
+      "score": 0,
+      "feedback": "Une salutation sans contenu, envoyée à quelqu'un décalé de huit heures. Elle répondra « oui ? » et un cycle de plus sera perdu."
+     },
+     {
+      "text": "Intégration API terminée, migration commencée, bloqué sur les accès de préproduction.",
+      "score": 75,
+      "feedback": "Clair et compact. Il manque seulement qui peut débloquer et à quelle heure."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence : il vous faut une décision, pas un point d'avancement, de la part de quelqu'un dans un autre fuseau.",
+    "prompt": "Quel message obtient la réponse la plus rapide ?",
+    "options": [
+     {
+      "text": "Décision nécessaire avant ta fin de journée : on lance jeudi avec l'ancienne grille tarifaire, ou on attend lundi avec la nouvelle ? Ma recommandation : jeudi — détails dans le fil. Un 👍 suffit.",
+      "score": 100,
+      "feedback": "Annonce qu'il s'agit d'une décision, donne les deux options, en recommande une, et rend la réponse instantanée."
+     },
+     {
+      "text": "On peut parler de la date de lancement quand tu seras en ligne ? Dis-moi quand ça t'arrange.",
+      "score": 25,
+      "feedback": "Il faut une réunion pour organiser une réunion. Avec huit heures d'écart, cela coûte deux jours."
+     },
+     {
+      "text": "Qu'est-ce que tu penses qu'on devrait faire pour la grille tarifaire ?",
+      "score": 25,
+      "feedback": "Question ouverte, sans options ni échéance. Elle devra poser trois questions avant de pouvoir répondre."
+     },
+     {
+      "text": "Je pense qu'on devrait lancer jeudi avec l'ancienne grille. Dis-moi si tu n'es pas d'accord.",
+      "score": 75,
+      "feedback": "Efficace et décidé. Le silence vaut accord. Le risque est qu'elle ne le voie pas avant que vous n'agissiez."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-pronoms-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "business",
+    "technology",
+    "marketing",
+    "education"
+   ],
+   "category": "inbox",
+   "scenario": "follow-up-email",
+   "topic": "pronoms-complement",
+   "guide": "pronoms",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "Vous répondez à propos d'un document. Une seule phrase est correcte.",
+    "prompt": "Laquelle ?",
+    "options": [
+     {
+      "text": "J'ai reçu le rapport et je l'ai relu hier soir.",
+      "score": 100,
+      "feedback": "Correct. Le pronom « l' » remplace « le rapport » et se place avant l'auxiliaire."
+     },
+     {
+      "text": "J'ai reçu le rapport et j'ai le relu hier soir.",
+      "score": 0,
+      "feedback": "Le pronom se place avant l'auxiliaire, pas entre l'auxiliaire et le participe."
+     },
+     {
+      "text": "J'ai reçu le rapport et j'ai relu le hier soir.",
+      "score": 0,
+      "feedback": "Le pronom complément ne se place jamais après le verbe en français (contrairement à l'anglais)."
+     },
+     {
+      "text": "J'ai reçu le rapport et je lui ai relu hier soir.",
+      "score": 25,
+      "feedback": "« Lui » est un complément indirect (à quelqu'un). Ici « relire » prend un complément direct : « l' »."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même compétence, avec deux pronoms et un futur proche.",
+    "prompt": "Quelle phrase est correcte ?",
+    "options": [
+     {
+      "text": "Je vais le lui envoyer demain matin.",
+      "score": 100,
+      "feedback": "Correct. Ordre des pronoms : le (direct) avant lui (indirect), et les deux se placent devant l'infinitif."
+     },
+     {
+      "text": "Je vais lui le envoyer demain matin.",
+      "score": 0,
+      "feedback": "Ordre inversé. « Le » précède « lui »."
+     },
+     {
+      "text": "Je le lui vais envoyer demain matin.",
+      "score": 0,
+      "feedback": "Au futur proche, les pronoms se placent devant l'infinitif, pas devant « aller »."
+     },
+     {
+      "text": "Je vais l'envoyer à lui demain matin.",
+      "score": 50,
+      "feedback": "Compréhensible mais lourd. Le français préfère le pronom indirect « lui » devant le verbe."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-comparer-01",
+   "level": "A2",
+   "contexts": [
+    "technology",
+    "business",
+    "marketing",
+    "management",
+    "design-creative"
+   ],
+   "category": "office-decision",
+   "scenario": "two-solutions",
+   "topic": "comparaison",
+   "guide": "comparer",
+   "interaction": "fill-blank",
+   "before": {
+    "brief": "Vous comparez deux fournisseurs pour votre responsable. A coûte 500 €, B coûte 700 €.",
+    "message": "Le fournisseur A est ______ le fournisseur B.",
+    "prompt": "Quelle forme est correcte ?",
+    "options": [
+     {
+      "text": "moins cher que",
+      "score": 100,
+      "feedback": "Correct. 500 €, c'est moins que 700 € : A est moins cher que B."
+     },
+     {
+      "text": "plus cher que",
+      "score": 0,
+      "feedback": "Non : A coûte 500 € et B 700 €. A est moins cher."
+     },
+     {
+      "text": "moins cher de",
+      "score": 25,
+      "feedback": "Après un comparatif, on dit « que », pas « de »."
+     },
+     {
+      "text": "aussi cher que",
+      "score": 25,
+      "feedback": "« Aussi … que » = le même prix. Ici, les prix sont différents."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Vous choisissez un logiciel parmi trois. A coûte 50 € par mois, B 35 € et C 20 €.",
+    "message": "Le logiciel C est ______ des trois.",
+    "prompt": "Quelle forme est correcte ?",
+    "options": [
+     {
+      "text": "le moins cher",
+      "score": 100,
+      "feedback": "Correct. Avec trois options, on dit « le moins cher des trois »."
+     },
+     {
+      "text": "moins cher",
+      "score": 25,
+      "feedback": "Il manque « le ». Avec « des trois », il faut « le moins cher »."
+     },
+     {
+      "text": "plus moins cher",
+      "score": 0,
+      "feedback": "« Plus » et « moins » ensemble, c'est impossible."
+     },
+     {
+      "text": "le plus cher",
+      "score": 0,
+      "feedback": "La forme est correcte, mais le sens est faux : 20 €, c'est le prix le plus bas."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-vocabulaire-travail-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "business",
+    "technology",
+    "education",
+    "healthcare"
+   ],
+   "category": "inbox",
+   "scenario": "handover-email",
+   "topic": "vocabulaire-travail",
+   "guide": "vocabulaire-travail",
+   "interaction": "matching",
+   "before": {
+    "brief": "Vous lisez un message de travail. Associez chaque mot à son sens.",
+    "prompt": "Associez chaque mot à la bonne définition.",
+    "pairs": [
+     {
+      "left": "une échéance",
+      "right": "la date limite"
+     },
+     {
+      "left": "un collègue",
+      "right": "une personne qui travaille avec vous"
+     },
+     {
+      "left": "un dossier",
+      "right": "des documents sur un même sujet"
+     },
+     {
+      "left": "une réunion",
+      "right": "un moment où l'équipe parle ensemble"
+     },
+     {
+      "left": "déléguer",
+      "right": "donner une tâche à une autre personne"
+     },
+     {
+      "left": "fiable",
+      "right": "on peut avoir confiance en lui"
+     }
+    ],
+    "feedback": "Ces mots sont dans presque tous les messages de travail. Apprenez-les d'abord."
+   },
+   "after": {
+    "brief": "Attention aux faux amis : ces mots ressemblent à l'espagnol, mais le sens est différent.",
+    "prompt": "Associez chaque mot à son vrai sens en français.",
+    "pairs": [
+     {
+      "left": "attendre",
+      "right": "rester là jusqu'à l'arrivée de quelqu'un"
+     },
+     {
+      "left": "rester",
+      "right": "ne pas partir"
+     },
+     {
+      "left": "demander",
+      "right": "poser une question ou vouloir quelque chose"
+     },
+     {
+      "left": "entendre",
+      "right": "percevoir un son avec les oreilles"
+     },
+     {
+      "left": "large",
+      "right": "grand de gauche à droite"
+     },
+     {
+      "left": "une carte de visite",
+      "right": "un petit carton avec le nom et le téléphone"
+     }
+    ],
+    "feedback": "« Attendre » et « rester » sont les faux amis les plus fréquents au travail. Pour aider un client, on dit « s'occuper de »."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-structure-courriel-01",
+   "level": "B1",
+   "contexts": [
+    "general-office",
+    "business",
+    "management",
+    "technology",
+    "marketing"
+   ],
+   "category": "inbox",
+   "scenario": "handover-email",
+   "topic": "structure-courriel",
+   "guide": "ecrire-courriel",
+   "interaction": "email-order",
+   "before": {
+    "brief": "Vous êtes absent la semaine prochaine. Remettez votre message de passation dans l'ordre.",
+    "prompt": "Ordonnez ces lignes.",
+    "items": [
+     "Bonjour Daniel, je suis absente du lundi 6 au vendredi 10 et tu prends le relais sur le dossier Vidal.",
+     "Trois choses demandent ton intervention : le point client de jeudi à 10 h, la validation des factures (en dessous de 5 000 €, tu valides ; au-dessus, tu demandes à Élodie), et le retour de Marta sur les maquettes, attendu mercredi.",
+     "Tout le reste peut attendre mon retour.",
+     "Les notes complètes et les accès sont dans le dossier partagé, sous « Vidal — passation ».",
+     "Merci de prendre le relais — n'hésite pas si quelque chose n'est pas clair.",
+     "Bonne semaine, Camille"
+    ],
+    "feedback": "Le contexte d'abord, puis ce qui demande une action, puis ce qui n'en demande pas, puis où trouver le détail, puis une clôture chaleureuse. Daniel peut agir sans poser une seule question."
+   },
+   "after": {
+    "brief": "Autre message, même compétence : un point de projet à une partie prenante qui était absente.",
+    "prompt": "Ordonnez ces lignes.",
+    "items": [
+     "Bonjour Sophie, petit point sur Northbridge pendant ton absence.",
+     "Où nous en sommes : les maquettes sont validées et le développement a commencé le 3.",
+     "Un point de vigilance : l'équipe éditoriale a deux semaines de retard, ce qui met le lancement en danger.",
+     "Ce dont j'ai besoin de ta part : une décision avant vendredi — on lance avec du contenu provisoire, ou on décale la date ?",
+     "Je reste disponible si tu préfères en parler de vive voix.",
+     "Bien à toi, Camille"
+    ],
+    "feedback": "État des lieux, puis problème, puis la décision attendue avec une date. La demande n'est jamais enterrée à la fin du message."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-production-orale-01",
+   "level": "B1",
+   "contexts": [
+    "job-search",
+    "education",
+    "business",
+    "general-office",
+    "technology"
+   ],
+   "category": "speaking",
+   "scenario": "speaking-long-turn",
+   "topic": "expose-court",
+   "guide": "structurer-oral",
+   "interaction": "speaking",
+   "before": {
+    "brief": "EXPRESSION ORALE — exposé court. Vous avez 45 secondes de préparation puis 2 minutes de parole.",
+    "prompt": "Décrivez une situation professionnelle où vous avez dû prendre une décision difficile. Dites : quelle était la situation, quelles étaient les options, ce que vous avez décidé, et ce que vous en avez retenu.",
+    "prepSeconds": 45,
+    "speakSeconds": 120,
+    "checklist": [
+     "J'ai parlé au moins 90 secondes sans longue pause",
+     "J'ai couvert les quatre points demandés",
+     "J'ai alterné passé composé et imparfait",
+     "J'ai donné un exemple précis plutôt qu'une généralité",
+     "J'ai utilisé au moins deux connecteurs (d'abord / ensuite / finalement / par conséquent)"
+    ],
+    "model": "Je voudrais parler d'une décision que j'ai prise il y a environ dix-huit mois. Nous étions à deux semaines du lancement d'une campagne quand je me suis rendu compte que les données clients n'avaient pas été correctement recueillies pour un usage marketing. Les options étaient assez nettes : lancer dans les temps et gérer le risque plus tard, ou tout arrêter et perdre le trimestre. J'en ai parlé à ma responsable l'après-midi même plutôt que de garder cela pour moi, et nous avons décidé de décaler de trois semaines pour reconstituer la liste correctement. Cela nous a coûté environ 20 % de l'objectif du trimestre. Sur le moment, j'étais mal à l'aise, parce que j'étais la personne qui avait fait perdre ce chiffre. Mais six mois plus tard, un concurrent a été sanctionné pour exactement ce problème, et j'ai arrêté de me poser la question. Ce que j'en retiens, c'est que la décision coûteuse et la mauvaise décision ne sont pas la même chose.",
+    "feedback": "Remarquez la structure : situation, options, décision, bilan, et la conclusion est une réflexion, pas une phrase qui s'éteint. Remarquez aussi l'alternance des temps : imparfait pour le contexte (« nous étions », « j'étais mal à l'aise »), passé composé pour les actions (« j'en ai parlé », « nous avons décidé »)."
+   },
+   "after": {
+    "brief": "EXPRESSION ORALE — réagir sans préparation. Question plus abstraite, 30 secondes de réflexion.",
+    "prompt": "Pensez-vous que le télétravail va durablement remplacer le bureau ? Pourquoi ?",
+    "prepSeconds": 30,
+    "speakSeconds": 90,
+    "checklist": [
+     "J'ai pris une position claire, pas seulement « ça dépend »",
+     "J'ai donné au moins deux raisons",
+     "J'ai donné un exemple ou une comparaison",
+     "J'ai reconnu l'argument inverse",
+     "J'ai utilisé le futur (proche ou simple) au moins deux fois"
+    ],
+    "model": "Je ne pense pas qu'il le remplacera complètement, mais je crois qu'il va le transformer durablement. D'abord, parce que beaucoup d'entreprises ont constaté que cela fonctionne : elles ne vont pas revenir en arrière du jour au lendemain. Ensuite, parce que les salariés y ont gagné du temps de transport, et c'est très difficile à reprendre. Cela dit, je reconnais qu'il y a des métiers où c'est impossible — on ne fait pas tourner un hôpital à distance. Et il y a aussi la question de la transmission entre générations, qui se fait mal en visio. Donc ma position serait : le bureau ne disparaîtra pas, mais il deviendra un lieu de rencontre plutôt qu'un lieu de production.",
+    "feedback": "Cette réponse prend position, donne deux raisons, concède l'argument inverse avec un exemple concret, puis reformule. Notez l'usage du futur : « il va le transformer » (proche, tendance déjà engagée) et « il ne disparaîtra pas », « il deviendra » (simple, projection lointaine)."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-futur-negation-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "technology",
+    "business",
+    "customer-service",
+    "marketing"
+   ],
+   "category": "team-chat",
+   "scenario": "team-chat-ping",
+   "topic": "futur-proche-negation",
+   "guide": "futur-proche",
+   "interaction": "categorise",
+   "before": {
+    "brief": "Classez ces phrases au futur proche selon leur forme.",
+    "prompt": "Placez chaque phrase dans le bon groupe.",
+    "bins": [
+     "Correct",
+     "Incorrect"
+    ],
+    "items": [
+     {
+      "text": "Je ne vais pas envoyer le devis aujourd'hui.",
+      "bin": "Correct"
+     },
+     {
+      "text": "Nous n'allons pas commencer avant lundi.",
+      "bin": "Correct"
+     },
+     {
+      "text": "Est-ce que vous allez participer à la réunion ?",
+      "bin": "Correct"
+     },
+     {
+      "text": "Elle ne va jamais accepter cette proposition.",
+      "bin": "Correct"
+     },
+     {
+      "text": "Je vais ne pas envoyer le devis.",
+      "bin": "Incorrect"
+     },
+     {
+      "text": "Nous allons pas ne commencer lundi.",
+      "bin": "Incorrect"
+     },
+     {
+      "text": "Il va ne rien dire en réunion.",
+      "bin": "Incorrect"
+     }
+    ],
+    "feedback": "Une seule règle : au futur proche, « ne … pas » va autour de ALLER. On dit « je ne vais pas envoyer », jamais « je vais ne pas envoyer ». C'est pareil avec ne … jamais et ne … rien."
+   },
+   "after": {
+    "brief": "Même compétence : repérez les formes correctes à l'interrogatif.",
+    "prompt": "Classez ces questions au futur proche.",
+    "bins": [
+     "Correct",
+     "Incorrect"
+    ],
+    "items": [
+     {
+      "text": "Tu vas participer à la réunion ?",
+      "bin": "Correct"
+     },
+     {
+      "text": "Est-ce qu'ils vont signer le contrat demain ?",
+      "bin": "Correct"
+     },
+     {
+      "text": "Allez-vous contacter le client cet après-midi ?",
+      "bin": "Correct"
+     },
+     {
+      "text": "Vas-tu ne pas venir ?",
+      "bin": "Incorrect"
+     },
+     {
+      "text": "Est-ce que tu va commencer lundi ?",
+      "bin": "Incorrect"
+     },
+     {
+      "text": "Allons-nous à commencer maintenant ?",
+      "bin": "Incorrect"
+     }
+    ],
+    "feedback": "Trois façons de poser une question : « Tu vas… ? », « Est-ce que tu vas… ? » et « Vas-tu… ? ». Attention : on écrit « tu vas », avec un s. Et pas de « à » après aller."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-demander-precision-01",
+   "level": "B1",
+   "contexts": [
+    "marketing",
+    "design-creative",
+    "technology",
+    "general-office",
+    "education"
+   ],
+   "category": "inbox",
+   "scenario": "ask-clarification",
+   "topic": "demander-precision",
+   "guide": "demander-precision",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Votre responsable envoie un brief d'une ligne :",
+    "message": "Tu peux me préparer quelque chose de court sur les chiffres du T3 pour jeudi ?",
+    "prompt": "Vous ne savez ni pour qui, ni quelle longueur. Que répondez-vous ?",
+    "options": [
+     {
+      "text": "Avec plaisir. Deux vérifications rapides : c'est pour le comité de direction ou pour l'équipe élargie, et tu penses à une page ou à une courte présentation ? Je pars sur une page pour le comité sauf indication contraire.",
+      "score": 100,
+      "feedback": "Ne demande que ce qui change le travail, et propose une valeur par défaut. Votre responsable peut répondre en un mot."
+     },
+     {
+      "text": "Oui, pas de souci !",
+      "score": 25,
+      "feedback": "Vous allez produire la mauvaise chose et perdre une journée. Accepter sans comprendre n'est pas de l'efficacité."
+     },
+     {
+      "text": "Qu'est-ce que tu entends par « quelque chose de court » ? Je ne vois pas ce que tu veux.",
+      "score": 50,
+      "feedback": "Question légitime, mais elle renvoie tout le problème sans rien proposer."
+     },
+     {
+      "text": "Tu peux m'expliquer exactement ce que tu veux ?",
+      "score": 25,
+      "feedback": "Cela demande de refaire tout le brief plutôt que de confirmer un détail, et le ton est un peu abrupt."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Autre situation : un client demande « la formule habituelle, avec l'option dont on a parlé ». Vous n'étiez pas à cette conversation.",
+    "prompt": "Quelle réponse est la meilleure ?",
+    "options": [
+     {
+      "text": "Avant de vous faire le devis, puis-je confirmer le périmètre ? J'ai la formule standard avec A, B et C. Quelle option aviez-vous en tête — l'atelier supplémentaire, ou le reporting mensuel ?",
+      "score": 100,
+      "feedback": "Énonce ce que vous savez, puis propose deux options nommées. Rien ne trahit que vous avez manqué la conversation."
+     },
+     {
+      "text": "Je n'étais pas à cette réunion, je ne sais pas de quoi il s'agit. Quelqu'un peut me briefer ?",
+      "score": 50,
+      "feedback": "Honnête, mais vous faites faire au client une tâche interne. Demandez à votre collègue, pas au client."
+     },
+     {
+      "text": "Pourriez-vous préciser ce que vous voulez dire ?",
+      "score": 50,
+      "feedback": "Trop ouvert. Le client doit tout réexpliquer et peut douter de votre maîtrise du dossier."
+     },
+     {
+      "text": "Oui, je vous envoie la formule habituelle avec l'option.",
+      "score": 0,
+      "feedback": "Vous venez de vous engager sur quelque chose d'indéfini. C'est ainsi que naissent les litiges de périmètre."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-expliquer-probleme-01",
+   "level": "B1",
+   "contexts": [
+    "marketing",
+    "technology",
+    "design-creative",
+    "business",
+    "management"
+   ],
+   "category": "office-decision",
+   "scenario": "project-delay",
+   "topic": "expliquer-probleme",
+   "guide": "expliquer-probleme",
+   "interaction": "sentence-order",
+   "before": {
+    "brief": "Vous avez deux minutes avec le commanditaire du projet pour expliquer un retard. L'ordre compte.",
+    "prompt": "Mettez ces quatre étapes dans l'ordre professionnel le plus efficace.",
+    "items": [
+     "Les tests d'intégration ont révélé un problème de données que nous n'avions pas vu — il touche environ un tiers des enregistrements.",
+     "Cela décale le lancement de deux semaines, donc mi-avril au lieu du 1er.",
+     "J'ai déjà deux personnes sur le nettoyage des données et j'ai sollicité le prestataire.",
+     "Ce dont j'ai besoin de votre part : décider si nous tenons la date en réduisant le périmètre, ou si nous décalons."
+    ],
+    "feedback": "Ce qui s'est passé → l'impact → ce que vous faites déjà → ce dont vous avez besoin. Commencer par la solution paraît évasif ; commencer par la demande paraît impréparé."
+   },
+   "after": {
+    "brief": "Même structure, autre problème : une personne clé démissionne en cours de projet.",
+    "prompt": "Ordonnez ces quatre lignes.",
+    "items": [
+     "Karim a donné sa démission vendredi — il part le 30.",
+     "Il porte le module de reporting, soit environ trois semaines de travail, actuellement non documenté.",
+     "Je lui ai demandé de consacrer ses deux dernières semaines à la passation plutôt qu'à du nouveau développement.",
+     "Je souhaiterais faire appel à un prestataire pour six semaines, soit environ 12 000 €. Pouvez-vous valider, ou faut-il décaler la phase reporting au T3 ?"
+    ],
+    "feedback": "Même forme : fait, impact, action engagée, décision demandée. Notez que la demande comporte un chiffre et une alternative. C'est ce qui la rend décidable."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-feedback-01",
+   "level": "B2",
+   "contexts": [
+    "management",
+    "design-creative",
+    "marketing",
+    "education",
+    "technology"
+   ],
+   "category": "office-decision",
+   "scenario": "giving-feedback",
+   "topic": "donner-retour",
+   "guide": "feedback-fr",
+   "interaction": "appropriateness",
+   "before": {
+    "brief": "Un collègue junior vous a envoyé un document comportant plusieurs erreurs factuelles. Il doit partir aujourd'hui.",
+    "prompt": "Quel retour est à la fois approprié et efficace ?",
+    "options": [
+     {
+      "text": "Merci de me l'avoir transmis. Trois points à corriger avant l'envoi : le chiffre du T2 page 2, le nom du client dans l'en-tête, et la date dans la synthèse. Peux-tu me renvoyer une version corrigée avant 14 h ?",
+      "score": 100,
+      "feedback": "Précis, dénombrable, corrigeable, avec une échéance. La personne sait exactement quoi faire."
+     },
+     {
+      "text": "Il faut faire plus attention, il y a pas mal d'erreurs là-dedans.",
+      "score": 50,
+      "feedback": "Elle sait que vous n'êtes pas content, mais pas quoi corriger. Une critique vague crée de l'anxiété, pas de l'amélioration."
+     },
+     {
+      "text": "Tu as relu ton document au moins ?",
+      "score": 0,
+      "feedback": "Une question rhétorique employée comme reproche. Elle vise la personne et appelle une réponse défensive."
+     },
+     {
+      "text": "Ce n'est pas grave, je corrige moi-même, ne t'en fais pas.",
+      "score": 25,
+      "feedback": "Gentil sur le moment, mais la personne refera les mêmes erreurs et vous avez repris son travail."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Situation inverse : le travail d'une collègue est vraiment bon, et vous écrivez en mettant sa responsable en copie.",
+    "prompt": "Quelle version est la plus forte ?",
+    "options": [
+     {
+      "text": "C'est la version la plus claire du guide d'intégration que nous ayons eue — le tableau de décision page 4 va faire gagner beaucoup d'allers-retours au support. Merci Iris.",
+      "score": 100,
+      "feedback": "Éloge précis sur un choix particulier et son effet concret. C'est ce type de compliment dont on se souvient."
+     },
+     {
+      "text": "Super boulot Iris, vraiment très bien !",
+      "score": 50,
+      "feedback": "Chaleureux mais générique. Avec la responsable en copie, c'est la précision qui donne de la valeur."
+     },
+     {
+      "text": "C'est bien, il y a juste deux ou trois petites choses à revoir mais dans l'ensemble c'est correct.",
+      "score": 25,
+      "feedback": "Enterre un éloge réel sous une critique vague. La personne ne retiendra que la deuxième moitié."
+     },
+     {
+      "text": "C'est parfait, je ne changerais pas une virgule.",
+      "score": 50,
+      "feedback": "Généreux, mais un éloge absolu est rarement crédible, et il ne laisse aucune marge de progression."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-imperatif-consignes-01",
+   "level": "B1",
+   "contexts": [
+    "technology",
+    "customer-service",
+    "hospitality",
+    "healthcare",
+    "education"
+   ],
+   "category": "team-chat",
+   "scenario": "tech-problem",
+   "topic": "message-court",
+   "guide": "ecriture-asynchrone",
+   "interaction": "register-check",
+   "before": {
+    "brief": "Le système de réservation est en panne. Vous devez prévenir toute l'entreprise — dont la plupart ne sont pas techniciens.",
+    "prompt": "Quel message convient à ce public ?",
+    "options": [
+     {
+      "text": "Le système de réservation est en panne : nous ne pouvons pas enregistrer de nouvelles réservations. Les réservations existantes ne sont pas affectées. Nous travaillons dessus et je fais un point à 11 h. Si un client appelle, merci de noter ses coordonnées sur papier, nous les saisirons ensuite.",
+      "score": 100,
+      "feedback": "Langage simple, dit ce qui fonctionne encore, annonce le prochain point, et indique quoi faire en attendant. Parfait pour un public mixte."
+     },
+     {
+      "text": "On a des 502 sur le service de réservation, apparemment le load balancer échoue les health checks après le déploiement. Rollback en cours.",
+      "score": 25,
+      "feedback": "Exact mais incompréhensible pour la plupart, et personne ne sait quoi faire."
+     },
+     {
+      "text": "Petit souci technique sur les réservations, rien d'inquiétant !",
+      "score": 25,
+      "feedback": "Minimise une panne visible par les clients. Si elle dure trois heures, votre crédibilité en pâtit."
+     },
+     {
+      "text": "Le service de réservation connaît actuellement une interruption. Nous vous prions de nous excuser pour la gêne occasionnée.",
+      "score": 50,
+      "feedback": "Correct mais creux. Ni délai, ni solution de contournement, ni consigne pour les équipes."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Vous écrivez maintenant dans le canal de l'équipe technique à propos du même incident.",
+    "prompt": "Quel message convient à ce public ?",
+    "options": [
+     {
+      "text": "Erreurs 502 sur le service de réservation depuis 9 h 14, liées au déploiement de 9 h 10 — les health checks échouent sur la nouvelle sonde. Rollback vers la v4.2.1 en cours, environ 10 min. @Priya tu peux surveiller le taux d'erreur ?",
+      "score": 100,
+      "feedback": "Précis, horodaté, cause identifiée, action et délai annoncés, et une personne assignée. Bon registre pour un canal technique."
+     },
+     {
+      "text": "Le système de réservation est en panne, nous ne pouvons pas enregistrer de nouvelles réservations.",
+      "score": 50,
+      "feedback": "Convient à l'entreprise, mais les techniciens ont besoin de la cause, des horodatages et du plan de retour arrière."
+     },
+     {
+      "text": "Il y a un problème sur les réservations, quelqu'un peut regarder ?",
+      "score": 25,
+      "feedback": "Sans détail, trois personnes vont mener la même investigation en parallèle."
+     },
+     {
+      "text": "Nous investiguons actuellement un incident affectant le service de réservation et reviendrons vers vous dans les meilleurs délais.",
+      "score": 25,
+      "feedback": "Du langage corporate dans un canal technique. Cela retarde ceux qui pourraient corriger."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-raconter-01",
+   "level": "B1",
+   "contexts": [
+    "job-search",
+    "business",
+    "technology",
+    "design-creative",
+    "management"
+   ],
+   "category": "interview",
+   "scenario": "describe-experience",
+   "topic": "raconter-experience",
+   "guide": "raconter",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Un recruteur vous dit :",
+    "message": "Racontez-moi un projet dont vous êtes fier.",
+    "prompt": "Quelle réponse est la plus forte ?",
+    "options": [
+     {
+      "text": "Nous avons refait le tunnel de paiement l'an dernier. Il perdait environ un tiers des utilisateurs à l'étape du paiement. J'ai mené la phase de découverte, nous avons testé trois versions sur six semaines, et la version retenue a fait passer l'abandon à 12 %. Cela représente environ 400 000 € par an.",
+      "score": 100,
+      "feedback": "Passé composé pour un projet terminé, un problème, une démarche, un chiffre. C'est la forme que les recruteurs sont formés à écouter."
+     },
+     {
+      "text": "J'ai travaillé sur la refonte du tunnel de paiement l'an dernier et c'était vraiment intéressant, j'ai beaucoup appris.",
+      "score": 25,
+      "feedback": "Dit ce que vous avez ressenti, pas ce que vous avez fait ni ce qui a changé. Impossible à évaluer."
+     },
+     {
+      "text": "Nous refaisions le tunnel de paiement et nous testions trois versions et ça se passait plutôt bien.",
+      "score": 25,
+      "feedback": "L'imparfait partout transforme une réussite achevée en action inachevée. Pour un résultat terminé, il faut le passé composé."
+     },
+     {
+      "text": "Je suis fier de la refonte du tunnel de paiement, c'était un beau projet d'équipe.",
+      "score": 50,
+      "feedback": "Sympathique mais sans contenu : ni problème, ni action personnelle, ni résultat chiffré."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Question de relance :",
+    "message": "Qu'est-ce que vous feriez différemment ?",
+    "prompt": "Quelle réponse est la meilleure ?",
+    "options": [
+     {
+      "text": "J'impliquerais le support plus tôt. Nous avons conçu le parcours puis nous le leur avons montré, et ils ont immédiatement repéré deux cas d'erreur que nous avions manqués — cela nous a coûté une dizaine de jours. Depuis, je les intègre dès la phase de découverte.",
+      "score": 100,
+      "feedback": "Une vraie erreur, son coût mesuré, et un changement réellement mis en place. Conditionnel employé exactement comme il faut."
+     },
+     {
+      "text": "Honnêtement, rien — cela s'est très bien passé.",
+      "score": 25,
+      "feedback": "Ferme la question la plus révélatrice de l'entretien et suggère une absence de recul."
+     },
+     {
+      "text": "J'aurais aimé avoir plus de temps et plus de budget.",
+      "score": 25,
+      "feedback": "Souhaiter de meilleures conditions n'est pas la même chose qu'une décision que vous prendriez autrement."
+     },
+     {
+      "text": "Je ferais sans doute plus de tests.",
+      "score": 50,
+      "feedback": "Plausible mais générique. Aucun échec précis, aucun coût, aucune preuve que vous avez changé quelque chose."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-proposer-01",
+   "level": "A2",
+   "contexts": [
+    "marketing",
+    "technology",
+    "business",
+    "management",
+    "design-creative"
+   ],
+   "category": "meeting-room",
+   "scenario": "make-suggestion",
+   "topic": "proposer",
+   "guide": "proposer-conseiller",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "En réunion, vous proposez de revoir le plan la semaine prochaine.",
+    "prompt": "Quelle phrase est correcte ?",
+    "options": [
+     {
+      "text": "Je propose de revoir le plan la semaine prochaine.",
+      "score": 100,
+      "feedback": "Correct : « proposer de » + infinitif."
+     },
+     {
+      "text": "Je propose à revoir le plan la semaine prochaine.",
+      "score": 0,
+      "feedback": "On dit « proposer de », pas « proposer à »."
+     },
+     {
+      "text": "Je propose revoir le plan la semaine prochaine.",
+      "score": 25,
+      "feedback": "Il manque « de » : « je propose de revoir »."
+     },
+     {
+      "text": "Je propose de revu le plan la semaine prochaine.",
+      "score": 25,
+      "feedback": "Après « de », on met l'infinitif : « revoir », pas « revu »."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Un collègue a un problème avec un client. Vous lui donnez un conseil.",
+    "prompt": "Quelle phrase est correcte et polie ?",
+    "options": [
+     {
+      "text": "Tu devrais parler à Élodie avant la réunion.",
+      "score": 100,
+      "feedback": "Correct. « Tu devrais » est un conseil poli : ton collègue décide."
+     },
+     {
+      "text": "Tu dois parler à Élodie avant la réunion.",
+      "score": 25,
+      "feedback": "« Tu dois » est un ordre. Pour un conseil, dites « tu devrais »."
+     },
+     {
+      "text": "Tu devrais de parler à Élodie avant la réunion.",
+      "score": 25,
+      "feedback": "Après « devrais », pas de « de » : « tu devrais parler »."
+     },
+     {
+      "text": "Tu devrais parlé à Élodie avant la réunion.",
+      "score": 25,
+      "feedback": "Après « devrais », on met l'infinitif : « parler »."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-remercier-01",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "management",
+    "healthcare",
+    "education",
+    "hospitality"
+   ],
+   "category": "inbox",
+   "scenario": "thank-colleague",
+   "topic": "remercier",
+   "guide": "echanges-informels",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Hier, votre collègue Priya vous a aidé. Grâce à elle, le dossier est parti à l'heure.",
+    "prompt": "Quel message de remerciement est le meilleur ?",
+    "options": [
+     {
+      "text": "Merci beaucoup, Priya ! Grâce à ton aide, le dossier est parti à l'heure.",
+      "score": 100,
+      "feedback": "Vous dites merci et vous dites pourquoi. C'est simple et chaleureux."
+     },
+     {
+      "text": "Merci.",
+      "score": 25,
+      "feedback": "Trop court. Priya ne sait pas pourquoi vous la remerciez."
+     },
+     {
+      "text": "Merci pour hier.",
+      "score": 50,
+      "feedback": "Gentil, mais vague. Dites ce qu'elle a fait."
+     },
+     {
+      "text": "Madame, je vous prie d'agréer mes remerciements distingués.",
+      "score": 25,
+      "feedback": "Beaucoup trop formel pour une collègue que vous tutoyez."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Un client, M. Garcia, a répondu très vite à votre question.",
+    "prompt": "Quel message convient pour un client ?",
+    "options": [
+     {
+      "text": "Merci beaucoup pour votre réponse rapide, Monsieur Garcia. Bonne journée !",
+      "score": 100,
+      "feedback": "Poli, avec « vous », et vous dites pourquoi vous remerciez."
+     },
+     {
+      "text": "Merci mec, t'es top !",
+      "score": 0,
+      "feedback": "Beaucoup trop familier pour un client."
+     },
+     {
+      "text": "Merci pour ta réponse rapide !",
+      "score": 50,
+      "feedback": "Le message est gentil, mais on dit « vous » à un client."
+     },
+     {
+      "text": "Merci.",
+      "score": 25,
+      "feedback": "Trop court pour un client qui vous a aidé."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-vocabulaire-teletravail-01",
+   "level": "B1",
+   "contexts": [
+    "remote-work",
+    "technology",
+    "general-office",
+    "management",
+    "business"
+   ],
+   "category": "office-decision",
+   "scenario": "remote-work-request",
+   "topic": "vocabulaire-teletravail",
+   "guide": "ecriture-asynchrone",
+   "interaction": "multiple-select",
+   "before": {
+    "brief": "Vous demandez à télétravailler deux jours par semaine.",
+    "prompt": "Sélectionnez tous les arguments qui fonctionnent auprès d'un responsable. Les erreurs coûtent des points.",
+    "options": [
+     {
+      "text": "Les mardis et jeudis sont mes journées avec le moins de réunions",
+      "correct": true,
+      "feedback": "Précis et lié à l'organisation du travail. C'est le type d'argument qui obtient un oui."
+     },
+     {
+      "text": "Le travail de fond — reporting et analyse — est ce que je déplacerais à domicile",
+      "correct": true,
+      "feedback": "Montre que vous avez réfléchi à quel travail convient à quel lieu."
+     },
+     {
+      "text": "Je propose de tester un mois puis de faire le point",
+      "correct": true,
+      "feedback": "Une période d'essai rend le « oui » peu risqué. Très efficace."
+     },
+     {
+      "text": "Cela m'éviterait deux heures de transport par jour",
+      "correct": false,
+      "feedback": "Vrai et légitime, mais c'est un bénéfice uniquement pour vous. À mentionner en second, jamais en premier."
+     },
+     {
+      "text": "Tout le monde dans l'équipe le fait déjà",
+      "correct": false,
+      "feedback": "L'argument d'équité appelle une réponse d'équité. Et cela ne parle pas du travail."
+     },
+     {
+      "text": "J'ai besoin de plus de calme pour me concentrer",
+      "correct": false,
+      "feedback": "Sous-entend que l'environnement de bureau est un problème, ce qui déplace le sujet."
+     }
+    ],
+    "feedback": "Un responsable dit oui plus vite quand le travail y gagne aussi. Les bénéfices personnels sont légitimes, mais ils ne doivent jamais porter la demande à eux seuls."
+   },
+   "after": {
+    "brief": "Même compétence : quel vocabulaire du télétravail est assez précis pour une demande écrite ?",
+    "prompt": "Sélectionnez tous les termes qui ont un sens précis et vérifiable.",
+    "options": [
+     {
+      "text": "le travail asynchrone",
+      "correct": true,
+      "feedback": "Terme précis : collaboration sans être connectés en même temps."
+     },
+     {
+      "text": "un point bloquant",
+      "correct": true,
+      "feedback": "Désigne un obstacle identifiable qui empêche d'avancer."
+     },
+     {
+      "text": "le fuseau horaire",
+      "correct": true,
+      "feedback": "Factuel et vérifiable."
+     },
+     {
+      "text": "les plages de disponibilité",
+      "correct": true,
+      "feedback": "Précis : les heures pendant lesquelles on est joignable."
+     },
+     {
+      "text": "être flexible",
+      "correct": false,
+      "feedback": "Trop vague dans une demande écrite. Flexible sur quoi, et dans quelles limites ?"
+     },
+     {
+      "text": "être plus efficace",
+      "correct": false,
+      "feedback": "Affirmation invérifiable si elle n'est rattachée à aucun indicateur."
+     }
+    ],
+    "feedback": "Le test d'une demande écrite : votre responsable pourrait-il vérifier l'affirmation dans trois mois ? « Plages de disponibilité » passe le test ; « être flexible » non."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-bien-etre-01",
+   "level": "B1",
+   "contexts": [
+    "management",
+    "healthcare",
+    "general-office",
+    "education",
+    "remote-work"
+   ],
+   "category": "speaking",
+   "scenario": "workplace-wellbeing",
+   "topic": "reagir-spontane",
+   "guide": "structurer-oral",
+   "interaction": "speaking",
+   "before": {
+    "brief": "Vous avez un entretien individuel avec votre responsable. Vous devez dire que votre charge de travail n'est pas tenable — sans que cela passe pour une plainte.",
+    "prompt": "Parlez 60 secondes : expliquez la situation, donnez une preuve, et proposez ce qui devrait changer.",
+    "prepSeconds": 45,
+    "speakSeconds": 60,
+    "checklist": [
+     "J'ai donné un chiffre ou un exemple précis, pas seulement « trop de travail »",
+     "J'ai expliqué l'impact sur le travail, pas seulement sur moi",
+     "J'ai proposé quelque chose de concret",
+     "J'ai utilisé au moins un connecteur (par conséquent / ce qui signifie / par exemple)",
+     "J'ai parlé près de 60 secondes sans longue pause"
+    ],
+    "model": "Je voudrais signaler un point sur ma charge avant que cela ne devienne un problème. Je pilote actuellement quatre projets, et deux d'entre eux — Orsan et la migration — me demandent du temps presque tous les jours. Par conséquent, je fais le reporting tard le soir, et la semaine dernière j'ai manqué une échéance sur le plus petit dossier, ce qui ne m'était jamais arrivé. Ce n'est pas tenable jusqu'en avril. Ce que je propose, c'est de confier le reporting fournisseurs à Priya, qui demande justement plus de responsabilités, et de garder les deux gros dossiers. Cela me remettrait à un niveau réaliste. Pourrait-on en parler cette semaine ?",
+    "feedback": "Remarquez la démarche : le problème est présenté comme un risque pour le travail et non comme une plainte personnelle, avec une preuve concrète (l'échéance manquée) et une solution qui rend service à quelqu'un d'autre. Un responsable peut traiter cela en une conversation."
+   },
+   "after": {
+    "brief": "Situation inverse : un membre de votre équipe vous dit qu'il est débordé. C'est vous le responsable.",
+    "prompt": "Parlez 60 secondes : répondez-lui. Reconnaissez, cherchez des précisions, et convenez d'une prochaine étape.",
+    "prepSeconds": 30,
+    "speakSeconds": 60,
+    "checklist": [
+     "J'ai reconnu avant de chercher une solution",
+     "J'ai posé au moins une question pour obtenir des précisions",
+     "Je n'ai pas minimisé (« tout le monde est débordé »)",
+     "J'ai convenu d'une étape concrète avec une date",
+     "J'ai utilisé le conditionnel plutôt que l'impératif"
+    ],
+    "model": "Merci de m'en parler — ce n'est pas facile à dire, et je préfère largement le savoir maintenant. Est-ce que je peux te poser deux questions pour comprendre la forme du problème ? Lequel des quatre dossiers prend le plus de temps, et est-ce que c'est le volume, ou est-ce qu'il y a quelque chose de précis qui bloque ? … D'accord. Donc si je comprends bien, c'est surtout le reporting plutôt que les projets eux-mêmes. On va faire ceci : je regarde cette semaine si cela peut être déplacé, et on met vingt minutes jeudi pour voir si cela a vraiment changé quelque chose. Et si ce n'est pas le cas, on y revient — je ne veux pas que cela traîne un mois.",
+    "feedback": "Le geste clé, c'est de poser une question de diagnostic avant de proposer une solution. « Est-ce le volume ou est-ce que quelque chose bloque ? » révèle presque toujours que le vrai problème est plus étroit que « tout », donc réparable."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-se-presenter-01",
+   "level": "A2",
+   "contexts": [
+    "job-search",
+    "business",
+    "education",
+    "technology",
+    "marketing"
+   ],
+   "category": "interview",
+   "scenario": "introduce-yourself",
+   "topic": "se-presenter",
+   "guide": "se-presenter",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Début d'un entretien d'embauche. La recruteuse vous dit :",
+    "message": "Bonjour ! Présentez-vous, s'il vous plaît.",
+    "prompt": "Quelle réponse est la meilleure ?",
+    "options": [
+     {
+      "text": "Bonjour ! Je m'appelle Lucía Pérez. Je suis assistante commerciale depuis trois ans. Je m'occupe des clients et des commandes.",
+      "score": 100,
+      "feedback": "Nom, métier, expérience, tâches : c'est clair et court. Parfait pour commencer."
+     },
+     {
+      "text": "Je suis Lucía.",
+      "score": 25,
+      "feedback": "Trop court. Dites aussi votre métier et ce que vous faites."
+     },
+     {
+      "text": "Je suis une assistante commerciale depuis trois ans.",
+      "score": 50,
+      "feedback": "Presque ! Après « je suis », pas d'article devant un métier : « je suis assistante commerciale »."
+     },
+     {
+      "text": "Je suis née à Bogotá, j'aime le cinéma et la cuisine.",
+      "score": 25,
+      "feedback": "Ce n'est pas professionnel. La recruteuse veut savoir ce que vous faites au travail."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Premier jour dans une nouvelle entreprise. Une collègue vient vous voir.",
+    "message": "Bonjour ! Vous êtes nouvelle dans l'équipe ?",
+    "prompt": "Que répondez-vous ?",
+    "options": [
+     {
+      "text": "Oui ! Je m'appelle Lucía, je suis la nouvelle comptable. Je m'occupe des factures. Enchantée !",
+      "score": 100,
+      "feedback": "Nom, poste, tâche, et une formule aimable. C'est simple et chaleureux."
+     },
+     {
+      "text": "Oui.",
+      "score": 25,
+      "feedback": "Trop court. La personne ne sait rien de vous."
+     },
+     {
+      "text": "Oui, je suis Lucía, je suis une comptable.",
+      "score": 50,
+      "feedback": "Bien, mais pas d'article devant un métier : « je suis comptable »."
+     },
+     {
+      "text": "Oui, bonjour. Où est la machine à café ?",
+      "score": 25,
+      "feedback": "Vous ne vous présentez pas. Dites d'abord votre nom et votre poste."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-se-presenter-02",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "business",
+    "customer-service",
+    "hospitality",
+    "technology"
+   ],
+   "category": "inbox",
+   "scenario": "handover-email",
+   "topic": "se-presenter",
+   "guide": "se-presenter",
+   "interaction": "email-order",
+   "before": {
+    "brief": "Vous remplacez Daniel, qui change de poste. Vous écrivez au client pour vous présenter.",
+    "prompt": "Remettez le message dans l'ordre.",
+    "items": [
+     "Bonjour Madame Lemoine,",
+     "Je m'appelle Lucía Pérez. Je remplace Daniel Martin à partir de lundi.",
+     "Je m'occupe maintenant de votre dossier et de vos commandes.",
+     "Vous pouvez m'écrire à cette adresse ou m'appeler au 01 45 67 89 10.",
+     "Je suis contente de travailler avec vous.",
+     "Cordialement, Lucía Pérez"
+    ],
+    "feedback": "D'abord bonjour, puis votre nom et la raison du message, puis votre rôle, puis comment vous contacter. À la fin, une phrase aimable et votre nom."
+   },
+   "after": {
+    "brief": "Autre message : vous arrivez dans une nouvelle équipe. Vous écrivez à tous vos collègues.",
+    "prompt": "Remettez le message dans l'ordre.",
+    "items": [
+     "Bonjour à tous,",
+     "Je m'appelle Karim Benali et je suis le nouveau technicien informatique.",
+     "Je m'occupe des ordinateurs, des imprimantes et des accès au réseau.",
+     "Si vous avez un problème, vous pouvez m'écrire ou passer à mon bureau, le 12.",
+     "Je suis content de rejoindre l'équipe !",
+     "À bientôt, Karim"
+    ],
+    "feedback": "Même ordre : bonjour, qui vous êtes, ce que vous faites, comment vous trouver, puis une phrase aimable. Avec des collègues, « À bientôt » remplace « Cordialement »."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-echanges-informels-01",
+   "level": "A2",
+   "contexts": [
+    "business",
+    "marketing",
+    "hospitality",
+    "job-search",
+    "education"
+   ],
+   "category": "travel",
+   "scenario": "networking-event",
+   "topic": "conversation-informelle",
+   "guide": "echanges-informels",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Pause-café pendant un salon professionnel. Une personne vous dit :",
+    "message": "Bonjour ! C'est votre premier salon ?",
+    "prompt": "Quelle réponse continue bien la conversation ?",
+    "options": [
+     {
+      "text": "Oui, c'est mon premier ! Je travaille chez Vidal, dans le marketing. Et vous, vous venez souvent ?",
+      "score": 100,
+      "feedback": "Vous répondez, vous donnez une information, et vous posez une question. La conversation continue."
+     },
+     {
+      "text": "Oui.",
+      "score": 25,
+      "feedback": "Trop court. La conversation s'arrête."
+     },
+     {
+      "text": "Oui. Vous recrutez ?",
+      "score": 25,
+      "feedback": "Trop rapide ! Parlez d'abord un peu de vous et du salon."
+     },
+     {
+      "text": "Oui, et je suis très fatigué, le voyage était horrible, l'hôtel aussi…",
+      "score": 50,
+      "feedback": "Vous parlez, mais seulement de problèmes. Restez positif et posez une question."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Lundi matin, au bureau. Votre responsable arrive et vous dit :",
+    "message": "Bonjour ! Vous avez passé un bon week-end ?",
+    "prompt": "Quelle réponse est la meilleure ?",
+    "options": [
+     {
+      "text": "Oui, très bon, merci ! J'ai fait du vélo. Et vous ?",
+      "score": 100,
+      "feedback": "Une réponse courte, un petit détail et une question : parfait pour une petite conversation."
+     },
+     {
+      "text": "Oui.",
+      "score": 25,
+      "feedback": "Poli, mais la conversation s'arrête tout de suite."
+     },
+     {
+      "text": "Ça ne vous regarde pas.",
+      "score": 0,
+      "feedback": "Très impoli ! C'est une question gentille, pas une question indiscrète."
+     },
+     {
+      "text": "Oui, merci. Bon, j'ai beaucoup de travail.",
+      "score": 50,
+      "feedback": "Poli, mais un peu froid. Ajoutez une petite question : « Et vous ? »"
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-echanges-informels-02",
+   "level": "A2",
+   "contexts": [
+    "remote-work",
+    "general-office",
+    "technology",
+    "marketing",
+    "customer-service"
+   ],
+   "category": "team-chat",
+   "scenario": "team-chat-ping",
+   "topic": "conversation-informelle",
+   "guide": "echanges-informels",
+   "interaction": "matching",
+   "before": {
+    "brief": "Messages rapides dans le chat de l'équipe.",
+    "prompt": "Associez chaque message à la réponse la plus naturelle.",
+    "pairs": [
+     {
+      "left": "Merci pour ton aide !",
+      "right": "Avec plaisir !"
+     },
+     {
+      "left": "Tu as passé un bon week-end ?",
+      "right": "Oui, très bien, merci. Et toi ?"
+     },
+     {
+      "left": "Désolé pour le retard !",
+      "right": "Ce n'est pas grave."
+     },
+     {
+      "left": "Bonne fin de journée !",
+      "right": "Merci, à demain !"
+     },
+     {
+      "left": "Tu peux m'aider cinq minutes ?",
+      "right": "Oui, bien sûr, j'arrive."
+     },
+     {
+      "left": "Félicitations pour ta promotion !",
+      "right": "Merci beaucoup, c'est gentil !"
+     }
+    ],
+    "feedback": "Au travail, ces petites phrases sont importantes. Répondre vite et gentiment crée de bonnes relations."
+   },
+   "after": {
+    "brief": "Cette fois, vous répondez à un client dans la messagerie de l'entreprise. Avec un client, on dit « vous ».",
+    "prompt": "Associez chaque message à la bonne réponse.",
+    "pairs": [
+     {
+      "left": "Merci pour votre réponse rapide !",
+      "right": "Je vous en prie."
+     },
+     {
+      "left": "Vous êtes disponible demain ?",
+      "right": "Oui, demain à partir de 9 h."
+     },
+     {
+      "left": "Désolé, je suis en retard pour l'appel.",
+      "right": "Ce n'est pas grave, je vous attends."
+     },
+     {
+      "left": "Bonne fin de semaine !",
+      "right": "Merci, à vous aussi !"
+     },
+     {
+      "left": "Vous avez bien reçu mon document ?",
+      "right": "Oui, je l'ai bien reçu, merci."
+     }
+    ],
+    "feedback": "Avec un client, les réponses restent courtes et positives, toujours avec « vous ». « Je vous en prie » est la réponse polie à « merci »."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-prononciation-01",
+   "level": "A2",
+   "contexts": [
+    "business",
+    "hospitality",
+    "general-office",
+    "marketing",
+    "management"
+   ],
+   "category": "travel",
+   "scenario": "business-trip-plan",
+   "topic": "prononciation",
+   "guide": "prononciation",
+   "interaction": "categorise",
+   "before": {
+    "brief": "Vous allez appeler l'hôtel pour votre voyage d'affaires. Avant d'appeler, vous vérifiez les liaisons.",
+    "prompt": "Classez chaque groupe de mots : on fait la liaison ou non ?",
+    "bins": [
+     "Liaison",
+     "Pas de liaison"
+    ],
+    "items": [
+     {
+      "text": "nous avons",
+      "bin": "Liaison"
+     },
+     {
+      "text": "vous êtes",
+      "bin": "Liaison"
+     },
+     {
+      "text": "deux heures",
+      "bin": "Liaison"
+     },
+     {
+      "text": "un hôtel",
+      "bin": "Liaison"
+     },
+     {
+      "text": "les employés",
+      "bin": "Liaison"
+     },
+     {
+      "text": "et à midi",
+      "bin": "Pas de liaison"
+     },
+     {
+      "text": "Marc arrive",
+      "bin": "Pas de liaison"
+     },
+     {
+      "text": "le client attend",
+      "bin": "Pas de liaison"
+     }
+    ],
+    "feedback": "On fait la liaison après un petit mot (nous, vous, deux, un, les) devant une voyelle : nou-z-avons, deu-z-heures, un-n-hôtel. Pas de liaison après « et ». Pas de liaison après un prénom ou un nom au singulier."
+   },
+   "after": {
+    "brief": "Vous préparez une courte présentation pour votre équipe. Vous lisez vos phrases à voix basse.",
+    "prompt": "Classez chaque groupe de mots : on fait la liaison ou non ?",
+    "bins": [
+     "Liaison",
+     "Pas de liaison"
+    ],
+    "items": [
+     {
+      "text": "vous avez",
+      "bin": "Liaison"
+     },
+     {
+      "text": "les objectifs",
+      "bin": "Liaison"
+     },
+     {
+      "text": "trois exemples",
+      "bin": "Liaison"
+     },
+     {
+      "text": "ils arrivent",
+      "bin": "Liaison"
+     },
+     {
+      "text": "et après",
+      "bin": "Pas de liaison"
+     },
+     {
+      "text": "Anne est là",
+      "bin": "Pas de liaison"
+     },
+     {
+      "text": "le projet avance",
+      "bin": "Pas de liaison"
+     }
+    ],
+    "feedback": "Même règle : liaison après les petits mots (vous, les, trois, ils) devant une voyelle. Jamais après « et », ni après un prénom."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-prononciation-02",
+   "level": "A2",
+   "contexts": [
+    "marketing",
+    "business",
+    "customer-service",
+    "technology",
+    "design-creative"
+   ],
+   "category": "presentation",
+   "scenario": "client-presentation",
+   "topic": "prononciation",
+   "guide": "prononciation",
+   "interaction": "speaking",
+   "before": {
+    "brief": "Vous commencez une présentation pour un client. Lisez ce début à voix haute.",
+    "message": "Bonjour à tous. | Je m'appelle Camille Roux. | Aujourd'hui, | je vous présente | notre nouveau service. | Nous avons trois idées | pour vous.",
+    "prompt": "Lisez le texte deux fois. Faites une petite pause à chaque « | ». Faites les liaisons : nous_avons, trois_idées.",
+    "prepSeconds": 30,
+    "speakSeconds": 30,
+    "checklist": [
+     "J'ai fait une petite pause à chaque « | »",
+     "J'ai fait la liaison dans « nous avons » et « trois idées »",
+     "Ma voix est descendue à la fin des phrases",
+     "J'ai parlé lentement et clairement",
+     "Je n'ai pas mis l'accent sur chaque mot"
+    ],
+    "model": "Bonjour à tous. (pause) Je m'appelle Camille Roux. (pause) Aujourd'hui, (pause) je vous présente (pause) notre nouveau service. (pause) Nous_avons trois_idées (pause) pour vous. — On entend « nou-z-avons » et « troi-z-idées ». L'accent tombe à la fin de chaque groupe : « tous », « Roux », « service », « idées », « vous ».",
+    "feedback": "La clé, c'est le rythme. Dites de petits groupes de mots, faites une petite pause, et descendez la voix à la fin de la phrase. Les liaisons rendent la phrase fluide."
+   },
+   "after": {
+    "brief": "À la fin de la présentation, le client demande : « Vous avez des exemples ? » Lisez votre réponse à voix haute.",
+    "message": "Oui, | bien sûr. | Nous avons deux exemples. | Le premier | est en Espagne. | Le deuxième | est en France. | Vous avez d'autres questions ?",
+    "prompt": "Lisez la réponse deux fois. Attention : à la fin de la question, la voix monte ↗.",
+    "prepSeconds": 30,
+    "speakSeconds": 30,
+    "checklist": [
+     "J'ai fait une petite pause à chaque « | »",
+     "J'ai fait les liaisons : nous_avons, deux_exemples, vous_avez",
+     "Ma voix est montée à la fin de la question",
+     "Ma voix est descendue à la fin des autres phrases",
+     "Je n'ai pas fait de liaison après « et » ni après un nom"
+    ],
+    "model": "Oui, (pause) bien sûr. ↘ (pause) Nous_avons deux_exemples. ↘ (pause) Le premier (pause) est en Espagne. ↘ (pause) Le deuxième (pause) est en France. ↘ (pause) Vous_avez d'autres questions ? ↗",
+    "feedback": "Même rythme, avec une différence : la question finale monte. C'est la montée de la voix qui dit au client que c'est à lui de parler."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-vocabulaire-echeances-02",
+   "level": "A2",
+   "contexts": [
+    "general-office",
+    "business",
+    "management",
+    "remote-work",
+    "healthcare"
+   ],
+   "category": "inbox",
+   "scenario": "reschedule-meeting",
+   "topic": "vocabulaire-echeances",
+   "guide": "vocabulaire-echeances",
+   "interaction": "multiple-choice",
+   "before": {
+    "brief": "Vous ne pouvez pas venir à la réunion de mardi. Vous voulez la mettre jeudi.",
+    "message": "Bonjour à tous, est-ce qu'on peut ______ la réunion à jeudi ?",
+    "prompt": "Quel verbe convient ?",
+    "options": [
+     {
+      "text": "repousser",
+      "score": 100,
+      "feedback": "Correct. Mardi → jeudi : la réunion est plus tard. On la repousse."
+     },
+     {
+      "text": "avancer",
+      "score": 25,
+      "feedback": "« Avancer » = mettre plus tôt. Jeudi est après mardi."
+     },
+     {
+      "text": "annuler",
+      "score": 25,
+      "feedback": "« Annuler » = supprimer la réunion. Vous voulez seulement changer le jour."
+     },
+     {
+      "text": "attendre",
+      "score": 0,
+      "feedback": "« Attendre » ne va pas ici. On dit « repousser » ou « décaler »."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Un client est libre plus tôt. Vous voulez passer le rendez-vous de vendredi à mercredi.",
+    "message": "Est-ce que nous pouvons ______ notre rendez-vous à mercredi ?",
+    "prompt": "Quel verbe convient ?",
+    "options": [
+     {
+      "text": "avancer",
+      "score": 100,
+      "feedback": "Correct. Vendredi → mercredi : le rendez-vous est plus tôt. On l'avance."
+     },
+     {
+      "text": "repousser",
+      "score": 25,
+      "feedback": "« Repousser » = mettre plus tard. Mercredi est avant vendredi."
+     },
+     {
+      "text": "décaler",
+      "score": 50,
+      "feedback": "Possible, mais « décaler » ne dit pas si c'est plus tôt ou plus tard. « Avancer » est plus précis."
+     },
+     {
+      "text": "retarder",
+      "score": 0,
+      "feedback": "« Retarder » = mettre plus tard. Ici, c'est plus tôt."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-argumenter-01",
+   "level": "B2",
+   "contexts": [
+    "education",
+    "business",
+    "technology",
+    "management",
+    "remote-work"
+   ],
+   "category": "speaking",
+   "scenario": "speaking-discussion",
+   "topic": "debat",
+   "guide": "argumenter",
+   "interaction": "speaking",
+   "before": {
+    "brief": "EXPRESSION ORALE B2 — débat. Une minute de préparation, puis deux minutes pour défendre un point de vue.",
+    "prompt": "« La semaine de quatre jours devrait-elle devenir la norme dans les entreprises ? » Prenez position, développez deux arguments, illustrez-en un, réfutez l'objection principale et concluez.",
+    "prepSeconds": 60,
+    "speakSeconds": 120,
+    "checklist": [
+     "J'ai annoncé ma position et le nombre d'arguments dès l'introduction",
+     "J'ai développé deux arguments distincts, pas deux fois le même",
+     "J'ai illustré au moins un argument par un exemple précis",
+     "J'ai présenté l'objection principale avant de la réfuter (certes… il n'en reste pas moins que…)",
+     "J'ai employé des connecteurs variés (d'une part, d'autre part, en revanche, c'est pourquoi)",
+     "J'ai conclu en reformulant, sans répéter mot pour mot l'introduction"
+    ],
+    "model": "Je suis plutôt favorable à la semaine de quatre jours, mais pas sous n'importe quelle forme, et ce pour deux raisons. D'une part, elle oblige les équipes à hiérarchiser : quand on perd une journée, on supprime d'abord les réunions inutiles. Une entreprise de logiciels lyonnaise l'a testée pendant six mois et n'a constaté aucune baisse de chiffre d'affaires, tout en réduisant de moitié ses arrêts maladie. D'autre part, c'est un argument de recrutement considérable dans des métiers où les candidats choisissent. Certes, on m'objectera qu'elle est impossible dans les services qui doivent rester ouverts cinq ou six jours, comme la santé ou le commerce. Il n'en reste pas moins qu'on peut l'organiser par roulement plutôt que de fermer un jour fixe. C'est pourquoi je ne l'imposerais pas comme une norme uniforme, mais je la proposerais comme une option à expérimenter service par service.",
+    "feedback": "Remarquez l'architecture : position nuancée annoncée avec le nombre d'arguments, deux arguments de nature différente (organisation, recrutement), un exemple chiffré, puis une objection formulée honnêtement avant d'être réfutée. La conclusion reprend la nuance du début au lieu de la répéter."
+   },
+   "after": {
+    "brief": "EXPRESSION ORALE B2 — réagir à un point de vue. 45 secondes de préparation.",
+    "prompt": "Un collègue affirme : « Les réunions ne servent à rien, tout pourrait se régler par écrit. » Vous êtes partiellement d'accord. Nuancez sa position en 90 secondes.",
+    "prepSeconds": 45,
+    "speakSeconds": 90,
+    "checklist": [
+     "J'ai reconnu ce qui est juste dans sa position",
+     "J'ai marqué clairement où commence mon désaccord",
+     "J'ai donné au moins un argument et un exemple",
+     "J'ai utilisé une concession (certes / il est vrai que… mais)",
+     "J'ai proposé une position intermédiaire concrète",
+     "Je n'ai pas caricaturé l'avis de mon collègue"
+    ],
+    "model": "Il est vrai que beaucoup de réunions pourraient être remplacées par un message : quand il s'agit seulement de transmettre une information, l'écrit est plus rapide et il laisse une trace. Là où je ne te suis pas, c'est sur le « tout ». Dès qu'il y a un désaccord ou une décision délicate, l'écrit a tendance à durcir les positions. Le mois dernier, le fil sur le budget a duré trois jours ; une réunion de vingt minutes l'a réglé. Donc je proposerais une règle simple : l'information passe par écrit, la décision et le désaccord en réunion, et toute réunion sans décision à prendre est annulée.",
+    "feedback": "La nuance B2 tient dans le déplacement : on accepte le principe, on conteste son extension (« le tout »), on appuie la réserve sur un fait vécu, puis on propose un critère qui départage les deux positions."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-argumenter-02",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "management",
+    "education",
+    "hospitality",
+    "general-office"
+   ],
+   "category": "meeting-room",
+   "scenario": "sustainability-initiative",
+   "topic": "argumenter",
+   "guide": "argumenter",
+   "interaction": "sentence-order",
+   "before": {
+    "brief": "Comité de direction. Vous défendez le passage de tous les éclairages aux LED : 40 000 € d'investissement, amortis en moins de trois ans.",
+    "prompt": "Remettez votre intervention dans l'ordre le plus convaincant.",
+    "items": [
+     "Je suis favorable au passage aux LED, et ce pour deux raisons.",
+     "D'une part, l'investissement de 40 000 € serait amorti en moins de trois ans grâce à la baisse de la facture d'électricité.",
+     "D'autre part, nos clients grands comptes exigent désormais un bilan carbone, et ce chantier nous permettrait d'y répondre sans étude supplémentaire.",
+     "Certes, la dépense tombe sur un exercice déjà serré ; il n'en reste pas moins qu'un étalement sur deux budgets est envisageable.",
+     "C'est pourquoi je propose que nous validions le principe aujourd'hui et que nous arbitrions le calendrier en mars."
+    ],
+    "feedback": "Position annoncée avec le nombre d'arguments, deux arguments distincts (économique puis commercial), une concession aussitôt réfutée, puis une proposition concrète. Placer l'objection avant la conclusion la neutralise ; la placer en dernier la laisserait résonner."
+   },
+   "after": {
+    "brief": "Même compétence à l'écrit : dans une note, vous proposez de remplacer les gobelets jetables par des gourdes offertes à chaque salarié.",
+    "prompt": "Remettez la note dans l'ordre le plus convaincant.",
+    "items": [
+     "Cette note propose de remplacer les gobelets jetables par des gourdes nominatives, pour un coût initial de 3 000 €.",
+     "Premièrement, nous consommons près de 60 000 gobelets par an, soit une dépense récurrente supérieure au coût des gourdes dès la première année.",
+     "Deuxièmement, la mesure est visible : elle montre aux équipes que nos engagements environnementaux se traduisent en actes.",
+     "On objectera que certains salariés oublieront leur gourde ; un stock de verres lavables en salle de pause suffirait toutefois à couvrir ces cas.",
+     "En conséquence, nous recommandons un lancement au 1er janvier, précédé d'une communication interne en décembre."
+    ],
+    "feedback": "À l'écrit, la position devient l'objet de la note, mais la progression reste la même : deux arguments hiérarchisés, une objection anticipée (« on objectera que ») et réfutée, puis une recommandation datée."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-attenuer-01",
+   "level": "B2",
+   "contexts": [
+    "remote-work",
+    "general-office",
+    "technology",
+    "management",
+    "design-creative"
+   ],
+   "category": "team-chat",
+   "scenario": "chat-tone-slip",
+   "topic": "attenuer",
+   "guide": "attenuer",
+   "interaction": "register-check",
+   "before": {
+    "brief": "Dans le fil de l'équipe, vous avez écrit à un collègue senior : « Ton tableau est faux, les chiffres de mars sont inversés. » Il a seulement répondu « ok. ». Vous voulez rattraper le ton sans retirer le fond.",
+    "prompt": "Quel message de suivi trouve le bon dosage ?",
+    "options": [
+     {
+      "text": "Je me suis mal exprimé tout à l'heure, pardon pour la brusquerie. Il me semble que les colonnes de mars et d'avril ont été inversées — je me trompe peut-être, mais les totaux ne correspondent pas à l'export. Tu veux qu'on regarde ça ensemble cinq minutes ?",
+      "score": 100,
+      "feedback": "Reconnaît le ton, atténue le constat (« il me semble », « je me trompe peut-être ») sans le retirer, et propose une action commune. Le fond reste intact."
+     },
+     {
+      "text": "Désolé, désolé, ce n'est sûrement rien, oublie mon message, c'est probablement moi qui ai mal lu…",
+      "score": 25,
+      "feedback": "Sur-atténuation : vous retirez une remarque juste. Si l'erreur existe, elle partira chez le client."
+     },
+     {
+      "text": "Je maintiens : les chiffres de mars sont inversés. Merci de corriger.",
+      "score": 25,
+      "feedback": "Juste sur le fond, mais vous doublez la sécheresse au lieu de la réparer."
+     },
+     {
+      "text": "Petite précision : les colonnes de mars sont peut-être inversées, à vérifier 🙂",
+      "score": 75,
+      "feedback": "Le ton est réparé et le fond maintenu, mais le premier message n'est pas reconnu et aucune aide n'est proposée."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Situation inverse : vous devez signaler à une cliente un retard de paiement, et vous craignez d'être trop dur.",
+    "prompt": "Quelle formulation est la plus juste ?",
+    "options": [
+     {
+      "text": "Sauf erreur de notre part, la facture du 12 mars reste à ce jour impayée. Pourriez-vous vérifier de votre côté ? Si le règlement est déjà parti, merci de ne pas tenir compte de ce message.",
+      "score": 100,
+      "feedback": "« Sauf erreur de notre part » et la dernière phrase offrent une porte de sortie élégante, tandis que le fait et la demande restent parfaitement nets."
+     },
+     {
+      "text": "Vous n'avez toujours pas payé la facture du 12 mars.",
+      "score": 25,
+      "feedback": "Exact mais accusateur : « toujours pas » transforme un fait en reproche."
+     },
+     {
+      "text": "Je me permets, si cela ne vous dérange pas trop, de vous signaler éventuellement qu'il se pourrait peut-être que la facture ne soit pas encore réglée…",
+      "score": 25,
+      "feedback": "Tant d'atténuations que la demande disparaît. La cliente peut légitimement ne rien faire."
+     },
+     {
+      "text": "Il semblerait que la facture du 12 mars n'ait pas encore été réglée.",
+      "score": 75,
+      "feedback": "Bonne atténuation, et le subjonctif après « il semblerait que » est correct. Mais aucune action n'est demandée : la cliente sait, sans savoir quoi faire."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-attenuer-02",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "technology",
+    "education",
+    "marketing",
+    "management"
+   ],
+   "category": "presentation",
+   "scenario": "handle-questions",
+   "topic": "attenuer",
+   "guide": "attenuer",
+   "interaction": "multiple-select",
+   "before": {
+    "brief": "Présentation au comité. On vous demande si le nouveau service sera rentable dès la première année. Vous n'en êtes pas certain, mais les premiers indicateurs sont bons.",
+    "prompt": "Sélectionnez toutes les formulations qui nuancent sans vous décrédibiliser.",
+    "options": [
+     {
+      "text": "D'après les premiers indicateurs, il est probable que nous atteindrons l'équilibre avant la fin de l'année.",
+      "correct": true,
+      "feedback": "Source citée et degré de probabilité clair. Notez l'indicatif : « il est probable que » ne prend pas le subjonctif."
+     },
+     {
+      "text": "Je ne peux pas le garantir, mais tout indique que nous en prenons le chemin.",
+      "correct": true,
+      "feedback": "Honnête sur l'incertitude, affirmatif sur la tendance."
+     },
+     {
+      "text": "À ce stade, je dirais plutôt au deuxième semestre ; je vous confirmerai le chiffre après la clôture de mars.",
+      "correct": true,
+      "feedback": "Nuance datée et engagement précis : l'incertitude devient un calendrier."
+     },
+     {
+      "text": "Honnêtement, je n'en ai aucune idée.",
+      "correct": false,
+      "feedback": "Vous avez des indicateurs : prétendre ne rien savoir vous décrédibilise."
+     },
+     {
+      "text": "Oui, absolument, c'est certain.",
+      "correct": false,
+      "feedback": "Affirmer une certitude que vous n'avez pas vous expose si les chiffres déçoivent."
+     },
+     {
+      "text": "Peut-être que probablement ce serait éventuellement possible.",
+      "correct": false,
+      "feedback": "Empiler les atténuations détruit le message."
+     }
+    ],
+    "feedback": "Atténuez le degré de certitude, jamais votre maîtrise du sujet : une source, une probabilité, une date de confirmation."
+   },
+   "after": {
+    "brief": "Réunion d'équipe : un collègue présente un planning que vous jugez trop optimiste. Vous voulez le dire sans le mettre en difficulté devant tout le monde.",
+    "prompt": "Sélectionnez toutes les formulations qui conviennent.",
+    "options": [
+     {
+      "text": "Corrigez-moi si je me trompe, mais la phase de tests me paraît un peu courte au regard du dernier projet.",
+      "correct": true,
+      "feedback": "Atténuation classique, et l'argument repose sur un fait partagé."
+     },
+     {
+      "text": "Je me demande si deux semaines de marge supplémentaires ne nous sécuriseraient pas.",
+      "correct": true,
+      "feedback": "Question indirecte au conditionnel : vous proposez sans imposer."
+     },
+     {
+      "text": "Il me semble qu'on avait sous-estimé la recette la dernière fois ; est-ce qu'on a intégré ce retour d'expérience ?",
+      "correct": true,
+      "feedback": "Atténué, factuel, et formulé comme une question qui laisse la main au collègue."
+     },
+     {
+      "text": "Ce planning est irréaliste.",
+      "correct": false,
+      "feedback": "Jugement global et abrupt, devant tout le monde."
+     },
+     {
+      "text": "Je n'y connais rien, mais bon, ça me paraît bizarre.",
+      "correct": false,
+      "feedback": "Vous vous décrédibilisez vous-même, et « bizarre » n'est pas un argument."
+     },
+     {
+      "text": "Tu es toujours trop optimiste sur les délais.",
+      "correct": false,
+      "feedback": "Vise la personne, et « toujours » transforme la remarque en reproche."
+     }
+    ],
+    "feedback": "En public, l'atténuation protège la personne ; l'argument, lui, doit rester précis. Un fait partagé et une question ouverte valent mieux qu'un verdict."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-compte-rendu-01",
+   "level": "B2",
+   "contexts": [
+    "business",
+    "management",
+    "marketing",
+    "technology",
+    "education"
+   ],
+   "category": "report",
+   "scenario": "recommendation-report",
+   "topic": "compte-rendu",
+   "guide": "compte-rendu",
+   "interaction": "best-response",
+   "before": {
+    "brief": "Vous avez comparé deux logiciels de gestion pendant un mois. La direction lira votre compte rendu entre deux réunions.",
+    "prompt": "Quel premier paragraphe est le plus efficace ?",
+    "options": [
+     {
+      "text": "Nous recommandons le logiciel Orsan. Plus cher de 8 % à l'achat, il réduit le temps de saisie d'environ un tiers et s'intègre à notre outil de facturation, ce qui le rend rentable en quatorze mois. Le détail des tests et des coûts figure ci-dessous et en annexe.",
+      "score": 100,
+      "feedback": "Conclusion d'abord, justifiée par deux chiffres, puis renvoi au détail. Le lecteur pressé peut décider sans aller plus loin."
+     },
+     {
+      "text": "Ce compte rendu présente la démarche suivie au cours du mois de mars pour comparer deux logiciels de gestion, Vidal et Orsan, selon plusieurs critères détaillés ci-après.",
+      "score": 25,
+      "feedback": "Décrit le document au lieu de livrer son contenu. La recommandation est repoussée à la fin."
+     },
+     {
+      "text": "Les deux logiciels présentent des avantages et des inconvénients, et le choix dépendra des priorités de la direction.",
+      "score": 25,
+      "feedback": "Renvoie la décision au lecteur alors qu'on vous a demandé une analyse."
+     },
+     {
+      "text": "Orsan est meilleur. Il faut le prendre.",
+      "score": 50,
+      "feedback": "La conclusion est bien en tête, mais sans justification : impossible de la défendre en comité."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Autre document : le compte rendu d'une réunion de crise, destiné à des collègues absents.",
+    "prompt": "Quelle phrase d'ouverture remplit le mieux sa fonction ?",
+    "options": [
+     {
+      "text": "Décision prise : la livraison est décalée au 18 avril ; deux actions restent sans responsable et doivent être attribuées avant vendredi (détail ci-dessous).",
+      "score": 100,
+      "feedback": "Décision, date, et ce qui est attendu du lecteur. Un absent sait immédiatement s'il est concerné."
+     },
+     {
+      "text": "La réunion s'est tenue le 3 avril de 14 h à 16 h en présence de huit participants, dont la liste figure en annexe.",
+      "score": 25,
+      "feedback": "Informations exactes mais secondaires : l'absent ne sait toujours pas ce qui a été décidé."
+     },
+     {
+      "text": "Les échanges ont été riches et constructifs, et chacun a pu exprimer son point de vue.",
+      "score": 0,
+      "feedback": "Formule creuse. Un compte rendu consigne des décisions, pas l'ambiance."
+     },
+     {
+      "text": "Plusieurs sujets ont été abordés, notamment le calendrier, le budget et la répartition des tâches.",
+      "score": 50,
+      "feedback": "Annonce les thèmes mais pas les conclusions. Le lecteur doit tout lire pour savoir ce qui change."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-compte-rendu-02",
+   "level": "B2",
+   "contexts": [
+    "healthcare",
+    "hospitality",
+    "technology",
+    "customer-service",
+    "management"
+   ],
+   "category": "report",
+   "scenario": "incident-report",
+   "topic": "compte-rendu",
+   "guide": "compte-rendu",
+   "interaction": "stronger-sentence",
+   "before": {
+    "brief": "Vous rédigez le rapport d'incident d'une panne du système de réservation, samedi dernier. Le ton doit rester factuel et sans accusation.",
+    "prompt": "Toutes ces phrases sont correctes. Laquelle convient le mieux à un rapport d'incident ?",
+    "options": [
+     {
+      "text": "Samedi à 9 h 10, le déploiement de la version 4.3 a interrompu le service de réservation pendant 47 minutes ; 212 demandes n'ont pas pu être enregistrées.",
+      "score": 100,
+      "feedback": "Horodaté, chiffré, sans jugement : la cause est un événement, pas une personne."
+     },
+     {
+      "text": "À cause d'une erreur de l'équipe technique, le service a été coupé une bonne partie de la matinée.",
+      "score": 25,
+      "feedback": "Désigne un coupable et reste vague (« une bonne partie »)."
+     },
+     {
+      "text": "Une regrettable négligence a malheureusement provoqué une panne tout à fait inacceptable.",
+      "score": 0,
+      "feedback": "Trois jugements de valeur et aucun fait vérifiable."
+     },
+     {
+      "text": "Le service a connu quelques perturbations samedi matin.",
+      "score": 50,
+      "feedback": "Neutre, mais si flou qu'il minimise l'incident."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Même rapport, section « Recommandations ».",
+    "prompt": "Quelle formulation est la plus efficace ?",
+    "options": [
+     {
+      "text": "Nous recommandons d'interdire les déploiements le samedi et de rendre obligatoire un test de charge en préproduction ; ces deux mesures seront effectives au 1er mai, sous la responsabilité de l'équipe Infra.",
+      "score": 100,
+      "feedback": "Deux mesures précises, une date et un responsable : la recommandation est vérifiable."
+     },
+     {
+      "text": "Il faudrait faire plus attention à l'avenir.",
+      "score": 0,
+      "feedback": "Aucune mesure, aucun responsable : la même panne se reproduira."
+     },
+     {
+      "text": "Des améliorations pourraient éventuellement être envisagées concernant les processus de déploiement.",
+      "score": 25,
+      "feedback": "Atténuation excessive : rien n'est réellement recommandé."
+     },
+     {
+      "text": "Nous recommandons de renforcer les tests avant chaque déploiement.",
+      "score": 50,
+      "feedback": "Bonne direction, mais sans échéance ni responsable, la mesure risque de rester lettre morte."
+     }
+    ]
+   },
+   "language": "french"
+  }
+ ]
+}

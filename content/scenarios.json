@@ -1,0 +1,1094 @@
+{
+ "categories": [
+  {
+   "id": "inbox",
+   "icon": "📧",
+   "label": {
+    "en": "Inbox",
+    "fr": "Boîte de réception"
+   }
+  },
+  {
+   "id": "meeting-room",
+   "icon": "👥",
+   "label": {
+    "en": "Meeting Room",
+    "fr": "Salle de réunion"
+   }
+  },
+  {
+   "id": "office-decision",
+   "icon": "💼",
+   "label": {
+    "en": "Office Decision",
+    "fr": "Décision de bureau"
+   }
+  },
+  {
+   "id": "client",
+   "icon": "🤝",
+   "label": {
+    "en": "Client Situation",
+    "fr": "Situation client"
+   }
+  },
+  {
+   "id": "presentation",
+   "icon": "📊",
+   "label": {
+    "en": "Presentation",
+    "fr": "Présentation"
+   }
+  },
+  {
+   "id": "team-chat",
+   "icon": "💬",
+   "label": {
+    "en": "Team Chat",
+    "fr": "Messagerie d'équipe"
+   }
+  },
+  {
+   "id": "speaking",
+   "icon": "🎤",
+   "label": {
+    "en": "Speaking",
+    "fr": "Expression orale"
+   }
+  },
+  {
+   "id": "report",
+   "icon": "📝",
+   "label": {
+    "en": "Report",
+    "fr": "Rapport"
+   }
+  },
+  {
+   "id": "travel",
+   "icon": "🧳",
+   "label": {
+    "en": "Business Travel",
+    "fr": "Déplacement pro"
+   }
+  },
+  {
+   "id": "interview",
+   "icon": "🎯",
+   "label": {
+    "en": "Interview",
+    "fr": "Entretien"
+   }
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "manager-update-request",
+   "category": "inbox",
+   "title": {
+    "en": "The 3 p.m. Update",
+    "fr": "Le point de 15 h"
+   },
+   "premise": {
+    "en": "Your manager wants a status update before the end of the day.",
+    "fr": "Votre responsable veut un point avant la fin de la journée."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "technology",
+    "management",
+    "remote-work"
+   ]
+  },
+  {
+   "id": "request-information",
+   "category": "inbox",
+   "title": {
+    "en": "Missing Information",
+    "fr": "L'information manquante"
+   },
+   "premise": {
+    "en": "You need details from another department to move forward.",
+    "fr": "Il vous faut des détails d'un autre service pour avancer."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "technology",
+    "education",
+    "healthcare"
+   ]
+  },
+  {
+   "id": "missed-deadline",
+   "category": "inbox",
+   "title": {
+    "en": "The Missed Deadline",
+    "fr": "L'échéance dépassée"
+   },
+   "premise": {
+    "en": "You will not deliver on time and you have to say so.",
+    "fr": "Vous ne livrerez pas à temps et vous devez l'annoncer."
+   },
+   "contexts": [
+    "general-office",
+    "marketing",
+    "design-creative",
+    "technology",
+    "business"
+   ]
+  },
+  {
+   "id": "follow-up-email",
+   "category": "inbox",
+   "title": {
+    "en": "No Reply Yet",
+    "fr": "Toujours sans réponse"
+   },
+   "premise": {
+    "en": "Nobody answered your email and the clock is ticking.",
+    "fr": "Personne n'a répondu et le temps presse."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "job-search",
+    "remote-work"
+   ]
+  },
+  {
+   "id": "client-complaint-email",
+   "category": "inbox",
+   "title": {
+    "en": "An Unhappy Client Writes",
+    "fr": "Un client mécontent écrit"
+   },
+   "premise": {
+    "en": "A client sends a sharp email about quality.",
+    "fr": "Un client envoie un courriel sec sur la qualité."
+   },
+   "contexts": [
+    "business",
+    "marketing",
+    "customer-service",
+    "hospitality",
+    "design-creative"
+   ]
+  },
+  {
+   "id": "meeting-confirmation",
+   "category": "inbox",
+   "title": {
+    "en": "Confirming the Meeting",
+    "fr": "Confirmer la réunion"
+   },
+   "premise": {
+    "en": "You need to confirm time, place and agenda in one short message.",
+    "fr": "Vous devez confirmer l'heure, le lieu et l'ordre du jour."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "management",
+    "remote-work",
+    "education"
+   ]
+  },
+  {
+   "id": "reschedule-meeting",
+   "category": "inbox",
+   "title": {
+    "en": "Moving the Meeting",
+    "fr": "Déplacer la réunion"
+   },
+   "premise": {
+    "en": "Something has come up and you must move a confirmed meeting.",
+    "fr": "Un imprévu vous oblige à déplacer une réunion confirmée."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "management",
+    "remote-work",
+    "healthcare"
+   ]
+  },
+  {
+   "id": "ask-clarification",
+   "category": "inbox",
+   "title": {
+    "en": "The Unclear Brief",
+    "fr": "Le brief flou"
+   },
+   "premise": {
+    "en": "The instructions you received do not make sense.",
+    "fr": "Les consignes reçues ne sont pas claires."
+   },
+   "contexts": [
+    "marketing",
+    "design-creative",
+    "technology",
+    "general-office",
+    "education"
+   ]
+  },
+  {
+   "id": "project-update",
+   "category": "inbox",
+   "title": {
+    "en": "The Weekly Update",
+    "fr": "Le point hebdomadaire"
+   },
+   "premise": {
+    "en": "You have to summarise progress for people who were not there.",
+    "fr": "Vous devez résumer l'avancement pour les absents."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "technology",
+    "management",
+    "remote-work"
+   ]
+  },
+  {
+   "id": "thank-colleague",
+   "category": "inbox",
+   "title": {
+    "en": "Saying Thank You Properly",
+    "fr": "Remercier comme il faut"
+   },
+   "premise": {
+    "en": "A colleague saved you. You want it on the record.",
+    "fr": "Un collègue vous a sauvé. Vous voulez le souligner."
+   },
+   "contexts": [
+    "general-office",
+    "management",
+    "healthcare",
+    "education",
+    "hospitality"
+   ]
+  },
+  {
+   "id": "handover-email",
+   "category": "inbox",
+   "title": {
+    "en": "The Handover",
+    "fr": "La passation"
+   },
+   "premise": {
+    "en": "You are away next week and someone must take over.",
+    "fr": "Vous êtes absent la semaine prochaine, il faut une passation."
+   },
+   "contexts": [
+    "general-office",
+    "healthcare",
+    "hospitality",
+    "technology",
+    "business"
+   ]
+  },
+  {
+   "id": "project-delay",
+   "category": "office-decision",
+   "title": {
+    "en": "The Project Slips",
+    "fr": "Le projet prend du retard"
+   },
+   "premise": {
+    "en": "The timeline is no longer realistic. What do you propose?",
+    "fr": "Le calendrier n'est plus réaliste. Que proposez-vous ?"
+   },
+   "contexts": [
+    "marketing",
+    "technology",
+    "design-creative",
+    "business",
+    "management"
+   ]
+  },
+  {
+   "id": "angry-customer",
+   "category": "office-decision",
+   "title": {
+    "en": "The Angry Customer",
+    "fr": "Le client en colère"
+   },
+   "premise": {
+    "en": "Someone is angry, in person, and waiting for your answer.",
+    "fr": "Quelqu'un est en colère, devant vous, et attend votre réponse."
+   },
+   "contexts": [
+    "customer-service",
+    "hospitality",
+    "business",
+    "healthcare",
+    "general-office"
+   ]
+  },
+  {
+   "id": "manager-disagrees",
+   "category": "office-decision",
+   "title": {
+    "en": "Your Manager Disagrees",
+    "fr": "Votre responsable n'est pas d'accord"
+   },
+   "premise": {
+    "en": "Your proposal was rejected and you still believe in it.",
+    "fr": "Votre proposition est rejetée et vous y croyez encore."
+   },
+   "contexts": [
+    "general-office",
+    "marketing",
+    "technology",
+    "management",
+    "business"
+   ]
+  },
+  {
+   "id": "colleague-misunderstanding",
+   "category": "office-decision",
+   "title": {
+    "en": "A Misunderstanding",
+    "fr": "Un malentendu"
+   },
+   "premise": {
+    "en": "A colleague thinks you dropped the ball. You did not.",
+    "fr": "Un collègue pense que vous avez failli. Ce n'est pas le cas."
+   },
+   "contexts": [
+    "general-office",
+    "technology",
+    "design-creative",
+    "healthcare",
+    "education"
+   ]
+  },
+  {
+   "id": "unexpected-absence",
+   "category": "office-decision",
+   "title": {
+    "en": "Nobody Told You",
+    "fr": "Personne ne vous a prévenu"
+   },
+   "premise": {
+    "en": "A key person is out today and their work is now yours.",
+    "fr": "Une personne clé est absente et son travail vous revient."
+   },
+   "contexts": [
+    "general-office",
+    "healthcare",
+    "hospitality",
+    "customer-service",
+    "management"
+   ]
+  },
+  {
+   "id": "changing-priorities",
+   "category": "office-decision",
+   "title": {
+    "en": "Everything Is Urgent",
+    "fr": "Tout est urgent"
+   },
+   "premise": {
+    "en": "Two people gave you two number-one priorities.",
+    "fr": "Deux personnes vous ont donné deux priorités numéro un."
+   },
+   "contexts": [
+    "general-office",
+    "technology",
+    "marketing",
+    "management",
+    "remote-work"
+   ]
+  },
+  {
+   "id": "ask-more-time",
+   "category": "office-decision",
+   "title": {
+    "en": "Asking for More Time",
+    "fr": "Demander plus de temps"
+   },
+   "premise": {
+    "en": "You need an extension and you have to justify it.",
+    "fr": "Il vous faut un délai et vous devez le justifier."
+   },
+   "contexts": [
+    "general-office",
+    "design-creative",
+    "technology",
+    "education",
+    "business"
+   ]
+  },
+  {
+   "id": "giving-feedback",
+   "category": "office-decision",
+   "title": {
+    "en": "The Work Is Not Good Enough",
+    "fr": "Le travail n'est pas au niveau"
+   },
+   "premise": {
+    "en": "You must tell someone their work needs changing.",
+    "fr": "Vous devez dire à quelqu'un que son travail doit changer."
+   },
+   "contexts": [
+    "management",
+    "design-creative",
+    "marketing",
+    "education",
+    "technology"
+   ]
+  },
+  {
+   "id": "receiving-criticism",
+   "category": "office-decision",
+   "title": {
+    "en": "Taking the Criticism",
+    "fr": "Recevoir la critique"
+   },
+   "premise": {
+    "en": "You have just been criticised in front of others.",
+    "fr": "On vient de vous critiquer devant les autres."
+   },
+   "contexts": [
+    "general-office",
+    "management",
+    "design-creative",
+    "business",
+    "education"
+   ]
+  },
+  {
+   "id": "two-solutions",
+   "category": "office-decision",
+   "title": {
+    "en": "Fast or Right?",
+    "fr": "Vite ou bien ?"
+   },
+   "premise": {
+    "en": "One option is quick, one is solid. You choose and defend it.",
+    "fr": "Une option est rapide, l'autre solide. Vous choisissez et justifiez."
+   },
+   "contexts": [
+    "technology",
+    "business",
+    "marketing",
+    "management",
+    "design-creative"
+   ]
+  },
+  {
+   "id": "give-opinion",
+   "category": "meeting-room",
+   "title": {
+    "en": "They Ask What You Think",
+    "fr": "On vous demande votre avis"
+   },
+   "premise": {
+    "en": "The room goes quiet and turns to you.",
+    "fr": "La salle se tait et se tourne vers vous."
+   },
+   "contexts": [
+    "general-office",
+    "marketing",
+    "business",
+    "education",
+    "management"
+   ]
+  },
+  {
+   "id": "disagree-politely",
+   "category": "meeting-room",
+   "title": {
+    "en": "You Do Not Agree",
+    "fr": "Vous n'êtes pas d'accord"
+   },
+   "premise": {
+    "en": "The team is about to agree on something you think is wrong.",
+    "fr": "L'équipe va valider une décision que vous jugez mauvaise."
+   },
+   "contexts": [
+    "general-office",
+    "technology",
+    "business",
+    "management",
+    "marketing"
+   ]
+  },
+  {
+   "id": "agree-professionally",
+   "category": "meeting-room",
+   "title": {
+    "en": "Backing an Idea",
+    "fr": "Soutenir une idée"
+   },
+   "premise": {
+    "en": "A quieter colleague made a good point. Support it.",
+    "fr": "Un collègue discret a eu une bonne idée. Soutenez-la."
+   },
+   "contexts": [
+    "general-office",
+    "management",
+    "education",
+    "design-creative",
+    "remote-work"
+   ]
+  },
+  {
+   "id": "interrupt-politely",
+   "category": "meeting-room",
+   "title": {
+    "en": "Getting a Word In",
+    "fr": "Prendre la parole"
+   },
+   "premise": {
+    "en": "The meeting is running away from you and you have something to say.",
+    "fr": "La réunion vous échappe et vous avez quelque chose à dire."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "remote-work",
+    "technology",
+    "management"
+   ]
+  },
+  {
+   "id": "follow-up-question",
+   "category": "meeting-room",
+   "title": {
+    "en": "The Follow-Up Question",
+    "fr": "La question de relance"
+   },
+   "premise": {
+    "en": "An answer was vague. Push, without being rude.",
+    "fr": "Une réponse est restée vague. Relancez, sans être brusque."
+   },
+   "contexts": [
+    "business",
+    "technology",
+    "education",
+    "management",
+    "general-office"
+   ]
+  },
+  {
+   "id": "make-suggestion",
+   "category": "meeting-room",
+   "title": {
+    "en": "Suggesting a Way Out",
+    "fr": "Proposer une solution"
+   },
+   "premise": {
+    "en": "The discussion is stuck. Offer a way forward.",
+    "fr": "La discussion est bloquée. Proposez une issue."
+   },
+   "contexts": [
+    "marketing",
+    "technology",
+    "business",
+    "management",
+    "design-creative"
+   ]
+  },
+  {
+   "id": "summarise-meeting",
+   "category": "meeting-room",
+   "title": {
+    "en": "Closing the Meeting",
+    "fr": "Conclure la réunion"
+   },
+   "premise": {
+    "en": "Five minutes left. Summarise decisions and next steps.",
+    "fr": "Cinq minutes restantes. Résumez décisions et prochaines étapes."
+   },
+   "contexts": [
+    "general-office",
+    "management",
+    "business",
+    "remote-work",
+    "education"
+   ]
+  },
+  {
+   "id": "explain-problem",
+   "category": "meeting-room",
+   "title": {
+    "en": "Explaining What Went Wrong",
+    "fr": "Expliquer ce qui n'a pas marché"
+   },
+   "premise": {
+    "en": "Something failed and people want to understand why.",
+    "fr": "Quelque chose a échoué et on veut comprendre pourquoi."
+   },
+   "contexts": [
+    "technology",
+    "business",
+    "healthcare",
+    "general-office",
+    "management"
+   ]
+  },
+  {
+   "id": "client-presentation",
+   "category": "presentation",
+   "title": {
+    "en": "Presenting to the Client",
+    "fr": "Présenter au client"
+   },
+   "premise": {
+    "en": "You are presenting work you are proud of to people paying for it.",
+    "fr": "Vous présentez un travail dont vous êtes fier aux personnes qui le financent."
+   },
+   "contexts": [
+    "marketing",
+    "design-creative",
+    "business",
+    "technology",
+    "customer-service"
+   ]
+  },
+  {
+   "id": "describe-data",
+   "category": "presentation",
+   "title": {
+    "en": "Reading the Numbers",
+    "fr": "Lire les chiffres"
+   },
+   "premise": {
+    "en": "A chart is on screen and you have to describe the trend.",
+    "fr": "Un graphique est à l'écran et vous devez décrire la tendance."
+   },
+   "contexts": [
+    "business",
+    "marketing",
+    "technology",
+    "education",
+    "management"
+   ]
+  },
+  {
+   "id": "handle-questions",
+   "category": "presentation",
+   "title": {
+    "en": "The Question You Cannot Answer",
+    "fr": "La question sans réponse"
+   },
+   "premise": {
+    "en": "Someone asks something you genuinely do not know.",
+    "fr": "On vous pose une question dont vous ignorez la réponse."
+   },
+   "contexts": [
+    "business",
+    "technology",
+    "education",
+    "marketing",
+    "management"
+   ]
+  },
+  {
+   "id": "team-chat-ping",
+   "category": "team-chat",
+   "title": {
+    "en": "The Quick Ping",
+    "fr": "Le message rapide"
+   },
+   "premise": {
+    "en": "A one-line chat message needs a one-line answer — a good one.",
+    "fr": "Un message d'une ligne appelle une réponse d'une ligne — bonne."
+   },
+   "contexts": [
+    "technology",
+    "remote-work",
+    "general-office",
+    "marketing",
+    "design-creative"
+   ]
+  },
+  {
+   "id": "async-status",
+   "category": "team-chat",
+   "title": {
+    "en": "Async Stand-Up",
+    "fr": "Point d'équipe asynchrone"
+   },
+   "premise": {
+    "en": "You write your daily update for a team in another time zone.",
+    "fr": "Vous écrivez votre point quotidien pour une équipe à l'autre bout du monde."
+   },
+   "contexts": [
+    "remote-work",
+    "technology",
+    "marketing",
+    "business",
+    "design-creative"
+   ]
+  },
+  {
+   "id": "chat-tone-slip",
+   "category": "team-chat",
+   "title": {
+    "en": "That Came Out Wrong",
+    "fr": "C'est mal passé"
+   },
+   "premise": {
+    "en": "Your message was read as cold. Repair it.",
+    "fr": "Votre message a été jugé froid. Rattrapez-le."
+   },
+   "contexts": [
+    "remote-work",
+    "general-office",
+    "technology",
+    "management",
+    "design-creative"
+   ]
+  },
+  {
+   "id": "written-report",
+   "category": "report",
+   "title": {
+    "en": "Writing It Up",
+    "fr": "Rédiger le compte rendu"
+   },
+   "premise": {
+    "en": "Turn a messy week into a clear written summary.",
+    "fr": "Transformez une semaine chaotique en compte rendu clair."
+   },
+   "contexts": [
+    "business",
+    "management",
+    "education",
+    "healthcare",
+    "technology"
+   ]
+  },
+  {
+   "id": "incident-report",
+   "category": "report",
+   "title": {
+    "en": "The Incident Report",
+    "fr": "Le rapport d'incident"
+   },
+   "premise": {
+    "en": "Write down what happened — accurately and without blame.",
+    "fr": "Consignez les faits — précisément et sans accusation."
+   },
+   "contexts": [
+    "healthcare",
+    "hospitality",
+    "technology",
+    "customer-service",
+    "management"
+   ]
+  },
+  {
+   "id": "recommendation-report",
+   "category": "report",
+   "title": {
+    "en": "Making the Recommendation",
+    "fr": "Formuler la recommandation"
+   },
+   "premise": {
+    "en": "Two options, one budget. Write the recommendation.",
+    "fr": "Deux options, un budget. Rédigez la recommandation."
+   },
+   "contexts": [
+    "business",
+    "management",
+    "marketing",
+    "technology",
+    "education"
+   ]
+  },
+  {
+   "id": "business-trip-plan",
+   "category": "travel",
+   "title": {
+    "en": "The Trip Is Confirmed",
+    "fr": "Le déplacement est confirmé"
+   },
+   "premise": {
+    "en": "Flights, hotel, agenda — and one thing has already gone wrong.",
+    "fr": "Vols, hôtel, programme — et un problème est déjà survenu."
+   },
+   "contexts": [
+    "business",
+    "management",
+    "marketing",
+    "hospitality",
+    "general-office"
+   ]
+  },
+  {
+   "id": "networking-event",
+   "category": "travel",
+   "title": {
+    "en": "The Conference Dinner",
+    "fr": "Le dîner de conférence"
+   },
+   "premise": {
+    "en": "Small talk with someone useful. Do not waste it.",
+    "fr": "Une conversation informelle utile. Ne la gâchez pas."
+   },
+   "contexts": [
+    "business",
+    "job-search",
+    "marketing",
+    "hospitality",
+    "education"
+   ]
+  },
+  {
+   "id": "job-interview",
+   "category": "interview",
+   "title": {
+    "en": "The Interview",
+    "fr": "L'entretien"
+   },
+   "premise": {
+    "en": "They are deciding about you while you speak.",
+    "fr": "On décide de vous pendant que vous parlez."
+   },
+   "contexts": [
+    "job-search",
+    "business",
+    "technology",
+    "education",
+    "management"
+   ]
+  },
+  {
+   "id": "introduce-yourself",
+   "category": "interview",
+   "title": {
+    "en": "Tell Me About Yourself",
+    "fr": "Parlez-moi de vous"
+   },
+   "premise": {
+    "en": "The first ninety seconds of an interview.",
+    "fr": "Les quatre-vingt-dix premières secondes d'un entretien."
+   },
+   "contexts": [
+    "job-search",
+    "business",
+    "education",
+    "technology",
+    "marketing"
+   ]
+  },
+  {
+   "id": "describe-experience",
+   "category": "interview",
+   "title": {
+    "en": "Walk Me Through It",
+    "fr": "Racontez-moi"
+   },
+   "premise": {
+    "en": "Describe something you actually did, with a result.",
+    "fr": "Décrivez ce que vous avez fait, avec un résultat."
+   },
+   "contexts": [
+    "job-search",
+    "business",
+    "technology",
+    "design-creative",
+    "management"
+   ]
+  },
+  {
+   "id": "strengths-weaknesses",
+   "category": "interview",
+   "title": {
+    "en": "Strengths and Weaknesses",
+    "fr": "Forces et faiblesses"
+   },
+   "premise": {
+    "en": "The oldest question in the book. Answer it well.",
+    "fr": "La question la plus classique. Répondez bien."
+   },
+   "contexts": [
+    "job-search",
+    "management",
+    "business",
+    "education",
+    "healthcare"
+   ]
+  },
+  {
+   "id": "performance-review",
+   "category": "interview",
+   "title": {
+    "en": "The Performance Review",
+    "fr": "L'entretien annuel"
+   },
+   "premise": {
+    "en": "Your year is being assessed. Speak about it.",
+    "fr": "On évalue votre année. Parlez-en."
+   },
+   "contexts": [
+    "management",
+    "general-office",
+    "business",
+    "healthcare",
+    "education"
+   ]
+  },
+  {
+   "id": "salary-conversation",
+   "category": "interview",
+   "title": {
+    "en": "The Money Conversation",
+    "fr": "La question du salaire"
+   },
+   "premise": {
+    "en": "Numbers, politely, without apologising.",
+    "fr": "Des chiffres, poliment, sans s'excuser."
+   },
+   "contexts": [
+    "job-search",
+    "management",
+    "business",
+    "general-office",
+    "technology"
+   ]
+  },
+  {
+   "id": "remote-work-request",
+   "category": "office-decision",
+   "title": {
+    "en": "Asking to Work Remotely",
+    "fr": "Demander à télétravailler"
+   },
+   "premise": {
+    "en": "You want two days from home. Build the case.",
+    "fr": "Vous voulez deux jours à domicile. Construisez l'argumentaire."
+   },
+   "contexts": [
+    "remote-work",
+    "general-office",
+    "management",
+    "technology",
+    "business"
+   ]
+  },
+  {
+   "id": "tech-problem",
+   "category": "team-chat",
+   "title": {
+    "en": "It Is Broken",
+    "fr": "C'est en panne"
+   },
+   "premise": {
+    "en": "Something technical failed and non-technical people need to know.",
+    "fr": "Une panne technique et des non-techniciens à informer."
+   },
+   "contexts": [
+    "technology",
+    "customer-service",
+    "general-office",
+    "remote-work",
+    "education"
+   ]
+  },
+  {
+   "id": "sustainability-initiative",
+   "category": "meeting-room",
+   "title": {
+    "en": "The Green Proposal",
+    "fr": "La proposition écologique"
+   },
+   "premise": {
+    "en": "Argue for a change that costs money now and saves later.",
+    "fr": "Défendez un changement qui coûte maintenant et économise plus tard."
+   },
+   "contexts": [
+    "business",
+    "management",
+    "education",
+    "hospitality",
+    "general-office"
+   ]
+  },
+  {
+   "id": "workplace-wellbeing",
+   "category": "speaking",
+   "title": {
+    "en": "Talking About Workload",
+    "fr": "Parler de la charge de travail"
+   },
+   "premise": {
+    "en": "Say out loud that the workload is not sustainable.",
+    "fr": "Dire à voix haute que la charge n'est pas tenable."
+   },
+   "contexts": [
+    "management",
+    "healthcare",
+    "general-office",
+    "education",
+    "remote-work"
+   ]
+  },
+  {
+   "id": "speaking-long-turn",
+   "category": "speaking",
+   "title": {
+    "en": "The Long Turn",
+    "fr": "Le monologue suivi"
+   },
+   "premise": {
+    "en": "Two minutes, one topic, no interruptions.",
+    "fr": "Deux minutes, un sujet, sans interruption."
+   },
+   "contexts": [
+    "job-search",
+    "education",
+    "business",
+    "general-office",
+    "technology"
+   ]
+  },
+  {
+   "id": "speaking-discussion",
+   "category": "speaking",
+   "title": {
+    "en": "The Discussion",
+    "fr": "La discussion"
+   },
+   "premise": {
+    "en": "An abstract question about the world of work.",
+    "fr": "Une question abstraite sur le monde du travail."
+   },
+   "contexts": [
+    "education",
+    "business",
+    "technology",
+    "management",
+    "remote-work"
+   ]
+  },
+  {
+   "id": "project-planning",
+   "category": "meeting-room",
+   "title": {
+    "en": "Planning the Next Quarter",
+    "fr": "Planifier le trimestre"
+   },
+   "premise": {
+    "en": "Talk about what will happen and what is already decided.",
+    "fr": "Parlez de ce qui arrivera et de ce qui est déjà décidé."
+   },
+   "contexts": [
+    "business",
+    "management",
+    "marketing",
+    "technology",
+    "education"
+   ]
+  }
+ ]
+}

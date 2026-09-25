@@ -1,0 +1,148 @@
+{
+ "contexts": [
+  {
+   "id": "general-office",
+   "label": {
+    "en": "General Office",
+    "fr": "Bureau général"
+   },
+   "icon": "🏢",
+   "blurb": {
+    "en": "Everyday workplace communication.",
+    "fr": "La communication quotidienne au bureau."
+   }
+  },
+  {
+   "id": "business",
+   "label": {
+    "en": "Business",
+    "fr": "Affaires"
+   },
+   "icon": "📈",
+   "blurb": {
+    "en": "Accounts, negotiation, reporting.",
+    "fr": "Comptes, négociation, reporting."
+   }
+  },
+  {
+   "id": "marketing",
+   "label": {
+    "en": "Marketing",
+    "fr": "Marketing"
+   },
+   "icon": "📣",
+   "blurb": {
+    "en": "Campaigns, briefs, clients, launches.",
+    "fr": "Campagnes, briefs, clients, lancements."
+   }
+  },
+  {
+   "id": "design-creative",
+   "label": {
+    "en": "Design & Creative",
+    "fr": "Design & Création"
+   },
+   "icon": "🎨",
+   "blurb": {
+    "en": "Feedback, revisions, creative direction.",
+    "fr": "Retours, révisions, direction créative."
+   }
+  },
+  {
+   "id": "technology",
+   "label": {
+    "en": "Technology",
+    "fr": "Technologie"
+   },
+   "icon": "💻",
+   "blurb": {
+    "en": "Releases, bugs, sprints, stakeholders.",
+    "fr": "Versions, bugs, sprints, parties prenantes."
+   }
+  },
+  {
+   "id": "customer-service",
+   "label": {
+    "en": "Customer Service",
+    "fr": "Service client"
+   },
+   "icon": "🎧",
+   "blurb": {
+    "en": "Complaints, solutions, difficult calls.",
+    "fr": "Réclamations, solutions, appels difficiles."
+   }
+  },
+  {
+   "id": "education",
+   "label": {
+    "en": "Education",
+    "fr": "Éducation"
+   },
+   "icon": "🎓",
+   "blurb": {
+    "en": "Colleagues, students, programmes.",
+    "fr": "Collègues, étudiants, programmes."
+   }
+  },
+  {
+   "id": "healthcare",
+   "label": {
+    "en": "Healthcare",
+    "fr": "Santé"
+   },
+   "icon": "🩺",
+   "blurb": {
+    "en": "Teams, shifts, patients, protocols.",
+    "fr": "Équipes, gardes, patients, protocoles."
+   }
+  },
+  {
+   "id": "hospitality",
+   "label": {
+    "en": "Hospitality",
+    "fr": "Hôtellerie"
+   },
+   "icon": "🏨",
+   "blurb": {
+    "en": "Guests, bookings, service recovery.",
+    "fr": "Clients, réservations, gestion des incidents."
+   }
+  },
+  {
+   "id": "management",
+   "label": {
+    "en": "Management",
+    "fr": "Management"
+   },
+   "icon": "🧭",
+   "blurb": {
+    "en": "Leading, delegating, difficult conversations.",
+    "fr": "Diriger, déléguer, conversations difficiles."
+   }
+  },
+  {
+   "id": "job-search",
+   "label": {
+    "en": "Job Search",
+    "fr": "Recherche d'emploi"
+   },
+   "icon": "🎯",
+   "blurb": {
+    "en": "Interviews, applications, networking.",
+    "fr": "Entretiens, candidatures, réseautage."
+   }
+  },
+  {
+   "id": "remote-work",
+   "label": {
+    "en": "Remote Work",
+    "fr": "Télétravail"
+   },
+   "icon": "🌍",
+   "blurb": {
+    "en": "Async messages, calls, time zones.",
+    "fr": "Messages asynchrones, visios, fuseaux horaires."
+   }
+  }
+ ]
+}

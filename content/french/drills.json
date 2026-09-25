@@ -1,0 +1,2607 @@
+{
+ "drills": {
+  "demandes-polies": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle forme convient à une demande professionnelle ?",
+    "message": "_____ m'envoyer le dossier avant 15 h ?",
+    "instruction": "Choisissez la forme qui convient.",
+    "options": [
+     {
+      "text": "Pourriez-vous",
+      "score": 100,
+      "feedback": "Correct. C'est la forme la plus polie."
+     },
+     {
+      "text": "Pouvez-vous",
+      "score": 75,
+      "feedback": "Correct et poli. « Pourriez-vous » est encore un peu plus poli."
+     },
+     {
+      "text": "Voulez-vous",
+      "score": 50,
+      "feedback": "Cela demande si la personne a envie. Ce n'est pas la question."
+     },
+     {
+      "text": "Devez-vous",
+      "score": 25,
+      "feedback": "Cela parle d'une obligation, pas d'un service."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez la phrase.",
+    "sentence": "Je vous envoie le document {} 15 h.",
+    "accept": [
+     "avant",
+     "d'ici"
+    ],
+    "size": 8,
+    "instruction": "Un mot : il s'agit d'une limite.",
+    "hint": "Pas « jusqu'à », qui exprime une durée.",
+    "feedback": "« Avant » et « d'ici » donnent une limite. « Jusqu'à » est pour une durée : « je suis au bureau jusqu'à 18 h »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce courriel à un autre service.",
+    "text": "Bonjour Thomas,\n\n{}-vous m'envoyer les factures de mars {} jeudi ?\n\nMerci {},\nCamille",
+    "gaps": [
+     {
+      "accept": [
+       "Pourriez",
+       "Pouvez"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "avant",
+       "d'ici",
+       "pour"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "d'avance",
+       "beaucoup",
+       "par avance"
+      ],
+      "size": 10
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Une question polie, une limite (« avant jeudi »), et « merci d'avance » ou « merci beaucoup » pour finir."
+   }
+  ],
+  "vocabulaire-echeances": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle préposition convient ?",
+    "message": "Je suis au bureau _____ 18 h, n'hésitez pas à m'appeler avant.",
+    "instruction": "Choisissez le mot qui convient.",
+    "options": [
+     {
+      "text": "jusqu'à",
+      "score": 100,
+      "feedback": "Correct. Vous êtes au bureau tout le temps, puis vous partez à 18 h : c'est une durée."
+     },
+     {
+      "text": "avant",
+      "score": 25,
+      "feedback": "« Avant 18 h » change le sens de la phrase."
+     },
+     {
+      "text": "depuis",
+      "score": 0,
+      "feedback": "« Depuis » parle du passé."
+     },
+     {
+      "text": "pour",
+      "score": 25,
+      "feedback": "« Pour 18 h » est une limite pour livrer quelque chose, pas une durée."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez la phrase.",
+    "sentence": "On peut {} la réunion à mercredi ? J'ai besoin de deux jours de plus.",
+    "accept": [
+     "repousser",
+     "décaler",
+     "decaler",
+     "reporter"
+    ],
+    "size": 10,
+    "instruction": "Un verbe : mettre plus tard.",
+    "hint": "Le contraire d'« avancer ».",
+    "feedback": "« Repousser », « décaler » et « reporter » = mettre plus tard. « Avancer » = mettre plus tôt."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce message sur un retard.",
+    "text": "Le fournisseur a trois jours de {}.\n\nJe peux livrer le rapport {} mardi.\n\nJe suis au bureau {} 18 h si vous voulez en parler.",
+    "gaps": [
+     {
+      "accept": [
+       "retard"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "avant",
+       "d'ici",
+       "pour"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "jusqu'à",
+       "jusqu'a"
+      ],
+      "size": 9
+     }
+    ],
+    "instruction": "Trois blancs. Attention aux deux derniers.",
+    "feedback": "« Avant mardi » est une limite. « Jusqu'à 18 h » est une durée. Ne les mélangez pas."
+   }
+  ],
+  "futur-proche": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle forme complète correctement la phrase ?",
+    "message": "Nous _____ contacter le client cet après-midi.",
+    "instruction": "C'est une décision déjà prise.",
+    "options": [
+     {
+      "text": "allons",
+      "score": 100,
+      "feedback": "Correct. « Nous allons » + infinitif : c'est décidé."
+     },
+     {
+      "text": "avons",
+      "score": 0,
+      "feedback": "Le futur proche se fait avec ALLER, pas avec AVOIR."
+     },
+     {
+      "text": "vont",
+      "score": 25,
+      "feedback": "« Vont » va avec ils/elles."
+     },
+     {
+      "text": "allez",
+      "score": 25,
+      "feedback": "« Allez » va avec vous."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Mettez à la forme négative.",
+    "sentence": "Je {} envoyer le devis aujourd'hui, il manque deux prix.",
+    "accept": [
+     "ne vais pas",
+     "ne vais pas encore",
+     "vais pas"
+    ],
+    "size": 13,
+    "instruction": "Mettez « ne … pas » autour de ALLER.",
+    "hint": "« Je ne … pas + infinitif »",
+    "feedback": "Au futur proche, « ne … pas » va autour de ALLER : « je ne vais pas envoyer ». Jamais « je vais ne pas envoyer »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce message d'équipe.",
+    "text": "C'est décidé : nous {} appeler le client demain.\nJe {} pas préparer la présentation ce soir.\nEst-ce que vous {} venir à la réunion ?",
+    "gaps": [
+     {
+      "accept": [
+       "allons"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "ne vais"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "allez"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Trois blancs : une phrase positive, une négative, une question.",
+    "feedback": "Un seul verbe : ALLER. La négation va autour de ALLER, et le deuxième verbe reste à l'infinitif."
+   }
+  ],
+  "futur-simple": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase est correcte ?",
+    "instruction": "Vous prenez un engagement ferme auprès d'un client.",
+    "options": [
+     {
+      "text": "Je vous enverrai le rapport avant vendredi.",
+      "score": 100,
+      "feedback": "Correct. « Envoyer » fait « j'enverrai » : radical irrégulier en -err-."
+     },
+     {
+      "text": "Je vous enverrais le rapport avant vendredi.",
+      "score": 25,
+      "feedback": "« Enverrais » est le conditionnel. Pour un engagement, il faut le futur."
+     },
+     {
+      "text": "Je vous envoierai le rapport avant vendredi.",
+      "score": 25,
+      "feedback": "Erreur de radical : c'est « enverrai », pas « envoierai »."
+     },
+     {
+      "text": "Je vous enverrai le rapport jusqu'à vendredi.",
+      "score": 50,
+      "feedback": "Le verbe est bon, mais « jusqu'à » exprime une durée. Il faut « avant vendredi »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Conjuguez au futur simple.",
+    "sentence": "Nous {} le point lundi et vous aurez les chiffres mardi. (faire)",
+    "accept": [
+     "ferons"
+    ],
+    "size": 8,
+    "instruction": "Radical irrégulier.",
+    "hint": "faire → fer-",
+    "feedback": "Faire → fer-, avoir → aur-, être → ser-, aller → ir-, pouvoir → pourr-, venir → viendr-. Ces six couvrent la plupart des besoins."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ces engagements.",
+    "text": "Je {} le projet demain matin. (présenter)\n\nNous {} le dossier la semaine prochaine, et vous {} les conclusions avant la fin du mois. (terminer / avoir)",
+    "gaps": [
+     {
+      "accept": [
+       "présenterai",
+       "presenterai"
+      ],
+      "size": 12
+     },
+     {
+      "accept": [
+       "terminerons"
+      ],
+      "size": 12
+     },
+     {
+      "accept": [
+       "aurez"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Trois verbes au futur simple.",
+    "feedback": "Le radical du futur se termine toujours par -r. Si vous n'entendez pas le -r, ce n'est pas du futur simple."
+   }
+  ],
+  "futur-proche-vs-simple": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle forme est la plus logique ?",
+    "message": "Attention ! Le serveur _____ tomber !",
+    "instruction": "C'est imminent et visible.",
+    "options": [
+     {
+      "text": "va",
+      "score": 100,
+      "feedback": "Correct. Danger imminent et visible : futur proche."
+     },
+     {
+      "text": "tombera",
+      "score": 25,
+      "feedback": "Le futur simple projette dans un avenir plus lointain. Ici c'est immédiat."
+     },
+     {
+      "text": "tomberait",
+      "score": 0,
+      "feedback": "Le conditionnel exprime une hypothèse, pas une urgence."
+     },
+     {
+      "text": "tombait",
+      "score": 0,
+      "feedback": "L'imparfait est un temps du passé."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez logiquement.",
+    "sentence": "Dans dix ans, la plupart des réunions {} virtuelles. (être)",
+    "accept": [
+     "seront"
+    ],
+    "size": 8,
+    "instruction": "Projection lointaine.",
+    "hint": "être → ser-",
+    "feedback": "« Dans dix ans » impose le futur simple : c'est une projection, pas une décision prise maintenant."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Choisissez le temps logique pour chaque phrase.",
+    "text": "Ce soir, je {} finir le devis : c'est décidé.\n\nUn jour, je {} ma propre équipe. (diriger)\n\nPromis, je vous {} dès que j'ai du nouveau. (appeler)",
+    "gaps": [
+     {
+      "accept": [
+       "vais"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "dirigerai"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "appellerai"
+      ],
+      "size": 11
+     }
+    ],
+    "instruction": "Un futur proche, deux futurs simples.",
+    "feedback": "Test rapide : si « c'est déjà décidé » fonctionne, prenez le futur proche. Si « un jour » ou « promis » fonctionne, prenez le futur simple."
+   }
+  ],
+  "articles-partitifs": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle forme est correcte ?",
+    "message": "Nous n'avons eu que _____ retours positifs sur la nouvelle procédure.",
+    "instruction": "Attention : « ne … que » n'est pas une vraie négation.",
+    "options": [
+     {
+      "text": "des",
+      "score": 100,
+      "feedback": "Correct. « Ne … que » signifie « seulement » : l'article reste complet."
+     },
+     {
+      "text": "de",
+      "score": 25,
+      "feedback": "Piège : « ne … que » exprime une restriction, pas une négation. Rien ne transforme « des » en « de »."
+     },
+     {
+      "text": "les",
+      "score": 25,
+      "feedback": "L'article défini désignerait des retours déjà identifiés. Ici, il s'agit d'une quantité indéterminée."
+     },
+     {
+      "text": "du",
+      "score": 0,
+      "feedback": "« Du » est singulier ; « retours » est au pluriel."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Ce n'est pas {} travail bâclé : chaque chiffre a été vérifié deux fois.",
+    "accept": [
+     "du"
+    ],
+    "size": 5,
+    "instruction": "Après « ce n'est pas », l'article change-t-il ?",
+    "hint": "On nie une identité, pas une quantité.",
+    "feedback": "Après « être » à la forme négative, le partitif reste complet : « ce n'est pas du travail bâclé ». La règle « négation → de » concerne les verbes comme avoir, faire ou trouver."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce bilan avec du, de la, de l', des ou de.",
+    "text": "La plupart {} participants ont jugé la formation utile, et bien {} managers ont demandé une seconde session.\n\nEn revanche, nous manquons {} retours chiffrés, et nous avons reçu {} nombreuses demandes d'adaptation.",
+    "gaps": [
+     {
+      "accept": [
+       "des"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "des"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "de",
+       "d'"
+      ],
+      "size": 4
+     },
+     {
+      "accept": [
+       "de"
+      ],
+      "size": 4
+     }
+    ],
+    "instruction": "Quatre blancs. Deux exceptions et deux règles.",
+    "feedback": "« La plupart des » et « bien des » sont les deux exceptions aux expressions de quantité. « Manquer de » n'a jamais d'article. Et devant un adjectif pluriel placé avant le nom, « des » devient « de » : « de nombreuses demandes »."
+   }
+  ],
+  "donner-son-opinion": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle expression introduit votre opinion ?",
+    "message": "_____, il faut garder la phase de recherche.",
+    "instruction": "Choisissez l'expression qui convient.",
+    "options": [
+     {
+      "text": "À mon avis",
+      "score": 100,
+      "feedback": "Correct, et c'est l'expression d'opinion la plus utile au niveau B1."
+     },
+     {
+      "text": "Selon moi, je pense que",
+      "score": 25,
+      "feedback": "Les deux expressions font le même travail. On en choisit une seule."
+     },
+     {
+      "text": "D'après moi que",
+      "score": 0,
+      "feedback": "« D'après moi » existe, mais sans « que » : « D'après moi, il faut… »"
+     },
+     {
+      "text": "Pour mon avis",
+      "score": 0,
+      "feedback": "La préposition est « à » : « à mon avis »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Je pense qu'il faut attendre, {} les données ne sont pas complètes.",
+    "accept": [
+     "parce que",
+     "car",
+     "puisque"
+    ],
+    "size": 10,
+    "instruction": "Introduisez votre raison.",
+    "hint": "Deux mots, ou « car ».",
+    "feedback": "C'est la raison qui transforme une préférence en opinion professionnelle. Donnez-la avant qu'on vous la demande."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette intervention en réunion.",
+    "text": "{} mon point de vue, nous devrions garder la phase de recherche, surtout {} les deux derniers lancements ont échoué sur des hypothèses non testées.\n\nDeux semaines de recherche coûtent moins cher {} un relancement.",
+    "gaps": [
+     {
+      "accept": [
+       "De"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "parce que",
+       "car",
+       "puisque"
+      ],
+      "size": 10
+     },
+     {
+      "accept": [
+       "qu'un",
+       "que"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "« De mon point de vue » est la forme figée. Et le comparatif prend toujours « que », jamais « comme »."
+   }
+  ],
+  "desaccord-poli": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle ouverture permet de contester sans agresser ?",
+    "message": "_____, mais je crains que le calendrier ne soit trop serré.",
+    "instruction": "Choisissez l'expression qui convient.",
+    "options": [
+     {
+      "text": "Je comprends votre point de vue",
+      "score": 100,
+      "feedback": "Correct. Reconnaître d'abord, nuancer ensuite. C'est le schéma professionnel standard."
+     },
+     {
+      "text": "C'est faux",
+      "score": 0,
+      "feedback": "Rejette tout et vise la personne. Cela sera entendu comme une attaque."
+     },
+     {
+      "text": "Vous ne comprenez pas",
+      "score": 0,
+      "feedback": "Cela met directement en cause la compétence de l'autre."
+     },
+     {
+      "text": "Évidemment non",
+      "score": 25,
+      "feedback": "« Évidemment » sous-entend que votre interlocuteur a manqué une évidence."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Je suis d'accord sur le principe. Ma seule {} porte sur le coût.",
+    "accept": [
+     "réserve",
+     "inquiétude",
+     "crainte",
+     "hésitation"
+    ],
+    "size": 10,
+    "instruction": "Un nom : ce qui vous inquiète.",
+    "hint": "Un point précis que vous pouvez justifier.",
+    "feedback": "Nommer une seule « réserve » précise est bien plus difficile à écarter que de rejeter toute la proposition."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette intervention.",
+    "text": "C'est une remarque juste. Ce qui m'inquiète, {} la validation hebdomadaire : avec six validateurs, je crains qu'on {} ralentisse nous-mêmes.\n\nPourrait-on essayer {} deux et faire le point dans un mois ?",
+    "gaps": [
+     {
+      "accept": [
+       "c'est",
+       "cest"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "se",
+       "ne se"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "avec"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Reconnaître, nommer une réserve, proposer une version réduite. Une proposition « essayons avec deux et faisons le point » est presque impossible à refuser."
+   }
+  ],
+  "s-excuser": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle formule convient à un écrit professionnel ?",
+    "instruction": "Vous vous excusez auprès d'un client.",
+    "options": [
+     {
+      "text": "Je vous prie de m'excuser pour ce retard.",
+      "score": 100,
+      "feedback": "Correct. C'est l'autre qui excuse, d'où « je vous prie de m'excuser »."
+     },
+     {
+      "text": "Je m'excuse pour ce retard.",
+      "score": 50,
+      "feedback": "Très courant à l'oral, mais mal vu à l'écrit professionnel : on ne peut pas s'excuser soi-même."
+     },
+     {
+      "text": "Je vous excuse pour ce retard.",
+      "score": 0,
+      "feedback": "Cela signifie que vous pardonnez au client, ce qui est l'inverse."
+     },
+     {
+      "text": "Excuses pour le retard.",
+      "score": 25,
+      "feedback": "Trop elliptique pour un client."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "C'est une {} de ma part, et j'ai ajouté un point de contrôle.",
+    "accept": [
+     "erreur",
+     "omission",
+     "faute",
+     "négligence"
+    ],
+    "size": 9,
+    "instruction": "Un nom : ce dont vous prenez la responsabilité.",
+    "hint": "Un mot neutre et honnête.",
+    "feedback": "« Une erreur de ma part » assume sans dramatiser. Ajouter immédiatement la correction est ce qui restaure la confiance."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette excuse à un client.",
+    "text": "Je vous prie de {} excuser pour ce retard, et je vous remercie de votre {}.\n\nLe rapport corrigé est en pièce jointe. J'ai ajouté une vérification pour que cela ne {} reproduise pas.",
+    "gaps": [
+     {
+      "accept": [
+       "m'",
+       "m"
+      ],
+      "size": 4
+     },
+     {
+      "accept": [
+       "patience",
+       "compréhension"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "se"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Remarquez la forme : une excuse, un remerciement, puis la solution. « Se reproduire » est le verbe naturel, pas « se répéter »."
+   }
+  ],
+  "ecrire-courriel": [
+   {
+    "renderer": "choice",
+    "prompt": "Quel objet de message fonctionne vraiment ?",
+    "instruction": "Pensez à ce que voit le destinataire dans une boîte pleine.",
+    "options": [
+     {
+      "text": "Rapport T3 — vos chiffres avant jeudi 14",
+      "score": 100,
+      "feedback": "Correct. Le sujet, la demande et l'échéance. C'est la seule partie que tout le monde lit."
+     },
+     {
+      "text": "Question",
+      "score": 25,
+      "feedback": "Ne donne aucune raison d'ouvrir le message."
+     },
+     {
+      "text": "URGENT à lire",
+      "score": 25,
+      "feedback": "De l'urgence sans contenu. Utilisé deux fois, plus personne n'y croit."
+     },
+     {
+      "text": "Bonjour",
+      "score": 0,
+      "feedback": "Ne dit strictement rien."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez la formule.",
+    "sentence": "Vous trouverez {} le contrat actualisé et le nouveau calendrier.",
+    "accept": [
+     "ci-joint",
+     "ci-joints",
+     "en pièce jointe"
+    ],
+    "size": 11,
+    "instruction": "La formule figée pour un fichier envoyé.",
+    "hint": "« Vous trouverez ___ »",
+    "feedback": "« Vous trouverez ci-joint » est la formule standard. « Ci-joint » reste invariable quand il précède le nom."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez l'ouverture et la clôture de ce courriel.",
+    "text": "{} Madame Lemoine,\n\nJe me permets de vous écrire {} sujet du rapport T3. Pourriez-vous me confirmer avant jeudi ?\n\nJe reste à votre {}.\n\nBien {},\nCamille Roux",
+    "gaps": [
+     {
+      "accept": [
+       "Bonjour",
+       "Madame"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "au"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "disposition"
+      ],
+      "size": 12
+     },
+     {
+      "accept": [
+       "cordialement"
+      ],
+      "size": 13
+     }
+    ],
+    "instruction": "Quatre blancs.",
+    "feedback": "« Au sujet de », « je reste à votre disposition » et « bien cordialement » sont les trois formules qui couvrent la majorité des courriels professionnels."
+   }
+  ],
+  "registre": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle version est cohérente ?",
+    "instruction": "Vous écrivez à une cliente que vous n'avez jamais rencontrée.",
+    "options": [
+     {
+      "text": "Bonjour Madame Lemoine, je vous confirme notre rendez-vous de jeudi. Bien cordialement.",
+      "score": 100,
+      "feedback": "Correct. « Vous » du début à la fin, avec « Bonjour Madame » et « Bien cordialement »."
+     },
+     {
+      "text": "Salut Madame Lemoine, je te confirme le rdv ! À plus",
+      "score": 0,
+      "feedback": "Trop familier : « salut », « te », « rdv » et « à plus » ne vont pas avec une cliente."
+     },
+     {
+      "text": "Bonjour Madame Lemoine, je te confirme jeudi. Bien cordialement.",
+      "score": 25,
+      "feedback": "Le début et la fin sont bons, mais « te » ne va pas avec une cliente."
+     },
+     {
+      "text": "Madame, veuillez agréer l'expression de mes salutations les plus distinguées.",
+      "score": 50,
+      "feedback": "Poli, mais trop solennel pour un simple rendez-vous."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "On peut se {} ? — Avec plaisir, ce sera plus simple.",
+    "accept": [
+     "tutoyer"
+    ],
+    "size": 9,
+    "instruction": "Un verbe : passer de « vous » à « tu ».",
+    "hint": "tu → ___",
+    "feedback": "« Tutoyer » = dire « tu ». En général, c'est la personne la plus âgée ou la plus haut placée qui le propose. Dans le doute, dites « vous »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Adaptez ce message à un collègue proche.",
+    "text": "{} Marc, {} peux me confirmer jeudi 10 h ?\n\nMerci {} !",
+    "gaps": [
+     {
+      "accept": [
+       "Salut",
+       "Bonjour",
+       "Coucou"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "tu"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "beaucoup",
+       "bien"
+      ],
+      "size": 9
+     }
+    ],
+    "instruction": "Trois blancs. C'est un collègue proche : on dit « tu ».",
+    "feedback": "Restez cohérent : « salut » avec « tu », « bonjour » avec « vous ». Ne mélangez pas les deux."
+   }
+  ],
+  "conditionnel": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase est correcte ?",
+    "instruction": "Une hypothèse irréelle.",
+    "options": [
+     {
+      "text": "Si nous avions plus de budget, nous embaucherions un prestataire.",
+      "score": 100,
+      "feedback": "Correct. Si + imparfait → conditionnel présent."
+     },
+     {
+      "text": "Si nous aurions plus de budget, nous embaucherions un prestataire.",
+      "score": 0,
+      "feedback": "Jamais de conditionnel après « si ». C'est l'erreur la plus fréquente en français."
+     },
+     {
+      "text": "Si nous avions plus de budget, nous embaucherons un prestataire.",
+      "score": 25,
+      "feedback": "L'imparfait après « si » appelle le conditionnel, pas le futur."
+     },
+     {
+      "text": "Si nous aurons plus de budget, nous embaucherions.",
+      "score": 0,
+      "feedback": "Ni futur ni conditionnel après « si »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Si le client valide demain, nous {} lundi. (commencer)",
+    "accept": [
+     "commencerons"
+    ],
+    "size": 13,
+    "instruction": "Hypothèse réelle : si + présent → futur.",
+    "hint": "Futur simple, première personne du pluriel.",
+    "feedback": "Hypothèse réelle : si + présent → futur simple. Hypothèse irréelle : si + imparfait → conditionnel."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette négociation.",
+    "text": "Si nous {} décaler l'échéance d'une semaine, nous {} en mesure d'intégrer les nouveaux chiffres.\n\nJe {} revenir sur un point du contrat avant de signer.",
+    "gaps": [
+     {
+      "accept": [
+       "pouvions"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "serions"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "voudrais",
+       "souhaiterais",
+       "aimerais"
+      ],
+      "size": 12
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "« Si nous pouvions…, nous serions en mesure de… » est la phrase de négociation la plus sûre : elle n'engage à rien tout en montrant ce qui se débloquerait."
+   }
+  ],
+  "subjonctif": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle forme est correcte ?",
+    "message": "Il faut que nous _____ le dossier avant vendredi.",
+    "instruction": "Attention au mode.",
+    "options": [
+     {
+      "text": "finissions",
+      "score": 100,
+      "feedback": "Correct. « Il faut que » est toujours suivi du subjonctif."
+     },
+     {
+      "text": "finissons",
+      "score": 25,
+      "feedback": "C'est l'indicatif présent. Après « il faut que », il faut le subjonctif."
+     },
+     {
+      "text": "finirons",
+      "score": 0,
+      "feedback": "C'est le futur, impossible après « il faut que »."
+     },
+     {
+      "text": "finir",
+      "score": 25,
+      "feedback": "L'infinitif s'emploie après « il faut » seul, sans « que »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez au subjonctif.",
+    "sentence": "Il faudrait que je {} disponible jeudi matin. (être)",
+    "accept": [
+     "sois"
+    ],
+    "size": 6,
+    "instruction": "Subjonctif irrégulier.",
+    "hint": "que je ___",
+    "feedback": "Cinq subjonctifs irréguliers couvrent 80 % des besoins professionnels : sois, aie, fasse, puisse, aille."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ces consignes.",
+    "text": "Il faut que je {} relire le contrat avant de l'envoyer. (pouvoir)\n\nMerci de bien {} confirmer votre présence avant jeudi.\n\n{} que ce soit difficile, nous tiendrons l'échéance.",
+    "gaps": [
+     {
+      "accept": [
+       "puisse"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "vouloir"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "Bien"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "« Merci de bien vouloir » est l'impératif adouci le plus utile à l'écrit. Et « bien que » exige toujours le subjonctif."
+   }
+  ],
+  "temps-au-travail": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle paire est correcte ?",
+    "message": "Je _____ le contrat quand j'_____ l'erreur.",
+    "instruction": "Une action en cours, puis un événement ponctuel.",
+    "options": [
+     {
+      "text": "relisais … ai remarqué",
+      "score": 100,
+      "feedback": "Correct. L'imparfait décrit le contexte, le passé composé marque l'événement qui l'interrompt."
+     },
+     {
+      "text": "ai relu … remarquais",
+      "score": 25,
+      "feedback": "Les deux temps sont inversés."
+     },
+     {
+      "text": "relisais … remarquais",
+      "score": 25,
+      "feedback": "Deux imparfaits : la découverte devient une habitude, ce qui n'a pas de sens."
+     },
+     {
+      "text": "ai relu … ai remarqué",
+      "score": 50,
+      "feedback": "Compréhensible, mais on perd la simultanéité."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "L'équipe {} en sous-effectif, donc nous avons décalé la livraison. (être)",
+    "accept": [
+     "était"
+    ],
+    "size": 7,
+    "instruction": "Un état qui dure.",
+    "hint": "Imparfait.",
+    "feedback": "L'état prend l'imparfait, la décision ponctuelle le passé composé. Testez avec « et puis » : si cela fonctionne, c'est du passé composé."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce compte rendu.",
+    "text": "Nous {} la campagne en mars. (lancer)\n\nÀ l'époque, le budget {} serré et l'équipe {} en sous-effectif. (être / être)",
+    "gaps": [
+     {
+      "accept": [
+       "avons lancé",
+       "avons lance"
+      ],
+      "size": 13
+     },
+     {
+      "accept": [
+       "était",
+       "etait"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "était",
+       "etait"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Un événement daté au passé composé, le contexte à l'imparfait. C'est l'alternance qu'on retrouve dans tous les comptes rendus."
+   }
+  ],
+  "pronoms": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase est correcte ?",
+    "instruction": "Attention à la place du pronom.",
+    "options": [
+     {
+      "text": "J'ai reçu le rapport et je l'ai relu hier soir.",
+      "score": 100,
+      "feedback": "Correct. Le pronom se place avant l'auxiliaire."
+     },
+     {
+      "text": "J'ai reçu le rapport et j'ai le relu hier soir.",
+      "score": 0,
+      "feedback": "Le pronom ne se place jamais entre l'auxiliaire et le participe."
+     },
+     {
+      "text": "J'ai reçu le rapport et j'ai relu le hier soir.",
+      "score": 0,
+      "feedback": "Contrairement à l'anglais, le pronom ne suit jamais le verbe."
+     },
+     {
+      "text": "J'ai reçu le rapport et je lui ai relu.",
+      "score": 25,
+      "feedback": "« Lui » est un complément indirect. « Relire » prend un complément direct."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez avec les pronoms.",
+    "sentence": "Je vais {} envoyer demain matin. (le document / à Marc)",
+    "accept": [
+     "le lui"
+    ],
+    "size": 8,
+    "instruction": "Deux pronoms, dans le bon ordre.",
+    "hint": "direct avant indirect.",
+    "feedback": "Ordre des pronoms : me/te/nous/vous → le/la/les → lui/leur → y → en. Au futur proche, ils se placent devant l'infinitif."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Remplacez les répétitions par des pronoms.",
+    "text": "J'ai bien reçu votre devis et je {} ai transmis à la direction.\n\nJe {} parlerai jeudi, et je vous {} confirme dès que j'ai une réponse.",
+    "gaps": [
+     {
+      "accept": [
+       "l'",
+       "l"
+      ],
+      "size": 4
+     },
+     {
+      "accept": [
+       "leur",
+       "lui"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "le"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Les pronoms évitent les répétitions et rendent l'écrit nettement plus fluide. Ils se placent toujours avant le verbe conjugué."
+   }
+  ],
+  "connecteurs": [
+   {
+    "renderer": "choice",
+    "prompt": "Quel connecteur convient ?",
+    "message": "Le développement est dans les temps. _____, l'équipe éditoriale a deux semaines de retard.",
+    "instruction": "Le second fait contredit le premier.",
+    "options": [
+     {
+      "text": "Cependant",
+      "score": 100,
+      "feedback": "Correct. Il marque l'opposition et peut ouvrir une phrase."
+     },
+     {
+      "text": "De plus",
+      "score": 25,
+      "feedback": "« De plus » ajoute une idée de même sens."
+     },
+     {
+      "text": "Par conséquent",
+      "score": 25,
+      "feedback": "Introduit un résultat, ce qui n'est pas le cas ici."
+     },
+     {
+      "text": "Bien que",
+      "score": 50,
+      "feedback": "« Bien que » relie deux propositions dans une même phrase et exige le subjonctif."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Ce retard touche trois livrables. Par {}, il nous faut une décision avant vendredi.",
+    "accept": [
+     "conséquent",
+     "consequent"
+    ],
+    "size": 11,
+    "instruction": "Un mot introduisant le résultat.",
+    "hint": "« Par ___ »",
+    "feedback": "« Par conséquent », « donc » et « c'est pourquoi » introduisent tous une conséquence. « Cependant » et « en revanche » feraient l'inverse."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette argumentation.",
+    "text": "{} abord, cette solution coûte moins cher. {}, elle est plus rapide à mettre en place.\n\n{} exemple, l'an dernier, la même approche nous a fait gagner trois semaines. {} conclusion, je la recommande.",
+    "gaps": [
+     {
+      "accept": [
+       "D'",
+       "D"
+      ],
+      "size": 4
+     },
+     {
+      "accept": [
+       "Ensuite",
+       "Puis",
+       "De plus"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "Par"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "En"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Quatre blancs.",
+    "feedback": "D'abord, ensuite, par exemple, en conclusion. Les connecteurs doivent progresser : répéter le même marque une argumentation qui tourne en rond."
+   }
+  ],
+  "comparer": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase est correcte ?",
+    "instruction": "Attention au comparatif.",
+    "options": [
+     {
+      "text": "Le train est moins cher que l'avion.",
+      "score": 100,
+      "feedback": "Correct : moins + adjectif + que."
+     },
+     {
+      "text": "Le train est plus meilleur que l'avion.",
+      "score": 0,
+      "feedback": "« Meilleur » veut déjà dire « plus bon ». On ne dit pas « plus meilleur »."
+     },
+     {
+      "text": "Le train est moins cher de l'avion.",
+      "score": 25,
+      "feedback": "Après un comparatif, on dit « que », pas « de »."
+     },
+     {
+      "text": "Le train est moins cher comme l'avion.",
+      "score": 25,
+      "feedback": "On dit « que », pas « comme »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Des trois salles, la salle B est {} grande.",
+    "accept": [
+     "la plus"
+    ],
+    "size": 8,
+    "instruction": "Trois éléments : il faut le superlatif.",
+    "hint": "Deux mots : la ___ ___",
+    "feedback": "Avec trois éléments ou plus, on dit « la plus grande », « le moins cher »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce message à votre responsable.",
+    "text": "L'option A coûte 300 €. L'option B coûte 500 €.\n\nL'option A est {} chère {} l'option B.\n\nPour notre budget, c'est {} option.",
+    "gaps": [
+     {
+      "accept": [
+       "moins"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "que"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "la meilleure"
+      ],
+      "size": 12
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Moins … que pour comparer, et « la meilleure » pour dire le numéro un. Jamais « la plus bonne »."
+   }
+  ],
+  "demander-precision": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle demande de précision fonctionne le mieux ?",
+    "instruction": "Le brief reçu est trop vague.",
+    "options": [
+     {
+      "text": "Deux vérifications rapides : c'est pour le comité ou pour l'équipe, et une page ou une présentation ?",
+      "score": 100,
+      "feedback": "Correct. Deux questions précises, auxquelles on peut répondre en un mot."
+     },
+     {
+      "text": "Je ne comprends rien à ce brief.",
+      "score": 0,
+      "feedback": "Met le problème sur la personne et ne propose rien."
+     },
+     {
+      "text": "Pouvez-vous m'expliquer exactement ce que vous voulez ?",
+      "score": 25,
+      "feedback": "Demande de refaire tout le brief plutôt que de confirmer un détail."
+     },
+     {
+      "text": "D'accord, pas de souci !",
+      "score": 25,
+      "feedback": "Vous allez produire la mauvaise chose et perdre une journée."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Juste pour être sûr d'avoir bien {} : la priorité, c'est le T3 ?",
+    "accept": [
+     "compris"
+    ],
+    "size": 9,
+    "instruction": "Participe passé.",
+    "hint": "comprendre → ___",
+    "feedback": "« Juste pour être sûr d'avoir bien compris » est la formule la plus sûre pour vérifier sans mettre l'autre en cause."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette demande de précision.",
+    "text": "Avec plaisir. Deux vérifications rapides : le rapport doit-il couvrir le T3 {}, ou le T3 et le T4 ?\n\nSauf indication {}, je pars sur le T3 et je vous l'envoie mercredi soir.",
+    "gaps": [
+     {
+      "accept": [
+       "seulement",
+       "uniquement"
+      ],
+      "size": 10
+     },
+     {
+      "accept": [
+       "contraire"
+      ],
+      "size": 10
+     }
+    ],
+    "instruction": "Deux blancs.",
+    "feedback": "Proposer votre hypothèse par défaut (« sauf indication contraire, je pars sur… ») transforme une question en décision de dix secondes."
+   }
+  ],
+  "expliquer-probleme": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle ouverture garde l'attention de la salle ?",
+    "instruction": "Une livraison a deux jours de retard.",
+    "options": [
+     {
+      "text": "La livraison a deux jours de retard, ce qui décale les tests à jeudi.",
+      "score": 100,
+      "feedback": "Correct. Le fait, puis l'impact. C'est dans cet ordre qu'écoutent les décideurs."
+     },
+     {
+      "text": "Ce n'est pas ma faute, le fournisseur était en retard.",
+      "score": 25,
+      "feedback": "Commencer par l'excuse fait perdre la salle avant même les faits."
+     },
+     {
+      "text": "Il y a eu un petit souci.",
+      "score": 25,
+      "feedback": "Trop vague pour être exploitable."
+     },
+     {
+      "text": "C'est une catastrophe totale.",
+      "score": 0,
+      "feedback": "Exagérer coûte en crédibilité pour la prochaine vraie urgence."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "La cause {} est un changement de configuration non testé.",
+    "accept": [
+     "racine",
+     "principale",
+     "première"
+    ],
+    "size": 8,
+    "instruction": "Un mot : la vraie raison sous-jacente.",
+    "hint": "« La cause ___ »",
+    "feedback": "« La cause racine » désigne la raison profonde, par opposition au symptôme que tout le monde a remarqué en premier."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette explication au commanditaire.",
+    "text": "Les tests ont révélé un problème de données. Par {}, le lancement est décalé à mi-avril.\n\nJ'ai déjà deux personnes sur le nettoyage. Ce dont j'ai {} de votre part, c'est une décision sur le périmètre.",
+    "gaps": [
+     {
+      "accept": [
+       "conséquent",
+       "consequent"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "besoin"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Deux blancs.",
+    "feedback": "Ce qui s'est passé, l'impact, ce que vous faites déjà, ce dont vous avez besoin. Cet ordre est ce qui distingue un professionnel d'un paniqué."
+   }
+  ],
+  "feedback-fr": [
+   {
+    "renderer": "choice",
+    "prompt": "Quel retour est exploitable ?",
+    "instruction": "Un collègue junior vous a envoyé un document avec trois erreurs.",
+    "options": [
+     {
+      "text": "Trois points à corriger : le chiffre du T2 page 2, le nom du client dans l'en-tête, et la date de la synthèse.",
+      "score": 100,
+      "feedback": "Correct. Précis, dénombrable, corrigeable. La personne sait exactement quoi faire."
+     },
+     {
+      "text": "Il faut faire plus attention, il y a pas mal d'erreurs.",
+      "score": 50,
+      "feedback": "Elle sait que vous n'êtes pas content, mais pas quoi corriger."
+     },
+     {
+      "text": "Tu as relu ton document au moins ?",
+      "score": 0,
+      "feedback": "Une question rhétorique employée comme reproche. Elle vise la personne."
+     },
+     {
+      "text": "Ce n'est pas grave, je corrige moi-même.",
+      "score": 25,
+      "feedback": "Gentil aujourd'hui, mais elle refera les mêmes erreurs."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Merci, c'est utile. Pourriez-vous me {} un exemple précis ?",
+    "accept": [
+     "donner",
+     "montrer",
+     "citer"
+    ],
+    "size": 8,
+    "instruction": "Un verbe.",
+    "hint": "Vous demandez une illustration.",
+    "feedback": "Demander un exemple avant de répondre transforme une critique vague en problème précis et réparable."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette réaction à une critique.",
+    "text": "Merci, c'est {}. Pourriez-vous me montrer le passage dont vous parlez ?\n\nJe vais y {} et je reviens vers vous demain.",
+    "gaps": [
+     {
+      "accept": [
+       "utile",
+       "juste",
+       "noté"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "réfléchir",
+       "reflechir",
+       "penser"
+      ],
+      "size": 10
+     }
+    ],
+    "instruction": "Deux blancs.",
+    "feedback": "« Je vais y réfléchir et je reviens vers vous » vous fait gagner un jour et ne coûte rien. Ne vous défendez jamais dans la minute."
+   }
+  ],
+  "langue-reunion": [
+   {
+    "renderer": "choice",
+    "prompt": "Comment prenez-vous la parole ?",
+    "instruction": "Un collègue parle depuis six minutes et va passer à un autre sujet.",
+    "options": [
+     {
+      "text": "Pardon de vous interrompre — avant qu'on passe à la suite, puis-je ajouter un point sur les ressources ?",
+      "score": 100,
+      "feedback": "Correct. Excuse brève, justification du moment, sujet annoncé. Presque impossible à refuser."
+     },
+     {
+      "text": "Attendez, ce n'est pas exact.",
+      "score": 25,
+      "feedback": "Interrompt et contredit d'un même souffle. La salle entend le conflit."
+     },
+     {
+      "text": "Excusez-moi, je peux dire quelque chose ?",
+      "score": 75,
+      "feedback": "Poli et efficace, mais sans annoncer le sujet on peut vous reporter."
+     },
+     {
+      "text": "Bon, il faut que je parle.",
+      "score": 0,
+      "feedback": "Cela s'impose au lieu de demander."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Pour {} sur ce que dit Marta, le coût du support est le point que nous sous-estimons.",
+    "accept": [
+     "rebondir",
+     "revenir"
+    ],
+    "size": 9,
+    "instruction": "Un verbe : vous ajoutez à l'idée d'un collègue.",
+    "hint": "« Pour ___ sur ce que dit… »",
+    "feedback": "« Pour rebondir sur ce que dit X » crédite votre collègue et ajoute votre point en même temps. C'est la phrase la plus utile en réunion."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Concluez la réunion.",
+    "text": "Pour {} : nous partons sur le fournisseur B et le lancement passe au 14 avril.\n\nLes {} sont : Ana envoie le brouillon mardi, je relis jeudi. Restent {} : le budget du designer et qui présente au comité.",
+    "gaps": [
+     {
+      "accept": [
+       "résumer",
+       "resumer",
+       "conclure"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "actions"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "ouverts",
+       "en suspens"
+      ],
+      "size": 9
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Décisions, responsables, dates, et la liste explicite de ce qui reste ouvert. C'est ce résumé qui évite la réunion suivante."
+   }
+  ],
+  "dire-non": [
+   {
+    "renderer": "choice",
+    "prompt": "Quel refus préserve la relation ?",
+    "instruction": "Vous ne pouvez vraiment pas pour vendredi.",
+    "options": [
+     {
+      "text": "Je ne peux pas pour vendredi. Je peux vous le remettre mardi matin.",
+      "score": 100,
+      "feedback": "Correct. Un vrai non avec une vraie date alternative est entendu comme un engagement."
+     },
+     {
+      "text": "Je vais essayer.",
+      "score": 25,
+      "feedback": "Entendu comme un oui, livré comme un non. Le pire des deux."
+     },
+     {
+      "text": "Désolé, je suis débordé.",
+      "score": 50,
+      "feedback": "Honnête mais fermé. Rien n'est proposé."
+     },
+     {
+      "text": "Non.",
+      "score": 25,
+      "feedback": "Clair, et coûteux. Un non professionnel porte une raison, une alternative ou une condition."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Je suis au {} cette semaine, mais je peux le prendre lundi.",
+    "accept": [
+     "maximum",
+     "complet"
+    ],
+    "size": 9,
+    "instruction": "Un mot : vous ne pouvez pas prendre plus.",
+    "hint": "« Je suis au ___ »",
+    "feedback": "« Je suis au maximum » est la formule neutre. « Débordé » et « sous l'eau » conviennent entre collègues mais pas avec un client."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce refus conditionnel.",
+    "text": "Je peux le prendre {} si le dossier Ortiz passe à la semaine prochaine.\n\n{} préférez-vous ? Je préfère en faire un correctement {} deux mal.",
+    "gaps": [
+     {
+      "accept": [
+       "en charge",
+       "volontiers"
+      ],
+      "size": 10
+     },
+     {
+      "accept": [
+       "Que",
+       "Lequel"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "plutôt que",
+       "plutot que",
+       "que"
+      ],
+      "size": 11
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Rendre le choix à l'autre (« que préférez-vous ? ») transforme un refus en question de priorités, bien plus facile à trancher pour un responsable."
+   }
+  ],
+  "negocier": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle réponse ouvre une négociation ?",
+    "instruction": "On vous demande vos prétentions salariales.",
+    "options": [
+     {
+      "text": "Compte tenu du périmètre du poste, je me situe entre 45 et 50 000 euros. Est-ce cohérent avec votre enveloppe ?",
+      "score": 100,
+      "feedback": "Correct. Une fourchette, une justification liée au poste, et une question en retour."
+     },
+     {
+      "text": "Je suis flexible, combien proposez-vous ?",
+      "score": 50,
+      "feedback": "Annoncer sa flexibilité en premier vous place généralement en bas de leur fourchette."
+     },
+     {
+      "text": "Il me faut 55 000 à cause de mon crédit.",
+      "score": 0,
+      "feedback": "Vos charges personnelles ne sont pas un argument. Le chiffre se justifie par le poste."
+     },
+     {
+      "text": "Ce que vous jugerez juste.",
+      "score": 25,
+      "feedback": "Vous confiez toute la décision à l'autre partie."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Cela me convient, à {} qu'une révision soit prévue à six mois.",
+    "accept": [
+     "condition"
+    ],
+    "size": 10,
+    "instruction": "Un mot introduisant votre condition.",
+    "hint": "« à ___ que » + subjonctif",
+    "feedback": "« À condition que » pose une condition sans donner l'impression d'exiger. C'est la façon la plus sûre de dire oui-mais."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette contre-proposition.",
+    "text": "Merci, le poste m'intéresse {}.\n\n42 est en dessous de ce que j'envisageais. Y a-t-il une {} pour atteindre 46 ? Si l'enveloppe est figée, pourrions-nous prévoir une révision à six mois {} ?",
+    "gaps": [
+     {
+      "accept": [
+       "sincèrement",
+       "sincerement",
+       "vraiment",
+       "beaucoup"
+      ],
+      "size": 12
+     },
+     {
+      "accept": [
+       "marge",
+       "possibilité",
+       "flexibilité"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "plutôt",
+       "plutot",
+       "à la place"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "L'enthousiasme d'abord, une contre-proposition chiffrée, puis une seconde monnaie d'échange si le salaire est bloqué."
+   }
+  ],
+  "proposer-conseiller": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase est correcte ?",
+    "instruction": "Attention à la construction du verbe.",
+    "options": [
+     {
+      "text": "Je propose de revoir le plan la semaine prochaine.",
+      "score": 100,
+      "feedback": "Correct. « Proposer de » + infinitif."
+     },
+     {
+      "text": "Je propose à revoir le plan.",
+      "score": 0,
+      "feedback": "On dit « proposer de », jamais « proposer à »."
+     },
+     {
+      "text": "Je propose revoir le plan.",
+      "score": 25,
+      "feedback": "Il manque « de » : « je propose de revoir »."
+     },
+     {
+      "text": "Je propose de revu le plan.",
+      "score": 25,
+      "feedback": "Après « de », on met l'infinitif : « revoir »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Vous {} parler à Élodie aujourd'hui.",
+    "accept": [
+     "devriez"
+    ],
+    "size": 8,
+    "instruction": "Un verbe : c'est un conseil poli.",
+    "hint": "devoir → vous ___",
+    "feedback": "« Vous devriez » est un conseil. « Vous devez » est un ordre."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ces propositions et ce conseil.",
+    "text": "Et si on {} la réunion à 9 h ?\n\nJe propose {} faire une pause à 10 h.\n\nEt toi, tu {} parler du budget à Élodie.",
+    "gaps": [
+     {
+      "accept": [
+       "commençait",
+       "commencait"
+      ],
+      "size": 10
+     },
+     {
+      "accept": [
+       "de"
+      ],
+      "size": 4
+     },
+     {
+      "accept": [
+       "devrais"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "« Et si on… ? » et « je propose de… » sont pour le groupe. « Tu devrais… » est un conseil pour une personne."
+   }
+  ],
+  "ecriture-asynchrone": [
+   {
+    "renderer": "choice",
+    "prompt": "Quel message peut être traité sans réponse ?",
+    "instruction": "Votre responsable est décalée de huit heures.",
+    "options": [
+     {
+      "text": "Décision nécessaire avant votre fin de journée : on lance jeudi ou on attend lundi ? Détails dans le fil.",
+      "score": 100,
+      "feedback": "Correct. La demande, l'échéance dans son fuseau, et où trouver le détail."
+     },
+     {
+      "text": "Salut ! Tu es dispo ?",
+      "score": 0,
+      "feedback": "Une salutation sans contenu. Elle répondra « oui ? » et un cycle de plus sera perdu."
+     },
+     {
+      "text": "On peut parler du lancement quand tu seras en ligne ?",
+      "score": 25,
+      "feedback": "Il faut une réunion pour organiser une réunion. Avec huit heures d'écart, cela coûte deux jours."
+     },
+     {
+      "text": "J'ai une question sur le lancement.",
+      "score": 25,
+      "feedback": "Annonce une question sans la poser."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Je suis {} sur les accès de préproduction : @Marc peux-tu les déposer ?",
+    "accept": [
+     "bloqué",
+     "bloque",
+     "bloquée"
+    ],
+    "size": 8,
+    "instruction": "Un mot : vous ne pouvez pas avancer.",
+    "hint": "Participe passé.",
+    "feedback": "Nommer le point bloquant et identifier la personne qui peut le lever est ce qui rend un point asynchrone réellement utile."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Rédigez un point quotidien.",
+    "text": "Hier : intégration de l'API terminée.\nAujourd'hui : début du script de migration.\n{} sur : les accès de préproduction.\n\n@Marc peux-tu les déposer ? Cela me bloque à partir de 11 h, heure {} Paris.",
+    "gaps": [
+     {
+      "accept": [
+       "Bloqué",
+       "Bloque",
+       "Bloquée"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "de"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Deux blancs.",
+    "feedback": "Hier, aujourd'hui, bloqué sur. Donner l'heure dans votre fuseau permet à l'autre de calculer sans vous écrire."
+   }
+  ],
+  "entretien-fr": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle réponse un recruteur retiendra-t-il ?",
+    "instruction": "« Parlez-moi d'un projet dont vous êtes fier. »",
+    "options": [
+     {
+      "text": "J'ai refait le tunnel de paiement. Il perdait un tiers des utilisateurs, et la version retenue a fait passer l'abandon à 12 %.",
+      "score": 100,
+      "feedback": "Correct. Problème, action, chiffre. C'est la forme que les recruteurs sont formés à écouter."
+     },
+     {
+      "text": "J'en suis fier, c'était un projet très intéressant et j'ai beaucoup appris.",
+      "score": 25,
+      "feedback": "Dit ce que vous avez ressenti, pas ce que vous avez fait ni ce qui a changé."
+     },
+     {
+      "text": "Je suis travailleur, motivé et j'ai l'esprit d'équipe.",
+      "score": 25,
+      "feedback": "Des adjectifs sans preuve. Tous les candidats disent cela."
+     },
+     {
+      "text": "C'était un beau projet d'équipe.",
+      "score": 25,
+      "feedback": "Ni action personnelle, ni résultat."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Si c'était à refaire, j'{} le service client dès la phase de découverte.",
+    "accept": [
+     "impliquerais",
+     "associerais",
+     "intégrerais",
+     "integrerais",
+     "inclurais"
+    ],
+    "size": 12,
+    "instruction": "Un verbe au conditionnel : ce que vous feriez autrement.",
+    "hint": "Si + imparfait → conditionnel présent",
+    "feedback": "« Si c'était à refaire, j'impliquerais… » montre un vrai recul sans vous dévaloriser. Le conditionnel présente le changement comme une leçon tirée, pas comme un regret."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette réponse sur un défaut.",
+    "text": "J'avais {} à trop en prendre sur moi plutôt qu'à déléguer.\n\nJe travaille dessus depuis un an : le trimestre dernier, j'ai {} deux projets entiers, et les deux ont abouti sans moi.",
+    "gaps": [
+     {
+      "accept": [
+       "tendance"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "confié",
+       "confie",
+       "délégué"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Deux blancs.",
+    "feedback": "Un vrai défaut, la correction apportée, et la preuve qu'elle a fonctionné. C'est ce qui transforme la question en avantage."
+   }
+  ],
+  "raconter": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle version raconte vraiment ?",
+    "instruction": "Vous décrivez un projet difficile.",
+    "options": [
+     {
+      "text": "Au début, le brief était flou. Ensuite, nous avons organisé un atelier. Finalement, nous avons livré avec une semaine d'avance.",
+      "score": 100,
+      "feedback": "Correct. Chronologie claire et alternance imparfait / passé composé."
+     },
+     {
+      "text": "Il y a eu un problème, le client était content, on a livré, c'était difficile.",
+      "score": 25,
+      "feedback": "Aucune chronologie : les événements se contredisent."
+     },
+     {
+      "text": "Le projet a été fait par l'équipe.",
+      "score": 25,
+      "feedback": "Passif et vide : on ne sait ni ce qui s'est passé ni ce que vous avez fait."
+     },
+     {
+      "text": "Nous faisions le projet et nous livrions.",
+      "score": 25,
+      "feedback": "Deux imparfaits transforment une réussite achevée en action inachevée."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez le connecteur temporel.",
+    "sentence": "Au début le brief était flou. {}, nous avons organisé un atelier avec le client.",
+    "accept": [
+     "Ensuite",
+     "Puis",
+     "Alors"
+    ],
+    "size": 9,
+    "instruction": "Un connecteur de chronologie.",
+    "hint": "Après « au début ».",
+    "feedback": "Au début, ensuite, à ce moment-là, finalement. Ces quatre connecteurs portent n'importe quel récit professionnel."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce récit.",
+    "text": "Au début, le brief {} flou. (être)\n\n{}, nous avons organisé un atelier. À ce moment-là, les priorités se sont clarifiées.\n\nCe que j'en ai {}, c'est qu'un atelier d'une heure vaut trois semaines d'allers-retours.",
+    "gaps": [
+     {
+      "accept": [
+       "était",
+       "etait"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "Ensuite",
+       "Puis"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "retenu",
+       "appris",
+       "tiré"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Terminez tout récit professionnel par ce que vous en avez retiré. C'est ce qui distingue une anecdote d'un exemple."
+   }
+  ],
+  "structurer-oral": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle réponse paraît préparée ?",
+    "instruction": "On vous demande de justifier un report d'échéance.",
+    "options": [
+     {
+      "text": "Je repousserais, pour deux raisons. D'abord, les données sont incomplètes. Ensuite, une version bâclée coûte plus cher ensuite.",
+      "score": 100,
+      "feedback": "Correct. Annoncer le nombre de raisons force la structure et vous fait gagner du temps de réflexion."
+     },
+     {
+      "text": "Bon, c'est difficile, il y a plein de choses, ça dépend…",
+      "score": 25,
+      "feedback": "Sans structure, cela donne l'impression que vous n'y avez pas réfléchi."
+     },
+     {
+      "text": "Parce qu'il nous faut plus de temps.",
+      "score": 50,
+      "feedback": "Une raison, mais circulaire et bien trop courte."
+     },
+     {
+      "text": "(un long silence)",
+      "score": 0,
+      "feedback": "Le silence ne compte pas comme de la fluidité. Une formule de relais, si."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez la formule de relais.",
+    "sentence": "C'est une bonne question, laissez-moi {} un instant.",
+    "accept": [
+     "réfléchir",
+     "reflechir"
+    ],
+    "size": 10,
+    "instruction": "Vous gagnez du temps.",
+    "hint": "Un verbe à l'infinitif.",
+    "feedback": "Les formules de relais achètent du temps de réflexion et comptent comme de la fluidité. Préparez-en deux avant tout entretien."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Structurez une réponse de deux minutes.",
+    "text": "Mon idée {}, c'est qu'il faut procéder par étapes.\n\nIl y a deux {} à cela. La première est le coût. La seconde est la capacité du support.\n\n{} exemple, le trimestre dernier nous avons passé trois semaines à corriger un lancement précipité.",
+    "gaps": [
+     {
+      "accept": [
+       "principale"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "raisons"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "Par"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Idée, raisons, exemple, conclusion. Ce plan permet de parler deux minutes sans hésiter, quel que soit votre niveau de grammaire."
+   }
+  ],
+  "echanges-informels": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle réponse continue la conversation ?",
+    "message": "Tu as passé un bon week-end ?",
+    "instruction": "Lundi matin, un collègue vous parle à la machine à café.",
+    "options": [
+     {
+      "text": "Oui, très bien, merci ! Et toi ?",
+      "score": 100,
+      "feedback": "Correct. Vous répondez et vous posez une question : la conversation continue."
+     },
+     {
+      "text": "Oui, très bien, merci.",
+      "score": 75,
+      "feedback": "Bien ! Ajoutez « Et toi ? » pour continuer la conversation."
+     },
+     {
+      "text": "Oui.",
+      "score": 25,
+      "feedback": "Poli, mais trop court : la conversation s'arrête."
+     },
+     {
+      "text": "Pourquoi ?",
+      "score": 0,
+      "feedback": "Étrange ici. C'est une question gentille : répondez simplement."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Merci pour ton aide ! — Avec {} !",
+    "accept": [
+     "plaisir"
+    ],
+    "size": 8,
+    "instruction": "Un mot : une réponse aimable à « merci ».",
+    "hint": "« Avec ___ ! »",
+    "feedback": "« Avec plaisir » et « de rien » sont deux réponses naturelles à « merci »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce petit message à une collègue.",
+    "text": "Salut Priya,\n\n{} beaucoup pour ton aide hier ! {} à toi, le dossier est parti à l'heure.\n\nBonne {} !\nCamille",
+    "gaps": [
+     {
+      "accept": [
+       "Merci"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "Grâce",
+       "Grace"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "journée",
+       "journee",
+       "semaine",
+       "soirée",
+       "soiree"
+      ],
+      "size": 9
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Dites merci, dites pourquoi, et finissez par une formule aimable."
+   }
+  ],
+  "vocabulaire-travail": [
+   {
+    "renderer": "choice",
+    "prompt": "Quel mot convient ?",
+    "message": "Mon _____ m'a demandé de reprendre le dossier Vidal.",
+    "instruction": "Choisissez le mot professionnel.",
+    "options": [
+     {
+      "text": "responsable",
+      "score": 100,
+      "feedback": "Correct. « Mon responsable » = la personne qui dirige votre travail."
+     },
+     {
+      "text": "manager",
+      "score": 75,
+      "feedback": "On l'entend souvent, mais « responsable » est plus courant en français."
+     },
+     {
+      "text": "patron",
+      "score": 50,
+      "feedback": "Correct mais familier. Le « patron » est plutôt le chef de l'entreprise."
+     },
+     {
+      "text": "chef de moi",
+      "score": 0,
+      "feedback": "Cela n'existe pas en français."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Corrigez le faux ami.",
+    "sentence": "Je {} des clients au téléphone toute la journée. (pas « j'attends »)",
+    "accept": [
+     "m'occupe",
+     "m occupe",
+     "moccupe"
+    ],
+    "size": 9,
+    "instruction": "Deux mots : aider, prendre en charge.",
+    "hint": "« Je ___ des clients » (verbe s'occuper)",
+    "feedback": "Faux ami : « attendre » veut dire rester jusqu'à l'arrivée de quelqu'un. Pour aider un client, on dit « s'occuper de »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Remplacez « faire » par un verbe précis.",
+    "text": "J'ai {} la réunion de lundi.\n\nJ'ai {} un courriel à tous les clients.",
+    "gaps": [
+     {
+      "accept": [
+       "organisé",
+       "organise",
+       "préparé",
+       "prepare",
+       "animé",
+       "anime"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "envoyé",
+       "envoye",
+       "écrit",
+       "ecrit",
+       "rédigé",
+       "redige"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Deux blancs.",
+    "feedback": "« Organiser », « préparer », « envoyer » : ces verbes sont plus précis que « faire »."
+   }
+  ],
+  "strategies-lecture": [
+   {
+    "renderer": "choice",
+    "prompt": "D'après ce texte, pourquoi la pause-café n'est-elle pas du temps perdu ?",
+    "message": "Au bureau, il est fréquent de partager des informations importantes autour d'une tasse de café. Cette pause n'est jamais perçue comme du temps perdu, bien au contraire : elle renforce les liens entre collègues.",
+    "instruction": "Répondez uniquement à partir du texte.",
+    "options": [
+     {
+      "text": "Parce qu'elle renforce les liens entre collègues.",
+      "score": 100,
+      "feedback": "Correct, et c'est exactement ce que dit le texte."
+     },
+     {
+      "text": "Parce qu'elle permet de se reposer.",
+      "score": 25,
+      "feedback": "Plausible dans la réalité, mais le texte ne le dit pas."
+     },
+     {
+      "text": "Parce qu'elle est obligatoire.",
+      "score": 0,
+      "feedback": "Le texte ne parle d'aucune obligation."
+     },
+     {
+      "text": "Parce que le café est bon.",
+      "score": 0,
+      "feedback": "Hors sujet."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Quand une information n'est ni confirmée ni contredite par le texte, on répond « non {} ».",
+    "accept": [
+     "mentionné",
+     "mentionne",
+     "mentionnée"
+    ],
+    "size": 11,
+    "instruction": "Un mot.",
+    "hint": "Ni vrai, ni faux.",
+    "feedback": "L'absence d'information donne « non mentionné », jamais « faux ». « Faux » exige que le texte contredise activement l'affirmation."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ces stratégies de lecture.",
+    "text": "On commence par {} le texte pour en saisir la structure, puis on {} l'information précise dont on a besoin.\n\nL'erreur la plus fréquente est de répondre à partir de ce qu'on sait déjà plutôt que de ce que le texte {} vraiment.",
+    "gaps": [
+     {
+      "accept": [
+       "survoler",
+       "parcourir"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "repère",
+       "repere",
+       "cherche"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "dit",
+       "affirme"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Trouvez la réponse, puis la ligne exacte qui la prouve. Si vous ne pouvez pas pointer la ligne, vous avez deviné."
+   }
+  ],
+  "se-presenter": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase est correcte ?",
+    "instruction": "Vous dites votre métier.",
+    "options": [
+     {
+      "text": "Je suis comptable.",
+      "score": 100,
+      "feedback": "Correct. Après « je suis », pas d'article devant un métier."
+     },
+     {
+      "text": "Je suis un comptable.",
+      "score": 50,
+      "feedback": "Presque : pas d'article. On dit « je suis comptable »."
+     },
+     {
+      "text": "J'ai comptable.",
+      "score": 0,
+      "feedback": "Pour le métier, on dit « je suis », pas « j'ai »."
+     },
+     {
+      "text": "Je suis de comptable.",
+      "score": 0,
+      "feedback": "Pas de « de » : « je suis comptable »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Bonjour, je {} Lucía Pérez.",
+    "accept": [
+     "m'appelle",
+     "m appelle",
+     "mappelle",
+     "suis"
+    ],
+    "size": 10,
+    "instruction": "Un verbe : vous dites votre nom.",
+    "hint": "« Je ___ + prénom et nom »",
+    "feedback": "« Je m'appelle Lucía Pérez » ou « Je suis Lucía Pérez » : les deux sont corrects."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette présentation.",
+    "text": "Bonjour, je m'appelle Karim.\n\nJe {} technicien informatique. Je travaille {} Vidal depuis deux ans.\n\nJe m'{} des ordinateurs de l'équipe.",
+    "gaps": [
+     {
+      "accept": [
+       "suis"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "chez"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "occupe"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "« Je suis » + métier, « chez » + entreprise, et « je m'occupe de » pour dire ce que vous faites."
+   }
+  ],
+  "prononciation": [
+   {
+    "renderer": "choice",
+    "prompt": "Dans quelle phrase fait-on une liaison ?",
+    "instruction": "Lisez chaque phrase à voix basse.",
+    "options": [
+     {
+      "text": "Nous avons une réunion.",
+      "score": 100,
+      "feedback": "Correct : nous_avons. On entend « nou-z-avons »."
+     },
+     {
+      "text": "Marc a une réunion.",
+      "score": 25,
+      "feedback": "Pas de liaison après un prénom."
+     },
+     {
+      "text": "Le client a une question.",
+      "score": 25,
+      "feedback": "Pas de liaison après un nom au singulier."
+     },
+     {
+      "text": "Et après, on commence.",
+      "score": 0,
+      "feedback": "Jamais de liaison après « et »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Dans « vous avez », on entend le son « {} » entre les deux mots.",
+    "accept": [
+     "z"
+    ],
+    "size": 3,
+    "instruction": "Une lettre.",
+    "hint": "vou-?-avez",
+    "feedback": "Le « s » de « vous » se prononce « z » devant une voyelle : vou-z-avez."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez les règles.",
+    "text": "Pour une question, la voix {} à la fin.\n\nPour une affirmation, la voix {} à la fin.\n\nOn ne fait jamais de liaison après « {} ».",
+    "gaps": [
+     {
+      "accept": [
+       "monte"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "descend",
+       "baisse"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "et"
+      ],
+      "size": 4
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Question ↗, affirmation ↘, et pas de liaison après « et ». Ces trois règles rendent votre français plus clair."
+   }
+  ],
+  "argumenter": [
+   {
+    "renderer": "choice",
+    "prompt": "Quel enchaînement fait progresser l'argumentation ?",
+    "instruction": "Vous défendez un projet en comité.",
+    "options": [
+     {
+      "text": "D'une part, le coût baisse ; d'autre part, les délais raccourcissent. Certes, la transition prendra du temps, mais elle sera amortie en un an.",
+      "score": 100,
+      "feedback": "Deux arguments distincts, puis une concession immédiatement réfutée."
+     },
+     {
+      "text": "Le coût baisse, et en plus c'est plus rapide, et en plus c'est mieux.",
+      "score": 25,
+      "feedback": "Les idées s'accumulent sans hiérarchie ; « en plus » répété sonne comme une liste."
+     },
+     {
+      "text": "Certes, la transition prendra du temps. En conclusion, il faut le faire.",
+      "score": 25,
+      "feedback": "La concession arrive sans argument pour la contrebalancer : la conclusion ne repose sur rien."
+     },
+     {
+      "text": "Premièrement, le coût baisse. Premièrement aussi, c'est plus rapide. Après, bon, ça dépend.",
+      "score": 0,
+      "feedback": "Le même connecteur répété, puis une conclusion qui s'effondre."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Certes, l'investissement est élevé ; il n'en reste pas {} qu'il sera amorti en trois ans.",
+    "accept": [
+     "moins"
+    ],
+    "size": 7,
+    "instruction": "Un mot : la concession est suivie d'une réfutation.",
+    "hint": "« il n'en reste pas ___ que »",
+    "feedback": "« Il n'en reste pas moins que » reconnaît l'objection puis la dépasse. C'est l'un des marqueurs les plus efficaces de l'argumentation écrite et orale au niveau B2."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette argumentation.",
+    "text": "Je suis favorable à cette mesure, et ce pour deux raisons. {} part, elle réduit nos coûts ; {} part, elle améliore notre image.\n\nOn m'objectera qu'elle demande un effort d'adaptation. {}, cet effort sera limité à quelques semaines. {}, je propose de la mettre en place dès janvier.",
+    "gaps": [
+     {
+      "accept": [
+       "D'une",
+       "D une",
+       "Dune"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "d'autre",
+       "d autre",
+       "dautre"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "Toutefois",
+       "Cependant",
+       "Néanmoins",
+       "Neanmoins",
+       "Pourtant"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "C'est pourquoi",
+       "Par conséquent",
+       "Par consequent",
+       "En conséquence",
+       "En consequence",
+       "Ainsi",
+       "Donc"
+      ],
+      "size": 15
+     }
+    ],
+    "instruction": "Quatre blancs.",
+    "feedback": "Deux arguments balisés, une objection anticipée puis réfutée, et une conclusion qui découle du raisonnement : c'est toute la structure argumentative en quatre connecteurs."
+   }
+  ],
+  "attenuer": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle formulation signale le problème sans agresser ni se renier ?",
+    "instruction": "Vous relevez une erreur dans le tableau d'un collègue senior.",
+    "options": [
+     {
+      "text": "Il me semble qu'il y a un décalage dans la colonne de mars — je me trompe peut-être.",
+      "score": 100,
+      "feedback": "Correct. Le constat est maintenu, la certitude est atténuée."
+     },
+     {
+      "text": "Ton tableau contient une erreur en mars.",
+      "score": 50,
+      "feedback": "Clair et factuel, mais sans aucune précaution envers un collègue senior."
+     },
+     {
+      "text": "Je suis vraiment désolé, c'est sûrement moi, mais il y aurait peut-être éventuellement un petit souci ?",
+      "score": 25,
+      "feedback": "Sur-atténuation : votre remarque perd toute crédibilité."
+     },
+     {
+      "text": "C'est faux.",
+      "score": 0,
+      "feedback": "Verdict brutal, sans localisation de l'erreur."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "{} erreur de notre part, la facture reste impayée à ce jour.",
+    "accept": [
+     "Sauf"
+    ],
+    "size": 6,
+    "instruction": "Un mot : une formule d'atténuation très courante à l'écrit.",
+    "hint": "« ___ erreur de notre part »",
+    "feedback": "« Sauf erreur de notre part » laisse à l'autre une porte de sortie sans affaiblir le fait. C'est la formule standard des relances de paiement."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Atténuez ce message sans en retirer le fond.",
+    "text": "Il {} que les chiffres de mars aient été inversés.\n\n{}-moi si je me trompe, mais les totaux ne correspondent pas à l'export. Je {} plutôt qu'il s'agit d'une erreur de copie.",
+    "gaps": [
+     {
+      "accept": [
+       "semblerait",
+       "semble"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "Corrigez",
+       "Corrige",
+       "Détrompez",
+       "Detrompez"
+      ],
+      "size": 10
+     },
+     {
+      "accept": [
+       "dirais",
+       "pencherais"
+      ],
+      "size": 11
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "« Il semblerait que » (+ subjonctif), « corrigez-moi si je me trompe » et « je dirais plutôt » atténuent la certitude, jamais le constat. Une atténuation par phrase suffit."
+   }
+  ],
+  "compte-rendu": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle première phrase convient à un compte rendu ?",
+    "instruction": "Le lecteur n'a que trente secondes.",
+    "options": [
+     {
+      "text": "Nous recommandons l'option B, moins coûteuse de 12 % et livrable un mois plus tôt.",
+      "score": 100,
+      "feedback": "Correct. La conclusion et ses deux raisons tiennent en une phrase."
+     },
+     {
+      "text": "Ce document présente la méthode suivie pour comparer les options.",
+      "score": 50,
+      "feedback": "Utile plus loin, mais la conclusion n'apparaît pas."
+     },
+     {
+      "text": "La réunion s'est bien passée et tout le monde a participé.",
+      "score": 25,
+      "feedback": "L'ambiance n'est pas une information exploitable."
+     },
+     {
+      "text": "Dans ce rapport, je vais parler de plusieurs choses.",
+      "score": 0,
+      "feedback": "Annonce vide : ni sujet, ni conclusion."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez.",
+    "sentence": "Le principal {} de cette étude est que les délais ont doublé en un an.",
+    "accept": [
+     "constat",
+     "enseignement",
+     "résultat",
+     "resultat"
+    ],
+    "size": 12,
+    "instruction": "Un nom : ce qu'on a observé.",
+    "hint": "« Le principal ___ »",
+    "feedback": "« Le principal constat est que… » annonce le fait le plus important. Il se place dès le premier paragraphe."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez cette synthèse.",
+    "text": "Ce compte rendu {} sur les deux offres reçues en mars. {}, l'offre Orsan est la plus avantageuse.\n\nNous {} de la retenir. Le détail des coûts figure en {}.",
+    "gaps": [
+     {
+      "accept": [
+       "porte"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "Globalement",
+       "En somme",
+       "En résumé",
+       "En resume",
+       "Au total"
+      ],
+      "size": 12
+     },
+     {
+      "accept": [
+       "recommandons",
+       "proposons",
+       "suggérons",
+       "suggerons"
+      ],
+      "size": 13
+     },
+     {
+      "accept": [
+       "annexe"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Quatre blancs.",
+    "feedback": "Objet, conclusion, recommandation, renvoi au détail : le premier paragraphe d'un compte rendu doit tenir seul."
+   }
+  ]
+ }
+}

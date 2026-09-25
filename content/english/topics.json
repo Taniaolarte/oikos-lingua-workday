@@ -1,0 +1,830 @@
+{
+ "topics": [
+  {
+   "id": "professional-requests",
+   "label": "Professional requests",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "professional-requests"
+  },
+  {
+   "id": "polite-disagreement",
+   "label": "Disagreeing politely",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "polite-disagreement"
+  },
+  {
+   "id": "giving-opinions",
+   "label": "Giving opinions",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "giving-opinions"
+  },
+  {
+   "id": "agreeing",
+   "label": "Agreeing and supporting",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "giving-opinions"
+  },
+  {
+   "id": "making-suggestions",
+   "label": "Making suggestions",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "suggestions-advice"
+  },
+  {
+   "id": "giving-advice",
+   "label": "Giving advice",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "suggestions-advice"
+  },
+  {
+   "id": "apologising",
+   "label": "Apologising at work",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "apologising"
+  },
+  {
+   "id": "clarifying",
+   "label": "Asking for clarification",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "clarifying"
+  },
+  {
+   "id": "negotiating",
+   "label": "Negotiating",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "negotiating"
+  },
+  {
+   "id": "explaining-problems",
+   "label": "Explaining problems",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "explaining-problems"
+  },
+  {
+   "id": "giving-feedback",
+   "label": "Giving feedback",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "feedback"
+  },
+  {
+   "id": "receiving-feedback",
+   "label": "Receiving feedback",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "feedback"
+  },
+  {
+   "id": "interrupting",
+   "label": "Interrupting politely",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "meeting-language"
+  },
+  {
+   "id": "summarising",
+   "label": "Summarising",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "meeting-language"
+  },
+  {
+   "id": "small-talk",
+   "label": "Professional small talk",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "small-talk"
+  },
+  {
+   "id": "saying-no",
+   "label": "Saying no professionally",
+   "skill": "communication",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "saying-no"
+  },
+  {
+   "id": "thanking",
+   "label": "Thanking and crediting",
+   "skill": "communication",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "small-talk"
+  },
+  {
+   "id": "escalating",
+   "label": "Escalating a problem",
+   "skill": "communication",
+   "levels": [
+    "B2"
+   ],
+   "guide": "explaining-problems"
+  },
+  {
+   "id": "professional-tone",
+   "label": "Professional tone",
+   "skill": "professional-tone",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "professional-tone"
+  },
+  {
+   "id": "formal-informal",
+   "label": "Formal vs informal register",
+   "skill": "professional-tone",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "professional-tone"
+  },
+  {
+   "id": "softening-language",
+   "label": "Softening and hedging",
+   "skill": "professional-tone",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "softening"
+  },
+  {
+   "id": "directness",
+   "label": "Being direct without being rude",
+   "skill": "professional-tone",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "softening"
+  },
+  {
+   "id": "email-openings",
+   "label": "Email openings and closings",
+   "skill": "writing",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "email-structure"
+  },
+  {
+   "id": "email-structure",
+   "label": "Structuring an email",
+   "skill": "writing",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "email-structure"
+  },
+  {
+   "id": "subject-lines",
+   "label": "Writing subject lines",
+   "skill": "writing",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "email-structure"
+  },
+  {
+   "id": "chat-writing",
+   "label": "Writing short chat messages",
+   "skill": "writing",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "async-writing"
+  },
+  {
+   "id": "async-updates",
+   "label": "Async status updates",
+   "skill": "writing",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "async-writing"
+  },
+  {
+   "id": "report-writing",
+   "label": "Report writing",
+   "skill": "writing",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "report-writing"
+  },
+  {
+   "id": "linking-expressions",
+   "label": "Linking expressions",
+   "skill": "writing",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "linking-expressions"
+  },
+  {
+   "id": "opinion-essay",
+   "label": "Opinion essay structure",
+   "skill": "writing",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "linking-expressions"
+  },
+  {
+   "id": "advantages-disadvantages",
+   "label": "Advantages and disadvantages",
+   "skill": "writing",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "linking-expressions"
+  },
+  {
+   "id": "present-simple",
+   "label": "Present simple at work",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "tenses-at-work"
+  },
+  {
+   "id": "present-continuous",
+   "label": "Present continuous at work",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "tenses-at-work"
+  },
+  {
+   "id": "past-simple",
+   "label": "Past simple",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "tenses-at-work"
+  },
+  {
+   "id": "past-continuous",
+   "label": "Past continuous",
+   "skill": "grammar",
+   "levels": [
+    "B1"
+   ],
+   "guide": "tenses-at-work"
+  },
+  {
+   "id": "present-perfect",
+   "label": "Present perfect at work",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "present-perfect"
+  },
+  {
+   "id": "present-perfect-continuous",
+   "label": "Present perfect continuous",
+   "skill": "grammar",
+   "levels": [
+    "B2"
+   ],
+   "guide": "present-perfect"
+  },
+  {
+   "id": "future-will",
+   "label": "Future with will",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "future-forms"
+  },
+  {
+   "id": "future-going-to",
+   "label": "Future with going to",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "future-forms"
+  },
+  {
+   "id": "future-forms",
+   "label": "Choosing the right future form",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "future-forms"
+  },
+  {
+   "id": "modals-should",
+   "label": "Should for advice",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "modals"
+  },
+  {
+   "id": "modals-might",
+   "label": "Might and may for possibility",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "modals"
+  },
+  {
+   "id": "modals-must",
+   "label": "Must and have to",
+   "skill": "grammar",
+   "levels": [
+    "B1"
+   ],
+   "guide": "modals"
+  },
+  {
+   "id": "modals-could",
+   "label": "Could for options and requests",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "modals"
+  },
+  {
+   "id": "first-conditional",
+   "label": "First conditional",
+   "skill": "grammar",
+   "levels": [
+    "B1"
+   ],
+   "guide": "conditionals"
+  },
+  {
+   "id": "second-conditional",
+   "label": "Second conditional",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "conditionals"
+  },
+  {
+   "id": "passive-voice",
+   "label": "Passive voice",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "passive-reported"
+  },
+  {
+   "id": "reported-speech",
+   "label": "Reported speech",
+   "skill": "grammar",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "passive-reported"
+  },
+  {
+   "id": "comparatives",
+   "label": "Comparing options",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "comparing"
+  },
+  {
+   "id": "quantifiers",
+   "label": "Quantifiers and amounts",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "describing-data"
+  },
+  {
+   "id": "prepositions-time",
+   "label": "Prepositions of time: by, until, on",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "deadline-language"
+  },
+  {
+   "id": "question-forms",
+   "label": "Question forms",
+   "skill": "grammar",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "clarifying"
+  },
+  {
+   "id": "deadline-vocabulary",
+   "label": "Deadline vocabulary",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "deadline-language"
+  },
+  {
+   "id": "workplace-people",
+   "label": "Colleagues, employers, employees",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "workplace-vocabulary"
+  },
+  {
+   "id": "career-vocabulary",
+   "label": "Career and experience vocabulary",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "interview-language"
+  },
+  {
+   "id": "strengths-weaknesses",
+   "label": "Strengths and weaknesses",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "interview-language"
+  },
+  {
+   "id": "salary-vocabulary",
+   "label": "Salary and conditions",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "negotiating"
+  },
+  {
+   "id": "meeting-vocabulary",
+   "label": "Meeting vocabulary",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "meeting-language"
+  },
+  {
+   "id": "presentation-vocabulary",
+   "label": "Presentation vocabulary",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "describing-data"
+  },
+  {
+   "id": "data-description",
+   "label": "Describing charts and trends",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "describing-data"
+  },
+  {
+   "id": "strong-verbs",
+   "label": "Strong professional verbs",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "workplace-vocabulary"
+  },
+  {
+   "id": "strong-adjectives",
+   "label": "Strong professional adjectives",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "workplace-vocabulary"
+  },
+  {
+   "id": "remote-work-vocabulary",
+   "label": "Remote work vocabulary",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "async-writing"
+  },
+  {
+   "id": "technology-vocabulary",
+   "label": "Technology at work",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "workplace-vocabulary"
+  },
+  {
+   "id": "ai-vocabulary",
+   "label": "Artificial intelligence at work",
+   "skill": "vocabulary",
+   "levels": [
+    "B2"
+   ],
+   "guide": "workplace-vocabulary"
+  },
+  {
+   "id": "sustainability-vocabulary",
+   "label": "Sustainability at work",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "report-writing"
+  },
+  {
+   "id": "wellbeing-vocabulary",
+   "label": "Wellbeing and work-life balance",
+   "skill": "vocabulary",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "workplace-vocabulary"
+  },
+  {
+   "id": "travel-vocabulary",
+   "label": "Business travel vocabulary",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "workplace-vocabulary"
+  },
+  {
+   "id": "customer-vocabulary",
+   "label": "Customer service vocabulary",
+   "skill": "vocabulary",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "apologising"
+  },
+  {
+   "id": "reading-detail",
+   "label": "Reading for detail",
+   "skill": "reading",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "reading-strategies"
+  },
+  {
+   "id": "reading-inference",
+   "label": "Reading between the lines",
+   "skill": "reading",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "reading-strategies"
+  },
+  {
+   "id": "true-false-not-given",
+   "label": "True / False / Not Given",
+   "skill": "reading",
+   "levels": [
+    "B2"
+   ],
+   "guide": "ielts-reading",
+   "ielts": true
+  },
+  {
+   "id": "skimming-scanning",
+   "label": "Skimming and scanning",
+   "skill": "reading",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "reading-strategies"
+  },
+  {
+   "id": "speaking-fluency",
+   "label": "Speaking fluency",
+   "skill": "speaking",
+   "levels": [
+    "A2",
+    "B1",
+    "B2"
+   ],
+   "guide": "speaking-structure"
+  },
+  {
+   "id": "speaking-structure",
+   "label": "Structuring what you say",
+   "skill": "speaking",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "speaking-structure"
+  },
+  {
+   "id": "justifying",
+   "label": "Justifying your position",
+   "skill": "speaking",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "speaking-structure"
+  },
+  {
+   "id": "ielts-long-turn",
+   "label": "IELTS Speaking: the long turn",
+   "skill": "speaking",
+   "levels": [
+    "B2"
+   ],
+   "guide": "ielts-speaking",
+   "ielts": true
+  },
+  {
+   "id": "ielts-discussion",
+   "label": "IELTS Speaking: Part 3 discussion",
+   "skill": "speaking",
+   "levels": [
+    "B2"
+   ],
+   "guide": "ielts-speaking",
+   "ielts": true
+  },
+  {
+   "id": "ielts-task1",
+   "label": "IELTS Writing Task 1: describing data",
+   "skill": "writing",
+   "levels": [
+    "B2"
+   ],
+   "guide": "ielts-writing",
+   "ielts": true
+  },
+  {
+   "id": "ielts-task2",
+   "label": "IELTS Writing Task 2: the essay",
+   "skill": "writing",
+   "levels": [
+    "B2"
+   ],
+   "guide": "ielts-writing",
+   "ielts": true
+  },
+  {
+   "id": "listening-gist",
+   "label": "Understanding the main point",
+   "skill": "comprehension",
+   "levels": [
+    "A2",
+    "B1"
+   ],
+   "guide": "reading-strategies"
+  },
+  {
+   "id": "understanding-tone",
+   "label": "Understanding tone in writing",
+   "skill": "comprehension",
+   "levels": [
+    "B1",
+    "B2"
+   ],
+   "guide": "professional-tone"
+  }
+ ]
+}
