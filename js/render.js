@@ -1,6 +1,6 @@
 /* ============================================================
    OIKOS LINGUA — exercise renderers
-   Six renderers cover all fifteen interaction types.
+   Twelve renderers cover all nineteen interaction types.
    Each exposes: mount(host, ex, onReady) and reveal(host, ex, result)
    ============================================================ */
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
@@ -455,4 +455,98 @@ R.listening = {
     };
   },
   reveal(host, ex, res) { R.writing.reveal(host, ex, res); }
+};
+
+/* ---------- shared: a workplace document (email, report, memo, minutes…) ---------- */
+const DOC_ICON = { email: '✉️', report: '📄', memo: '📌', minutes: '🗒️', advert: '📰', chat: '💬', itinerary: '🧳' };
+const docBody = text => String(text || '').split(/\n{2,}/)
+  .map(p => `<p>${esc(p).replace(/\n/g, '<br>')}</p>`).join('');
+const docHTML = (doc, body) => `
+  <div class="doc doc-${esc(doc.kind || 'report')}">
+    <div class="doc-head">
+      <span class="doc-ic" aria-hidden="true">${DOC_ICON[doc.kind] || '📄'}</span>
+      <div>
+        ${doc.title ? `<b>${esc(doc.title)}</b>` : ''}
+        ${(doc.meta || []).map(m => `<small>${esc(m)}</small>`).join('')}
+      </div>
+    </div>
+    <div class="doc-body">${body}</div>
+  </div>`;
+
+/* ---------- 11. reading: a real document, then several questions ---------- */
+R.reading = {
+  mount(host, ex, onReady) {
+    const answers = new Array(ex.questions.length).fill(null);
+    const orders = ex.questions.map(q => OK.shuffle(q.options.map((o, i) => i)));
+    host.dataset.orders = JSON.stringify(orders);
+    host.innerHTML = docHTML(ex.doc, docBody(ex.doc.text)) + ex.questions.map((q, qi) => `
+      <div class="rq" data-q="${qi}">
+        <p class="rq-q"><span>${qi + 1}</span>${esc(q.q)}</p>
+        <div class="opts">${orders[qi].map((oi, n) => `
+          <button class="opt" data-i="${oi}">
+            <span class="opt-k">${KEY(n)}</span>
+            <span class="opt-t">${esc(q.options[oi].text)}</span>
+          </button>`).join('')}</div>
+      </div>`).join('');
+    host.querySelectorAll('.rq').forEach(box => box.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+      box.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+      b.classList.add('sel');
+      answers[+box.dataset.q] = +b.dataset.i;
+      onReady(answers.every(a => a !== null) ? answers.slice() : null);
+    }));
+  },
+  reveal(host, ex, res) {
+    const orders = JSON.parse(host.dataset.orders);
+    host.querySelectorAll('.rq').forEach(box => {
+      const qi = +box.dataset.q, q = ex.questions[qi], took = res.chosen[qi];
+      box.querySelectorAll('.opt').forEach(b => {
+        const i = +b.dataset.i, o = q.options[i];
+        b.disabled = true;
+        b.classList.remove('sel');
+        if (o.correct) b.classList.add('ok'); else if (i === took) b.classList.add('no');
+        const fb = (i === took || o.correct) && o.feedback ? `<span class="opt-fb">${esc(o.feedback)}</span>` : '';
+        b.innerHTML = `<span class="opt-k">${o.correct ? '✓' : (i === took ? '✕' : KEY(orders[qi].indexOf(i)))}</span>
+          <span class="opt-t">${esc(o.text)}${fb}</span>`;
+      });
+    });
+  }
+};
+
+/* ---------- 12. gapselect: an email with a choice in every gap ---------- */
+R.gapselect = {
+  mount(host, ex, onReady) {
+    const answers = new Array(ex.gaps.length).fill(null);
+    const parts = ex.text.split('{}');
+    let body = '';
+    parts.forEach((p, i) => {
+      body += esc(p);
+      if (i < ex.gaps.length) {
+        const g = ex.gaps[i];
+        body += `<select class="gapsel" data-i="${i}" aria-label="gap ${i + 1}">` +
+          `<option value="" selected disabled>${i + 1} ▾</option>` +
+          OK.shuffle(g.options.map((o, oi) => oi))
+            .map(oi => `<option value="${oi}">${esc(g.options[oi])}</option>`).join('') +
+          `</select>`;
+      }
+    });
+    const doc = ex.doc || { kind: 'email' };
+    const paras = body.split(/\n{2,}/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+    host.innerHTML = docHTML(doc, `<div class="gaptext">${paras}</div>`);
+    host.querySelectorAll('.gapsel').forEach(s => s.onchange = () => {
+      answers[+s.dataset.i] = +s.value;
+      onReady(answers.every(a => a !== null) ? answers.slice() : null);
+    });
+  },
+  reveal(host, ex, res) {
+    host.querySelectorAll('.gapsel').forEach(s => {
+      const i = +s.dataset.i, g = ex.gaps[i], right = res.chosen[i] === g.answer;
+      const span = document.createElement('span');
+      span.className = 'gapdone ' + (right ? 'ok' : 'no');
+      span.innerHTML = right ? esc(g.options[g.answer])
+        : `<s>${esc(g.options[res.chosen[i]])}</s> ${esc(g.options[g.answer])}`;
+      s.replaceWith(span);
+    });
+    host.insertAdjacentHTML('beforeend', `<div class="mis">${ex.gaps.map((g, i) => `
+      <div class="y gapfb"><b>${i + 1}. ${esc(g.options[g.answer])}</b> ${esc(g.feedback || '')}</div>`).join('')}</div>`);
+  }
 };

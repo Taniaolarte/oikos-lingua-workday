@@ -1834,6 +1834,128 @@
     "why": "Fillers buy thinking time and count as fluency. Silence does not."
    },
    "tip": "Always give yourself a number: 'two reasons'. Once you say it, your brain will find the second one."
+  },
+  {
+   "id": "linking-basics",
+   "title": "Linking words: and, but, because, so",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "Linking words join two ideas. Use 'and' to add, 'but' for a difference, 'because' for a reason, and 'so' for a result. To show the order of steps, use 'first' and 'then'. Use 'also' to add one more thing.",
+   "expressions": [
+    "The office is small and quiet. (add)",
+    "The price is good, but the delivery is slow. (difference)",
+    "I'm late because my train was late. (reason)",
+    "My train was late, so I'm late. (result)",
+    "First, open the file. Then, check the numbers. (order)",
+    "We also need more paper. (one more thing)"
+   ],
+   "vocabulary": [
+    {
+     "term": "and",
+     "gloss": "adds another idea"
+    },
+    {
+     "term": "but",
+     "gloss": "shows a difference or a problem"
+    },
+    {
+     "term": "because",
+     "gloss": "gives the reason: why?"
+    },
+    {
+     "term": "so",
+     "gloss": "gives the result: what happens next?"
+    },
+    {
+     "term": "also",
+     "gloss": "adds one more thing; it goes before the main verb"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Reason",
+     "text": "The report is late because the data arrived on Friday."
+    },
+    {
+     "label": "Result",
+     "text": "The data arrived on Friday, so the report is late."
+    },
+    {
+     "label": "Difference",
+     "text": "The hotel is nice, but it's far from the office."
+    }
+   ],
+   "mistake": {
+    "wrong": "Because the train was late, so I missed the meeting.",
+    "right": "Because the train was late, I missed the meeting. / The train was late, so I missed the meeting.",
+    "why": "'Because' and 'so' do the same job. Use one, not both."
+   },
+   "tip": "Before you send an email, look for three short sentences in a row. Can 'and', 'but' or 'so' join two of them?"
+  },
+  {
+   "id": "linking-formal",
+   "title": "Formal linking: whereas, provided that, nevertheless",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "At B2 the question is no longer which linker means 'but', but which one says exactly what you mean. 'Nevertheless' concedes a point and continues; 'whereas' sets two facts side by side; 'provided that' makes a condition; 'given that' and 'in light of' introduce a fact you are reasoning from. In a formal email or report, the right linker does the work of a whole sentence.",
+   "expressions": [
+    "Concession: nevertheless, nonetheless, that said, notwithstanding",
+    "Comparison: whereas, while, by contrast",
+    "Condition: provided that, as long as, unless",
+    "Reasoning from a known fact: given that, in light of, in view of",
+    "Result: consequently, as a result, hence",
+    "Adding: furthermore, in addition, moreover"
+   ],
+   "vocabulary": [
+    {
+     "term": "nevertheless",
+     "gloss": "despite what I just said; starts a new sentence and takes a comma"
+    },
+    {
+     "term": "whereas",
+     "gloss": "joins two contrasting facts in one sentence"
+    },
+    {
+     "term": "provided that",
+     "gloss": "only if; introduces a condition"
+    },
+    {
+     "term": "given that / in light of",
+     "gloss": "because of a fact both sides know; 'in light of' takes a noun"
+    },
+    {
+     "term": "notwithstanding",
+     "gloss": "very formal 'despite'; takes a noun"
+    },
+    {
+     "term": "consequently",
+     "gloss": "as a result; starts a sentence or follows a semicolon"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Concession",
+     "text": "The pilot was expensive. Nevertheless, it paid for itself within a year."
+    },
+    {
+     "label": "Comparison",
+     "text": "Vendor A offers phone support, whereas Vendor B offers email only."
+    },
+    {
+     "label": "Condition",
+     "text": "We can hold this price provided that the order is confirmed by Friday."
+    },
+    {
+     "label": "Known fact",
+     "text": "In light of last year's delays, we recommend a second supplier."
+    }
+   ],
+   "mistake": {
+    "wrong": "Nevertheless the price, we accepted the offer.",
+    "right": "Despite the price, we accepted the offer. / The price was high. Nevertheless, we accepted the offer.",
+    "why": "'Nevertheless' links two sentences. Before a noun, use 'despite' or 'notwithstanding'."
+   },
+   "tip": "Test each linker with its meaning: 'provided that' = 'only if', 'given that' = 'because we know'. If the paraphrase makes nonsense, the linker is wrong."
   }
  ]
 }

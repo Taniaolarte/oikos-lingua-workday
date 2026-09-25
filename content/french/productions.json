@@ -1961,7 +1961,7 @@
      "label": "Illustre par un exemple",
      "any": [
       "par exemple",
-      "ainsi,",
+      "ainsi",
       "notamment",
       "a titre d'exemple",
       "c'est le cas de"
@@ -2146,6 +2146,69 @@
     "Le point ouvert a-t-il une échéance ?"
    ],
    "model": "Décision principale : la livraison au client Orsan est décalée au 18 avril, et un prestataire est recruté pour trois semaines afin de tenir cette nouvelle date.\n\nDécisions prises mardi :\n– nouvelle date de livraison : 18 avril, au lieu du 1er ;\n– recrutement d'un prestataire pour trois semaines, pour un coût de 9 000 €, validé par la direction ;\n– Karim informe le client Orsan avant jeudi ; il transmettra sa réponse à toute l'équipe.\n\nPoint ouvert : aucun responsable n'a encore été désigné pour reprendre le module de reporting. Merci aux personnes disponibles de se signaler auprès d'Élodie d'ici vendredi.\n\nLe détail du nouveau calendrier figure en annexe."
+  },
+  "connecteurs-simples": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Expliquez le problème",
+   "brief": "La réunion avec le client Orsan est jeudi. Mais les brochures ne sont pas prêtes : l'imprimante est en panne.",
+   "task": "Écrivez un court message à votre responsable (25 à 45 mots). Donnez le problème, la raison et une solution. Utilisez au moins trois mots de liaison.",
+   "include": [
+    "Le problème",
+    "La raison avec « parce que »",
+    "Le résultat avec « donc »",
+    "Une solution avec « mais » ou « d'abord… ensuite… »"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Salue votre responsable",
+     "any": [
+      "bonjour",
+      "salut",
+      "hello"
+     ]
+    },
+    {
+     "label": "Donne la raison avec « parce que » (ou « car »)",
+     "any": [
+      "parce que",
+      "car il",
+      "car elle",
+      "car le",
+      "car la",
+      "car les",
+      "car nous",
+      "car notre",
+      "car c'est",
+      "car je",
+      "car j'",
+      "car on"
+     ]
+    },
+    {
+     "label": "Donne le résultat avec « donc »",
+     "any": [
+      "donc",
+      "alors"
+     ]
+    },
+    {
+     "label": "Emploie « mais », « d'abord », « ensuite » ou « puis »",
+     "any": [
+      "mais",
+      "d'abord",
+      "ensuite",
+      "puis"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "« Parce que » donne-t-il bien la raison, et « donc » le résultat ?",
+    "Mes phrases sont-elles courtes ?",
+    "Ai-je proposé une solution ?"
+   ],
+   "model": "Bonjour Élodie,\n\nLes brochures ne sont pas prêtes parce que l'imprimante est en panne. Donc nous n'avons pas les brochures pour jeudi. Mais j'ai une solution : d'abord, j'appelle l'imprimerie Morel. Ensuite, je vais chercher les brochures mercredi.\n\nAna"
   }
  }
 }

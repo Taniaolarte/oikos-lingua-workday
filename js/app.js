@@ -355,8 +355,10 @@ const APP = {
   renderChallenge() {
     const st = this.current, c = st.c;
     const host = document.getElementById('sc-challenge');
-    const ex = st.phase === 'after' ? c.activity.after : c.activity.before;
     const renderer = c.interaction.renderer;
+    // A writing situation needs to know the language for its labels and checks.
+    const ex = Object.assign({ lang: this.profile.language },
+      st.phase === 'after' ? c.activity.after : c.activity.before);
 
     if (st.phase === 'choose') {
       host.innerHTML = `
@@ -441,6 +443,7 @@ const APP = {
       R[renderer].mount(exHost, ex, ans => { st.answer = ans; go.disabled = (ans === null || ans === undefined); });
       go.onclick = () => {
         const res = OK.scoreExercise(ex, renderer, st.answer);
+        res.lang = ex.lang;
         go.remove();
         if (isAfter) {
           // Second attempt: the learner has read the guide, so show the full

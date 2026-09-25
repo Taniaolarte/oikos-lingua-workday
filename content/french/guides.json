@@ -1965,6 +1965,67 @@
     "why": "En français, l'accent est à la fin du groupe, pas sur chaque mot."
    },
    "tip": "Enregistrez-vous et réécoutez. Corrigez seulement deux choses à la fois."
+  },
+  {
+   "id": "connecteurs-simples",
+   "level": "A2",
+   "title": "Les mots de liaison simples",
+   "minutes": 2,
+   "explanation": "Les mots de liaison relient deux idées. Avec eux, votre courriel est plus clair. « Et » ajoute. « Mais » oppose. « Parce que » donne la raison. « Donc » donne le résultat. « D'abord », « ensuite » et « puis » donnent l'ordre des étapes.",
+   "expressions": [
+    "Le client a appelé et il a envoyé un courriel.",
+    "Le rapport est prêt, mais il manque les chiffres de mars.",
+    "La livraison a du retard parce que le camion est en panne.",
+    "Le camion est en panne, donc la livraison a du retard.",
+    "D'abord, je lis le dossier. Ensuite, je vous appelle.",
+    "Je m'occupe aussi des commandes."
+   ],
+   "vocabulary": [
+    {
+     "term": "et",
+     "gloss": "ajoute une idée"
+    },
+    {
+     "term": "aussi",
+     "gloss": "ajoute une information : « je m'occupe aussi de… »"
+    },
+    {
+     "term": "mais",
+     "gloss": "oppose deux idées"
+    },
+    {
+     "term": "parce que",
+     "gloss": "donne la raison (la réponse à « pourquoi ? »)"
+    },
+    {
+     "term": "donc",
+     "gloss": "donne le résultat"
+    },
+    {
+     "term": "d'abord / ensuite / puis",
+     "gloss": "donnent l'ordre : 1, 2, 3"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Sans mots de liaison",
+     "text": "Le fournisseur a un problème. La livraison a du retard. Nous livrons mardi."
+    },
+    {
+     "label": "Avec des mots de liaison",
+     "text": "Le fournisseur a un problème, donc la livraison a du retard. Nous livrons mardi, mais seulement le matin."
+    },
+    {
+     "label": "Les étapes",
+     "text": "D'abord, je vérifie la commande. Ensuite, j'appelle le client. Puis j'envoie la facture."
+    }
+   ],
+   "mistake": {
+    "wrong": "Le camion est en panne parce que la livraison a du retard.",
+    "right": "Le camion est en panne, donc la livraison a du retard.",
+    "why": "« Parce que » donne la raison. « Donc » donne le résultat. Ici, la panne est la raison, et le retard est le résultat."
+   },
+   "tip": "Posez la question « pourquoi ? ». La réponse commence par « parce que ». Pour dire le résultat, utilisez « donc »."
   }
  ]
 }

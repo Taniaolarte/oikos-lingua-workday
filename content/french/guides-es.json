@@ -510,6 +510,1337 @@
         "why": "En francés, el acento va al final del grupo de palabras, no en cada palabra."
       },
       "tip": "Grábate y vuelve a escucharte. Corrige solo dos cosas a la vez."
+    },
+    "futur-simple": {
+      "title": "El futuro simple",
+      "explanation": "Se toma el infinitivo y se le agregan las terminaciones -ai, -as, -a, -ons, -ez, -ont. Se usa para un futuro más lejano, predicciones, promesas y hechos futuros seguros pero no inmediatos. La idea: una proyección hacia el futuro. Funciona casi igual que el futuro del español: 'je parlerai' = hablaré.",
+      "expressions": [
+        "hablar → hablaré",
+        "terminar → terminaré",
+        "tomar → tomaré",
+        "haré / haremos",
+        "seré, estaré / usted será, estará",
+        "ellos vendrán"
+      ],
+      "vocabulary": [
+        {
+          "es": "una predicción",
+          "gloss": "lo que crees que va a pasar"
+        },
+        {
+          "es": "una promesa",
+          "gloss": "un compromiso firme"
+        },
+        {
+          "es": "a largo plazo",
+          "gloss": "en un futuro lejano"
+        },
+        {
+          "es": "un proyecto",
+          "gloss": "lo que quieres realizar"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Raíces irregulares frecuentes",
+          "text": "être (ser, estar) → ser- · avoir (tener, haber) → aur- · aller (ir) → ir- · faire (hacer) → fer- · venir (venir) → viendr- · pouvoir (poder) → pourr- · vouloir (querer) → voudr- · devoir (deber) → devr- · voir (ver) → verr- · savoir (saber) → saur-"
+        },
+        {
+          "label": "Compromiso profesional",
+          "text": "Presentaré el proyecto mañana por la mañana."
+        },
+        {
+          "label": "Previsión",
+          "text": "Terminaremos el proyecto la próxima semana."
+        }
+      ],
+      "mistake": {
+        "why": "'-ai' = futuro simple, '-ais' = condicional. Una sola letra cambia todo el sentido: 'je serai' (estaré) / 'je serais' (estaría)."
+      },
+      "tip": "La raíz del futuro siempre termina en '-r'. Si no escuchas la '-r', no es futuro simple."
+    },
+    "futur-proche-vs-simple": {
+      "title": "¿Futuro próximo o futuro simple?",
+      "explanation": "Los dos son correctos gramaticalmente: la elección depende del sentido. Futuro próximo ('je vais faire', voy a hacer) = intención, plan, decisión tomada ahora, acción inminente. Futuro simple ('je ferai', haré) = proyección, previsión, promesa, visión general del futuro.",
+      "expressions": [
+        "Futuro próximo: intención / plan / cercano / decidido ahora",
+        "Futuro simple: proyección / previsión / más lejano / visión general"
+      ],
+      "vocabulary": [
+        {
+          "es": "inminente",
+          "gloss": "que va a pasar enseguida"
+        },
+        {
+          "es": "una proyección",
+          "gloss": "una visión del futuro"
+        },
+        {
+          "es": "plazo, fecha límite",
+          "gloss": "la fecha límite"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Plan concreto",
+          "text": "Esta noche voy a terminar el presupuesto. (decidido, inminente)"
+        },
+        {
+          "label": "Proyecto de vida",
+          "text": "Algún día dirigiré mi propio equipo. (proyección)"
+        },
+        {
+          "label": "Peligro visible",
+          "text": "¡Cuidado! ¡El servidor se va a caer! (inminente, visible)"
+        },
+        {
+          "label": "Predicción lejana",
+          "text": "Dentro de diez años, las reuniones serán casi todas virtuales."
+        }
+      ],
+      "mistake": {
+        "why": "Un futuro muy lejano pide el futuro simple, no el futuro próximo."
+      },
+      "tip": "Prueba rápida: si puedes agregar 'c'est déjà décidé' (ya está decidido), usa el futuro próximo. Si puedes agregar 'un jour' (algún día), usa el futuro simple."
+    },
+    "articles-partitifs": {
+      "title": "Los artículos partitivos: du, de la, de l', des",
+      "explanation": "El partitivo expresa una cantidad que no se cuenta: 'du temps' (tiempo), 'de la patience' (paciencia), 'de l'organisation' (organización), 'des efforts' (esfuerzos). Ojo: en español no usamos ningún artículo aquí ('necesitamos tiempo'), pero en francés el partitivo es obligatorio. Se convierte en 'de' después de una negación, después de una expresión de cantidad y delante de un adjetivo plural colocado antes del sustantivo. En el nivel B2, lo que cuenta son las excepciones: 'ce n'est pas du…', 'ne … que', 'la plupart des', 'bien des'.",
+      "expressions": [
+        "'du' + masculino singular: du travail (trabajo), du temps (tiempo)",
+        "'de la' + femenino singular: de la patience (paciencia), de la flexibilité (flexibilidad)",
+        "'de l'' + vocal o h muda: de l'organisation (organización), de l'accompagnement (acompañamiento)",
+        "'des' + plural: des efforts (esfuerzos), des informations (información)",
+        "'de' / 'd'' después de negación o cantidad: pas de temps (no hay tiempo), beaucoup d'efforts (mucho esfuerzo)",
+        "'ne … que' + artículo completo: nous n'avons que des retours positifs (solo tenemos comentarios positivos)",
+        "'ce n'est pas' + artículo completo: ce n'est pas du temps perdu (no es tiempo perdido)",
+        "'la plupart des' (la mayoría de) / 'bien des' (muchos): excepciones a las expresiones de cantidad",
+        "'sans' (sin) / 'manquer de' (faltar) / 'avoir besoin de' (necesitar) + sustantivo sin artículo: nous manquons de données (nos faltan datos)"
+      ],
+      "vocabulary": [
+        {
+          "es": "una cantidad indeterminada",
+          "gloss": "una cantidad que no se cuenta"
+        },
+        {
+          "es": "faltar, carecer de",
+          "gloss": "no tener suficiente"
+        },
+        {
+          "es": "necesitar",
+          "gloss": "requerir"
+        },
+        {
+          "es": "suficiente / demasiado / mucho",
+          "gloss": "expresiones de cantidad, siempre seguidas de 'de' en francés"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Afirmativo",
+          "text": "Este proyecto requiere flexibilidad y organización."
+        },
+        {
+          "label": "Negativo",
+          "text": "No tenemos tiempo para una segunda versión."
+        },
+        {
+          "label": "Cantidad",
+          "text": "Todavía hay que hacer esfuerzos, pero producimos menos residuos."
+        },
+        {
+          "label": "Adjetivo antes del sustantivo plural",
+          "text": "En este sector hay pequeñas empresas. (en francés: 'de petites', no 'des petites')"
+        },
+        {
+          "label": "Después de 'comme' o 'être'",
+          "text": "Esta pausa nunca se ve como tiempo perdido."
+        },
+        {
+          "label": "Restricción, no negación",
+          "text": "Solo hemos recibido comentarios positivos."
+        }
+      ],
+      "mistake": {
+        "why": "Después de una negación, 'du' / 'de la' / 'des' se convierten en 'de'. Excepción: después del verbo 'être' ('Ce n'est pas du travail sérieux', no es un trabajo serio)."
+      },
+      "tip": "Cinco trampas para memorizar: la negación ('pas de'), la cantidad ('beaucoup de'), el adjetivo plural antepuesto ('de petites') y dos casos en que el artículo queda completo: 'ce n'est pas du…' y 'ne … que des…' ('ne … que' significa 'solo': no es una negación)."
+    },
+    "donner-son-opinion": {
+      "title": "Dar tu opinión",
+      "explanation": "Una opinión de nivel B1 tiene tres elementos: la expresión de introducción, la opinión y la razón. La razón es lo que marca la diferencia entre una opinión profesional y una simple preferencia. Después de 'je pense que' (creo que) va el indicativo, como en español.",
+      "expressions": [
+        "En mi opinión…",
+        "Creo que…",
+        "Para mí…",
+        "Desde mi punto de vista…",
+        "Tengo la impresión de que…",
+        "Me parece que…",
+        "Estoy totalmente de acuerdo.",
+        "Es una buena observación."
+      ],
+      "vocabulary": [
+        {
+          "es": "una prioridad",
+          "gloss": "lo que más importa"
+        },
+        {
+          "es": "un impacto",
+          "gloss": "el efecto producido"
+        },
+        {
+          "es": "un riesgo",
+          "gloss": "lo que puede salir mal"
+        },
+        {
+          "es": "una ventaja",
+          "gloss": "un punto positivo"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Solo la opinión",
+          "text": "Creo que hay que esperar."
+        },
+        {
+          "label": "Opinión + razón",
+          "text": "Creo que hay que esperar, porque los datos del trimestre no están completos."
+        },
+        {
+          "label": "Apoyar a alguien",
+          "text": "Coincido con lo que dice Marta: el calendario es demasiado ajustado."
+        }
+      ],
+      "mistake": {
+        "why": "Las dos expresiones cumplen la misma función. Elige solo una."
+      },
+      "tip": "Da la razón antes de que te la pidan. Así reduces a la mitad las preguntas de seguimiento."
+    },
+    "desaccord-poli": {
+      "title": "Expresar desacuerdo con cortesía",
+      "explanation": "El desacuerdo profesional en francés sigue un esquema: reconocer, luego matizar, luego proponer. Decir simplemente 'non' (no) se percibe como agresivo, incluso cuando tienes razón. En el nivel B2, se aísla una reserva precisa en lugar de rechazarlo todo, y se propone una alternativa difícil de rechazar.",
+      "expressions": [
+        "Entiendo su punto de vista, pero…",
+        "No estoy seguro(a) de estar de acuerdo, porque…",
+        "Es cierto; sin embargo…",
+        "Yo lo veo un poco distinto.",
+        "Coincido con usted en el principio; lo que me preocupa es…",
+        "Temo que eso nos retrase. (subjuntivo + 'ne' expletivo: ese 'ne' no niega nada y no se traduce)",
+        "¿Podríamos probar… y hacer un balance en un mes?"
+      ],
+      "vocabulary": [
+        {
+          "es": "una reserva",
+          "gloss": "una preocupación que se puede justificar"
+        },
+        {
+          "es": "un punto medio",
+          "gloss": "una solución en la que cada uno cede"
+        },
+        {
+          "es": "una alternativa",
+          "gloss": "otra opción"
+        },
+        {
+          "es": "matizar",
+          "gloss": "hacer algo menos absoluto"
+        },
+        {
+          "es": "el 'ne' expletivo",
+          "gloss": "un 'ne' sin valor negativo, después de 'craindre que' (temer que) o 'avant que' (antes de que)"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado brusco",
+          "text": "No, eso no va a funcionar."
+        },
+        {
+          "label": "Mejor",
+          "text": "Entiendo la lógica, pero temo que el calendario sea demasiado ajustado."
+        },
+        {
+          "label": "Con propuesta",
+          "text": "Entiendo su punto de vista, pero propongo otra solución: hacerlo en dos fases."
+        }
+      ],
+      "mistake": {
+        "why": "En un texto profesional, conserva el 'ne' de la negación ('je ne suis pas'), y apunta a la idea, no a la persona. Al hablar, los franceses suelen omitir el 'ne', pero por escrito se nota."
+      },
+      "tip": "Cuestiona la idea, nunca a la persona: 'cette approche' (este enfoque) en lugar de 'votre approche' (su enfoque)."
+    },
+    "argumenter": {
+      "title": "Argumentar",
+      "explanation": "Argumentar es encadenar: anunciar tu posición, dar dos argumentos, ilustrar con un ejemplo y concluir. El plan cuenta más que el vocabulario. Da una impresión de dominio incluso con una gramática sencilla.",
+      "expressions": [
+        "Primero… luego… por último…",
+        "Por una parte… por otra parte…",
+        "En primer lugar… en segundo lugar…",
+        "Por ejemplo, …",
+        "Por eso…",
+        "En cambio…",
+        "En conclusión, …"
+      ],
+      "vocabulary": [
+        {
+          "es": "un argumento",
+          "gloss": "una razón que apoya una posición"
+        },
+        {
+          "es": "un contraargumento",
+          "gloss": "la posible objeción"
+        },
+        {
+          "es": "ilustrar",
+          "gloss": "dar un ejemplo concreto"
+        },
+        {
+          "es": "sopesar pros y contras",
+          "gloss": "comparar ventajas y desventajas"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sin estructura",
+          "text": "Creo que está bien, hay muchas cosas, depende…"
+        },
+        {
+          "label": "Estructurado",
+          "text": "Estoy a favor de esta solución por dos razones. Por una parte, cuesta menos. Por otra parte, es más rápida de implementar. Por ejemplo, el año pasado, el mismo enfoque nos hizo ganar tres semanas."
+        }
+      ],
+      "mistake": {
+        "why": "Los conectores tienen que avanzar. Repetir el mismo muestra una argumentación que da vueltas en círculo."
+      },
+      "tip": "Anuncia el número de argumentos desde el principio: 'pour deux raisons' (por dos razones). Tu cerebro encontrará el segundo."
+    },
+    "s-excuser": {
+      "title": "Disculparte en el trabajo",
+      "explanation": "Una disculpa profesional nombra el problema, asume una responsabilidad proporcionada y pasa de inmediato a la solución. En el nivel B2, todo está en la dosis: asumir tu parte sin cargar con la de los demás, y evitar las fórmulas que suenan pasivo-agresivas ('comme indiqué dans mon précédent message', como indiqué en mi mensaje anterior).",
+      "expressions": [
+        "Le ruego que me disculpe por este retraso.",
+        "Lamento la confusión.",
+        "Es error mío.",
+        "Gracias por su paciencia.",
+        "Esto es lo que estoy poniendo en marcha:",
+        "No volverá a pasar.",
+        "Debí haberle avisado de este riesgo antes.",
+        "Al revisar el calendario, se observa que…"
+      ],
+      "vocabulary": [
+        {
+          "es": "una molestia, un inconveniente",
+          "gloss": "la incomodidad causada a alguien"
+        },
+        {
+          "es": "un olvido",
+          "gloss": "algo que se olvidó sin querer"
+        },
+        {
+          "es": "resolver, solucionar",
+          "gloss": "resolver de forma definitiva"
+        },
+        {
+          "es": "una compensación comercial",
+          "gloss": "algo que se le ofrece al cliente para compensar"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado ligero",
+          "text": "¡Perdón!"
+        },
+        {
+          "label": "Demasiado pesado",
+          "text": "Lo siento muchísimo, me siento terriblemente culpable, entiendo perfectamente si está furioso…"
+        },
+        {
+          "label": "Justo",
+          "text": "Le ruego que me disculpe por este retraso: fue un olvido mío. El documento acaba de salir y agregué un punto de control para que no vuelva a pasar."
+        }
+      ],
+      "mistake": {
+        "why": "Uno no puede disculparse a sí mismo: es la otra persona quien disculpa. 'Je m'excuse' (me disculpo) es común al hablar, pero está mal visto en un texto profesional. Aunque en español 'me disculpo' es normal, por escrito en francés usa 'Je vous prie de m'excuser'."
+      },
+      "tip": "Discúlpate una sola vez, en una frase. Dedica todo el resto del mensaje a la solución."
+    },
+    "demander-precision": {
+      "title": "Pedir una aclaración",
+      "explanation": "Pedir una aclaración es una fortaleza profesional. Pero formúlala sobre el mensaje, nunca sobre la persona que lo escribió.",
+      "expressions": [
+        "Solo para asegurarme de haber entendido bien…",
+        "¿Qué entiende exactamente por…?",
+        "¿Quiere decir X o Y?",
+        "Si entiendo bien, la prioridad es X, ¿es correcto?",
+        "Quisiera verificar un punto antes de empezar."
+      ],
+      "vocabulary": [
+        {
+          "es": "el brief, los requisitos",
+          "gloss": "las instrucciones de un trabajo"
+        },
+        {
+          "es": "el alcance",
+          "gloss": "lo que incluye el trabajo"
+        },
+        {
+          "es": "un entregable",
+          "gloss": "lo que hay que producir"
+        },
+        {
+          "es": "una suposición, una hipótesis",
+          "gloss": "lo que supones sin verificar"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Acusador",
+          "text": "Su brief no es claro."
+        },
+        {
+          "label": "Mejor",
+          "text": "Quisiera verificar un punto del brief antes de empezar."
+        },
+        {
+          "label": "Con opciones",
+          "text": "Una pequeña verificación: ¿el informe debe cubrir solo el tercer trimestre (T3), o el T3 y el T4? Por ahora trabajo sobre el T3."
+        }
+      ],
+      "mistake": {
+        "why": "Es correcto, pero plano. El condicional ('pourriez-vous', ¿podría usted…?) hace la petición mucho más profesional."
+      },
+      "tip": "Incluye tu suposición en la pregunta. Así conviertes una pregunta en una decisión de diez segundos."
+    },
+    "negocier": {
+      "title": "Negociar",
+      "explanation": "El lenguaje de la negociación es condicional. Rara vez se dice lo que uno quiere; se dice lo que sería posible si otra cosa cambiara.",
+      "expressions": [
+        "Si pudiéramos…, estaríamos en condiciones de…",
+        "¿Estaría abierto a…?",
+        "Me parece bien, siempre que… ('à condition que' + subjuntivo)",
+        "Puedo hacer X si Y cambia.",
+        "¿Qué margen de maniobra tiene?",
+        "Teniendo en cuenta las responsabilidades del puesto, mi expectativa ronda los…"
+      ],
+      "vocabulary": [
+        {
+          "es": "el sueldo bruto / neto",
+          "gloss": "antes / después de las deducciones"
+        },
+        {
+          "es": "la remuneración total",
+          "gloss": "sueldo más prestaciones"
+        },
+        {
+          "es": "un margen de maniobra",
+          "gloss": "la flexibilidad disponible"
+        },
+        {
+          "es": "una contrapropuesta",
+          "gloss": "una oferta distinta como respuesta"
+        },
+        {
+          "es": "las prestaciones, los beneficios",
+          "gloss": "lo que se suma al sueldo"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Exigente",
+          "text": "Necesito más dinero."
+        },
+        {
+          "label": "Mejor",
+          "text": "Teniendo en cuenta las responsabilidades del puesto, me sitúo en un rango de 45 000 a 50 000 euros."
+        },
+        {
+          "label": "Intercambio",
+          "text": "Podría aceptar 43 000 si hay una revisión a los seis meses."
+        }
+      ],
+      "mistake": {
+        "why": "'Vouloir que' (querer que) y 'souhaiter que' (desear que) exigen el subjuntivo, igual que en español: 'que vous réexaminiez' (que usted revise), no 'que vous augmentez'. Y el condicional ('je souhaiterais', desearía) suaviza la petición."
+      },
+      "tip": "Nunca des una cifra sin darle una razón. La razón es lo que hace que la cifra sea negociable en lugar de emocional."
+    },
+    "expliquer-probleme": {
+      "title": "Explicar un problema",
+      "explanation": "El orden profesional es: lo que pasó, el impacto, lo que ya estás haciendo y lo que necesitas. Si empiezas con la excusa, pierdes la atención de todos.",
+      "expressions": [
+        "El problema es que…",
+        "Lo que pasó es que…",
+        "Por lo tanto…",
+        "El impacto es el siguiente:",
+        "Esto es lo que ya hice:",
+        "Lo que necesito de usted es… ('ce dont', porque se dice 'avoir besoin de')"
+      ],
+      "vocabulary": [
+        {
+          "es": "un incidente",
+          "gloss": "un problema, dicho de forma neutral"
+        },
+        {
+          "es": "la causa raíz",
+          "gloss": "la verdadera razón de fondo"
+        },
+        {
+          "es": "una falla, una avería",
+          "gloss": "una parada técnica"
+        },
+        {
+          "es": "escalar, reportar",
+          "gloss": "avisar a un nivel superior"
+        },
+        {
+          "es": "la interrupción del servicio",
+          "gloss": "el tiempo en que el sistema no funciona"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Excusa primero",
+          "text": "No es mi culpa, el proveedor se atrasó y nadie me avisó…"
+        },
+        {
+          "label": "Mejor",
+          "text": "La entrega tiene dos días de retraso. Eso mueve las pruebas al jueves. Le pedí una fecha firme al proveedor y lo confirmo antes de las 2 de la tarde."
+        }
+      ],
+      "mistake": {
+        "why": "Repetir la disculpa lleva la atención a tus emociones en lugar de a la solución."
+      },
+      "tip": "Una mala noticia se recibe mejor temprano y breve. Un párrafo corto es mejor que una larga disculpa enviada tarde."
+    },
+    "feedback-fr": {
+      "title": "Dar y recibir retroalimentación",
+      "explanation": "Una retroalimentación útil se refiere a un trabajo observable, no a la personalidad. Al recibirla, el reflejo profesional es hacer una pregunta de aclaración antes de responder.",
+      "expressions": [
+        "Lo que funciona muy bien es…",
+        "Sugeriría modificar…",
+        "¿Ha pensado en…?",
+        "Lo que haría este trabajo más sólido es…",
+        "Gracias, es útil.",
+        "¿Podría darme un ejemplo?",
+        "Lo voy a pensar y le respondo. ('y' = en eso)"
+      ],
+      "vocabulary": [
+        {
+          "es": "constructivo",
+          "gloss": "pensado para ayudar"
+        },
+        {
+          "es": "una revisión",
+          "gloss": "una versión modificada"
+        },
+        {
+          "es": "un borrador",
+          "gloss": "una primera versión"
+        },
+        {
+          "es": "punto fuerte / punto por mejorar",
+          "gloss": "cualidad / aspecto que se puede mejorar"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sobre la persona",
+          "text": "Eres descuidado."
+        },
+        {
+          "label": "Sobre el trabajo",
+          "text": "Tres cifras de la tabla no coinciden con el anexo."
+        },
+        {
+          "label": "Recibir bien",
+          "text": "Gracias. ¿Podría mostrarme el fragmento del que habla?"
+        }
+      ],
+      "mistake": {
+        "why": "'Toujours' (siempre) y 'jamais' (nunca) convierten una retroalimentación en un reproche."
+      },
+      "tip": "Nunca te defiendas en el mismo minuto en que recibes una crítica. 'Je regarde et je reviens vers vous' (lo reviso y le respondo) te hace ganar un día y no cuesta nada."
+    },
+    "langue-reunion": {
+      "title": "El lenguaje de las reuniones",
+      "explanation": "Las reuniones tienen sus señales verbales: entrar en la conversación, mantener la palabra, concluir. Dominar estas señales te permite participar a un nivel más alto que tu gramática.",
+      "expressions": [
+        "¿Puedo agregar algo?",
+        "¿Puedo intervenir sobre este punto?",
+        "Retomando lo que dice Marta…",
+        "¿Una aclaración antes de pasar a lo siguiente?",
+        "Para resumir, …",
+        "Las acciones son las siguientes: …",
+        "¿Podemos hablarlo después de la reunión?"
+      ],
+      "vocabulary": [
+        {
+          "es": "el orden del día",
+          "gloss": "la lista de puntos por tratar"
+        },
+        {
+          "es": "el acta, la minuta",
+          "gloss": "el documento que resume la reunión"
+        },
+        {
+          "es": "una acción, un pendiente",
+          "gloss": "una tarea decidida en la reunión"
+        },
+        {
+          "es": "moderar una reunión",
+          "gloss": "dirigirla"
+        },
+        {
+          "es": "un registro de decisiones",
+          "gloss": "la lista de lo que se decidió"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Interrupción torpe",
+          "text": "No, escuche…"
+        },
+        {
+          "label": "Interrupción lograda",
+          "text": "Perdón por interrumpirlo. ¿Puedo agregar un punto sobre el presupuesto?"
+        },
+        {
+          "label": "Conclusión",
+          "text": "Para resumir: Ana envía el borrador el martes, yo lo reviso el jueves y decidimos el viernes."
+        }
+      ],
+      "mistake": {
+        "why": "Se habla 'de' o 'sur' (sobre) un tema, nunca 'pour' (para), y el condicional ('je voudrais', quisiera) suaviza."
+      },
+      "tip": "Di el nombre de la persona antes de contradecirla. Eso convierte un ataque en una conversación."
+    },
+    "dire-non": {
+      "title": "Decir que no de forma profesional",
+      "explanation": "Un 'non' profesional nunca es solo 'no'. Contiene una razón, una alternativa o una condición. Por eso rara vez daña la relación. En el nivel B2, conviertes el rechazo en una cuestión de prioridades y le devuelves la decisión a la otra persona.",
+      "expressions": [
+        "Me gustaría ayudar, pero esta semana estoy al máximo.",
+        "No puedo hacerlo para el viernes; puedo para el martes.",
+        "No es algo con lo que me pueda comprometer ahora.",
+        "Si X cambia, puedo hacer Y.",
+        "Déjeme ver qué puedo hacer de manera realista.",
+        "Podría encargarme, siempre que el asunto Ortiz se posponga. ('à condition que' + subjuntivo)",
+        "¿Cuál de los dos va primero, según usted?"
+      ],
+      "vocabulary": [
+        {
+          "es": "la carga de trabajo",
+          "gloss": "la cantidad de trabajo"
+        },
+        {
+          "es": "estar sobrecargado",
+          "gloss": "tener demasiado trabajo"
+        },
+        {
+          "es": "comprometerse a",
+          "gloss": "prometer con firmeza"
+        },
+        {
+          "es": "reorganizar las prioridades",
+          "gloss": "cambiar el orden de lo que importa"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Vago",
+          "text": "Voy a intentarlo."
+        },
+        {
+          "label": "Un no claro",
+          "text": "No puedo para el viernes. Se lo puedo entregar el martes por la mañana."
+        },
+        {
+          "label": "Un no con condición",
+          "text": "Puedo encargarme si el asunto Ortiz pasa a la próxima semana. ¿Qué prefiere?"
+        }
+      ],
+      "mistake": {
+        "why": "Después de una negación, el partitivo 'du' se convierte en 'de'. En español no hay artículo ('no tengo tiempo'), pero en francés hace falta ese 'de'."
+      },
+      "tip": "Ponle una fecha a tu 'no'. Un 'non' acompañado de una fecha alternativa real se entiende como un compromiso, no como un rechazo."
+    },
+    "attenuer": {
+      "title": "Suavizar y matizar",
+      "explanation": "El francés profesional suaviza mucho. El condicional, 'il me semble' (me parece) y 'un peu' (un poco) le dejan a la otra persona espacio para no estar de acuerdo. Si suavizas muy poco, pareces agresivo; si suavizas demasiado, parece que no crees en lo que dices.",
+      "expressions": [
+        "Parecería que…",
+        "Yo diría más bien…",
+        "Tal vez haya un riesgo de que… ('risque que' + subjuntivo)",
+        "ligeramente / un poco / algo",
+        "Tal vez me equivoque, pero…",
+        "Corríjame si me equivoco, pero…"
+      ],
+      "vocabulary": [
+        {
+          "es": "suavizar, atenuar",
+          "gloss": "hacer algo menos fuerte"
+        },
+        {
+          "es": "matizar",
+          "gloss": "hacer algo menos absoluto"
+        },
+        {
+          "es": "asertivo, firme",
+          "gloss": "claro y seguro, sin agresividad"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado duro",
+          "text": "Eso es falso."
+        },
+        {
+          "label": "Suavizado",
+          "text": "Me parece que hay un error en la segunda columna."
+        },
+        {
+          "label": "Demasiado suavizado — evítalo",
+          "text": "Lo siento mucho, seguramente soy yo, pero ¿habría quizás, eventualmente, un pequeño problema?"
+        }
+      ],
+      "mistake": {
+        "why": "Con un solo atenuador basta. Acumularlos destruye tu autoridad."
+      },
+      "tip": "Suaviza la afirmación, nunca el compromiso. 'Ce sera peut-être jeudi' (quizás sea el jueves) está bien; 'je l'enverrai peut-être jeudi' (quizás lo envíe el jueves) no."
+    },
+    "ecrire-courriel": {
+      "title": "Escribir un correo profesional",
+      "explanation": "Un correo profesional tiene una forma previsible: asunto, saludo, objetivo desde la primera línea, detalles, acción con fecha y despedida. El lector busca la acción: ponla donde la vaya a encontrar.",
+      "expressions": [
+        "Asunto: Informe T3 — sus cifras antes del jueves 14",
+        "Estimada señora Lemoine:",
+        "Me permito escribirle acerca de…",
+        "¿Podría confirmarme antes del jueves?",
+        "Adjunto encontrará…",
+        "Quedo a su disposición.",
+        "Saludos cordiales, / Saludos,"
+      ],
+      "vocabulary": [
+        {
+          "es": "el asunto",
+          "gloss": "el título del mensaje"
+        },
+        {
+          "es": "un archivo adjunto",
+          "gloss": "un archivo enviado con el mensaje"
+        },
+        {
+          "es": "poner en copia",
+          "gloss": "agregar a alguien en Cc"
+        },
+        {
+          "es": "el destinatario",
+          "gloss": "la persona que recibe el mensaje"
+        },
+        {
+          "es": "un recordatorio",
+          "gloss": "un mensaje para volver a pedir algo"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Asunto inútil",
+          "text": "Asunto: Pregunta"
+        },
+        {
+          "label": "Asunto útil",
+          "text": "Asunto: Informe T3 — sus cifras antes del jueves 14"
+        },
+        {
+          "label": "Recordatorio eficaz",
+          "text": "Hola, Marc: me permito escribirle de nuevo sobre el presupuesto Vidal. ¿Podría darme una respuesta para el jueves? Gracias de antemano."
+        }
+      ],
+      "mistake": {
+        "why": "Un mensaje sin asunto y sin fecha para la acción siempre genera un intercambio adicional."
+      },
+      "tip": "Pon la fecha límite en el asunto. Es la única parte que todo el mundo lee."
+    },
+    "ecriture-asynchrone": {
+      "title": "Escribir en modo asíncrono",
+      "explanation": "Los mensajes de chat y los reportes asíncronos se leen rápido, a menudo en el teléfono y muchas veces por alguien con ocho horas de diferencia. Pon lo esencial primero y haz que la petición sea imposible de pasar por alto.",
+      "expressions": [
+        "Para tu información:",
+        "Sin urgencia, pero…",
+        "Bloqueado en:",
+        "Necesito una decisión antes de esta noche.",
+        "Contexto en el hilo ↓",
+        "Te pongo en copia para que estés al tanto."
+      ],
+      "vocabulary": [
+        {
+          "es": "asíncrono",
+          "gloss": "no al mismo tiempo"
+        },
+        {
+          "es": "un bloqueo",
+          "gloss": "lo que impide avanzar"
+        },
+        {
+          "es": "un hilo de conversación",
+          "gloss": "una serie de mensajes relacionados"
+        },
+        {
+          "es": "la zona horaria",
+          "gloss": "la hora local de la otra persona"
+        },
+        {
+          "es": "por videollamada",
+          "gloss": "en videoconferencia"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Difícil de atender",
+          "text": "¡Hola! Cuando tengas un momento, ¿podríamos hablar de la cosa de ayer?"
+        },
+        {
+          "label": "Mejor",
+          "text": "Necesito un sí o un no sobre el presupuesto Vidal antes de esta noche (hora de París). Detalles en el hilo."
+        }
+      ],
+      "mistake": {
+        "why": "Nunca envíes un saludo solo. Obligas a la otra persona a esperar para saber qué quieres."
+      },
+      "tip": "Escribe el mensaje de modo que se pueda actuar sin hacerte una sola pregunta."
+    },
+    "compte-rendu": {
+      "title": "Redactar un informe",
+      "explanation": "Un informe lo leen personas sin tiempo y sin contexto. El primer párrafo debe sostenerse solo: lo que pasó, lo que significa y lo que recomiendas.",
+      "expressions": [
+        "Este informe trata sobre…",
+        "La principal observación es…",
+        "En general, …",
+        "Los datos muestran que…",
+        "Recomendamos…",
+        "Será necesario un trabajo adicional sobre…"
+      ],
+      "vocabulary": [
+        {
+          "es": "una observación, un hallazgo",
+          "gloss": "lo que se observó"
+        },
+        {
+          "es": "una recomendación",
+          "gloss": "lo que se aconseja hacer"
+        },
+        {
+          "es": "un resumen",
+          "gloss": "la versión corta"
+        },
+        {
+          "es": "un anexo",
+          "gloss": "el detalle que va al final"
+        },
+        {
+          "es": "el alcance",
+          "gloss": "lo que el documento cubre o no"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Conclusión enterrada",
+          "text": "Primero recopilamos los datos, luego los analizamos… por eso recomendamos la opción B."
+        },
+        {
+          "label": "Mejor",
+          "text": "Recomendamos la opción B. Este documento presenta las dos opciones, su costo y el razonamiento."
+        }
+      ],
+      "mistake": {
+        "why": "Un informe anuncia su conclusión desde el principio. No guarda el suspenso."
+      },
+      "tip": "Redacta el resumen al final y luego ponlo al principio."
+    },
+    "connecteurs": {
+      "title": "Los conectores lógicos",
+      "explanation": "Los conectores convierten una lista de frases en un razonamiento. En el nivel B1, también son la forma más rápida de parecer más avanzado que tu gramática.",
+      "expressions": [
+        "Agregar: además, asimismo, por otra parte, también",
+        "Oponer: sin embargo, no obstante, en cambio, mientras que, aunque + subjuntivo",
+        "Ilustrar: por ejemplo, en particular, como",
+        "Consecuencia: entonces, por lo tanto, por eso, así",
+        "Concluir: en conclusión, en suma, para resumir, finalmente"
+      ],
+      "vocabulary": [
+        {
+          "es": "sin embargo",
+          "gloss": "introduce una oposición"
+        },
+        {
+          "es": "aunque",
+          "gloss": "concesión: en francés, siempre seguido del subjuntivo"
+        },
+        {
+          "es": "mientras que",
+          "gloss": "compara dos hechos distintos"
+        },
+        {
+          "es": "por lo tanto",
+          "gloss": "introduce un resultado lógico"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sin conector",
+          "text": "El transporte público es más barato. El auto es más cómodo."
+        },
+        {
+          "label": "Oposición",
+          "text": "El transporte público es más barato. En cambio, el auto es más cómodo."
+        },
+        {
+          "label": "Concesión",
+          "text": "Aunque estaba cansado, terminó el expediente."
+        }
+      ],
+      "mistake": {
+        "why": "'Bien que' (aunque) siempre va seguido del subjuntivo. Ojo: en español, 'aunque' puede llevar indicativo ('aunque estaba cansado'), pero en francés 'bien que' nunca: 'bien qu'il soit fatigué'."
+      },
+      "tip": "Tres conectores por párrafo son suficientes. Más que eso parece un ejercicio de gramática."
+    },
+    "temps-au-travail": {
+      "title": "Los tiempos del pasado en el trabajo",
+      "explanation": "El 'passé composé' cuenta las acciones terminadas y los hechos; el 'imparfait' (imperfecto) describe el contexto, los hábitos y las situaciones en curso. En un informe, se alternan los dos todo el tiempo. La lógica se parece mucho a la del español: 'passé composé' ≈ pretérito ('envié'), 'imparfait' ≈ imperfecto ('enviaba').",
+      "expressions": [
+        "Enviamos la factura el lunes. (acción terminada)",
+        "Estábamos trabajando en el expediente cuando llamó el cliente. (contexto + hecho)",
+        "Antes, hacíamos las reuniones de seguimiento cada lunes. (hábito pasado)",
+        "Revisé el informe anoche."
+      ],
+      "vocabulary": [
+        {
+          "es": "un hábito",
+          "gloss": "lo que se hacía con regularidad"
+        },
+        {
+          "es": "un hecho puntual",
+          "gloss": "una acción única y con fecha"
+        },
+        {
+          "es": "el contexto",
+          "gloss": "la situación alrededor"
+        },
+        {
+          "es": "en curso",
+          "gloss": "que continúa"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Acción con fecha",
+          "text": "Lanzamos la campaña en marzo."
+        },
+        {
+          "label": "Descripción",
+          "text": "El equipo tenía poco personal y el presupuesto era ajustado."
+        },
+        {
+          "label": "Los dos juntos",
+          "text": "Estaba revisando el contrato cuando noté el error."
+        }
+      ],
+      "mistake": {
+        "why": "Una acción terminada y con fecha pide el 'passé composé', no el 'imparfait'. Igual que en español: 'ayer terminé el informe', no 'ayer terminaba el informe'."
+      },
+      "tip": "Prueba con 'et puis' (y luego). Si 'et puis' funciona, es 'passé composé'. Si no, es 'imparfait'."
+    },
+    "conditionnel": {
+      "title": "El condicional y la hipótesis",
+      "explanation": "El condicional tiene dos usos profesionales principales: la cortesía ('je voudrais', quisiera; 'pourriez-vous', ¿podría usted?) y la hipótesis ('si' + imperfecto, condicional). Es el tiempo de la negociación, porque no compromete a nada. Ojo: donde el español usa el subjuntivo ('si tuviera'), el francés usa el imperfecto ('si j'avais').",
+      "expressions": [
+        "Quisiera… / Me gustaría…",
+        "¿Podría…? / ¿Tendría…?",
+        "Si tuviéramos más presupuesto, contrataríamos a un freelance.",
+        "Si el cliente acepta, empezaremos el lunes. (hipótesis real)",
+        "Sería posible siempre que… ('à condition que' + subjuntivo)"
+      ],
+      "vocabulary": [
+        {
+          "es": "una hipótesis",
+          "gloss": "una situación supuesta"
+        },
+        {
+          "es": "una condición",
+          "gloss": "lo que primero tiene que ser cierto"
+        },
+        {
+          "es": "siempre que",
+          "gloss": "solo si; en francés, seguido del subjuntivo"
+        },
+        {
+          "es": "salvo si, a menos que",
+          "gloss": "excepto en el caso de que"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Hipótesis real",
+          "text": "Si empezamos el lunes, terminaremos el 14."
+        },
+        {
+          "label": "Hipótesis irreal",
+          "text": "Si tuviera más tiempo, volvería a hacer el análisis."
+        },
+        {
+          "label": "Cortesía",
+          "text": "Quisiera volver a un punto del contrato."
+        }
+      ],
+      "mistake": {
+        "why": "Nunca va condicional después de 'si'. 'Si' + imperfecto → condicional presente. En español dirías 'si tuviera' (subjuntivo), pero en francés es 'si j'avais' (imperfecto), nunca 'si j'aurais'."
+      },
+      "tip": "El condicional es la herramienta de negociación más segura: 'Si nous pouvions décaler la date, je serais en mesure de…' (Si pudiéramos mover la fecha, estaría en condiciones de…) no compromete a nada."
+    },
+    "subjonctif": {
+      "title": "El subjuntivo básico y el imperativo",
+      "explanation": "El subjuntivo aparece después de verbos de voluntad, emoción y necesidad. Es muy frecuente en el trabajo. La buena noticia: estos usos se parecen mucho al español ('quiero que revises'). La diferencia clave: 'il faut que' (es necesario que, hay que) siempre lleva subjuntivo. El imperativo, por su parte, da instrucciones: es eficaz, pero conviene suavizarlo en un contexto profesional.",
+      "expressions": [
+        "Es necesario que terminemos antes del viernes.",
+        "Quisiera que usted revisara el documento.",
+        "Aunque sea difícil…",
+        "antes de que / siempre que / para que + subjuntivo",
+        "Le agradezco que revise el documento. (imperativo suavizado)"
+      ],
+      "vocabulary": [
+        {
+          "es": "es necesario que",
+          "gloss": "expresión de necesidad, seguida del subjuntivo"
+        },
+        {
+          "es": "una instrucción",
+          "gloss": "una indicación de lo que hay que hacer"
+        },
+        {
+          "es": "querer que",
+          "gloss": "voluntad, seguida del subjuntivo"
+        },
+        {
+          "es": "lamentar que",
+          "gloss": "emoción, seguida del subjuntivo"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Necesidad",
+          "text": "Tengo que irme antes de las 5 de la tarde."
+        },
+        {
+          "label": "Voluntad",
+          "text": "Me gustaría que estuviera presente en la reunión."
+        },
+        {
+          "label": "Instrucción suavizada",
+          "text": "Le agradezco que confirme antes del jueves."
+        }
+      ],
+      "mistake": {
+        "why": "Después de 'il faut que', se usa el subjuntivo: 'que je puisse' (que pueda), 'que je fasse' (que haga), 'que je sois' (que sea), 'que j'aie' (que tenga)."
+      },
+      "tip": "Cinco subjuntivos irregulares cubren el 80 % de lo que necesitas: 'sois' (ser), 'aie' (tener), 'fasse' (hacer), 'puisse' (poder), 'aille' (ir)."
+    },
+    "pronoms": {
+      "title": "Pronombres de complemento y negación",
+      "explanation": "Los pronombres evitan las repeticiones y hacen el texto profesional más fluido. Se colocan antes del verbo, y antes del infinitivo cuando lo hay. Ojo: en español a menudo se pegan al infinitivo ('voy a enviárselo'); en francés van separados y delante ('je vais le lui envoyer'). Además, 'en' e 'y' no existen en español: 'en' reemplaza 'de' + algo, e 'y' reemplaza 'à' + lugar o cosa.",
+      "expressions": [
+        "'le / la / les' = complemento directo: je le relis (lo reviso)",
+        "'lui / leur' = complemento indirecto: je lui envoie (le envío)",
+        "'en' = 'de' + algo: j'en ai besoin (lo necesito)",
+        "'y' = 'à' + lugar o cosa: j'y pense (pienso en eso)",
+        "Se lo voy a enviar mañana."
+      ],
+      "vocabulary": [
+        {
+          "es": "un complemento directo",
+          "gloss": "sin preposición: 'voir quelqu'un' (ver a alguien; en francés no se pone 'a' delante de la persona)"
+        },
+        {
+          "es": "un complemento indirecto",
+          "gloss": "con 'à': 'parler à quelqu'un' (hablar con alguien)"
+        },
+        {
+          "es": "la negación",
+          "gloss": "'ne … pas' (no) / 'ne … jamais' (nunca) / 'ne … plus' (ya no) / 'ne … rien' (nada)"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Repetitivo",
+          "text": "Recibí el informe y revisé el informe ayer."
+        },
+        {
+          "label": "Con pronombre",
+          "text": "Recibí el informe y lo revisé ayer."
+        },
+        {
+          "label": "Negación + futuro próximo",
+          "text": "No se lo voy a enviar antes del jueves."
+        }
+      ],
+      "mistake": {
+        "why": "En el futuro próximo, 'ne … pas' rodea solo a 'aller'; los pronombres van después, delante del infinitivo: 'je ne vais pas lui envoyer'."
+      },
+      "tip": "Orden de los pronombres: 'me/te/nous/vous' → 'le/la/les' → 'lui/leur' → 'y' → 'en'."
+    },
+    "entretien-fr": {
+      "title": "El lenguaje de la entrevista",
+      "explanation": "Una respuesta de entrevista sigue una forma: la situación, lo que hiciste y el resultado obtenido. El resultado es lo que la mayoría de los candidatos olvida, y lo único que escucha el reclutador.",
+      "expressions": [
+        "Tengo cinco años de experiencia en…",
+        "Una de mis cualidades es…",
+        "Yo diría que soy más bien…",
+        "En mi puesto anterior, estaba a cargo de…",
+        "Resultado: logramos…",
+        "Un punto en el que estoy trabajando actualmente es…",
+        "Si tuviera que hacerlo de nuevo, involucraría a… antes.",
+        "Tendía a…, por eso…"
+      ],
+      "vocabulary": [
+        {
+          "es": "una trayectoria",
+          "gloss": "la historia profesional"
+        },
+        {
+          "es": "cualidades / defectos",
+          "gloss": "puntos fuertes / puntos débiles"
+        },
+        {
+          "es": "estar a cargo de",
+          "gloss": "tener la responsabilidad de"
+        },
+        {
+          "es": "un logro",
+          "gloss": "algo que salió bien"
+        },
+        {
+          "es": "ambicioso",
+          "gloss": "que quiere progresar"
+        },
+        {
+          "es": "riguroso",
+          "gloss": "preciso y metódico"
+        },
+        {
+          "es": "autónomo",
+          "gloss": "capaz de trabajar solo"
+        },
+        {
+          "es": "llevarse bien con",
+          "gloss": "tener buenas relaciones con"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sin resultado",
+          "text": "Era responsable de las redes sociales."
+        },
+        {
+          "label": "Con resultado",
+          "text": "Era responsable de las redes sociales y, en dieciocho meses, aumenté la interacción cerca de un 40 %."
+        },
+        {
+          "label": "Defecto bien presentado",
+          "text": "Tendía a cargar con demasiado trabajo. Desde hace un año delego más: el trimestre pasado, confié dos proyectos completos."
+        }
+      ],
+      "mistake": {
+        "why": "Después de 'comme' (como) no va artículo delante de una profesión. Igual que en español: 'como jefe de proyecto', no 'como un jefe de proyecto'."
+      },
+      "tip": "Termina cada respuesta con una cifra, un resultado o una lección. Nunca con la tarea en sí."
+    },
+    "strategies-lecture": {
+      "title": "Estrategias de lectura",
+      "explanation": "La lectura profesional es selectiva: primero una lectura rápida para ver la estructura, luego una búsqueda del detalle útil. Solo se leen completos los textos cortos e importantes.",
+      "expressions": [
+        "La idea principal es…",
+        "El autor sugiere que…",
+        "Según el texto…",
+        "Eso implica que…",
+        "El texto no lo precisa."
+      ],
+      "vocabulary": [
+        {
+          "es": "leer por encima",
+          "gloss": "leer rápido para captar la idea general"
+        },
+        {
+          "es": "localizar",
+          "gloss": "buscar un dato preciso"
+        },
+        {
+          "es": "deducir",
+          "gloss": "entender lo que no se dice"
+        },
+        {
+          "es": "reformular",
+          "gloss": "decir lo mismo de otra forma"
+        },
+        {
+          "es": "un sobrentendido",
+          "gloss": "lo que se sugiere sin estar escrito"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Explícito",
+          "text": "La pausa para el café fortalece los lazos entre compañeros."
+        },
+        {
+          "label": "Implícito",
+          "text": "'Esta pausa nunca se ve como tiempo perdido': el autor defiende la costumbre, no la describe de forma neutral."
+        }
+      ],
+      "mistake": {
+        "why": "El error de lectura más frecuente en B1-B2 es meter en la respuesta tus conocimientos personales."
+      },
+      "tip": "Encuentra la respuesta y luego la línea exacta que la demuestra. Si no puedes señalar la línea, adivinaste."
+    },
+    "structurer-oral": {
+      "title": "Estructurar tu intervención oral",
+      "explanation": "Bajo presión, la fluidez viene de la estructura, no del vocabulario. Un plan corto (idea, razones, ejemplo, conclusión) te permite hablar dos minutos sin dudar.",
+      "expressions": [
+        "Mi idea principal es…",
+        "Hay dos razones para eso.",
+        "La primera… La segunda…",
+        "Por ejemplo, cuando nosotros…",
+        "Entonces, en general, yo diría…",
+        "Es una buena pregunta, déjeme pensarlo un momento."
+      ],
+      "vocabulary": [
+        {
+          "es": "anunciar tu plan",
+          "gloss": "decir de antemano lo que vas a decir"
+        },
+        {
+          "es": "una muletilla",
+          "gloss": "una palabra que da tiempo para pensar"
+        },
+        {
+          "es": "desarrollar",
+          "gloss": "agregar detalles"
+        },
+        {
+          "es": "la fluidez",
+          "gloss": "hablar sin pausas largas"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sin estructura",
+          "text": "Bueno, es difícil, hay muchas cosas, depende, por ejemplo, muchos factores…"
+        },
+        {
+          "label": "Estructurado",
+          "text": "Yo pospondría la fecha límite, por dos razones. Primero, los datos están incompletos. Luego, una versión hecha a la carrera nos costará más después. Por ejemplo, el trimestre pasado pasamos tres semanas corrigiendo."
+        }
+      ],
+      "mistake": {
+        "why": "Las fórmulas de transición te dan tiempo y cuentan como fluidez. El silencio, no."
+      },
+      "tip": "Date siempre un número: 'deux raisons' (dos razones). Una vez dicho, tu cerebro encontrará la segunda."
+    },
+    "raconter": {
+      "title": "Contar y describir",
+      "explanation": "Contar una experiencia profesional pide una cronología clara y la alternancia entre 'passé composé' e 'imparfait'. Los conectores de tiempo sostienen el relato.",
+      "expressions": [
+        "Al principio, …",
+        "Luego, …",
+        "En ese momento, …",
+        "Finalmente, …",
+        "Lo que pasó es que…",
+        "Lo que aprendí es que…"
+      ],
+      "vocabulary": [
+        {
+          "es": "una experiencia",
+          "gloss": "lo que se vivió"
+        },
+        {
+          "es": "una etapa",
+          "gloss": "un momento del proceso"
+        },
+        {
+          "es": "un imprevisto",
+          "gloss": "un hecho no planeado"
+        },
+        {
+          "es": "una enseñanza, una lección",
+          "gloss": "lo que se aprendió"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sin cronología",
+          "text": "Hubo un problema, el cliente estaba contento, entregamos, fue difícil."
+        },
+        {
+          "label": "Con cronología",
+          "text": "Al principio, el brief era confuso. Luego, organizamos un taller con el cliente. En ese momento, las prioridades se aclararon. Finalmente, entregamos con una semana de anticipación."
+        }
+      ],
+      "mistake": {
+        "why": "El estado va en 'imparfait' ('j'étais fatigué', estaba cansado); la acción terminada, en 'passé composé' ('j'ai fini', terminé)."
+      },
+      "tip": "Termina todo relato profesional con lo que aprendiste. Eso es lo que distingue una anécdota de un ejemplo."
+    },
+    "connecteurs-simples": {
+      "title": "Las palabras de enlace sencillas",
+      "explanation": "Las palabras de enlace unen dos ideas. Con ellas, tu correo es más claro. 'Et' (y) añade. 'Mais' (pero) opone. 'Parce que' (porque) da la razón. 'Donc' (entonces, por lo tanto) da el resultado. 'D'abord' (primero), 'ensuite' (luego) y 'puis' (después) dan el orden de los pasos.",
+      "expressions": [
+        "El cliente llamó y envió un correo.",
+        "El informe está listo, pero faltan las cifras de marzo.",
+        "La entrega tiene retraso porque el camión está averiado.",
+        "El camión está averiado, entonces la entrega tiene retraso.",
+        "Primero, leo el expediente. Luego, lo llamo.",
+        "También me ocupo de los pedidos."
+      ],
+      "vocabulary": [
+        {
+          "es": "y",
+          "gloss": "añade una idea"
+        },
+        {
+          "es": "también",
+          "gloss": "añade una información: 'je m'occupe aussi de…' (también me ocupo de…)"
+        },
+        {
+          "es": "pero",
+          "gloss": "opone dos ideas"
+        },
+        {
+          "es": "porque",
+          "gloss": "da la razón (la respuesta a '¿por qué?')"
+        },
+        {
+          "es": "entonces, por lo tanto",
+          "gloss": "da el resultado"
+        },
+        {
+          "es": "primero / luego / después",
+          "gloss": "dan el orden: 1, 2, 3"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sin palabras de enlace",
+          "text": "El proveedor tiene un problema. La entrega tiene retraso. Entregamos el martes."
+        },
+        {
+          "label": "Con palabras de enlace",
+          "text": "El proveedor tiene un problema, entonces la entrega tiene retraso. Entregamos el martes, pero solo por la mañana."
+        },
+        {
+          "label": "Los pasos",
+          "text": "Primero, reviso el pedido. Luego, llamo al cliente. Después, envío la factura."
+        }
+      ],
+      "mistake": {
+        "why": "'Parce que' (porque) da la razón. 'Donc' (entonces) da el resultado. Aquí, la avería es la razón y el retraso es el resultado."
+      },
+      "tip": "Hazte la pregunta '¿por qué?'. La respuesta empieza con 'parce que' (porque). Para decir el resultado, usa 'donc' (entonces)."
     }
   }
 }

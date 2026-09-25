@@ -62,6 +62,19 @@ const OK = {
     return act.contexts.includes(req.context) ? this.CONTEXT_W : 1;
   },
 
+  /* Kinds of task, so the two challenges of a workday differ in what the
+     learner actually does, not only in topic. */
+  FAMILIES: {
+    situation: ['best-response', 'stronger-sentence', 'register-check', 'appropriateness', 'branching'],
+    reading:   ['read-report', 'true-false'],
+    email:     ['email-connectors', 'email-gaps', 'write-email', 'email-order'],
+    speaking:  ['speaking']
+  },
+  family(act) {
+    for (const f in this.FAMILIES) if (this.FAMILIES[f].includes(act.interaction)) return f;
+    return 'language';   // grammar and vocabulary work: fill-blank, error-correction, matching…
+  },
+
   /* Weighted random pick, so the best-fitting activities appear more often
      without the same one coming up every single time. */
   _pick(acts, req) {
@@ -86,13 +99,14 @@ const OK = {
 
     // Second challenge: a different category, scenario and topic wherever the
     // content allows it, so the two challenges never feel like the same task.
+    // It also comes from a different kind of task, so a workday mixes, say, a
+    // report to read with an email to complete, rather than two judgement calls.
     const rest    = base.filter(a => a.id !== first.id);
-    const bestFit = rest.filter(a => a.category !== first.category &&
-                                     a.scenario !== first.scenario &&
-                                     a.topic    !== first.topic);
     const okFit   = rest.filter(a => a.scenario !== first.scenario &&
                                      a.topic    !== first.topic);
-    const pool2   = bestFit.length ? bestFit : (okFit.length ? okFit : rest);
+    const bestFit = okFit.filter(a => a.category !== first.category);
+    const mixed   = bestFit.filter(a => this.family(a) !== this.family(first));
+    const pool2   = mixed.length ? mixed : bestFit.length ? bestFit : (okFit.length ? okFit : rest);
     const second  = pool2.length ? this._pick(pool2, req) : first;
 
     return {
@@ -134,7 +148,8 @@ const OK = {
     const drills = ((bank.drills || {})[act.guide] || []).length;
     const prod = (bank.productions || {})[act.guide];
     const r = (OK.interaction(act.interaction) || {}).renderer;
-    let m = r === 'speaking' ? 6 : 4;          // the two situations
+    // the two situations: a document to read or an email to write takes longer
+    let m = r === 'speaking' ? 6 : (r === 'reading' || r === 'writing') ? 8 : r === 'gapselect' ? 6 : 4;
     m += drills * 1.5;                          // typed recall
     if (prod) m += prod.kind === 'listen' ? 15 : (prod.kind === 'speak' ? 5 : 8);
     return Math.round(m);
@@ -182,6 +197,16 @@ const OK = {
         const n = ex.gaps.length;
         let ok = 0;
         ex.gaps.forEach((g, i) => { if (OK.acceptsAny(g.accept, answer[i] || '')) ok++; });
+        return { score: Math.round((ok / n) * 100), chosen: answer };
+      }
+      case 'reading': {
+        const n = ex.questions.length;
+        const ok = ex.questions.filter((q, i) => (q.options[answer[i]] || {}).correct).length;
+        return { score: Math.round((ok / n) * 100), chosen: answer };
+      }
+      case 'gapselect': {
+        const n = ex.gaps.length;
+        const ok = ex.gaps.filter((g, i) => answer[i] === g.answer).length;
         return { score: Math.round((ok / n) * 100), chosen: answer };
       }
       case 'writing':
@@ -243,8 +268,20 @@ const OK = {
 
   /* Written tasks are checked against things a machine can genuinely verify:
      a required structure is present, a known trap is absent, enough words. */
+  /* For checks, spacing and punctuation carry meaning: ' so ' must not match
+     "also", and a check for '?' must find a real question mark. So nothing is
+     trimmed, and punctuation is spaced out on both sides before matching. */
+  checkForm(v) {
+    return String(v).toLowerCase()
+      .replace(/[\u2018\u2019\u02BC]/g, "'")
+      .replace(/[\u201C\u201D]/g, '"')
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/([.,;:!?()])/g, ' $1 ')
+      .replace(/\s+/g, ' ');
+  },
   runChecks(ex, text) {
-    const t = ' ' + OK.normalise(text) + ' ';
+    const t = ' ' + OK.checkForm(text) + ' ';
+    const has = x => t.includes(OK.checkForm(x));
     const out = [];
     if (ex.minWords) {
       const n = (String(text).trim().match(/\S+/g) || []).length;
@@ -256,9 +293,9 @@ const OK = {
     }
     (ex.checks || []).forEach(c => {
       let pass = true;
-      if (c.any)  pass = c.any.some(x => t.includes(OK.normalise(x)));
-      if (c.all)  pass = pass && c.all.every(x => t.includes(OK.normalise(x)));
-      if (c.none) pass = pass && !c.none.some(x => t.includes(OK.normalise(x)));
+      if (c.any)  pass = c.any.some(has);
+      if (c.all)  pass = pass && c.all.every(has);
+      if (c.none) pass = pass && !c.none.some(has);
       out.push({ label: c.label, pass });
     });
     return out;

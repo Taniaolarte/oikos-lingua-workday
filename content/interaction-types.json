@@ -235,6 +235,70 @@
    "skills": [
     "speaking"
    ]
+  },
+  {
+   "id": "read-report",
+   "renderer": "reading",
+   "label": {
+    "en": "Read and answer",
+    "fr": "Lire et répondre"
+   },
+   "instruction": {
+    "en": "Read the document, then answer every question.",
+    "fr": "Lisez le document, puis répondez à toutes les questions."
+   },
+   "skills": [
+    "reading",
+    "comprehension"
+   ]
+  },
+  {
+   "id": "email-connectors",
+   "renderer": "gapselect",
+   "label": {
+    "en": "Link the email",
+    "fr": "Relier le courriel"
+   },
+   "instruction": {
+    "en": "Choose the linking word that fits each gap.",
+    "fr": "Choisissez le mot de liaison qui convient à chaque trou."
+   },
+   "skills": [
+    "writing",
+    "grammar"
+   ]
+  },
+  {
+   "id": "email-gaps",
+   "renderer": "gapselect",
+   "label": {
+    "en": "Complete the email",
+    "fr": "Compléter le courriel"
+   },
+   "instruction": {
+    "en": "Choose the right word or form for each gap.",
+    "fr": "Choisissez le bon mot ou la bonne forme pour chaque trou."
+   },
+   "skills": [
+    "writing",
+    "vocabulary",
+    "grammar"
+   ]
+  },
+  {
+   "id": "write-email",
+   "renderer": "writing",
+   "label": {
+    "en": "Write the email",
+    "fr": "Rédiger le courriel"
+   },
+   "instruction": {
+    "en": "Write the email. It is checked for the key points, then you see a model.",
+    "fr": "Rédigez le courriel. Les points essentiels sont vérifiés, puis vous voyez un modèle."
+   },
+   "skills": [
+    "writing"
+   ]
   }
  ]
 }

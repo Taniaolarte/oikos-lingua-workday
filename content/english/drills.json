@@ -2281,6 +2281,271 @@
     "instruction": "Three gaps.",
     "feedback": "'I'd say', 'that said', 'I'd accept' are hedges, and they are what make an answer sound like thinking rather than reciting."
    }
+  ],
+  "linking-basics": [
+   {
+    "renderer": "choice",
+    "prompt": "Which word fits?",
+    "message": "The printer is broken, _____ I can't print the contract.",
+    "instruction": "The second part is the result of the first.",
+    "options": [
+     {
+      "text": "so",
+      "score": 100,
+      "feedback": "Correct. 'So' gives the result: the printer is broken, and this is what happens."
+     },
+     {
+      "text": "because",
+      "score": 25,
+      "feedback": "'Because' gives a reason. Here the second part is a result, not a reason."
+     },
+     {
+      "text": "but",
+      "score": 25,
+      "feedback": "'But' shows a difference. There is no difference here."
+     },
+     {
+      "text": "and",
+      "score": 50,
+      "feedback": "'And' is not wrong, but it doesn't show the result. 'So' is clearer."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "I can't come to the meeting {} I'm at the dentist.",
+    "accept": [
+     "because",
+     "as",
+     "since"
+    ],
+    "size": 8,
+    "instruction": "One word. It gives the reason.",
+    "hint": "Why can't you come?",
+    "feedback": "'Because' answers the question 'why?'. 'So' would give a result."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this message to a colleague.",
+    "text": "Hi Sam,\n\nThe client likes the design, {} she wants a different colour. {}, I'm going to change the colour. Then I'll send it to her.\n\nI can't come to the 3 p.m. meeting {} I'm at the client's office, {} could you take notes? Thanks!\n\nAna",
+    "gaps": [
+     {
+      "accept": [
+       "but"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "First",
+       "Firstly"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "because",
+       "as",
+       "since"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "so"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Four gaps: a difference, the first step, a reason and a result.",
+    "feedback": "'But' for the difference, 'First… Then' for the order of steps, 'because' for the reason and 'so' for the result."
+   }
+  ],
+  "reading-strategies": [
+   {
+    "renderer": "choice",
+    "prompt": "Which strategy fits?",
+    "message": "You have two minutes before a meeting. You need to know what a four-page report is about.",
+    "instruction": "Think about speed and purpose.",
+    "options": [
+     {
+      "text": "Skim it: read the title, the headings and the first line of each paragraph.",
+      "score": 100,
+      "feedback": "Correct. Skimming gives you the structure and the main point quickly."
+     },
+     {
+      "text": "Scan it for one number.",
+      "score": 25,
+      "feedback": "Scanning is for finding one specific detail, like a date or a figure. You need the main point."
+     },
+     {
+      "text": "Read every word carefully from the start.",
+      "score": 25,
+      "feedback": "Too slow for two minutes. Read every word only when the text is short and the stakes are high."
+     },
+     {
+      "text": "Read only the last paragraph.",
+      "score": 50,
+      "feedback": "The conclusion helps, but without the headings you may miss what the report is really about."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "The report doesn't say it directly, but it {} that the project will be late.",
+    "accept": [
+     "implies",
+     "suggests",
+     "indicates"
+    ],
+    "size": 9,
+    "instruction": "One verb: the text says it indirectly.",
+    "hint": "'This ___ that…'",
+    "feedback": "When a text says something indirectly, it 'implies' or 'suggests' it. The reader 'infers' it: the text implies, the reader infers."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this summary of a report for your manager.",
+    "text": "The main {} of the report is that customer satisfaction has improved. {} to the survey, 78% of customers are satisfied.\n\nThe writer {} that the returns process needs to change, but the text doesn't {} how much this would cost.",
+    "gaps": [
+     {
+      "accept": [
+       "point",
+       "idea",
+       "message",
+       "finding"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "According"
+      ],
+      "size": 10
+     },
+     {
+      "accept": [
+       "suggests",
+       "recommends",
+       "says",
+       "argues",
+       "believes",
+       "thinks",
+       "states",
+       "implies"
+      ],
+      "size": 10
+     },
+     {
+      "accept": [
+       "say",
+       "mention",
+       "explain",
+       "state",
+       "tell us",
+       "specify"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Four gaps. Keep what the text says separate from what you think.",
+    "feedback": "'The main point is…', 'According to…', 'The writer suggests…' and 'The text doesn't say…' let you report a text accurately without adding your own opinion."
+   }
+  ],
+  "linking-formal": [
+   {
+    "renderer": "choice",
+    "prompt": "Which linker fits?",
+    "message": "Vendor A offers 24-hour support, _____ Vendor B only responds within two working days.",
+    "instruction": "Two facts, set side by side in one sentence.",
+    "options": [
+     {
+      "text": "whereas",
+      "score": 100,
+      "feedback": "Correct. 'Whereas' compares two different facts within one sentence."
+     },
+     {
+      "text": "nevertheless",
+      "score": 25,
+      "feedback": "'Nevertheless' starts a new sentence and means 'despite that'. There is no concession here."
+     },
+     {
+      "text": "provided that",
+      "score": 0,
+      "feedback": "'Provided that' introduces a condition, and nothing here is conditional."
+     },
+     {
+      "text": "consequently",
+      "score": 25,
+      "feedback": "'Consequently' introduces a result. B's response time is not a result of A's support."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "We can guarantee the price {} that the contract is signed by 30 June.",
+    "accept": [
+     "provided",
+     "providing"
+    ],
+    "size": 9,
+    "instruction": "One word. The price is guaranteed only if this happens.",
+    "hint": "'___ that' = 'only if'",
+    "feedback": "'Provided that' (or 'providing that') introduces a condition. 'Given that' would mean the contract is already signed."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete this paragraph from a recommendation email.",
+    "text": "{} the delays we had last winter, we recommend adding a second supplier. This will increase unit costs by around 4%. {}, the risk of a stoppage would fall considerably.\n\nThe second supplier has agreed to fixed prices {} we commit to 5,000 units a year. {}, we propose starting in April.",
+    "gaps": [
+     {
+      "accept": [
+       "In light of",
+       "Given",
+       "In view of",
+       "Because of"
+      ],
+      "size": 11
+     },
+     {
+      "accept": [
+       "Nevertheless",
+       "Nonetheless",
+       "However",
+       "That said",
+       "Even so"
+      ],
+      "size": 12
+     },
+     {
+      "accept": [
+       "provided that",
+       "providing that",
+       "as long as",
+       "on condition that",
+       "provided",
+       "providing",
+       "if"
+      ],
+      "size": 13
+     },
+     {
+      "accept": [
+       "Consequently",
+       "As a result",
+       "Therefore",
+       "Hence",
+       "Accordingly"
+      ],
+      "size": 12
+     }
+    ],
+    "instruction": "Four gaps: a known fact, a concession, a condition and a result.",
+    "feedback": "'In light of' + noun, 'Nevertheless' + comma, 'provided that' for a condition, 'Consequently' for the result. Each one says something different, which is the point."
+   }
   ]
  }
 }

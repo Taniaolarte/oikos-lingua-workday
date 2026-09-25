@@ -825,6 +825,24 @@
     "B2"
    ],
    "guide": "professional-tone"
+  },
+  {
+   "id": "linking-basics",
+   "label": "Linking words: and, but, because, so",
+   "skill": "writing",
+   "levels": [
+    "A2"
+   ],
+   "guide": "linking-basics"
+  },
+  {
+   "id": "formal-linking",
+   "label": "Formal linking words",
+   "skill": "writing",
+   "levels": [
+    "B2"
+   ],
+   "guide": "linking-formal"
   }
  ]
 }

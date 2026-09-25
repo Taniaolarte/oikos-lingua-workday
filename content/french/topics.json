@@ -831,6 +831,42 @@
     "B2"
    ],
    "guide": "argumenter"
+  },
+  {
+   "id": "connecteurs-simples",
+   "label": "Les mots de liaison simples",
+   "skill": "writing",
+   "levels": [
+    "A2"
+   ],
+   "guide": "connecteurs-simples"
+  },
+  {
+   "id": "expliquer-etapes",
+   "label": "Expliquer les étapes : d'abord, ensuite, puis",
+   "skill": "writing",
+   "levels": [
+    "A2"
+   ],
+   "guide": "connecteurs-simples"
+  },
+  {
+   "id": "formules-courriel",
+   "label": "Les formules du courriel",
+   "skill": "writing",
+   "levels": [
+    "A2"
+   ],
+   "guide": "demandes-polies"
+  },
+  {
+   "id": "connecteurs-avances",
+   "label": "Les connecteurs avancés",
+   "skill": "writing",
+   "levels": [
+    "B2"
+   ],
+   "guide": "argumenter"
   }
  ]
 }

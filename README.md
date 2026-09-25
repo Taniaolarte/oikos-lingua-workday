@@ -25,7 +25,7 @@ a challenge about twelve to twenty minutes rather than two:
 
 | Stage | What the learner does |
 |---|---|
-| **Try / Try again** | Two workplace situations, choosing the best response |
+| **Try / Try again** | Two workplace tasks on the same skill: read a report and answer questions, complete an email with the right connectors or words, write a short email, fix or order a text, or handle a situation |
 | **Learn** | The one-to-three minute guide for that skill |
 | **Complete** | Three drills: pick the missing word, then type it, then fill a whole short text |
 | **Produce** | Write the actual email, record themselves speaking, or listen to real material and report back |
@@ -70,15 +70,16 @@ It only ever touches instructions and interface text. The language being
 practised is never translated: the email under study, the answer options and
 the model answers all stay in English or French, so nothing is given away.
 
-The one exception is the **A2 guides**. A beginner reading a guide is meeting
-its words for the first time, so holding the button shows the whole guide in
-Spanish: explanation, tip and the reason behind the common mistake in Spanish,
-and every expression, vocabulary item and example kept in the original with
-its Spanish meaning beside it. These full versions live in
-`content/english/guides-es.json` and `content/french/guides-es.json`, keyed by
-guide id; any guide given an entry there gets the same treatment.
+The one exception is the **guides**. A learner reading a guide is meeting its
+words for the first time, so holding the button on any guide, at any level,
+shows the whole guide in Spanish: explanation, tip and the reason behind the
+common mistake in Spanish, and every expression, vocabulary item and example
+kept in the original with its Spanish meaning beside it. These full versions
+live in `content/english/guides-es.json` and `content/french/guides-es.json`,
+keyed by guide id, and cover every guide in both languages. Reading documents,
+email gaps and answer options are never translated: they are the test.
 
-The dictionary in `content/spanish.json` covers **1,438 strings** — the whole
+The dictionary in `content/spanish.json` covers **1,922 strings** — the whole
 interface plus every prompt, instruction, hint, task and scenario brief in both
 content banks. It is a flat `source string → Spanish` lookup, decoupled from the
 render code: `js/spanish.js` walks a narrow list of selectors on press, swaps
@@ -118,16 +119,16 @@ is already present so the `content/` folder is served untouched.
 
 | Piece | Count |
 |---|---|
-| Scenario templates | 53 across 10 workplace categories |
-| Learning topics | 82 English + 82 French |
-| Learning guides | 34 English + 36 French, each at one level (A2 / B1 / B2) |
-| Interaction types | 15, covered by 10 renderers |
-| Activities (two situations each) | 58 English (23 A2 · 18 B1 · 17 B2) + 53 French (17 A2 · 19 B1 · 17 B2) |
-| Drills | 96 English + 108 French, with 268 typed gaps |
-| Production tasks | 32 English + 36 French |
+| Scenario templates | 68 across 10 workplace categories |
+| Learning topics | 84 English + 86 French |
+| Learning guides | 36 English + 37 French, each at one level (A2 / B1 / B2), all with a full Spanish version |
+| Interaction types | 19, covered by 12 renderers |
+| Activities (two situations each) | 88 English (33 A2 · 28 B1 · 27 B2) + 83 French (27 A2 · 29 B1 · 27 B2) |
+| Drills | 105 English + 111 French, with 287 typed gaps |
+| Production tasks | 35 English + 37 French |
 | Professional contexts | 12 |
 
-That comes to **494 authored exercises**, every one with its own answer set and
+That comes to **630 authored exercises**, every one with its own answer set and
 feedback. Drills and productions are keyed to the *guide* rather than to a
 single activity, so every activity that teaches a skill inherits the same ramp.
 
@@ -172,15 +173,15 @@ img/                        web-sized logo marks and favicons, made from content
 js/avatars.js               staff-badge photo options
 js/spanish.js               press-and-hold Spanish gloss
 js/engine.js                content loading, workday generation, scoring
-js/render.js                the six exercise renderers
+js/render.js                the twelve exercise renderers
 js/app.js                   screens, navigation, session state
 content/
-  scenarios.json            53 scenarios + 10 categories
+  scenarios.json            68 scenarios + 10 categories
   professional-contexts.json
-  interaction-types.json    15 types, each naming its renderer
-  spanish.json              1,438-entry Spanish gloss of the instructions
+  interaction-types.json    19 types, each naming its renderer
+  spanish.json              1,922-entry Spanish gloss of the instructions
   english/  topics.json  guides.json  activities.json  drills.json  productions.json
-            guides-es.json  full Spanish version of the A2 guides
+            guides-es.json  full Spanish version of every guide
   french/   (same files)
 ```
 
@@ -197,16 +198,21 @@ stages:
    four times as likely (`CONTEXT_W` 4).
 
 The second challenge is then drawn from a pool filtered to a *different*
-category, scenario and topic, falling back gracefully when the content can't
-satisfy all three.
+category, scenario and topic, and to a different **kind of task**
+(`OK.family`): judging a situation, reading, working on an email, speaking, or
+grammar and vocabulary work. A workday therefore never pairs two "which reply
+is best?" questions; it mixes, say, a report to read with an email to complete.
+It falls back gracefully when the content can't satisfy every filter.
 
-Measured over 2,000 generated workdays per language and level: the requested
-level is served **100%** of the time, always with a guide of the same level,
-and **0%** of workdays repeat a category, scenario or topic.
+Measured over 3,000 generated workdays per language and level: the requested
+level is served **100%** of the time, always with a guide of the same level;
+**0%** of workdays repeat a category, scenario, topic or kind of task. Across
+challenges, reading and email tasks make up 33–42% and situation judgements
+19–29%.
 
 ### Interaction types and renderers
 
-Fifteen interaction types map onto six renderers, so adding a type usually costs
+Nineteen interaction types map onto twelve renderers, so adding a type usually costs
 nothing in code:
 
 | Renderer | Used for |
@@ -219,8 +225,10 @@ nothing in code:
 | `speaking` | speaking, and every `speak` production |
 | `typing` | single typed gap |
 | `cloze` | a short text with several typed gaps |
-| `writing` | open written production, auto-checked |
+| `writing` | open written production, auto-checked; also write-email situations |
 | `listening` | external material plus a written response |
+| `reading` | read-report: a report, memo, minutes, advert or email, then several questions |
+| `gapselect` | email-connectors, email-gaps: an email with a choice in every gap |
 
 Speaking uses the browser's own `MediaRecorder`. Audio never leaves the page: it
 is held in an object URL, can be deleted by the learner, and is released on

@@ -1089,6 +1089,311 @@
     "technology",
     "education"
    ]
+  },
+  {
+   "id": "read-sales-report",
+   "category": "report",
+   "title": {
+    "en": "The Monthly Numbers",
+    "fr": "Les chiffres du mois"
+   },
+   "premise": {
+    "en": "Read the sales summary before the team meeting.",
+    "fr": "Lisez le bilan des ventes avant la réunion d'équipe."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "technology",
+    "management",
+    "remote-work",
+    "customer-service"
+   ]
+  },
+  {
+   "id": "read-policy-memo",
+   "category": "inbox",
+   "title": {
+    "en": "The New Policy",
+    "fr": "La nouvelle règle"
+   },
+   "premise": {
+    "en": "HR has sent a memo that changes how you work.",
+    "fr": "Les RH envoient une note qui change votre façon de travailler."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "healthcare",
+    "education",
+    "hospitality",
+    "remote-work",
+    "management"
+   ]
+  },
+  {
+   "id": "read-meeting-minutes",
+   "category": "report",
+   "title": {
+    "en": "What Was Decided?",
+    "fr": "Qu'est-ce qui a été décidé ?"
+   },
+   "premise": {
+    "en": "You missed the meeting. The minutes are all you have.",
+    "fr": "Vous avez manqué la réunion. Il ne vous reste que le compte rendu."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "technology",
+    "management",
+    "remote-work",
+    "education",
+    "healthcare"
+   ]
+  },
+  {
+   "id": "read-customer-survey",
+   "category": "report",
+   "title": {
+    "en": "What the Customers Said",
+    "fr": "Ce que disent les clients"
+   },
+   "premise": {
+    "en": "The survey results are in. Find what matters.",
+    "fr": "Les résultats de l'enquête sont arrivés. Trouvez l'essentiel."
+   },
+   "contexts": [
+    "business",
+    "marketing",
+    "customer-service",
+    "hospitality",
+    "design-creative",
+    "technology"
+   ]
+  },
+  {
+   "id": "read-client-brief",
+   "category": "client",
+   "title": {
+    "en": "The Client Brief",
+    "fr": "Le brief du client"
+   },
+   "premise": {
+    "en": "A client explains what they need. Read it carefully before you reply.",
+    "fr": "Un client explique ce qu'il veut. Lisez bien avant de répondre."
+   },
+   "contexts": [
+    "business",
+    "marketing",
+    "design-creative",
+    "technology",
+    "customer-service"
+   ]
+  },
+  {
+   "id": "read-project-status",
+   "category": "report",
+   "title": {
+    "en": "Is the Project on Track?",
+    "fr": "Le projet est-il dans les temps ?"
+   },
+   "premise": {
+    "en": "Read the status report and find the risk.",
+    "fr": "Lisez le point d'avancement et repérez le risque."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "technology",
+    "management",
+    "remote-work",
+    "design-creative"
+   ]
+  },
+  {
+   "id": "read-job-advert",
+   "category": "interview",
+   "title": {
+    "en": "The Job Advert",
+    "fr": "L'offre d'emploi"
+   },
+   "premise": {
+    "en": "Read the advert carefully before you apply.",
+    "fr": "Lisez bien l'offre avant de postuler."
+   },
+   "contexts": [
+    "job-search",
+    "general-office",
+    "business",
+    "technology",
+    "hospitality",
+    "healthcare",
+    "education",
+    "marketing"
+   ]
+  },
+  {
+   "id": "read-supplier-offer",
+   "category": "inbox",
+   "title": {
+    "en": "The Supplier's Offer",
+    "fr": "L'offre du fournisseur"
+   },
+   "premise": {
+    "en": "Check the terms before you say yes.",
+    "fr": "Vérifiez les conditions avant de dire oui."
+   },
+   "contexts": [
+    "business",
+    "general-office",
+    "management",
+    "hospitality",
+    "healthcare"
+   ]
+  },
+  {
+   "id": "read-travel-itinerary",
+   "category": "travel",
+   "title": {
+    "en": "The Itinerary",
+    "fr": "L'itinéraire"
+   },
+   "premise": {
+    "en": "Check the travel plan before you leave.",
+    "fr": "Vérifiez le programme du voyage avant de partir."
+   },
+   "contexts": [
+    "business",
+    "general-office",
+    "management",
+    "marketing",
+    "technology"
+   ]
+  },
+  {
+   "id": "email-meeting-request",
+   "category": "inbox",
+   "title": {
+    "en": "Setting Up a Meeting",
+    "fr": "Organiser une réunion"
+   },
+   "premise": {
+    "en": "You need a meeting with people who are very busy.",
+    "fr": "Vous avez besoin d'une réunion avec des personnes très occupées."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "technology",
+    "management",
+    "remote-work",
+    "education",
+    "healthcare"
+   ]
+  },
+  {
+   "id": "email-delivery-delay",
+   "category": "client",
+   "title": {
+    "en": "The Delivery Is Late",
+    "fr": "La livraison a du retard"
+   },
+   "premise": {
+    "en": "Tell a client about a delay, and what happens next.",
+    "fr": "Annoncez un retard à un client, et la suite."
+   },
+   "contexts": [
+    "business",
+    "customer-service",
+    "hospitality",
+    "technology",
+    "general-office"
+   ]
+  },
+  {
+   "id": "email-quote-request",
+   "category": "inbox",
+   "title": {
+    "en": "Asking for a Quote",
+    "fr": "Demander un devis"
+   },
+   "premise": {
+    "en": "You need prices from a supplier, in writing.",
+    "fr": "Il vous faut les prix d'un fournisseur, par écrit."
+   },
+   "contexts": [
+    "business",
+    "general-office",
+    "management",
+    "hospitality",
+    "marketing",
+    "design-creative"
+   ]
+  },
+  {
+   "id": "email-new-starter",
+   "category": "inbox",
+   "title": {
+    "en": "Introducing Yourself by Email",
+    "fr": "Se présenter par courriel"
+   },
+   "premise": {
+    "en": "You are new, and most of the team has not met you yet.",
+    "fr": "Vous êtes nouveau et l'équipe ne vous connaît pas encore."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "technology",
+    "healthcare",
+    "education",
+    "hospitality",
+    "remote-work"
+   ]
+  },
+  {
+   "id": "email-wrong-order",
+   "category": "client",
+   "title": {
+    "en": "The Wrong Order",
+    "fr": "La mauvaise commande"
+   },
+   "premise": {
+    "en": "A client received the wrong items. Write the reply.",
+    "fr": "Un client a reçu les mauvais articles. Rédigez la réponse."
+   },
+   "contexts": [
+    "customer-service",
+    "business",
+    "hospitality",
+    "general-office"
+   ]
+  },
+  {
+   "id": "email-proposal-summary",
+   "category": "report",
+   "title": {
+    "en": "The Proposal in One Email",
+    "fr": "La proposition en un courriel"
+   },
+   "premise": {
+    "en": "Your manager wants the whole proposal in one clear email.",
+    "fr": "Votre responsable veut toute la proposition dans un seul courriel clair."
+   },
+   "contexts": [
+    "general-office",
+    "business",
+    "marketing",
+    "technology",
+    "management",
+    "remote-work",
+    "design-creative"
+   ]
   }
  ]
 }

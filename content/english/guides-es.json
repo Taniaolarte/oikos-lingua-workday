@@ -540,6 +540,1239 @@
         "why": "'According to' (según) es para otras personas o fuentes: 'according to the report' (según el informe). Para hablar de ti, di 'in my opinion' o 'I think'."
       },
       "tip": "Di siempre 'because'. Una razón hace que tu opinión sea más fuerte."
+    },
+    "polite-disagreement": {
+      "title": "Estar en desacuerdo con cortesía",
+      "explanation": "En inglés profesional, el desacuerdo sigue un patrón: primero reconoces lo que dice la otra persona, luego cambias de dirección y después propones algo. Ir directo al 'no' suena agresivo, incluso cuando tienes razón.",
+      "expressions": [
+        "Entiendo tu punto, pero…",
+        "No estoy seguro de estar de acuerdo, porque…",
+        "Es un punto válido; lo que me preocupa es…",
+        "Yo lo vería de una forma un poco distinta.",
+        "En principio estoy de acuerdo, aunque me pregunto si…"
+      ],
+      "vocabulary": [
+        {
+          "es": "preocupación",
+          "gloss": "una inquietud que puedes explicar con una razón"
+        },
+        {
+          "es": "contrapartida",
+          "gloss": "lo que pierdes para ganar otra cosa"
+        },
+        {
+          "es": "alternativa",
+          "gloss": "otra opción"
+        },
+        {
+          "es": "justificación, fundamento",
+          "gloss": "el razonamiento detrás de una decisión"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado brusco",
+          "text": "No, eso no va a funcionar."
+        },
+        {
+          "label": "Mejor",
+          "text": "Entiendo la lógica, pero me preocupa que no funcione con el cronograma actual."
+        },
+        {
+          "label": "Lo mejor: añade una opción",
+          "text": "Entiendo la lógica. Lo que me preocupa es el cronograma. ¿Podríamos hacerlo por etapas?"
+        }
+      ],
+      "mistake": {
+        "why": "En inglés, 'agree' (estar de acuerdo) es un verbo, no un adjetivo. No lleva 'be' delante: di 'I don't agree' o 'I disagree' (no estoy de acuerdo)."
+      },
+      "tip": "Muestra desacuerdo con la idea, nunca con la persona: di 'that approach' (ese enfoque) en lugar de 'your approach' (tu enfoque)."
+    },
+    "negotiating": {
+      "title": "Negociar",
+      "explanation": "En inglés, el lenguaje de la negociación es condicional. Pocas veces dices directamente lo que quieres; dices qué se vuelve posible si cambia otra cosa.",
+      "expressions": [
+        "Si pudiéramos…, entonces podríamos…",
+        "¿Estarías dispuesto a…?",
+        "Me parece bien, siempre que…",
+        "Puedo hacer X si Y cambia.",
+        "¿Dónde tienen ustedes margen de flexibilidad?",
+        "Según el valor de mercado para este puesto, estoy pensando en…"
+      ],
+      "vocabulary": [
+        {
+          "es": "salario, sueldo",
+          "gloss": "el dinero fijo que te pagan por un trabajo"
+        },
+        {
+          "es": "paquete de compensación",
+          "gloss": "el salario más todos los demás beneficios"
+        },
+        {
+          "es": "flexibilidad, margen",
+          "gloss": "espacio para cambiar las condiciones"
+        },
+        {
+          "es": "contraoferta",
+          "gloss": "una oferta distinta que se hace como respuesta"
+        },
+        {
+          "es": "alcance",
+          "gloss": "la cantidad de trabajo que está incluida"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Exigente",
+          "text": "Necesito más dinero."
+        },
+        {
+          "label": "Mejor",
+          "text": "Por las responsabilidades de este puesto, estoy pensando en un rango de 55 a 60 mil."
+        },
+        {
+          "label": "Intercambiar",
+          "text": "Podría aceptar 52 mil si hay una revisión a los seis meses."
+        }
+      ],
+      "mistake": {
+        "why": "Después de 'want' (querer) no se usa 'that' + oración, aunque en español sí digamos 'quiero que…'. Usa 'want someone to do' (querer que alguien haga algo) y, en el trabajo, mejor di 'I'd like' (me gustaría)."
+      },
+      "tip": "Nunca digas la primera cifra sin una razón que la acompañe. La razón es lo que hace que la cifra sea negociable y no emocional."
+    },
+    "explaining-problems": {
+      "title": "Explicar problemas",
+      "explanation": "El orden profesional es: qué pasó, cuál es el impacto, qué estás haciendo y qué necesitas. Si empiezas con la excusa, pierdes la atención de todos.",
+      "expressions": [
+        "El problema es que…",
+        "Lo que pasó fue que…",
+        "Como resultado…",
+        "El impacto es…",
+        "Esto es lo que he hecho hasta ahora:",
+        "Lo que necesito de ti es…"
+      ],
+      "vocabulary": [
+        {
+          "es": "problema, asunto",
+          "gloss": "un problema, dicho de forma neutral"
+        },
+        {
+          "es": "causa raíz",
+          "gloss": "la verdadera razón de fondo"
+        },
+        {
+          "es": "solución provisional",
+          "gloss": "un arreglo temporal"
+        },
+        {
+          "es": "escalar",
+          "gloss": "pasar un problema a alguien de mayor rango"
+        },
+        {
+          "es": "tiempo de inactividad",
+          "gloss": "el tiempo en que un sistema no funciona"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Primero la excusa",
+          "text": "No fue mi culpa: el proveedor se atrasó y nadie me avisó…"
+        },
+        {
+          "label": "Mejor",
+          "text": "La entrega viene con dos días de retraso. Eso mueve las pruebas al jueves. Le pedí al proveedor una fecha firme y lo confirmo antes de las 2 p. m."
+        }
+      ],
+      "mistake": {
+        "why": "'Happen' (pasar, ocurrir) no se usa en voz pasiva y no lleva 'be'. Di 'The problem happened yesterday' (el problema ocurrió ayer)."
+      },
+      "tip": "Las malas noticias se dan mejor pronto y en pocas palabras. Un párrafo a tiempo es mejor que una disculpa larga enviada tarde."
+    },
+    "feedback": {
+      "title": "Dar y recibir retroalimentación",
+      "explanation": "La retroalimentación útil ('feedback') trata sobre el trabajo que se puede observar, no sobre la personalidad. Cuando la recibes, lo profesional es hacer una pregunta para aclarar antes de responder.",
+      "expressions": [
+        "Algo que funcionó muy bien es…",
+        "Sugeriría cambiar…",
+        "¿Has pensado en…?",
+        "Lo que haría esto más sólido es…",
+        "Gracias, eso me sirve.",
+        "¿Podrías darme un ejemplo?",
+        "Déjame pensarlo y te respondo."
+      ],
+      "vocabulary": [
+        {
+          "es": "constructivo",
+          "gloss": "que busca ayudar a mejorar"
+        },
+        {
+          "es": "versión revisada",
+          "gloss": "una versión con cambios"
+        },
+        {
+          "es": "borrador",
+          "gloss": "una versión temprana"
+        },
+        {
+          "es": "fortalezas",
+          "gloss": "aquello en lo que alguien es bueno"
+        },
+        {
+          "es": "debilidades, áreas de mejora",
+          "gloss": "lo que alguien necesita mejorar"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sobre la persona",
+          "text": "Eres descuidado con los detalles."
+        },
+        {
+          "label": "Sobre el trabajo",
+          "text": "Hay tres cifras en la tabla que no coinciden con el anexo."
+        },
+        {
+          "label": "Recibirla bien",
+          "text": "Gracias. ¿Podrías indicarme a qué sección te refieres?"
+        }
+      ],
+      "mistake": {
+        "why": "En inglés, un error se 'make' (se comete) y una tarea se 'do' (se hace): 'make a mistake', 'do a task'."
+      },
+      "tip": "Nunca te defiendas en el mismo minuto en que recibes una crítica. 'Let me look at that and come back to you' (déjame revisarlo y te respondo) te da un día y no te cuesta nada."
+    },
+    "meeting-language": {
+      "title": "El lenguaje de las reuniones",
+      "explanation": "Las reuniones tienen su propio conjunto de señales verbales: para entrar en la conversación, para mantener la palabra y para cerrar. Si aprendes estas señales, puedes participar a un nivel más alto que el de tu gramática.",
+      "expressions": [
+        "Perdón, ¿puedo añadir algo?",
+        "¿Puedo intervenir sobre ese punto?",
+        "Para complementar lo que dijo Marta…",
+        "¿Puedo confirmar una cosa antes de seguir?",
+        "Entonces, para resumir…",
+        "Las tareas acordadas son: …",
+        "¿Lo hablamos aparte, fuera de la reunión?"
+      ],
+      "vocabulary": [
+        {
+          "es": "orden del día, agenda",
+          "gloss": "la lista de temas de la reunión"
+        },
+        {
+          "es": "acta",
+          "gloss": "el registro escrito de una reunión"
+        },
+        {
+          "es": "tarea acordada",
+          "gloss": "una tarea que alguien aceptó hacer"
+        },
+        {
+          "es": "presidir, moderar",
+          "gloss": "dirigir una reunión"
+        },
+        {
+          "es": "aparte, por separado",
+          "gloss": "fuera de esta reunión"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Interrumpir mal",
+          "text": "No, escucha…"
+        },
+        {
+          "label": "Interrumpir bien",
+          "text": "Perdón por interrumpir, ¿puedo añadir algo sobre el presupuesto?"
+        },
+        {
+          "label": "Cerrar",
+          "text": "Para resumir: Ana envía el borrador el martes, yo lo reviso a más tardar el jueves y decidimos el viernes."
+        }
+      ],
+      "mistake": {
+        "why": "En inglés se habla 'about' u 'on' un tema (sobre un tema), no 'for'. Di 'something about the budget' (algo sobre el presupuesto)."
+      },
+      "tip": "Di el nombre de la persona antes de mostrar tu desacuerdo. Así, lo que podría parecer un ataque se convierte en una conversación."
+    },
+    "saying-no": {
+      "title": "Decir que no de forma profesional",
+      "explanation": "Un 'no' profesional nunca es solo 'no'. Incluye una razón, una alternativa o una condición, y por eso casi nunca daña la relación.",
+      "expressions": [
+        "Me gustaría ayudar, pero esta semana no tengo capacidad.",
+        "No puedo encargarme de eso para el viernes; podría tenerlo el martes.",
+        "Eso no es algo a lo que me pueda comprometer ahora.",
+        "Si X cambia, puedo hacer Y.",
+        "Déjame ver qué puedo hacer de forma realista."
+      ],
+      "vocabulary": [
+        {
+          "es": "capacidad",
+          "gloss": "cuánto trabajo puedes asumir de verdad"
+        },
+        {
+          "es": "disponibilidad",
+          "gloss": "palabra informal para el tiempo y la energía que tienes disponibles"
+        },
+        {
+          "es": "comprometerse a",
+          "gloss": "prometer algo con firmeza"
+        },
+        {
+          "es": "cambiar prioridades",
+          "gloss": "cambiar el orden de lo que es importante"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Poco claro",
+          "text": "Lo intentaré."
+        },
+        {
+          "label": "Un no claro",
+          "text": "El viernes no puedo. Te lo puedo entregar el martes por la mañana."
+        },
+        {
+          "label": "Un no con condición",
+          "text": "Puedo encargarme de eso si el informe de Ortiz pasa a la semana que viene. ¿Qué prefieres?"
+        }
+      ],
+      "mistake": {
+        "why": "Cuando 'have' (tener) es el verbo principal, necesita 'do' para formar la negación: 'I don't have time' (no tengo tiempo). En inglés británico también se dice 'I haven't got time'."
+      },
+      "tip": "Ponle fecha a tu 'no'. Un 'no' con una fecha alternativa real se entiende como compromiso, no como rechazo."
+    },
+    "professional-tone": {
+      "title": "Tono profesional",
+      "explanation": "En inglés, el tono depende más de la estructura que del vocabulario. Las órdenes directas y las negaciones secas suenan frías; las preguntas, los verbos modales, nombrar a la persona y un breve reconocimiento suenan cálidos, aunque la información sea idéntica. En este nivel, la habilidad está en calibrar: ser firme sin ser cortante, cálido sin ser servil, y nunca pasivo-agresivo.",
+      "expressions": [
+        "¿Te importaría…?",
+        "Cuando tengas un momento…",
+        "Te agradecería mucho si…",
+        "Entiendo que no es lo que esperabas escuchar.",
+        "Para que quede claro: la fecha no se puede mover.",
+        "Gracias por encargarte de esto."
+      ],
+      "vocabulary": [
+        {
+          "es": "registro",
+          "gloss": "qué tan formal o informal es el lenguaje"
+        },
+        {
+          "es": "brusco, cortante",
+          "gloss": "tan breve que parece grosero"
+        },
+        {
+          "es": "cortés",
+          "gloss": "educado de manera profesional"
+        },
+        {
+          "es": "conciso",
+          "gloss": "breve y completo"
+        },
+        {
+          "es": "pasivo-agresivo",
+          "gloss": "amable en la superficie, hostil por debajo ('Per my previous email…', como ya te dije en mi correo anterior…)"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Frío",
+          "text": "Necesito esto hoy."
+        },
+        {
+          "label": "Neutral",
+          "text": "¿Me lo podrías pasar hoy?"
+        },
+        {
+          "label": "Cálido y aun así claro",
+          "text": "Hola, Tomás: ¿habría alguna posibilidad de tener esto hoy? Con gusto te ayudo si estás justo de tiempo."
+        }
+      ],
+      "mistake": {
+        "why": "Mezclar registros es peor que elegir el registro equivocado. Elige un nivel de formalidad y mantenlo: no juntes 'Dear Sir' (estimado señor, muy formal) con 'hey' (muy informal)."
+      },
+      "tip": "Lee tu mensaje en voz alta. Si no se lo dirías a la persona cara a cara, vuelve a escribirlo."
+    },
+    "softening": {
+      "title": "Suavizar y matizar",
+      "explanation": "En inglés se usan palabras para matizar ('hedging') que dejan espacio para que la otra persona no esté de acuerdo. Si usas muy pocas, suenas agresivo; si usas demasiadas, parece que no crees en lo que dices.",
+      "expressions": [
+        "Parece que…",
+        "Yo diría que probablemente es…",
+        "Puede haber un riesgo de que…",
+        "ligeramente / un poco / algo",
+        "Puede que se me esté escapando algo, pero…",
+        "Corrígeme si me equivoco, pero…"
+      ],
+      "vocabulary": [
+        {
+          "es": "matizar",
+          "gloss": "hacer que una afirmación sea menos absoluta"
+        },
+        {
+          "es": "provisional, tentativo",
+          "gloss": "que no es definitivo y puede cambiar"
+        },
+        {
+          "es": "asertivo",
+          "gloss": "claro y seguro, sin ser agresivo"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Demasiado duro",
+          "text": "Esto está mal."
+        },
+        {
+          "label": "Matizado",
+          "text": "Creo que puede haber un error en la segunda columna."
+        },
+        {
+          "label": "Demasiado suave: evítalo",
+          "text": "Lo siento mucho, seguramente es cosa mía, pero ¿quizás, posiblemente, tal vez podría haber un pequeño problema?"
+        }
+      ],
+      "mistake": {
+        "why": "Con una sola palabra para matizar es suficiente. Si acumulas varias ('maybe perhaps possibly'), pierdes toda tu autoridad."
+      },
+      "tip": "Matiza la afirmación, nunca el compromiso. 'It may be Thursday' (puede que sea el jueves) está bien; 'I may send it Thursday' (puede que lo envíe el jueves) no."
+    },
+    "async-writing": {
+      "title": "Escribir en chats y de forma asíncrona",
+      "explanation": "Los mensajes de chat y las actualizaciones asíncronas se leen rápido, muchas veces en el teléfono y muchas veces por alguien que está ocho horas detrás de ti. Pon lo importante al principio y deja muy claro lo que pides.",
+      "expressions": [
+        "Aviso:",
+        "Sin prisa, pero…",
+        "Bloqueado por:",
+        "Necesito una decisión antes del final del día.",
+        "Contexto en el hilo ↓",
+        "Te pongo en copia para que estés al tanto."
+      ],
+      "vocabulary": [
+        {
+          "es": "asíncrono",
+          "gloss": "que no ocurre al mismo tiempo"
+        },
+        {
+          "es": "fin del día",
+          "gloss": "el final de la jornada ('end of day')"
+        },
+        {
+          "es": "impedimento, bloqueo",
+          "gloss": "algo que no te deja avanzar"
+        },
+        {
+          "es": "reunión diaria breve",
+          "gloss": "una breve actualización diaria del equipo"
+        },
+        {
+          "es": "hilo",
+          "gloss": "una cadena de mensajes relacionados"
+        },
+        {
+          "es": "zona horaria",
+          "gloss": "la hora local donde está alguien"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Difícil de responder",
+          "text": "¡Hola! Cuando tengas tiempo, ¿podríamos hablar tal vez sobre el tema de ayer?"
+        },
+        {
+          "label": "Mejor",
+          "text": "Necesito un sí o un no sobre la cotización de Vidal antes del final de tu día; los detalles están en el hilo."
+        }
+      ],
+      "mistake": {
+        "why": "Nunca envíes un saludo solo. La otra persona tiene que esperar para saber qué quieres. Pon el saludo y la pregunta en el mismo mensaje."
+      },
+      "tip": "Escribe la actualización de forma que alguien pueda actuar sin tener que hacerte ni una sola pregunta más."
+    },
+    "report-writing": {
+      "title": "Redactar informes",
+      "explanation": "Un informe lo leen personas sin tiempo y sin contexto. El primer párrafo tiene que funcionar por sí solo: qué pasó, qué significa y qué recomiendas.",
+      "expressions": [
+        "Este informe trata sobre…",
+        "La conclusión principal es…",
+        "En general, …",
+        "Los datos indican que…",
+        "Recomendamos que…",
+        "Hace falta más trabajo sobre…"
+      ],
+      "vocabulary": [
+        {
+          "es": "hallazgos, resultados",
+          "gloss": "lo que descubriste"
+        },
+        {
+          "es": "recomendación",
+          "gloss": "lo que aconsejas hacer"
+        },
+        {
+          "es": "resumen",
+          "gloss": "la versión corta"
+        },
+        {
+          "es": "anexo, apéndice",
+          "gloss": "detalles adicionales al final"
+        },
+        {
+          "es": "alcance",
+          "gloss": "lo que el informe cubre y lo que no"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Conclusión escondida",
+          "text": "Primero recopilamos datos, luego los analizamos, luego… por lo tanto, recomendamos X."
+        },
+        {
+          "label": "Mejor",
+          "text": "Recomendamos la opción B. Este informe presenta las dos opciones, el costo de cada una y el razonamiento."
+        }
+      ],
+      "mistake": {
+        "why": "Un informe dice su conclusión desde el principio; no crea suspenso. Di de qué trata y qué recomienda: 'This report covers… and recommends…' (este informe trata sobre… y recomienda…)."
+      },
+      "tip": "Escribe el resumen al final y después muévelo al principio."
+    },
+    "linking-expressions": {
+      "title": "Conectores",
+      "explanation": "Los conectores ('linking words') convierten una lista de frases en un argumento. En el nivel B1 también son la forma más rápida de sonar más avanzado que tu gramática.",
+      "expressions": [
+        "Para añadir: además, asimismo, también, aparte de eso",
+        "Para contrastar: sin embargo, aunque, por otro lado, mientras que",
+        "Para dar ejemplos: por ejemplo, a modo de ejemplo, como",
+        "Para un resultado: como resultado, por lo tanto, en consecuencia",
+        "Para concluir: en conclusión, en general, en resumen"
+      ],
+      "vocabulary": [
+        {
+          "es": "sin embargo",
+          "gloss": "introduce un contraste; lleva coma"
+        },
+        {
+          "es": "aunque",
+          "gloss": "une dos oraciones en una sola frase"
+        },
+        {
+          "es": "mientras que",
+          "gloss": "compara dos hechos diferentes"
+        },
+        {
+          "es": "por lo tanto",
+          "gloss": "introduce un resultado lógico"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sin conectores",
+          "text": "El transporte público es barato. Los autos son cómodos."
+        },
+        {
+          "label": "Contraste",
+          "text": "El transporte público es más barato. Por otro lado, los autos son más cómodos."
+        },
+        {
+          "label": "Concesión",
+          "text": "Aunque estaba cansado, siguió trabajando."
+        }
+      ],
+      "mistake": {
+        "why": "'Although' (aunque) y 'but' (pero) cumplen la misma función. Usa uno de los dos, nunca ambos en la misma frase."
+      },
+      "tip": "Tres conectores por párrafo son suficientes. Si usas más, el texto parece un ejercicio de gramática."
+    },
+    "present-perfect": {
+      "title": "El present perfect en el trabajo",
+      "explanation": "El 'present perfect' ('I have done', he hecho) conecta el pasado con el presente. En el trabajo cumple tres funciones: informar de un trabajo terminado sin decir cuándo, describir tu experiencia y explicar una situación actual causada por una acción pasada.",
+      "expressions": [
+        "He enviado el informe. (ya está hecho y es importante ahora)",
+        "Ya he hablado con el proveedor.",
+        "Todavía no hemos tenido respuesta.",
+        "Trabajo en marketing desde hace seis años.",
+        "¿Has tenido oportunidad de revisarlo?"
+      ],
+      "vocabulary": [
+        {
+          "es": "ya",
+          "gloss": "antes de lo esperado"
+        },
+        {
+          "es": "todavía, aún (no)",
+          "gloss": "hasta ahora; se usa en preguntas y negaciones"
+        },
+        {
+          "es": "todavía, aún",
+          "gloss": "algo que continúa, muchas veces con sorpresa"
+        },
+        {
+          "es": "desde",
+          "gloss": "a partir de un momento en el tiempo"
+        },
+        {
+          "es": "durante, desde hace",
+          "gloss": "a lo largo de un período de tiempo"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Resultado ahora",
+          "text": "He terminado el borrador; ya está en tu bandeja de entrada."
+        },
+        {
+          "label": "Experiencia",
+          "text": "He dirigido equipos de hasta doce personas."
+        },
+        {
+          "label": "Todavía no",
+          "text": "Todavía no hemos recibido su confirmación."
+        }
+      ],
+      "mistake": {
+        "why": "Una expresión de tiempo terminado obliga a usar el pasado simple ('I sent it', lo envié). El 'present perfect' nunca va con 'yesterday' (ayer), 'last week' (la semana pasada) ni con una fecha."
+      },
+      "tip": "En las actualizaciones de estado, el 'present perfect' es tu mejor aliado: 'I've spoken to…' (he hablado con…), 'I've updated…' (he actualizado…), 'I haven't heard back on…' (todavía no tengo respuesta sobre…)."
+    },
+    "modals": {
+      "title": "Los verbos modales en el trabajo",
+      "explanation": "Los verbos modales ('should', 'must', 'might', 'could'…) llevan el peso social del inglés de trabajo. Convierten un hecho en consejo, obligación, posibilidad o petición sin cambiar ninguna otra palabra de la frase.",
+      "expressions": [
+        "Deberías…  (consejo)",
+        "Tenemos que…  (obligación)",
+        "Puede que… / Quizás…  (posibilidad)",
+        "¿Podrías…?  (petición)",
+        "Podríamos…  (opción)",
+        "No tienes que…  (no hay obligación)"
+      ],
+      "vocabulary": [
+        {
+          "es": "obligación",
+          "gloss": "algo que es obligatorio"
+        },
+        {
+          "es": "posibilidad",
+          "gloss": "algo que puede pasar"
+        },
+        {
+          "es": "permiso",
+          "gloss": "tener autorización para hacer algo"
+        },
+        {
+          "es": "recomendación",
+          "gloss": "un consejo fuerte"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Consejo",
+          "text": "Deberías poner en copia al departamento legal."
+        },
+        {
+          "label": "Posibilidad",
+          "text": "Puede que el cliente pida un descuento."
+        },
+        {
+          "label": "Obligación",
+          "text": "Tenemos que presentarlo antes del día 30."
+        }
+      ],
+      "mistake": {
+        "why": "Después de un modal va el verbo sin 'to': 'must send', no 'must to send'. Las excepciones son 'have to' y 'ought to'."
+      },
+      "tip": "'Must' dicho por un compañero suena a orden. Usa 'we need to' o 'we have to' (tenemos que), a menos que tú seas quien pone la regla."
+    },
+    "conditionals": {
+      "title": "Los condicionales en el trabajo",
+      "explanation": "El primer condicional ('first conditional') habla de posibilidades reales en el futuro: plazos, riesgos, planes. El segundo condicional ('second conditional') habla de situaciones hipotéticas o poco probables; es útil para dar consejos y para negociar sin comprometerte.",
+      "expressions": [
+        "Si empezamos el lunes, terminaremos para el 14. (real)",
+        "Si el cliente está de acuerdo, podemos empezar. (real)",
+        "Yo que tú, lo plantearía ahora. (consejo)",
+        "Si tuviéramos más presupuesto, contrataríamos a un profesional independiente. (hipotético)",
+        "A menos que tengamos respuesta hoy, seguiremos adelante."
+      ],
+      "vocabulary": [
+        {
+          "es": "condición",
+          "gloss": "lo que tiene que ser cierto primero"
+        },
+        {
+          "es": "resultado",
+          "gloss": "lo que pasa como consecuencia"
+        },
+        {
+          "es": "a menos que",
+          "gloss": "si no"
+        },
+        {
+          "es": "siempre que",
+          "gloss": "solo si"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Primer condicional",
+          "text": "Si la gente recicla más, la contaminación disminuirá."
+        },
+        {
+          "label": "Segundo condicional",
+          "text": "Si tuviera más tiempo, volvería a hacer el análisis."
+        },
+        {
+          "label": "Consejo",
+          "text": "Yo que tú, haría más ejercicio."
+        }
+      ],
+      "mistake": {
+        "why": "No uses 'will' en la parte del 'if' (si). Usa presente simple en la condición y 'will' en el resultado: 'If we start Monday, we'll finish…' (si empezamos el lunes, terminaremos…)."
+      },
+      "tip": "El segundo condicional es la forma más segura de negociar: 'If we could move the date, I'd be able to…' (si pudiéramos mover la fecha, yo podría…) no te compromete a nada."
+    },
+    "passive-reported": {
+      "title": "La voz pasiva y el estilo indirecto",
+      "explanation": "La voz pasiva pone el foco en lo que se hizo, no en quién lo hizo. Es esencial en informes y en reportes de incidentes. El estilo indirecto ('reported speech') te permite transmitir con precisión lo que dijo otra persona en una nueva conversación.",
+      "expressions": [
+        "La factura se envió el lunes.",
+        "Se ha tomado una decisión.",
+        "Se está actualizando el sistema.",
+        "Dijo que estaba cansada.",
+        "Me dijo que la fecha límite había cambiado.",
+        "Preguntaron si podíamos entregar antes."
+      ],
+      "vocabulary": [
+        {
+          "es": "voz pasiva",
+          "gloss": "la acción importa más que quien la hace"
+        },
+        {
+          "es": "transmitir, referir",
+          "gloss": "decir lo que dijo otra persona"
+        },
+        {
+          "es": "rendición de cuentas",
+          "gloss": "quién es responsable"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Activa",
+          "text": "Marta aprobó el presupuesto."
+        },
+        {
+          "label": "Pasiva: neutral",
+          "text": "El presupuesto se aprobó el 3 de marzo."
+        },
+        {
+          "label": "Estilo indirecto",
+          "text": "Dijo que el presupuesto se había aprobado."
+        }
+      ],
+      "mistake": {
+        "why": "'Tell' lleva a la persona justo después ('told me', me dijo); 'say' no ('said that…', dijo que…). Además, el tiempo verbal retrocede un paso: 'will' pasa a 'would'."
+      },
+      "tip": "Usa la pasiva cuando nombrar a la persona podría empezar una discusión. Usa la activa cuando quieres que quede claro quién merece el crédito o quién es responsable."
+    },
+    "comparing": {
+      "title": "Comparar opciones",
+      "explanation": "En el trabajo, las decisiones casi siempre son comparaciones. La gramática es sencilla; la habilidad en este nivel está en la escala y el criterio: cuánto mejor, a qué costo y qué opción elegirías realmente.",
+      "expressions": [
+        "A es ligeramente / considerablemente más barato que B.",
+        "A es, por mucho, el más confiable de los tres.",
+        "A no es tan rápido como B, aunque casi.",
+        "En comparación con A, B ofrece mejor relación calidad-precio.",
+        "La contrapartida es…",
+        "Considerándolo todo, yo me quedaría con…"
+      ],
+      "vocabulary": [
+        {
+          "es": "contrapartida",
+          "gloss": "lo que sacrificas a cambio de una ventaja"
+        },
+        {
+          "es": "rentable",
+          "gloss": "que ofrece buena relación calidad-precio"
+        },
+        {
+          "es": "comparable",
+          "gloss": "lo bastante parecido para compararlo"
+        },
+        {
+          "es": "mínimo, marginal",
+          "gloss": "muy pequeño"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Simple",
+          "text": "La opción B es más barata."
+        },
+        {
+          "label": "Con grado",
+          "text": "La opción B es bastante más barata, pero un poco más lenta."
+        },
+        {
+          "label": "Superlativo",
+          "text": "De los tres proveedores, Vidal es el más confiable."
+        }
+      ],
+      "mistake": {
+        "why": "'Considerably', 'significantly' y 'much' modifican comparativos: 'considerably cheaper' (considerablemente más barato). Los superlativos llevan 'by far' (por mucho) o 'easily' (fácilmente)."
+      },
+      "tip": "Di el tamaño de la diferencia: 'slightly' (ligeramente), 'significantly' (significativamente), 'marginally' (mínimamente). Eso es lo que convierte una comparación en una recomendación."
+    },
+    "describing-data": {
+      "title": "Describir gráficos y tendencias",
+      "explanation": "Describir datos significa indicar la dirección, el tamaño y el período del cambio, nunca leer todos los números en voz alta. Las mismas frases sirven en una reunión y en IELTS Writing Task 1 (la tarea del examen en la que describes un gráfico).",
+      "expressions": [
+        "Las ventas subieron bruscamente entre enero y marzo.",
+        "Hubo una caída constante en el T3.",
+        "Las cifras se mantuvieron estables en torno al 12 %.",
+        "El número de usuarios se duplicó.",
+        "X alcanzó su punto máximo, 40 000, en junio.",
+        "En general, la tendencia es al alza."
+      ],
+      "vocabulary": [
+        {
+          "es": "subir / aumentar",
+          "gloss": "ir hacia arriba"
+        },
+        {
+          "es": "bajar / disminuir / caer",
+          "gloss": "ir hacia abajo"
+        },
+        {
+          "es": "mantenerse estable / estabilizarse",
+          "gloss": "dejar de cambiar"
+        },
+        {
+          "es": "alcanzar el máximo",
+          "gloss": "llegar al punto más alto"
+        },
+        {
+          "es": "bruscamente / gradualmente / constantemente",
+          "gloss": "qué tan rápido cambió"
+        },
+        {
+          "es": "un quinto / un cuarto / un tercio",
+          "gloss": "proporciones"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Enumerar números",
+          "text": "En enero fue 100, en febrero 120, en marzo 145…"
+        },
+        {
+          "label": "Describir",
+          "text": "Las ventas aumentaron de forma constante durante el primer trimestre, de 100 a 145."
+        },
+        {
+          "label": "Visión general",
+          "text": "En general, ambas regiones crecieron, aunque España creció mucho más rápido."
+        }
+      ],
+      "mistake": {
+        "why": "En inglés no se usa 'augment' para cifras. Di 'increase by' para la cantidad del cambio ('increased by 20%', aumentó un 20 %) e 'increase to' para la cifra final ('increased to 145', aumentó hasta 145)."
+      },
+      "tip": "Empieza siempre con una frase de visión general ('overview') antes de cualquier detalle. En IELTS Task 1, esa frase aporta una buena parte de la nota."
+    },
+    "interview-language": {
+      "title": "El lenguaje de las entrevistas de trabajo",
+      "explanation": "Las respuestas en una entrevista siguen una forma: la situación, lo que hiciste y el resultado. El resultado es la parte que la mayoría de los candidatos olvida, y es la única que el entrevistador realmente está esperando escuchar.",
+      "expressions": [
+        "Tengo seis años de experiencia en…",
+        "Una de mis fortalezas es…",
+        "Suelo ser…",
+        "Me describiría como…",
+        "En mi último puesto, era responsable de…",
+        "Como resultado, nosotros…",
+        "Algo en lo que estoy trabajando activamente es…"
+      ],
+      "vocabulary": [
+        {
+          "es": "trayectoria, formación",
+          "gloss": "tu historia y tu preparación"
+        },
+        {
+          "es": "fortalezas / debilidades",
+          "gloss": "lo que haces bien / lo que necesitas mejorar"
+        },
+        {
+          "es": "responsable de",
+          "gloss": "a cargo de"
+        },
+        {
+          "es": "logro",
+          "gloss": "algo que conseguiste hacer con éxito"
+        },
+        {
+          "es": "ambicioso",
+          "gloss": "que quiere tener éxito y progresar"
+        },
+        {
+          "es": "confiable",
+          "gloss": "alguien en quien se puede confiar"
+        },
+        {
+          "es": "seguro de sí mismo",
+          "gloss": "que tiene confianza en sí mismo"
+        },
+        {
+          "es": "llevarse bien con",
+          "gloss": "tener una buena relación con alguien"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sin resultado",
+          "text": "Era responsable de las cuentas de redes sociales."
+        },
+        {
+          "label": "Con resultado",
+          "text": "Era responsable de las cuentas de redes sociales y, en dieciocho meses, aumenté la interacción en un 40 % aproximadamente."
+        },
+        {
+          "label": "Una debilidad, bien respondida",
+          "text": "Antes asumía demasiado trabajo yo solo. He estado delegando más a propósito, y el trimestre pasado les pasé dos proyectos completos a otras personas."
+        }
+      ],
+      "mistake": {
+        "why": "Usa 'as' para un puesto: 'as a project manager' (como gerente de proyectos). 'Like' significa 'parecido a'. Fíjate también en el apóstrofo de 'years' experience' (años de experiencia)."
+      },
+      "tip": "Cada respuesta debería terminar con un número, un resultado o una lección. Nunca termines solo con la tarea."
+    },
+    "reading-strategies": {
+      "title": "Estrategias de lectura",
+      "explanation": "En el trabajo, la lectura es selectiva. Primero lee por encima para ver la estructura ('skim'); luego busca el dato concreto que necesitas ('scan'). Lee cada palabra solo cuando el texto es corto y hay mucho en juego.",
+      "expressions": [
+        "La idea principal es…",
+        "El autor sugiere que…",
+        "Según el texto…",
+        "Esto implica que…",
+        "El texto no dice…"
+      ],
+      "vocabulary": [
+        {
+          "es": "leer por encima",
+          "gloss": "leer rápido para captar la idea general"
+        },
+        {
+          "es": "buscar un dato",
+          "gloss": "buscar un detalle concreto"
+        },
+        {
+          "es": "inferir, deducir",
+          "gloss": "entender algo que no se dice directamente"
+        },
+        {
+          "es": "implicación",
+          "gloss": "lo que se sugiere pero no se dice"
+        },
+        {
+          "es": "parafrasear",
+          "gloss": "decir lo mismo con otras palabras"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Dicho directamente",
+          "text": "La tecnología ha cambiado nuestra forma de comunicarnos."
+        },
+        {
+          "label": "Implícito",
+          "text": "Algunos expertos sostienen que la gente pasa menos tiempo cara a cara: el autor está preocupado, no es neutral."
+        }
+      ],
+      "mistake": {
+        "why": "El error de lectura más común en los niveles B1 y B2 es usar conocimientos de fuera del texto. Responde solo con lo que el texto dice realmente, no con lo que tú ya crees sobre el tema."
+      },
+      "tip": "Encuentra la respuesta y luego encuentra la línea exacta que la demuestra. Si no puedes señalar la línea, estás adivinando."
+    },
+    "ielts-reading": {
+      "title": "IELTS Reading: True / False / Not Given",
+      "explanation": "IELTS Academic Reading tiene tres textos y 40 preguntas en 60 minutos: unos 20 minutos por texto, sin tiempo extra para pasar las respuestas. El tipo de pregunta True/False/Not Given (verdadero / falso / no se menciona) hace fallar incluso a buenos lectores, porque evalúa solo lo que está en la página.",
+      "expressions": [
+        "TRUE (verdadero): el texto lo dice, con otras palabras.",
+        "FALSE (falso): el texto dice lo contrario.",
+        "NOT GIVEN (no se menciona): el texto no dice nada al respecto, ni a favor ni en contra."
+      ],
+      "vocabulary": [
+        {
+          "es": "no se menciona",
+          "gloss": "la información no está en el texto; no es que sea incorrecta"
+        },
+        {
+          "es": "contradecir",
+          "gloss": "decir lo contrario"
+        },
+        {
+          "es": "afirmación",
+          "gloss": "algo que se presenta como verdadero"
+        },
+        {
+          "es": "palabra que matiza",
+          "gloss": "palabras como 'all' (todos), 'some' (algunos) o 'never' (nunca) que cambian el significado"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Texto",
+          "text": "Muchas empresas han introducido el trabajo híbrido desde 2020."
+        },
+        {
+          "label": "Afirmación → FALSE",
+          "text": "Ninguna empresa introdujo el trabajo híbrido después de 2020."
+        },
+        {
+          "label": "Afirmación → NOT GIVEN",
+          "text": "El trabajo híbrido ha mejorado la productividad."
+        }
+      ],
+      "mistake": {
+        "why": "Para marcar FALSE, el texto tiene que contradecir la afirmación de forma activa. Si la información simplemente no aparece, la respuesta es NOT GIVEN."
+      },
+      "tip": "En IELTS no se restan puntos por las respuestas incorrectas, así que nunca dejes una pregunta en blanco. Fíjate en palabras como 'all' (todos), 'only' (solo) y 'never' (nunca): pueden convertir una afirmación verdadera en falsa."
+    },
+    "ielts-speaking": {
+      "title": "IELTS Speaking: el monólogo y la discusión",
+      "explanation": "IELTS Speaking dura de 11 a 14 minutos y tiene tres partes: preguntas sobre temas conocidos, un monólogo ('long turn') a partir de una tarjeta con un tema y un minuto para prepararte, y una discusión sobre temas abstractos. La Parte 3 es donde se gana la band 7 (el nivel 7 en la escala de IELTS): premia las opiniones desarrolladas y no memorizadas.",
+      "expressions": [
+        "Me gustaría hablar de…",
+        "La razón principal es…",
+        "Por ejemplo, …",
+        "En general, yo diría que…",
+        "Depende de la situación; por ejemplo…",
+        "Es una pregunta interesante. Yo diría que…"
+      ],
+      "vocabulary": [
+        {
+          "es": "monólogo (Parte 2)",
+          "gloss": "Parte 2: hablar solo durante 1 o 2 minutos"
+        },
+        {
+          "es": "desarrollar una respuesta",
+          "gloss": "ampliarla con razones y ejemplos"
+        },
+        {
+          "es": "nota (band)",
+          "gloss": "la escala de 0 a 9 que se usa en cada sección"
+        },
+        {
+          "es": "matizar",
+          "gloss": "evitar sonar absoluto"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Poco desarrollada",
+          "text": "Sí, el trabajo remoto será más común."
+        },
+        {
+          "label": "Digna de una buena band",
+          "text": "Creo que sí, sobre todo porque las empresas han visto que puede funcionar. Dicho esto, depende del sector: no puedes dirigir un hospital a distancia. Pero en el trabajo de oficina, yo esperaría que el modelo híbrido se convierta en lo normal."
+        }
+      ],
+      "mistake": {
+        "why": "La evaluación actual de IELTS da más peso a las respuestas naturales y no memorizadas. Responde la pregunta que te hacen, con un ejemplo real."
+      },
+      "tip": "En el minuto de preparación, escribe cuatro palabras, no frases. Las frases te hacen leer; las palabras te hacen hablar."
+    },
+    "ielts-writing": {
+      "title": "IELTS Writing: Task 1 y Task 2",
+      "explanation": "IELTS Academic Writing dura 60 minutos y tiene dos tareas. Task 1 (150 palabras o más, unos 20 minutos) describe datos visuales. Task 2 (250 palabras o más, unos 40 minutos) es un ensayo y cuenta el doble, así que protege su tiempo.",
+      "expressions": [
+        "Task 1: El gráfico muestra… / En general, … / Lo más llamativo es…",
+        "Task 2: Se suele argumentar que… / En mi opinión… / Un argumento a favor es… / Sin embargo, los críticos señalan que… / En conclusión…"
+      ],
+      "vocabulary": [
+        {
+          "es": "visión general",
+          "gloss": "la oración o las dos oraciones que resumen todo el gráfico"
+        },
+        {
+          "es": "pesar más que",
+          "gloss": "ser más importante que"
+        },
+        {
+          "es": "contraargumento",
+          "gloss": "el punto de vista contrario"
+        },
+        {
+          "es": "fundamentar",
+          "gloss": "respaldar con pruebas"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Visión general de Task 1",
+          "text": "En general, ambas categorías aumentaron, aunque las ventas en línea crecieron de forma mucho más marcada."
+        },
+        {
+          "label": "Inicio de Task 2",
+          "text": "Se suele argumentar que el trabajo remoto perjudica la colaboración. Aunque esto tiene algo de cierto, creo que las ventajas pesan más que las desventajas."
+        }
+      ],
+      "mistake": {
+        "why": "Task 1 es solo descripción: describe únicamente lo que muestran los datos. La opinión va en Task 2, y en Task 1 te resta puntos."
+      },
+      "tip": "Task 2 cuenta el doble. Si se te acaba el tiempo, deja Task 1 más corta y termina el ensayo."
+    },
+    "speaking-structure": {
+      "title": "Organizar lo que dices",
+      "explanation": "Bajo presión, la fluidez viene de la estructura, no del vocabulario. Un plan corto (idea principal, razón, ejemplo, cierre) te permite hablar dos minutos sin dudar.",
+      "expressions": [
+        "Mi idea principal es…",
+        "Hay dos razones para esto.",
+        "La primera es… La segunda es…",
+        "Por ejemplo, cuando nosotros…",
+        "Así que, en general, yo diría que…"
+      ],
+      "vocabulary": [
+        {
+          "es": "anticipar, señalizar",
+          "gloss": "decirle al oyente lo que viene"
+        },
+        {
+          "es": "muletilla, relleno",
+          "gloss": "palabras que usas mientras piensas"
+        },
+        {
+          "es": "ampliar, desarrollar",
+          "gloss": "añadir más detalles"
+        },
+        {
+          "es": "fluidez",
+          "gloss": "hablar con soltura, sin pausas largas"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Sin estructura",
+          "text": "Bueno, es difícil, hay muchas cosas, depende, por ejemplo, muchos factores…"
+        },
+        {
+          "label": "Con estructura",
+          "text": "Yo extendería el plazo, por dos razones. Primero, los datos no están completos. Segundo, una versión hecha con prisa nos costará más después. Por ejemplo, el trimestre pasado lo hicimos con prisa y pasamos tres semanas corrigiéndolo."
+        }
+      ],
+      "mistake": {
+        "why": "Las frases de relleno te dan tiempo para pensar y cuentan como fluidez; el silencio no. Mientras traduces en tu cabeza, di algo como 'That's a good question — let me think for a second' (buena pregunta, déjame pensar un segundo)."
+      },
+      "tip": "Date siempre un número: 'two reasons' (dos razones). En cuanto lo dices, tu cerebro encuentra la segunda."
+    },
+    "linking-basics": {
+      "title": "Palabras de enlace: 'and', 'but', 'because', 'so'",
+      "explanation": "Las palabras de enlace unen dos ideas. Usa 'and' (y) para añadir, 'but' (pero) para una diferencia, 'because' (porque) para una razón y 'so' (así que) para un resultado. Para mostrar el orden de los pasos, usa 'first' (primero) y 'then' (luego). Usa 'also' (también) para añadir una cosa más.",
+      "expressions": [
+        "La oficina es pequeña y tranquila. (añadir)",
+        "El precio es bueno, pero la entrega es lenta. (diferencia)",
+        "Llego tarde porque mi tren llegó tarde. (razón)",
+        "Mi tren llegó tarde, así que llego tarde. (resultado)",
+        "Primero, abre el archivo. Luego, revisa los números. (orden)",
+        "También necesitamos más papel. (una cosa más)"
+      ],
+      "vocabulary": [
+        {
+          "es": "y",
+          "gloss": "añade otra idea"
+        },
+        {
+          "es": "pero",
+          "gloss": "muestra una diferencia o un problema"
+        },
+        {
+          "es": "porque",
+          "gloss": "da la razón: ¿por qué?"
+        },
+        {
+          "es": "así que, por eso",
+          "gloss": "da el resultado: ¿qué pasa después?"
+        },
+        {
+          "es": "también",
+          "gloss": "añade una cosa más; va antes del verbo principal"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Razón",
+          "text": "El informe llega tarde porque los datos llegaron el viernes."
+        },
+        {
+          "label": "Resultado",
+          "text": "Los datos llegaron el viernes, así que el informe llega tarde."
+        },
+        {
+          "label": "Diferencia",
+          "text": "El hotel es bonito, pero está lejos de la oficina."
+        }
+      ],
+      "mistake": {
+        "why": "'Because' y 'so' hacen el mismo trabajo. Usa uno, no los dos: 'Because the train was late, I missed the meeting' o 'The train was late, so I missed the meeting'."
+      },
+      "tip": "Antes de enviar un correo, busca tres frases cortas seguidas. ¿Puedes unir dos de ellas con 'and', 'but' o 'so'?"
+    },
+    "linking-formal": {
+      "title": "Conectores formales: 'whereas', 'provided that', 'nevertheless'",
+      "explanation": "En el nivel B2 la pregunta ya no es qué conector significa 'pero', sino cuál dice exactamente lo que quieres decir. 'Nevertheless' reconoce un punto y sigue adelante; 'whereas' pone dos hechos uno al lado del otro; 'provided that' plantea una condición; 'given that' e 'in light of' introducen un hecho del que partes para razonar. En un correo o informe formal, el conector adecuado hace el trabajo de una frase entera.",
+      "expressions": [
+        "Concesión: 'nevertheless', 'nonetheless', 'that said', 'notwithstanding' (sin embargo, aun así, no obstante)",
+        "Comparación: 'whereas', 'while', 'by contrast' (mientras que, en cambio)",
+        "Condición: 'provided that', 'as long as', 'unless' (siempre que, a menos que)",
+        "Razonar a partir de un hecho conocido: 'given that', 'in light of', 'in view of' (dado que, a la luz de, en vista de)",
+        "Resultado: 'consequently', 'as a result', 'hence' (por consiguiente, como resultado, de ahí que)",
+        "Añadir: 'furthermore', 'in addition', 'moreover' (además, asimismo)"
+      ],
+      "vocabulary": [
+        {
+          "es": "sin embargo, aun así",
+          "gloss": "a pesar de lo que acabo de decir; empieza una frase nueva y lleva coma"
+        },
+        {
+          "es": "mientras que",
+          "gloss": "une dos hechos que contrastan en una sola frase"
+        },
+        {
+          "es": "siempre que, a condición de que",
+          "gloss": "solo si; introduce una condición"
+        },
+        {
+          "es": "dado que / a la luz de",
+          "gloss": "por un hecho que ambas partes conocen; 'in light of' va con un sustantivo"
+        },
+        {
+          "es": "no obstante, a pesar de",
+          "gloss": "'despite' muy formal; va con un sustantivo"
+        },
+        {
+          "es": "por consiguiente",
+          "gloss": "como resultado; empieza una frase o va después de punto y coma"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Concesión",
+          "text": "El piloto fue caro. Aun así, se amortizó en menos de un año."
+        },
+        {
+          "label": "Comparación",
+          "text": "El proveedor A ofrece soporte telefónico, mientras que el proveedor B solo ofrece correo electrónico."
+        },
+        {
+          "label": "Condición",
+          "text": "Podemos mantener este precio siempre que el pedido se confirme antes del viernes."
+        },
+        {
+          "label": "Hecho conocido",
+          "text": "A la luz de los retrasos del año pasado, recomendamos un segundo proveedor."
+        }
+      ],
+      "mistake": {
+        "why": "'Nevertheless' une dos frases. Delante de un sustantivo, usa 'despite' o 'notwithstanding'."
+      },
+      "tip": "Prueba cada conector con su significado: 'provided that' = 'solo si', 'given that' = 'porque sabemos que'. Si la paráfrasis no tiene sentido, el conector está mal."
     }
   }
 }

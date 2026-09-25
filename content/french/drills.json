@@ -2602,6 +2602,80 @@
     "instruction": "Quatre blancs.",
     "feedback": "Objet, conclusion, recommandation, renvoi au détail : le premier paragraphe d'un compte rendu doit tenir seul."
    }
+  ],
+  "connecteurs-simples": [
+   {
+    "renderer": "choice",
+    "prompt": "Quel mot de liaison convient ?",
+    "message": "La réunion est annulée _____ Sophie est malade.",
+    "instruction": "Choisissez le mot qui convient.",
+    "options": [
+     {
+      "text": "parce que",
+      "score": 100,
+      "feedback": "Correct. « Parce que » donne la raison : Sophie est malade."
+     },
+     {
+      "text": "donc",
+      "score": 25,
+      "feedback": "« Donc » donne le résultat. Ici, la maladie de Sophie est la raison."
+     },
+     {
+      "text": "mais",
+      "score": 0,
+      "feedback": "« Mais » oppose deux idées. Ici, il n'y a pas d'opposition."
+     },
+     {
+      "text": "et",
+      "score": 25,
+      "feedback": "« Et » ajoute une idée. Ici, on donne une raison."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Complétez la phrase.",
+    "sentence": "Le train a du retard, {} j'arrive à 10 h et pas à 9 h.",
+    "accept": [
+     "donc",
+     "alors"
+    ],
+    "size": 8,
+    "instruction": "Un mot : le résultat.",
+    "hint": "Le contraire de « parce que ».",
+    "feedback": "« Donc » donne le résultat : le train a du retard, alors vous arrivez plus tard."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez ce message à un collègue.",
+    "text": "Bonjour Marc,\n\n{}, je vérifie la commande du client. {}, je t'envoie la facture.\n\nLe client est content, {} il veut une livraison plus rapide.\n\nMerci,\nAna",
+    "gaps": [
+     {
+      "accept": [
+       "d'abord",
+       "tout d'abord"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "ensuite",
+       "puis",
+       "après",
+       "apres"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "mais"
+      ],
+      "size": 6
+     }
+    ],
+    "instruction": "Trois blancs : l'ordre des étapes, puis une opposition.",
+    "feedback": "« D'abord » et « ensuite » donnent l'ordre. « Mais » oppose : le client est content, mais il veut plus."
+   }
   ]
  }
 }

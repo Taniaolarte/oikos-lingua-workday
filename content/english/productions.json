@@ -1817,6 +1817,234 @@
     "Could I point to the exact line that proves my TRUE statement?"
    ],
    "model": "The article argues that hybrid working has become permanent for most large employers, but that it has created a new problem: junior staff learn far less informally than they used to. The writer suggests that mandating office days has not solved this, because attendance is not the same as contact.\n\nTRUE — Most large employers have kept some form of hybrid working. (The text states a majority retained it.)\n\nFALSE — The writer argues that office mandates have solved the training problem. (The text says the opposite: mandates have not solved it.)\n\nNOT GIVEN — Hybrid working has reduced company profits. (The text discusses training and attendance, but never mentions profit, so this cannot be judged either way.)"
+  },
+  "linking-basics": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write about a problem",
+   "brief": "The new laptops are late. The supplier had a problem. They arrive on Thursday, not Monday. The team can use the old laptops until Thursday.",
+   "task": "Write a short email to your team. Say what the problem is, why, and what the team can do. Join your ideas with linking words.",
+   "include": [
+    "The problem: the laptops are late",
+    "The reason, with 'because'",
+    "A result, with 'so'",
+    "A difference, with 'but'",
+    "A closing"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Uses 'because' for the reason",
+     "any": [
+      "because"
+     ]
+    },
+    {
+     "label": "Uses 'so' for a result",
+     "any": [
+      " so ",
+      " so,"
+     ]
+    },
+    {
+     "label": "Uses 'but' for a difference",
+     "any": [
+      " but ",
+      " but,"
+     ]
+    },
+    {
+     "label": "Gives the new day",
+     "any": [
+      "thursday"
+     ]
+    },
+    {
+     "label": "Doesn't use 'because' and 'so' together",
+     "none": [
+      "because the supplier had a problem, so",
+      "because they are late, so",
+      "because of this, so",
+      "because the supplier has a problem, so"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Does each linking word do a different job?",
+    "Are my sentences short and clear?"
+   ],
+   "model": "Hi all,\n\nThe new laptops are late because the supplier had a problem. They arrive on Thursday, not Monday. It's not ideal, but you can use your old laptops until then, so please don't return them yet.\n\nThanks,\nAna"
+  },
+  "reading-strategies": {
+   "renderer": "listening",
+   "kind": "listen",
+   "title": "Read a real article, then summarise it",
+   "brief": "At work you rarely read every word. You skim for the main point, scan for the details you need, and keep what the text says separate from what you think.",
+   "taskLabel": "Read first",
+   "task": "Find a short work-related article or report in English (300 to 600 words). Give yourself five minutes. Skim the title and headings first, then scan for two details.",
+   "resources": [
+    {
+     "label": "BBC Learning English — News Review and features",
+     "url": "https://www.bbc.co.uk/learningenglish"
+    },
+    {
+     "label": "BBC News — Business",
+     "url": "https://www.bbc.com/news/business"
+    }
+   ],
+   "note": "Five minutes of reading, then close the page and write from your notes.",
+   "thenLabel": "Then write",
+   "then": "Write a short summary for a colleague who hasn't read it: the main point, two details, one thing the writer suggests, and one thing the text doesn't say.",
+   "include": [
+    "The main point, with 'The main point is…'",
+    "Two details, with 'According to…'",
+    "One thing the writer suggests or implies",
+    "One thing the text doesn't say"
+   ],
+   "minWords": 60,
+   "checks": [
+    {
+     "label": "States the main point",
+     "any": [
+      "main point",
+      "main idea",
+      "mainly about",
+      "the article is about",
+      "the report is about",
+      "the text is about",
+      "main message",
+      "main finding"
+     ]
+    },
+    {
+     "label": "Reports a detail with a source phrase",
+     "any": [
+      "according to",
+      "the article says",
+      "the report says",
+      "the writer says",
+      "the author says",
+      "the text says"
+     ]
+    },
+    {
+     "label": "Reports something implied",
+     "any": [
+      "suggests",
+      "implies",
+      "seems to",
+      "appears to",
+      "the writer thinks",
+      "the author thinks",
+      "hints"
+     ]
+    },
+    {
+     "label": "Says what the text doesn't say",
+     "any": [
+      "doesn't say",
+      "does not say",
+      "doesn't mention",
+      "does not mention",
+      "doesn't explain",
+      "does not explain",
+      "isn't clear",
+      "is not clear",
+      "doesn't tell",
+      "does not tell"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I keep my own opinion out of the summary?",
+    "Could a colleague understand the text from my summary alone?"
+   ],
+   "model": "The main point of the article is that more companies are testing a four-day week, mainly to keep their staff. According to the article, most of the companies in a recent trial decided to continue, and sick days fell sharply. The writer suggests that smaller companies find the change easier than large ones. However, the article doesn't say what happened to customer satisfaction, which is what my manager would want to know."
+  },
+  "linking-formal": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write the recommendation email",
+   "brief": "Your company must choose between two logistics partners. Rapido is 8% cheaper, but only 91% of its deliveries were on time last year. Transol costs more, but 98% of its deliveries were on time, and it will hold its prices for two years if you sign by June. Last year, late deliveries cost you two major clients.",
+   "task": "Write a short, formal email to your director recommending one partner. Use formal linkers to compare, concede, set a condition and reason from a known fact.",
+   "include": [
+    "A comparison ('whereas' or 'while')",
+    "A concession ('nevertheless' or 'that said')",
+    "A condition ('provided that' or 'as long as')",
+    "A known fact to reason from ('given that' or 'in light of')",
+    "A clear recommendation"
+   ],
+   "minWords": 100,
+   "checks": [
+    {
+     "label": "Compares with 'whereas' or 'while'",
+     "any": [
+      "whereas",
+      "while ",
+      "by contrast",
+      "in contrast"
+     ]
+    },
+    {
+     "label": "Concedes with a formal linker",
+     "any": [
+      "nevertheless",
+      "nonetheless",
+      "that said",
+      "even so",
+      "notwithstanding",
+      "however"
+     ]
+    },
+    {
+     "label": "Sets a condition",
+     "any": [
+      "provided that",
+      "providing that",
+      "as long as",
+      "on condition that",
+      "provided we",
+      "providing we"
+     ]
+    },
+    {
+     "label": "Reasons from a known fact",
+     "any": [
+      "given that",
+      "given the",
+      "given our",
+      "in light of",
+      "in view of",
+      "considering"
+     ]
+    },
+    {
+     "label": "Makes a recommendation",
+     "any": [
+      "recommend",
+      "on balance",
+      "i would suggest",
+      "i'd suggest",
+      "we should",
+      "i propose"
+     ]
+    },
+    {
+     "label": "Doesn't double up 'although' and 'but'",
+     "none": [
+      "although rapido is cheaper, but",
+      "although transol costs more, but",
+      "although it is cheaper, but",
+      "although it costs more, but",
+      "although transol is more expensive, but"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "If I replace each linker with its meaning, does the sentence still make sense?",
+    "Is the recommendation in the first or last sentence, where the director will see it?"
+   ],
+   "model": "Dear Andrea,\n\nI recommend that we appoint Transol as our logistics partner.\n\nRapido's rates are around 8% lower, whereas Transol's are higher on every route. Nevertheless, Transol delivered 98% of orders on time last year, while Rapido managed only 91%. Given that late deliveries cost us two major clients last year, I believe reliability should carry more weight than price in this decision.\n\nTransol has also agreed to hold its prices for two years, provided that we sign the contract by the end of June. Consequently, the cost gap would narrow over the life of the contract.\n\nI would be happy to discuss this before the board meeting.\n\nKind regards,\nSamuel"
   }
  }
 }
