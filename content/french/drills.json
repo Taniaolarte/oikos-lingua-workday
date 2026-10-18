@@ -2676,6 +2676,423 @@
     "instruction": "Trois blancs : l'ordre des étapes, puis une opposition.",
     "feedback": "« D'abord » et « ensuite » donnent l'ordre. « Mais » oppose : le client est content, mais il veut plus."
    }
+  ],
+  "lit-genres": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase est correcte ?",
+    "instruction": "Une seule phrase est correcte.",
+    "options": [
+     {
+      "text": "Je lis un roman de Victor Hugo : Les Misérables.",
+      "score": 100,
+      "feedback": "Correct. Une longue histoire inventée est un « roman », et on dit « un roman de » + l'auteur."
+     },
+     {
+      "text": "Je lis une novela de Victor Hugo : Les Misérables.",
+      "score": 25,
+      "feedback": "« Novela » est un mot espagnol. En français, on dit « un roman »."
+     },
+     {
+      "text": "Je lis une nouvelle de Victor Hugo : Les Misérables.",
+      "score": 25,
+      "feedback": "Faux ami : « une nouvelle » est une histoire courte. Les Misérables a plus de mille pages : c'est un roman."
+     },
+     {
+      "text": "Je lis un roman par Victor Hugo : Les Misérables.",
+      "score": 50,
+      "feedback": "Le genre est juste, mais on dit « un roman de Victor Hugo ». « Par » s'emploie avec « écrit » : « écrit par Victor Hugo »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Écrivez le mot qui manque.",
+    "sentence": "Il y a des noms de personnages, des dialogues et des didascalies : c'est une pièce de {}.",
+    "accept": [
+     "théâtre",
+     "theatre"
+    ],
+    "size": 8,
+    "instruction": "Un mot.",
+    "hint": "Des acteurs la jouent sur une scène.",
+    "feedback": "Des dialogues et des didascalies (les indications pour les acteurs) : c'est une « pièce de théâtre »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez les étiquettes de la librairie.",
+    "text": "Rayon 1 : Longues histoires inventées, en prose : les {}.\n\nRayon 2 : L'histoire vraie de la vie de l'auteur lui-même : les {}.\n\nRayon 3 : Textes en vers et en strophes : les recueils de {}.",
+    "gaps": [
+     {
+      "accept": [
+       "romans"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "autobiographies",
+       "mémoires"
+      ],
+      "size": 15
+     },
+     {
+      "accept": [
+       "poèmes",
+       "poésie"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Un « roman » est une longue histoire ; une « autobiographie » (ou des « mémoires ») raconte la vie de l'auteur ; des vers et des strophes, ce sont des « poèmes »."
+   }
+  ],
+  "lit-story": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase est correcte ?",
+    "instruction": "Une seule phrase est correcte.",
+    "options": [
+     {
+      "text": "L'histoire se passe dans un petit village du Pérou.",
+      "score": 100,
+      "feedback": "Correct. Pour le lieu de l'histoire, on dit « se passer », « se dérouler » ou « avoir lieu »."
+     },
+     {
+      "text": "L'histoire passe dans un petit village du Pérou.",
+      "score": 25,
+      "feedback": "En espagnol, « pasa en… », mais en français le verbe est pronominal : « l'histoire se passe »."
+     },
+     {
+      "text": "Le cadre se passe dans un petit village du Pérou.",
+      "score": 25,
+      "feedback": "Le cadre EST le lieu et l'époque : « Le cadre, c'est un petit village du Pérou. » C'est l'histoire qui « se passe »."
+     },
+     {
+      "text": "L'histoire est en train de se passer dans un petit village du Pérou.",
+      "score": 50,
+      "feedback": "On comprend, mais pour résumer une histoire, le présent simple suffit : « l'histoire se passe »."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Écrivez le mot qui manque.",
+    "sentence": "Le moment le plus intense de l'histoire, juste avant le dénouement, c'est le point {}.",
+    "accept": [
+     "culminant"
+    ],
+    "size": 9,
+    "instruction": "Un mot.",
+    "hint": "Un mot en -ant : c'est le sommet de la tension.",
+    "feedback": "Le « point culminant » est le moment de plus forte tension, juste avant le dénouement."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez les notes du club de lecture.",
+    "text": "Le personnage {} est Rosa, une jeune boulangère.\n\nL'histoire se passe à Naples, dans les années 1950 : c'est le {} du récit.\n\nL'élément {}, c'est une lettre : sa boutique va fermer, et elle a un mois pour la sauver.",
+    "gaps": [
+     {
+      "accept": [
+       "principal"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "cadre"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "perturbateur",
+       "déclencheur"
+      ],
+      "size": 12
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Le personnage principal (qui ?), le cadre (où et quand ?), l'élément perturbateur (quel problème lance l'histoire ?)."
+   }
+  ],
+  "lit-figurative": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle étiquette est correcte ?",
+    "instruction": "Une seule est correcte.",
+    "options": [
+     {
+      "text": "« Le vent murmure dans les arbres » est une personnification.",
+      "score": 100,
+      "feedback": "Correct. Le vent ne peut pas murmurer : on lui donne une action humaine."
+     },
+     {
+      "text": "« Le bureau était froid comme un frigo » est une métaphore.",
+      "score": 25,
+      "feedback": "Il y a l'outil « comme » : c'est une comparaison."
+     },
+     {
+      "text": "« Ma boîte mail est un champ de bataille » est une comparaison.",
+      "score": 25,
+      "feedback": "Pas d'outil de comparaison : la boîte mail EST un champ de bataille. C'est une métaphore."
+     },
+     {
+      "text": "« Va, je ne te hais point » (Corneille) est une hyperbole.",
+      "score": 25,
+      "feedback": "C'est le contraire : Chimène dit moins pour faire entendre plus (« je t'aime »). C'est une litote."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Écrivez le mot qui manque.",
+    "sentence": "« La réunion était longue comme un hiver » est une {}, parce qu'il y a l'outil « comme ».",
+    "accept": [
+     "comparaison"
+    ],
+    "size": 11,
+    "instruction": "Un mot.",
+    "hint": "Pas « simile » : en français, on dit « une c… ».",
+    "feedback": "Un rapprochement avec « comme », « tel » ou « pareil à » est une « comparaison »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez les notes de l'éditrice.",
+    "text": "« Le temps est un voleur » est une {} : le temps EST un voleur, sans « comme ».\n\n« La mer grondait de colère » est une {} : la mer agit comme une personne.\n\n« Cette obscure clarté » (Corneille) est un {} : deux mots de sens contraire réunis.",
+    "gaps": [
+     {
+      "accept": [
+       "métaphore"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "personnification"
+      ],
+      "size": 16
+     },
+     {
+      "accept": [
+       "oxymore",
+       "oxymoron"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Métaphore (une chose en est une autre, sans outil), personnification (des qualités humaines), oxymore (deux mots contraires côte à côte)."
+   }
+  ],
+  "lit-poetic-form": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle description est correcte ?",
+    "instruction": "Une seule est correcte.",
+    "options": [
+     {
+      "text": "« Pour qui sont ces serpents qui sifflent sur vos têtes ? » (Racine) contient une allitération en [s].",
+      "score": 100,
+      "feedback": "Correct. La consonne [s] revient sans cesse et imite le sifflement des serpents."
+     },
+     {
+      "text": "« Pour qui sont ces serpents qui sifflent sur vos têtes ? » contient une rime en [s].",
+      "score": 25,
+      "feedback": "La rime se trouve à la fin des vers. Ici, c'est une consonne répétée à l'intérieur du vers : une allitération."
+     },
+     {
+      "text": "Dans « Les sanglots longs / Des violons » (Verlaine), aucun son n'est répété.",
+      "score": 0,
+      "feedback": "Écoutez : « sanglots », « longs », « violons ». La voyelle [ɔ̃] revient : c'est une assonance."
+     },
+     {
+      "text": "Un poème en vers libres a un schéma de rimes fixe.",
+      "score": 0,
+      "feedback": "Le vers libre n'a ni rime ni nombre de syllabes fixes."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Écrivez le mot qui manque.",
+    "sentence": "Dans un poème, un groupe de vers, comme un paragraphe, s'appelle une {}.",
+    "accept": [
+     "strophe"
+    ],
+    "size": 8,
+    "instruction": "Un mot.",
+    "hint": "Comme en espagnol, presque.",
+    "feedback": "Un groupe de vers est une « strophe ». Une ligne du poème est « un vers »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez les notes sur le sonnet.",
+    "text": "Un sonnet compte quatorze {}.\n\nIl a deux quatrains, puis deux {}.\n\nEn français, ses vers sont souvent des {} : des vers de douze syllabes.",
+    "gaps": [
+     {
+      "accept": [
+       "vers"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "tercets"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "alexandrins"
+      ],
+      "size": 11
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Quatorze vers : deux quatrains (4 + 4) et deux tercets (3 + 3), souvent en alexandrins de douze syllabes."
+   }
+  ],
+  "lit-analysis": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase est une vraie analyse ?",
+    "instruction": "Une seule explique un effet.",
+    "options": [
+     {
+      "text": "L'anaphore « J'irai par la forêt, j'irai par la montagne » martèle la détermination du locuteur, ce qui donne l'impression d'une marche que rien n'arrêtera.",
+      "score": 100,
+      "feedback": "Procédé, citation et effet, en une seule phrase."
+     },
+     {
+      "text": "Il y a une anaphore au vers 3.",
+      "score": 25,
+      "feedback": "C'est une observation. Qu'est-ce que l'anaphore fait ?"
+     },
+     {
+      "text": "Hugo était triste, alors il a écrit un poème.",
+      "score": 0,
+      "feedback": "C'est de la biographie, pas de l'analyse : on ne dit rien de ce que font les mots du texte."
+     },
+     {
+      "text": "L'anaphore est très efficace et rend le poème plus beau.",
+      "score": 25,
+      "feedback": "« Efficace » pour faire quoi ? Nommez l'effet précis."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Écrivez le mot qui manque.",
+    "sentence": "La voix qui dit « je » dans un poème s'appelle le « je » poétique, ou le {}. Ce n'est pas forcément le poète.",
+    "accept": [
+     "locuteur",
+     "sujet lyrique",
+     "énonciateur"
+    ],
+    "size": 9,
+    "instruction": "Un mot.",
+    "hint": "Il commence par « loc… ».",
+    "feedback": "On parle du « locuteur » (ou du « je » poétique), pas du poète, sauf si on a des preuves."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez la phrase d'analyse.",
+    "text": "Le rejet de « Je partirai » au début du vers 2 isole le verbe, {} met en valeur la décision du locuteur.\n\nCela {} un effet de rupture, comme si la phrase s'arrêtait net.",
+    "gaps": [
+     {
+      "accept": [
+       "ce qui"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "crée",
+       "produit",
+       "donne",
+       "provoque",
+       "suggère"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Deux blancs.",
+    "feedback": "« …, ce qui… » relie la citation à l'effet (pas « que » : le pronom est sujet de « met »). Des verbes comme « crée » ou « produit » nomment l'effet."
+   }
+  ],
+  "lit-irony-tone": [
+   {
+    "renderer": "choice",
+    "prompt": "Quelle phrase emploie les termes correctement ?",
+    "instruction": "Une seule est juste.",
+    "options": [
+     {
+      "text": "Nous savons que le pont est fragile, mais pas le héros : c'est de l'ironie dramatique.",
+      "score": 100,
+      "feedback": "Correct. Le lecteur sait ce que le personnage ignore."
+     },
+     {
+      "text": "L'atmosphère du narrateur est amère.",
+      "score": 25,
+      "feedback": "Le narrateur a un ton. L'atmosphère, c'est ce que ressent le lecteur."
+     },
+     {
+      "text": "Un motif n'apparaît qu'une seule fois, au point culminant.",
+      "score": 0,
+      "feedback": "Un motif revient : c'est sa définition."
+     },
+     {
+      "text": "L'ironie, c'est quand l'auteur utilise beaucoup de métaphores.",
+      "score": 0,
+      "feedback": "L'ironie est un écart entre ce qui est dit ou attendu et ce qui est pensé ou ce qui arrive."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Écrivez le mot qui manque.",
+    "sentence": "« Il nous a quittés » est un {} pour dire « il est mort ».",
+    "accept": [
+     "euphémisme",
+     "euphemisme"
+    ],
+    "size": 10,
+    "instruction": "Un mot.",
+    "hint": "Il commence par « eu… ».",
+    "feedback": "Une expression plus douce pour une réalité dure est un « euphémisme »."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complétez les notes du cercle de lecture.",
+    "text": "La porte fermée apparaît cinq fois : c'est un {} du récit.\n\nLa narratrice semble joyeuse, donc le {} est léger, mais l'{} est tendue, parce que nous savons ce qu'il y a derrière la porte.",
+    "gaps": [
+     {
+      "accept": [
+       "motif",
+       "symbole"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "ton",
+       "registre"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "atmosphère",
+       "ambiance"
+      ],
+      "size": 10
+     }
+    ],
+    "instruction": "Trois blancs.",
+    "feedback": "Un détail qui revient est un motif ; l'attitude de la narratrice est le ton ; ce que ressent le lecteur est l'atmosphère."
+   }
   ]
  }
 }

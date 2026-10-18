@@ -1773,6 +1773,366 @@
         "why": "'Nevertheless' une dos frases. Delante de un sustantivo, usa 'despite' o 'notwithstanding'."
       },
       "tip": "Prueba cada conector con su significado: 'provided that' = 'solo si', 'given that' = 'porque sabemos que'. Si la paráfrasis no tiene sentido, el conector está mal."
+    },
+    "lit-genres": {
+      "title": "Tipos de libros: los géneros",
+      "explanation": "Un género es un tipo de literatura. Los cuatro grandes grupos son la narrativa (ficción en prosa), la poesía, el teatro (obras dramáticas) y la no ficción (textos reales). Para identificar el género, mira la forma: párrafos, versos y estrofas, o diálogos con nombres de personajes.",
+      "expressions": [
+        "Es una novela sobre una familia en Lagos.",
+        "Es una colección de cuentos.",
+        "Es un libro de poemas.",
+        "Es una obra de teatro en tres actos.",
+        "Es una historia real: una biografía de Marie Curie.",
+        "Está escrito para niños."
+      ],
+      "vocabulary": [
+        {
+          "es": "novela",
+          "gloss": "una historia larga, escrita en prosa"
+        },
+        {
+          "es": "cuento, relato corto",
+          "gloss": "una historia breve que se lee de una vez"
+        },
+        {
+          "es": "poema",
+          "gloss": "un texto escrito en versos, a menudo con ritmo o rima"
+        },
+        {
+          "es": "obra de teatro",
+          "gloss": "una historia escrita para actores, con diálogo"
+        },
+        {
+          "es": "biografía",
+          "gloss": "la historia real de la vida de otra persona"
+        },
+        {
+          "es": "autobiografía",
+          "gloss": "la historia real de la vida del propio autor"
+        },
+        {
+          "es": "fábula",
+          "gloss": "una historia corta, a menudo con animales, que enseña una lección"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Forma",
+          "text": "Tiene versos y estrofas, así que es un poema."
+        },
+        {
+          "label": "Forma",
+          "text": "Tiene nombres de personajes y acotaciones, así que es una obra de teatro."
+        },
+        {
+          "label": "Propósito",
+          "text": "Cuenta la historia real de la vida del autor, así que es una autobiografía."
+        }
+      ],
+      "mistake": {
+        "why": "Una historia larga es una 'novel'. 'Romance' significa historia de amor. Y un libro es 'by' su autor, no 'of'."
+      },
+      "tip": "¿No estás seguro? Hazte dos preguntas: ¿es real o inventado? ¿Está en párrafos, en versos o en diálogo?"
+    },
+    "lit-story": {
+      "title": "Las partes de una historia",
+      "explanation": "La mayoría de las historias tienen las mismas partes. Los personajes son las personas de la historia. El escenario (setting) es dónde y cuándo ocurre. La trama (plot) es lo que pasa: un comienzo, un problema (el conflicto), el momento más emocionante (el clímax) y un final.",
+      "expressions": [
+        "La historia transcurre en París en 1920.",
+        "El personaje principal es una joven médica.",
+        "Al principio, ella se muda a una ciudad nueva.",
+        "El problema es que nadie confía en ella.",
+        "Al final, salva al pueblo.",
+        "Está narrada en primera persona."
+      ],
+      "vocabulary": [
+        {
+          "es": "personaje",
+          "gloss": "una persona (o animal) de la historia"
+        },
+        {
+          "es": "personaje principal, protagonista",
+          "gloss": "el personaje más importante"
+        },
+        {
+          "es": "escenario, ambientación",
+          "gloss": "el lugar y la época de la historia"
+        },
+        {
+          "es": "trama, argumento",
+          "gloss": "los hechos de la historia, en orden"
+        },
+        {
+          "es": "conflicto",
+          "gloss": "el problema o la lucha de la historia"
+        },
+        {
+          "es": "clímax",
+          "gloss": "el momento más emocionante, el punto de giro"
+        },
+        {
+          "es": "narrador",
+          "gloss": "la voz que cuenta la historia"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Escenario",
+          "text": "La historia transcurre en una isla pequeña en invierno."
+        },
+        {
+          "label": "Conflicto",
+          "text": "El problema es que el barco no puede salir por la tormenta."
+        },
+        {
+          "label": "Narrador",
+          "text": "'Abrí la puerta': un narrador en primera persona."
+        }
+      ],
+      "mistake": {
+        "why": "'Argument' es un falso amigo: en inglés significa una discusión o pelea. Los hechos de una historia son el 'plot'."
+      },
+      "tip": "Cuando hables de una historia, usa el presente simple: 'At the beginning, she moves to Lisbon.'"
+    },
+    "lit-figurative": {
+      "title": "El lenguaje figurado",
+      "explanation": "El lenguaje figurado usa las palabras en sentido no literal para crear una imagen o un sentimiento. El símil compara con 'like' o 'as' (como). La metáfora dice que una cosa ES otra. La personificación da cualidades humanas a las cosas. La hipérbole exagera; la atenuación (understatement) hace que algo serio parezca pequeño.",
+      "expressions": [
+        "El autor compara la ciudad con un animal dormido.",
+        "Este símil hace que la voz suene suave.",
+        "El viento está personificado: 'susurra'.",
+        "Es una exageración para causar efecto.",
+        "La metáfora sugiere que el tiempo nos roba.",
+        "Crea un ambiente tranquilo y silencioso."
+      ],
+      "vocabulary": [
+        {
+          "es": "símil, comparación",
+          "gloss": "una comparación con 'like' o 'as': 'su voz era como terciopelo'"
+        },
+        {
+          "es": "metáfora",
+          "gloss": "describe una cosa como si fuera otra: 'el tiempo es un ladrón'"
+        },
+        {
+          "es": "personificación",
+          "gloss": "cualidades humanas para cosas no humanas: 'el viento susurró'"
+        },
+        {
+          "es": "hipérbole",
+          "gloss": "exageración deliberada: 'te lo he dicho un millón de veces'"
+        },
+        {
+          "es": "atenuación, lítote",
+          "gloss": "hacer que algo serio parezca poco: 'solo es un rasguño'"
+        },
+        {
+          "es": "oxímoron",
+          "gloss": "dos palabras opuestas juntas: 'silencio ensordecedor'"
+        },
+        {
+          "es": "imágenes sensoriales",
+          "gloss": "lenguaje que apela a los sentidos"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Símil",
+          "text": "La oficina estaba tan silenciosa como una biblioteca."
+        },
+        {
+          "label": "Metáfora",
+          "text": "Mi bandeja de entrada es un campo de batalla."
+        },
+        {
+          "label": "Personificación",
+          "text": "La vieja impresora gruñó y se negó a trabajar."
+        }
+      ],
+      "mistake": {
+        "why": "Si ves 'like' o 'as', es un símil. La metáfora no tiene palabra de comparación: 'Her smile was sunshine.'"
+      },
+      "tip": "Nunca te limites a nombrar el recurso. Di qué hace: 'Este símil hace que la habitación parezca fría y vacía.'"
+    },
+    "lit-poetic-form": {
+      "title": "Sonido y forma en los poemas",
+      "explanation": "Los poemas se construyen con versos (lines) agrupados en estrofas (stanzas). Los recursos sonoros repiten sonidos: la aliteración repite la primera consonante ('wild and windy weather'), la asonancia repite sonidos vocálicos y la rima hace coincidir los sonidos finales. El verso libre no tiene rima ni ritmo fijos. El encabalgamiento ocurre cuando una frase continúa después del final del verso.",
+      "expressions": [
+        "El poema tiene dos estrofas de cinco versos.",
+        "El esquema de rima es ABAB.",
+        "El sonido 'v' se repite en 'vacant, vast'.",
+        "La frase continúa en el verso siguiente.",
+        "Está escrito en verso libre.",
+        "La repetición suena como un latido."
+      ],
+      "vocabulary": [
+        {
+          "es": "verso",
+          "gloss": "una línea de palabras en un poema"
+        },
+        {
+          "es": "estrofa",
+          "gloss": "un grupo de versos, como un párrafo del poema"
+        },
+        {
+          "es": "aliteración",
+          "gloss": "el mismo sonido consonante inicial en palabras cercanas"
+        },
+        {
+          "es": "asonancia",
+          "gloss": "el mismo sonido vocálico en palabras cercanas"
+        },
+        {
+          "es": "esquema de rima",
+          "gloss": "el patrón de las rimas finales, con letras: ABAB"
+        },
+        {
+          "es": "encabalgamiento",
+          "gloss": "una frase que continúa después del final del verso"
+        },
+        {
+          "es": "verso libre",
+          "gloss": "poesía sin esquema de rima ni métrica fijos"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Aliteración",
+          "text": "'vacant, vast' (Whitman): vacío, inmenso"
+        },
+        {
+          "label": "Repetición",
+          "text": "'filament, filament, filament' (Whitman): filamento, filamento, filamento"
+        },
+        {
+          "label": "Pareado",
+          "text": "Los dos últimos versos de un soneto de Shakespeare riman: 'see / thee'."
+        }
+      ],
+      "mistake": {
+        "why": "En inglés, un grupo de versos es una 'stanza'. 'Verse' suele significar poesía en general, o un solo verso."
+      },
+      "tip": "Lee el poema en voz alta. El oído encuentra la aliteración y la rima antes que los ojos."
+    },
+    "lit-analysis": {
+      "title": "Recurso, cita, efecto",
+      "explanation": "Analizar no es nombrar técnicas, sino explicar qué hacen. Una buena frase de análisis tiene tres partes: el recurso, una cita breve como prueba y el efecto en el lector o en el significado. Escribe sobre 'el hablante' (the speaker) o 'el narrador', no sobre el poeta, y usa el presente.",
+      "expressions": [
+        "Whitman usa la epizeuxis ('filament, filament, filament') para…",
+        "La repetición imita…, lo que sugiere…",
+        "Esto crea una sensación de…",
+        "La imagen de… transmite…",
+        "El tono del hablante pasa de… a…",
+        "Esto también podría leerse como…"
+      ],
+      "vocabulary": [
+        {
+          "es": "el hablante, el yo poético",
+          "gloss": "la voz del poema; no necesariamente el poeta"
+        },
+        {
+          "es": "transmitir",
+          "gloss": "comunicar un sentimiento o una idea"
+        },
+        {
+          "es": "evocar",
+          "gloss": "traer a la mente un sentimiento o una imagen"
+        },
+        {
+          "es": "poner en primer plano, destacar",
+          "gloss": "hacer que algo resalte"
+        },
+        {
+          "es": "connotación",
+          "gloss": "las asociaciones de una palabra más allá de su sentido literal"
+        },
+        {
+          "es": "apóstrofe",
+          "gloss": "hablar directamente a una persona ausente, una cosa o una idea: 'Oh, alma mía'"
+        },
+        {
+          "es": "ambigüedad",
+          "gloss": "que admite más de un significado posible"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Solo observación",
+          "text": "Hay una metáfora en el verso 7."
+        },
+        {
+          "label": "Análisis",
+          "text": "La metáfora 'océanos de espacio' hace que el universo parezca profundo y peligroso, así que el 'puente' del alma parece aún más frágil."
+        },
+        {
+          "label": "Lectura alternativa",
+          "text": "'El Cielo hizo ambas cosas imposibles' también podría leerse como amargo y no como resignado."
+        }
+      ],
+      "mistake": {
+        "why": "No confundas al hablante con el poeta ni especules sobre la vida del autor. Analiza lo que hacen las palabras del texto."
+      },
+      "tip": "Usa la fórmula Recurso + Cita + Efecto. Si no puedes terminar la frase con 'which…' (lo que…), solo has hecho una observación."
+    },
+    "lit-irony-tone": {
+      "title": "Ironía, símbolo y tono",
+      "explanation": "La ironía es una distancia entre lo que se dice o se espera y lo que se quiere decir o lo que ocurre. En la ironía dramática, el lector sabe algo que un personaje ignora. Un símbolo es un objeto o una imagen que sugiere un significado más amplio; un motivo es un detalle que vuelve una y otra vez. El tono es la actitud del hablante; el ambiente (mood) es la atmósfera que siente el lector.",
+      "expressions": [
+        "La ironía está en la distancia entre… y…",
+        "El lector sabe lo que el personaje no sabe.",
+        "La puerta cerrada reaparece como motivo.",
+        "El hilo puede leerse como símbolo de conexión.",
+        "El tono es nostálgico y luego, de golpe, neutro.",
+        "La muerte nunca se nombra: solo es 'la Tumba'."
+      ],
+      "vocabulary": [
+        {
+          "es": "ironía dramática",
+          "gloss": "cuando el público sabe algo que un personaje no sabe"
+        },
+        {
+          "es": "ironía de situación",
+          "gloss": "cuando el resultado es lo contrario de lo esperado"
+        },
+        {
+          "es": "símbolo",
+          "gloss": "algo que sugiere un significado más allá de sí mismo"
+        },
+        {
+          "es": "motivo",
+          "gloss": "una imagen, frase o idea recurrente"
+        },
+        {
+          "es": "tono",
+          "gloss": "la actitud del hablante o del narrador ante el tema"
+        },
+        {
+          "es": "ambiente, atmósfera",
+          "gloss": "la atmósfera que se crea para el lector"
+        },
+        {
+          "es": "eufemismo",
+          "gloss": "una palabra suave para algo duro: 'falleció'"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Ironía de situación",
+          "text": "Las chicas que 'manejaban Destinos' no pueden cumplir una promesa ni una noche."
+        },
+        {
+          "label": "Tono y ambiente",
+          "text": "El tono del narrador es alegre, pero el ambiente es inquietante, porque sabemos que llega la tormenta."
+        },
+        {
+          "label": "Eufemismo",
+          "text": "'la Tumba' y 'el Cielo' sustituyen a la muerte, que nunca se nombra."
+        }
+      ],
+      "mistake": {
+        "why": "El tono pertenece al hablante o al narrador. El ambiente (mood) pertenece a la experiencia del lector."
+      },
+      "tip": "La ironía necesita dos cosas lado a lado. Nombra las dos mitades: lo que se dijo o se esperaba, y lo que se quiere decir u ocurre."
     }
   }
 }

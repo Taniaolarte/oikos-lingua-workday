@@ -2045,6 +2045,349 @@
     "Is the recommendation in the first or last sentence, where the director will see it?"
    ],
    "model": "Dear Andrea,\n\nI recommend that we appoint Transol as our logistics partner.\n\nRapido's rates are around 8% lower, whereas Transol's are higher on every route. Nevertheless, Transol delivered 98% of orders on time last year, while Rapido managed only 91%. Given that late deliveries cost us two major clients last year, I believe reliability should carry more weight than price in this decision.\n\nTransol has also agreed to hold its prices for two years, provided that we sign the contract by the end of June. Consequently, the cost gap would narrow over the life of the contract.\n\nI would be happy to discuss this before the board meeting.\n\nKind regards,\nSamuel"
+  },
+  "lit-genres": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write a shelf card",
+   "brief": "Your bookshop puts a small card under its favourite books. The manager asks you to write one for a book you like.",
+   "task": "Write a short shelf card: the title and writer, the genre, what it is about, and who will like it.",
+   "include": [
+    "The title and the writer, with 'by'",
+    "The genre: novel, poems, play, biography…",
+    "What it is about, with 'It's about…'",
+    "Who will like it"
+   ],
+   "minWords": 30,
+   "checks": [
+    {
+     "label": "Names the writer with 'by'",
+     "any": [
+      " by "
+     ]
+    },
+    {
+     "label": "Names a genre",
+     "any": [
+      "novel",
+      "short stor",
+      "poem",
+      "poetry",
+      "play",
+      "biography",
+      "autobiography",
+      "memoir",
+      "fable",
+      "comic",
+      "graphic novel",
+      "novella"
+     ]
+    },
+    {
+     "label": "Says what it is about",
+     "any": [
+      "about",
+      "the story of",
+      "tells"
+     ]
+    },
+    {
+     "label": "No 'romance' for 'novel'",
+     "none": [
+      "a romance of",
+      "romance by"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I say why someone should read it?",
+    "Is the genre the right one?"
+   ],
+   "model": "One Hundred Years of Solitude, by Gabriel García Márquez\n\nA novel about seven generations of one family in the magic town of Macondo. It's long, but every chapter is a small surprise. Perfect for readers who like family stories and a little magic."
+  },
+  "lit-story": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Summarise a story",
+   "brief": "Your book club has a website. Each member writes a short summary of a story they know, with no spoilers.",
+   "task": "Write a short summary of a story you know (a book, a film or a folk tale): the main character, the setting, the problem, and how it begins.",
+   "include": [
+    "The main character",
+    "The setting: where and when",
+    "The problem (the conflict)",
+    "The present simple",
+    "No spoiler: don't tell the ending"
+   ],
+   "minWords": 40,
+   "checks": [
+    {
+     "label": "Names the main character",
+     "any": [
+      "main character",
+      "protagonist",
+      "is about a",
+      "is about an",
+      "tells the story of"
+     ]
+    },
+    {
+     "label": "Gives the setting",
+     "any": [
+      "takes place",
+      "is set in",
+      "set in",
+      " in the ",
+      "years ago",
+      "century"
+     ]
+    },
+    {
+     "label": "Names the problem",
+     "any": [
+      "problem",
+      "conflict",
+      "but ",
+      "has to",
+      "must "
+     ]
+    },
+    {
+     "label": "No 'argument' for 'plot'",
+     "none": [
+      "the argument is",
+      "the argument of"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I keep the ending a secret?",
+    "Did I use the present simple?"
+   ],
+   "model": "Life of Pi takes place in the Pacific Ocean in the 1970s. The main character is Pi, a sixteen-year-old boy from India. His family's ship sinks, and Pi is alone on a small boat. The problem is that he is not really alone: there is a tiger on the boat with him. How can a boy and a tiger survive together?"
+  },
+  "lit-figurative": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Describe it figuratively",
+   "brief": "A literary magazine is running a short competition: 'My workplace at 8 a.m.' The rule is that you must use figurative language, and label it.",
+   "task": "Describe a place you know (your office, your city, your kitchen) in a few sentences. Use one simile, one metaphor and one personification, then add one sentence saying what effect one of them has.",
+   "include": [
+    "A simile with 'like' or 'as'",
+    "A metaphor",
+    "A personification",
+    "One sentence on the effect: 'The simile makes…'"
+   ],
+   "minWords": 60,
+   "checks": [
+    {
+     "label": "Uses a comparison with 'like' or 'as… as'",
+     "any": [
+      " like ",
+      " as "
+     ]
+    },
+    {
+     "label": "Names a device",
+     "any": [
+      "simile",
+      "metaphor",
+      "personification",
+      "personifies",
+      "personified"
+     ]
+    },
+    {
+     "label": "Explains an effect",
+     "any": [
+      "makes",
+      "creates",
+      "suggests",
+      "shows",
+      "gives",
+      "feel",
+      "sound"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Is my metaphor really a metaphor (no 'like' or 'as')?",
+    "Does my personification give a human action to a thing?"
+   ],
+   "model": "At 8 a.m. the office is as quiet as a church. The coffee machine coughs and complains, then slowly wakes up. My inbox is a small mountain that grew in the night, and the morning light sits on my desk like a patient cat, waiting for me to begin.\n\nThe personification of the coffee machine makes the office feel alive before any people arrive."
+  },
+  "lit-poetic-form": {
+   "renderer": "listening",
+   "kind": "listen",
+   "title": "Listen to a poem",
+   "brief": "Poems are made to be heard. Many poets record their own work, and hearing the rhythm makes sound devices much easier to notice.",
+   "taskLabel": "Listen first",
+   "task": "Choose one short poem with audio. Listen twice: once just for the sound, once with the text in front of you.",
+   "resources": [
+    {
+     "label": "The Poetry Archive — poets reading their own work",
+     "url": "https://poetryarchive.org/"
+    },
+    {
+     "label": "Poetry Foundation — poems with audio",
+     "url": "https://www.poetryfoundation.org/"
+    }
+   ],
+   "note": "These open in a new tab. Nothing is tracked, and any recorded poem is fine.",
+   "thenLabel": "Then write about its sound and form",
+   "then": "Write a short note: the poem's title and poet, its form (stanzas, rhyme or free verse), and one sound device with a quotation and what it does.",
+   "include": [
+    "Title and poet",
+    "The form: stanzas, rhyme scheme or free verse",
+    "One sound device, with a quotation",
+    "What the device does"
+   ],
+   "minWords": 60,
+   "checks": [
+    {
+     "label": "Describes the form",
+     "any": [
+      "stanza",
+      "free verse",
+      "rhyme",
+      "couplet",
+      "sonnet",
+      "lines"
+     ]
+    },
+    {
+     "label": "Names a sound device",
+     "any": [
+      "alliteration",
+      "assonance",
+      "rhyme",
+      "repetition",
+      "onomatopoeia",
+      "sibilance",
+      "refrain"
+     ]
+    },
+    {
+     "label": "Says what it does",
+     "any": [
+      "makes",
+      "creates",
+      "sounds",
+      "suggests",
+      "gives",
+      "imitates",
+      "emphasises",
+      "emphasizes"
+     ]
+    },
+    {
+     "label": "Says 'stanza', not 'verse', for a group of lines",
+     "none": [
+      "three verses",
+      "two verses",
+      "four verses",
+      "five verses"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Did I read my quotation aloud to check the sound?",
+    "Did I say what the sound does, not just name it?"
+   ],
+   "model": "'A Noiseless Patient Spider' by Walt Whitman has two stanzas of five lines and is written in free verse, so there is no regular rhyme. The poet repeats soft 's' sounds in 'Ceaselessly musing, venturing, throwing, seeking'. This sibilance sounds quiet and hushed, like the spider itself, which is 'noiseless'. The long lines of the second stanza also stretch out on the page, like a thread being paid out into space."
+  },
+  "lit-analysis": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Write an analytical paragraph",
+   "brief": "You are preparing a teacher's guide for a poetry anthology. Each poem needs one model paragraph of analysis.",
+   "task": "Choose a poem you know (or one of the two in this unit). Write one paragraph: a claim, a short quotation, the device, and its effect. End with a possible alternative reading.",
+   "include": [
+    "A clear claim in the first sentence",
+    "A short quotation as evidence",
+    "The device named, and its effect explained",
+    "'The speaker', not the poet's feelings",
+    "An alternative reading ('could also be read as…')"
+   ],
+   "minWords": 90,
+   "checks": [
+    {
+     "label": "Names a device",
+     "any": [
+      "metaphor",
+      "simile",
+      "personification",
+      "irony",
+      "repetition",
+      "anaphora",
+      "epizeuxis",
+      "alliteration",
+      "enjambment",
+      "caesura",
+      "apostrophe",
+      "euphemism",
+      "symbol",
+      "imagery",
+      "rhyme"
+     ]
+    },
+    {
+     "label": "Explains an effect",
+     "any": [
+      "suggests",
+      "creates",
+      "conveys",
+      "evokes",
+      "emphasises",
+      "emphasizes",
+      "implies",
+      "which makes",
+      "highlights"
+     ]
+    },
+    {
+     "label": "Refers to the speaker or narrator",
+     "any": [
+      "speaker",
+      "narrator",
+      "persona",
+      "voice"
+     ]
+    },
+    {
+     "label": "Offers an alternative reading",
+     "any": [
+      "could also",
+      "might also",
+      "alternatively",
+      "another reading",
+      "can also be read",
+      "on the other hand"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Does every quotation have an effect after it?",
+    "Did I avoid retelling the poem?"
+   ],
+   "model": "Whitman turns the soul's loneliness into something small and physical. In the first stanza, the spider launches 'filament, filament, filament', and the epizeuxis imitates its repeated spinning, which makes the effort feel patient and endless. When the speaker turns to 'O my soul', the apostrophe moves the poem from observation to inner reflection, and the same pattern of reaching out continues through three 'till' clauses. The ending could be read as hopeful, since the thread may 'catch somewhere'; it could also be read as uncertain, because the poem never confirms that it does."
+  },
+  "lit-irony-tone": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Explain the irony",
+   "brief": "At the reading group, it's your turn to open the discussion on Dickinson's 'We talked as Girls do'. The girls 'handled Destinies' and made a 'contract', but 'Heaven made both, impossible / Before another night'.",
+   "task": "Explain the irony in the poem and how the tone changes. About a minute.",
+   "prepSeconds": 60,
+   "speakSeconds": 75,
+   "checklist": [
+    "I named both halves of the irony: what the girls expected and what happened",
+    "I quoted at least one phrase from the poem",
+    "I described the tone at the start and at the end",
+    "I mentioned that death is never named directly",
+    "I talked about 'the speaker', not about Dickinson's life",
+    "I offered a question or an alternative reading to open the discussion"
+   ],
+   "model": "What strikes me first is the irony. The girls talk about themselves as 'Disposers' who 'handled Destinies', almost like people in charge of fate, and they even treat God as 'a Quiet Party' to their agreement. Then, in two flat lines, 'Heaven made both, impossible / Before another night.' So the people who thought they controlled the future can't keep a promise for one night.\n\nThe tone changes too: it starts nostalgic and playful, and ends almost matter-of-fact. And death is never named: it's only 'the Grave' they avoided. I'd like to ask the group: does that flat ending feel cold to you, or is it the speaker holding back grief?"
   }
  }
 }

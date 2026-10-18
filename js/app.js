@@ -19,7 +19,10 @@ const APP = {
       const raw = localStorage.getItem(this.PREF);
       if (!raw) return null;
       const p = JSON.parse(raw);
-      return (p && p.name && p.language) ? p : null;
+      if (!p || !p.name || !p.language) return null;
+      // A card saved with a job that has since been retired falls back to the office.
+      if (!OK.context(p.context)) p.context = 'general-office';
+      return p;
     } catch (e) { return null; }   // private mode, blocked storage, corrupt value
   },
   writeCard(p) { try { localStorage.setItem(this.PREF, JSON.stringify(p)); } catch (e) {} },
@@ -42,6 +45,7 @@ const APP = {
     document.getElementById('app').hidden = false;
 
     this.profile = this.readCard();
+    this.applyJob(this.profile && this.profile.context);
     if (this.profile) { this.newWorkday(); this.go('home'); }
     else this.renderOnboard();
 
@@ -73,6 +77,25 @@ const APP = {
   },
 
   L() { return this.profile && this.profile.language === 'french' ? 'fr' : 'en'; },
+
+  /* Each job has its own colour. It tints the staff card, the header and every
+     challenge screen, so the learner can always see which job they are doing. */
+  DEFAULT_JOB: '#1F3A56',
+  applyJob(id) {
+    const c = id && OK.context(id);
+    const color = (c && c.color) || this.DEFAULT_JOB;
+    document.documentElement.style.setProperty('--job', color);
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', color);
+    const tag = document.getElementById('jobtag');
+    if (!tag) return;
+    tag.hidden = !c;
+    if (c) {
+      const L = (this.profile ? this.profile.language : this.draftLang) === 'french' ? 'fr' : 'en';
+      tag.innerHTML = `<i>${c.icon}</i><span>${esc(c.label[L])}</span>`;
+      tag.title = c.label[L];
+    }
+  },
   t(en, fr) { return this.L() === 'fr' ? fr : en; },
 
   /* ============================================================
@@ -80,6 +103,8 @@ const APP = {
      ============================================================ */
   renderOnboard() {
     const draft = { name: '', language: 'english', context: '', level: 'intermediate', avatar: 'blank' };
+    this.draftLang = draft.language;
+    this.applyJob(null);
     const host = document.getElementById('sc-onboard');
     const ctxLabel = () => {
       const c = OK.context(draft.context);
@@ -179,14 +204,15 @@ const APP = {
     const drawContexts = () => {
       const L = draft.language === 'french' ? 'fr' : 'en';
       $('#f-ctxlist').innerHTML = OK.data.contexts.map(c => `
-        <button class="pk" data-v="${c.id}" aria-pressed="${c.id === draft.context}" style="padding:15px 11px">
+        <button class="pk job" data-v="${c.id}" aria-pressed="${c.id === draft.context}" style="--c:${c.color || this.DEFAULT_JOB}">
           <div style="font-size:24px;margin-bottom:5px">${c.icon}</div>
           <b>${esc(c.label[L])}</b>
         </button>`).join('');
-      group('#f-ctxlist', 'context');
+      group('#f-ctxlist', 'context', () => this.applyJob(draft.context));
     };
+    const langChanged = () => { this.draftLang = draft.language; drawContexts(); this.applyJob(draft.context); };
 
-    group('#f-lang', 'language', drawContexts);
+    group('#f-lang', 'language', langChanged);
     group('#f-level', 'level');
     group('#f-av', 'avatar', () => { $('#f-photo').innerHTML = avatarSVG(draft.avatar); });
     drawContexts();
@@ -232,7 +258,7 @@ const APP = {
             <h2>${this.t('Welcome, ', 'Bienvenue, ')}${esc(p.name)}</h2>
             <div class="dash-meta">
               <span class="chip chip-n">${langName}</span>
-              <span class="chip chip-o">${ctx.icon} ${esc(ctx.label[L])}</span>
+              <span class="chip chip-job">${ctx.icon} ${esc(ctx.label[L])}</span>
               <span class="chip">${lvl}</span>
             </div>
           </div>
@@ -281,6 +307,7 @@ const APP = {
     $('#h-ctx').onclick  = () => this.quickPick('context');
     $('#h-lang').onclick = () => this.quickPick('language');
     $('#h-reset').onclick = () => { this.clearCard(); this.profile = null; this.workday = null; this.renderOnboard(); };
+    this.applyJob(p.context);
     const res = $('#h-res'); if (res) res.onclick = () => this.renderResults();
     document.querySelectorAll('#sc-home [data-go]').forEach(b =>
       b.onclick = () => { this.renderLibrary(); this.go('library'); });
@@ -292,13 +319,13 @@ const APP = {
     const isLang = which === 'language';
     const opts = isLang
       ? [{ id: 'english', label: 'English', icon: '🇬🇧' }, { id: 'french', label: 'Français', icon: '🇫🇷' }]
-      : OK.data.contexts.map(c => ({ id: c.id, label: c.label[L], icon: c.icon }));
+      : OK.data.contexts.map(c => ({ id: c.id, label: c.label[L], icon: c.icon, color: c.color }));
     document.getElementById('sc-home').insertAdjacentHTML('afterbegin', `
       <div class="wrap" id="qp" style="padding-top:26px">
         <div class="panel">
           <div class="panel-lab">${isLang ? this.t('Change language', 'Changer de langue') : this.t('Change workday', 'Changer de contexte')}</div>
           <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px">
-            ${opts.map(o => `<button class="pk" data-v="${o.id}" style="padding:14px 10px">
+            ${opts.map(o => `<button class="pk ${o.color ? 'job' : ''}" data-v="${o.id}" ${o.color ? `style="--c:${o.color}"` : 'style="padding:14px 10px"'}>
               <div style="font-size:22px;margin-bottom:4px">${o.icon}</div><b>${esc(o.label)}</b></button>`).join('')}
           </div>
           <div class="btnrow" style="margin-top:16px"><button class="btn btn-g" id="qp-x">Cancel</button></div>
@@ -937,7 +964,7 @@ const APP = {
   /* ---------- brand marks ---------- */
   lanyardSVG() {
     return `<div class="lanyard"><svg width="120" height="66" viewBox="0 0 120 66" aria-hidden="true">
-      <path d="M40 0 L56 40 M80 0 L64 40" stroke="#375A7E" stroke-width="8" fill="none" stroke-linejoin="round"/>
+      <path d="M40 0 L56 40 M80 0 L64 40" style="stroke:var(--job)" stroke-width="8" fill="none" stroke-linejoin="round"/>
       <rect x="52" y="38" width="16" height="12" rx="3" fill="#C47B26"/>
       <circle cx="60" cy="56" r="8" fill="none" stroke="#8A98A3" stroke-width="3"/>
     </svg></div>`;

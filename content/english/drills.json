@@ -2546,6 +2546,426 @@
     "instruction": "Four gaps: a known fact, a concession, a condition and a result.",
     "feedback": "'In light of' + noun, 'Nevertheless' + comma, 'provided that' for a condition, 'Consequently' for the result. Each one says something different, which is the point."
    }
+  ],
+  "lit-genres": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence is correct?",
+    "instruction": "Only one of these is correct.",
+    "options": [
+     {
+      "text": "I'm reading a novel by Chimamanda Ngozi Adichie.",
+      "score": 100,
+      "feedback": "Correct. A long story is a 'novel', and a book is 'by' its writer."
+     },
+     {
+      "text": "I'm reading a romance of Chimamanda Ngozi Adichie.",
+      "score": 25,
+      "feedback": "'Romance' means a love story, and we say 'by', not 'of'."
+     },
+     {
+      "text": "I'm reading a novel of Chimamanda Ngozi Adichie.",
+      "score": 50,
+      "feedback": "The genre is right, but a book is 'by' its writer."
+     },
+     {
+      "text": "I'm reading a novela by Chimamanda Ngozi Adichie.",
+      "score": 25,
+      "feedback": "'Novela' is Spanish. In English it's 'novel'. (A 'novella' is a short novel.)"
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "It has character names, dialogue and stage directions, so it's a {}.",
+    "accept": [
+     "play",
+     "drama"
+    ],
+    "size": 6,
+    "instruction": "One word.",
+    "hint": "Actors perform it. It starts with 'p'.",
+    "feedback": "Dialogue plus stage directions means drama: a 'play'."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete the bookshop labels.",
+    "text": "Shelf 1: Long stories in prose: {}s.\n\nShelf 2: The true story of the writer's own life: {}.\n\nShelf 3: Texts in lines and stanzas: {}.",
+    "gaps": [
+     {
+      "accept": [
+       "novel"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "autobiography",
+       "autobiographies",
+       "memoir",
+       "memoirs"
+      ],
+      "size": 13
+     },
+     {
+      "accept": [
+       "poetry",
+       "poems",
+       "poem"
+      ],
+      "size": 7
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "A 'novel' is a long story; an 'autobiography' (or memoir) is about the writer's own life; lines and stanzas mean 'poetry'."
+   }
+  ],
+  "lit-story": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence is correct?",
+    "instruction": "Only one of these is correct.",
+    "options": [
+     {
+      "text": "The story takes place in a small village in Peru.",
+      "score": 100,
+      "feedback": "Correct. 'Takes place' is the natural phrase for the setting."
+     },
+     {
+      "text": "The story passes in a small village in Peru.",
+      "score": 25,
+      "feedback": "'Pasa' in Spanish, but in English a story 'takes place' or 'is set' somewhere."
+     },
+     {
+      "text": "The argument takes place in a small village in Peru.",
+      "score": 25,
+      "feedback": "'Argument' means a fight. The events of a story are the 'plot'."
+     },
+     {
+      "text": "The story is taking place in a small village in Peru.",
+      "score": 50,
+      "feedback": "Understandable, but use the present simple to talk about a story: 'takes place'."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "The most exciting moment of the story, when everything changes, is the {}.",
+    "accept": [
+     "climax",
+     "turning point"
+    ],
+    "size": 7,
+    "instruction": "One word.",
+    "hint": "It starts with 'cl'.",
+    "feedback": "The 'climax' is the peak of tension, the turning point of the plot."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete the book club notes.",
+    "text": "The main {} is Rosa, a young baker. The {} is Naples in the 1950s.\n\nThe {} is that her shop is going to close, and she has one month to save it.",
+    "gaps": [
+     {
+      "accept": [
+       "character"
+      ],
+      "size": 9
+     },
+     {
+      "accept": [
+       "setting"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "problem",
+       "conflict"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Character (who), setting (where and when), conflict or problem (what goes wrong)."
+   }
+  ],
+  "lit-figurative": [
+   {
+    "renderer": "choice",
+    "prompt": "Which label is correct?",
+    "instruction": "Only one of these is correct.",
+    "options": [
+     {
+      "text": "'The deadline crept closer' is personification.",
+      "score": 100,
+      "feedback": "Correct. A deadline can't creep: it is given a human (or animal) action."
+     },
+     {
+      "text": "'The office was like a fridge' is a metaphor.",
+      "score": 25,
+      "feedback": "'Like' makes it a simile."
+     },
+     {
+      "text": "'My inbox is a battlefield' is a simile.",
+      "score": 25,
+      "feedback": "No 'like' or 'as': it's a metaphor."
+     },
+     {
+      "text": "'I've got a million emails' is understatement.",
+      "score": 25,
+      "feedback": "It's the opposite: hyperbole, a deliberate exaggeration."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "'The meeting was as long as a winter' is a {}, because it compares with 'as'.",
+    "accept": [
+     "simile"
+    ],
+    "size": 7,
+    "instruction": "One word.",
+    "hint": "It starts with 's'.",
+    "feedback": "A comparison with 'like' or 'as' is a 'simile'."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete the editor's notes.",
+    "text": "'Time is a thief' is a {}: it says time IS a thief.\n\n'The sea roared angrily' is {}: the sea acts like a person.\n\n'A deafening silence' is an {}: two opposite ideas side by side.",
+    "gaps": [
+     {
+      "accept": [
+       "metaphor"
+      ],
+      "size": 8
+     },
+     {
+      "accept": [
+       "personification"
+      ],
+      "size": 15
+     },
+     {
+      "accept": [
+       "oxymoron"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Metaphor (one thing is another), personification (human qualities), oxymoron (two contradictory words)."
+   }
+  ],
+  "lit-poetic-form": [
+   {
+    "renderer": "choice",
+    "prompt": "Which description is correct?",
+    "instruction": "Only one of these is correct.",
+    "options": [
+     {
+      "text": "'Wild and windy weather' uses alliteration.",
+      "score": 100,
+      "feedback": "Correct. The same first consonant sound, 'w', repeats."
+     },
+     {
+      "text": "'Wild and windy weather' uses rhyme.",
+      "score": 25,
+      "feedback": "Rhyme matches end sounds (night / write). Here the beginnings match."
+     },
+     {
+      "text": "'Go slow over the road' uses alliteration.",
+      "score": 25,
+      "feedback": "Here the vowel sound repeats: that's assonance."
+     },
+     {
+      "text": "A poem in free verse has a fixed rhyme scheme.",
+      "score": 0,
+      "feedback": "Free verse has no fixed rhyme scheme or metre."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "A group of lines in a poem, like a paragraph, is called a {}.",
+    "accept": [
+     "stanza"
+    ],
+    "size": 7,
+    "instruction": "One word.",
+    "hint": "It starts with 'st'.",
+    "feedback": "A 'stanza' is a group of lines. Not a 'verse'."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete the notes on a sonnet.",
+    "text": "A sonnet has fourteen {}.\n\nIn a Shakespearean sonnet, the first four lines rhyme ABAB: this pattern is the rhyme {}.\n\nThe last two lines rhyme together: they are a {}.",
+    "gaps": [
+     {
+      "accept": [
+       "lines"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "scheme"
+      ],
+      "size": 7
+     },
+     {
+      "accept": [
+       "couplet",
+       "rhyming couplet"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "Fourteen lines, a rhyme scheme shown with letters, and a closing couplet."
+   }
+  ],
+  "lit-analysis": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence is real analysis?",
+    "instruction": "Only one of these explains an effect.",
+    "options": [
+     {
+      "text": "The anaphora of 'Till… till… till…' builds suspense, holding back the moment of connection until the poem's final words.",
+      "score": 100,
+      "feedback": "Device, evidence and effect, in one sentence."
+     },
+     {
+      "text": "There is anaphora in the last two lines.",
+      "score": 25,
+      "feedback": "An observation. What does it do?"
+     },
+     {
+      "text": "Whitman was lonely, so he wrote about a spider.",
+      "score": 0,
+      "feedback": "Biography and guesswork, not analysis, and it confuses the poet with the speaker."
+     },
+     {
+      "text": "The anaphora is very effective and makes the poem better.",
+      "score": 25,
+      "feedback": "'Effective' at what? Name the effect."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "The voice in a poem is called the {}, and it is not necessarily the poet.",
+    "accept": [
+     "speaker",
+     "persona",
+     "poetic voice"
+    ],
+    "size": 8,
+    "instruction": "One word.",
+    "hint": "It starts with 'sp'.",
+    "feedback": "Write about 'the speaker', not the poet, unless you have evidence."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete the analytical sentence.",
+    "text": "Dickinson's dashes create pauses, {} imitates a conversation that keeps trailing off.\n\nThis {} a sense of hesitation, as if the memory is coming back in pieces.",
+    "gaps": [
+     {
+      "accept": [
+       "which"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "creates",
+       "gives",
+       "conveys",
+       "evokes",
+       "suggests",
+       "produces"
+      ],
+      "size": 8
+     }
+    ],
+    "instruction": "Two gaps.",
+    "feedback": "'…, which…' links evidence to effect; verbs such as 'creates', 'conveys' and 'evokes' name the effect."
+   }
+  ],
+  "lit-irony-tone": [
+   {
+    "renderer": "choice",
+    "prompt": "Which sentence uses the terms correctly?",
+    "instruction": "Only one of these is right.",
+    "options": [
+     {
+      "text": "We know the bridge is unsafe, but the hero doesn't: that is dramatic irony.",
+      "score": 100,
+      "feedback": "Correct. The audience knows something the character doesn't."
+     },
+     {
+      "text": "The mood of the narrator is bitter.",
+      "score": 25,
+      "feedback": "The narrator has a tone. Mood is what the reader feels."
+     },
+     {
+      "text": "A motif appears only once, at the climax.",
+      "score": 0,
+      "feedback": "A motif recurs. That is the whole point."
+     },
+     {
+      "text": "Irony means the writer uses a lot of metaphors.",
+      "score": 0,
+      "feedback": "Irony is a gap between what is said or expected and what is meant or happens."
+     }
+    ]
+   },
+   {
+    "renderer": "typing",
+    "prompt": "Type the missing word.",
+    "sentence": "'He passed away' is a {} for 'he died'.",
+    "accept": [
+     "euphemism"
+    ],
+    "size": 9,
+    "instruction": "One word.",
+    "hint": "It starts with 'eu'.",
+    "feedback": "A softer phrase for something harsh is a 'euphemism'."
+   },
+   {
+    "renderer": "cloze",
+    "prompt": "Complete the reading-group notes.",
+    "text": "The locked door appears five times: it is a {} in the story.\n\nThe narrator sounds cheerful, so the {} is light, but the {} is tense, because we know what is behind the door.",
+    "gaps": [
+     {
+      "accept": [
+       "motif",
+       "symbol"
+      ],
+      "size": 6
+     },
+     {
+      "accept": [
+       "tone"
+      ],
+      "size": 5
+     },
+     {
+      "accept": [
+       "mood",
+       "atmosphere"
+      ],
+      "size": 5
+     }
+    ],
+    "instruction": "Three gaps.",
+    "feedback": "A recurring detail is a motif; the narrator's attitude is tone; the reader's feeling is mood."
+   }
   ]
  }
 }

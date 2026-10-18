@@ -1555,7 +1555,6 @@
    "id": "fr-entretien-01",
    "level": "B2",
    "contexts": [
-    "job-search",
     "business",
     "technology",
     "education",
@@ -1626,7 +1625,6 @@
    "id": "fr-negocier-01",
    "level": "B2",
    "contexts": [
-    "job-search",
     "management",
     "business",
     "general-office",
@@ -2027,7 +2025,6 @@
    "id": "fr-production-orale-01",
    "level": "B1",
    "contexts": [
-    "job-search",
     "education",
     "business",
     "general-office",
@@ -2411,7 +2408,6 @@
    "id": "fr-raconter-01",
    "level": "B1",
    "contexts": [
-    "job-search",
     "business",
     "technology",
     "design-creative",
@@ -2758,7 +2754,6 @@
    "id": "fr-se-presenter-01",
    "level": "A2",
    "contexts": [
-    "job-search",
     "business",
     "education",
     "technology",
@@ -2875,7 +2870,6 @@
     "business",
     "marketing",
     "hospitality",
-    "job-search",
     "education"
    ],
    "category": "travel",
@@ -9217,6 +9211,1442 @@
      "Est-ce que je rends clairement le choix des priorités à mon responsable ?"
     ],
     "model": "Bonjour Marc,\n\nMerci pour ta confiance : le lancement Orsan est important, et je tiens à ce qu'il se passe bien.\n\nEn revanche, je ne peux pas assurer trois points par semaine. Avec le dossier Vidal et la clôture du trimestre, je suis déjà au maximum, et je risquerais de mal faire les deux.\n\nJe te propose une solution : je pourrais animer un point hebdomadaire le lundi, et envoyer au client un compte rendu écrit le jeudi. Je pourrais aussi en assurer deux, à condition que le rapport Vidal soit décalé de deux semaines.\n\nQuel dossier est prioritaire pour toi ? Dis-moi ce que tu préfères, et je m'organise dès aujourd'hui.\n\nBonne journée,\nLaura"
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-new-arrivals-01",
+   "level": "A2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "library",
+   "scenario": "new-arrivals-table",
+   "topic": "lit-genres",
+   "guide": "lit-genres",
+   "interaction": "matching",
+   "before": {
+    "brief": "Vous travaillez dans une librairie. Les nouveautés ont besoin d'une étiquette, et l'étiquette doit donner le bon genre.",
+    "prompt": "Associez chaque genre à la bonne description.",
+    "pairs": [
+     {
+      "left": "un roman",
+      "right": "une longue histoire inventée, en prose"
+     },
+     {
+      "left": "une nouvelle",
+      "right": "une histoire inventée et courte, qu'on lit en une fois"
+     },
+     {
+      "left": "un recueil de poèmes",
+      "right": "un livre de textes écrits en vers et en strophes"
+     },
+     {
+      "left": "une pièce de théâtre",
+      "right": "une histoire écrite pour des acteurs, avec des dialogues"
+     },
+     {
+      "left": "une biographie",
+      "right": "l'histoire vraie de la vie d'une autre personne"
+     },
+     {
+      "left": "une autobiographie",
+      "right": "l'histoire vraie de la vie de l'auteur lui-même"
+     }
+    ],
+    "feedback": "Deux questions suffisent presque toujours : c'est inventé ou vrai ? C'est écrit en paragraphes, en vers ou en dialogues ? Et attention : « une nouvelle » est courte, « un roman » est long."
+   },
+   "after": {
+    "brief": "Une école commande des livres pour sa bibliothèque. Le bon de commande utilise ces mots.",
+    "prompt": "Associez chaque mot à son sens.",
+    "pairs": [
+     {
+      "left": "une fable",
+      "right": "une histoire courte, souvent avec des animaux, qui finit par une morale"
+     },
+     {
+      "left": "un mythe",
+      "right": "un récit traditionnel sur les dieux ou l'origine du monde"
+     },
+     {
+      "left": "une légende",
+      "right": "un récit traditionnel sur un héros ou un lieu, entre histoire et imagination"
+     },
+     {
+      "left": "une anthologie",
+      "right": "un choix de textes de plusieurs auteurs, dans un seul livre"
+     },
+     {
+      "left": "des mémoires",
+      "right": "les souvenirs vrais d'une personne sur son époque et sa vie"
+     },
+     {
+      "left": "un conte",
+      "right": "une histoire merveilleuse qui commence souvent par « Il était une fois »"
+     }
+    ],
+    "feedback": "La fable donne une leçon ; le mythe explique le monde ; la légende mélange l'histoire et l'imagination ; le conte commence par « Il était une fois ». Une anthologie réunit plusieurs auteurs."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-newsletter-01",
+   "level": "A2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "report",
+   "scenario": "book-club-newsletter",
+   "topic": "lit-genres",
+   "guide": "lit-genres",
+   "interaction": "read-report",
+   "before": {
+    "brief": "Le club de lecture de la médiathèque se réunit ce soir. Lisez la lettre d'information du mois avant d'y aller.",
+    "prompt": "Lisez la lettre et répondez aux questions.",
+    "doc": {
+     "kind": "report",
+     "title": "Club de lecture — octobre",
+     "meta": [
+      "De : Médiathèque municipale",
+      "Réunion : jeudi, 19 h, salle 2"
+     ],
+     "text": "Ce mois-ci, nous avons trois livres très différents.\n\nNotre livre principal est « La Maison du fleuve », un long roman d'Ana Ruiz. C'est l'histoire de trois sœurs qui retournent dans la maison de leur famille, en Galice, après vingt ans.\n\nPour le groupe poésie, nous lisons « Petites Lumières », un recueil de poèmes courts sur la vie en ville. La plupart des poèmes ne riment pas, et beaucoup ont seulement cinq ou six vers.\n\nEnfin, le groupe théâtre lit « Dernier Train », une pièce en deux actes. Il y a seulement deux personnages, et toute l'action se passe dans une gare, la nuit.\n\nApportez votre livre, s'il vous plaît. La médiathèque a cinq exemplaires de chaque livre."
+    },
+    "questions": [
+     {
+      "q": "Quel livre est une pièce de théâtre ?",
+      "options": [
+       {
+        "text": "« Dernier Train »",
+        "correct": true,
+        "feedback": "Correct : « une pièce en deux actes », avec des personnages et une action dans un seul lieu."
+       },
+       {
+        "text": "« La Maison du fleuve »",
+        "correct": false,
+        "feedback": "« La Maison du fleuve » est un long roman."
+       },
+       {
+        "text": "« Petites Lumières »",
+        "correct": false,
+        "feedback": "« Petites Lumières » est un recueil de poèmes."
+       }
+      ]
+     },
+     {
+      "q": "De quoi parle « La Maison du fleuve » ?",
+      "options": [
+       {
+        "text": "De trois sœurs qui retournent dans la maison de leur famille",
+        "correct": true,
+        "feedback": "Correct : « trois sœurs qui retournent dans la maison de leur famille, en Galice »."
+       },
+       {
+        "text": "De deux personnes dans une gare",
+        "correct": false,
+        "feedback": "Ça, c'est « Dernier Train »."
+       },
+       {
+        "text": "De la vie en ville",
+        "correct": false,
+        "feedback": "Ça, c'est le recueil de poèmes."
+       }
+      ]
+     },
+     {
+      "q": "Qu'est-ce qu'on apprend sur les poèmes de « Petites Lumières » ?",
+      "options": [
+       {
+        "text": "La plupart ne riment pas, et beaucoup sont courts.",
+        "correct": true,
+        "feedback": "Correct : « La plupart des poèmes ne riment pas, et beaucoup ont seulement cinq ou six vers »."
+       },
+       {
+        "text": "Ils racontent tous une seule longue histoire.",
+        "correct": false,
+        "feedback": "La lettre ne dit pas cela : ce sont des poèmes courts sur la vie en ville."
+       },
+       {
+        "text": "Ils sont écrits pour des acteurs.",
+        "correct": false,
+        "feedback": "Ça, c'est la définition d'une pièce de théâtre."
+       }
+      ]
+     },
+     {
+      "q": "Combien d'exemplaires de chaque livre a la médiathèque ?",
+      "options": [
+       {
+        "text": "Cinq",
+        "correct": true,
+        "feedback": "Correct : « La médiathèque a cinq exemplaires de chaque livre »."
+       },
+       {
+        "text": "Deux",
+        "correct": false,
+        "feedback": "Deux, c'est le nombre d'actes de « Dernier Train », et de personnages."
+       },
+       {
+        "text": "Trois",
+        "correct": false,
+        "feedback": "Trois, c'est le nombre de livres, et de sœurs."
+       }
+      ]
+     }
+    ]
+   },
+   "after": {
+    "brief": "Maintenant, vous affichez le programme du mois prochain à la médiathèque. Vérifiez-le avant de le mettre au mur.",
+    "prompt": "Lisez l'affiche et répondez aux questions.",
+    "doc": {
+     "kind": "advert",
+     "title": "Novembre à la médiathèque",
+     "meta": [
+      "Toutes les animations sont gratuites"
+     ],
+     "text": "Samedi 4, 11 h — Fables en famille. Des histoires courtes avec des animaux, et leur morale. Pour les enfants de 5 à 9 ans.\n\nMercredi 15, 19 h — Rencontre avec un auteur. Le journaliste Samir Benali présente son dernier livre, une biographie de la scientifique Marie Curie.\n\nVendredi 24, 20 h — Scène ouverte de poésie. Lisez un de vos poèmes, ou un poème que vous aimez. Trois minutes maximum par personne.\n\nRéservez votre place à l'accueil."
+    },
+    "questions": [
+     {
+      "q": "Quelle animation parle de l'histoire vraie de la vie de quelqu'un ?",
+      "options": [
+       {
+        "text": "La rencontre avec un auteur",
+        "correct": true,
+        "feedback": "Correct : une biographie raconte la vie vraie d'une autre personne."
+       },
+       {
+        "text": "Fables en famille",
+        "correct": false,
+        "feedback": "Les fables sont des histoires inventées, avec une morale."
+       },
+       {
+        "text": "La scène ouverte de poésie",
+        "correct": false,
+        "feedback": "Cette animation parle de poèmes."
+       }
+      ]
+     },
+     {
+      "q": "Qu'est-ce qu'une fable, d'après l'affiche ?",
+      "options": [
+       {
+        "text": "Une histoire courte avec des animaux et une morale",
+        "correct": true,
+        "feedback": "Correct : « Des histoires courtes avec des animaux, et leur morale »."
+       },
+       {
+        "text": "Un long roman pour adultes",
+        "correct": false,
+        "feedback": "L'affiche dit que les fables sont courtes, et pour les enfants."
+       },
+       {
+        "text": "Une histoire vraie sur une scientifique",
+        "correct": false,
+        "feedback": "Ça, c'est la biographie de Marie Curie."
+       }
+      ]
+     },
+     {
+      "q": "À la scène ouverte, qu'est-ce qu'on peut faire ?",
+      "options": [
+       {
+        "text": "Lire son poème ou un poème qu'on aime, trois minutes maximum",
+        "correct": true,
+        "feedback": "Correct : « Trois minutes maximum par personne »."
+       },
+       {
+        "text": "Rencontrer un poète célèbre",
+        "correct": false,
+        "feedback": "L'affiche ne dit pas cela."
+       },
+       {
+        "text": "Écrire un poème avec un professeur",
+        "correct": false,
+        "feedback": "L'affiche ne dit pas cela."
+       }
+      ]
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-story-order-01",
+   "level": "A2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "editorial",
+   "scenario": "plot-summary-cards",
+   "topic": "lit-story-elements",
+   "guide": "lit-story",
+   "interaction": "sentence-order",
+   "before": {
+    "brief": "Une maison d'édition prépare des cartes pour un livre d'enfants. Les cartes de la fable « Le Lièvre et la Tortue », de La Fontaine, sont dans le désordre.",
+    "prompt": "Remettez les étapes de l'histoire dans l'ordre.",
+    "items": [
+     "Une tortue dit à un lièvre : « Je vais arriver avant vous ! » Le lièvre rit : il est très rapide.",
+     "La tortue part tout de suite. Elle avance lentement, mais elle ne s'arrête jamais.",
+     "Pendant ce temps, le lièvre est sûr de gagner : il mange de l'herbe, il dort, il écoute le vent.",
+     "Enfin, le lièvre part très vite, mais c'est trop tard : la tortue arrive la première.",
+     "La morale : « Rien ne sert de courir ; il faut partir à point. »"
+    ],
+    "feedback": "Situation initiale (les personnages et le pari) → péripéties (la tortue avance, le lièvre attend) → dénouement (la tortue gagne) → la morale. Petit secret : chez La Fontaine, la morale est au tout début de la fable, au premier vers !"
+   },
+   "after": {
+    "brief": "Maintenant, la quatrième de couverture d'un nouveau roman. Les phrases du résumé sont dans le désordre.",
+    "prompt": "Remettez le résumé dans l'ordre.",
+    "items": [
+     "Marseille, 1998. Inès a vingt-trois ans. Elle travaille dans le petit restaurant de son grand-père.",
+     "Un jour, une lettre arrive : l'immeuble est vendu, et le restaurant doit fermer dans trois mois.",
+     "Inès décide de participer à un grand concours de cuisine. Avec le prix, elle peut sauver le restaurant.",
+     "Mais le soir de la finale, son grand-père tombe malade, et elle doit cuisiner seule.",
+     "Dans la salle, ce soir-là, quelqu'un la regarde… et cette personne va tout changer."
+    ],
+    "feedback": "Le cadre et le personnage d'abord (situation initiale), puis l'élément perturbateur (la lettre), le projet, le point culminant (la finale)… et une quatrième de couverture s'arrête avant le dénouement : elle ne dévoile jamais la fin !"
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-book-club-01",
+   "level": "A2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "speaking",
+   "scenario": "book-club-turn",
+   "topic": "lit-story-elements",
+   "guide": "lit-story",
+   "interaction": "speaking",
+   "before": {
+    "brief": "C'est votre tour au club de lecture. Chacun présente au groupe une histoire qu'il aime.",
+    "prompt": "Parlez d'une histoire que vous connaissez : un livre, un film ou un conte. Dites le titre, le personnage principal, où se passe l'histoire, et quel est le problème. Ne racontez pas la fin !",
+    "prepSeconds": 30,
+    "speakSeconds": 45,
+    "checklist": [
+     "J'ai dit le titre et le genre",
+     "J'ai présenté le personnage principal",
+     "J'ai dit où et quand l'histoire se passe",
+     "J'ai expliqué le problème",
+     "J'ai parlé au présent (« il habite », « elle trouve »)",
+     "Je n'ai pas raconté la fin"
+    ],
+    "model": "Je voudrais parler du Petit Prince. C'est un court récit, presque un conte, d'Antoine de Saint-Exupéry. Le personnage principal est un petit prince qui habite sur une toute petite planète. L'histoire se passe dans le désert : l'avion d'un pilote est en panne. Le problème, c'est que le pilote doit réparer son avion, mais le petit prince pose beaucoup de questions… Je ne vous raconte pas la fin !",
+    "feedback": "Le titre et le genre, le personnage, le cadre, le problème : quatre phrases simples font déjà un bon résumé. Le présent est le temps normal pour raconter une histoire."
+   },
+   "after": {
+    "brief": "À la librairie, une cliente vous demande : « Vous pouvez me conseiller un livre pour ma fille ? Elle a douze ans, et elle adore les histoires d'aventure. »",
+    "prompt": "Conseillez un livre. Dites quel genre de livre c'est, qui est le personnage principal, où se passe l'histoire, et pourquoi elle va l'aimer.",
+    "prepSeconds": 30,
+    "speakSeconds": 45,
+    "checklist": [
+     "J'ai donné un titre et un genre",
+     "J'ai présenté le personnage principal",
+     "J'ai dit où se passe l'histoire",
+     "J'ai donné une raison avec « parce que »",
+     "J'ai parlé au présent",
+     "Je n'ai pas raconté la fin"
+    ],
+    "model": "Je vous conseille Le Tour du monde en quatre-vingts jours, de Jules Verne. C'est un roman d'aventures. Le personnage principal est Phileas Fogg, un Anglais très calme et très précis. Il fait un pari : faire le tour du monde en quatre-vingts jours ! L'histoire se passe en 1872, en train, en bateau et même à dos d'éléphant. Je pense que votre fille va l'aimer parce que c'est rapide, drôle et plein de surprises.",
+    "feedback": "Un bon conseil donne le genre, un personnage intéressant, le cadre, et une raison adaptée à cette lectrice."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-blurb-devices-01",
+   "level": "B1",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "editorial",
+   "scenario": "manuscript-devices",
+   "topic": "lit-figures",
+   "guide": "lit-figurative",
+   "interaction": "categorise",
+   "before": {
+    "brief": "Vous êtes assistant(e) d'édition. L'éditrice veut la liste des plus belles images d'un nouveau roman, classées par figure de style.",
+    "prompt": "Placez chaque phrase dans le bon groupe.",
+    "bins": [
+     "Comparaison",
+     "Métaphore",
+     "Personnification"
+    ],
+    "items": [
+     {
+      "text": "Sa voix était douce comme du velours.",
+      "bin": "Comparaison"
+     },
+     {
+      "text": "Les rues étaient vides, pareilles à un dimanche matin.",
+      "bin": "Comparaison"
+     },
+     {
+      "text": "Le temps est un voleur.",
+      "bin": "Métaphore"
+     },
+     {
+      "text": "La ville était un animal endormi.",
+      "bin": "Métaphore"
+     },
+     {
+      "text": "Le vent murmurait un avertissement.",
+      "bin": "Personnification"
+     },
+     {
+      "text": "La vieille maison nous regardait du haut de la colline.",
+      "bin": "Personnification"
+     }
+    ],
+    "feedback": "Un outil (« comme », « pareil à ») → comparaison. Une chose EST une autre, sans outil → métaphore. Une chose murmure ou regarde, comme une personne → personnification."
+   },
+   "after": {
+    "brief": "Le service communication a préparé des slogans et des citations pour le festival de poésie. L'éditrice veut qu'on les classe avant l'impression.",
+    "prompt": "Placez chaque phrase dans le bon groupe.",
+    "bins": [
+     "Hyperbole",
+     "Litote",
+     "Oxymore"
+    ],
+    "items": [
+     {
+      "text": "Un million de poèmes en un seul week-end !",
+      "bin": "Hyperbole"
+     },
+     {
+      "text": "La plus grande soirée de toute l'histoire des mots !",
+      "bin": "Hyperbole"
+     },
+     {
+      "text": "« Va, je ne te hais point. » (Corneille, Le Cid)",
+      "bin": "Litote"
+     },
+     {
+      "text": "Trois jours de poésie : ce ne sera pas désagréable.",
+      "bin": "Litote"
+     },
+     {
+      "text": "« Cette obscure clarté qui tombe des étoiles » (Corneille, Le Cid)",
+      "bin": "Oxymore"
+     },
+     {
+      "text": "Venez écouter un silence assourdissant.",
+      "bin": "Oxymore"
+     }
+    ],
+    "feedback": "L'hyperbole grossit ; la litote dit moins pour faire entendre plus (Chimène, dans Le Cid, avoue en fait son amour à Rodrigue) ; l'oxymore réunit deux mots contraires (« obscure » et « clarté »)."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-author-email-01",
+   "level": "B1",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "inbox",
+   "scenario": "edit-notes-author",
+   "topic": "lit-figures",
+   "guide": "lit-figurative",
+   "interaction": "email-gaps",
+   "before": {
+    "brief": "Vous écrivez à une autrice pour lui donner des retours sur le premier chapitre de son roman. Choisissez le bon terme pour chaque blanc.",
+    "prompt": "Complétez le courriel.",
+    "doc": {
+     "kind": "email",
+     "title": "Objet : Retours sur le chapitre un",
+     "meta": [
+      "À : Hélène Marchal"
+     ]
+    },
+    "text": "Chère Hélène,\n\nMerci pour le premier chapitre. Nous aimons beaucoup la première phrase, « La ville était un animal endormi ». C'est {} très forte, et elle installe tout de suite l'atmosphère.\n\nPage 3, « le vent murmurait dans les arbres » est {} réussie, mais le vent murmure encore page 5. Pourriez-vous changer l'une des deux ?\n\nNous avons aussi aimé « silencieux comme la neige ». C'est {} simple et claire. Enfin, « je te l'ai dit mille fois » est évidemment {} : elle fonctionne bien dans les dialogues de Sam, parce qu'elle sonne comme une vraie conversation.\n\nBien cordialement,\nMarta",
+    "gaps": [
+     {
+      "options": [
+       "une métaphore",
+       "une comparaison",
+       "une rime",
+       "une intrigue"
+      ],
+      "answer": 0,
+      "feedback": "Pas de « comme » : la ville EST un animal. C'est une métaphore."
+     },
+     {
+      "options": [
+       "une personnification",
+       "une allitération",
+       "une métaphore filée",
+       "une hyperbole"
+      ],
+      "answer": 0,
+      "feedback": "Le vent fait une action humaine, murmurer : c'est une personnification."
+     },
+     {
+      "options": [
+       "une comparaison",
+       "une métaphore",
+       "un oxymore",
+       "une strophe"
+      ],
+      "answer": 0,
+      "feedback": "« Silencieux comme » : il y a l'outil « comme », donc c'est une comparaison."
+     },
+     {
+      "options": [
+       "une hyperbole",
+       "une litote",
+       "une personnification",
+       "une ironie"
+      ],
+      "answer": 0,
+      "feedback": "Personne ne l'a vraiment dit mille fois : c'est une exagération volontaire, une hyperbole."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Le traducteur espagnol du roman a des questions. Vous lui répondez avec les explications de l'éditrice.",
+    "prompt": "Complétez le courriel.",
+    "doc": {
+     "kind": "email",
+     "title": "Objet : RE: Questions de traduction",
+     "meta": [
+      "À : Pedro Lavín"
+     ]
+    },
+    "text": "Bonjour Pedro,\n\nMerci pour vos questions. « Un silence assourdissant » est {} : deux mots de sens contraire réunis, donc gardez bien les deux en espagnol.\n\nQuand Hélène dit à Sam « Je ne te déteste pas », c'est {} : elle dit moins pour faire entendre plus. En réalité, elle l'aime.\n\nAu chapitre 4, la caserne des pompiers brûle : c'est {}, le contraire de ce qu'on attend. Et l'écharpe rouge qui revient dans chaque chapitre est {} : elle représente la sœur disparue d'Hélène.\n\nBien à vous,\nMarta",
+    "gaps": [
+     {
+      "options": [
+       "un oxymore",
+       "une comparaison",
+       "un euphémisme",
+       "une rime"
+      ],
+      "answer": 0,
+      "feedback": "Deux mots contraires côte à côte, « silence » et « assourdissant » : c'est un oxymore."
+     },
+     {
+      "options": [
+       "une litote",
+       "une hyperbole",
+       "une métaphore",
+       "une allitération"
+      ],
+      "answer": 0,
+      "feedback": "Dire moins pour faire entendre plus, c'est une litote, comme le « Va, je ne te hais point » de Corneille. L'hyperbole fait le contraire."
+     },
+     {
+      "options": [
+       "une ironie du sort",
+       "une personnification",
+       "une comparaison",
+       "une strophe"
+      ],
+      "answer": 0,
+      "feedback": "Un écart entre ce qu'on attend et ce qui arrive : c'est une ironie du sort."
+     },
+     {
+      "options": [
+       "un symbole",
+       "une comparaison",
+       "un cadre",
+       "un narrateur"
+      ],
+      "answer": 0,
+      "feedback": "Un objet qui représente une idée plus large est un symbole."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-verlaine-read-01",
+   "level": "B1",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "report",
+   "scenario": "poetry-magazine-feature",
+   "topic": "lit-sound-form",
+   "guide": "lit-poetic-form",
+   "interaction": "read-report",
+   "before": {
+    "brief": "Vous travaillez pour une revue de poésie. Le dossier du mois prochain porte sur Paul Verlaine, et vous vérifiez les notes avant l'impression.",
+    "prompt": "Lisez le poème et répondez aux questions.",
+    "doc": {
+     "kind": "poem",
+     "title": "Il pleure dans mon cœur",
+     "meta": [
+      "Paul Verlaine, Romances sans paroles (1874)"
+     ],
+     "text": "Il pleure dans mon cœur\nComme il pleut sur la ville ;\nQuelle est cette langueur\nQui pénètre mon cœur ?\n\nÔ bruit doux de la pluie\nPar terre et sur les toits !\nPour un cœur qui s'ennuie,\nÔ le chant de la pluie !\n\nIl pleure sans raison\nDans ce cœur qui s'écœure.\nQuoi ! nulle trahison ?...\nCe deuil est sans raison.\n\nC'est bien la pire peine\nDe ne savoir pourquoi\nSans amour et sans haine\nMon cœur a tant de peine !"
+    },
+    "questions": [
+     {
+      "q": "Comment le poème est-il construit ?",
+      "options": [
+       {
+        "text": "Quatre quatrains de vers courts ; dans chaque strophe, les vers 1, 3 et 4 riment.",
+        "correct": true,
+        "feedback": "Correct. Quatre strophes de quatre vers de six syllabes, avec le schéma ABAA : le deuxième vers reste seul (« ville », « toits »…)."
+       },
+       {
+        "text": "Un sonnet : deux quatrains et deux tercets",
+        "correct": false,
+        "feedback": "Il n'y a pas de tercet : le poème a quatre strophes de quatre vers, soit seize vers. Un sonnet en a quatorze."
+       },
+       {
+        "text": "Des vers libres, sans rimes",
+        "correct": false,
+        "feedback": "Écoutez la fin des vers : « cœur », « langueur », « cœur ». Le poème rime."
+       }
+      ]
+     },
+     {
+      "q": "Que fait le poète dans les deux premiers vers ?",
+      "options": [
+       {
+        "text": "Il compare sa tristesse à la pluie, avec l'outil « comme ».",
+        "correct": true,
+        "feedback": "Correct. « Il pleure dans mon cœur / Comme il pleut sur la ville » : une comparaison entre le paysage et l'âme."
+       },
+       {
+        "text": "Il emploie une métaphore, sans outil de comparaison.",
+        "correct": false,
+        "feedback": "Il y a bien un outil : « comme ». C'est donc une comparaison."
+       },
+       {
+        "text": "Il décrit seulement le temps qu'il fait.",
+        "correct": false,
+        "feedback": "La pluie est réelle, mais elle sert à dire un sentiment : les pleurs « dans mon cœur »."
+       }
+      ]
+     },
+     {
+      "q": "Dans « Il pleure », « il pleut », « la pluie », quel son se répète ?",
+      "options": [
+       {
+        "text": "Les consonnes [p] et [l] : c'est une allitération.",
+        "correct": true,
+        "feedback": "Correct. Ces sons doux et répétés imitent la pluie qui tombe, et rapprochent « pleurer » de « pleuvoir »."
+       },
+       {
+        "text": "La voyelle [a] : c'est une assonance.",
+        "correct": false,
+        "feedback": "Le son [a] n'est pas important ici. Ce sont les consonnes [p] et [l] qui reviennent."
+       },
+       {
+        "text": "Aucun : ce sont seulement des synonymes.",
+        "correct": false,
+        "feedback": "« Pleurer » et « pleuvoir » ne sont pas synonymes, mais leurs sons se ressemblent : c'est tout l'intérêt."
+       }
+      ]
+     },
+     {
+      "q": "Dans la deuxième strophe, la voyelle [i] revient dans « pluie », « qui » et « s'ennuie ». Comment s'appelle cette répétition ?",
+      "options": [
+       {
+        "text": "Une assonance",
+        "correct": true,
+        "feedback": "Correct. L'assonance répète une voyelle ; ici, le son aigu et doux de la pluie."
+       },
+       {
+        "text": "Une allitération",
+        "correct": false,
+        "feedback": "L'allitération répète une consonne. Ici, c'est une voyelle : une assonance."
+       },
+       {
+        "text": "Un enjambement",
+        "correct": false,
+        "feedback": "L'enjambement, c'est quand la phrase continue sur le vers suivant. Rien à voir avec les sons."
+       }
+      ]
+     },
+     {
+      "q": "Quel mot revient dans chaque strophe ?",
+      "options": [
+       {
+        "text": "« cœur »",
+        "correct": true,
+        "feedback": "Correct. « Mon cœur », « un cœur », « ce cœur », « mon cœur » : la répétition enferme le poème dans la tristesse intérieure du locuteur."
+       },
+       {
+        "text": "« pluie »",
+        "correct": false,
+        "feedback": "« Pluie » n'apparaît que dans la deuxième strophe."
+       },
+       {
+        "text": "« raison »",
+        "correct": false,
+        "feedback": "« Raison » n'apparaît que dans la troisième strophe."
+       }
+      ]
+     }
+    ]
+   },
+   "after": {
+    "brief": "Maintenant, la page « Le classique du mois ». Un lecteur a écrit pour poser des questions sur ce sonnet de Baudelaire.",
+    "prompt": "Lisez le poème et répondez aux questions.",
+    "doc": {
+     "kind": "poem",
+     "title": "Correspondances",
+     "meta": [
+      "Charles Baudelaire, Les Fleurs du mal (1857)"
+     ],
+     "text": "La Nature est un temple où de vivants piliers\nLaissent parfois sortir de confuses paroles ;\nL'homme y passe à travers des forêts de symboles\nQui l'observent avec des regards familiers.\n\nComme de longs échos qui de loin se confondent\nDans une ténébreuse et profonde unité,\nVaste comme la nuit et comme la clarté,\nLes parfums, les couleurs et les sons se répondent.\n\nIl est des parfums frais comme des chairs d'enfants,\nDoux comme les hautbois, verts comme les prairies,\n— Et d'autres, corrompus, riches et triomphants,\n\nAyant l'expansion des choses infinies,\nComme l'ambre, le musc, le benjoin et l'encens,\nQui chantent les transports de l'esprit et des sens."
+    },
+    "questions": [
+     {
+      "q": "Pourquoi ce poème est-il un sonnet ?",
+      "options": [
+       {
+        "text": "Il a quatorze vers : deux quatrains, puis deux tercets.",
+        "correct": true,
+        "feedback": "Correct. 4 + 4 + 3 + 3 = 14 vers : c'est la forme du sonnet."
+       },
+       {
+        "text": "Il a quatre strophes de quatre vers.",
+        "correct": false,
+        "feedback": "Les deux dernières strophes ont trois vers : ce sont des tercets."
+       },
+       {
+        "text": "Il est écrit en vers libres.",
+        "correct": false,
+        "feedback": "Le sonnet est une forme fixe, avec des rimes et un nombre de syllabes régulier."
+       }
+      ]
+     },
+     {
+      "q": "Combien de syllabes a le premier vers, « La Nature est un temple où de vivants piliers » ?",
+      "options": [
+       {
+        "text": "Douze : c'est un alexandrin.",
+        "correct": true,
+        "feedback": "Correct. Le « e » de « Nature » et de « temple » ne compte pas devant une voyelle : La-Na-tu-r(e)est-un-tem-pl(e)où-de-vi-vants-pi-liers."
+       },
+       {
+        "text": "Quatorze",
+        "correct": false,
+        "feedback": "Quatorze, c'est le nombre de vers du sonnet. Attention : le « e » muet ne compte pas devant une voyelle."
+       },
+       {
+        "text": "Huit",
+        "correct": false,
+        "feedback": "Comptez sur vos doigts : il y en a douze, c'est un alexandrin."
+       }
+      ]
+     },
+     {
+      "q": "Quel est le schéma des rimes du premier quatrain (piliers / paroles / symboles / familiers) ?",
+      "options": [
+       {
+        "text": "ABBA : des rimes embrassées",
+        "correct": true,
+        "feedback": "Correct. « piliers » rime avec « familiers » (A), et « paroles » avec « symboles » (B) : les rimes B sont « embrassées » par les rimes A."
+       },
+       {
+        "text": "ABAB : des rimes croisées",
+        "correct": false,
+        "feedback": "« piliers » et « symboles » ne riment pas. Les rimes A sont au début et à la fin : ABBA."
+       },
+       {
+        "text": "AABB : des rimes plates",
+        "correct": false,
+        "feedback": "« piliers » et « paroles » ne riment pas."
+       }
+      ]
+     },
+     {
+      "q": "« Il est des parfums frais comme des chairs d'enfants, / Doux comme les hautbois, verts comme les prairies » : que fait le poète ?",
+      "options": [
+       {
+        "text": "Il compare des odeurs à des sensations du toucher, de l'ouïe et de la vue : les sens se répondent.",
+        "correct": true,
+        "feedback": "Correct. Un parfum « doux comme les hautbois » (un son) ou « vert » (une couleur) : c'est l'idée des « correspondances » entre les sens."
+       },
+       {
+        "text": "Il emploie des métaphores sans outil de comparaison.",
+        "correct": false,
+        "feedback": "Le mot « comme » revient trois fois : ce sont des comparaisons."
+       },
+       {
+        "text": "Il décrit un vrai jardin, de façon réaliste.",
+        "correct": false,
+        "feedback": "Un parfum ne peut pas être « vert » au sens propre : le poète mélange les sens volontairement."
+       }
+      ]
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-poetry-terms-01",
+   "level": "B1",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "library",
+   "scenario": "festival-programme-glossary",
+   "topic": "lit-sound-form",
+   "guide": "lit-poetic-form",
+   "interaction": "matching",
+   "before": {
+    "brief": "Le programme du festival de poésie a un glossaire à la fin. Les définitions sont mélangées.",
+    "prompt": "Associez chaque terme à sa définition.",
+    "pairs": [
+     {
+      "left": "l'allitération",
+      "right": "la répétition d'une consonne : « ces serpents qui sifflent »"
+     },
+     {
+      "left": "l'assonance",
+      "right": "la répétition d'une voyelle : « les sanglots longs des violons »"
+     },
+     {
+      "left": "les rimes croisées",
+      "right": "des rimes qui alternent : ABAB"
+     },
+     {
+      "left": "une strophe",
+      "right": "un groupe de vers dans un poème"
+     },
+     {
+      "left": "l'enjambement",
+      "right": "une phrase qui continue après la fin du vers"
+     },
+     {
+      "left": "le vers libre",
+      "right": "une poésie sans rime ni nombre de syllabes fixes"
+     }
+    ],
+    "feedback": "L'allitération répète des consonnes, l'assonance des voyelles, la rime la fin des vers. La strophe est le « paragraphe » du poème."
+   },
+   "after": {
+    "brief": "Voici la deuxième page du glossaire, pour l'atelier sur les formes poétiques.",
+    "prompt": "Associez chaque terme à sa définition.",
+    "pairs": [
+     {
+      "left": "un refrain",
+      "right": "un vers ou un groupe de vers répété, comme dans une chanson"
+     },
+     {
+      "left": "un alexandrin",
+      "right": "un vers de douze syllabes"
+     },
+     {
+      "left": "un sonnet",
+      "right": "un poème de quatorze vers : deux quatrains et deux tercets"
+     },
+     {
+      "left": "un haïku",
+      "right": "un poème japonais très court, en trois vers"
+     },
+     {
+      "left": "la césure",
+      "right": "une pause à l'intérieur du vers, au milieu de l'alexandrin"
+     },
+     {
+      "left": "un rejet",
+      "right": "un mot court placé au début du vers suivant, qui termine la phrase"
+     }
+    ],
+    "feedback": "Le refrain se répète ; l'alexandrin compte douze syllabes, souvent coupées en deux par la césure ; le rejet est une forme d'enjambement qui met un mot en valeur (« Je partirai », chez Hugo)."
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-analysis-sentence-01",
+   "level": "B2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "editorial",
+   "scenario": "teachers-guide-notes",
+   "topic": "lit-close-reading",
+   "guide": "lit-analysis",
+   "interaction": "stronger-sentence",
+   "before": {
+    "brief": "Vous relisez le guide de l'enseignant d'une anthologie de poésie. Quatre contributeurs ont écrit une phrase sur le même vers de Victor Hugo : « J'irai par la forêt, j'irai par la montagne. »",
+    "prompt": "Quelle phrase doit entrer dans le guide ?",
+    "options": [
+     {
+      "text": "L'anaphore de « J'irai » martèle la détermination du locuteur : la répétition, sur deux hémistiches parallèles, imite le rythme régulier de la marche, ce qui donne l'impression que rien ne peut l'arrêter.",
+      "score": 100,
+      "feedback": "Procédé, citation et effet, avec un lien entre le rythme du vers et le sens du poème."
+     },
+     {
+      "text": "Hugo répète deux fois « j'irai » au vers 3.",
+      "score": 25,
+      "feedback": "C'est exact, mais c'est seulement une observation. Pourquoi est-ce important ?"
+     },
+     {
+      "text": "Cette répétition est très belle et très efficace.",
+      "score": 25,
+      "feedback": "« Belle » et « efficace » ressemblent à de l'analyse, mais ne disent rien. Efficace pour faire quoi ?"
+     },
+     {
+      "text": "Hugo écrit ce vers parce que sa fille Léopoldine s'était noyée, et il était très triste.",
+      "score": 25,
+      "feedback": "Le contexte est vrai (Léopoldine s'est noyée en 1843), mais il ne dit rien de ce que fait ce vers. La biographie peut éclairer un texte ; elle ne remplace pas l'analyse."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Maintenant, une phrase sur le début de « Il pleure dans mon cœur », de Verlaine : « Il pleure dans mon cœur / Comme il pleut sur la ville ». L'éditrice veut la plus solide.",
+    "prompt": "Quelle phrase est la plus solide ?",
+    "options": [
+     {
+      "text": "En employant « pleurer » comme un verbe impersonnel, sur le modèle de « il pleut », Verlaine présente la tristesse comme un phénomène extérieur au locuteur, aussi involontaire que la pluie, ce qui annonce le « deuil » « sans raison » de la troisième strophe.",
+      "score": 100,
+      "feedback": "Elle cite, nomme le procédé (la tournure impersonnelle et la comparaison), explique l'effet et relie le vers au reste du poème."
+     },
+     {
+      "text": "Verlaine utilise une comparaison avec « comme » entre ses pleurs et la pluie.",
+      "score": 50,
+      "feedback": "C'est juste et précis, mais il manque l'effet : qu'est-ce que cette comparaison nous fait comprendre ?"
+     },
+     {
+      "text": "Ces vers sont très musicaux et mélancoliques.",
+      "score": 25,
+      "feedback": "Trop vague. Quels sons ? Quelle mélancolie, et comment est-elle créée ?"
+     },
+     {
+      "text": "Verlaine était sûrement déprimé le jour où il a écrit ce poème.",
+      "score": 0,
+      "feedback": "C'est une supposition sur l'auteur, pas une analyse du texte. Parlez du locuteur et de ce que font les mots."
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-anthology-note-01",
+   "level": "B2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "inbox",
+   "scenario": "anthology-editor-request",
+   "topic": "lit-close-reading",
+   "guide": "lit-analysis",
+   "interaction": "write-email",
+   "before": {
+    "brief": "La directrice de l'anthologie, Nadia Rahman, a besoin d'une courte note pour le guide de l'enseignant sur la dernière strophe de « Demain, dès l'aube… » de Victor Hugo.",
+    "message": "Bonjour,\nPourriez-vous m'envoyer un court paragraphe sur la fin de « Demain, dès l'aube… » ? Voici la dernière strophe : « Je ne regarderai ni l'or du soir qui tombe, / Ni les voiles au loin descendant vers Harfleur, / Et quand j'arriverai, je mettrai sur ta tombe / Un bouquet de houx vert et de bruyère en fleur. » Quel procédé est à l'œuvre, et quel effet produit-il ?\nMerci,\nNadia Rahman",
+    "prompt": "Rédigez votre courriel.",
+    "task": "Répondez à Nadia Rahman avec un court paragraphe d'analyse (80 à 120 mots) sur la fin du poème : nommez un ou deux procédés, citez le texte et expliquez l'effet. Parlez du locuteur, pas de la vie de Hugo.",
+    "include": [
+     "Une courte salutation",
+     "Au moins un procédé nommé (chute, antithèse, apostrophe…)",
+     "Une citation courte entre guillemets",
+     "L'effet sur le sens ou sur le lecteur",
+     "Le locuteur ou le « je », pas la biographie du poète",
+     "« ce qui » pour relier la citation à l'effet",
+     "Une formule de fin"
+    ],
+    "minWords": 80,
+    "checks": [
+     {
+      "label": "Nomme un procédé",
+      "any": [
+       "chute",
+       "antithese",
+       "rejet",
+       "enjambement",
+       "apostrophe",
+       "symbole",
+       "contraste",
+       "opposition",
+       "anaphore",
+       "negation",
+       "metaphore",
+       "euphemisme",
+       "rime",
+       "tutoiement"
+      ]
+     },
+     {
+      "label": "Cite la strophe",
+      "any": [
+       "ta tombe",
+       "houx vert",
+       "bruyere en fleur",
+       "l'or du soir",
+       "harfleur",
+       "je mettrai",
+       "j'arriverai",
+       "je ne regarderai"
+      ]
+     },
+     {
+      "label": "Explique un effet",
+      "any": [
+       "suggere",
+       "cree",
+       "souligne",
+       "evoque",
+       "traduit",
+       "met en valeur",
+       "met en relief",
+       "renforce",
+       "donne l'impression",
+       "insiste",
+       "revele",
+       "produit un effet",
+       "effet de",
+       "ce qui"
+      ]
+     },
+     {
+      "label": "Parle du locuteur, pas du poète",
+      "any": [
+       "locuteur",
+       "je poetique",
+       "je lyrique",
+       "sujet lyrique",
+       "« je »",
+       "\"je\"",
+       "'je'",
+       "la voix",
+       "celui qui parle",
+       "le marcheur",
+       "le narrateur"
+      ]
+     },
+     {
+      "label": "Ne remplace pas l'analyse par la vie de Hugo",
+      "none": [
+       "hugo etait triste",
+       "hugo etait tres triste",
+       "hugo pleurait",
+       "hugo etait malheureux"
+      ]
+     },
+     {
+      "label": "Emploie « ce qui » (pas « que ») avant le verbe de l'effet",
+      "none": [
+       ", que cree un",
+       ", que cree une",
+       ", que suggere que",
+       ", que suggere un",
+       ", que donne un",
+       ", que donne une",
+       ", que montre que",
+       ", que renforce"
+      ]
+     },
+     {
+      "label": "Termine par une formule de fin",
+      "any": [
+       "cordialement",
+       "bien a vous",
+       "amities",
+       "bonne journee",
+       "belle journee",
+       "merci",
+       "salutations",
+       "bien amicalement",
+       "a bientot"
+      ]
+     }
+    ],
+    "selfCheck": [
+     "Chaque citation est-elle suivie de son effet ?",
+     "Ai-je évité de raconter la strophe vers par vers ?"
+    ],
+    "model": "Bonjour Nadia,\n\nVoici le paragraphe sur la dernière strophe.\n\nToute la strophe prépare une chute. Le locuteur refuse la beauté du paysage (« Je ne regarderai ni l'or du soir qui tombe, / Ni les voiles au loin »), ce qui montre qu'il ne voyage pas pour le plaisir. Puis l'avant-dernier vers révèle enfin le but de la marche : « je mettrai sur ta tombe ». Le « tu » du deuxième vers, qui « attend », était donc une morte, et le lecteur doit relire tout le poème comme un pèlerinage de deuil. L'antithèse entre « ta tombe » et le « houx vert » ou la « bruyère en fleur » suggère que le souvenir reste vivant malgré la mort.\n\nBien cordialement,\nMarta"
+   },
+   "after": {
+    "brief": "Nadia Rahman a aimé votre note. Elle en veut maintenant une sur la dernière strophe de Verlaine.",
+    "message": "Merci, c'est parfait. Pourriez-vous faire la même chose pour « Il pleure dans mon cœur » ? Je m'intéresse à la dernière strophe : « C'est bien la pire peine / De ne savoir pourquoi / Sans amour et sans haine / Mon cœur a tant de peine ! » Comment conclut-elle le poème ?\nNadia",
+    "prompt": "Rédigez votre réponse.",
+    "task": "Rédigez un court paragraphe d'analyse (80 à 120 mots) sur la dernière strophe : nommez les procédés, citez le texte, expliquez l'effet, et montrez comment la strophe conclut le poème.",
+    "include": [
+     "Une courte salutation",
+     "Au moins un procédé nommé (répétition, parallélisme, superlatif…)",
+     "Une citation courte",
+     "L'effet, et le lien avec le reste du poème",
+     "Une formule de fin"
+    ],
+    "minWords": 80,
+    "checks": [
+     {
+      "label": "Nomme un procédé",
+      "any": [
+       "repetition",
+       "parallelisme",
+       "antithese",
+       "rime",
+       "superlatif",
+       "exclamation",
+       "anaphore",
+       "assonance",
+       "alliteration",
+       "negation",
+       "opposition"
+      ]
+     },
+     {
+      "label": "Cite la strophe",
+      "any": [
+       "pire peine",
+       "sans amour",
+       "sans haine",
+       "ne savoir pourquoi",
+       "tant de peine"
+      ]
+     },
+     {
+      "label": "Explique un effet",
+      "any": [
+       "suggere",
+       "cree",
+       "souligne",
+       "evoque",
+       "traduit",
+       "met en valeur",
+       "met en relief",
+       "renforce",
+       "donne l'impression",
+       "insiste",
+       "revele",
+       "produit un effet",
+       "effet de",
+       "ce qui"
+      ]
+     },
+     {
+      "label": "Relie la strophe au reste du poème",
+      "any": [
+       "premiere strophe",
+       "debut du poeme",
+       "il pleure",
+       "pluie",
+       "il pleut",
+       "reste du poeme",
+       "tout le poeme",
+       "premier quatrain",
+       "conclut",
+       "conclusion"
+      ]
+     },
+     {
+      "label": "Parle du locuteur ou du « je »",
+      "any": [
+       "locuteur",
+       "je poetique",
+       "je lyrique",
+       "sujet lyrique",
+       "« je »",
+       "\"je\"",
+       "'je'",
+       "la voix",
+       "celui qui parle",
+       "le marcheur",
+       "le narrateur",
+       "mon coeur",
+       "mon cœur"
+      ]
+     },
+     {
+      "label": "Termine par une formule de fin",
+      "any": [
+       "cordialement",
+       "bien a vous",
+       "amities",
+       "bonne journee",
+       "belle journee",
+       "merci",
+       "salutations",
+       "bien amicalement",
+       "a bientot"
+      ]
+     }
+    ],
+    "selfCheck": [
+     "Ai-je expliqué pourquoi la strophe compte, pas seulement ce qu'elle dit ?",
+     "Chaque procédé est-il suivi de son effet ?"
+    ],
+    "model": "Bonjour Nadia,\n\nVoici la note sur la dernière strophe.\n\nLa strophe donne la clé du poème : le pire, pour le locuteur, n'est pas la tristesse elle-même, mais son absence de cause. Le superlatif « la pire peine » s'oppose à la simplicité de « De ne savoir pourquoi », ce qui rend cette douleur presque absurde. Le parallélisme « Sans amour et sans haine » écarte les deux raisons habituelles de souffrir. Enfin, le mot « peine » revient à la fin du premier et du dernier vers : cette rime du mot avec lui-même enferme le « cœur » dans sa tristesse, comme la pluie qui tombe sans fin depuis la première strophe.\n\nBien cordialement,\nMarta"
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-corbeau-read-01",
+   "level": "B2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "report",
+   "scenario": "reading-group-pack",
+   "topic": "lit-irony-symbol",
+   "guide": "lit-irony-tone",
+   "interaction": "read-report",
+   "before": {
+    "brief": "Vous préparez le dossier d'un cercle de lecture. Avant d'écrire les questions de discussion, vérifiez que vous avez bien compris la fable.",
+    "prompt": "Lisez la fable et répondez aux questions.",
+    "doc": {
+     "kind": "poem",
+     "title": "Le Corbeau et le Renard",
+     "meta": [
+      "Jean de La Fontaine, Fables, livre I (1668)"
+     ],
+     "text": "Maître Corbeau, sur un arbre perché,\nTenait en son bec un fromage.\nMaître Renard, par l'odeur alléché,\nLui tint à peu près ce langage :\n« Hé ! bonjour, Monsieur du Corbeau.\nQue vous êtes joli ! que vous me semblez beau !\nSans mentir, si votre ramage\nSe rapporte à votre plumage,\nVous êtes le Phénix des hôtes de ces bois. »\nÀ ces mots le Corbeau ne se sent pas de joie ;\nEt pour montrer sa belle voix,\nIl ouvre un large bec, laisse tomber sa proie.\nLe Renard s'en saisit, et dit : « Mon bon Monsieur,\nApprenez que tout flatteur\nVit aux dépens de celui qui l'écoute :\nCette leçon vaut bien un fromage, sans doute. »\nLe Corbeau, honteux et confus,\nJura, mais un peu tard, qu'on ne l'y prendrait plus."
+    },
+    "questions": [
+     {
+      "q": "Pourquoi le Renard dit-il « Que vous êtes joli ! que vous me semblez beau ! » ?",
+      "options": [
+       {
+        "text": "Pour flatter le Corbeau et lui faire lâcher le fromage : il dit ce qu'il ne pense pas.",
+        "correct": true,
+        "feedback": "Correct. C'est de la flatterie, et une ironie verbale : l'écart entre les compliments et le vrai but du Renard."
+       },
+       {
+        "text": "Parce qu'il admire sincèrement le Corbeau.",
+        "correct": false,
+        "feedback": "Le Renard est « par l'odeur alléché » : c'est le fromage qui l'intéresse, pas la beauté du Corbeau."
+       },
+       {
+        "text": "Parce que le Corbeau chante très bien.",
+        "correct": false,
+        "feedback": "Le Corbeau n'a pas encore chanté. Le Renard parle de son « ramage » sous forme d'hypothèse (« si votre ramage / Se rapporte à votre plumage ») : il veut justement le faire chanter."
+       }
+      ]
+     },
+     {
+      "q": "Quel est l'effet de « Maître Corbeau » et « Monsieur du Corbeau » ?",
+      "options": [
+       {
+        "text": "Ces titres pompeux, avec la particule « du », grandissent un simple oiseau, ce qui rend la scène comique : le fabuliste se moque.",
+        "correct": true,
+        "feedback": "Correct. Le décalage entre ces titres de noblesse et un corbeau qui perd son fromage crée un registre ironique."
+       },
+       {
+        "text": "Ils montrent que le Corbeau est vraiment un noble.",
+        "correct": false,
+        "feedback": "C'est un oiseau ! Ces titres sont un jeu : ils préparent sa chute ridicule."
+       },
+       {
+        "text": "Ils créent une atmosphère tragique.",
+        "correct": false,
+        "feedback": "Rien de tragique ici : personne ne meurt, et le ton est amusé."
+       }
+      ]
+     },
+     {
+      "q": "Qu'est-ce qui est ironique dans la morale ?",
+      "options": [
+       {
+        "text": "C'est le flatteur lui-même qui la prononce, et il se fait « payer » la leçon avec le fromage.",
+        "correct": true,
+        "feedback": "Correct. « Apprenez que tout flatteur / Vit aux dépens de celui qui l'écoute » : le Renard avoue sa méthode au moment même où il en profite."
+       },
+       {
+        "text": "Elle est dite par le Corbeau, qui a compris la leçon.",
+        "correct": false,
+        "feedback": "C'est le Renard qui parle : « Le Renard s'en saisit, et dit… »."
+       },
+       {
+        "text": "Il n'y a pas de morale dans cette fable.",
+        "correct": false,
+        "feedback": "La morale est bien là, au milieu des paroles du Renard : « tout flatteur / Vit aux dépens de celui qui l'écoute »."
+       }
+      ]
+     },
+     {
+      "q": "Dans le dernier vers, « Jura, mais un peu tard, qu'on ne l'y prendrait plus », quel est le ton du fabuliste ?",
+      "options": [
+       {
+        "text": "Ironique et amusé : l'incise « mais un peu tard » se moque du Corbeau.",
+        "correct": true,
+        "feedback": "Correct. Le narrateur intervient en trois mots pour souligner que la promesse ne sert plus à rien : le fromage est perdu."
+       },
+       {
+        "text": "Pathétique : le lecteur doit avoir pitié du Corbeau.",
+        "correct": false,
+        "feedback": "Le registre pathétique cherche à émouvoir. Ici, le Corbeau, « honteux et confus », est surtout ridicule."
+       },
+       {
+        "text": "Lyrique : le narrateur exprime ses propres sentiments amoureux.",
+        "correct": false,
+        "feedback": "Le registre lyrique exprime des sentiments personnels. Ici, le narrateur observe et se moque."
+       }
+      ]
+     }
+    ]
+   },
+   "after": {
+    "brief": "Pour la deuxième séance, le cercle lit une nouvelle. Voici le début. Vérifiez les notes du dossier.",
+    "prompt": "Lisez l'extrait et répondez aux questions.",
+    "doc": {
+     "kind": "story",
+     "title": "La Chambre fermée (début)",
+     "meta": [
+      "Une nouvelle, pour le cercle de lecture"
+     ],
+     "text": "Chaque matin, Mme Lebrun faisait le ménage dans toutes les pièces de la maison, sauf une. La porte au bout du couloir restait fermée à clé, comme depuis onze ans, et la clé ne quittait jamais la chaîne qu'elle portait autour du cou.\n\nLe soir de son arrivée, le nouveau locataire posa la question. « Un débarras, répondit-elle. Rien d'intéressant. » Il remarqua qu'elle touchait la clé en parlant.\n\nLa semaine suivante, une lettre de la mairie arriva : la maison serait inspectée le lundi, toutes les pièces sans exception. Mme Lebrun la lut deux fois, la plia en un petit carré et la glissa dans la poche de son tablier.\n\nLe dimanche, le ciel devint noir et l'orage coupa le courant dans toute la rue. « Quelle soirée merveilleuse ! » dit-elle en allumant une bougie, et elle sourit pour la première fois depuis l'arrivée de la lettre."
+    },
+    "questions": [
+     {
+      "q": "La porte fermée et la clé reviennent plusieurs fois. Que sont-elles ?",
+      "options": [
+       {
+        "text": "Un motif, et peut-être le symbole d'un secret ou d'un passé qu'elle cache",
+        "correct": true,
+        "feedback": "Correct. Elles reviennent (motif) et suggèrent quelque chose au-delà d'elles-mêmes (symbole)."
+       },
+       {
+        "text": "Le cadre de l'histoire",
+        "correct": false,
+        "feedback": "Le cadre, c'est la maison. La porte et la clé sont des détails qui reviennent à l'intérieur de ce cadre."
+       },
+       {
+        "text": "Une onomatopée",
+        "correct": false,
+        "feedback": "Une onomatopée est un mot qui imite un bruit : « toc toc »."
+       }
+      ]
+     },
+     {
+      "q": "Pourquoi « Quelle soirée merveilleuse ! » peut-il être ironique ?",
+      "options": [
+       {
+        "text": "Un orage et une panne de courant ne sont pas « merveilleux »… sauf si l'orage l'aide à cacher quelque chose avant l'inspection.",
+        "correct": true,
+        "feedback": "Correct. Les mots disent le contraire de la situation, ce qui laisse deviner un sens caché."
+       },
+       {
+        "text": "Parce que la soirée est vraiment très belle",
+        "correct": false,
+        "feedback": "Le ciel est noir et le courant est coupé : c'est justement l'écart qui compte."
+       },
+       {
+        "text": "Parce qu'elle ment au locataire sur son âge",
+        "correct": false,
+        "feedback": "Le texte ne dit rien de son âge. L'ironie est dans son commentaire sur l'orage."
+       }
+      ]
+     },
+     {
+      "q": "Quelle est l'atmosphère de l'extrait ?",
+      "options": [
+       {
+        "text": "Inquiétante, pleine de suspense",
+        "correct": true,
+        "feedback": "Correct. Le secret, la lettre et l'orage font monter la tension."
+       },
+       {
+        "text": "Joyeuse et détendue",
+        "correct": false,
+        "feedback": "Son sourire est inquiétant plutôt que joyeux, après tout ce qui précède."
+       },
+       {
+        "text": "Colérique",
+        "correct": false,
+        "feedback": "Personne ne se met en colère. L'atmosphère est tendue."
+       }
+      ]
+     },
+     {
+      "q": "Elle répond « Un débarras. Rien d'intéressant » en touchant la clé. Qu'est-ce que cela suggère ?",
+      "options": [
+       {
+        "text": "Que le lecteur ne doit pas tout à fait la croire",
+        "correct": true,
+        "feedback": "Correct. Son geste contredit ses paroles : on devine qu'elle cache quelque chose. Le lecteur en sait plus que le locataire : c'est une forme d'ironie dramatique."
+       },
+       {
+        "text": "Que la pièce est vraiment vide",
+        "correct": false,
+        "feedback": "Le geste suggère le contraire."
+       },
+       {
+        "text": "Que le locataire est le narrateur",
+        "correct": false,
+        "feedback": "Le récit est à la troisième personne : le locataire est « il », pas « je »."
+       }
+      ]
+     }
+    ]
+   },
+   "language": "french"
+  },
+  {
+   "id": "fr-lit-terms-check-01",
+   "level": "B2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "library",
+   "scenario": "study-guide-proofread",
+   "topic": "lit-irony-symbol",
+   "guide": "lit-irony-tone",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "Vous relisez un guide d'étude avant son envoi dans les lycées. Une seule phrase emploie les termes correctement. Les autres apprendraient une erreur aux élèves.",
+    "prompt": "Quelle phrase est correcte ?",
+    "options": [
+     {
+      "text": "Il y a ironie dramatique quand le spectateur sait quelque chose que le personnage ignore.",
+      "score": 100,
+      "feedback": "Correct : c'est la définition habituelle (on parle aussi d'ironie tragique)."
+     },
+     {
+      "text": "L'atmosphère, c'est l'attitude du narrateur face à son sujet.",
+      "score": 25,
+      "feedback": "Ça, c'est le ton (ou le registre). L'atmosphère est l'impression que ressent le lecteur."
+     },
+     {
+      "text": "Un motif est une image qui n'apparaît qu'une seule fois, au point culminant.",
+      "score": 0,
+      "feedback": "Un motif revient tout au long de l'œuvre : c'est sa définition."
+     },
+     {
+      "text": "Le « je » d'un poème est toujours le poète lui-même.",
+      "score": 25,
+      "feedback": "Le « je » poétique, ou locuteur, est la voix du poème : ce n'est pas forcément le poète."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Voici maintenant le chapitre sur le récit et les figures. Encore une fois, une seule phrase est correcte.",
+    "prompt": "Quelle phrase est correcte ?",
+    "options": [
+     {
+      "text": "Un narrateur non fiable peut mentir, se tromper ou ignorer des faits : le lecteur doit lire entre les lignes.",
+      "score": 100,
+      "feedback": "Correct. Le lecteur apprend à douter du narrateur et à chercher des indices."
+     },
+     {
+      "text": "Un retour en arrière (une analepse) annonce des événements à venir.",
+      "score": 25,
+      "feedback": "Le retour en arrière raconte un événement passé. Annoncer l'avenir, c'est une anticipation (une prolepse)."
+     },
+     {
+      "text": "Un récit qui commence in medias res commence par l'enfance du héros.",
+      "score": 0,
+      "feedback": "« In medias res » veut dire « au milieu de l'action » : on entre directement dans l'histoire."
+     },
+     {
+      "text": "La litote consiste à exagérer pour frapper l'esprit.",
+      "score": 0,
+      "feedback": "Exagérer, c'est l'hyperbole. La litote fait l'inverse : elle dit moins pour faire entendre plus (« Va, je ne te hais point »)."
+     }
+    ]
    },
    "language": "french"
   }

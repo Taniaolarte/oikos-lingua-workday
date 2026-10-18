@@ -79,7 +79,7 @@ live in `content/english/guides-es.json` and `content/french/guides-es.json`,
 keyed by guide id, and cover every guide in both languages. Reading documents,
 email gaps and answer options are never translated: they are the test.
 
-The dictionary in `content/spanish.json` covers **1,922 strings** — the whole
+The dictionary in `content/spanish.json` covers **2,254 strings** — the whole
 interface plus every prompt, instruction, hint, task and scenario brief in both
 content banks. It is a flat `source string → Spanish` lookup, decoupled from the
 render code: `js/spanish.js` walks a narrow list of selectors on press, swaps
@@ -93,6 +93,17 @@ Clearing your cache, switching device or coming back in six months costs you
 nothing. `localStorage` holds only your first name, language and last chosen
 context, purely so the app can say "Welcome back" — and the app works correctly
 when that read fails (private mode, blocked storage).
+
+## Every job has a colour
+
+Each professional context in `content/professional-contexts.json` carries a
+`color`. Choosing a job on the staff card repaints the card (header band,
+lanyard, barcode, selected buttons) in that colour, and from then on the same
+colour marks the header strip, a job tag beside the navigation, the home
+challenge cards and the top edge of every challenge and result panel, so the
+learner can always see which job they are doing. The colour is a single CSS
+custom property, `--job`, set by `APP.applyJob`; its lighter tints are derived
+in CSS with `color-mix`.
 
 ---
 
@@ -119,16 +130,16 @@ is already present so the `content/` folder is served untouched.
 
 | Piece | Count |
 |---|---|
-| Scenario templates | 68 across 10 workplace categories |
-| Learning topics | 84 English + 86 French |
-| Learning guides | 36 English + 37 French, each at one level (A2 / B1 / B2), all with a full Spanish version |
+| Scenario templates | 80 across 12 workplace categories |
+| Learning topics | 90 English + 92 French |
+| Learning guides | 42 English + 43 French, each at one level (A2 / B1 / B2), all with a full Spanish version |
 | Interaction types | 19, covered by 12 renderers |
-| Activities (two situations each) | 88 English (33 A2 · 28 B1 · 27 B2) + 83 French (27 A2 · 29 B1 · 27 B2) |
-| Drills | 105 English + 111 French, with 287 typed gaps |
-| Production tasks | 35 English + 37 French |
-| Professional contexts | 12 |
+| Activities (two situations each) | 100 English (37 A2 · 32 B1 · 31 B2) + 95 French (31 A2 · 33 B1 · 31 B2) |
+| Drills | 123 English + 129 French, with 333 typed gaps |
+| Production tasks | 41 English + 43 French |
+| Professional contexts | 12, each with its own colour |
 
-That comes to **630 authored exercises**, every one with its own answer set and
+That comes to **726 authored exercises**, every one with its own answer set and
 feedback. Drills and productions are keyed to the *guide* rather than to a
 single activity, so every activity that teaches a skill inherits the same ramp.
 
@@ -155,6 +166,15 @@ The pedagogical material is taken from the source documents, not invented:
   *Futur proche exercices* (negation, interrogation, guided production) and
   *Guide de lecture B2 — les articles partitifs* (du/de la/de l'/des, negation,
   quantity expressions, the pre-posed plural adjective).
+- **Writing & Literature** (both languages) — *100 Essential Literary Terms*,
+  *A Guide to Literature* (genres, subgenres, style, structure, the analysis
+  method) and the *Literary Devices* guide (figurative, sound and structural
+  devices, the Device + Evidence + Effect formula, and its readings of
+  Dickinson's "We talked as Girls do" and Whitman's "A Noiseless Patient
+  Spider"). The English activities use those two poems and Shakespeare's
+  Sonnet 18; the French ones use public-domain French texts (La Fontaine,
+  Verlaine, Hugo and others) and the French terminology (comparaison, litote,
+  alexandrin, enjambement…).
 
 French is written as French, not translated from English: the grammar points,
 common mistakes and examples are the ones that matter to a French learner.
@@ -176,10 +196,10 @@ js/engine.js                content loading, workday generation, scoring
 js/render.js                the twelve exercise renderers
 js/app.js                   screens, navigation, session state
 content/
-  scenarios.json            68 scenarios + 10 categories
+  scenarios.json            80 scenarios + 12 categories
   professional-contexts.json
   interaction-types.json    19 types, each naming its renderer
-  spanish.json              1,922-entry Spanish gloss of the instructions
+  spanish.json              2,254-entry Spanish gloss of the instructions
   english/  topics.json  guides.json  activities.json  drills.json  productions.json
             guides-es.json  full Spanish version of every guide
   french/   (same files)
@@ -195,7 +215,13 @@ stages:
    level carries at least fifteen activities per language so the pool never
    runs dry.
 2. **Weight** — activities tagged with the learner's professional context are
-   four times as likely (`CONTEXT_W` 4).
+   four times as likely (`CONTEXT_W` 4). A context can set its own `weight`:
+   Writing & Literature uses 20, because its bank is small next to the general
+   workplace material and its learners expect mostly literature.
+
+A context marked `"specialist": true` keeps its activities to itself: a poem
+analysis only reaches learners whose chosen job it is tagged for (Writing &
+Literature, and Education), never a sales manager.
 
 The second challenge is then drawn from a pool filtered to a *different*
 category, scenario and topic, and to a different **kind of task**

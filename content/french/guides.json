@@ -2026,6 +2026,396 @@
     "why": "« Parce que » donne la raison. « Donc » donne le résultat. Ici, la panne est la raison, et le retard est le résultat."
    },
    "tip": "Posez la question « pourquoi ? ». La réponse commence par « parce que ». Pour dire le résultat, utilisez « donc »."
+  },
+  {
+   "id": "lit-genres",
+   "title": "Les genres littéraires",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "Un genre, c'est une famille de textes. Il y a quatre grandes familles : le récit (roman, nouvelle, conte), la poésie, le théâtre et les textes vrais (biographie, autobiographie, mémoires). Pour trouver le genre, regardez la forme : des paragraphes, des vers et des strophes, ou des dialogues avec le nom des personnages.",
+   "expressions": [
+    "C'est un roman sur une famille de Lyon.",
+    "C'est un recueil de nouvelles.",
+    "C'est un recueil de poèmes.",
+    "C'est une pièce de théâtre en trois actes.",
+    "C'est une histoire vraie : une biographie de Marie Curie.",
+    "C'est un livre pour les enfants."
+   ],
+   "vocabulary": [
+    {
+     "term": "un roman",
+     "gloss": "une longue histoire inventée, écrite en prose"
+    },
+    {
+     "term": "une nouvelle",
+     "gloss": "une histoire courte, qu'on lit en une seule fois"
+    },
+    {
+     "term": "un poème",
+     "gloss": "un texte écrit en vers, souvent avec des rimes ; un livre de poèmes est un recueil"
+    },
+    {
+     "term": "une pièce de théâtre",
+     "gloss": "une histoire écrite pour des acteurs, avec des dialogues"
+    },
+    {
+     "term": "une biographie",
+     "gloss": "l'histoire vraie de la vie d'une autre personne"
+    },
+    {
+     "term": "une autobiographie",
+     "gloss": "l'histoire vraie de la vie de l'auteur lui-même"
+    },
+    {
+     "term": "une fable",
+     "gloss": "une histoire courte, souvent avec des animaux, qui finit par une morale"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Forme",
+     "text": "Il y a des vers et des strophes : c'est un poème."
+    },
+    {
+     "label": "Forme",
+     "text": "Il y a des noms de personnages et des didascalies : c'est une pièce de théâtre."
+    },
+    {
+     "label": "But",
+     "text": "L'auteur raconte sa propre vie : c'est une autobiographie."
+    }
+   ],
+   "mistake": {
+    "wrong": "Je lis une nouvelle d'Isabel Allende : elle fait 500 pages.",
+    "right": "Je lis un roman d'Isabel Allende : il fait 500 pages.",
+    "why": "Faux ami ! « Une novela », en espagnol, c'est « un roman » en français. « Une nouvelle » est une histoire courte (« un cuento, un relato »)."
+   },
+   "tip": "Vous hésitez ? Posez deux questions : c'est vrai ou inventé ? C'est écrit en paragraphes, en vers ou en dialogues ?"
+  },
+  {
+   "id": "lit-story",
+   "title": "Les éléments du récit",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "Presque tous les récits ont les mêmes éléments. Les personnages sont les personnes de l'histoire. Le cadre, c'est le lieu et l'époque. L'intrigue, c'est ce qui se passe, dans l'ordre du schéma narratif : la situation initiale, l'élément perturbateur (le problème), les péripéties, le point culminant, puis le dénouement et la situation finale.",
+   "expressions": [
+    "L'histoire se passe à Paris, en 1920.",
+    "Le personnage principal est une jeune médecin.",
+    "Au début, elle arrive dans une nouvelle ville.",
+    "Le problème, c'est que personne ne lui fait confiance.",
+    "À la fin, elle sauve le village.",
+    "L'histoire est racontée à la première personne."
+   ],
+   "vocabulary": [
+    {
+     "term": "un personnage",
+     "gloss": "une personne (ou un animal) de l'histoire ; le mot est toujours masculin"
+    },
+    {
+     "term": "le personnage principal",
+     "gloss": "le personnage le plus important ; aussi « le héros », « l'héroïne »"
+    },
+    {
+     "term": "le cadre",
+     "gloss": "le lieu et l'époque de l'histoire"
+    },
+    {
+     "term": "l'intrigue",
+     "gloss": "les événements de l'histoire, dans l'ordre"
+    },
+    {
+     "term": "l'élément perturbateur",
+     "gloss": "le problème qui lance l'histoire"
+    },
+    {
+     "term": "le point culminant",
+     "gloss": "le moment le plus intense, juste avant le dénouement"
+    },
+    {
+     "term": "le narrateur",
+     "gloss": "la voix qui raconte l'histoire"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Cadre",
+     "text": "L'histoire se passe sur une petite île, en hiver."
+    },
+    {
+     "label": "Élément perturbateur",
+     "text": "Un jour, une tempête arrive, et le bateau ne peut plus partir."
+    },
+    {
+     "label": "Narrateur",
+     "text": "« J'ouvre la porte » : le narrateur parle à la première personne."
+    }
+   ],
+   "mistake": {
+    "wrong": "L'histoire passe à Lisbonne.",
+    "right": "L'histoire se passe à Lisbonne.",
+    "why": "En espagnol, on dit « la historia pasa en… », mais en français le verbe est pronominal : « se passer ». On peut dire aussi « se dérouler » ou « avoir lieu »."
+   },
+   "tip": "Pour résumer une histoire, utilisez le présent : « Au début, elle arrive à Lisbonne. »"
+  },
+  {
+   "id": "lit-figurative",
+   "title": "Les figures de style",
+   "level": "B1",
+   "minutes": 3,
+   "explanation": "Une figure de style utilise les mots de façon non littérale pour créer une image ou une émotion. La comparaison rapproche deux éléments avec un outil de comparaison (comme, tel, pareil à, ressembler à). La métaphore les rapproche sans outil. La personnification donne des qualités humaines à une chose. L'hyperbole exagère ; la litote dit moins pour faire entendre plus ; l'oxymore unit deux mots de sens contraire.",
+   "expressions": [
+    "L'auteur compare la ville à un animal endormi.",
+    "Cette comparaison rend la voix douce et rassurante.",
+    "Le vent est personnifié : il « murmure ».",
+    "C'est une exagération volontaire : une hyperbole.",
+    "La métaphore suggère que le temps nous vole quelque chose.",
+    "Cela crée une atmosphère calme et silencieuse."
+   ],
+   "vocabulary": [
+    {
+     "term": "la comparaison",
+     "gloss": "un rapprochement avec un outil : « sa voix était douce comme du velours »"
+    },
+    {
+     "term": "la métaphore",
+     "gloss": "un rapprochement sans outil : « le temps est un voleur »"
+    },
+    {
+     "term": "la personnification",
+     "gloss": "des qualités humaines pour une chose : « le vent murmurait »"
+    },
+    {
+     "term": "l'hyperbole",
+     "gloss": "une exagération volontaire : « je te l'ai dit mille fois »"
+    },
+    {
+     "term": "la litote",
+     "gloss": "dire moins pour faire entendre plus : « Va, je ne te hais point » (Corneille) = je t'aime"
+    },
+    {
+     "term": "l'oxymore",
+     "gloss": "deux mots contraires réunis : « cette obscure clarté » (Corneille)"
+    },
+    {
+     "term": "l'antithèse",
+     "gloss": "deux idées opposées dans la même phrase : « Je vis, je meurs » (Louise Labé)"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Comparaison",
+     "text": "Le bureau était silencieux comme une bibliothèque."
+    },
+    {
+     "label": "Métaphore",
+     "text": "Ma boîte mail est un champ de bataille."
+    },
+    {
+     "label": "Personnification",
+     "text": "La vieille imprimante a grogné, puis elle a refusé de travailler."
+    }
+   ],
+   "mistake": {
+    "wrong": "« Ses yeux brillaient comme des étoiles » est une métaphore.",
+    "right": "« Ses yeux brillaient comme des étoiles » est une comparaison.",
+    "why": "S'il y a un outil (« comme », « tel », « pareil à »), c'est une comparaison. La métaphore n'a pas d'outil : « ses yeux étaient des étoiles ». Et en français, on ne dit pas « un simile » : on dit « une comparaison »."
+   },
+   "tip": "Ne vous arrêtez jamais au nom de la figure. Dites ce qu'elle fait : « Cette comparaison rend la pièce froide et vide. »"
+  },
+  {
+   "id": "lit-poetic-form",
+   "title": "Sons et formes en poésie",
+   "level": "B1",
+   "minutes": 3,
+   "explanation": "Un poème est fait de vers, regroupés en strophes (un quatrain a quatre vers, un tercet trois). On compte les syllabes : l'alexandrin en a douze. Les rimes peuvent être plates (AABB), croisées (ABAB) ou embrassées (ABBA). L'allitération répète une consonne, l'assonance répète une voyelle. Il y a enjambement quand la phrase continue sur le vers suivant, et rejet quand un mot court est « rejeté » au début du vers suivant. Le vers libre n'a ni rime ni mètre fixes.",
+   "expressions": [
+    "Le poème compte quatre strophes de quatre vers : ce sont des quatrains.",
+    "Les rimes sont croisées : ABAB.",
+    "On entend une allitération en [l] : « Il pleure… il pleut sur la ville ».",
+    "La phrase continue sur le vers suivant : c'est un enjambement.",
+    "C'est un alexandrin : il a douze syllabes.",
+    "La répétition du mot « cœur » insiste sur la tristesse."
+   ],
+   "vocabulary": [
+    {
+     "term": "un vers",
+     "gloss": "une ligne d'un poème (avec un « s », même au singulier)"
+    },
+    {
+     "term": "une strophe",
+     "gloss": "un groupe de vers, comme un paragraphe du poème"
+    },
+    {
+     "term": "l'allitération",
+     "gloss": "la répétition d'une même consonne dans des mots proches"
+    },
+    {
+     "term": "l'assonance",
+     "gloss": "la répétition d'une même voyelle dans des mots proches"
+    },
+    {
+     "term": "le schéma de rimes",
+     "gloss": "l'ordre des rimes, noté avec des lettres : ABAB, ABBA, AABB"
+    },
+    {
+     "term": "l'enjambement",
+     "gloss": "une phrase qui continue après la fin du vers"
+    },
+    {
+     "term": "le vers libre",
+     "gloss": "une poésie sans rime ni nombre de syllabes fixes"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Allitération",
+     "text": "« Pour qui sont ces serpents qui sifflent sur vos têtes ? » (Racine) : le son [s] imite le sifflement."
+    },
+    {
+     "label": "Assonance",
+     "text": "« Les sanglots longs / Des violons / De l'automne » (Verlaine) : le son [ɔ̃] revient comme une plainte."
+    },
+    {
+     "label": "Rejet",
+     "text": "« Demain, dès l'aube, à l'heure où blanchit la campagne, / Je partirai. » (Hugo)"
+    }
+   ],
+   "mistake": {
+    "wrong": "Chaque strophe a quatre lignes.",
+    "right": "Chaque strophe a quatre vers.",
+    "why": "Dans un poème, une ligne s'appelle « un vers » (comme « un verso » en espagnol), et un groupe de vers s'appelle « une strophe ». « Un verset », c'est pour la Bible."
+   },
+   "tip": "Lisez le poème à voix haute et comptez les syllabes sur vos doigts. Le « e » muet compte devant une consonne, mais pas devant une voyelle ni à la fin du vers."
+  },
+  {
+   "id": "lit-analysis",
+   "title": "Procédé, citation, effet",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "Analyser, ce n'est pas nommer des procédés, c'est expliquer ce qu'ils font. Une bonne phrase d'analyse a trois temps : le procédé, une citation courte entre guillemets, et l'effet sur le sens ou sur le lecteur. On parle du « je » poétique ou du locuteur, qui n'est pas forcément le poète, et on écrit au présent.",
+   "expressions": [
+    "Hugo emploie une anaphore (« J'irai… j'irai… ») pour…",
+    "Le rejet de « Je partirai » met en valeur…, ce qui suggère…",
+    "Cela crée un effet de…",
+    "L'image de… traduit…",
+    "Le ton du locuteur passe de… à…",
+    "On pourrait aussi lire ce passage comme…"
+   ],
+   "vocabulary": [
+    {
+     "term": "le locuteur, le « je » poétique",
+     "gloss": "la voix qui parle dans le poème ; pas forcément le poète"
+    },
+    {
+     "term": "traduire",
+     "gloss": "ici : exprimer, rendre visible un sentiment ou une idée"
+    },
+    {
+     "term": "évoquer",
+     "gloss": "faire venir à l'esprit une image ou une émotion"
+    },
+    {
+     "term": "mettre en valeur",
+     "gloss": "faire ressortir, attirer l'attention sur"
+    },
+    {
+     "term": "la connotation",
+     "gloss": "les idées associées à un mot, au-delà de son sens premier"
+    },
+    {
+     "term": "l'apostrophe",
+     "gloss": "le fait de s'adresser directement à quelqu'un ou à quelque chose : « Vois-tu »"
+    },
+    {
+     "term": "l'ambiguïté",
+     "gloss": "le fait d'avoir plusieurs sens possibles"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Simple observation",
+     "text": "Il y a une apostrophe au vers 2."
+    },
+    {
+     "label": "Analyse",
+     "text": "L'apostrophe « Vois-tu » installe un dialogue intime avec un « tu » absent, ce qui rend la chute, « je mettrai sur ta tombe », d'autant plus bouleversante."
+    },
+    {
+     "label": "Autre lecture",
+     "text": "Le « bouquet de houx vert et de bruyère en fleur » peut se lire comme un simple hommage, ou comme le signe que la vie continue malgré le deuil."
+    }
+   ],
+   "mistake": {
+    "wrong": "Le poète répète « j'irai », que crée un effet d'insistance.",
+    "right": "Le poète répète « j'irai », ce qui crée un effet d'insistance.",
+    "why": "En espagnol, on dit « …, lo que crea… ». En français, quand le pronom est le sujet du verbe, on écrit « ce qui » : « ce qui crée », « ce qui suggère ». « Ce que » s'emploie quand le pronom est complément : « ce que le poète suggère »."
+   },
+   "tip": "Suivez la formule Procédé + Citation + Effet. Si votre phrase ne peut pas continuer avec « ce qui… », vous avez seulement fait une observation."
+  },
+  {
+   "id": "lit-irony-tone",
+   "title": "Ironie, symbole et ton",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "L'ironie naît d'un écart entre ce qui est dit (ou attendu) et ce qui est pensé (ou arrive). Dans l'ironie dramatique, le lecteur sait ce qu'un personnage ignore. Un symbole est un objet ou une image qui représente une idée plus large ; un motif est un détail qui revient. Le ton, ou registre (lyrique, pathétique, tragique, ironique, comique), est l'attitude du narrateur ou du locuteur ; l'atmosphère est l'impression que le texte laisse au lecteur.",
+   "expressions": [
+    "L'ironie naît de l'écart entre… et…",
+    "Le lecteur sait ce que le personnage ignore.",
+    "La porte fermée revient comme un motif.",
+    "La clé peut se lire comme le symbole d'un secret.",
+    "Le registre est ironique : le fabuliste se moque du corbeau.",
+    "La mort n'est jamais nommée : on dit « il nous a quittés »."
+   ],
+   "vocabulary": [
+    {
+     "term": "l'ironie dramatique",
+     "gloss": "le lecteur ou le spectateur sait quelque chose qu'un personnage ignore"
+    },
+    {
+     "term": "l'ironie du sort",
+     "gloss": "le résultat est le contraire de ce qu'on attendait"
+    },
+    {
+     "term": "un symbole",
+     "gloss": "une chose concrète qui représente une idée : la colombe pour la paix"
+    },
+    {
+     "term": "un motif",
+     "gloss": "une image, un objet ou une phrase qui revient dans l'œuvre"
+    },
+    {
+     "term": "le ton, le registre",
+     "gloss": "l'attitude du narrateur : lyrique, pathétique, tragique, ironique, comique…"
+    },
+    {
+     "term": "l'atmosphère",
+     "gloss": "l'impression d'ensemble que ressent le lecteur : inquiétante, joyeuse…"
+    },
+    {
+     "term": "l'euphémisme",
+     "gloss": "un mot plus doux pour une réalité dure : « il nous a quittés »"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Ironie verbale",
+     "text": "« Que vous êtes joli ! » : le Renard dit ce qu'il ne pense pas, pour voler le fromage."
+    },
+    {
+     "label": "Ton et atmosphère",
+     "text": "Le ton de la narratrice est joyeux, mais l'atmosphère est inquiétante, parce que nous savons que l'orage arrive."
+    },
+    {
+     "label": "Euphémisme",
+     "text": "« Elle s'est éteinte » remplace « elle est morte », un mot que le texte évite."
+    }
+   ],
+   "mistake": {
+    "wrong": "L'atmosphère du narrateur est ironique.",
+    "right": "Le ton du narrateur est ironique.",
+    "why": "Le ton (ou registre) appartient au narrateur ou au locuteur : c'est son attitude. L'atmosphère appartient au texte et à ce que ressent le lecteur."
+   },
+   "tip": "L'ironie a toujours deux moitiés. Nommez les deux : ce qui est dit ou attendu, et ce qui est vraiment pensé ou ce qui arrive."
   }
  ]
 }

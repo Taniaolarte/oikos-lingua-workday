@@ -1841,6 +1841,366 @@
         "why": "'Parce que' (porque) da la razón. 'Donc' (entonces) da el resultado. Aquí, la avería es la razón y el retraso es el resultado."
       },
       "tip": "Hazte la pregunta '¿por qué?'. La respuesta empieza con 'parce que' (porque). Para decir el resultado, usa 'donc' (entonces)."
+    },
+    "lit-genres": {
+      "title": "Los géneros literarios",
+      "explanation": "Un género es una familia de textos. Hay cuatro grandes familias: la narrativa ('roman', 'nouvelle', 'conte'), la poesía, el teatro y los textos reales ('biographie', 'autobiographie', 'mémoires'). Para encontrar el género, mira la forma: párrafos, versos y estrofas, o diálogos con el nombre de los personajes.",
+      "expressions": [
+        "Es una novela sobre una familia de Lyon.",
+        "Es una colección de cuentos (relatos cortos).",
+        "Es un poemario (una colección de poemas).",
+        "Es una obra de teatro en tres actos.",
+        "Es una historia real: una biografía de Marie Curie.",
+        "Es un libro para niños."
+      ],
+      "vocabulary": [
+        {
+          "es": "una novela",
+          "gloss": "una historia larga e inventada, escrita en prosa"
+        },
+        {
+          "es": "un cuento, un relato corto",
+          "gloss": "una historia breve que se lee de una vez; ¡ojo! en francés es 'une nouvelle'"
+        },
+        {
+          "es": "un poema",
+          "gloss": "un texto escrito en versos, a menudo con rima; un libro de poemas es un poemario ('un recueil')"
+        },
+        {
+          "es": "una obra de teatro",
+          "gloss": "una historia escrita para actores, con diálogos"
+        },
+        {
+          "es": "una biografía",
+          "gloss": "la historia real de la vida de otra persona"
+        },
+        {
+          "es": "una autobiografía",
+          "gloss": "la historia real de la vida del propio autor"
+        },
+        {
+          "es": "una fábula",
+          "gloss": "una historia corta, a menudo con animales, que termina con una moraleja"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Forma",
+          "text": "Tiene versos y estrofas: es un poema."
+        },
+        {
+          "label": "Forma",
+          "text": "Tiene nombres de personajes y acotaciones: es una obra de teatro."
+        },
+        {
+          "label": "Propósito",
+          "text": "El autor cuenta su propia vida: es una autobiografía."
+        }
+      ],
+      "mistake": {
+        "why": "¡Falso amigo! 'Una novela' en español es 'un roman' en francés. 'Une nouvelle' es una historia corta (un cuento, un relato)."
+      },
+      "tip": "¿Dudas? Hazte dos preguntas: ¿es real o inventado? ¿Está escrito en párrafos, en versos o en diálogos?"
+    },
+    "lit-story": {
+      "title": "Los elementos del relato",
+      "explanation": "Casi todos los relatos tienen los mismos elementos. Los personajes son las personas de la historia. El marco ('le cadre') es el lugar y la época. La trama ('l'intrigue') es lo que pasa, en el orden del esquema narrativo: situación inicial, elemento desencadenante (el problema), peripecias, clímax, y luego desenlace y situación final.",
+      "expressions": [
+        "La historia transcurre en París, en 1920.",
+        "El personaje principal es una joven médica.",
+        "Al principio, ella llega a una ciudad nueva.",
+        "El problema es que nadie confía en ella.",
+        "Al final, salva al pueblo.",
+        "La historia está narrada en primera persona."
+      ],
+      "vocabulary": [
+        {
+          "es": "un personaje",
+          "gloss": "una persona (o animal) de la historia; en francés, 'personnage' es siempre masculino"
+        },
+        {
+          "es": "el personaje principal",
+          "gloss": "el personaje más importante; también 'el héroe', 'la heroína'"
+        },
+        {
+          "es": "el marco, la ambientación",
+          "gloss": "el lugar y la época de la historia"
+        },
+        {
+          "es": "la trama, el argumento",
+          "gloss": "los hechos de la historia, en orden"
+        },
+        {
+          "es": "el elemento desencadenante",
+          "gloss": "el problema que pone en marcha la historia"
+        },
+        {
+          "es": "el clímax",
+          "gloss": "el momento más intenso, justo antes del desenlace"
+        },
+        {
+          "es": "el narrador",
+          "gloss": "la voz que cuenta la historia"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Marco",
+          "text": "La historia transcurre en una pequeña isla, en invierno."
+        },
+        {
+          "label": "Elemento desencadenante",
+          "text": "Un día llega una tormenta y el barco ya no puede salir."
+        },
+        {
+          "label": "Narrador",
+          "text": "'Abro la puerta': el narrador habla en primera persona."
+        }
+      ],
+      "mistake": {
+        "why": "En español decimos 'la historia pasa en…', pero en francés el verbo es pronominal: 'se passer'. También se puede decir 'se dérouler' o 'avoir lieu'."
+      },
+      "tip": "Para resumir una historia, usa el presente: 'Au début, elle arrive à Lisbonne.' (Al principio, llega a Lisboa.)"
+    },
+    "lit-figurative": {
+      "title": "Las figuras retóricas",
+      "explanation": "Una figura retórica ('figure de style') usa las palabras en sentido no literal para crear una imagen o una emoción. La comparación (o símil) acerca dos elementos con un nexo ('comme', 'tel', 'pareil à', 'ressembler à'). La metáfora los acerca sin nexo. La personificación da cualidades humanas a una cosa. La hipérbole exagera; la lítote dice menos para dar a entender más; el oxímoron une dos palabras de sentido contrario.",
+      "expressions": [
+        "El autor compara la ciudad con un animal dormido.",
+        "Esta comparación hace que la voz parezca suave y tranquilizadora.",
+        "El viento está personificado: 'susurra'.",
+        "Es una exageración voluntaria: una hipérbole.",
+        "La metáfora sugiere que el tiempo nos roba algo.",
+        "Esto crea una atmósfera tranquila y silenciosa."
+      ],
+      "vocabulary": [
+        {
+          "es": "la comparación, el símil",
+          "gloss": "un acercamiento con nexo: 'su voz era suave como el terciopelo'"
+        },
+        {
+          "es": "la metáfora",
+          "gloss": "un acercamiento sin nexo: 'el tiempo es un ladrón'"
+        },
+        {
+          "es": "la personificación",
+          "gloss": "cualidades humanas para una cosa: 'el viento susurraba'"
+        },
+        {
+          "es": "la hipérbole",
+          "gloss": "una exageración voluntaria: 'te lo he dicho mil veces'"
+        },
+        {
+          "es": "la lítote",
+          "gloss": "decir menos para dar a entender más: 'Va, je ne te hais point' (Corneille: 'no te odio' = te amo)"
+        },
+        {
+          "es": "el oxímoron",
+          "gloss": "dos palabras contrarias unidas: 'cette obscure clarté' (esa oscura claridad, Corneille)"
+        },
+        {
+          "es": "la antítesis",
+          "gloss": "dos ideas opuestas en la misma frase: 'Je vis, je meurs' (vivo, muero; Louise Labé)"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Comparación",
+          "text": "La oficina estaba silenciosa como una biblioteca."
+        },
+        {
+          "label": "Metáfora",
+          "text": "Mi bandeja de entrada es un campo de batalla."
+        },
+        {
+          "label": "Personificación",
+          "text": "La vieja impresora gruñó y luego se negó a trabajar."
+        }
+      ],
+      "mistake": {
+        "why": "Si hay un nexo ('comme', 'tel', 'pareil à'), es una comparación. La metáfora no tiene nexo: 'ses yeux étaient des étoiles'. Y en francés no se dice 'un simile': se dice 'une comparaison'."
+      },
+      "tip": "No te quedes en el nombre de la figura. Di qué efecto tiene: 'Cette comparaison rend la pièce froide et vide.' (Esta comparación hace que la habitación parezca fría y vacía.)"
+    },
+    "lit-poetic-form": {
+      "title": "Sonido y forma en la poesía",
+      "explanation": "Un poema está hecho de versos ('vers') agrupados en estrofas ('strophes'): un cuarteto ('quatrain') tiene cuatro versos y un terceto ('tercet') tres. Se cuentan las sílabas: el alejandrino ('alexandrin') tiene doce. Las rimas pueden ser pareadas (AABB, 'plates'), cruzadas (ABAB, 'croisées') o abrazadas (ABBA, 'embrassées'). La aliteración repite una consonante y la asonancia, una vocal. Hay encabalgamiento ('enjambement') cuando la frase continúa en el verso siguiente, y 'rejet' cuando una palabra corta queda al principio del verso siguiente. El verso libre no tiene ni rima ni métrica fijas.",
+      "expressions": [
+        "El poema tiene cuatro estrofas de cuatro versos: son cuartetos.",
+        "Las rimas son cruzadas: ABAB.",
+        "Se oye una aliteración en [l]: 'Il pleure… il pleut sur la ville' (llora… llueve sobre la ciudad).",
+        "La frase continúa en el verso siguiente: es un encabalgamiento.",
+        "Es un alejandrino: tiene doce sílabas.",
+        "La repetición de la palabra 'cœur' (corazón) insiste en la tristeza."
+      ],
+      "vocabulary": [
+        {
+          "es": "un verso",
+          "gloss": "una línea de un poema; en francés 'un vers', con 's' incluso en singular"
+        },
+        {
+          "es": "una estrofa",
+          "gloss": "un grupo de versos, como un párrafo del poema"
+        },
+        {
+          "es": "la aliteración",
+          "gloss": "la repetición de una misma consonante en palabras cercanas"
+        },
+        {
+          "es": "la asonancia",
+          "gloss": "la repetición de una misma vocal en palabras cercanas"
+        },
+        {
+          "es": "el esquema de rima",
+          "gloss": "el orden de las rimas, indicado con letras: ABAB, ABBA, AABB"
+        },
+        {
+          "es": "el encabalgamiento",
+          "gloss": "una frase que continúa después del final del verso"
+        },
+        {
+          "es": "el verso libre",
+          "gloss": "poesía sin rima ni número de sílabas fijos"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Aliteración",
+          "text": "'Pour qui sont ces serpents qui sifflent sur vos têtes ?' (Racine): el sonido [s] imita el silbido de las serpientes."
+        },
+        {
+          "label": "Asonancia",
+          "text": "'Les sanglots longs / Des violons / De l'automne' (Verlaine): el sonido [ɔ̃] vuelve como un lamento."
+        },
+        {
+          "label": "Rejet",
+          "text": "'Demain, dès l'aube, à l'heure où blanchit la campagne, / Je partirai.' (Hugo): 'partiré' queda solo al principio del verso."
+        }
+      ],
+      "mistake": {
+        "why": "En un poema, una línea se llama 'un vers' (como 'un verso' en español) y un grupo de versos, 'une strophe'. No digas 'lignes'. 'Un verset' es un versículo de la Biblia."
+      },
+      "tip": "Lee el poema en voz alta y cuenta las sílabas con los dedos. La 'e' muda cuenta delante de consonante, pero no delante de vocal ni al final del verso."
+    },
+    "lit-analysis": {
+      "title": "Recurso, cita, efecto",
+      "explanation": "Analizar no es nombrar recursos, sino explicar qué hacen. Una buena frase de análisis tiene tres partes: el recurso ('le procédé'), una cita breve entre comillas y el efecto en el sentido o en el lector. Se habla del 'yo poético' ('le « je » poétique') o del hablante ('le locuteur'), que no es necesariamente el poeta, y se escribe en presente.",
+      "expressions": [
+        "Hugo emplea una anáfora ('J'irai… j'irai…', iré… iré…) para…",
+        "El 'rejet' de 'Je partirai' (partiré) pone de relieve…, lo que sugiere…",
+        "Esto crea un efecto de…",
+        "La imagen de… expresa…",
+        "El tono del hablante pasa de… a…",
+        "También se podría leer este pasaje como…"
+      ],
+      "vocabulary": [
+        {
+          "es": "el hablante, el yo poético",
+          "gloss": "la voz que habla en el poema; no necesariamente el poeta"
+        },
+        {
+          "es": "expresar, traducir",
+          "gloss": "aquí: hacer visible un sentimiento o una idea ('traduire')"
+        },
+        {
+          "es": "evocar",
+          "gloss": "traer a la mente una imagen o una emoción"
+        },
+        {
+          "es": "poner de relieve, destacar",
+          "gloss": "hacer que algo resalte ('mettre en valeur')"
+        },
+        {
+          "es": "la connotación",
+          "gloss": "las ideas asociadas a una palabra, más allá de su sentido literal"
+        },
+        {
+          "es": "el apóstrofe",
+          "gloss": "dirigirse directamente a alguien o a algo: 'Vois-tu' (¿Ves?)"
+        },
+        {
+          "es": "la ambigüedad",
+          "gloss": "el hecho de tener varios sentidos posibles"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Simple observación",
+          "text": "Hay un apóstrofe en el verso 2."
+        },
+        {
+          "label": "Análisis",
+          "text": "El apóstrofe 'Vois-tu' crea un diálogo íntimo con un 'tú' ausente, lo que hace que el final, 'je mettrai sur ta tombe' (pondré sobre tu tumba), sea aún más conmovedor."
+        },
+        {
+          "label": "Otra lectura",
+          "text": "El 'ramo de acebo verde y de brezo en flor' puede leerse como un simple homenaje, o como señal de que la vida sigue a pesar del duelo."
+        }
+      ],
+      "mistake": {
+        "why": "En español decimos '…, lo que crea…'. En francés, cuando el pronombre es sujeto del verbo, se escribe 'ce qui': 'ce qui crée', 'ce qui suggère'. 'Ce que' se usa cuando el pronombre es complemento: 'ce que le poète suggère' (lo que el poeta sugiere)."
+      },
+      "tip": "Sigue la fórmula Recurso + Cita + Efecto. Si tu frase no puede continuar con 'ce qui…' (lo que…), solo has hecho una observación."
+    },
+    "lit-irony-tone": {
+      "title": "Ironía, símbolo y tono",
+      "explanation": "La ironía nace de una distancia entre lo que se dice (o se espera) y lo que se piensa (o lo que ocurre). En la ironía dramática, el lector sabe algo que un personaje ignora. Un símbolo es un objeto o una imagen que representa una idea más amplia; un motivo es un detalle que se repite. El tono o registro (lírico, patético, trágico, irónico, cómico) es la actitud del narrador o del hablante; la atmósfera ('l'atmosphère') es la impresión que el texto deja en el lector.",
+      "expressions": [
+        "La ironía nace de la distancia entre… y…",
+        "El lector sabe lo que el personaje ignora.",
+        "La puerta cerrada vuelve como un motivo.",
+        "La llave puede leerse como símbolo de un secreto.",
+        "El registro es irónico: el fabulista se burla del cuervo.",
+        "La muerte nunca se nombra: se dice 'il nous a quittés' (nos ha dejado)."
+      ],
+      "vocabulary": [
+        {
+          "es": "la ironía dramática",
+          "gloss": "el lector o el espectador sabe algo que un personaje ignora"
+        },
+        {
+          "es": "la ironía del destino",
+          "gloss": "el resultado es lo contrario de lo que se esperaba"
+        },
+        {
+          "es": "un símbolo",
+          "gloss": "una cosa concreta que representa una idea: la paloma para la paz"
+        },
+        {
+          "es": "un motivo",
+          "gloss": "una imagen, un objeto o una frase que se repite en la obra"
+        },
+        {
+          "es": "el tono, el registro",
+          "gloss": "la actitud del narrador: lírico, patético, trágico, irónico, cómico…"
+        },
+        {
+          "es": "la atmósfera, el ambiente",
+          "gloss": "la impresión de conjunto que siente el lector: inquietante, alegre…"
+        },
+        {
+          "es": "el eufemismo",
+          "gloss": "una palabra más suave para una realidad dura: 'nos ha dejado'"
+        }
+      ],
+      "examples": [
+        {
+          "label": "Ironía verbal",
+          "text": "'Que vous êtes joli !' (¡Qué bonito sois!): el Zorro dice lo que no piensa para robar el queso."
+        },
+        {
+          "label": "Tono y atmósfera",
+          "text": "El tono de la narradora es alegre, pero la atmósfera es inquietante, porque sabemos que llega la tormenta."
+        },
+        {
+          "label": "Eufemismo",
+          "text": "'Elle s'est éteinte' (se apagó) sustituye a 'elle est morte' (murió), una palabra que el texto evita."
+        }
+      ],
+      "mistake": {
+        "why": "El tono (o registro) pertenece al narrador o al hablante: es su actitud. La atmósfera ('l'atmosphère') pertenece al texto y a lo que siente el lector."
+      },
+      "tip": "La ironía siempre tiene dos mitades. Nombra las dos: lo que se dice o se espera, y lo que realmente se piensa o lo que ocurre."
     }
   }
 }

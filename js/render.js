@@ -458,7 +458,8 @@ R.listening = {
 };
 
 /* ---------- shared: a workplace document (email, report, memo, minutes…) ---------- */
-const DOC_ICON = { email: '✉️', report: '📄', memo: '📌', minutes: '🗒️', advert: '📰', chat: '💬', itinerary: '🧳' };
+const DOC_ICON = { email: '✉️', report: '📄', memo: '📌', minutes: '🗒️', advert: '📰', chat: '💬', itinerary: '🧳',
+                   poem: '🪶', story: '📖' };
 const docBody = text => String(text || '').split(/\n{2,}/)
   .map(p => `<p>${esc(p).replace(/\n/g, '<br>')}</p>`).join('');
 const docHTML = (doc, body) => `

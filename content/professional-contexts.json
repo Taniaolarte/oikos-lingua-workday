@@ -7,6 +7,7 @@
     "fr": "Bureau général"
    },
    "icon": "🏢",
+   "color": "#1F3A56",
    "blurb": {
     "en": "Everyday workplace communication.",
     "fr": "La communication quotidienne au bureau."
@@ -19,6 +20,7 @@
     "fr": "Affaires"
    },
    "icon": "📈",
+   "color": "#2E6B4F",
    "blurb": {
     "en": "Accounts, negotiation, reporting.",
     "fr": "Comptes, négociation, reporting."
@@ -31,6 +33,7 @@
     "fr": "Marketing"
    },
    "icon": "📣",
+   "color": "#C64A2C",
    "blurb": {
     "en": "Campaigns, briefs, clients, launches.",
     "fr": "Campagnes, briefs, clients, lancements."
@@ -43,6 +46,7 @@
     "fr": "Design & Création"
    },
    "icon": "🎨",
+   "color": "#7E4BA6",
    "blurb": {
     "en": "Feedback, revisions, creative direction.",
     "fr": "Retours, révisions, direction créative."
@@ -55,6 +59,7 @@
     "fr": "Technologie"
    },
    "icon": "💻",
+   "color": "#2563A8",
    "blurb": {
     "en": "Releases, bugs, sprints, stakeholders.",
     "fr": "Versions, bugs, sprints, parties prenantes."
@@ -67,6 +72,7 @@
     "fr": "Service client"
    },
    "icon": "🎧",
+   "color": "#B23C76",
    "blurb": {
     "en": "Complaints, solutions, difficult calls.",
     "fr": "Réclamations, solutions, appels difficiles."
@@ -79,6 +85,7 @@
     "fr": "Éducation"
    },
    "icon": "🎓",
+   "color": "#A3650E",
    "blurb": {
     "en": "Colleagues, students, programmes.",
     "fr": "Collègues, étudiants, programmes."
@@ -91,6 +98,7 @@
     "fr": "Santé"
    },
    "icon": "🩺",
+   "color": "#0E7C7B",
    "blurb": {
     "en": "Teams, shifts, patients, protocols.",
     "fr": "Équipes, gardes, patients, protocoles."
@@ -103,6 +111,7 @@
     "fr": "Hôtellerie"
    },
    "icon": "🏨",
+   "color": "#8C5A3C",
    "blurb": {
     "en": "Guests, bookings, service recovery.",
     "fr": "Clients, réservations, gestion des incidents."
@@ -115,21 +124,10 @@
     "fr": "Management"
    },
    "icon": "🧭",
+   "color": "#3A3F8F",
    "blurb": {
     "en": "Leading, delegating, difficult conversations.",
     "fr": "Diriger, déléguer, conversations difficiles."
-   }
-  },
-  {
-   "id": "job-search",
-   "label": {
-    "en": "Job Search",
-    "fr": "Recherche d'emploi"
-   },
-   "icon": "🎯",
-   "blurb": {
-    "en": "Interviews, applications, networking.",
-    "fr": "Entretiens, candidatures, réseautage."
    }
   },
   {
@@ -139,10 +137,26 @@
     "fr": "Télétravail"
    },
    "icon": "🌍",
+   "color": "#56707F",
    "blurb": {
     "en": "Async messages, calls, time zones.",
     "fr": "Messages asynchrones, visios, fuseaux horaires."
    }
+  },
+  {
+   "id": "writing-literature",
+   "label": {
+    "en": "Writing & Literature",
+    "fr": "Écriture & Littérature"
+   },
+   "icon": "📚",
+   "color": "#7A2338",
+   "blurb": {
+    "en": "Books, poems, editing, close reading.",
+    "fr": "Livres, poèmes, édition, analyse de texte."
+   },
+   "weight": 20,
+   "specialist": true
   }
  ]
 }

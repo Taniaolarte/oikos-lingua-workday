@@ -867,6 +867,60 @@
     "B2"
    ],
    "guide": "argumenter"
+  },
+  {
+   "id": "lit-genres",
+   "label": "Les genres littéraires",
+   "skill": "vocabulary",
+   "levels": [
+    "A2"
+   ],
+   "guide": "lit-genres"
+  },
+  {
+   "id": "lit-story-elements",
+   "label": "Les éléments du récit",
+   "skill": "comprehension",
+   "levels": [
+    "A2"
+   ],
+   "guide": "lit-story"
+  },
+  {
+   "id": "lit-figures",
+   "label": "Les figures de style",
+   "skill": "vocabulary",
+   "levels": [
+    "B1"
+   ],
+   "guide": "lit-figurative"
+  },
+  {
+   "id": "lit-sound-form",
+   "label": "Sons et formes en poésie",
+   "skill": "reading",
+   "levels": [
+    "B1"
+   ],
+   "guide": "lit-poetic-form"
+  },
+  {
+   "id": "lit-close-reading",
+   "label": "Rédiger une analyse littéraire",
+   "skill": "writing",
+   "levels": [
+    "B2"
+   ],
+   "guide": "lit-analysis"
+  },
+  {
+   "id": "lit-irony-symbol",
+   "label": "Ironie, symbole et ton",
+   "skill": "comprehension",
+   "levels": [
+    "B2"
+   ],
+   "guide": "lit-irony-tone"
   }
  ]
 }

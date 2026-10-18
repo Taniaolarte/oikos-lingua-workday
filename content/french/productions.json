@@ -2209,6 +2209,415 @@
     "Ai-je proposé une solution ?"
    ],
    "model": "Bonjour Élodie,\n\nLes brochures ne sont pas prêtes parce que l'imprimante est en panne. Donc nous n'avons pas les brochures pour jeudi. Mais j'ai une solution : d'abord, j'appelle l'imprimerie Morel. Ensuite, je vais chercher les brochures mercredi.\n\nAna"
+  },
+  "lit-genres": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Écrivez un coup de cœur",
+   "brief": "Dans votre librairie, chaque libraire met une petite carte « coup de cœur » sous un livre qu'il aime. La responsable vous demande d'en écrire une.",
+   "task": "Écrivez une petite carte (25 à 50 mots) : le titre et l'auteur, le genre, de quoi parle le livre, et pour qui il est.",
+   "include": [
+    "Le titre et l'auteur : « Le Comte de Monte-Cristo, d'Alexandre Dumas »",
+    "Le genre : roman, nouvelles, poèmes, pièce, biographie…",
+    "Le sujet : « C'est l'histoire de… », « Il raconte… »",
+    "Pour qui : « Pour les lecteurs qui aiment… »"
+   ],
+   "minWords": 25,
+   "checks": [
+    {
+     "label": "Donne un genre",
+     "any": [
+      "roman",
+      "nouvelle",
+      "poeme",
+      "poesie",
+      "recueil",
+      "piece",
+      "theatre",
+      "biographie",
+      "autobiographie",
+      "memoires",
+      "fable",
+      "conte",
+      "bande dessinee",
+      " bd "
+     ]
+    },
+    {
+     "label": "Dit de quoi parle le livre",
+     "any": [
+      "c'est l'histoire",
+      "raconte",
+      "parle de",
+      "il s'agit",
+      "histoire d",
+      "sur la vie",
+      "sur un",
+      "sur une"
+     ]
+    },
+    {
+     "label": "Dit pour qui",
+     "any": [
+      "pour les",
+      "pour tous",
+      "pour ceux",
+      "pour celles",
+      "si vous aimez",
+      "parfait pour",
+      "ideal pour",
+      "vous allez aimer",
+      "a lire si"
+     ]
+    },
+    {
+     "label": "Pas « novela » pour « roman »",
+     "none": [
+      "novela"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ai-je donné envie de lire le livre ?",
+    "Le genre est-il le bon (roman ou nouvelle) ?"
+   ],
+   "model": "Le Comte de Monte-Cristo, d'Alexandre Dumas\n\nUn long roman d'aventures. C'est l'histoire d'Edmond Dantès : il est innocent, mais il passe quatorze ans en prison. Un jour, il s'échappe… Parfait pour les lecteurs qui aiment les secrets et la vengeance !"
+  },
+  "lit-story": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Résumez une histoire",
+   "brief": "Votre club de lecture a un site internet. Chaque membre écrit un petit résumé d'une histoire qu'il connaît, sans révéler la fin.",
+   "task": "Écrivez un résumé court (30 à 50 mots) d'une histoire que vous connaissez (un livre, un film ou un conte) : le personnage principal, le cadre, le problème, et le début.",
+   "include": [
+    "Le personnage principal",
+    "Le cadre : où et quand",
+    "Le problème (l'élément perturbateur)",
+    "Le présent",
+    "Pas de « divulgâchage » : ne racontez pas la fin"
+   ],
+   "minWords": 30,
+   "checks": [
+    {
+     "label": "Présente le personnage principal",
+     "any": [
+      "personnage principal",
+      "heros",
+      "heroine",
+      "c'est l'histoire d",
+      "raconte l'histoire",
+      "protagoniste"
+     ]
+    },
+    {
+     "label": "Donne le cadre",
+     "any": [
+      "se passe",
+      "se deroule",
+      "a lieu",
+      "siecle",
+      "annees",
+      " en 1",
+      " en 2",
+      "aujourd'hui"
+     ]
+    },
+    {
+     "label": "Nomme le problème",
+     "any": [
+      "probleme",
+      "mais ",
+      "doit ",
+      "un jour",
+      "conflit",
+      "malheureusement"
+     ]
+    },
+    {
+     "label": "Dit « se passer » (et non « l'histoire passe »)",
+     "none": [
+      "l'histoire passe",
+      "le roman passe",
+      "le film passe",
+      "le conte passe"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ai-je gardé la fin secrète ?",
+    "Ai-je écrit au présent ?"
+   ],
+   "model": "Les Misérables se passe en France, au XIXe siècle. Le personnage principal est Jean Valjean. Il sort de prison après dix-neuf ans. Le problème, c'est que personne ne veut l'aider : il est un ancien prisonnier. Un soir, un évêque lui ouvre sa porte…"
+  },
+  "lit-figurative": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Décrivez avec des images",
+   "brief": "Une revue littéraire organise un petit concours : « Mon lieu de travail à 8 heures ». La règle : utiliser des figures de style, et les nommer.",
+   "task": "Décrivez un lieu que vous connaissez (votre bureau, votre ville, votre cuisine) en quelques phrases (50 à 80 mots). Utilisez une comparaison, une métaphore et une personnification, puis ajoutez une phrase sur l'effet de l'une d'elles.",
+   "include": [
+    "Une comparaison avec « comme » ou « tel »",
+    "Une métaphore (sans outil)",
+    "Une personnification",
+    "Une phrase sur l'effet : « La personnification donne l'impression que… »"
+   ],
+   "minWords": 50,
+   "checks": [
+    {
+     "label": "Fait une comparaison avec un outil",
+     "any": [
+      " comme ",
+      " tel ",
+      " telle ",
+      "pareil a",
+      "pareille a",
+      "ressemble"
+     ]
+    },
+    {
+     "label": "Nomme une figure",
+     "any": [
+      "comparaison",
+      "metaphore",
+      "personnification",
+      "personnifie"
+     ]
+    },
+    {
+     "label": "Explique un effet",
+     "any": [
+      "donne l'impression",
+      "cree",
+      "suggere",
+      "montre",
+      "rend ",
+      "effet",
+      "evoque",
+      "fait penser"
+     ]
+    },
+    {
+     "label": "Dit « comparaison », pas « simile »",
+     "none": [
+      " simil ",
+      " simile ",
+      " similes "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ma métaphore est-elle vraiment sans « comme » ?",
+    "Ma personnification donne-t-elle une action humaine à une chose ?"
+   ],
+   "model": "À 8 heures, le bureau est silencieux comme une église. La machine à café tousse, se plaint, puis se réveille lentement. Ma boîte mail est une petite montagne qui a poussé pendant la nuit, et la lumière du matin s'installe sur mon bureau comme un chat patient.\n\nLa personnification de la machine à café donne l'impression que le bureau est vivant avant même l'arrivée des collègues."
+  },
+  "lit-poetic-form": {
+   "renderer": "listening",
+   "kind": "listen",
+   "title": "Écoutez un poème",
+   "brief": "Un poème est fait pour être entendu. Beaucoup de comédiens enregistrent les grands poèmes, et en les écoutant, on repère beaucoup plus facilement les rimes, les allitérations et le rythme.",
+   "taskLabel": "Écoutez d'abord",
+   "task": "Choisissez un poème court en français, enregistré. Écoutez-le deux fois : une fois seulement pour la musique, une fois avec le texte sous les yeux.",
+   "resources": [
+    {
+     "label": "Littérature audio — poèmes et livres lus, gratuits",
+     "url": "https://www.litteratureaudio.com/"
+    },
+    {
+     "label": "France Culture — lectures et émissions littéraires",
+     "url": "https://www.radiofrance.fr/franceculture"
+    }
+   ],
+   "note": "Ces liens s'ouvrent dans un nouvel onglet. Rien n'est enregistré, et n'importe quel poème enregistré convient.",
+   "thenLabel": "Puis écrivez sur les sons et la forme",
+   "then": "Écrivez une courte note (50 à 80 mots) : le titre et le poète, la forme (strophes, rimes, nombre de syllabes ou vers libre), et un procédé sonore, avec une citation et son effet.",
+   "include": [
+    "Le titre et le poète",
+    "La forme : strophes, schéma de rimes, alexandrins ou vers libre",
+    "Un procédé sonore, avec une citation",
+    "L'effet de ce procédé"
+   ],
+   "minWords": 50,
+   "checks": [
+    {
+     "label": "Décrit la forme",
+     "any": [
+      "strophe",
+      "quatrain",
+      "tercet",
+      "sonnet",
+      "vers libre",
+      "rime",
+      "alexandrin",
+      "syllabe"
+     ]
+    },
+    {
+     "label": "Nomme un procédé sonore",
+     "any": [
+      "alliteration",
+      "assonance",
+      "rime",
+      "repetition",
+      "refrain",
+      "anaphore",
+      "onomatopee"
+     ]
+    },
+    {
+     "label": "Dit ce que fait le procédé",
+     "any": [
+      "cree",
+      "suggere",
+      "imite",
+      "evoque",
+      "donne",
+      "rend ",
+      "souligne",
+      "insiste",
+      "met en valeur",
+      "fait entendre"
+     ]
+    },
+    {
+     "label": "Dit « vers », pas « lignes »",
+     "none": [
+      " lignes",
+      " ligne "
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Ai-je lu ma citation à voix haute pour vérifier le son ?",
+    "Ai-je dit ce que fait le son, pas seulement son nom ?"
+   ],
+   "model": "« Il pleure dans mon cœur », de Paul Verlaine, compte quatre quatrains de vers courts, de six syllabes. Dans chaque strophe, le premier, le troisième et le quatrième vers riment. Au début, on entend une allitération en [p] et en [l] : « Il pleure… il pleut sur la ville ». Ces sons doux imitent la pluie qui tombe lentement, et ils mêlent la tristesse du poète au bruit de la pluie."
+  },
+  "lit-analysis": {
+   "renderer": "writing",
+   "kind": "write",
+   "title": "Rédigez un paragraphe d'analyse",
+   "brief": "Vous préparez le guide de l'enseignant d'une anthologie de poésie. Chaque poème a besoin d'un paragraphe d'analyse modèle.",
+   "task": "Choisissez un poème que vous connaissez (ou l'un des poèmes de cette unité). Rédigez un paragraphe (80 à 120 mots) : une idée directrice, une citation courte, le procédé et son effet. Terminez par une autre lecture possible.",
+   "include": [
+    "Une idée directrice claire dans la première phrase",
+    "Une citation courte entre guillemets",
+    "Le procédé nommé et son effet expliqué",
+    "Le locuteur ou le « je » poétique, pas les sentiments du poète",
+    "Une autre lecture (« on pourrait aussi lire… »)"
+   ],
+   "minWords": 90,
+   "checks": [
+    {
+     "label": "Nomme un procédé",
+     "any": [
+      "metaphore",
+      "comparaison",
+      "personnification",
+      "ironie",
+      "repetition",
+      "anaphore",
+      "alliteration",
+      "assonance",
+      "enjambement",
+      "rejet",
+      "cesure",
+      "apostrophe",
+      "antithese",
+      "oxymore",
+      "hyperbole",
+      "litote",
+      "euphemisme",
+      "symbole",
+      "rime",
+      "chute"
+     ]
+    },
+    {
+     "label": "Explique un effet",
+     "any": [
+      "suggere",
+      "cree",
+      "souligne",
+      "evoque",
+      "traduit",
+      "met en valeur",
+      "met en relief",
+      "renforce",
+      "donne l'impression",
+      "insiste",
+      "revele",
+      "produit un effet",
+      "effet de",
+      "ce qui"
+     ]
+    },
+    {
+     "label": "Parle du locuteur ou du « je »",
+     "any": [
+      "locuteur",
+      "je poetique",
+      "je lyrique",
+      "sujet lyrique",
+      "« je »",
+      "\"je\"",
+      "'je'",
+      "la voix",
+      "celui qui parle",
+      "le marcheur",
+      "le narrateur"
+     ]
+    },
+    {
+     "label": "Propose une autre lecture",
+     "any": [
+      "pourrait aussi",
+      "peut aussi",
+      "on pourrait",
+      "une autre lecture",
+      "autre interpretation",
+      "a l'inverse",
+      "inversement",
+      "relire"
+     ]
+    },
+    {
+     "label": "Emploie « ce qui » (pas « que ») avant le verbe de l'effet",
+     "none": [
+      ", que cree un",
+      ", que cree une",
+      ", que suggere que",
+      ", que suggere un",
+      ", que donne un",
+      ", que donne une",
+      ", que montre que",
+      ", que renforce"
+     ]
+    }
+   ],
+   "selfCheck": [
+    "Chaque citation est-elle suivie de son effet ?",
+    "Ai-je évité de raconter le poème vers par vers ?"
+   ],
+   "model": "Dès le premier quatrain, le locuteur se présente comme un marcheur que rien n'arrêtera. Le rejet de « Je partirai » au début du vers 2 isole le verbe, ce qui donne à la décision une force brutale. L'anaphore « J'irai par la forêt, j'irai par la montagne » crée ensuite un rythme régulier, comme celui des pas, et souligne la détermination du « je ». L'apostrophe « Vois-tu » installe un dialogue intime avec un « tu » qui semble vivant, puisqu'il « attend ». On pourrait donc d'abord lire ce début comme un rendez-vous amoureux ; mais la chute, « je mettrai sur ta tombe », oblige à relire tout le poème comme un pèlerinage de deuil."
+  },
+  "lit-irony-tone": {
+   "renderer": "speaking",
+   "kind": "speak",
+   "title": "Expliquez l'ironie",
+   "brief": "Au cercle de lecture, c'est à vous d'ouvrir la discussion sur « Le Corbeau et le Renard » de La Fontaine. Le Renard flatte le Corbeau (« Que vous êtes joli ! »), lui prend le fromage, puis lui donne une leçon : « tout flatteur / Vit aux dépens de celui qui l'écoute ».",
+   "task": "Expliquez l'ironie de la fable et le ton du fabuliste. Environ une minute.",
+   "prepSeconds": 60,
+   "speakSeconds": 75,
+   "checklist": [
+    "J'ai nommé les deux moitiés de l'ironie : ce que dit le Renard et ce qu'il pense",
+    "J'ai cité au moins une expression de la fable",
+    "J'ai remarqué que c'est le flatteur lui-même qui donne la morale",
+    "J'ai décrit le ton du fabuliste (amusé, moqueur, ironique)",
+    "J'ai parlé de ce que disent les mots, pas seulement de la vie de La Fontaine",
+    "J'ai terminé par une question ou une autre lecture pour lancer la discussion"
+   ],
+   "model": "Ce qui me frappe d'abord, c'est l'ironie. Le Renard parle comme un courtisan : « Hé ! bonjour, Monsieur du Corbeau », « Que vous êtes joli ! ». Il dit exactement le contraire de ce qu'il pense, seulement pour obtenir le fromage. Et le plus ironique, c'est que la morale est prononcée par le flatteur lui-même : « tout flatteur / Vit aux dépens de celui qui l'écoute ». Il donne une leçon, et il se fait payer avec le fromage !\n\nLe ton du fabuliste est amusé, presque moqueur, surtout dans le dernier vers : le Corbeau jure, « mais un peu tard », qu'on ne l'y prendrait plus. J'aimerais poser une question au groupe : est-ce qu'on a pitié du Corbeau, ou est-ce qu'on rit avec le Renard ?"
   }
  }
 }

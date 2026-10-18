@@ -355,7 +355,6 @@
     "general-office",
     "business",
     "marketing",
-    "job-search",
     "remote-work"
    ],
    "category": "inbox",
@@ -2081,7 +2080,6 @@
    "id": "en-job-interview-01",
    "level": "B1",
    "contexts": [
-    "job-search",
     "business",
     "technology",
     "education",
@@ -2160,7 +2158,6 @@
    "id": "en-strengths-weaknesses-01",
    "level": "B1",
    "contexts": [
-    "job-search",
     "management",
     "business",
     "education",
@@ -2231,7 +2228,6 @@
    "id": "en-salary-01",
    "level": "B2",
    "contexts": [
-    "job-search",
     "management",
     "business",
     "general-office",
@@ -2371,7 +2367,6 @@
    "level": "A2",
    "contexts": [
     "business",
-    "job-search",
     "marketing",
     "hospitality",
     "education"
@@ -2688,7 +2683,6 @@
    "id": "en-speaking-long-turn-01",
    "level": "B2",
    "contexts": [
-    "job-search",
     "education",
     "business",
     "general-office",
@@ -3353,7 +3347,6 @@
    "id": "en-describe-experience-01",
    "level": "A2",
    "contexts": [
-    "job-search",
     "business",
     "technology",
     "design-creative",
@@ -3719,7 +3712,6 @@
    "id": "en-introduce-yourself-01",
    "level": "A2",
    "contexts": [
-    "job-search",
     "business",
     "education",
     "technology",
@@ -4264,7 +4256,6 @@
    "id": "en-read-job-advert-01",
    "level": "A2",
    "contexts": [
-    "job-search",
     "general-office",
     "business",
     "hospitality"
@@ -9263,6 +9254,1367 @@
      "Is the trade-off of my choice clear?"
     ],
     "model": "Hi Tom,\n\nHere is a quick comparison of the three offices.\n\nOffice B is by far the cheapest at €24 per square metre, but it is also the furthest from the station: 35 minutes, which is about three times as long as the others. Office A is the most convenient, just ten minutes away, but it is considerably more expensive, at €30.\n\nOffice C sits in between. It is only slightly more expensive than B and almost as close to the station as A. The trade-off is timing, as it is not available until March.\n\nOn balance, I would recommend Office C. Waiting two months costs us less than a long commute would cost the team every day.\n\nBest,\nLeila"
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-new-arrivals-01",
+   "level": "A2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "library",
+   "scenario": "new-arrivals-table",
+   "topic": "lit-genres",
+   "guide": "lit-genres",
+   "interaction": "matching",
+   "before": {
+    "brief": "You work in a bookshop. The new books need labels, and the labels need the right genre.",
+    "prompt": "Match each genre to the right description.",
+    "pairs": [
+     {
+      "left": "a novel",
+      "right": "a long invented story in prose"
+     },
+     {
+      "left": "a short story",
+      "right": "an invented story you can read in one go"
+     },
+     {
+      "left": "a poetry collection",
+      "right": "a book of texts written in lines and stanzas"
+     },
+     {
+      "left": "a play",
+      "right": "a story written for actors, with dialogue"
+     },
+     {
+      "left": "a biography",
+      "right": "the true story of another person's life"
+     },
+     {
+      "left": "an autobiography",
+      "right": "the true story of the writer's own life"
+     }
+    ],
+    "feedback": "Two questions sort almost every book: is it invented or true? Is it written in paragraphs, lines or dialogue?"
+   },
+   "after": {
+    "brief": "A school is ordering books for its library. The order form uses these words.",
+    "prompt": "Match each word to its meaning.",
+    "pairs": [
+     {
+      "left": "a fable",
+      "right": "a short story, often with animals, that teaches a lesson"
+     },
+     {
+      "left": "a myth",
+      "right": "a traditional story about gods or the beginning of the world"
+     },
+     {
+      "left": "a legend",
+      "right": "a traditional story about a person or place, part history and part imagination"
+     },
+     {
+      "left": "an anthology",
+      "right": "a collection of texts by different writers"
+     },
+     {
+      "left": "a memoir",
+      "right": "true memories from part of the writer's life"
+     },
+     {
+      "left": "a novella",
+      "right": "a story longer than a short story but shorter than a novel"
+     }
+    ],
+    "feedback": "A fable teaches a lesson; a myth explains the world; a legend mixes history and imagination. An anthology collects many writers in one book."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-newsletter-01",
+   "level": "A2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "report",
+   "scenario": "book-club-newsletter",
+   "topic": "lit-genres",
+   "guide": "lit-genres",
+   "interaction": "read-report",
+   "before": {
+    "brief": "The library's book club meets tonight. Read this month's newsletter before you go.",
+    "prompt": "Read the newsletter and answer the questions.",
+    "doc": {
+     "kind": "report",
+     "title": "Book Club News — October",
+     "meta": [
+      "From: City Library",
+      "Meeting: Thursday, 7 p.m., Room 2"
+     ],
+     "text": "This month we have three very different books.\n\nOur main book is The River House, a long novel by Ana Ruiz. It tells the story of three sisters who return to their family home in Galicia after twenty years.\n\nFor the poetry group, we are reading Small Lights, a collection of short poems about city life. Most of the poems do not rhyme, and many are only five or six lines long.\n\nFinally, the theatre group is reading Last Train, a play in two acts. It has only two characters, and all the action takes place in one train station at night.\n\nPlease bring your own copy. The library has five copies of each book."
+    },
+    "questions": [
+     {
+      "q": "Which book is a play?",
+      "options": [
+       {
+        "text": "Last Train",
+        "correct": true,
+        "feedback": "Correct. 'A play in two acts' with characters and action in one place."
+       },
+       {
+        "text": "The River House",
+        "correct": false,
+        "feedback": "The River House is a long novel."
+       },
+       {
+        "text": "Small Lights",
+        "correct": false,
+        "feedback": "Small Lights is a collection of poems."
+       }
+      ]
+     },
+     {
+      "q": "What is The River House about?",
+      "options": [
+       {
+        "text": "Three sisters who go back to their family home",
+        "correct": true,
+        "feedback": "Correct. '…three sisters who return to their family home in Galicia…'"
+       },
+       {
+        "text": "Two people at a train station",
+        "correct": false,
+        "feedback": "That's Last Train."
+       },
+       {
+        "text": "Life in the city",
+        "correct": false,
+        "feedback": "That's the poetry collection."
+       }
+      ]
+     },
+     {
+      "q": "What do we learn about the poems in Small Lights?",
+      "options": [
+       {
+        "text": "Most of them don't rhyme, and many are short.",
+        "correct": true,
+        "feedback": "Correct. 'Most of the poems do not rhyme, and many are only five or six lines long.'"
+       },
+       {
+        "text": "They all tell one long story.",
+        "correct": false,
+        "feedback": "The newsletter doesn't say this. They are short poems about city life."
+       },
+       {
+        "text": "They are written for actors.",
+        "correct": false,
+        "feedback": "That describes a play, not poems."
+       }
+      ]
+     },
+     {
+      "q": "How many copies of each book does the library have?",
+      "options": [
+       {
+        "text": "Five",
+        "correct": true,
+        "feedback": "Correct. 'The library has five copies of each book.'"
+       },
+       {
+        "text": "Two",
+        "correct": false,
+        "feedback": "Two is the number of acts in Last Train, and its number of characters."
+       },
+       {
+        "text": "Three",
+        "correct": false,
+        "feedback": "Three is the number of books, and of sisters."
+       }
+      ]
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now you're putting up a poster for next month's library events. Check it before it goes on the wall.",
+    "prompt": "Read the poster and answer the questions.",
+    "doc": {
+     "kind": "advert",
+     "title": "November at the Library",
+     "meta": [
+      "All events are free"
+     ],
+     "text": "Saturday 4, 11 a.m. — Fables for Families. Short stories with animals, and the lessons they teach. For children aged 5 to 9.\n\nWednesday 15, 7 p.m. — Meet the Author. Journalist Sam Okafor talks about his new biography of the scientist Rosalind Franklin.\n\nFriday 24, 8 p.m. — Open Mic Poetry Night. Read one of your own poems, or a poem you love. Maximum three minutes each.\n\nPlease book a place at the front desk."
+    },
+    "questions": [
+     {
+      "q": "Which event is about a true story of someone's life?",
+      "options": [
+       {
+        "text": "Meet the Author",
+        "correct": true,
+        "feedback": "Correct. A biography is the true story of another person's life."
+       },
+       {
+        "text": "Fables for Families",
+        "correct": false,
+        "feedback": "Fables are invented stories with a lesson."
+       },
+       {
+        "text": "Open Mic Poetry Night",
+        "correct": false,
+        "feedback": "This event is about poems."
+       }
+      ]
+     },
+     {
+      "q": "What kind of stories are fables?",
+      "options": [
+       {
+        "text": "Short stories with animals that teach a lesson",
+        "correct": true,
+        "feedback": "Correct. 'Short stories with animals, and the lessons they teach.'"
+       },
+       {
+        "text": "Long novels for adults",
+        "correct": false,
+        "feedback": "The poster says they are short, and for children."
+       },
+       {
+        "text": "True stories about scientists",
+        "correct": false,
+        "feedback": "That's the biography."
+       }
+      ]
+     },
+     {
+      "q": "At the poetry night, what can you do?",
+      "options": [
+       {
+        "text": "Read your own poem or a poem you love, for up to three minutes",
+        "correct": true,
+        "feedback": "Correct. 'Maximum three minutes each.'"
+       },
+       {
+        "text": "Meet a famous poet",
+        "correct": false,
+        "feedback": "The poster doesn't say this."
+       },
+       {
+        "text": "Write a poem with a teacher",
+        "correct": false,
+        "feedback": "The poster doesn't say this."
+       }
+      ]
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-story-order-01",
+   "level": "A2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "editorial",
+   "scenario": "plot-summary-cards",
+   "topic": "lit-story-elements",
+   "guide": "lit-story",
+   "interaction": "sentence-order",
+   "before": {
+    "brief": "A publisher is making story cards for a children's book. The cards for 'The Tortoise and the Hare' are mixed up.",
+    "prompt": "Put the parts of the story in the right order.",
+    "items": [
+     "A fast hare laughs at a slow tortoise, and the tortoise says: 'Let's have a race.'",
+     "The race starts. The hare runs far ahead and decides to sleep under a tree.",
+     "The tortoise walks slowly but never stops, and passes the sleeping hare.",
+     "The hare wakes up and runs, but it's too late: the tortoise wins.",
+     "The lesson: slow and steady wins the race."
+    ],
+    "feedback": "Beginning (the characters and the problem) → events → the climax (the tortoise passes the hare) → the ending → the lesson. A fable always ends with its lesson."
+   },
+   "after": {
+    "brief": "Now the back cover of a new novel. The summary sentences are in the wrong order.",
+    "prompt": "Put the summary in the right order.",
+    "items": [
+     "Lisbon, 1998. Inês is twenty-three and works in her grandfather's small restaurant.",
+     "One day, a letter arrives: the building is sold, and the restaurant must close in three months.",
+     "Inês decides to enter a famous cooking competition. The prize is enough to save the restaurant.",
+     "On the night of the final, her grandfather falls ill, and she has to cook alone.",
+     "In the end, she doesn't win, but a food critic in the audience changes everything."
+    ],
+    "feedback": "Setting and character first, then the problem (the conflict), then the plan, the climax (the final night) and the ending (the resolution)."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-book-club-01",
+   "level": "A2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "speaking",
+   "scenario": "book-club-turn",
+   "topic": "lit-story-elements",
+   "guide": "lit-story",
+   "interaction": "speaking",
+   "before": {
+    "brief": "It's your turn at the book club. Everyone tells the group about a story they like.",
+    "prompt": "Talk about a story you know: a book, a film or a folk tale. Say the title, the main character, where it takes place, and what the problem is. Don't tell the ending!",
+    "prepSeconds": 30,
+    "speakSeconds": 45,
+    "checklist": [
+     "I said the title and the genre",
+     "I named the main character",
+     "I said where and when it takes place",
+     "I explained the problem",
+     "I used the present simple ('she lives', 'he finds')",
+     "I didn't tell the ending"
+    ],
+    "model": "I want to talk about The Little Prince. It's a short novel by Antoine de Saint-Exupéry. The main character is a little prince who lives on a very small planet. The story takes place in the desert, where a pilot's plane breaks down. The problem is that the pilot has to repair his plane, but the little prince has a lot of questions… I won't tell you the ending!",
+    "feedback": "Title and genre, character, setting, problem: four short sentences already make a clear summary. The present simple is the normal tense for telling a story."
+   },
+   "after": {
+    "brief": "In the bookshop, a customer asks you: 'Can you recommend a book for my daughter? She's twelve, and she loves adventure stories.'",
+    "prompt": "Recommend a book. Say what kind of book it is, who the main character is, where it takes place, and why she will like it.",
+    "prepSeconds": 30,
+    "speakSeconds": 45,
+    "checklist": [
+     "I named a book and its genre",
+     "I described the main character",
+     "I said where it takes place",
+     "I gave a reason with 'because'",
+     "I used the present simple",
+     "I didn't tell the ending"
+    ],
+    "model": "How about Treasure Island? It's an adventure novel. The main character is Jim, a boy who works in his mother's inn. He finds a map, and he goes to sea to look for treasure on an island. The problem is that some of the sailors are pirates! I think your daughter will like it because it's exciting and the chapters are short.",
+    "feedback": "A good recommendation gives the genre, a character to care about, the setting, and one reason that fits this reader."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-blurb-devices-01",
+   "level": "B1",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "editorial",
+   "scenario": "manuscript-devices",
+   "topic": "lit-figures",
+   "guide": "lit-figurative",
+   "interaction": "categorise",
+   "before": {
+    "brief": "You're an editorial assistant. The editor wants a list of the best images in a new novel, sorted by device.",
+    "prompt": "Put each line into the right group.",
+    "bins": [
+     "Simile",
+     "Metaphor",
+     "Personification"
+    ],
+    "items": [
+     {
+      "text": "Her voice was like velvet.",
+      "bin": "Simile"
+     },
+     {
+      "text": "The streets were as empty as a Sunday church.",
+      "bin": "Simile"
+     },
+     {
+      "text": "Time is a thief.",
+      "bin": "Metaphor"
+     },
+     {
+      "text": "The city was a sleeping animal.",
+      "bin": "Metaphor"
+     },
+     {
+      "text": "The wind whispered a warning.",
+      "bin": "Personification"
+     },
+     {
+      "text": "The old house watched us from the hill.",
+      "bin": "Personification"
+     }
+    ],
+    "feedback": "'Like' or 'as' → simile. One thing IS another → metaphor. A thing breathes, whispers or watches → personification."
+   },
+   "after": {
+    "brief": "Marketing has written slogans for the poetry festival. The editor wants them sorted before they go to print.",
+    "prompt": "Put each slogan into the right group.",
+    "bins": [
+     "Hyperbole",
+     "Understatement",
+     "Oxymoron"
+    ],
+    "items": [
+     {
+      "text": "A million poems in one weekend!",
+      "bin": "Hyperbole"
+     },
+     {
+      "text": "The greatest night in the history of words.",
+      "bin": "Hyperbole"
+     },
+     {
+      "text": "Shakespeare? He was quite a good writer.",
+      "bin": "Understatement"
+     },
+     {
+      "text": "Three days of poetry. It might be a little bit interesting.",
+      "bin": "Understatement"
+     },
+     {
+      "text": "Come and hear the deafening silence.",
+      "bin": "Oxymoron"
+     },
+     {
+      "text": "A festival of sweet sorrow.",
+      "bin": "Oxymoron"
+     }
+    ],
+    "feedback": "Hyperbole makes things bigger; understatement makes them smaller (often for humour); an oxymoron puts two opposite words together."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-author-email-01",
+   "level": "B1",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "inbox",
+   "scenario": "edit-notes-author",
+   "topic": "lit-figures",
+   "guide": "lit-figurative",
+   "interaction": "email-gaps",
+   "before": {
+    "brief": "You're writing to an author with notes on the first chapter of her novel. Choose the right term for each gap.",
+    "prompt": "Complete the email.",
+    "doc": {
+     "kind": "email",
+     "title": "Subject: Notes on chapter one",
+     "meta": [
+      "To: Helen Park"
+     ]
+    },
+    "text": "Dear Helen,\n\nThank you for chapter one. We love the opening line, 'The city was a sleeping animal'. It's a powerful {}, and it sets the mood immediately.\n\nOn page 3, 'the wind whispered through the trees' is a nice piece of {}, but we have the wind whispering again on page 5. Could you change one of them?\n\nWe also liked 'as quiet as snow'. This {} is simple and clear. Finally, 'I've told you a million times' is obviously {}, so it works well in Sam's dialogue: it sounds like real speech.\n\nBest wishes,\nMarta",
+    "gaps": [
+     {
+      "options": [
+       "metaphor",
+       "simile",
+       "rhyme",
+       "plot"
+      ],
+      "answer": 0,
+      "feedback": "No 'like' or 'as': the city IS an animal. That's a metaphor."
+     },
+     {
+      "options": [
+       "personification",
+       "alliteration",
+       "metaphor",
+       "hyperbole"
+      ],
+      "answer": 0,
+      "feedback": "The wind does something human, whispering: personification."
+     },
+     {
+      "options": [
+       "simile",
+       "metaphor",
+       "oxymoron",
+       "stanza"
+      ],
+      "answer": 0,
+      "feedback": "'As quiet as' compares with 'as': a simile."
+     },
+     {
+      "options": [
+       "hyperbole",
+       "understatement",
+       "personification",
+       "irony"
+      ],
+      "answer": 0,
+      "feedback": "Nobody has said it a million times: it's a deliberate exaggeration, hyperbole."
+     }
+    ]
+   },
+   "after": {
+    "brief": "The translator of the novel has questions. You reply with the editor's explanations.",
+    "prompt": "Complete the email.",
+    "doc": {
+     "kind": "email",
+     "title": "Subject: RE: Translation questions",
+     "meta": [
+      "To: Pierre Laval"
+     ]
+    },
+    "text": "Hi Pierre,\n\nThanks for your questions. 'A deafening silence' is an {}: two opposite ideas side by side, so please keep both words in French.\n\nWhen Sam says 'It's just a scratch' about his broken arm, that's {}. He makes it sound small, which shows he's brave, or proud.\n\nIn chapter 4, the fire station burns down. This is {}: the opposite of what we expect. And the red scarf that appears in every chapter is a {}: it stands for Helen's lost sister.\n\nBest,\nMarta",
+    "gaps": [
+     {
+      "options": [
+       "oxymoron",
+       "simile",
+       "euphemism",
+       "rhyme"
+      ],
+      "answer": 0,
+      "feedback": "Two contradictory words together, 'deafening' and 'silence': an oxymoron."
+     },
+     {
+      "options": [
+       "understatement",
+       "hyperbole",
+       "metaphor",
+       "alliteration"
+      ],
+      "answer": 0,
+      "feedback": "Making something serious sound small is understatement, the opposite of hyperbole."
+     },
+     {
+      "options": [
+       "irony",
+       "personification",
+       "a simile",
+       "a stanza"
+      ],
+      "answer": 0,
+      "feedback": "A gap between what we expect and what happens: situational irony."
+     },
+     {
+      "options": [
+       "symbol",
+       "simile",
+       "setting",
+       "narrator"
+      ],
+      "answer": 0,
+      "feedback": "An object that stands for a bigger idea is a symbol."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-spider-read-01",
+   "level": "B1",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "report",
+   "scenario": "poetry-magazine-feature",
+   "topic": "lit-sound-form",
+   "guide": "lit-poetic-form",
+   "interaction": "read-report",
+   "before": {
+    "brief": "You work for a poetry magazine. Next month's feature is on Walt Whitman, and you're checking the notes before they go to print.",
+    "prompt": "Read the poem and answer the questions.",
+    "doc": {
+     "kind": "poem",
+     "title": "A Noiseless Patient Spider",
+     "meta": [
+      "Walt Whitman"
+     ],
+     "text": "A noiseless patient spider,\nI mark'd where on a little promontory it stood isolated,\nMark'd how to explore the vacant, vast surrounding,\nIt launched forth filament, filament, filament, out of itself,\nEver unreeling them, ever tirelessly speeding them.\n\nAnd you O my soul where you stand,\nSurrounded, detached, in measureless oceans of space,\nCeaselessly musing, venturing, throwing, seeking the spheres to connect them,\nTill the bridge you will need be form'd, till the ductile anchor hold,\nTill the gossamer thread you fling catch somewhere, O my soul."
+    },
+    "questions": [
+     {
+      "q": "How is the poem organised?",
+      "options": [
+       {
+        "text": "Two stanzas of five lines, in free verse",
+        "correct": true,
+        "feedback": "Correct. Two groups of five lines, with no regular rhyme or metre."
+       },
+       {
+        "text": "Fourteen lines with a rhyme scheme: it's a sonnet",
+        "correct": false,
+        "feedback": "It has ten lines and no rhyme scheme."
+       },
+       {
+        "text": "Three stanzas with a refrain",
+        "correct": false,
+        "feedback": "There are two stanzas, and no repeated refrain line."
+       }
+      ]
+     },
+     {
+      "q": "Why does the poet repeat 'filament, filament, filament'?",
+      "options": [
+       {
+        "text": "To imitate the spider sending out thread after thread",
+        "correct": true,
+        "feedback": "Correct. The repetition copies the repeated action."
+       },
+       {
+        "text": "Because he has forgotten the word for 'thread'",
+        "correct": false,
+        "feedback": "The repetition is deliberate: it has an effect."
+       },
+       {
+        "text": "To make the line rhyme with the next one",
+        "correct": false,
+        "feedback": "The poem doesn't rhyme. The repetition imitates the spinning."
+       }
+      ]
+     },
+     {
+      "q": "Which phrase uses alliteration?",
+      "options": [
+       {
+        "text": "'vacant, vast'",
+        "correct": true,
+        "feedback": "Correct. The 'v' sound repeats at the start of both words."
+       },
+       {
+        "text": "'out of itself'",
+        "correct": false,
+        "feedback": "The words don't begin with the same consonant sound."
+       },
+       {
+        "text": "'where you stand'",
+        "correct": false,
+        "feedback": "No repeated first consonant here."
+       }
+      ]
+     },
+     {
+      "q": "What does the second stanza compare to the spider?",
+      "options": [
+       {
+        "text": "The speaker's soul",
+        "correct": true,
+        "feedback": "Correct. 'And you O my soul…': the soul is also alone, reaching out to connect."
+       },
+       {
+        "text": "The ocean",
+        "correct": false,
+        "feedback": "'Oceans of space' describe where the soul is, but it's the soul that is compared to the spider."
+       },
+       {
+        "text": "A bridge",
+        "correct": false,
+        "feedback": "The bridge is what the soul hopes to build."
+       }
+      ]
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now the magazine's 'Classic of the month' page. A reader has written in with questions about this sonnet.",
+    "prompt": "Read the poem and answer the questions.",
+    "doc": {
+     "kind": "poem",
+     "title": "Sonnet 18",
+     "meta": [
+      "William Shakespeare"
+     ],
+     "text": "Shall I compare thee to a summer's day?\nThou art more lovely and more temperate:\nRough winds do shake the darling buds of May,\nAnd summer's lease hath all too short a date;\nSometime too hot the eye of heaven shines,\nAnd often is his gold complexion dimm'd;\nAnd every fair from fair sometime declines,\nBy chance or nature's changing course untrimm'd;\nBut thy eternal summer shall not fade,\nNor lose possession of that fair thou ow'st;\nNor shall Death brag thou wander'st in his shade,\nWhen in eternal lines to time thou grow'st:\nSo long as men can breathe or eyes can see,\nSo long lives this, and this gives life to thee."
+    },
+    "questions": [
+     {
+      "q": "How many lines does a sonnet have?",
+      "options": [
+       {
+        "text": "Fourteen",
+        "correct": true,
+        "feedback": "Correct. Count them: fourteen lines is the mark of a sonnet."
+       },
+       {
+        "text": "Ten",
+        "correct": false,
+        "feedback": "Ten is the Whitman poem. A sonnet has fourteen."
+       },
+       {
+        "text": "Sixteen",
+        "correct": false,
+        "feedback": "A sonnet has fourteen lines."
+       }
+      ]
+     },
+     {
+      "q": "What is the rhyme scheme of the first four lines (day / temperate / May / date)?",
+      "options": [
+       {
+        "text": "ABAB",
+        "correct": true,
+        "feedback": "Correct. 'day' rhymes with 'May' (A), 'temperate' with 'date' (B)."
+       },
+       {
+        "text": "AABB",
+        "correct": false,
+        "feedback": "'day' and 'temperate' don't rhyme. The rhymes alternate."
+       },
+       {
+        "text": "There is no rhyme: it's free verse",
+        "correct": false,
+        "feedback": "Sonnets have a fixed rhyme scheme. Free verse doesn't."
+       }
+      ]
+     },
+     {
+      "q": "The last two lines end with 'see' and 'thee'. What are they called?",
+      "options": [
+       {
+        "text": "A rhyming couplet",
+        "correct": true,
+        "feedback": "Correct. Two lines together that rhyme close the poem."
+       },
+       {
+        "text": "A stanza of free verse",
+        "correct": false,
+        "feedback": "They rhyme, so they are not free verse."
+       },
+       {
+        "text": "Enjambment",
+        "correct": false,
+        "feedback": "Enjambment is when a sentence runs past the end of a line."
+       }
+      ]
+     },
+     {
+      "q": "Which phrase uses alliteration?",
+      "options": [
+       {
+        "text": "'every fair from fair'",
+        "correct": true,
+        "feedback": "Correct. The 'f' sound repeats at the start of 'fair', 'from' and 'fair'."
+       },
+       {
+        "text": "'darling buds'",
+        "correct": false,
+        "feedback": "The first sounds are different: 'd' and 'b'."
+       },
+       {
+        "text": "'summer's lease'",
+        "correct": false,
+        "feedback": "The first sounds are different: 's' and 'l'."
+       }
+      ]
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-poetry-terms-01",
+   "level": "B1",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "library",
+   "scenario": "festival-programme-glossary",
+   "topic": "lit-sound-form",
+   "guide": "lit-poetic-form",
+   "interaction": "matching",
+   "before": {
+    "brief": "The poetry festival programme has a glossary at the back. The definitions have got mixed up.",
+    "prompt": "Match each term to its definition.",
+    "pairs": [
+     {
+      "left": "alliteration",
+      "right": "the same first consonant sound in nearby words: 'wild and windy'"
+     },
+     {
+      "left": "assonance",
+      "right": "the same vowel sound in nearby words: 'go slow over the road'"
+     },
+     {
+      "left": "rhyme scheme",
+      "right": "the pattern of end rhymes, shown with letters: ABAB"
+     },
+     {
+      "left": "stanza",
+      "right": "a group of lines in a poem"
+     },
+     {
+      "left": "enjambment",
+      "right": "a sentence that runs on past the end of a line"
+     },
+     {
+      "left": "free verse",
+      "right": "poetry without a fixed rhyme scheme or metre"
+     }
+    ],
+    "feedback": "Alliteration repeats beginnings; assonance repeats vowels; rhyme matches endings. Stanza is the 'paragraph' of a poem."
+   },
+   "after": {
+    "brief": "Now the second page of the glossary, for the workshop on poetic forms.",
+    "prompt": "Match each term to its definition.",
+    "pairs": [
+     {
+      "left": "a refrain",
+      "right": "a line or group of lines that is repeated, as in a song"
+     },
+     {
+      "left": "a couplet",
+      "right": "two lines together, often rhyming"
+     },
+     {
+      "left": "a sonnet",
+      "right": "a fourteen-line poem with a formal tradition"
+     },
+     {
+      "left": "a haiku",
+      "right": "a short Japanese form, traditionally in three phrases"
+     },
+     {
+      "left": "a caesura",
+      "right": "a pause in the middle of a line"
+     },
+     {
+      "left": "onomatopoeia",
+      "right": "a word that imitates a sound: 'buzz', 'crash'"
+     }
+    ],
+    "feedback": "A refrain repeats; a couplet pairs; a caesura pauses inside the line, while enjambment carries on past the end of it."
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-analysis-sentence-01",
+   "level": "B2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "editorial",
+   "scenario": "teachers-guide-notes",
+   "topic": "lit-close-reading",
+   "guide": "lit-analysis",
+   "interaction": "stronger-sentence",
+   "before": {
+    "brief": "You're editing the teacher's guide for a poetry anthology. Four contributors wrote a sentence on the same line from Whitman: 'It launched forth filament, filament, filament, out of itself'.",
+    "prompt": "Which sentence should go into the guide?",
+    "options": [
+     {
+      "text": "Whitman's epizeuxis ('filament, filament, filament') imitates the spider's repeated spinning, which makes the soul's effort to connect feel patient and endless.",
+      "score": 100,
+      "feedback": "Device, evidence and effect, and it links the image to the poem's larger meaning."
+     },
+     {
+      "text": "Whitman repeats the word 'filament' three times in line 4.",
+      "score": 25,
+      "feedback": "Accurate, but only an observation. Why does it matter?"
+     },
+     {
+      "text": "The repetition of 'filament' is very effective and powerful.",
+      "score": 25,
+      "feedback": "'Effective' and 'powerful' sound like analysis but say nothing. Effective at doing what?"
+     },
+     {
+      "text": "Whitman was obviously a lonely man who spent a lot of time watching spiders.",
+      "score": 0,
+      "feedback": "Guesswork about the poet's life, not analysis of the words, and it confuses the poet with the speaker."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now a sentence on Dickinson's 'We talked as Girls do'. The editor wants the strongest one about her dashes, as in 'We – occupy – Degree –'.",
+    "prompt": "Which sentence is strongest?",
+    "options": [
+     {
+      "text": "Dickinson's dashes ('We – occupy – Degree –') break the line into hesitant fragments, so the memory seems to return in pieces, and thoughts are left open rather than finished.",
+      "score": 100,
+      "feedback": "It quotes, names the technique, and explains two effects, on rhythm and on meaning."
+     },
+     {
+      "text": "Dickinson uses a lot of dashes, which was typical of her style.",
+      "score": 50,
+      "feedback": "True, but it describes her habit rather than what the dashes do in this poem."
+     },
+     {
+      "text": "The dashes make the poem more interesting to read.",
+      "score": 25,
+      "feedback": "Too vague. More interesting how?"
+     },
+     {
+      "text": "The dashes show that Dickinson was nervous when she wrote the poem.",
+      "score": 0,
+      "feedback": "A guess about the writer, not an effect on the reader. Analyse the text, not the author's state of mind."
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-anthology-note-01",
+   "level": "B2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "inbox",
+   "scenario": "anthology-editor-request",
+   "topic": "lit-close-reading",
+   "guide": "lit-analysis",
+   "interaction": "write-email",
+   "before": {
+    "brief": "The anthology editor, Dr. Rahman, needs a short note for the teacher's guide on the last lines of Dickinson's poem.",
+    "message": "Could you send me a short paragraph on the ending of 'We talked as Girls do'? The last four lines are: 'We parted with a contract / To cherish, and to write / But Heaven made both, impossible / Before another night.' What device is at work, and what effect does it have? Thanks, Nadia Rahman",
+    "prompt": "Write your email.",
+    "task": "Reply to Dr. Rahman with a short analytical paragraph on the ending: name one or two devices, quote the text, and explain the effect. Write about the speaker, not about Dickinson's life.",
+    "include": [
+     "A brief greeting",
+     "At least one device named",
+     "A short quotation as evidence",
+     "The effect on meaning or on the reader",
+     "'The speaker', not the poet's biography",
+     "A closing"
+    ],
+    "minWords": 80,
+    "checks": [
+     {
+      "label": "Names a device",
+      "any": [
+       "irony",
+       "euphemism",
+       "understatement",
+       "rhyme",
+       "personification",
+       "metaphor",
+       "contrast",
+       "antithesis",
+       "enjambment"
+      ]
+     },
+     {
+      "label": "Quotes the poem",
+      "any": [
+       "'heaven",
+       "\"heaven",
+       "'before another night",
+       "\"before another night",
+       "'contract",
+       "\"contract",
+       "impossible'",
+       "impossible\"",
+       "'to cherish",
+       "\"to cherish"
+      ]
+     },
+     {
+      "label": "Explains an effect",
+      "any": [
+       "suggests",
+       "creates",
+       "conveys",
+       "emphasises",
+       "emphasizes",
+       "implies",
+       "makes the",
+       "which makes",
+       "highlights",
+       "evokes"
+      ]
+     },
+     {
+      "label": "Writes about the speaker, not the poet's life",
+      "any": [
+       "speaker",
+       "the girls",
+       "the friends",
+       "persona"
+      ]
+     },
+     {
+      "label": "Avoids guessing at the poet's feelings",
+      "none": [
+       "dickinson felt",
+       "dickinson was sad",
+       "she was very sad",
+       "her friend died"
+      ]
+     },
+     {
+      "label": "Ends with a closing",
+      "any": [
+       "regards",
+       "best",
+       "thanks",
+       "thank you",
+       "wishes",
+       "sincerely"
+      ]
+     }
+    ],
+    "selfCheck": [
+     "Does every quotation have an effect after it?",
+     "Did I avoid retelling the poem line by line?"
+    ],
+    "model": "Dear Nadia,\n\nHere is a paragraph for the ending.\n\nThe last lines turn the poem on its legal metaphor. The girls part with a 'contract / To cherish, and to write', but 'Heaven made both, impossible / Before another night'. The irony is sharp: the speaker and her friend imagined themselves as 'Disposers' of destiny, yet a higher authority cancels their agreement in a single line. Death is never named, and the flat, almost administrative wording works as understatement, which makes the loss feel colder than open lament. The full rhyme of 'write / night' seals the ending with finality.\n\nBest wishes,\nMarta"
+   },
+   "after": {
+    "brief": "Dr. Rahman liked your note. Now she wants one on the turn in Whitman's poem.",
+    "message": "Lovely, thank you. Could you do the same for 'A Noiseless Patient Spider'? I'm interested in the moment the poem changes: 'And you O my soul where you stand, / Surrounded, detached, in measureless oceans of space'. Nadia",
+    "prompt": "Write your reply.",
+    "task": "Write a short analytical paragraph on the turn at the start of the second stanza: name the devices, quote the text, explain the effect, and suggest how it connects the two stanzas.",
+    "include": [
+     "A brief greeting",
+     "The apostrophe ('O my soul') or another device named",
+     "A short quotation",
+     "The effect, and how it links the spider and the soul",
+     "A closing"
+    ],
+    "minWords": 80,
+    "checks": [
+     {
+      "label": "Names a device",
+      "any": [
+       "apostrophe",
+       "metaphor",
+       "extended metaphor",
+       "juxtaposition",
+       "paradox",
+       "symbol",
+       "analogy",
+       "imagery"
+      ]
+     },
+     {
+      "label": "Quotes the poem",
+      "any": [
+       "'o my soul",
+       "\"o my soul",
+       "'and you o my soul",
+       "\"and you o my soul",
+       "oceans of space",
+       "'surrounded",
+       "\"surrounded",
+       "measureless"
+      ]
+     },
+     {
+      "label": "Explains an effect",
+      "any": [
+       "suggests",
+       "creates",
+       "conveys",
+       "emphasises",
+       "emphasizes",
+       "implies",
+       "makes the",
+       "which makes",
+       "highlights",
+       "evokes",
+       "marks"
+      ]
+     },
+     {
+      "label": "Connects the spider and the soul",
+      "all": [
+       "spider",
+       "soul"
+      ]
+     },
+     {
+      "label": "Writes about the speaker",
+      "any": [
+       "speaker",
+       "persona",
+       "voice"
+      ]
+     },
+     {
+      "label": "Ends with a closing",
+      "any": [
+       "regards",
+       "best",
+       "thanks",
+       "thank you",
+       "wishes",
+       "sincerely"
+      ]
+     }
+    ],
+    "selfCheck": [
+     "Did I explain why the turn matters, not just where it is?",
+     "Is each device followed by its effect?"
+    ],
+    "model": "Dear Nadia,\n\nHere's the paragraph on the turn.\n\nThe second stanza opens with an apostrophe, 'And you O my soul', and the speaker stops observing the spider and addresses his own soul. This marks the poem's turn from outer description to inner reflection, and it reveals the first stanza as one half of an extended metaphor: the soul, like the spider, stands alone and reaches out. The paradox of 'Surrounded, detached' and the metaphor 'measureless oceans of space' stress both the scale of the universe and the soul's isolation within it, which makes its effort to connect seem all the more fragile and brave.\n\nBest,\nMarta"
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-dickinson-read-01",
+   "level": "B2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "report",
+   "scenario": "reading-group-pack",
+   "topic": "lit-irony-symbol",
+   "guide": "lit-irony-tone",
+   "interaction": "read-report",
+   "before": {
+    "brief": "You're preparing the pack for a reading group. Before you write the discussion questions, check that you understand the poem.",
+    "prompt": "Read the poem and answer the questions.",
+    "doc": {
+     "kind": "poem",
+     "title": "We talked as Girls do",
+     "meta": [
+      "Emily Dickinson"
+     ],
+     "text": "We talked as Girls do –\nFond, and late –\nWe speculated fair, on every subject, but the Grave –\nOf our's, none affair –\nWe handled Destinies, as cool –\nAs we – Disposers – be –\nAnd God, a Quiet Party\nto our authority –\nBut fondest, dwelt upon Ourself\nAs we eventual – be –\nWhen Girls, to Women, softly raised\nWe – occupy – Degree –\nWe parted with a contract\nTo cherish, and to write\nBut Heaven made both, impossible\nBefore another night."
+    },
+    "questions": [
+     {
+      "q": "Where is the main irony of the poem?",
+      "options": [
+       {
+        "text": "The girls see themselves as 'Disposers' of destiny, yet Heaven cancels their plans 'Before another night'.",
+        "correct": true,
+        "feedback": "Correct. Confidence in controlling the future against the sudden reality of death: situational irony."
+       },
+       {
+        "text": "The girls talk late into the night although they are tired.",
+        "correct": false,
+        "feedback": "That's a detail of the scene, not an irony."
+       },
+       {
+        "text": "God is described as 'a Quiet Party'.",
+        "correct": false,
+        "feedback": "That's a bold metaphor, and it sets up the irony, but the irony lies in the outcome."
+       }
+      ]
+     },
+     {
+      "q": "How is death presented?",
+      "options": [
+       {
+        "text": "It is never named: it is 'the Grave' and 'Heaven'.",
+        "correct": true,
+        "feedback": "Correct. Euphemism and understatement keep death at a distance, which makes it colder."
+       },
+       {
+        "text": "It is described in vivid, violent detail.",
+        "correct": false,
+        "feedback": "The opposite: the poem never describes it."
+       },
+       {
+        "text": "It is personified as a visitor at the door.",
+        "correct": false,
+        "feedback": "Not in this poem. Heaven acts, but death itself is not a character."
+       }
+      ]
+     },
+     {
+      "q": "How does the tone change?",
+      "options": [
+       {
+        "text": "From nostalgic and playful to flat and matter-of-fact",
+        "correct": true,
+        "feedback": "Correct. The lively talk gives way to two quiet, final lines."
+       },
+       {
+        "text": "From angry to forgiving",
+        "correct": false,
+        "feedback": "There is no anger in the poem."
+       },
+       {
+        "text": "It stays cheerful throughout.",
+        "correct": false,
+        "feedback": "The last two lines change everything."
+       }
+      ]
+     },
+     {
+      "q": "Words such as 'Party', 'authority', 'contract' and 'Degree' form…",
+      "options": [
+       {
+        "text": "an extended legal metaphor",
+        "correct": true,
+        "feedback": "Correct. Friendship is framed as a binding agreement, which a higher authority then cancels."
+       },
+       {
+        "text": "a rhyme scheme",
+        "correct": false,
+        "feedback": "These words aren't linked by sound but by meaning: the language of law and business."
+       },
+       {
+        "text": "a refrain",
+        "correct": false,
+        "feedback": "A refrain is a repeated line, and none of these is repeated."
+       }
+      ]
+     }
+    ]
+   },
+   "after": {
+    "brief": "For the second session, the group is reading a short story. Here's the opening. Check the pack's notes on it.",
+    "prompt": "Read the extract and answer the questions.",
+    "doc": {
+     "kind": "story",
+     "title": "The Locked Room (opening)",
+     "meta": [
+      "A short story, for the reading group"
+     ],
+     "text": "Every morning, Mrs Hale dusted every room in the house except one. The door at the end of the corridor stayed locked, as it had for eleven years, and the key stayed on the chain around her neck.\n\nWhen the new lodger arrived, he asked about it on his first evening. 'Storage,' she said. 'Nothing interesting.' He noticed that she touched the key as she said it.\n\nThe next week, a letter came from the council: the house would be inspected on Monday, every room. Mrs Hale read it twice, folded it into a small square, and put it in her apron.\n\nOn Sunday, the sky turned black and the storm cut the power to the whole street. 'What a wonderful evening,' she said, lighting a candle, and she smiled for the first time since the letter came."
+    },
+    "questions": [
+     {
+      "q": "The locked door is mentioned several times. What is it?",
+      "options": [
+       {
+        "text": "A motif, and possibly a symbol of a secret or a past she hides",
+        "correct": true,
+        "feedback": "Correct. It recurs (motif) and suggests something beyond itself (symbol)."
+       },
+       {
+        "text": "The setting of the story",
+        "correct": false,
+        "feedback": "The house is the setting. The door is a recurring detail inside it."
+       },
+       {
+        "text": "An example of onomatopoeia",
+        "correct": false,
+        "feedback": "Onomatopoeia is a word that imitates a sound."
+       }
+      ]
+     },
+     {
+      "q": "Why might 'What a wonderful evening' be ironic?",
+      "options": [
+       {
+        "text": "A storm and a power cut are not 'wonderful', unless the storm helps her hide something before the inspection.",
+        "correct": true,
+        "feedback": "Correct. The words say the opposite of the situation, which hints at a hidden meaning."
+       },
+       {
+        "text": "Because the evening really is beautiful",
+        "correct": false,
+        "feedback": "The sky is black and the power is cut. The gap is the point."
+       },
+       {
+        "text": "Because she is lying about the lodger",
+        "correct": false,
+        "feedback": "The irony is in her comment on the storm."
+       }
+      ]
+     },
+     {
+      "q": "What is the mood of the extract?",
+      "options": [
+       {
+        "text": "Uneasy and suspenseful",
+        "correct": true,
+        "feedback": "Correct. The secret, the letter and the storm build tension."
+       },
+       {
+        "text": "Joyful and relaxed",
+        "correct": false,
+        "feedback": "Her smile is unsettling rather than joyful, given everything before it."
+       },
+       {
+        "text": "Angry",
+        "correct": false,
+        "feedback": "Nobody shows anger. The atmosphere is tense."
+       }
+      ]
+     },
+     {
+      "q": "Her answer, 'Storage. Nothing interesting', while touching the key, suggests…",
+      "options": [
+       {
+        "text": "that the reader shouldn't fully trust what she says",
+        "correct": true,
+        "feedback": "Correct. Her gesture contradicts her words: we sense she is hiding something."
+       },
+       {
+        "text": "that the room really is empty",
+        "correct": false,
+        "feedback": "The gesture suggests the opposite."
+       },
+       {
+        "text": "that the lodger is the narrator",
+        "correct": false,
+        "feedback": "The story is told in the third person."
+       }
+      ]
+     }
+    ]
+   },
+   "language": "english"
+  },
+  {
+   "id": "en-lit-terms-check-01",
+   "level": "B2",
+   "contexts": [
+    "writing-literature",
+    "education"
+   ],
+   "category": "library",
+   "scenario": "study-guide-proofread",
+   "topic": "lit-irony-symbol",
+   "guide": "lit-irony-tone",
+   "interaction": "error-correction",
+   "before": {
+    "brief": "You're proofreading a study guide before it goes to schools. One sentence uses the terms correctly. The others would teach students something wrong.",
+    "prompt": "Which sentence is correct?",
+    "options": [
+     {
+      "text": "In dramatic irony, the audience knows something that a character does not.",
+      "score": 100,
+      "feedback": "Correct, and it's the standard definition."
+     },
+     {
+      "text": "The mood is the narrator's attitude towards the subject.",
+      "score": 25,
+      "feedback": "That's tone. Mood is the atmosphere the reader experiences."
+     },
+     {
+      "text": "A motif is a single image that appears only at the climax.",
+      "score": 0,
+      "feedback": "A motif recurs throughout a work. That's the defining feature."
+     },
+     {
+      "text": "The speaker of a poem is always the poet.",
+      "score": 25,
+      "feedback": "The speaker is the voice in the poem, and it is not necessarily the poet."
+     }
+    ]
+   },
+   "after": {
+    "brief": "Now the chapter on narrative. Again, only one sentence is correct.",
+    "prompt": "Which sentence is correct?",
+    "options": [
+     {
+      "text": "An unreliable narrator's account may be incomplete, biased or mistaken, so the reader has to read between the lines.",
+      "score": 100,
+      "feedback": "Correct. The reader learns to doubt the narrator and look for clues."
+     },
+     {
+      "text": "Foreshadowing is a scene from an earlier time.",
+      "score": 25,
+      "feedback": "That's a flashback. Foreshadowing hints at events to come."
+     },
+     {
+      "text": "A story that starts in medias res begins with the characters' childhood.",
+      "score": 0,
+      "feedback": "'In medias res' means in the middle of the action."
+     },
+     {
+      "text": "Situational irony is when a character says exactly what they mean.",
+      "score": 0,
+      "feedback": "Situational irony is when the outcome is the opposite of what was expected."
+     }
+    ]
    },
    "language": "english"
   }

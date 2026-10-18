@@ -1956,6 +1956,396 @@
     "why": "'Nevertheless' links two sentences. Before a noun, use 'despite' or 'notwithstanding'."
    },
    "tip": "Test each linker with its meaning: 'provided that' = 'only if', 'given that' = 'because we know'. If the paraphrase makes nonsense, the linker is wrong."
+  },
+  {
+   "id": "lit-genres",
+   "title": "Kinds of books: genres",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "A genre is a kind of literature. The four big groups are stories (prose fiction), poetry, drama (plays) and non-fiction (true texts). To name a genre, look at the form: paragraphs, lines and stanzas, or dialogue with character names.",
+   "expressions": [
+    "It's a novel about a family in Lagos.",
+    "It's a collection of short stories.",
+    "It's a book of poems.",
+    "It's a play in three acts.",
+    "It's a true story: a biography of Marie Curie.",
+    "It's written for children."
+   ],
+   "vocabulary": [
+    {
+     "term": "novel",
+     "gloss": "a long story, written in prose"
+    },
+    {
+     "term": "short story",
+     "gloss": "a short story you can read in one go"
+    },
+    {
+     "term": "poem",
+     "gloss": "a text written in lines, often with rhythm or rhyme"
+    },
+    {
+     "term": "play",
+     "gloss": "a story written for actors, with dialogue"
+    },
+    {
+     "term": "biography",
+     "gloss": "the true story of another person's life"
+    },
+    {
+     "term": "autobiography",
+     "gloss": "the true story of the writer's own life"
+    },
+    {
+     "term": "fable",
+     "gloss": "a short story, often with animals, that teaches a lesson"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Form",
+     "text": "It has lines and stanzas, so it's a poem."
+    },
+    {
+     "label": "Form",
+     "text": "It has character names and stage directions, so it's a play."
+    },
+    {
+     "label": "Purpose",
+     "text": "It tells the true story of the writer's life, so it's an autobiography."
+    }
+   ],
+   "mistake": {
+    "wrong": "I'm reading a romance of Isabel Allende.",
+    "right": "I'm reading a novel by Isabel Allende.",
+    "why": "A long story is a 'novel'. 'Romance' means a love story. And a book is 'by' its writer, not 'of'."
+   },
+   "tip": "Not sure? Ask two questions: is it true or invented? Is it in paragraphs, lines or dialogue?"
+  },
+  {
+   "id": "lit-story",
+   "title": "Parts of a story",
+   "level": "A2",
+   "minutes": 2,
+   "explanation": "Most stories have the same parts. The characters are the people in the story. The setting is where and when it happens. The plot is what happens: a beginning, a problem (the conflict), the most exciting moment (the climax) and an ending.",
+   "expressions": [
+    "The story takes place in Paris in 1920.",
+    "The main character is a young doctor.",
+    "At the beginning, she moves to a new city.",
+    "The problem is that nobody trusts her.",
+    "In the end, she saves the village.",
+    "It's told in the first person."
+   ],
+   "vocabulary": [
+    {
+     "term": "character",
+     "gloss": "a person (or animal) in a story"
+    },
+    {
+     "term": "main character",
+     "gloss": "the most important character; also 'protagonist'"
+    },
+    {
+     "term": "setting",
+     "gloss": "the place and time of the story"
+    },
+    {
+     "term": "plot",
+     "gloss": "the events of the story, in order"
+    },
+    {
+     "term": "conflict",
+     "gloss": "the problem or fight in the story"
+    },
+    {
+     "term": "climax",
+     "gloss": "the most exciting moment, the turning point"
+    },
+    {
+     "term": "narrator",
+     "gloss": "the voice that tells the story"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Setting",
+     "text": "The story takes place on a small island in winter."
+    },
+    {
+     "label": "Conflict",
+     "text": "The problem is that the boat can't leave because of the storm."
+    },
+    {
+     "label": "Narrator",
+     "text": "'I opened the door' — a first-person narrator."
+    }
+   ],
+   "mistake": {
+    "wrong": "The story happens in Lisbon. The argument is about a chef.",
+    "right": "The story takes place in Lisbon. The plot is about a chef.",
+    "why": "'Argument' is a false friend: in English it means a fight. The events of a story are the 'plot'."
+   },
+   "tip": "When you talk about a story, use the present simple: 'At the beginning, she moves to Lisbon.'"
+  },
+  {
+   "id": "lit-figurative",
+   "title": "Figurative language",
+   "level": "B1",
+   "minutes": 3,
+   "explanation": "Figurative language uses words in a non-literal way to create a picture or a feeling. A simile compares with 'like' or 'as'. A metaphor says one thing IS another. Personification gives human qualities to things. Hyperbole exaggerates; understatement makes something sound smaller than it is.",
+   "expressions": [
+    "The writer compares the city to a sleeping animal.",
+    "This simile makes the voice sound soft.",
+    "The wind is personified: it 'whispers'.",
+    "It's an exaggeration for effect.",
+    "The metaphor suggests that time steals from us.",
+    "It creates a calm, quiet mood."
+   ],
+   "vocabulary": [
+    {
+     "term": "simile",
+     "gloss": "a comparison with 'like' or 'as': 'her voice was like velvet'"
+    },
+    {
+     "term": "metaphor",
+     "gloss": "describes one thing as another: 'time is a thief'"
+    },
+    {
+     "term": "personification",
+     "gloss": "human qualities for non-human things: 'the wind whispered'"
+    },
+    {
+     "term": "hyperbole",
+     "gloss": "deliberate exaggeration: 'I've told you a million times'"
+    },
+    {
+     "term": "understatement",
+     "gloss": "making something serious sound small: 'just a scratch'"
+    },
+    {
+     "term": "oxymoron",
+     "gloss": "two opposite words together: 'deafening silence'"
+    },
+    {
+     "term": "imagery",
+     "gloss": "language that appeals to the senses"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Simile",
+     "text": "The office was as quiet as a library."
+    },
+    {
+     "label": "Metaphor",
+     "text": "My inbox is a battlefield."
+    },
+    {
+     "label": "Personification",
+     "text": "The old printer groaned and refused to work."
+    }
+   ],
+   "mistake": {
+    "wrong": "'Her smile was like sunshine' is a metaphor.",
+    "right": "'Her smile was like sunshine' is a simile.",
+    "why": "If you see 'like' or 'as', it's a simile. A metaphor has no comparison word: 'Her smile was sunshine.'"
+   },
+   "tip": "Never just name the device. Say what it does: 'This simile makes the room feel cold and empty.'"
+  },
+  {
+   "id": "lit-poetic-form",
+   "title": "Sound and form in poems",
+   "level": "B1",
+   "minutes": 3,
+   "explanation": "Poems are built from lines, grouped into stanzas. Sound devices repeat sounds: alliteration repeats the first consonant ('wild and windy weather'), assonance repeats vowel sounds, rhyme matches end sounds. Free verse has no fixed rhyme or rhythm. Enjambment is when a sentence runs on past the end of a line.",
+   "expressions": [
+    "The poem has two stanzas of five lines.",
+    "The rhyme scheme is ABAB.",
+    "The 'v' sound is repeated in 'vacant, vast'.",
+    "The sentence runs on into the next line.",
+    "It's written in free verse.",
+    "The repetition sounds like a heartbeat."
+   ],
+   "vocabulary": [
+    {
+     "term": "line",
+     "gloss": "one row of words in a poem"
+    },
+    {
+     "term": "stanza",
+     "gloss": "a group of lines, like a paragraph in a poem"
+    },
+    {
+     "term": "alliteration",
+     "gloss": "the same first consonant sound in nearby words"
+    },
+    {
+     "term": "assonance",
+     "gloss": "the same vowel sound in nearby words: 'go slow over the road'"
+    },
+    {
+     "term": "rhyme scheme",
+     "gloss": "the pattern of end rhymes, shown with letters: ABAB"
+    },
+    {
+     "term": "enjambment",
+     "gloss": "a sentence that continues past the end of a line"
+    },
+    {
+     "term": "free verse",
+     "gloss": "poetry with no fixed rhyme scheme or metre"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Alliteration",
+     "text": "'vacant, vast' (Whitman)"
+    },
+    {
+     "label": "Repetition",
+     "text": "'filament, filament, filament' (Whitman)"
+    },
+    {
+     "label": "Couplet",
+     "text": "The last two lines of a Shakespeare sonnet rhyme: 'see / thee'."
+    }
+   ],
+   "mistake": {
+    "wrong": "The poem has three verses.",
+    "right": "The poem has three stanzas.",
+    "why": "In English, a group of lines is a 'stanza'. 'Verse' usually means poetry in general, or one line."
+   },
+   "tip": "Read the poem aloud. Your ear finds alliteration and rhyme faster than your eyes."
+  },
+  {
+   "id": "lit-analysis",
+   "title": "Device, evidence, effect",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "Analysis is not naming techniques; it is explaining what they do. A strong analytical sentence has three parts: the device, a short quotation as evidence, and the effect on the reader or the meaning. Write about 'the speaker' or 'the narrator', not the poet, and use the present tense.",
+   "expressions": [
+    "Whitman uses epizeuxis ('filament, filament, filament') to…",
+    "The repetition imitates…, which suggests…",
+    "This creates a sense of…",
+    "The image of… conveys…",
+    "The speaker's tone shifts from… to…",
+    "This could also be read as…"
+   ],
+   "vocabulary": [
+    {
+     "term": "the speaker",
+     "gloss": "the voice in a poem; not necessarily the poet"
+    },
+    {
+     "term": "to convey",
+     "gloss": "to communicate a feeling or idea"
+    },
+    {
+     "term": "to evoke",
+     "gloss": "to bring a feeling or image to mind"
+    },
+    {
+     "term": "to foreground",
+     "gloss": "to make something stand out"
+    },
+    {
+     "term": "connotation",
+     "gloss": "the associations a word carries beyond its literal meaning"
+    },
+    {
+     "term": "apostrophe",
+     "gloss": "speaking directly to an absent person, thing or idea: 'O my soul'"
+    },
+    {
+     "term": "ambiguity",
+     "gloss": "allowing more than one plausible meaning"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Observation only",
+     "text": "There is a metaphor in line 7."
+    },
+    {
+     "label": "Analysis",
+     "text": "The metaphor 'oceans of space' makes the universe feel deep and dangerous, so the soul's 'bridge' seems all the more fragile."
+    },
+    {
+     "label": "Alternative reading",
+     "text": "'Heaven made both, impossible' could also be read as bitter rather than resigned."
+    }
+   ],
+   "mistake": {
+    "wrong": "Dickinson felt very sad because her friend died.",
+    "right": "The speaker's flat final lines suggest a grief too deep for open lament.",
+    "why": "Don't treat the speaker as the poet, and don't guess at the poet's life. Analyse what the words on the page do."
+   },
+   "tip": "Use the formula Device + Evidence + Effect. If you can't finish the sentence with 'which…', you've only made an observation."
+  },
+  {
+   "id": "lit-irony-tone",
+   "title": "Irony, symbol and tone",
+   "level": "B2",
+   "minutes": 3,
+   "explanation": "Irony is a gap between what is said or expected and what is meant or happens. In dramatic irony, the reader knows something a character doesn't. A symbol is an object or image that suggests a larger meaning; a motif is a detail that keeps returning. Tone is the speaker's attitude; mood is the atmosphere the reader feels.",
+   "expressions": [
+    "The irony lies in the gap between… and…",
+    "The reader knows what the character doesn't.",
+    "The locked door recurs as a motif.",
+    "The thread can be read as a symbol of connection.",
+    "The tone is nostalgic, then abruptly flat.",
+    "Death is never named: it is only 'the Grave'."
+   ],
+   "vocabulary": [
+    {
+     "term": "dramatic irony",
+     "gloss": "when the audience knows something a character does not"
+    },
+    {
+     "term": "situational irony",
+     "gloss": "when the outcome is the opposite of what was expected"
+    },
+    {
+     "term": "symbol",
+     "gloss": "something that suggests a meaning beyond itself"
+    },
+    {
+     "term": "motif",
+     "gloss": "a recurring image, phrase or idea"
+    },
+    {
+     "term": "tone",
+     "gloss": "the speaker's or narrator's attitude to the subject"
+    },
+    {
+     "term": "mood",
+     "gloss": "the atmosphere created for the reader"
+    },
+    {
+     "term": "euphemism",
+     "gloss": "a softer word for something harsh: 'passed away'"
+    }
+   ],
+   "examples": [
+    {
+     "label": "Situational irony",
+     "text": "The girls who 'handled Destinies' cannot keep a promise for one night."
+    },
+    {
+     "label": "Tone vs mood",
+     "text": "The narrator's tone is cheerful, but the mood is uneasy, because we know the storm is coming."
+    },
+    {
+     "label": "Euphemism",
+     "text": "'the Grave' and 'Heaven' stand in for death, which is never named."
+    }
+   ],
+   "mistake": {
+    "wrong": "The mood of the narrator is sarcastic.",
+    "right": "The narrator's tone is sarcastic.",
+    "why": "Tone belongs to the speaker or narrator. Mood belongs to the reader's experience of the text."
+   },
+   "tip": "Irony needs two things side by side. Name both halves: what was said or expected, and what is meant or happens."
   }
  ]
 }

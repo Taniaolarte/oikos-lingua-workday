@@ -843,6 +843,60 @@
     "B2"
    ],
    "guide": "linking-formal"
+  },
+  {
+   "id": "lit-genres",
+   "label": "Literary genres",
+   "skill": "vocabulary",
+   "levels": [
+    "A2"
+   ],
+   "guide": "lit-genres"
+  },
+  {
+   "id": "lit-story-elements",
+   "label": "Parts of a story",
+   "skill": "comprehension",
+   "levels": [
+    "A2"
+   ],
+   "guide": "lit-story"
+  },
+  {
+   "id": "lit-figures",
+   "label": "Figurative language",
+   "skill": "vocabulary",
+   "levels": [
+    "B1"
+   ],
+   "guide": "lit-figurative"
+  },
+  {
+   "id": "lit-sound-form",
+   "label": "Sound and form in poetry",
+   "skill": "reading",
+   "levels": [
+    "B1"
+   ],
+   "guide": "lit-poetic-form"
+  },
+  {
+   "id": "lit-close-reading",
+   "label": "Writing literary analysis",
+   "skill": "writing",
+   "levels": [
+    "B2"
+   ],
+   "guide": "lit-analysis"
+  },
+  {
+   "id": "lit-irony-symbol",
+   "label": "Irony, symbol and tone",
+   "skill": "comprehension",
+   "levels": [
+    "B2"
+   ],
+   "guide": "lit-irony-tone"
   }
  ]
 }

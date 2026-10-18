@@ -51,15 +51,21 @@ const OK = {
   _pool(req) {
     const all = this.data.lang[req.language].activities;
     const lvl = this.levelOf(req.level);
-    const same = all.filter(a => a.level === lvl);
+    // Specialist material (poems, literary analysis) only reaches learners whose
+    // chosen job is one it is tagged for; a sales manager never gets a sonnet.
+    const fits = a => !a.contexts.some(id => (OK.context(id) || {}).specialist) || a.contexts.includes(req.context);
+    const same = all.filter(a => a.level === lvl && fits(a));
     return same.length >= 2 ? same : all;
   },
 
   /* Stage 2 — within the level, weight by professional context so the
-     learner's chosen workplace comes up more often without repeating. */
+     learner's chosen workplace comes up more often without repeating.
+     A specialist context with a small bank of its own (Writing & Literature)
+     sets a heavier weight, so its material still leads the workday. */
   CONTEXT_W: 4,
   _weight(act, req) {
-    return act.contexts.includes(req.context) ? this.CONTEXT_W : 1;
+    if (!act.contexts.includes(req.context)) return 1;
+    return (this.context(req.context) || {}).weight || this.CONTEXT_W;
   },
 
   /* Kinds of task, so the two challenges of a workday differ in what the

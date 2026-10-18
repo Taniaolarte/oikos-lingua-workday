@@ -10,6 +10,11 @@
   --ink:#22303D;         --ink-2:#55646F;      --ink-3:#8A98A3;
   --good:#3E7D5A;        --good-w:#E6F2EA;
   --warn:#C47B26;        --bad:#B04A3F;        --bad-w:#F8EAE8;
+  /* the chosen job's colour; set from professional-contexts.json by APP.applyJob */
+  --job:#1F3A56;
+  --job-w:color-mix(in srgb,var(--job) 9%,#fff);
+  --job-l:color-mix(in srgb,var(--job) 30%,#fff);
+  --job-m:color-mix(in srgb,var(--job) 72%,#fff);
   --r-s:8px; --r-m:14px; --r-l:22px;
   --sh-s:0 1px 2px rgba(31,58,86,.06), 0 2px 6px rgba(31,58,86,.05);
   --sh-m:0 2px 6px rgba(31,58,86,.07), 0 10px 26px rgba(31,58,86,.08);
@@ -41,7 +46,7 @@ h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.011em}
 /* ---------- header ---------- */
 .top{
   position:sticky;top:0;z-index:40;background:rgba(255,253,249,.88);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);border-bottom:3px solid var(--job);transition:border-color .3s;
 }
 .top-in{max-width:1080px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:14px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;cursor:pointer;background:none;border:0;padding:0}
@@ -58,6 +63,24 @@ h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.011em}
 .tbtn:hover{background:var(--sand);color:var(--navy)}
 .tbtn.act{background:var(--navy);color:#fff;border-color:var(--navy)}
 
+/* the job being played, always visible in the header */
+.jobtag{
+  display:inline-flex;align-items:center;gap:7px;max-width:240px;
+  background:var(--job);color:#fff;border-radius:99px;padding:5px 13px 5px 10px;
+  font-size:12.5px;font-weight:650;letter-spacing:.01em;white-space:nowrap;transition:background .3s;
+}
+.jobtag i{font-style:normal;font-size:15px;line-height:1}
+.jobtag span{overflow:hidden;text-overflow:ellipsis}
+@media(max-width:560px){
+  .jobtag{padding:5px 8px} .jobtag span{display:none}
+  .top-in{gap:8px;padding:10px 16px}
+  .top-nav{flex-wrap:nowrap;gap:2px}
+  .tbtn{padding:6px 9px}
+  .brand-txt b{white-space:nowrap;font-size:13.5px;letter-spacing:.1em}
+}
+/* on a phone the owl alone carries the brand, leaving room for the job tag */
+@media(max-width:420px){ .brand-txt{display:none} }
+
 /* ---------- ID card (onboarding) ---------- */
 .hero{padding:36px 0 30px;text-align:center}
 .hero-logo{display:block;width:150px;height:auto;margin:0 auto 18px}
@@ -69,10 +92,10 @@ h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.011em}
 .lanyard{display:flex;flex-direction:column;align-items:center}
 .lanyard svg{display:block}
 .idcard{
-  background:linear-gradient(160deg,#fff,var(--sand));border:1px solid var(--line);
+  background:linear-gradient(160deg,#fff,var(--job-w));border:1px solid var(--job-l);transition:border-color .3s;
   border-radius:var(--r-l);box-shadow:var(--sh-l);padding:22px;position:relative;overflow:hidden;
 }
-.idcard::before{content:"";position:absolute;inset:0 0 auto;height:58px;background:linear-gradient(100deg,var(--navy),var(--navy-l))}
+.idcard::before{content:"";position:absolute;inset:0 0 auto;height:58px;background:linear-gradient(100deg,var(--job),var(--job-m))}
 .idcard::after{content:"";position:absolute;top:0;right:0;width:104px;height:58px;background:var(--orange);clip-path:polygon(30% 0,100% 0,100% 100%,0 100%)}
 .id-top{position:relative;z-index:2;display:flex;align-items:center;gap:10px;height:58px;margin:-22px -22px 0;padding:0 20px;color:#fff}
 .id-top img{width:28px;height:28px;flex:none;display:block}
@@ -101,11 +124,11 @@ h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.011em}
   padding:9px 0;border-bottom:1px dashed var(--line);
 }
 .id-line:last-child{border-bottom:0}
-.id-line b{font-size:15px;color:var(--navy);text-align:right}
+.id-line b{font-size:15px;color:var(--job);text-align:right}
 .id-line b.empty{color:var(--ink-3);font-weight:500;font-style:italic}
 .barcode{
   margin-top:16px;height:34px;border-radius:5px;
-  background:repeating-linear-gradient(90deg,var(--navy) 0 2px,transparent 2px 4px,var(--navy) 4px 5px,transparent 5px 9px,var(--navy) 9px 12px,transparent 12px 14px);
+  background:repeating-linear-gradient(90deg,var(--job) 0 2px,transparent 2px 4px,var(--job) 4px 5px,transparent 5px 9px,var(--job) 9px 12px,transparent 12px 14px);
   opacity:.5;
 }
 @media(max-width:520px){
@@ -149,6 +172,13 @@ h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.011em}
 .pk b{display:block;font-size:14.5px;font-weight:600}
 .pk small{font-size:11px;opacity:.72;display:block;margin-top:2px}
 
+/* job tiles: each carries its own colour, and fills with it when chosen */
+.pk.job{padding:15px 11px;border-top:5px solid var(--c)}
+.pk.job:hover{border-color:var(--c);border-top-width:5px;background:color-mix(in srgb,var(--c) 8%,#fff)}
+.pk.job[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:#fff}
+.idcard .pk[aria-pressed="true"]{background:var(--job);border-color:var(--job)}
+.idcard .av[aria-pressed="true"]{border-color:var(--job);box-shadow:0 0 0 2px var(--job-l)}
+
 /* ---------- buttons ---------- */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -180,6 +210,7 @@ h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.011em}
 .chip-o{background:var(--orange-w);color:var(--orange-d);border-color:var(--orange-l)}
 .chip-g{background:var(--good-w);color:var(--good);border-color:#C4DFCE}
 .chip-n{background:var(--navy);color:#fff;border-color:var(--navy)}
+.chip-job{background:var(--job);color:#fff;border-color:var(--job)}
 
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}
 .card{
@@ -187,8 +218,8 @@ h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.011em}
   box-shadow:var(--sh-s);padding:22px;display:flex;flex-direction:column;
   transition:.2s;position:relative;overflow:hidden;
 }
-.card::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--orange)}
-.card.c2::before{background:var(--blue)}
+.card::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--job)}
+.card.c2::before{background:var(--job-m)}
 .card:hover{box-shadow:var(--sh-m);transform:translateY(-2px)}
 .card-n{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
 .card-cat{display:flex;align-items:center;gap:8px;margin:11px 0 8px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--navy)}
@@ -212,11 +243,12 @@ h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.011em}
   font-style:normal;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--line);
   display:grid;place-items:center;font-size:10.5px;background:#fff;color:var(--ink-3);
 }
-.step.on{color:var(--navy)} .step.on i{background:var(--navy);border-color:var(--navy);color:#fff}
+.step.on{color:var(--job)} .step.on i{background:var(--job);border-color:var(--job);color:#fff}
 .step.ok{color:var(--good)} .step.ok i{background:var(--good-w);border-color:#C4DFCE;color:var(--good)}
 .step-line{flex:1;min-width:10px;height:1.5px;background:var(--line)}
 
 .panel{background:#fff;border:1px solid var(--line);border-radius:var(--r-m);box-shadow:var(--sh-s);padding:26px;margin-bottom:18px}
+#sc-challenge .panel,#sc-results .panel{border-top:5px solid var(--job)}
 .panel-lab{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange-d);font-weight:700;margin-bottom:10px}
 .panel h2{font-size:23px;font-family:var(--fs);font-weight:600;color:var(--navy);margin-bottom:6px}
 .brief{color:var(--ink-2);margin:12px 0 0;font-size:14.5px}
@@ -400,6 +432,7 @@ audio{width:100%;margin-top:14px}
 .doc-body{padding:14px 18px;font-size:15px;line-height:1.65;color:var(--ink)}
 .doc-body p{margin:0 0 10px}
 .doc-body p:last-child{margin-bottom:0}
+.doc-poem .doc-body{font-family:var(--fs);font-size:16px;line-height:1.75}
 .gaptext{line-height:2.3}
 .gapsel{
   font-family:inherit;font-size:14.5px;font-weight:600;color:var(--navy);max-width:100%;

@@ -79,6 +79,22 @@
     "en": "Interview",
     "fr": "Entretien"
    }
+  },
+  {
+   "id": "library",
+   "label": {
+    "en": "Library & Bookshop",
+    "fr": "Bibliothèque & Librairie"
+   },
+   "icon": "📚"
+  },
+  {
+   "id": "editorial",
+   "label": {
+    "en": "Editorial Desk",
+    "fr": "Bureau éditorial"
+   },
+   "icon": "🖋️"
   }
  ],
  "scenarios": [
@@ -155,7 +171,6 @@
     "general-office",
     "business",
     "marketing",
-    "job-search",
     "remote-work"
    ]
   },
@@ -837,7 +852,6 @@
    },
    "contexts": [
     "business",
-    "job-search",
     "marketing",
     "hospitality",
     "education"
@@ -855,7 +869,6 @@
     "fr": "On décide de vous pendant que vous parlez."
    },
    "contexts": [
-    "job-search",
     "business",
     "technology",
     "education",
@@ -874,7 +887,6 @@
     "fr": "Les quatre-vingt-dix premières secondes d'un entretien."
    },
    "contexts": [
-    "job-search",
     "business",
     "education",
     "technology",
@@ -893,7 +905,6 @@
     "fr": "Décrivez ce que vous avez fait, avec un résultat."
    },
    "contexts": [
-    "job-search",
     "business",
     "technology",
     "design-creative",
@@ -912,7 +923,6 @@
     "fr": "La question la plus classique. Répondez bien."
    },
    "contexts": [
-    "job-search",
     "management",
     "business",
     "education",
@@ -950,7 +960,6 @@
     "fr": "Des chiffres, poliment, sans s'excuser."
    },
    "contexts": [
-    "job-search",
     "management",
     "business",
     "general-office",
@@ -1045,7 +1054,6 @@
     "fr": "Deux minutes, un sujet, sans interruption."
    },
    "contexts": [
-    "job-search",
     "education",
     "business",
     "general-office",
@@ -1226,7 +1234,6 @@
     "fr": "Lisez bien l'offre avant de postuler."
    },
    "contexts": [
-    "job-search",
     "general-office",
     "business",
     "technology",
@@ -1393,6 +1400,198 @@
     "management",
     "remote-work",
     "design-creative"
+   ]
+  },
+  {
+   "id": "new-arrivals-table",
+   "category": "library",
+   "title": {
+    "en": "The New Arrivals Table",
+    "fr": "La table des nouveautés"
+   },
+   "premise": {
+    "en": "You work in a bookshop, and this week's new books need the right labels.",
+    "fr": "Vous travaillez dans une librairie, et les nouveautés de la semaine ont besoin de la bonne étiquette."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "book-club-newsletter",
+   "category": "report",
+   "title": {
+    "en": "Book Club Night",
+    "fr": "Le soir du club de lecture"
+   },
+   "premise": {
+    "en": "The library's book club meets tonight. First, read what everyone will be talking about.",
+    "fr": "Le club de lecture de la bibliothèque se réunit ce soir. Lisez d'abord ce dont tout le monde va parler."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "plot-summary-cards",
+   "category": "editorial",
+   "title": {
+    "en": "The Story Cards",
+    "fr": "Les cartes de l'histoire"
+   },
+   "premise": {
+    "en": "A publisher's story cards are in the wrong order, and they go to the printer today.",
+    "fr": "Les cartes d'une maison d'édition sont dans le désordre, et elles partent chez l'imprimeur aujourd'hui."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "book-club-turn",
+   "category": "speaking",
+   "title": {
+    "en": "Your Turn at the Book Club",
+    "fr": "À vous de parler au club de lecture"
+   },
+   "premise": {
+    "en": "Everyone tells the group about a story they love. Now it's you.",
+    "fr": "Chacun présente au groupe une histoire qu'il aime. C'est votre tour."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "manuscript-devices",
+   "category": "editorial",
+   "title": {
+    "en": "The Manuscript",
+    "fr": "Le manuscrit"
+   },
+   "premise": {
+    "en": "The editor wants the best images in a new novel, sorted by device, before the meeting.",
+    "fr": "L'éditrice veut les plus belles images d'un nouveau roman, classées par figure de style, avant la réunion."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "edit-notes-author",
+   "category": "inbox",
+   "title": {
+    "en": "Notes for the Author",
+    "fr": "Des notes pour l'autrice"
+   },
+   "premise": {
+    "en": "Chapter one is in. Now the author needs clear, precise feedback.",
+    "fr": "Le premier chapitre est arrivé. L'autrice attend maintenant des retours clairs et précis."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "poetry-magazine-feature",
+   "category": "report",
+   "title": {
+    "en": "The Poetry Feature",
+    "fr": "Le dossier poésie"
+   },
+   "premise": {
+    "en": "Next month's magazine feature is a classic poem, and the notes must be accurate.",
+    "fr": "Le dossier du mois prochain porte sur un poème classique, et les notes doivent être exactes."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "festival-programme-glossary",
+   "category": "library",
+   "title": {
+    "en": "The Festival Glossary",
+    "fr": "Le glossaire du festival"
+   },
+   "premise": {
+    "en": "The poetry festival programme goes to print tomorrow, and its glossary is a mess.",
+    "fr": "Le programme du festival de poésie part à l'impression demain, et son glossaire est en désordre."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "teachers-guide-notes",
+   "category": "editorial",
+   "title": {
+    "en": "The Teacher's Guide",
+    "fr": "Le guide de l'enseignant"
+   },
+   "premise": {
+    "en": "Four contributors wrote about the same line. Only one sentence makes it into the guide.",
+    "fr": "Quatre contributeurs ont écrit sur le même vers. Une seule phrase entrera dans le guide."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "anthology-editor-request",
+   "category": "inbox",
+   "title": {
+    "en": "A Note for the Anthology",
+    "fr": "Une note pour l'anthologie"
+   },
+   "premise": {
+    "en": "The anthology editor needs a short, sharp paragraph of analysis today.",
+    "fr": "La directrice de l'anthologie a besoin aujourd'hui d'un court paragraphe d'analyse, précis."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "reading-group-pack",
+   "category": "report",
+   "title": {
+    "en": "The Reading Group Pack",
+    "fr": "Le dossier du cercle de lecture"
+   },
+   "premise": {
+    "en": "Before you write the discussion questions, make sure you've read the text closely.",
+    "fr": "Avant de rédiger les questions de discussion, assurez-vous d'avoir lu le texte de près."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
+   ]
+  },
+  {
+   "id": "study-guide-proofread",
+   "category": "library",
+   "title": {
+    "en": "Proofreading the Study Guide",
+    "fr": "Relire le guide d'étude"
+   },
+   "premise": {
+    "en": "The study guide goes to schools next week. Wrong definitions can't go with it.",
+    "fr": "Le guide d'étude part dans les écoles la semaine prochaine. Pas question d'y laisser une définition fausse."
+   },
+   "contexts": [
+    "writing-literature",
+    "education"
    ]
   }
  ]
