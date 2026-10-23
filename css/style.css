@@ -227,7 +227,7 @@ h1,h2,h3,h4{margin:0;line-height:1.25;font-weight:650;letter-spacing:-.011em}
 .card h3{font-size:20px;font-family:var(--fs);font-weight:600;color:var(--navy);margin-bottom:8px}
 .card p{color:var(--ink-2);font-size:14px;margin:0 0 14px}
 .card-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
-.card .btn{margin-top:auto}
+.cardact{margin-top:auto;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .card.done::after{
   content:"✓ Done";position:absolute;top:14px;right:14px;font-size:10.5px;font-weight:700;
   letter-spacing:.09em;color:var(--good);background:var(--good-w);border:1px solid #C4DFCE;
@@ -411,6 +411,48 @@ audio{width:100%;margin-top:14px}
 .sechead{margin:32px 0 6px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 .sechead h2{font-size:24px;font-family:var(--fs);font-weight:600;color:var(--navy)}
 .sechead p{color:var(--ink-2);margin:6px 0 0;font-size:14.5px}
+/* ---------- activity finder ---------- */
+.finder{margin:20px 0 0;max-width:560px}
+.finder .tin{padding-left:40px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%238A98A3' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5'/%3E%3C/svg%3E") no-repeat 14px center}
+.fsep{width:1px;align-self:stretch;background:var(--line);margin:2px 4px}
+.jobfilters{margin-top:-8px}
+.tbtn.jobf{border-color:color-mix(in srgb,var(--c) 40%,#fff);background:#fff;display:inline-flex;align-items:center;gap:6px}
+.tbtn.jobf i{font-style:normal;font-size:14px;line-height:1}
+.tbtn.jobf:hover{background:color-mix(in srgb,var(--c) 8%,#fff);color:var(--navy)}
+.tbtn.jobf.act{background:var(--c);border-color:var(--c);color:#fff}
+#a-list{margin-bottom:50px}
+#a-list .empty{grid-column:1/-1;text-align:center}
+#a-list .empty .btnrow{justify-content:center}
+
+/* activities under a guide */
+.gacts{display:flex;flex-direction:column;gap:9px;margin-top:6px}
+.arow{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--sand);
+  border:1px solid var(--line);border-radius:var(--r-s);padding:12px 14px;
+}
+.arow-t{flex:1;min-width:200px}
+.arow-t b{display:block;color:var(--navy);font-size:15px}
+.arow-t span{font-size:12.5px;color:var(--ink-3)}
+.arow .btn-p{padding:9px 17px;font-size:13.5px}
+
+/* ---------- sharing ---------- */
+.sharenote{
+  display:inline-flex;gap:10px;align-items:flex-start;text-align:left;max-width:520px;margin:18px auto 0;
+  background:var(--blue-w);border:1px solid var(--blue-l);border-radius:var(--r-s);padding:12px 15px;font-size:14.5px;color:var(--ink);
+}
+.sharenote i{font-style:normal}
+.sharenote b{color:var(--navy)}
+.sharebg{
+  position:fixed;inset:0;z-index:80;background:rgba(21,40,64,.42);display:grid;place-items:center;
+  padding:16px;animation:fade .2s ease both;
+}
+.sharebox{width:100%;max-width:520px;margin:0;border-top:5px solid var(--job);box-shadow:var(--sh-l)}
+.sharelist{margin:8px 0 12px;padding-left:20px;color:var(--ink-2);font-size:14.5px}
+.shareurl{display:flex;gap:8px}
+.shareurl .tin{flex:1;min-width:0;font-size:13.5px;color:var(--ink-2);background:var(--sand)}
+.shareurl .btn{flex:none}
+@media(max-width:520px){ .shareurl{flex-direction:column} }
+
 .foot{border-top:1px solid var(--line);margin-top:40px;padding:22px 0 34px;color:var(--ink-3);font-size:12.5px;text-align:center}
 
 @media(max-width:620px){

@@ -28,7 +28,7 @@ const ES = {
 
   /* Leading or trailing decoration is stripped before lookup and restored
      afterwards, so "Start →" still matches "Start". */
-  DECOR: /^[\s↻←→✓·]+|[\s↻←→✓·]+$/g,
+  DECOR: /^[\s↻←→✓·]+|[\s↻←→✓·↓]+$/g,
 
   async load() {
     try {
@@ -126,7 +126,7 @@ const ES = {
       if (!es) return;
       this.saved.push({ el, html: el.innerHTML });
       const lead = (raw.match(/^[\s↻←]+/) || [''])[0];
-      const tail = (raw.match(/[\s→]+$/) || [''])[0];
+      const tail = (raw.match(/[\s→↓]+$/) || [''])[0];
       const icon = el.querySelector(':scope > i');
       const span = document.createElement('span');
       span.className = 'es-on';

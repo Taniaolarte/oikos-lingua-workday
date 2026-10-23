@@ -1,6 +1,7 @@
 /* ============================================================
    OIKOS LINGUA — Workday · application
-   Screens: onboarding → home → challenge → results → library
+   Screens: onboarding → home → challenge → results → library,
+            plus the activity finder and shared links
    ============================================================ */
 const APP = {
   /* Session state lives in memory only. localStorage is used purely for the
@@ -10,6 +11,8 @@ const APP = {
   results: [],          // { index, before, after, improvement, topic, skills }
   current: null,
   lastIds: [],
+  saved: null,          // the drawn workday, set aside while doing chosen activities
+  pendingShare: null,   // a shared link waiting for the visitor to make their card
 
   PREF: 'oikos.lingua.card',
 
@@ -46,11 +49,18 @@ const APP = {
 
     this.profile = this.readCard();
     this.applyJob(this.profile && this.profile.context);
-    if (this.profile) { this.newWorkday(); this.go('home'); }
+    const shared = this.readShare();
+    if (shared) this.openShared(shared);
+    else if (this.profile) { this.newWorkday(); this.go('home'); }
     else this.renderOnboard();
 
     document.getElementById('nav').hidden = false;
     this.bindNav();
+    // A shared link pasted into a tab that already has the app open.
+    window.addEventListener('hashchange', () => {
+      const s = this.readShare();
+      if (s) this.openShared(s);
+    });
 
     // Press-and-hold Spanish gloss of the instructions.
     await ES.load();
@@ -67,7 +77,9 @@ const APP = {
   bindNav() {
     document.querySelectorAll('[data-go]').forEach(b => b.onclick = () => {
       const t = b.dataset.go;
+      if (t === 'home' && !this.profile) { this.renderOnboard(); return; }
       if (t === 'library') this.renderLibrary();
+      if (t === 'activities') this.renderActivities();
       if (t === 'home' && !this.workday) this.newWorkday();
       this.go(t);
     });
@@ -102,7 +114,14 @@ const APP = {
      ONBOARDING — the staff badge
      ============================================================ */
   renderOnboard() {
-    const draft = { name: '', language: 'english', context: '', level: 'intermediate', avatar: 'blank' };
+    // A visitor arriving from a shared link starts in that link's language,
+    // level and job, and the shared activities open as soon as the card is made.
+    const ps = this.pendingShare;
+    const first = ps && ps.acts[0];
+    const setting = first && Object.keys(OK.LEVELS).find(k => OK.LEVELS[k] === first.level);
+    const draft = { name: '', language: first ? first.language : 'english',
+                    context: (ps && OK.context(ps.job)) ? ps.job : '',
+                    level: setting || 'intermediate', avatar: 'blank' };
     this.draftLang = draft.language;
     this.applyJob(null);
     const host = document.getElementById('sc-onboard');
@@ -119,6 +138,10 @@ const APP = {
           <h1>Which workday will you have today?</h1>
           <p>Pick the language you want to work in and the kind of job you feel like doing.
              You get two short situations from real working life, and the language you need to handle them.</p>
+          ${ps ? `<div class="sharenote"><i>🔗</i><span>${ps.from
+              ? `<b>${esc(ps.from)}</b> shared ${ps.acts.length > 1 ? 'a workday' : 'an activity'} with you.`
+              : `Your ${ps.acts.length > 1 ? 'workday' : 'activity'} is ready.`}
+            Make your staff pass below and it opens straight away.</span></div>` : ''}
         </div>
 
         <div class="idwrap">
@@ -142,16 +165,16 @@ const APP = {
                 <div class="field" style="margin-bottom:12px">
                   <span class="fieldlab">Working language</span>
                   <div class="pick" id="f-lang">
-                    <button class="pk" data-v="english" aria-pressed="true"><b>English</b><small>A2 · B1 · B2 · IELTS</small></button>
-                    <button class="pk" data-v="french"  aria-pressed="false"><b>Français</b><small>A2 · B1 · B2</small></button>
+                    <button class="pk" data-v="english" aria-pressed="${draft.language === 'english'}"><b>English</b><small>A2 · B1 · B2 · IELTS</small></button>
+                    <button class="pk" data-v="french"  aria-pressed="${draft.language === 'french'}"><b>Français</b><small>A2 · B1 · B2</small></button>
                   </div>
                 </div>
                 <div class="field" style="margin-bottom:0">
                   <span class="fieldlab">Level</span>
                   <div class="pick" id="f-level" style="grid-template-columns:repeat(3,1fr)">
-                    <button class="pk" data-v="easy"><b>Easy</b><small>A2</small></button>
-                    <button class="pk" data-v="intermediate" aria-pressed="true"><b>Core</b><small>B1</small></button>
-                    <button class="pk" data-v="challenge"><b>Challenge</b><small>B2</small></button>
+                    <button class="pk" data-v="easy" aria-pressed="${draft.level === 'easy'}"><b>Easy</b><small>A2</small></button>
+                    <button class="pk" data-v="intermediate" aria-pressed="${draft.level === 'intermediate'}"><b>Core</b><small>B1</small></button>
+                    <button class="pk" data-v="challenge" aria-pressed="${draft.level === 'challenge'}"><b>Challenge</b><small>B2</small></button>
                   </div>
                 </div>
                 <div class="id-line" style="margin-top:14px;border-top:1px dashed var(--line)">
@@ -224,11 +247,14 @@ const APP = {
     start.onclick = () => {
       this.profile = { ...draft };
       this.writeCard(this.profile);
-      this.newWorkday();
-      this.go('home');
+      const share = this.pendingShare;
+      this.pendingShare = null;
+      if (share) this.openSet(share.acts, share);
+      else { this.newWorkday(); this.go('home'); }
     };
 
     refresh();
+    this.applyJob(draft.context);
     this.go('onboard');
   },
 
@@ -236,6 +262,7 @@ const APP = {
      HOME — today's workday
      ============================================================ */
   newWorkday() {
+    this.leaveSet();
     const p = this.profile;
     this.workday = OK.generateWorkday(
       { language: p.language, context: p.context, level: p.level }, this.lastIds);
@@ -249,12 +276,17 @@ const APP = {
     const ctx = OK.context(p.context) || { label: { en: 'General Office', fr: 'Bureau' }, icon: '🏢' };
     const lvl = OK.levelOf(p.level);
     const langName = p.language === 'french' ? 'Français' : 'English';
+    const wd = this.workday, n = wd.challenges.length;
+    const eyebrow = wd.kind === 'shared'
+      ? (wd.from ? `${esc(wd.from)} · ${this.t('Shared with you', 'Partagé avec vous')}` : this.t('Shared with you', 'Partagé avec vous'))
+      : wd.kind ? this.t('Your chosen activities', 'Vos activités choisies')
+      : this.t('Today\'s workday', 'Votre journée');
 
     document.getElementById('sc-home').innerHTML = `
       <div class="wrap">
         <div class="dash">
           <div>
-            <div class="eyebrow">${this.t('Today\'s workday', 'Votre journée')}</div>
+            <div class="eyebrow">${eyebrow}</div>
             <h2>${this.t('Welcome, ', 'Bienvenue, ')}${esc(p.name)}</h2>
             <div class="dash-meta">
               <span class="chip chip-n">${langName}</span>
@@ -263,10 +295,14 @@ const APP = {
             </div>
           </div>
           <div class="dash-sp"></div>
+          ${wd.kind ? `<button class="btn btn-o" id="h-back">← ${this.t('Back to my workday', 'Retour à ma journée')}</button>` : ''}
+          <button class="btn btn-o" id="h-share">${n > 1
+            ? this.t('Share this workday', 'Partager cette journée')
+            : this.t('Share this activity', 'Partager cette activité')}</button>
           <button class="btn btn-o" id="h-new">↻ ${this.t('New workday', 'Nouvelle journée')}</button>
         </div>
         <div class="cards">
-          ${this.workday.challenges.map((c, i) => {
+          ${wd.challenges.map((c, i) => {
             const done = this.results.find(r => r.index === i);
             return `
             <div class="card ${i ? 'c2' : ''} ${done ? 'done' : ''}">
@@ -280,14 +316,17 @@ const APP = {
                 <span class="chip">~${c.minutes} min</span>
                 ${c.activity.ielts ? '<span class="chip chip-g">IELTS</span>' : ''}
               </div>
-              <button class="btn ${done ? 'btn-o' : (i ? 'btn-n' : 'btn-p')}" data-ch="${i}">
-                ${done ? this.t('Do it again', 'Recommencer') : this.t('Start', 'Commencer')}
-                ${done ? '' : ' →'}
-              </button>
+              <div class="cardact">
+                <button class="btn ${done ? 'btn-o' : (i ? 'btn-n' : 'btn-p')}" data-ch="${i}">
+                  ${done ? this.t('Do it again', 'Recommencer') : this.t('Start', 'Commencer')}
+                  ${done ? '' : ' →'}
+                </button>
+                <button class="btn btn-g" data-sh="${i}">${this.t('Share', 'Partager')}</button>
+              </div>
             </div>`;
           }).join('')}
         </div>
-        ${this.results.length === 2 ? `
+        ${n > 1 && this.results.length === n ? `
           <div class="btnrow" style="margin-top:20px">
             <button class="btn btn-n" id="h-res">${this.t('See your workday summary', 'Voir le bilan de la journée')} →</button>
           </div>` : ''}
@@ -302,11 +341,17 @@ const APP = {
 
     const $ = s => document.querySelector('#sc-home ' + s);
     $('#h-new').onclick = () => this.newWorkday();
+    $('#h-share').onclick = () => this.openShare(wd.challenges.map(c => c.activity));
+    const back = $('#h-back'); if (back) back.onclick = () => this.backToWorkday();
     document.querySelectorAll('#sc-home [data-ch]').forEach(b =>
       b.onclick = () => this.openChallenge(+b.dataset.ch));
+    document.querySelectorAll('#sc-home [data-sh]').forEach(b =>
+      b.onclick = () => this.openShare([wd.challenges[+b.dataset.sh].activity]));
     $('#h-ctx').onclick  = () => this.quickPick('context');
     $('#h-lang').onclick = () => this.quickPick('language');
-    $('#h-reset').onclick = () => { this.clearCard(); this.profile = null; this.workday = null; this.renderOnboard(); };
+    $('#h-reset').onclick = () => {
+      this.clearCard(); this.profile = null; this.workday = null; this.saved = null; this.renderOnboard();
+    };
     this.applyJob(p.context);
     const res = $('#h-res'); if (res) res.onclick = () => this.renderResults();
     document.querySelectorAll('#sc-home [data-go]').forEach(b =>
@@ -334,6 +379,7 @@ const APP = {
     const box = document.getElementById('qp');
     box.scrollIntoView({ behavior: 'smooth', block: 'center' });
     box.querySelectorAll('.pk').forEach(b => b.onclick = () => {
+      this.leaveSet();
       this.profile[which] = b.dataset.v;
       this.writeCard(this.profile);
       this.lastIds = [];
@@ -399,6 +445,8 @@ const APP = {
               <span class="chip chip-o">${c.activity.level}</span>
               <span class="chip">~${c.minutes} min</span>
             </div>
+            ${this.workday.from ? `<p class="hint" style="margin:12px 0 0">🔗 ${this.t(
+              'Shared with you by', 'Partagé avec vous par')} <b>${esc(this.workday.from)}</b></p>` : ''}
             <p class="qtext" style="margin-top:22px">${this.t(
               'How do you want to do this one?', 'Comment voulez-vous procéder ?')}</p>
             <p class="hint">${this.t(
@@ -423,6 +471,7 @@ const APP = {
               </button>
             </div>
             <div class="btnrow" style="margin-top:18px">
+              <button class="btn btn-o" id="p-share">${this.t('Share this activity', 'Partager cette activité')}</button>
               <button class="btn btn-g" id="p-back">${this.t('Back to workday', 'Retour')}</button>
             </div>
           </div>
@@ -432,6 +481,7 @@ const APP = {
         st.phase = this.PATHS[st.path][0];
         this.renderChallenge();
       });
+      document.getElementById('p-share').onclick = () => this.openShare([c.activity]);
       document.getElementById('p-back').onclick = () => { this.renderHome(); this.go('home'); };
       return;
     }
@@ -662,6 +712,7 @@ const APP = {
       const b = st.before.score, a = st.after.score, d = a - b;
       const learnFirst = st.path === 'learn-first';
       const avg = Math.round((a + b) / 2);
+      const n = this.workday.challenges.length, solo = n === 1;
       // Fold the ramp scores into the stored result for the workday summary.
       const row = this.results.find(r => r.index === st.index);
       if (row) {
@@ -719,15 +770,21 @@ const APP = {
                 ${OK.skillsFor(c.activity).map(s => `<span class="chip">${esc(this.skillName(s))}</span>`).join('')}
               </div></div>
             <div class="btnrow" style="margin-top:22px">
-              ${this.results.length === 2
+              ${solo
+                ? `<button class="btn btn-p" id="d-more">${this.t('Find another activity', 'Trouver une autre activité')} →</button>`
+                : this.results.length === n
                 ? `<button class="btn btn-p" id="d-res">${this.t('See workday summary', 'Voir le bilan')} →</button>`
                 : `<button class="btn btn-p" id="d-next">${this.t('Next challenge', 'Défi suivant')} →</button>`}
               <button class="btn btn-o" id="d-guide">${this.t('Review the guide', 'Revoir le guide')}</button>
+              <button class="btn btn-o" id="d-share">${this.t('Share this activity', 'Partager cette activité')}</button>
               <button class="btn btn-g" id="d-home">${this.t('Back to workday', 'Retour')}</button>
             </div>
           </div>
         </div></div>`;
       this.countUp(host.querySelector('[data-n]'), this.overall(st), host.querySelector('[data-bar]'));
+      const more = document.getElementById('d-more');
+      if (more) more.onclick = () => { this.renderActivities(); this.go('activities'); };
+      document.getElementById('d-share').onclick = () => this.openShare([c.activity]);
       const nx = document.getElementById('d-next');
       if (nx) nx.onclick = () => {
         const other = this.workday.challenges.findIndex((_, i) => !this.results.some(r => r.index === i));
@@ -894,9 +951,11 @@ const APP = {
           <button class="btn btn-p" id="r-new">↻ ${this.t('New workday', 'Nouvelle journée')}</button>
           <button class="btn btn-o" id="r-job">${this.t('Change workday', 'Changer de contexte')}</button>
           <button class="btn btn-o" id="r-lang">${this.t('Change language', 'Changer de langue')}</button>
+          <button class="btn btn-o" id="r-share">${this.t('Share this workday', 'Partager cette journée')}</button>
         </div>
       </div></div>`;
     document.getElementById('r-new').onclick  = () => { this.newWorkday(); this.go('home'); };
+    document.getElementById('r-share').onclick = () => this.openShare(this.workday.challenges.map(c => c.activity));
     document.getElementById('r-job').onclick  = () => { this.go('home'); this.quickPick('context'); };
     document.getElementById('r-lang').onclick = () => { this.go('home'); this.quickPick('language'); };
     this.go('results');
@@ -949,16 +1008,309 @@ const APP = {
       b.onclick = () => this.renderLibrary(L, b.dataset.lvl));
     document.querySelectorAll('#sc-library [data-lang]').forEach(b =>
       b.onclick = () => this.renderLibrary(b.dataset.lang, this.libLevel));
-    document.querySelectorAll('#sc-library [data-g]').forEach(b => b.onclick = () => {
-      const g = guides.find(x => x.id === b.dataset.g);
-      document.getElementById('sc-guide').innerHTML = `
-        <div class="wrap"><div class="stage">
+    document.querySelectorAll('#sc-library [data-g]').forEach(b =>
+      b.onclick = () => this.openGuide(guides.find(x => x.id === b.dataset.g), L));
+  },
+
+  /* A guide from the library, followed by every activity built on it, so a
+     learner who has just read it can go straight into using it. */
+  openGuide(g, L) {
+    const acts = OK.data.lang[L].activities.filter(a => a.guide === g.id);
+    const host = document.getElementById('sc-guide');
+    host.innerHTML = `
+      <div class="wrap"><div class="stage">
+        <div class="btnrow" style="margin-bottom:12px">
           <button class="btn btn-g" id="g-back">← ${this.t('All guides', 'Tous les guides')}</button>
-          <div class="panel guide">${this.guideHTML(g, L)}</div>
-        </div></div>`;
-      document.getElementById('g-back').onclick = () => { this.renderLibrary(L, this.libLevel); this.go('library'); };
-      this.go('guide');
-    });
+          <span class="dash-sp"></span>
+          ${acts.length ? `<button class="btn btn-p" id="g-prac">${this.t('Practise this guide', 'Pratiquer ce guide')} ↓</button>` : ''}
+        </div>
+        <div class="panel guide">${this.guideHTML(g, L)}</div>
+        <div class="panel" id="g-acts">
+          <div class="panel-lab">${this.t('Practise this guide', 'Pratiquer ce guide')}</div>
+          ${acts.length ? `
+            <p class="hint">${this.t(
+              'Each activity has two situations on this skill, then the drills and a short production task.',
+              'Chaque activité propose deux situations sur cette compétence, puis les exercices et une courte production.')}</p>
+            <div class="gacts">${acts.map(a => this.activityRow(a)).join('')}</div>`
+          : `<p class="brief">${this.t(
+              'No activity uses this guide yet. Read it now and it will help in any challenge on the same skill.',
+              'Aucune activité n\'utilise encore ce guide. Lisez-le : il vous servira dans tout défi sur cette compétence.')}</p>`}
+        </div>
+      </div></div>`;
+    document.getElementById('g-back').onclick = () => { this.renderLibrary(L, this.libLevel); this.go('library'); };
+    const prac = document.getElementById('g-prac');
+    if (prac) prac.onclick = () => document.getElementById('g-acts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    this.bindActivityButtons(host);
+    this.go('guide');
+  },
+
+  /* One activity as a compact row: what it is, then Start and Share. */
+  activityRow(a) {
+    const c = OK.expand(a, a.language), L = a.language === 'french' ? 'fr' : 'en';
+    return `<div class="arow">
+      <div class="arow-t">
+        <b>${c.icon} ${esc(c.title)}</b>
+        <span>${esc(c.topic.label || '')} · ${esc((c.interaction.label || {})[L] || '')} · ~${c.minutes} min</span>
+      </div>
+      <button class="btn btn-p" data-start="${a.id}">${this.t('Start', 'Commencer')} →</button>
+      <button class="btn btn-g" data-share="${a.id}">${this.t('Share', 'Partager')}</button>
+    </div>`;
+  },
+
+  bindActivityButtons(host, job) {
+    host.querySelectorAll('[data-start]').forEach(b =>
+      b.onclick = () => this.startActivity(this.activityById(b.dataset.start), job));
+    host.querySelectorAll('[data-share]').forEach(b =>
+      b.onclick = () => this.openShare([this.activityById(b.dataset.share)], job));
+  },
+
+  activityById(id) {
+    const all = OK.data.lang;
+    return all.english.activities.find(a => a.id === id) || all.french.activities.find(a => a.id === id) || null;
+  },
+
+  /* ============================================================
+     ACTIVITIES — find any activity by job, level or words
+     ============================================================ */
+  renderActivities(change) {
+    const p = this.profile;
+    // The first visit starts from the learner's own card; after that the
+    // finder remembers what was being browsed.
+    const f = this.actFilter = Object.assign({
+      lang: p ? p.language : 'english',
+      job: p ? p.context : 'all',
+      level: p ? OK.levelOf(p.level) : 'all',
+      q: ''
+    }, this.actFilter, change);
+    const L = f.lang === 'french' ? 'fr' : 'en';
+    const host = document.getElementById('sc-activities');
+    host.innerHTML = `
+      <div class="wrap">
+        <div class="sechead" style="margin-top:28px">
+          <h2>${this.t('Find an activity', 'Trouver une activité')}</h2>
+          <p>${this.t(
+            'Every activity in the app. Choose a job and a level, or search for a word, then start the one you want.',
+            'Toutes les activités de l\'application. Choisissez un métier et un niveau, ou cherchez un mot, puis lancez celle qui vous intéresse.')}</p>
+        </div>
+        <div class="finder">
+          <input class="tin" id="a-q" type="search" autocomplete="off" value="${esc(f.q)}"
+                 placeholder="${this.t('Search: complaint, meeting, invoice, poem…', 'Rechercher : réclamation, réunion, futur, poème…')}"
+                 aria-label="${this.t('Search activities', 'Rechercher une activité')}">
+        </div>
+        <div class="filters">
+          <button class="tbtn ${f.lang === 'english' ? 'act' : ''}" data-lang="english">English</button>
+          <button class="tbtn ${f.lang === 'french' ? 'act' : ''}" data-lang="french">Français</button>
+          <span class="fsep"></span>
+          ${['A2', 'B1', 'B2'].map(v => `<button class="tbtn ${f.level === v ? 'act' : ''}" data-lvl="${v}">
+            ${v} · ${this.levelName(v)}</button>`).join('')}
+          <button class="tbtn ${f.level === 'all' ? 'act' : ''}" data-lvl="all">${this.t('All levels', 'Tous les niveaux')}</button>
+        </div>
+        <div class="filters jobfilters">
+          <button class="tbtn jobf ${f.job === 'all' ? 'act' : ''}" data-job="all" style="--c:var(--navy)">${this.t('All jobs', 'Tous les métiers')}</button>
+          ${OK.data.contexts.map(c => `<button class="tbtn jobf ${f.job === c.id ? 'act' : ''}" data-job="${c.id}"
+            style="--c:${c.color || this.DEFAULT_JOB}"><i>${c.icon}</i>${esc(c.label[L])}</button>`).join('')}
+        </div>
+        <p class="hint" id="a-n"></p>
+        <div class="cards" id="a-list"></div>
+      </div>`;
+    host.querySelectorAll('[data-lang]').forEach(b => b.onclick = () => this.renderActivities({ lang: b.dataset.lang }));
+    host.querySelectorAll('[data-lvl]').forEach(b => b.onclick = () => this.renderActivities({ level: b.dataset.lvl }));
+    host.querySelectorAll('[data-job]').forEach(b => b.onclick = () => this.renderActivities({ job: b.dataset.job }));
+    const q = host.querySelector('#a-q');
+    // Typing redraws only the list, so the search box keeps its focus.
+    q.oninput = () => { f.q = q.value; this.drawActivities(); };
+    this.drawActivities();
+  },
+
+  drawActivities() {
+    const f = this.actFilter, L = f.lang === 'french' ? 'fr' : 'en';
+    const host = document.getElementById('sc-activities');
+    const norm = s => OK.normalise(s || '');
+    const words = norm(f.q).split(' ').filter(Boolean);
+    const order = { A2: 0, B1: 1, B2: 2 };
+    const rows = OK.data.lang[f.lang].activities
+      .filter(a => (f.level === 'all' || a.level === f.level) && (f.job === 'all' || a.contexts.includes(f.job)))
+      .map(a => ({ a, c: OK.expand(a, f.lang) }))
+      .filter(({ a, c }) => {
+        if (!words.length) return true;
+        // Search what the card shows, plus both situations and any document
+        // in them, but never the answer options.
+        const sit = s => [s.brief, s.message, s.prompt, s.task, s.doc && s.doc.title, s.doc && s.doc.text];
+        const hay = norm([c.title, c.premise, c.topic.label, c.guide.title, c.categoryLab,
+          (c.interaction.label || {})[L], ...sit(a.before), ...sit(a.after)].join(' '));
+        return words.every(w => hay.includes(w));
+      })
+      .sort((x, y) => order[x.a.level] - order[y.a.level]);
+    const job = f.job === 'all' ? null : OK.context(f.job);
+    host.querySelector('#a-n').textContent = rows.length === 1
+      ? this.t('1 activity', '1 activité')
+      : this.t(`${rows.length} activities`, `${rows.length} activités`);
+    const list = host.querySelector('#a-list');
+    list.innerHTML = rows.length ? rows.map(({ a, c }) => `
+      <div class="card" ${job ? `style="--job:${job.color}"` : ''}>
+        <div class="card-cat"><i>${c.icon}</i>${esc(c.categoryLab)}</div>
+        <h3>${esc(c.title)}</h3>
+        <p>${esc(c.premise)}</p>
+        <div class="card-meta">
+          <span class="chip chip-o">${a.level}</span>
+          <span class="chip">${esc(c.topic.label || '')}</span>
+          <span class="chip">${esc((c.interaction.label || {})[L] || '')}</span>
+          <span class="chip">~${c.minutes} min</span>
+          ${a.ielts ? '<span class="chip chip-g">IELTS</span>' : ''}
+        </div>
+        <div class="cardact">
+          <button class="btn btn-p" data-start="${a.id}">${this.t('Start', 'Commencer')} →</button>
+          <button class="btn btn-g" data-share="${a.id}">${this.t('Share', 'Partager')}</button>
+        </div>
+      </div>`).join('')
+      : `<div class="panel empty">
+          <p class="brief">${this.t('Nothing matches. Try fewer words, another level, or All jobs.',
+            'Aucun résultat. Essayez moins de mots, un autre niveau, ou Tous les métiers.')}</p>
+          <div class="btnrow" style="margin-top:14px">
+            <button class="btn btn-o" id="a-clear">${this.t('Clear the filters', 'Effacer les filtres')}</button>
+          </div></div>`;
+    const clear = list.querySelector('#a-clear');
+    if (clear) clear.onclick = () => this.renderActivities({ q: '', job: 'all', level: 'all' });
+    this.bindActivityButtons(list, job && job.id);
+  },
+
+  /* ============================================================
+     CHOSEN ACTIVITIES — from the finder, a guide or a shared link
+     ============================================================ */
+  /* A workday made of activities picked by hand rather than drawn at random.
+     The drawn workday is set aside, with the language and job it was in, and
+     "Back to my workday" brings it back exactly as it was. Nothing chosen
+     here is written to the saved card. */
+  openSet(acts, opts = {}) {
+    const p = this.profile;
+    if (!this.saved) this.saved = {
+      workday: this.workday && !this.workday.kind ? this.workday : null,
+      results: this.results,
+      profile: { language: p.language, context: p.context }
+    };
+    p.language = acts[0].language;
+    if (opts.job && OK.context(opts.job)) p.context = opts.job;
+    this.workday = {
+      kind: opts.kind || 'chosen', from: opts.from || '',
+      request: { language: p.language, context: p.context, level: p.level },
+      challenges: acts.map(a => OK.expand(a, a.language))
+    };
+    this.results = [];
+    this.applyJob(p.context);
+    if (acts.length === 1) this.openChallenge(0);
+    else { this.renderHome(); this.go('home'); }
+  },
+
+  startActivity(act, job) {
+    if (!act) return;
+    // No card yet: make one first, then the activity opens.
+    if (!this.profile) { this.pendingShare = { acts: [act], job, kind: 'chosen' }; this.renderOnboard(); return; }
+    this.openSet([act], { job });
+  },
+
+  /* Put the language and job back as they were on the card. */
+  leaveSet() {
+    if (this.saved && this.profile) Object.assign(this.profile, this.saved.profile);
+    this.saved = null;
+  },
+
+  backToWorkday() {
+    const s = this.saved;
+    if (s && s.workday) {
+      this.leaveSet();
+      this.workday = s.workday;
+      this.results = s.results;
+      this.renderHome();
+    } else this.newWorkday();
+    this.go('home');
+  },
+
+  /* ============================================================
+     SHARING — a link that opens one activity or a whole workday
+     ============================================================ */
+  /* Everything travels in the link itself (#a=… or #day=…,…), so sharing
+     needs no server and no account. Whoever opens it gets the same
+     activities in the same job, with the sender's first name on them. */
+  shareURL(acts, job) {
+    const q = new URLSearchParams();
+    if (acts.length === 1) q.set('a', acts[0].id);
+    else q.set('day', acts.map(a => a.id).join(','));
+    const j = job || (this.profile && this.profile.context);
+    if (j) q.set('job', j);
+    if (this.profile && this.profile.name) q.set('from', this.profile.name);
+    return location.href.split('#')[0] + '#' + q.toString();
+  },
+
+  readShare() {
+    const q = new URLSearchParams(location.hash.replace(/^#/, ''));
+    if (!q.has('a') && !q.has('day')) return null;
+    // The link has done its job; clear it so a reload starts a normal workday.
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+    const acts = (q.get('day') || q.get('a') || '').split(',')
+      .map(id => this.activityById(id.trim())).filter(Boolean);
+    const same = acts.filter(a => a.language === (acts[0] || {}).language).slice(0, 4);
+    if (!same.length) return null;
+    return { acts: same, kind: 'shared', job: q.get('job'), from: (q.get('from') || '').slice(0, 24) };
+  },
+
+  openShared(share) {
+    if (this.profile) this.openSet(share.acts, share);
+    else { this.pendingShare = share; this.renderOnboard(); }
+  },
+
+  openShare(acts, job) {
+    acts = acts.filter(Boolean);
+    if (!acts.length) return;
+    const one = acts.length === 1;
+    const url = this.shareURL(acts, job);
+    const titles = acts.map(a => OK.expand(a, a.language).title);
+    const text = one
+      ? this.t(`Try this workplace challenge on Oikos Lingua: ${titles[0]}`,
+               `Essayez ce défi professionnel sur Oikos Lingua : ${titles[0]}`)
+      : this.t(`Try my workday on Oikos Lingua: ${titles.join(' · ')}`,
+               `Essayez ma journée sur Oikos Lingua : ${titles.join(' · ')}`);
+    const old = document.getElementById('share'); if (old) old.remove();
+    document.body.insertAdjacentHTML('beforeend', `
+      <div class="sharebg" id="share">
+        <div class="panel sharebox" role="dialog" aria-modal="true" aria-labelledby="sh-h">
+          <div class="panel-lab">🔗 ${this.t('Share', 'Partager')}</div>
+          <h2 id="sh-h">${one ? this.t('Share this activity', 'Partager cette activité')
+                              : this.t('Share this workday', 'Partager cette journée')}</h2>
+          <ul class="sharelist">${titles.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+          <p class="hint">${this.t(
+            'Whoever opens the link gets exactly this, in the same job. They only need to type their first name.',
+            'La personne qui ouvre le lien obtient exactement ceci, dans le même métier. Il lui suffit de taper son prénom.')}</p>
+          <div class="shareurl">
+            <input class="tin" id="sh-url" readonly value="${esc(url)}" aria-label="${this.t('Link', 'Lien')}">
+            <button class="btn btn-n" id="sh-copy">${this.t('Copy link', 'Copier le lien')}</button>
+          </div>
+          <div class="btnrow" style="margin-top:14px">
+            ${navigator.share ? `<button class="btn btn-p" id="sh-native">${this.t('Share…', 'Partager…')}</button>` : ''}
+            <a class="btn btn-o" href="mailto:?subject=${encodeURIComponent('Oikos Lingua · Workday')}&body=${encodeURIComponent(text + '\n\n' + url)}">${this.t('Email', 'E-mail')}</a>
+            <a class="btn btn-o" href="https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}" target="_blank" rel="noopener">WhatsApp</a>
+            <span class="dash-sp"></span>
+            <button class="btn btn-g" id="sh-x">${this.t('Close', 'Fermer')}</button>
+          </div>
+        </div>
+      </div>`);
+    const box = document.getElementById('share');
+    const input = box.querySelector('#sh-url');
+    const onKey = e => { if (e.key === 'Escape') close(); };
+    const close = () => { box.remove(); document.removeEventListener('keydown', onKey); };
+    document.addEventListener('keydown', onKey);
+    box.onclick = e => { if (e.target === box) close(); };
+    box.querySelector('#sh-x').onclick = close;
+    input.onfocus = () => input.select();
+    const copy = box.querySelector('#sh-copy');
+    copy.onclick = () => {
+      const done = () => { copy.textContent = this.t('Copied ✓', 'Copié ✓'); };
+      const fallback = () => { input.select(); try { document.execCommand('copy'); done(); } catch (e) {} };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, fallback);
+      else fallback();
+    };
+    const native = box.querySelector('#sh-native');
+    if (native) native.onclick = () => navigator.share({ title: 'Oikos Lingua · Workday', text, url }).catch(() => {});
+    copy.focus();
   },
 
   /* ---------- brand marks ---------- */

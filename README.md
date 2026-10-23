@@ -79,7 +79,7 @@ live in `content/english/guides-es.json` and `content/french/guides-es.json`,
 keyed by guide id, and cover every guide in both languages. Reading documents,
 email gaps and answer options are never translated: they are the test.
 
-The dictionary in `content/spanish.json` covers **2,254 strings** — the whole
+The dictionary in `content/spanish.json` covers **2,276 strings** — the whole
 interface plus every prompt, instruction, hint, task and scenario brief in both
 content banks. It is a flat `source string → Spanish` lookup, decoupled from the
 render code: `js/spanish.js` walks a narrow list of selectors on press, swaps
@@ -93,6 +93,38 @@ Clearing your cache, switching device or coming back in six months costs you
 nothing. `localStorage` holds only your first name, language and last chosen
 context, purely so the app can say "Welcome back" — and the app works correctly
 when that read fails (private mode, blocked storage).
+
+## Choosing an activity yourself
+
+The workday is drawn at random, but nothing stops a learner picking exactly
+what they want:
+
+- **Activities** (in the header) lists every activity in the bank. It filters
+  by language, level and job, and a search box matches words in the title,
+  premise, topic, guide and both situations, but never the answer options.
+- **Practise this guide**: every guide in the library ends with the activities
+  built on it, each with a Start button.
+
+Starting a chosen activity sets the drawn workday aside, with the language and
+job it was in, and **Back to my workday** brings it back as it was. Nothing
+chosen this way is written to the saved card.
+
+## Sharing an activity or a workday
+
+Every activity card, every challenge and the workday itself have a **Share**
+button. It opens a link (copy, the phone's own share sheet, email or WhatsApp)
+that carries everything in its `#` fragment, so no server is involved:
+
+```
+…/#a=en-manager-disagrees-01&job=marketing&from=Tania           one activity
+…/#day=en-read-brief-01,en-manager-disagrees-01&job=marketing   a whole workday
+```
+
+Whoever opens it gets the same activities in the same job, with the sender's
+first name on them. Someone without a staff pass yet makes one first, with the
+language, level and job already filled in from the link, and the activities
+open straight away. The fragment is cleared once read, so a reload starts an
+ordinary workday.
 
 ## Every job has a colour
 
@@ -194,12 +226,12 @@ js/avatars.js               staff-badge photo options
 js/spanish.js               press-and-hold Spanish gloss
 js/engine.js                content loading, workday generation, scoring
 js/render.js                the twelve exercise renderers
-js/app.js                   screens, navigation, session state
+js/app.js                   screens, navigation, session state, finder, share links
 content/
   scenarios.json            80 scenarios + 12 categories
   professional-contexts.json
   interaction-types.json    19 types, each naming its renderer
-  spanish.json              2,254-entry Spanish gloss of the instructions
+  spanish.json              2,276-entry Spanish gloss of the instructions
   english/  topics.json  guides.json  activities.json  drills.json  productions.json
             guides-es.json  full Spanish version of every guide
   french/   (same files)
